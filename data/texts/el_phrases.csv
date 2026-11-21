@@ -1,0 +1,399 @@
+id,phrase,type,pos,sense,meaning_id,synonyms,antonyms,related,origin,category,subject,usage,structure,code,domain,source
+1000116,Άγιος Βικέντιος και Γρεναδίνες,phrase,noun,1,286021,,,,,,geography,,,,general,Greek WordNet
+1006895,Ένωση Σοβιετικών Σοσιαλιστικών Δημοκρατιών,phrase,noun,1,286039,Σοβιετική Ένωση,,,,,politics,,,,general,Greek WordNet
+1000003,Α. Τ. Ι. Α.,phrase,noun,1,286055,"ιπτάμενος δίσκος,ούφο",,,,,,,,,general,Greek WordNet
+1000071,Αγγλική έκδοση της Βίβλου,phrase,noun,1,286068,,,,,,religion,,,,general,Greek WordNet
+1001412,Ανεξάρτητο Κράτος της Παπούα-Νέας Γουινέας,phrase,noun,1,286114,Παπούα-Νέα Γουινέα,,,,,politics,,,,general,Greek WordNet
+1001413,Ανεξάρτητο κράτος των Σαμόα,phrase,noun,1,286115,Σαμόα,,,,,politics,,,,general,Greek WordNet
+1002477,Αραβική Δημοκρατία της Συρίας,phrase,noun,1,286136,Συρία,,,,,politics,,,,general,Greek WordNet
+1002478,Αραβική Λιβυκή Σοσιαλιστική Λαϊκή Δημοκρατία,phrase,noun,1,286137,Λιβύη,,,,,military,,,,general,Greek WordNet
+1004883,Δημοκρατία της Ακτής Ελεφαντοστού,phrase,noun,1,286091,"Ακτή Ελεφαντοστού,Ακτή Ελεφαντόδοντος",,,,,politics,,,,general,Greek WordNet
+1004910,Δημοκρατία της Νότιας Αφρικής,phrase,noun,1,286325,Νότια Αφρική,,,,,politics,,,,general,Greek WordNet
+1004917,Δημοκρατία της Σιέρρα Λεόνε,phrase,noun,1,286332,Σιέρρα Λεόνε,,,,,politics,,,,general,Greek WordNet
+1004943,Δημοκρατία του Σαν Μαρίνο,phrase,noun,1,286353,Σαν Μαρίνο,,,,,politics,,,,general,Greek WordNet
+1004949,Δημοκρατία του Τρίνινταντ και Τομπάγκο,phrase,noun,1,286358,Τρίνινταντ και Τομπάγκο,,,,,politics,,,,general,Greek WordNet
+1004951,Δημοκρατία των νησιών Μάρσαλ,phrase,noun,1,286364,Μάρσαλ,,,,,politics,,,,general,Greek WordNet
+1008254,Η Βασιλεία του Θεού,phrase,noun,1,286420,,,,,,religion,,,,general,Greek WordNet
+1008257,Η μάχη στη λίμνη Τρασιμένη,phrase,noun,1,286421,λίμνη Τρασιμένη,,,,,military,,,,general,Greek WordNet
+1008417,Ηνωμένες Πολιτείες της Αμερικής,phrase,noun,1,286426,,,,,,politics,,,,general,Greek WordNet
+1008418,Ηνωμένη Δημοκρατία της Τανζανίας,phrase,noun,1,286427,Τανζανία,,,,,politics,,,,general,Greek WordNet
+1009054,Ισλαμική Δημοκρατία της Μαυριτανίας,phrase,noun,1,286455,Μαυριτανία,,,,,politics,,,,general,Greek WordNet
+1009055,Ισλαμική Δημοκρατία του Ιράν,phrase,noun,1,286451,Ιράν,,,,,history,,,,general,Greek WordNet
+1009056,Ισλαμική Δημοκρατία του Πακιστάν,phrase,noun,1,286456,Πακιστάν,,,,,politics,,,,general,Greek WordNet
+1009057,Ισλαμικό κράτος του Αφγανιστάν,phrase,noun,1,286165,Αφγανιστάν,,,,,geography,,,,general,Greek WordNet
+1011121,Κράτος της Πόλης του Βατικανού,phrase,noun,1,286061,"Αγία Έδρα,Βατικανό",,,,,religion,,,,general,Greek WordNet
+1011488,Λαϊκή Δημοκρατία της Αλγερίας,phrase,noun,1,286096,Αλγερία,,,,,politics,,,,general,Greek WordNet
+1011489,Λαϊκή Δημοκρατία της Ανγκόλας,phrase,noun,1,286071,Αγκόλα,,,,,politics,,,,general,Greek WordNet
+1011490,Λαϊκή Δημοκρατία της Κίνας,phrase,noun,1,286485,Κίνα,,,,,geography,,,,general,Greek WordNet
+1011491,Λαϊκή Δημοκρατία της Κορέας,phrase,noun,1,286247,Βόρεια Κορέα,,,,,geography,,,,general,Greek WordNet
+1011492,Λαϊκή Δημοκρατία του Κονγκό,phrase,noun,1,286533,Κονγκό,,,,,politics,,,,general,Greek WordNet
+1011493,Λαϊκή Δημοκρατία του Λάος,phrase,noun,1,286560,Λάος,,,,,geography,,,,general,Greek WordNet
+1011494,Λαϊκή Δημοκρατία του Μπανγκλαντές,phrase,noun,1,286578,Μπανγκλαντές,,,,,politics,,,,general,Greek WordNet
+1012301,Μεγάλο Δουκάτο του Λουξεμβούργου,phrase,noun,1,286598,Λουξεμβούργο,,,,,politics,,,,general,Greek WordNet
+1014392,Ομοσπονδιακή Δημοκρατία της Γερμανίας,phrase,noun,1,286261,Γερμανία,,,,,politics,,,,general,Greek WordNet
+1014393,Ομοσπονδιακή Δημοκρατία της Γιουγκοσλαβίας,phrase,noun,1,286267,Γιουγκοσλαβία,,,,,politics,,,,general,Greek WordNet
+1014394,Ομοσπονδιακή Δημοκρατία της Νιγηρίας,phrase,noun,1,286712,Νιγηρία,,,,,politics,,,,general,Greek WordNet
+1014395,Ομοσπονδιακή Ισλαμική Δημοκρατία των Κομορών,phrase,noun,1,286745,,,,,,geography,,,,general,Greek WordNet
+1014389,Ομόσπονδες πολιτείες της Μικρονησίας,phrase,noun,1,286646,Μικρονησία,,,,,politics,,,,general,Greek WordNet
+1014390,Ομόσπονδη Δημοκρατία της Βραζιλίας,phrase,noun,1,286233,Βραζιλία,,,,,geography,,,,general,Greek WordNet
+1014549,Οργάνωση των Χωρών του Βορειοατλαντικού Συμφώνου,phrase,noun,1,286691,ΝΑΤΟ,,,,,diplomacy,,,,general,Greek WordNet
+1018105,Σοσιλιστική Δημοκρατία του Βιετνάμ,phrase,noun,1,286219,Βιετνάμ,,,,,oceanography,,,,general,Greek WordNet
+1019033,Συνεργατική Δημοκρατία της Γουιάνας,phrase,noun,1,286288,Γουιάνα,,,,,politics,,,,general,Greek WordNet
+1021661,Χασεμιτικό Βασίλειο της Ιορδανίας,phrase,noun,1,286447,Ιορδανία,,,,,oceanography,,,,general,Greek WordNet
+1022595,άλλα λέει η θεια μου κι άλλα ακούν τα αυτιά μου,proverb,noun,1,287068,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022540,άλλαξε ο Μανωλιός κι έβαλε τα ρούχα του αλλιώς,proverb,noun,1,287071,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022563,άνθρωπος αγράμματος ξύλο απελέκητο,proverb,noun,1,287167,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022572,άνθρωπος ανθρώπου δεν αποφεύγει,proverb,noun,1,287169,,,,,Proverb,,proverb,,,general,Lex Hopper
+1001502,άνθρωπος επιβάλλων το νόμο,phrase,noun,1,287171,,,,,,law,,,,general,Greek WordNet
+1022589,έκαστος εφ' ω ετάχθη,proverb,noun,1,287422,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022553,έξω από τον χορό πολλά τραγούδια λέγονται,proverb,noun,1,287649,,,,,Proverb,,proverb,,,general,Lex Hopper
+1007730,έργο με Θεία Πάθη,phrase,noun,1,287674,,,,,,religion,,,,general,Greek WordNet
+1022329,έρχομαι στα λόγια μου,idiom,verb,1,287702,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022330,έρχομαι στα συγκαλά μου,idiom,verb,1,287704,,,,,Idiom,,idiom,,,general,Lex Hopper
+1007843,έσω κόνδυλος βραχιόνιου οστού,phrase,noun,1,287052,άκρο αγκώνα,,,,,anatomy,,,,general,Greek WordNet
+1022328,έχω ένα καρφί στην καρδιά,idiom,verb,1,287746,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022324,έχω πολλά ράμματα για τη γούνα κάποιου,idiom,verb,1,287755,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022326,έχω τα κέφια μου,idiom,verb,1,287761,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022322,έχω τα μάτια μου δεκατέσσερα,idiom,verb,1,287763,,,,,Idiom,,idiom,,,general,Lex Hopper
+1008072,έχω το νου μου,phrase,verb,1,287766,παρακολουθώ,,,,,,,,,general,Greek WordNet
+1022323,έχω τον νου μου,idiom,verb,1,287767,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022327,έχω τον τρόπο μου,idiom,verb,1,287769,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022597,αγάλι αγάλι γίνεται η αγουρίδα μέλι,proverb,noun,1,287937,,,,,Proverb,,proverb,,,general,Lex Hopper
+1000055,αγγειόσπερμο δέντρο με κίτρινο ξύλο,phrase,noun,1,287990,,,,,,botany,,,,general,Greek WordNet
+1000247,αγώνας επί ίσοις όροις,phrase,noun,1,288199,,,,,,,,,,general,Greek WordNet
+1000293,αδένας δέρματος έκκρισης λαδιού,phrase,noun,1,288214,,,,,,anatomy,,,,general,Greek WordNet
+1000297,αδένας του τραχήλου της μήτρας,phrase,noun,1,288217,,,,,,anatomy,,,,general,Greek WordNet
+1000541,αισθητήριο όργανο τάσης μυός,phrase,noun,1,288571,,,,,,anatomy,,,,general,Greek WordNet
+1000659,ακούω με μεγάλη προσοχή,phrase,verb,1,288735,προσέχω,,,,,,,,,general,Greek WordNet
+1022282,ακούω τον εαυτό μου,idiom,verb,1,288736,,,,,Idiom,,idiom,,,general,Lex Hopper
+1000951,αμύγδαλο με ζάχαρη χρωματιστή,phrase,noun,1,289211,,,,,,,,,,general,Greek WordNet
+1001369,ανδρικό εσωτερικό αναπαραγωγικό όργανο,phrase,noun,1,289894,,,,,,anatomy,,,,general,Greek WordNet
+1022283,ανεβαίνει το αίμα στο κεφάλι,idiom,verb,1,289908,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022278,ανοίγω τα χαρτιά μου,idiom,verb,1,290095,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022279,ανοίγω την καρδιά μου,idiom,verb,1,290097,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022280,ανοίγω το στόμα μου,idiom,verb,1,290099,,,,,Idiom,,idiom,,,general,Lex Hopper
+1001869,απ' έξω κι ανακατωτά,phrase,adv,1,290612,νερό,,,,,,,,,general,Greek WordNet
+1001945,απείθεια κατά της αρχής,phrase,noun,1,290732,,,,,,law,,,,general,Greek WordNet
+1022284,απλώνω τα πόδια μου όσο φτάνει το πάπλωμα,idiom,verb,1,290828,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022551,από έξω κούκλα και από μέσα πανούκλα,proverb,noun,1,291375,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022596,από το ολότελα καλή και η Παναγιώταινα,proverb,noun,1,291377,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022281,αρπάζομαι από τα μαλλιά,idiom,verb,1,291662,,,,,Idiom,,idiom,,,general,Lex Hopper
+1002629,αρτηρία του κόλπου της καρδιάς,phrase,noun,1,291707,κολπική αρτηρία,,,,,anatomy,,,,general,Greek WordNet
+1003033,αυτόματο σύστημα επεξεργασίας δεδομένων,phrase,noun,1,292248,σύστημα υπολογιστή,,,,,computing,,,,general,Greek WordNet
+1022288,βάζω νερό στο κρασί μου,idiom,verb,1,292446,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022285,βάζω τα δυνατά μου,idiom,verb,1,292455,,,,,Idiom,,idiom,,,general,Lex Hopper
+1003204,βάζω τα πόδια στον ώμο,phrase,verb,1,292457,"στην πλάτη,δειλιάζω,λιποψυχώ,το βάζω στα πόδια",,,,,,,,,general,Greek WordNet
+1022286,βάζω το χέρι μου στη φωτιά,idiom,verb,1,292460,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022291,βάφω τα μαλλιά μου κόκκινα,idiom,verb,1,292529,,,,,Idiom,,idiom,,,general,Lex Hopper
+1003277,βαρέλα για κρασί ή μπύρα,phrase,noun,1,292652,,,,,,,,,,general,Greek WordNet
+1003285,βαρέλι κρασιού ή μπίρας,phrase,noun,1,292657,,,,,,,,,,general,Greek WordNet
+1003433,βγάζω αλλεπάλληλες τολύπες καπνού,phrase,verb,1,292767,εκβάλλω καπνό,,,,,,,,,general,Greek WordNet
+1003434,βγάζω από τη μέση,phrase,verb,1,292768,,,,,,,,,,general,Greek WordNet
+1022294,βγάζω τα μάτια μου,idiom,verb,1,292772,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022293,βγάζω το άχτι μου,idiom,verb,1,292774,,,,,Idiom,,idiom,,,general,Lex Hopper
+1003437,βγάζω το φίδι απ' την τρύπα,phrase,verb,1,292776,,,,,,,,,,general,Greek WordNet
+1022295,βγάζω το ψωμί μου,idiom,verb,1,292777,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022299,βγαίνω από τα ρούχα μου,idiom,verb,1,292784,,,,,Idiom,,idiom,,,general,Lex Hopper
+1003518,βηματίζω προς τα πίσω,phrase,verb,1,292847,,,,,,sports,,,,general,Greek WordNet
+1003605,βιομηχανία παραγωγής συστημάτων φωτισμού,phrase,noun,1,292939,φωτοβιομηχανία,,,,,business,,,,general,Greek WordNet
+1022300,βλέπω με καλό μάτι,idiom,verb,1,293003,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022301,βλέπω τον ουρανό σφοντύλι,idiom,verb,1,293005,,,,,Idiom,,idiom,,,general,Lex Hopper
+1003796,βούρτσα από τρίχωμα ζώου,phrase,noun,1,293142,,,,,,botany,,,,general,Greek WordNet
+1003856,βρέχει με το τουλούμι,phrase,verb,1,293170,"βρέχει,βρέχει καρεκλοπόδαρα,βρέχει καταρρακτωδώς",,,,,meteorology,,,,general,Greek WordNet
+1004157,γέφυρα με μεταλλικά στηρίγματα,phrase,noun,1,293412,,,,,,construction,,,,general,Greek WordNet
+1004059,γενετική επιστήμη γονιδιακής δομής,phrase,noun,1,293612,,,,,,nutrition,,,,general,Greek WordNet
+1004060,γενετική επιστήμη γονιδιακής λειτουργίας,phrase,noun,1,293613,,,,,,biology,,,,general,Greek WordNet
+1004512,γράψιμο με το χέρι,phrase,noun,1,294008,,,,,,,,,,general,Greek WordNet
+1004541,γυμνοσπερματικό δέντρο με κίτρινο ξύλο,phrase,noun,1,294130,,,,,,botany,,,,general,Greek WordNet
+1004550,γυναικείο εσωτερικό αναπαραγωγικό όργανο,phrase,noun,1,294145,,,,,,anatomy,,,,general,Greek WordNet
+1004725,δένδρο παραγωγής ξηρών καρπών,phrase,noun,1,294250,,,,,,nutrition,,,,general,Greek WordNet
+1004735,"δέντρο ""το καμάρι της Βολιβίας""",phrase,noun,1,294254,,,,,,botany,,,,general,Greek WordNet
+1004748,δέντρο με γυμνό κορμό,phrase,noun,1,294266,,,,,,botany,,,,general,Greek WordNet
+1004749,δέντρο με εύκαμπτο ανθεκτικό ξύλο,phrase,noun,1,294267,,,,,,business,,,,general,Greek WordNet
+1004750,δέντρο με κίτρινο ξύλο,phrase,noun,1,294268,,,,,,botany,,,,general,Greek WordNet
+1004751,δέντρο με κίτρινο ξύλο,phrase,noun,2,294269,,,,,,botany,,,,general,Greek WordNet
+1004753,δέντρο με μήλα κάι,phrase,noun,1,294271,,,,,,botany,,,,general,Greek WordNet
+1004754,δέντρο με φελλοειδή κορμό,phrase,noun,1,294272,,,,,,botany,,,,general,Greek WordNet
+1004757,δέντρο νάνος με σκληρό ξύλο,phrase,noun,1,294275,,,,,,botany,,,,general,Greek WordNet
+1004768,δέντρο φίκος της βεγγάλης,phrase,noun,1,294286,,,,,,botany,,,,general,Greek WordNet
+1022316,δίνω το λόγο μου,idiom,verb,1,294377,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022317,δίνω τόπο στην οργή,idiom,verb,1,294379,,,,,Idiom,,idiom,,,general,Lex Hopper
+1004719,δεν αφήνω σε χλωρό κλαρί,phrase,verb,1,292710,"βασανίζω,ενοχλώ,επιβαρύνω,κατατρέχω,κυνηγώ,πιλατεύω",,,,,,idiom,,,general,Greek WordNet
+1022313,δεν βάζω γλώσσα μέσα,idiom,verb,1,294564,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022311,δεν σηκώνω μύγα στο σπαθί μου,idiom,verb,1,294574,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022567,δεν υπάρχει καπνός χωρίς φωτιά,proverb,noun,1,294576,,,,,Proverb,,proverb,,,general,Lex Hopper
+1004726,δενδρόβια μοσχογαλή η κιβέττη,phrase,noun,1,294587,,,,,,,,,,general,Greek WordNet
+1004877,δημιουργώ από πρώτες ύλες,phrase,verb,1,294690,,,,,,,,,,general,Greek WordNet
+1005172,διαμόρφωση ή αρχιτεκτονική κήπων,phrase,noun,1,295097,,,,,,gardening,,,,general,Greek WordNet
+1005407,διαχωριστικό δέσμης αγγείων φυτών,phrase,noun,1,295322,,,,,,biology,,,,general,Greek WordNet
+1005602,διπλή καλλιέργεια σε λουρίδες,phrase,noun,1,295521,,,,,,agriculture,,,,general,Greek WordNet
+1005626,διστάζω έχω σωματικό τικ,phrase,verb,1,293068,"βομβώ,τραυλίζω,τρικλίζω",,,,,,,,,general,Greek WordNet
+1005787,δρυς Καλιφόρνιας και Μεξικού,phrase,noun,1,295750,,,,,,botany,,,,general,Greek WordNet
+1005778,δρόμος υποχρεωτικής κυκλικής πορείας,phrase,noun,1,295761,,,,,,geography,,,,general,Greek WordNet
+1006131,είμαι στις διαταγές/υπό τας διαταγάς,phrase,verb,1,295994,,,,,,,,,,general,Greek WordNet
+1005933,εγγράφομαι σε εκπαιδευτικό ίδρυμα,phrase,verb,1,296017,,,,,,education,,,,general,Greek WordNet
+1005976,εγκαταστάσεις εστιατορίων και καφετεριών,phrase,noun,1,296071,,,,,,management,,,,general,Greek WordNet
+1007361,επιδίδομαι σε επιστημονική έρευνα,phrase,verb,1,297812,,,,,,,,,,general,Greek WordNet
+1007549,επιστήμη μελέτης πρωτευόντων θηλαστικών,phrase,noun,1,298018,,,,,,,,,,general,Greek WordNet
+1007783,ερπηστής με λεπτή ουρά,phrase,noun,1,298299,,,,,,,,,,general,Greek WordNet
+1008177,ζω μέσα στην πολυτέλεια,phrase,verb,1,298784,ζω πολυτελώς,,,,,,,,,general,Greek WordNet
+1022331,ζω στον κόσμο μου,idiom,verb,1,298785,,,,,Idiom,,idiom,,,general,Lex Hopper
+1008220,ζώνη δεσίματος αφαλού μωρού,phrase,noun,1,298869,,,,,,fashion,,,,general,Greek WordNet
+1008256,η Λωρίδα της Γάζας,phrase,noun,1,298878,,,,,,geography,,,,general,Greek WordNet
+1008264,η Μάχη του Τάνενμπεργκ,phrase,noun,1,286894,Τάνενμπεργκ,,,,,military,,,,general,Greek WordNet
+1022557,η αρχή είναι το ήμισυ του παντός,proverb,noun,1,298879,,,,,Proverb,,proverb,,,general,Lex Hopper
+1008253,η αρχή του Αρχιμήδη,phrase,noun,1,286144,Αρχιμήδειος αρχή,,,,,,,,,general,Greek WordNet
+1022536,η γλώσσα κόκαλα δεν έχει και κόκαλα τσακίζει,proverb,noun,1,298881,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022584,η επανάληψη μήτηρ πάσης μαθήσεως,proverb,noun,1,298883,,,,,Proverb,,proverb,,,general,Lex Hopper
+1008255,η επιστήμη των συστημάτων,phrase,noun,1,298026,επιστήμη συστημάτων,,,,,,,,,general,Greek WordNet
+1022555,η ισχύς εν τη ενώσει,proverb,noun,1,298885,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022534,η καλή μέρα από το πρωί φαίνεται,proverb,noun,1,298887,,,,,Proverb,,proverb,,,general,Lex Hopper
+1008265,η μάχη του Ύπρ,phrase,noun,1,286052,Ύπρ,,,,,military,,,,general,Greek WordNet
+1008266,η μάχη του Ύπρ,phrase,noun,2,286053,Ύπρ,,,,,military,,,,general,Greek WordNet
+1008267,η μάχη του Ύπρ,phrase,noun,3,286054,Ύπρ,,,,,military,,,,general,Greek WordNet
+1008258,η μάχη του Βάγκραμ,phrase,noun,1,286175,Βάγκραμ,,,,,military,,,,general,Greek WordNet
+1008259,η μάχη του Βατερλώ,phrase,noun,1,286207,Βατερλώ,,,,,military,,,,general,Greek WordNet
+1008260,η μάχη του Μίντεν,phrase,noun,1,286622,Μίντεν,,,,,military,,,,general,Greek WordNet
+1008261,η μάχη του Ρόσμπαχ,phrase,noun,1,286820,Ρόσμπαχ,,,,,military,,,,general,Greek WordNet
+1008262,η μάχη του Σαλέρνο,phrase,noun,1,286831,Σαλέρνο,,,,,military,,,,general,Greek WordNet
+1008263,η μάχη του Σολφερίνο,phrase,noun,1,286874,Σολφερίνο,,,,,military,,,,general,Greek WordNet
+1008268,η μάχη του Φοντενουά,phrase,noun,1,286937,Φοντενουά,,,,,military,,,,general,Greek WordNet
+1022571,η πολλή δουλειά τρώει τον αφέντη,proverb,noun,1,298889,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022576,θέλει και την πίτα ολόκληρη και τον σκύλο χορτάτο,proverb,noun,1,299164,,,,,Proverb,,proverb,,,general,Lex Hopper
+1008601,θέρμανση ενσωματωμένη σε πάτωμα,phrase,noun,1,299184,,,,,,electronics,,,,general,Greek WordNet
+1008603,θέρμανση με φυσικό αέριο,phrase,noun,1,299186,,,,,,,,,,general,Greek WordNet
+1008510,θανατώνω στην ηλεκτρική καρέκλα,phrase,verb,1,299247,,,,,,electronics,,,,general,Greek WordNet
+1008931,ιεραρχική δομή αποθηκευμένων στοιχείων,phrase,noun,1,299692,ιεραρχική δομή,,,,,botany,,,,general,Greek WordNet
+1009146,ιτιά με φύλλα ροδακινιάς,phrase,noun,1,299888,,,,,,botany,,,,general,Greek WordNet
+1022556,κάθε αρχή και δύσκολη,proverb,noun,1,299926,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022539,κάθε εμπόδιο για καλό,proverb,noun,1,299928,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022578,κάθε κατεργάρης στον πάγκο του,proverb,noun,1,299930,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022543,κάθε πέρσι και καλύτερα,proverb,noun,1,299932,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022602,κάθε πράγμα στον καιρό του κι ο κολιός τον Αύγουστο,proverb,noun,1,299934,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022371,κάθε τρεις και λίγο,idiom,adv,1,299936,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022533,κάλλιο αργά παρά ποτέ,proverb,noun,1,299960,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022554,κάλλιο πέντε και στο χέρι παρά δέκα και καρτέρει,proverb,noun,1,299962,,,,,Proverb,,proverb,,,general,Lex Hopper
+1009484,κάμπτομαι προς τα πίσω,phrase,verb,1,299994,,,,,,,,,,general,Greek WordNet
+1022574,κάνε το καλό και ρίξ' το στον γιαλό,proverb,noun,1,300000,,,,,Proverb,,proverb,,,general,Lex Hopper
+1009599,κάνω κάποιον να μιλήσει,phrase,verb,1,300052,,,,,,,,,,general,Greek WordNet
+1009607,κάνω με κλειστά μάτια,phrase,verb,1,300063,,,,,,,,,,general,Greek WordNet
+1022369,κάνω πέτρα την καρδιά μου,idiom,verb,1,300068,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022349,κάνω τα αδύνατα δυνατά,idiom,verb,1,300082,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022338,κάνω τα κέρατά μου,idiom,verb,1,300084,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022340,κάνω τα μάτια μου τέσσερα,idiom,verb,1,300086,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022354,κάνω τα μούτρα κρέμασμα,idiom,verb,1,300088,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022335,κάνω τα στραβά μάτια,idiom,verb,1,300090,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022352,κάνω τη ζωή κάποιου δύσκολη,idiom,verb,1,300093,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022368,κάνω την ανάγκη φιλοτιμία,idiom,verb,1,300095,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022345,κάνω την τρίχα τριχιά,idiom,verb,1,300099,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022346,κάνω τον δικηγόρο του διαβόλου,idiom,verb,1,300105,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022342,κάνω τον ψόφιο κοριό,idiom,verb,1,300111,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022367,"κάνω ό,τι περνάει από το χέρι μου",idiom,verb,1,300122,,,,,Idiom,,idiom,,,general,Lex Hopper
+1010067,κάτοικος του Σαν Μαρίνο,phrase,noun,1,300168,,,,,,geography,,,,general,Greek WordNet
+1010066,κάτοικος του νησιού Ναούρου,phrase,noun,1,300170,,,,,,geography,,,,general,Greek WordNet
+1010070,κάτοικος των νησιών Μπαχάμες,phrase,noun,1,300173,,,,,,geography,,,,general,Greek WordNet
+1010071,κάτοικος των νησιών Φίτζι,phrase,noun,1,300174,,,,,,geography,,,,general,Greek WordNet
+1010342,κίνηση κολυμβητή ή κωπηλάτη,phrase,noun,1,300251,,,,,,,,,,general,Greek WordNet
+1009710,καρπός άσπρης καρυδιάς Αμερικής,phrase,noun,1,300831,,,,,,botany,,,,general,Greek WordNet
+1009832,κατακόρυφο πέτρινο χώρισμα παραθύρων,phrase,noun,1,301048,,,,,,,,,,general,Greek WordNet
+1010008,κατεβαίνω πλαγιά με σκι,phrase,verb,1,301193,,,,,,,,,,general,Greek WordNet
+1010180,κεντρική αρτηρία του αμφιβληστροειδούς,phrase,noun,1,301358,,,,,,anatomy,,,,general,Greek WordNet
+1010185,κεντρική φλέβα του αμφιβληστροειδούς,phrase,noun,1,301362,,,,,,anatomy,,,,general,Greek WordNet
+1010186,κεντρική φλέβα του επινεφριδίου,phrase,noun,1,301363,,,,,,anatomy,,,,general,Greek WordNet
+1022364,κρέμεται από μια κλωστή,idiom,verb,1,302442,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022363,κρέμομαι από τα χείλη κάποιου,idiom,verb,1,302446,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022362,κρατάω το στόμα μου κλειστό,idiom,verb,1,302479,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022358,κόβω το κεφάλι μου,idiom,verb,1,302791,,,,,Idiom,,idiom,,,general,Lex Hopper
+1011412,κύτταρο αποχωριζόμενο στη μείωση,phrase,noun,1,302909,,,,,,biology,,,,general,Greek WordNet
+1011415,κύτταρο σε σχήμα μαστιγίου,phrase,noun,1,302912,,,,,,biology,,,,general,Greek WordNet
+1011427,κώδικας μηχανής ηλεκτρονικού υπολογιστή,phrase,noun,1,302916,κώδικας μηχανής,,,,,computing,,,,general,Greek WordNet
+1022374,λέω τα σύκα σύκα και τη σκάφη σκάφη,idiom,verb,1,302975,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022375,λέω τον πόνο μου,idiom,verb,1,302977,,,,,Idiom,,idiom,,,general,Lex Hopper
+1011778,λικέρ κρέμα με κακάο,phrase,noun,1,303306,,,,,,culinary,,,,general,Greek WordNet
+1011782,λικέρ σερβιρισμένο με τρίμματα πάγου,phrase,noun,1,303309,,,,,,,,,,general,Greek WordNet
+1022377,λύνω τη γλώσσα μου,idiom,verb,1,303506,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022544,μάθε τέχνη κι άσ' τηνε κι αν πεινάσεις πιάσ' τηνε,proverb,noun,1,303537,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022593,μάτια που δεν βλέπονται γρήγορα λησμονιούνται,proverb,noun,1,303585,,,,,Proverb,,proverb,,,general,Lex Hopper
+1012458,μένω με το στόμα ανοιχτό,idiom,verb,1,291162,"αποσβολώνομαι,χαζεύω",,,,Idiom,,idiom,,,general,Greek WordNet
+1022380,μένω στα κρύα του λουτρού,idiom,verb,1,303631,,,,,Idiom,,idiom,,,general,Lex Hopper
+1012461,μένω στο ίδιο μέρος,phrase,verb,1,303633,περιμένω,,,,,,,,,general,Greek WordNet
+1012258,μαύρη καρυδιά της Καλιφόρνια,phrase,noun,1,304079,,,,,,botany,,,,general,Greek WordNet
+1022482,με νύχια και με δόντια,idiom,adv,1,304095,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022481,με το νι και με το σίγμα,idiom,adv,1,304104,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022600,μεγάλη μπουκιά φάε μεγάλο λόγο μην πεις,proverb,noun,1,304119,,,,,Proverb,,proverb,,,general,Lex Hopper
+1012297,μεγάλη φλέβα της καρδιάς,phrase,noun,1,304123,,,,,,anatomy,,,,general,Greek WordNet
+1012315,μεγαλόσωμη μοσχογαλή η κιβέττη,phrase,noun,1,304153,,,,,,,,,,general,Greek WordNet
+1022468,μες στην τρελή χαρά,idiom,adj,1,304312,,,,,Idiom,,idiom,,,general,Lex Hopper
+1012592,μεταλλικός κάδος για κάρβουνο,phrase,noun,1,304456,,,,,,energy,,,,general,Greek WordNet
+1012595,μεταλλουργία υλικών σε σκόνη,phrase,noun,1,304458,,,,,,,,,,general,Greek WordNet
+1012743,μη πτητικός αποθηκευτικός χώρος,phrase,noun,1,304626,,πτητική μνήμη,,,,computing,,,,general,Greek WordNet
+1012744,μη στεροειδές αντιφλεγμονώδες φάρμακο,phrase,noun,1,304627,,,,,,pharmacology,,,,general,Greek WordNet
+1022477,μια φορά κι έναν καιρό,idiom,adv,1,304729,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022537,μια χελιδονιά δεν φέρνει την άνοιξη,proverb,noun,1,304733,,,,,Proverb,,proverb,,,general,Lex Hopper
+1012897,μικρόσωμη μοσχογαλή η κιβέττη,phrase,noun,1,304784,,,,,,,,,,general,Greek WordNet
+1012917,μιλώ δυνατά και άγρια,phrase,verb,1,293459,γαβγίζω,,,,,,,,,general,Greek WordNet
+1022388,μου βγαίνει η ψυχή,idiom,verb,1,305060,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022389,μου βγαίνει το λάδι,idiom,verb,1,305062,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022393,μου γυρίζει το μυαλό,idiom,verb,1,305064,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022391,μου κάθεται στο λαιμό,idiom,verb,1,305066,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022383,μου κόβεται η ανάσα,idiom,verb,1,305068,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022385,μου μπαίνουν ψύλλοι στ' αυτιά,idiom,verb,1,305070,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022386,μου σηκώνεται η τρίχα,idiom,verb,1,305074,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022392,μου χτυπάει στα νεύρα,idiom,verb,1,305080,,,,,Idiom,,idiom,,,general,Lex Hopper
+1013208,μοχλός ή πείρος κλειδαριάς,phrase,noun,1,305139,,,,,,,,,,general,Greek WordNet
+1013251,μπάντα χάλκινων και πνευστών,phrase,noun,1,305177,,,,,,music,,,,general,Greek WordNet
+1022396,μπαίνω στη θέση κάποιου,idiom,verb,1,305202,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022399,μπλέκω τα μπούτια μου,idiom,verb,1,305328,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022558,νηστικό αρκούδι δεν χορεύει,proverb,noun,1,305834,,,,,Proverb,,proverb,,,general,Lex Hopper
+1013744,νομισματική μονάδα της Μποτσουάνας,phrase,noun,1,305888,,,,,,finance,,,,general,Greek WordNet
+1022586,νους υγιής εν σώματι υγιεί,proverb,noun,1,305940,,,,,Proverb,,proverb,,,general,Lex Hopper
+1013866,νυφίτσα με κίτρινο λαιμό,phrase,noun,1,306014,,,,,,,,,,general,Greek WordNet
+1013752,νόμοι της κίνησης των ουράνιων σωμάτων,phrase,noun,1,306037,νόμοι του Κέπλερ,,,,,astronomy,,,,general,Greek WordNet
+1013757,νόμος βαρύτητας του Νεύτωνα,phrase,noun,1,306040,νόμος παγκόσμιας έλξης,,,,,physics,,,,general,Greek WordNet
+1013758,νόμος για την καταπολέμηση των ναρκωτικών,phrase,noun,1,306041,,,,,,law,,,,general,Greek WordNet
+1013759,νόμος για την πάταξη του οργανωμένου εγκλήματος,phrase,noun,1,306042,,,,,,law,,,,general,Greek WordNet
+1013766,νόμος των μερικών πιέσεων του Ντάλτον,phrase,noun,1,306048,,,,,,law,,,,general,Greek WordNet
+1022400,ξέρω τι μου γίνεται,idiom,verb,1,306090,,,,,Idiom,,idiom,,,general,Lex Hopper
+1014086,ξύλο άσπρης καρυδιάς Αμερικής,phrase,noun,1,306288,,,,,,botany,,,,general,Greek WordNet
+1022605,ο Θεός αγαπάει τον κλέφτη αγαπάει και τον νοικοκύρη,proverb,noun,1,306345,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022511,ο από μηχανής θεός,idiom,noun,1,306349,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022575,ο γάιδαρος είπε τον πετεινό κεφάλα,proverb,noun,1,306351,,,,,Proverb,,proverb,,,general,Lex Hopper
+1014156,ο εκπρόσωπος ενός πλοιοκτήτη,phrase,noun,1,306355,,,,,,maritime,,,,general,Greek WordNet
+1022562,ο καθένας με τον πόνο του,proverb,noun,1,306356,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022546,ο καλός ο καπετάνιος στη φουρτούνα φαίνεται,proverb,noun,1,306358,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022603,ο κόσμος το 'χει τούμπανο κι εμείς κρυφό καμάρι,proverb,noun,1,306360,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022591,ο λόγος σου με χόρτασε και το ψωμί σου φά' το,proverb,noun,1,306362,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022545,ο λύκος κι αν εγέρασε κι άσπρισε το μαλλί του μήτε τη γνώμη άλλαξε μήτε την κεφαλή του,proverb,noun,1,306364,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022559,ο πνιγμένος από τα μαλλιά του πιάνεται,proverb,noun,1,306370,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022566,ο σκύλος που γαβγίζει δεν δαγκώνει,proverb,noun,1,306372,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022552,ο φόβος φυλάει τα έρημα,proverb,noun,1,306374,,,,,Proverb,,proverb,,,general,Lex Hopper
+1014214,οι νόμοι του Μέντελ,phrase,noun,1,306446,,,,,,biology,,,,general,Greek WordNet
+1014355,ομάδα συντήρησης γραμμής τρένου,phrase,noun,1,306615,,,,,,railways,,,,general,Greek WordNet
+1014406,ομπρέλα για τον ήλιο,phrase,noun,1,288892,"αλεξήλιο,παρασόλι",,,,,,,,,general,Greek WordNet
+1022585,ουδέν κακόν αμιγές καλού,proverb,noun,1,306957,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022590,ουκ εν τω πολλώ το ευ,proverb,noun,1,306965,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022471,ούτε γάτα ούτε ζημιά,idiom,adj,1,307047,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022416,πέφτω από τα σύννεφα,idiom,verb,1,307179,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022417,πέφτω με τα μούτρα,idiom,verb,1,307182,,,,,Idiom,,idiom,,,general,Lex Hopper
+1015936,πίστα αγώνων με χωματόδρομο,phrase,noun,1,307218,,,,,,sports,,,,general,Greek WordNet
+1022599,πίσω έχει η αχλάδα την ουρά,proverb,noun,1,307228,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022402,παίζω με τη φωτιά,idiom,verb,1,307262,,,,,Idiom,,idiom,,,general,Lex Hopper
+1014889,παίζω σε διπλό ταμπλό,phrase,verb,1,307261,"παίζω διπλό παιχνίδι,το έχω δίπορτο",,,,,,,,,general,Greek WordNet
+1014908,παίρνω με το μέρος μου,phrase,verb,1,304489,μεταπείθω,,,,,,,,,general,Greek WordNet
+1014789,παγιδεύω με κόλλα ιξού,phrase,verb,1,307313,,,,,,zoology,,,,general,Greek WordNet
+1022414,πατάω στα πόδια μου,idiom,verb,1,308029,,,,,Idiom,,idiom,,,general,Lex Hopper
+1015417,πατώ στις μύτες των ποδιών μου,phrase,verb,1,288781,ακροπατώ,,,,,,,,,general,Greek WordNet
+1015430,παχύ τμήμα κρούσης καμπάνας,phrase,noun,1,308080,,,,,,,,,,general,Greek WordNet
+1015639,περιοχή μέσα σε αλλοεθνές έδαφος,phrase,noun,1,308351,,,,,,geography,,,,general,Greek WordNet
+1022538,πες μου ποιος είναι ο φίλος σου να σου πω ποιος είσαι,proverb,noun,1,308456,,,,,Proverb,,proverb,,,general,Lex Hopper
+1015757,πετάω με αυτόματο πιλότο,phrase,verb,1,308470,,,,,,aviation,,,,general,Greek WordNet
+1022415,πετάω τη σκούφια μου,idiom,verb,1,308471,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022420,πιάνω τον ταύρο από τα κέρατα,idiom,verb,1,308558,,,,,Idiom,,idiom,,,general,Lex Hopper
+1015916,πινέλο από τρίχες ζιμπελίνας,phrase,noun,1,308617,,,,,,visual_arts,,,,general,Greek WordNet
+1016029,πλάτανος των ανατολικών περιοχών,phrase,noun,1,308689,,,,,,botany,,,,general,Greek WordNet
+1022424,πνίγομαι σε μια κουταλιά νερό,idiom,verb,1,308913,,,,,Idiom,,idiom,,,general,Lex Hopper
+1016165,πνευστό όργανο με μονό καλάμι,phrase,noun,1,308935,,,,,,music,,,,general,Greek WordNet
+1022607,πολλοί μάγειροι χαλούν το φαγητό,proverb,noun,1,309075,,,,,Proverb,,proverb,,,general,Lex Hopper
+1016452,πουλώ στη μαύρη αγορά,phrase,verb,1,309270,,,,,,drinks,,,,general,Greek WordNet
+1016668,προκαλώ κίνηση με κτύπημα,phrase,verb,1,309508,χτυπώ ή κτυπώ,,,,,,,,,general,Greek WordNet
+1016669,προκαλώ να γίνει αντιληπτό,phrase,verb,1,309509,,,,,,,,,,general,Greek WordNet
+1017045,πρωτεύουσα κομητείας ή επαρχίας,phrase,noun,1,287413,έδρα επαρχίας,,,,,geography,,,,general,Greek WordNet
+1016762,πρόσβαση σε δρόμο υπερταχείας κυκλοφορίας,phrase,noun,1,309980,,,,,,,,,,general,Greek WordNet
+1022429,ρίχνω άδεια για να πιάσω γεμάτα,idiom,verb,1,310305,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022425,ρίχνω λάδι στη φωτιά,idiom,verb,1,310307,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022427,ρίχνω στάχτη στα μάτια,idiom,verb,1,310315,,,,,Idiom,,idiom,,,general,Lex Hopper
+1017342,ριζωματώδες υπόγειο τμήμα φυτού,phrase,noun,1,310452,,,,,,botany,,,,general,Greek WordNet
+1017408,ρολόι με μεγάλο επιδαπέδιο,phrase,noun,1,310503,,,,,,,,,,general,Greek WordNet
+1022604,ρωτώντας πας στην Πόλη,proverb,noun,1,310574,,,,,Proverb,,proverb,,,general,Lex Hopper
+1017642,σειρά αυλών εκκλησιαστικού οργάνου,phrase,noun,1,310831,,,,,,anatomy,,,,general,Greek WordNet
+1017659,σελίδα με τίτλο βιβλίου,phrase,noun,1,310848,,,,,,literature,,,,general,Greek WordNet
+1022431,σηκώνω ψηλά τη μύτη,idiom,verb,1,310903,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022532,σιγά σιγά γίνεται η αγουρίδα μέλι,proverb,noun,1,310965,,,,,Proverb,,proverb,,,general,Lex Hopper
+1017949,σκληρό ξύλο για ντουλάπια,phrase,noun,1,311174,,,,,,,,,,general,Greek WordNet
+1022433,σπάω το κεφάλι μου,idiom,verb,1,311416,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022547,σπίτι μου σπιτάκι μου και φτωχοκαλυβάκι μου,proverb,noun,1,311437,,,,,Proverb,,proverb,,,general,Lex Hopper
+1018246,σπρώχνω με τους ώμους,phrase,verb,1,311514,,,,,,,,,,general,Greek WordNet
+1018213,σπόνδυλος του ιερού οστού,phrase,noun,1,311516,,,,,,anatomy,,,,general,Greek WordNet
+1018258,στάδιο με διάδρομο στίβου,phrase,noun,1,311528,,,,,,sports,,,,general,Greek WordNet
+1018337,σταφύλι κατάλληλο για κρασί,phrase,noun,1,311681,,,,,,wine,,,,general,Greek WordNet
+1022592,στου κουφού την πόρτα όσο θέλεις βρόντα,proverb,noun,1,311804,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022588,συν Αθηνά και χείρα κίνει,proverb,noun,1,312252,,,,,Proverb,,proverb,,,general,Lex Hopper
+1019103,συνοδός φλέβα του υπογλωσσίου νεύρου,phrase,noun,1,312443,,,,,,anatomy,,,,general,Greek WordNet
+1019331,σφιγκτήρας μυς του πυλωρού,phrase,noun,1,312649,,,,,,anatomy,,,,general,Greek WordNet
+1019332,σφιγκτήρας της κόρης του ματιού,phrase,noun,1,312650,,,,,,anatomy,,,,general,Greek WordNet
+1019374,σχέδιο σε άκρο ρούχου,phrase,noun,1,312691,,,,,,,,,,general,Greek WordNet
+1019401,σχήμα όντος στην ωριμότητα,phrase,noun,1,298830,ζωντανό σώμα,,,,,biology,,,,general,Greek WordNet
+1019362,σχεδίαση υποβοηθούμενη από υπολογιστή,phrase,noun,1,312710,,,,,,visual_arts,,,,general,Greek WordNet
+1019405,σχηματίζω τον αριθμό τηλεφώνου,phrase,verb,1,300584,"καλώ,τηλεφωνώ",,,,,telecommunications,,,,general,Greek WordNet
+1019451,σωλήνας μεταφοράς υγρών ή ρεύματος,phrase,noun,1,312762,,,,,,electronics,,,,general,Greek WordNet
+1019256,σύστημα διαχείρισης βάσης δεδομένων,phrase,noun,1,312915,,,,,,computing,,,,general,Greek WordNet
+1019267,σύστημα μέτρων και σταθμών,phrase,noun,1,312922,,,,,,,,,,general,Greek WordNet
+1022438,τα βάζω με κάποιον,idiom,verb,1,313046,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022580,τα εν οίκω μη εν δήμω,proverb,noun,1,313050,,,,,Proverb,,proverb,,,general,Lex Hopper
+1019502,τα κράτη της Μπενελούξ,phrase,noun,1,286669,Μπενελούξ,,,,,,,,,general,Greek WordNet
+1022442,τα παίζω όλα για όλα,idiom,verb,1,313060,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022560,τα πολλά λόγια είναι φτώχεια,proverb,noun,1,313066,,,,,Proverb,,proverb,,,general,Lex Hopper
+1019519,ταινία για απόφραξη χαραμάδων,phrase,noun,1,313086,,,,,,,,,,general,Greek WordNet
+1019522,ταινία ταπετσαρίας ή καθίσματος,phrase,noun,1,297073,ενισχυτική λωρίδα,,,,,fashion,,,,general,Greek WordNet
+1019669,ταχυδρομείο δια ξηράς ή θαλάσσης,phrase,noun,1,313203,,,,,,oceanography,,,,general,Greek WordNet
+1022516,τελευταία λέξη της μόδας,idiom,noun,1,313256,,,,,Idiom,,idiom,,,general,Lex Hopper
+1019719,τελευταίο σκαλί στη κορυφή,phrase,noun,1,313258,,,,,,,,,,general,Greek WordNet
+1019798,τεχνική εξομοίωσης σε υπολογιστή,phrase,noun,1,313353,,,,,,computing,,,,general,Greek WordNet
+1019916,τμήμα Αγγλικής Γλώσσας και Φιλολογίας,phrase,noun,1,313523,,,,,,education,,,,general,Greek WordNet
+1019921,τμήμα Ηλεκτρονικών Υπολογιστών και Πληροφορικής,phrase,noun,1,313527,,,,,,education,,,,general,Greek WordNet
+1022570,το έξυπνο πουλί από τη μύτη πιάνεται,proverb,noun,1,313544,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022594,το αίμα νερό δεν γίνεται,proverb,noun,1,313546,,,,,Proverb,,proverb,,,general,Lex Hopper
+1019938,το βάζω στα πόδια,phrase,verb,1,292457,"βάζω τα πόδια στον ώμο,στην πλάτη,δειλιάζω,λιποψυχώ",,,,,,,,,general,Greek WordNet
+1019942,το θέμα της ημέρας,phrase,noun,1,313550,,,,,,,,,,general,Greek WordNet
+1022568,το καλό πράγμα αργεί να γίνει,proverb,noun,1,313551,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022548,το μήλο κάτω από τη μηλιά θα πέσει,proverb,noun,1,313553,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022601,το πολύ το Κύριε ελέησον το βαριέται κι ο Θεός,proverb,noun,1,313555,,,,,Proverb,,proverb,,,general,Lex Hopper
+1020015,τοποθετώ σε νέα γλάστρα,phrase,verb,1,304556,μεταφυτεύω,,,,,,,,,general,Greek WordNet
+1022451,τραβάω τα μαλλιά μου,idiom,verb,1,313734,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022454,τρώω τα λυσσακά μου,idiom,verb,1,289908,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022455,τρώω τα νύχια μου,idiom,verb,1,313981,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022541,των φρονίμων τα παιδιά πριν πεινάσουν μαγειρεύουν,proverb,noun,1,314150,,,,,Proverb,,proverb,,,general,Lex Hopper
+1019993,τόξο με λοξούς παραστάτες,phrase,noun,1,314168,,,,,,mathematics,,,,general,Greek WordNet
+1020427,υβρίδιο αρσενικού τίγρη με λέαινα,phrase,noun,1,314197,,,,,,,,,,general,Greek WordNet
+1020455,υδατοειδές υγρό του οφθαλμού,phrase,noun,1,314233,,,,,,photography,,,,general,Greek WordNet
+1020694,υπόλειμμα δέντρου μετά το κόψιμο,phrase,noun,1,302128,κορμός,,,,,botany,,,,general,Greek WordNet
+1020735,υπόσχεση γάμου με λόγο,phrase,noun,1,314662,,,,,,,,,,general,Greek WordNet
+1020967,φέρνω σε δύσκολη θέση,phrase,verb,1,305991,"ντροπιάζω,προσβάλλω",,,,,,,,,general,Greek WordNet
+1022457,φέρνω στα νερά μου,idiom,verb,1,314725,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022581,φασούλι το φασούλι γεμίζει το σακούλι,proverb,noun,1,314839,,,,,Proverb,,proverb,,,general,Lex Hopper
+1021088,φλέβα της ουροδόχου κύστης,phrase,noun,1,314996,,,,,,anatomy,,,,general,Greek WordNet
+1021089,φλέβα της περιοχής του ιερού οστού,phrase,noun,1,314997,,,,,,anatomy,,,,general,Greek WordNet
+1021090,φλέβα της σπονδυλικής στήλης,phrase,noun,1,314998,,,,,,anatomy,,,,general,Greek WordNet
+1021091,φλέβα του βαλάνου του πέους,phrase,noun,1,314999,,,,,,anatomy,,,,general,Greek WordNet
+1021098,φλέβες του σκληρού χιτώνα του ματιού,phrase,noun,1,315003,,,,,,anatomy,,,,general,Greek WordNet
+1021143,φοίνικας σαν ουρά ψαριού,phrase,noun,1,315043,,,,,,botany,,,,general,Greek WordNet
+1021229,φράγκο της Ακτής Ελεφαντοστού,phrase,noun,1,315143,,,,,,finance,,,,general,Greek WordNet
+1021281,φρούτο που μοιάζει με ψωμί,phrase,noun,1,315198,,,,,,culinary,,,,general,Greek WordNet
+1022458,φτάνει ο κόμπος στο χτένι,idiom,verb,1,315208,,,,,Idiom,,idiom,,,general,Lex Hopper
+1021450,φυτό γκίγκο η δίλοβος,phrase,noun,1,315339,,,,,,botany,,,,general,Greek WordNet
+1022517,φωνή βοώντος εν τη ερήμω,idiom,noun,1,315350,,,,,Idiom,,idiom,,,general,Lex Hopper
+1021505,φωτογραφική μηχανή με φλας,phrase,noun,1,315396,,,,,,photography,,,,general,Greek WordNet
+1021509,φωτογραφικό φιλμ σε ρολό,phrase,noun,1,315399,,,,,,theatre_film,,,,general,Greek WordNet
+1021339,φύλακας υποθηκών και αρχείου,phrase,noun,1,303270,"ληξίαρχος,υπεύθυνος τήρησης μητρώων",,,,,business,,,,general,Greek WordNet
+1022460,χάνω τα αυγά και τα καλάθια,idiom,verb,1,315476,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022461,χάνω τη γη κάτω από τα πόδια μου,idiom,verb,1,315478,,,,,Idiom,,idiom,,,general,Lex Hopper
+1021822,χορευτής αγγλικού λαϊκού χορού,phrase,noun,1,315831,,,,,,,,,,general,Greek WordNet
+1021848,χορός με έμφαση στα βήματα,phrase,noun,1,315864,,,,,,,,,,general,Greek WordNet
+1021849,χορός σε κοινωνική εκδήλωση,phrase,noun,1,315865,,,,,,sociology,,,,general,Greek WordNet
+1022466,χώνω τη μύτη μου,idiom,verb,1,316098,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022078,ψάθινο ή υφασμάτινο κάλυμμα,phrase,noun,1,311363,σουπλά,,,,,,,,,general,Greek WordNet
+1022467,ψάχνω ψύλλους στ' άχυρα,idiom,verb,1,316128,,,,,Idiom,,idiom,,,general,Lex Hopper
+1022160,ψίχα φυτού ή καρπού,phrase,noun,1,316141,,,,,,botany,,,,general,Greek WordNet
+1022224,ωθώ προς τα επάνω,phrase,verb,1,316317,,,,,,,,,,general,Greek WordNet
+1022582,"ό,τι δεν φτάνει η αλεπού το κάνει κρεμαστάρια",proverb,noun,1,316370,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022535,"ό,τι λάμπει δεν είναι χρυσός",proverb,noun,1,316372,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022564,όποιος έχει τα γένια έχει και τα χτένια,proverb,noun,1,316408,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022598,όποιος έχει τη μύγα μυγιάζεται,proverb,noun,1,316410,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022573,όποιος ανακατεύεται με τα πίτουρα τον τρώνε οι κότες,proverb,noun,1,316412,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022565,όποιος δεν θέλει να ζυμώσει δέκα μέρες κοσκινίζει,proverb,noun,1,316416,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022549,όποιος σκάβει τον λάκκο του αλλουνού πέφτει ο ίδιος μέσα,proverb,noun,1,316418,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022550,όπου ακούς πολλά κεράσια κράτα και μικρό καλάθι,proverb,noun,1,316420,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022542,όπου λαλούν πολλοί κοκόροι αργεί να ξημερώσει,proverb,noun,1,316422,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022569,όπου υπάρχει θέληση υπάρχει και τρόπος,proverb,noun,1,316424,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022577,όπου φτωχός κι η μοίρα του,proverb,noun,1,316426,,,,,Proverb,,proverb,,,general,Lex Hopper
+1022606,όταν λείπει η γάτα χορεύουν τα ποντίκια,proverb,noun,1,316483,,,,,Proverb,,proverb,,,general,Lex Hopper

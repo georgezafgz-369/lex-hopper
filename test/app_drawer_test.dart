@@ -1,0 +1,106 @@
+// The ☰ button on the home page opens the side menu, whose items open
+// their pages.
+
+import 'package:flutter_test/flutter_test.dart';
+import 'package:lex_hopper/app_settings.dart';
+import 'package:lex_hopper/home_page.dart';
+import 'package:material_ui/material_ui.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+void main() {
+  setUp(() async {
+    SharedPreferences.setMockInitialValues({});
+    await AppSettings.instance.load();
+  });
+
+  Widget app() => MaterialApp(
+    routes: {
+      '/': (_) => const HomePage(),
+      '/crossword': (_) => const Scaffold(body: Text('crossword menu')),
+      '/word-search': (_) => const Scaffold(body: Text('word search menu')),
+      '/dictionary': (_) => const Scaffold(body: Text('dictionary page')),
+      '/settings': (_) => const Scaffold(body: Text('settings page')),
+    },
+  );
+
+  Future<void> openMenu(WidgetTester tester) async {
+    await tester.tap(find.byKey(const Key('menu-button')));
+    await tester.pumpAndSettle();
+  }
+
+  testWidgets('the menu button sits left of the search bar', (tester) async {
+    await tester.pumpWidget(app());
+    final menu = tester.getCenter(find.byKey(const Key('menu-button')));
+    final search = tester.getCenter(find.byKey(const Key('home-search')));
+    expect(menu.dx, lessThan(search.dx));
+  });
+
+  testWidgets('it opens the drawer with every item', (tester) async {
+    await tester.pumpWidget(app());
+    await openMenu(tester);
+    final drawer = find.byKey(const Key('app-drawer'));
+    expect(drawer, findsOneWidget);
+    for (final label in [
+      'Home',
+      'GAMES',
+      'Crossword',
+      'Find the Words',
+      'Riddles',
+      'Dictionary',
+      'Settings',
+      'Language',
+    ]) {
+      expect(
+        find.descendant(of: drawer, matching: find.text(label)),
+        findsOneWidget,
+        reason: label,
+      );
+    }
+  });
+
+  for (final (label, page) in [
+    ('Crossword', 'crossword menu'),
+    ('Find the Words', 'word search menu'),
+    ('Dictionary', 'dictionary page'),
+    ('Settings', 'settings page'),
+  ]) {
+    testWidgets('$label opens its page and closes the drawer', (tester) async {
+      await tester.pumpWidget(app());
+      await openMenu(tester);
+      await tester.tap(
+        find.descendant(
+          of: find.byKey(const Key('app-drawer')),
+          matching: find.text(label),
+        ),
+      );
+      await tester.pumpAndSettle();
+      expect(find.text(page), findsOneWidget);
+      expect(find.byKey(const Key('app-drawer')), findsNothing);
+    });
+  }
+
+  testWidgets('Home and Riddles just close the drawer / do nothing', (
+    tester,
+  ) async {
+    await tester.pumpWidget(app());
+    await openMenu(tester);
+    await tester.tap(find.text('Riddles'));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('app-drawer')), findsOneWidget); // still open
+
+    await tester.tap(find.text('Home'));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('app-drawer')), findsNothing);
+    expect(find.byType(HomePage), findsOneWidget);
+  });
+
+  testWidgets('Language opens the language list', (tester) async {
+    await tester.binding.setSurfaceSize(const Size(400, 900));
+    await tester.pumpWidget(app());
+    await openMenu(tester);
+    await tester.tap(find.text('Language'));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('app-drawer')), findsNothing);
+    expect(find.byKey(const Key('language-el')), findsOneWidget);
+  });
+}

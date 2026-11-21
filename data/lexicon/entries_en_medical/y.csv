@@ -1,0 +1,189 @@
+id,word,type,pos,sense,meaning_id,synonyms,antonyms,related,origin,category,subject,usage,structure,code,domain,source
+438693,y,word,noun,,285133,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438694,y 90 anti-cea monoclonal antibody,phrase,noun,,285135,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438695,y 90 moab hmfg1,phrase,noun,,285136,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438696,y 90 moab ll2,phrase,noun,,285137,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438697,y 90 moab m170,phrase,noun,,285138,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438698,y 90 moab m195,phrase,noun,,285139,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438699,y 90 moab mn-14,phrase,noun,,285140,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438700,y 90 monoclonal antibody cc49,phrase,noun,,285141,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438701,y 90 monoclonal antibody hmfg1,phrase,noun,,285136,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438702,y 90 monoclonal antibody m170,phrase,noun,,285138,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438703,y 90 monoclonal antibody m195,phrase,noun,,285139,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438704,"y anomaly in low reproductive females, cattle",phrase,noun,,285142,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438705,y bone,phrase,noun,,285143,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438706,y chromosome-bearing sperm cell,phrase,noun,,285146,,,,,Cell type,biology,,,,medical,Cell Ontology
+438707,y-axis voxel dimension,phrase,noun,,285148,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+216835,y-coordinate,word,noun,,285149,,,,,,medicine,,,,medical,NCI Thesaurus
+216836,y-dimension,word,noun,,285150,,,,,,medicine,,,,medical,NCI Thesaurus
+216837,y-ion,word,noun,,285151,,,,,,medicine,,,,medical,NCI Thesaurus
+216838,y-linked,word,noun,,285152,,,,,,pharmacology,,,,medical,Human Phenotype Ontology (synonym of 'Y-linked inheritance')
+438708,y-linked deafness,phrase,noun,,90070,,,,,Disease,medicine,,,,medical,Disease Ontology
+438709,y-linked deafness 1,phrase,noun,,90071,,,,,Disease,medicine,,,,medical,Disease Ontology
+438710,y-linked deafness 2,phrase,noun,,90072,,,,,Disease,medicine,,,,medical,Disease Ontology
+438711,y-linked disease,phrase,noun,,285153,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438712,y-linked inheritance,phrase,noun,,285152,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438713,y-linked monogenic disease,phrase,noun,,285154,,,,,Disease,medicine,,,,medical,Disease Ontology
+438714,y-linked spermatogenic failure 1,phrase,noun,,251285,,,,,Disease,medicine,,,,medical,Disease Ontology
+438715,y-linked spermatogenic failure 2,phrase,noun,,251286,,,,,Disease,medicine,,,,medical,Disease Ontology
+438716,y-shaped fibrocartilage skeleton of ventral pouch,phrase,noun,,285156,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438717,y-shaped metacarpals,phrase,noun,,285157,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438718,y-shaped metatarsals,phrase,noun,,285158,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+216839,y-stage,word,noun,,285159,,,,,,medicine,,,,medical,NCI Thesaurus
+438719,y/o,word,noun,,285160,,,,,Abbreviation - documentation,medicine,abbreviation,,,medical,Curated
+438720,y593-phosphorylated ddx5,phrase,noun,,223875,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438721,y90-b3,word,noun,,285161,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+216840,yaba,word,noun,,78477,,,,,,pharmacology,,simple,,medical,Disease Ontology (synonym of 'cowpox')
+451043,yaba pox virus disease,phrase,noun,,44807,,,,,Diagnosis,medicine,,,ICD-10 B08.72,medical,ICD-10 (WHO 2019)
+438722,yag laser posterior capsulotomy,phrase,noun,,285165,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+438723,yale cancer center,phrase,noun,,285180,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438724,yang yin fu zheng,phrase,noun,,285195,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216841,yang-yin-fang,word,noun,,285196,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Yang Yin Fang')
+216842,yao,word,noun,,285199,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Yao Language')
+438725,yao syndrome,phrase,noun,,285200,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438726,yaos,word,noun,,285200,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438727,yap/tead interaction inhibitor iag933,phrase,noun,,285203,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438728,yap1-mamld1 fusion-positive supratentorial ependymoma,phrase,noun,,285204,,,,,Disease,medicine,,,,medical,Disease Ontology
+438729,yap1-mamld1 fusion-positive supratentorial ependymoma,phrase,noun,,285205,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216843,yapese,word,noun,,285206,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216844,yapese,word,noun,,285207,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Yapese Language')
+216845,yard,word,noun,,285208,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438730,yard unit of distance,phrase,noun,,285219,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+216846,yardwork,word,noun,,285231,,,,,,pharmacology,,compound,,medical,NCI Thesaurus (synonym of 'Yard Work')
+216847,yarrowia,word,noun,,174321,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216848,yarsopathy,word,noun,,285235,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216849,yasmin,word,noun,,285237,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Drospirenone/Ethinyl Estradiol')
+451041,"yatapoxvirus infection, unspecified",phrase,noun,,44807,,,,,Diagnosis,medicine,,,ICD-10 B08.70,medical,ICD-10 (WHO 2019)
+451040,yatapoxvirus infections,phrase,noun,,44807,,,,,Diagnosis,medicine,,,ICD-10 B08.7,medical,ICD-10 (WHO 2019)
+216850,yawning,word,noun,,285254,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216851,yaws,word,noun,,44593,,,,,,medicine,,simple,ICD-10 A66,medical,Disease Ontology
+216852,yaws,word,noun,,44594,,,,,,medicine,,simple,ICD-10 A66,medical,MONDO (diseases)
+450790,yaws,word,noun,,25043,,,,,Diagnosis,medicine,,simple,ICD-10 A66,medical,ICD-10 (WHO 2019)
+439398,"yaws, unspecified",phrase,noun,,43485,,,,,Diagnosis,medicine,,,ICD-10 A66.9,medical,ICD-10 (WHO 2019)
+450800,"yaws, unspecified",phrase,noun,,25043,,,,,Diagnosis,medicine,,,ICD-10 A66.9,medical,ICD-10 (WHO 2019)
+216853,yaz,word,noun,,285237,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Drospirenone/Ethinyl Estradiol')
+216854,yci,word,noun,,285261,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Yoctocurie')
+216855,yd,word,noun,,285208,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Yard')
+438731,ye-neo-001,word,noun,,210201,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+216856,year,word,noun,,18581,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438732,year at disease phase,phrase,noun,,285270,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438733,year of initial cancer diagnosis,phrase,noun,,285274,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216857,yearly,word,noun,,285287,,,,,,pharmacology,,derived,,medical,NCI Thesaurus (synonym of 'Per Year')
+216858,years,word,noun,,18581,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Year')
+216859,yeast,word,noun,,285289,,,,,,medicine,,simple,,medical,Medical Action Ontology
+216860,yeast,word,noun,,285290,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438734,yeast material,phrase,noun,,285293,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+438735,yeast-derived beta-glucan supplement,phrase,noun,,285294,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438736,yeats domain,phrase,noun,,285297,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+216861,yeliva,word,noun,,199154,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Opaganib')
+216862,yellow,word,noun,,285304,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438737,yellow bone marrow,phrase,noun,,285308,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438738,yellow fever,phrase,noun,,285311,,,,,Disease,medicine,,,ICD-10 A95,medical,Disease Ontology
+438739,yellow fever,phrase,noun,,285312,,,,,Disease,medicine,,,ICD-10 A95,medical,MONDO (diseases)
+450931,yellow fever,phrase,noun,,23840,,,,,Diagnosis,medicine,,,ICD-10 A95,medical,ICD-10 (WHO 2019)
+438740,yellow fever virus infection,phrase,noun,,285313,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+439487,"yellow fever, unspecified",phrase,noun,,23839,,,,,Diagnosis,medicine,,,ICD-10 A95.9,medical,ICD-10 (WHO 2019)
+450934,"yellow fever, unspecified",phrase,noun,,23840,,,,,Diagnosis,medicine,,,ICD-10 A95.9,medical,ICD-10 (WHO 2019)
+438741,yellow fibrocartilage,phrase,noun,,285314,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438742,yellow nail syndrome,phrase,noun,,285318,,,,,Disease,medicine,,,ICD-10 L60.5,medical,Disease Ontology
+438743,yellow nail syndrome,phrase,noun,,285319,,,,,Disease,medicine,,,ICD-10 L60.5,medical,MONDO (diseases)
+438744,yellow nail syndrome,phrase,noun,,285320,,,,,Disease,medicine,,,ICD-10 L60.5,medical,NCI Thesaurus
+464386,yellow nail syndrome,phrase,noun,,6054,,,,,Diagnosis,medicine,,,ICD-10 L60.5,medical,ICD-10 (WHO 2019)
+438745,yellow nails,phrase,noun,,285321,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438746,yellow nodule,phrase,noun,,285322,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438747,yellow papule,phrase,noun,,285325,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438748,yellow skin plaque,phrase,noun,,285329,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438749,yellow/white macular lesion,phrase,noun,,285349,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438750,yellow/white retinal lesion,phrase,noun,,285350,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+216863,yemen,word,noun,,285361,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216864,yemeni,word,noun,,285364,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216865,yersinia,word,noun,,79959,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216866,yersinia,word,noun,,285375,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Yersinia Measurement')
+438751,yersinia infectious disease,phrase,noun,,285376,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438752,yersinia pseudotuberculosis infectious disease,phrase,noun,,222322,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216867,yersiniosis,word,noun,,285376,,,,,,pharmacology,,simple,,medical,MONDO (diseases) (synonym of 'Yersinia infectious disease')
+216868,yersiniosis,word,noun,,285378,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438753,"yersiniosis, non-human animal",phrase,noun,,285379,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216869,yervoy,word,noun,,158087,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ipilimumab')
+216870,yes,word,noun,,285382,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216871,yescarta,word,noun,,30747,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Axicabtagene Ciloleucel')
+438754,yf,word,noun,,285312,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+216872,yf-vax,word,noun,,285402,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Yellow Fever Vaccine')
+216873,yg,word,noun,,285403,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Yoctogram')
+216874,ygalo,word,noun,,179731,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Melphalan Flufenamide')
+216875,yi-qi-fang,word,noun,,285405,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Yi Qi Fang')
+216876,yiddish,word,noun,,285407,,,,Hebrew,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Yiddish Language')
+216877,yiqifang,word,noun,,285405,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Yi Qi Fang')
+216878,yiqiyangyinfang,word,noun,,285422,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Yi Qi Yang Yin Fang')
+216879,ym,word,noun,,285424,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Yoctometer')
+216880,ymol,word,noun,,285426,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Yoctomole')
+438755,ymrs - language-thought disorder,phrase,noun,,285427,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438756,yns,word,noun,,285319,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438757,yobeln,word,noun,,285429,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+216881,yocto,word,noun,,285430,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216882,yoctocurie,word,noun,,285261,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216883,yoctogram,word,noun,,285403,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216884,yoctometer,word,noun,,285424,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216885,yoctomole,word,noun,,285426,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438758,yoga therapy,phrase,noun,,285437,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+216886,yoke,word,noun,,285443,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Yoke Device')
+216887,yokenella,word,noun,,285457,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216888,yolk,word,noun,,285460,,,,,,anatomy,,simple,,medical,Uberon (anatomy)
+438759,yolk sac,phrase,noun,,285461,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438760,yolk sac adenoma,phrase,noun,,285463,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438761,yolk sac blood island,phrase,noun,,285464,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438762,yolk sac cavity,phrase,noun,,285465,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438763,yolk sac endoderm,phrase,noun,,285466,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438764,yolk sac hematopoietic stem cell,phrase,noun,,285467,,,,,Cell type,biology,,,,medical,Cell Ontology
+438765,yolk sac tumor,phrase,noun,,285468,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438766,yolk sac tumor of central nervous system,phrase,noun,,285469,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438767,yolk sac tumor with somatic-type malignancy,phrase,noun,,285470,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438768,yolk syncytial layer,phrase,noun,,209150,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+216889,yondelis,word,noun,,100447,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Trabectedin')
+216890,yondelis-doxorubicin,word,noun,,96606,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Doxorubicin/Trabectedin Regimen')
+216891,yonsa,word,noun,,285478,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Abiraterone Acetate')
+216892,yonsa-lynparza-methylprednisolone,word,noun,,1455,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Abiraterone/Niraparib/Methylprednisolone Regimen')
+438769,yoon-bellen neurodevelopmental syndrome,phrase,noun,,285429,,,,,Disease,medicine,,,,medical,Disease Ontology
+438770,yopd,word,noun,,285479,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+216893,yorkie,word,noun,,285481,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Yorkshire Terrier')
+216894,yoruba,word,noun,,285486,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Yoruba Language')
+216895,yotta,word,noun,,285133,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438771,young adult onset,phrase,noun,,285513,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438772,young autologous tumor-infiltrating lymphocytes,phrase,noun,,285516,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438773,young syndrome,phrase,noun,,285521,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438774,young-onset parkinson disease,phrase,noun,,285479,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216896,youngest,word,adj,,285526,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216897,youth,word,noun,,285536,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216898,yp,word,noun,,285545,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216899,ypeg-filgrastim,word,noun,,285546,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Y-shape Branched Pegylated Filgrastim')
+216900,ypeg-rhg-csf,word,noun,,285546,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Y-shape Branched Pegylated Filgrastim')
+438775,ypsiloid cartilage,phrase,noun,,285547,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438776,ypt0n0,word,noun,,285548,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438777,ypt0n0m0,word,noun,,285548,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216901,yq,word,noun,,285549,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438778,yq1,word,noun,,62505,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438779,ysfs,word,noun,,285156,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Uberon (anatomy)
+438780,ysl,word,noun,,209150,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Uberon (anatomy)
+216902,yttrium,word,noun,,285551,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438781,yttrium 90 monoclonal antibody t101,phrase,noun,,184672,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438782,yttrium y 90 colloid,phrase,noun,,285552,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438783,yttrium y 90 daclizumab,phrase,noun,,285553,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438784,yttrium y 90 glass microspheres,phrase,noun,,264007,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438785,yttrium y 90 monoclonal antibody b3,phrase,noun,,285161,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438786,yttrium y 90 monoclonal antibody bre-3,phrase,noun,,285554,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438787,yttrium y 90 monoclonal antibody hu3s193,phrase,noun,,285555,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438788,yttrium y 90 monoclonal antibody mn-14,phrase,noun,,285140,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438789,yttrium y 90 resin microspheres,phrase,noun,,246381,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438790,yttrium y-90 clivatuzumab tetraxetan,phrase,noun,,707,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438791,yttrium y-90 epratuzumab tetraxetan,phrase,noun,,285137,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438792,yttrium y-90 ibritumomab tiuxetan,phrase,noun,,148436,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438793,yttrium-90 brachytherapy,phrase,noun,,285556,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+438794,yttrium-90 microsphere radioembolization,phrase,noun,,285557,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438795,yttrium-90 polycarbonate brachytherapy plaque,phrase,noun,,285558,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438796,yu-kury neurodevelopmental syndrome,phrase,noun,,285559,,,,,Disease,medicine,,,,medical,Disease Ontology
+216903,yucatan,word,noun,,285560,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Yucatan Pig')
+216904,yukon,word,noun,,285572,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438797,yunis-varon syndrome,phrase,noun,,285582,,,,,Disease,medicine,,,,medical,Disease Ontology
+438798,yunis-varon syndrome,phrase,noun,,285583,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216905,yutopar,word,noun,,217780,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ritodrine Hydrochloride')
+438799,ywhae-fam22 ess,phrase,noun,,277305,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus

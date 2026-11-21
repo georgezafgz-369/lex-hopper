@@ -1,0 +1,887 @@
+{
+  "partOfSpeech": [
+    "noun",
+    "verb",
+    "adj",
+    "adv",
+    "pron",
+    "prep",
+    "conj",
+    "interj",
+    "det"
+  ],
+  "subjectGroups": [
+    {
+      "id": "law_government",
+      "names": {
+        "en": "Law, Government & Institutions",
+        "el": "Δίκαιο, Πολιτεία & Θεσμοί"
+      },
+      "subjects": [
+        {
+          "id": "law",
+          "names": {
+            "en": "Law / Legal",
+            "el": "Δίκαιο / Νομικά"
+          },
+          "count": 3416
+        },
+        {
+          "id": "politics",
+          "names": {
+            "en": "Politics & Government",
+            "el": "Πολιτική & Διακυβέρνηση"
+          },
+          "count": 3706
+        },
+        {
+          "id": "military",
+          "names": {
+            "en": "Military & Army",
+            "el": "Στρατός & Ένοπλες Δυνάμεις"
+          },
+          "count": 4123
+        },
+        {
+          "id": "police",
+          "names": {
+            "en": "Police & Security",
+            "el": "Αστυνομία & Ασφάλεια"
+          },
+          "count": 811
+        },
+        {
+          "id": "diplomacy",
+          "names": {
+            "en": "Diplomacy & International Relations",
+            "el": "Διπλωματία & Διεθνείς Σχέσεις"
+          },
+          "count": 359
+        },
+        {
+          "id": "education",
+          "names": {
+            "en": "Education & Academia",
+            "el": "Εκπαίδευση & Ακαδημία"
+          },
+          "count": 1777
+        },
+        {
+          "id": "religion",
+          "names": {
+            "en": "Religion & Theology",
+            "el": "Θρησκεία & Θεολογία"
+          },
+          "count": 4988
+        }
+      ]
+    },
+    {
+      "id": "business_economy",
+      "names": {
+        "en": "Business & Economy",
+        "el": "Επιχειρήσεις & Οικονομία"
+      },
+      "subjects": [
+        {
+          "id": "business",
+          "names": {
+            "en": "Business & Commerce",
+            "el": "Επιχειρήσεις & Εμπόριο"
+          },
+          "count": 3215
+        },
+        {
+          "id": "finance",
+          "names": {
+            "en": "Finance & Banking",
+            "el": "Χρηματοοικονομικά & Τράπεζες"
+          },
+          "count": 2956
+        },
+        {
+          "id": "accounting",
+          "names": {
+            "en": "Accounting & Taxation",
+            "el": "Λογιστική & Φορολογία"
+          },
+          "count": 527
+        },
+        {
+          "id": "economics",
+          "names": {
+            "en": "Economics",
+            "el": "Οικονομικά"
+          },
+          "count": 1603
+        },
+        {
+          "id": "stock_market",
+          "names": {
+            "en": "Stock Market & Investing",
+            "el": "Χρηματιστήριο & Επενδύσεις"
+          },
+          "count": 507
+        },
+        {
+          "id": "insurance",
+          "names": {
+            "en": "Insurance",
+            "el": "Ασφαλίσεις"
+          },
+          "count": 114
+        },
+        {
+          "id": "real_estate",
+          "names": {
+            "en": "Real Estate",
+            "el": "Ακίνητα"
+          },
+          "count": 187
+        },
+        {
+          "id": "marketing",
+          "names": {
+            "en": "Marketing & Advertising",
+            "el": "Μάρκετινγκ & Διαφήμιση"
+          },
+          "count": 435
+        },
+        {
+          "id": "management",
+          "names": {
+            "en": "Management & Human Resources",
+            "el": "Διοίκηση & Ανθρώπινο Δυναμικό"
+          },
+          "count": 666
+        }
+      ]
+    },
+    {
+      "id": "food_farming",
+      "names": {
+        "en": "Food, Hospitality & Farming",
+        "el": "Διατροφή, Φιλοξενία & Γεωργία"
+      },
+      "subjects": [
+        {
+          "id": "culinary",
+          "names": {
+            "en": "Culinary & Cooking",
+            "el": "Μαγειρική"
+          },
+          "count": 2493
+        },
+        {
+          "id": "baking",
+          "names": {
+            "en": "Baking & Pastry",
+            "el": "Αρτοποιία & Ζαχαροπλαστική"
+          },
+          "count": 574
+        },
+        {
+          "id": "nutrition",
+          "names": {
+            "en": "Food & Nutrition",
+            "el": "Τρόφιμα & Διατροφή"
+          },
+          "count": 3043
+        },
+        {
+          "id": "wine",
+          "names": {
+            "en": "Wine & Viticulture",
+            "el": "Κρασί & Αμπελουργία"
+          },
+          "count": 394
+        },
+        {
+          "id": "drinks",
+          "names": {
+            "en": "Drinks (Beer, Spirits, Coffee, Tea)",
+            "el": "Ποτά (Μπίρα, Οινοπνευματώδη, Καφές, Τσάι)"
+          },
+          "count": 975
+        },
+        {
+          "id": "hospitality",
+          "names": {
+            "en": "Restaurant & Hospitality",
+            "el": "Εστίαση & Φιλοξενία"
+          },
+          "count": 185
+        },
+        {
+          "id": "agriculture",
+          "names": {
+            "en": "Agriculture & Farming",
+            "el": "Γεωργία & Καλλιέργειες"
+          },
+          "count": 1584
+        },
+        {
+          "id": "gardening",
+          "names": {
+            "en": "Horticulture & Gardening",
+            "el": "Κηπουρική & Φυτοκομία"
+          },
+          "count": 380
+        },
+        {
+          "id": "forestry",
+          "names": {
+            "en": "Forestry",
+            "el": "Δασοκομία"
+          },
+          "count": 558
+        },
+        {
+          "id": "animal_husbandry",
+          "names": {
+            "en": "Animal Husbandry",
+            "el": "Κτηνοτροφία"
+          },
+          "count": 1310
+        },
+        {
+          "id": "fishing",
+          "names": {
+            "en": "Fishing & Aquaculture",
+            "el": "Αλιεία & Υδατοκαλλιέργειες"
+          },
+          "count": 175
+        }
+      ]
+    },
+    {
+      "id": "natural_sciences",
+      "names": {
+        "en": "Natural Sciences",
+        "el": "Φυσικές Επιστήμες"
+      },
+      "subjects": [
+        {
+          "id": "physics",
+          "names": {
+            "en": "Physics",
+            "el": "Φυσική"
+          },
+          "count": 2241
+        },
+        {
+          "id": "chemistry",
+          "names": {
+            "en": "Chemistry",
+            "el": "Χημεία"
+          },
+          "count": 3107
+        },
+        {
+          "id": "biology",
+          "names": {
+            "en": "Biology (incl. Genetics & Microbiology)",
+            "el": "Βιολογία (με Γενετική & Μικροβιολογία)"
+          },
+          "count": 6310
+        },
+        {
+          "id": "botany",
+          "names": {
+            "en": "Botany",
+            "el": "Βοτανική"
+          },
+          "count": 17640
+        },
+        {
+          "id": "zoology",
+          "names": {
+            "en": "Zoology",
+            "el": "Ζωολογία"
+          },
+          "count": 7716
+        },
+        {
+          "id": "ecology",
+          "names": {
+            "en": "Ecology & Environment",
+            "el": "Οικολογία & Περιβάλλον"
+          },
+          "count": 338
+        },
+        {
+          "id": "geology",
+          "names": {
+            "en": "Geology & Mineralogy",
+            "el": "Γεωλογία & Ορυκτολογία"
+          },
+          "count": 1358
+        },
+        {
+          "id": "meteorology",
+          "names": {
+            "en": "Meteorology & Climate",
+            "el": "Μετεωρολογία & Κλίμα"
+          },
+          "count": 1725
+        },
+        {
+          "id": "astronomy",
+          "names": {
+            "en": "Astronomy & Space",
+            "el": "Αστρονομία & Διάστημα"
+          },
+          "count": 1335
+        },
+        {
+          "id": "oceanography",
+          "names": {
+            "en": "Oceanography",
+            "el": "Ωκεανογραφία"
+          },
+          "count": 1375
+        }
+      ]
+    },
+    {
+      "id": "maths_technology",
+      "names": {
+        "en": "Mathematics & Technology",
+        "el": "Μαθηματικά & Τεχνολογία"
+      },
+      "subjects": [
+        {
+          "id": "mathematics",
+          "names": {
+            "en": "Mathematics",
+            "el": "Μαθηματικά"
+          },
+          "count": 1492
+        },
+        {
+          "id": "statistics",
+          "names": {
+            "en": "Statistics",
+            "el": "Στατιστική"
+          },
+          "count": 284
+        },
+        {
+          "id": "computing",
+          "names": {
+            "en": "Computing & Programming",
+            "el": "Πληροφορική & Προγραμματισμός"
+          },
+          "count": 991
+        },
+        {
+          "id": "internet",
+          "names": {
+            "en": "Internet & Social Media",
+            "el": "Διαδίκτυο & Μέσα Κοινωνικής Δικτύωσης"
+          },
+          "count": 196
+        },
+        {
+          "id": "ai_data",
+          "names": {
+            "en": "AI & Data Science",
+            "el": "Τεχνητή Νοημοσύνη & Επιστήμη Δεδομένων"
+          },
+          "count": 27
+        },
+        {
+          "id": "electronics",
+          "names": {
+            "en": "Electronics",
+            "el": "Ηλεκτρονική"
+          },
+          "count": 963
+        },
+        {
+          "id": "telecommunications",
+          "names": {
+            "en": "Telecommunications",
+            "el": "Τηλεπικοινωνίες"
+          },
+          "count": 723
+        },
+        {
+          "id": "engineering",
+          "names": {
+            "en": "Engineering (General & Mechanical)",
+            "el": "Μηχανική (Γενική & Μηχανολογία)"
+          },
+          "count": 1077
+        },
+        {
+          "id": "construction",
+          "names": {
+            "en": "Construction & Civil Engineering",
+            "el": "Κατασκευές & Πολιτική Μηχανική"
+          },
+          "count": 1373
+        },
+        {
+          "id": "energy",
+          "names": {
+            "en": "Energy & Utilities",
+            "el": "Ενέργεια & Δίκτυα Κοινής Ωφέλειας"
+          },
+          "count": 378
+        }
+      ]
+    },
+    {
+      "id": "transport",
+      "names": {
+        "en": "Transport",
+        "el": "Μεταφορές"
+      },
+      "subjects": [
+        {
+          "id": "automotive",
+          "names": {
+            "en": "Automotive",
+            "el": "Αυτοκίνητο"
+          },
+          "count": 1694
+        },
+        {
+          "id": "aviation",
+          "names": {
+            "en": "Aviation",
+            "el": "Αεροπορία"
+          },
+          "count": 856
+        },
+        {
+          "id": "maritime",
+          "names": {
+            "en": "Maritime & Nautical",
+            "el": "Ναυτιλία"
+          },
+          "count": 1821
+        },
+        {
+          "id": "railways",
+          "names": {
+            "en": "Railways & Public Transport",
+            "el": "Σιδηρόδρομοι & Συγκοινωνίες"
+          },
+          "count": 411
+        }
+      ]
+    },
+    {
+      "id": "health_medicine",
+      "names": {
+        "en": "Health & Medicine",
+        "el": "Υγεία & Ιατρική"
+      },
+      "subjects": [
+        {
+          "id": "medicine",
+          "names": {
+            "en": "Medicine (Clinical)",
+            "el": "Ιατρική (Κλινική)"
+          },
+          "count": 162862
+        },
+        {
+          "id": "anatomy",
+          "names": {
+            "en": "Anatomy & Physiology",
+            "el": "Ανατομία & Φυσιολογία"
+          },
+          "count": 21682
+        },
+        {
+          "id": "pharmacology",
+          "names": {
+            "en": "Pharmacology",
+            "el": "Φαρμακολογία"
+          },
+          "count": 26445
+        },
+        {
+          "id": "dentistry",
+          "names": {
+            "en": "Dentistry",
+            "el": "Οδοντιατρική"
+          },
+          "count": 356
+        },
+        {
+          "id": "veterinary",
+          "names": {
+            "en": "Veterinary Medicine",
+            "el": "Κτηνιατρική"
+          },
+          "count": 6
+        },
+        {
+          "id": "psychology",
+          "names": {
+            "en": "Psychology & Psychiatry",
+            "el": "Ψυχολογία & Ψυχιατρική"
+          },
+          "count": 2875
+        },
+        {
+          "id": "public_health",
+          "names": {
+            "en": "Nursing & Public Health",
+            "el": "Νοσηλευτική & Δημόσια Υγεία"
+          },
+          "count": 119
+        },
+        {
+          "id": "sports_medicine",
+          "names": {
+            "en": "Fitness & Sports Medicine",
+            "el": "Άσκηση & Αθλητιατρική"
+          },
+          "count": 264
+        }
+      ]
+    },
+    {
+      "id": "culture_society",
+      "names": {
+        "en": "Culture, Arts & Society",
+        "el": "Πολιτισμός, Τέχνες & Κοινωνία"
+      },
+      "subjects": [
+        {
+          "id": "music",
+          "names": {
+            "en": "Music",
+            "el": "Μουσική"
+          },
+          "count": 3462
+        },
+        {
+          "id": "visual_arts",
+          "names": {
+            "en": "Visual Arts",
+            "el": "Εικαστικά"
+          },
+          "count": 1877
+        },
+        {
+          "id": "architecture",
+          "names": {
+            "en": "Architecture & Design",
+            "el": "Αρχιτεκτονική & Σχεδιασμός"
+          },
+          "count": 1032
+        },
+        {
+          "id": "literature",
+          "names": {
+            "en": "Literature & Poetry",
+            "el": "Λογοτεχνία & Ποίηση"
+          },
+          "count": 2750
+        },
+        {
+          "id": "theatre_film",
+          "names": {
+            "en": "Theatre & Film",
+            "el": "Θέατρο & Κινηματογράφος"
+          },
+          "count": 1166
+        },
+        {
+          "id": "photography",
+          "names": {
+            "en": "Photography",
+            "el": "Φωτογραφία"
+          },
+          "count": 348
+        },
+        {
+          "id": "fashion",
+          "names": {
+            "en": "Fashion & Textiles",
+            "el": "Μόδα & Υφάσματα"
+          },
+          "count": 3188
+        },
+        {
+          "id": "sports",
+          "names": {
+            "en": "Sports",
+            "el": "Αθλητισμός"
+          },
+          "count": 2651
+        },
+        {
+          "id": "games",
+          "names": {
+            "en": "Games & Hobbies",
+            "el": "Παιχνίδια & Χόμπι"
+          },
+          "count": 321
+        },
+        {
+          "id": "tourism",
+          "names": {
+            "en": "Tourism & Travel",
+            "el": "Τουρισμός & Ταξίδια"
+          },
+          "count": 693
+        },
+        {
+          "id": "media",
+          "names": {
+            "en": "Media & Journalism",
+            "el": "ΜΜΕ & Δημοσιογραφία"
+          },
+          "count": 429
+        },
+        {
+          "id": "history",
+          "names": {
+            "en": "History & Archaeology",
+            "el": "Ιστορία & Αρχαιολογία"
+          },
+          "count": 1241
+        },
+        {
+          "id": "geography",
+          "names": {
+            "en": "Geography",
+            "el": "Γεωγραφία"
+          },
+          "count": 4827
+        },
+        {
+          "id": "sociology",
+          "names": {
+            "en": "Sociology & Anthropology",
+            "el": "Κοινωνιολογία & Ανθρωπολογία"
+          },
+          "count": 1343
+        },
+        {
+          "id": "linguistics",
+          "names": {
+            "en": "Linguistics & Grammar",
+            "el": "Γλωσσολογία & Γραμματική"
+          },
+          "count": 3596
+        },
+        {
+          "id": "philosophy",
+          "names": {
+            "en": "Philosophy",
+            "el": "Φιλοσοφία"
+          },
+          "count": 1073
+        },
+        {
+          "id": "mythology",
+          "names": {
+            "en": "Mythology & Folklore",
+            "el": "Μυθολογία & Λαογραφία"
+          },
+          "count": 670
+        }
+      ]
+    }
+  ],
+  "usageLabels": [
+    {
+      "id": "informal",
+      "names": {
+        "en": "Informal / Colloquial",
+        "el": "Ανεπίσημο / Καθομιλουμένη"
+      },
+      "count": 551
+    },
+    {
+      "id": "slang",
+      "names": {
+        "en": "Slang",
+        "el": "Αργκό"
+      },
+      "count": 181
+    },
+    {
+      "id": "vulgar",
+      "names": {
+        "en": "Vulgar",
+        "el": "Χυδαίο"
+      },
+      "count": 170
+    },
+    {
+      "id": "offensive",
+      "names": {
+        "en": "Offensive / Derogatory",
+        "el": "Προσβλητικό / Υποτιμητικό"
+      },
+      "count": 204
+    },
+    {
+      "id": "humorous",
+      "names": {
+        "en": "Humorous",
+        "el": "Χιουμοριστικό"
+      },
+      "count": 0
+    },
+    {
+      "id": "formal",
+      "names": {
+        "en": "Formal",
+        "el": "Επίσημο"
+      },
+      "count": 20
+    },
+    {
+      "id": "literary",
+      "names": {
+        "en": "Literary / Poetic",
+        "el": "Λογοτεχνικό / Ποιητικό"
+      },
+      "count": 20
+    },
+    {
+      "id": "technical",
+      "names": {
+        "en": "Technical",
+        "el": "Τεχνικός όρος"
+      },
+      "count": 16
+    },
+    {
+      "id": "figurative",
+      "names": {
+        "en": "Figurative",
+        "el": "Μεταφορικό"
+      },
+      "count": 42
+    },
+    {
+      "id": "archaic",
+      "names": {
+        "en": "Archaic",
+        "el": "Αρχαϊκό"
+      },
+      "count": 81
+    },
+    {
+      "id": "obsolete",
+      "names": {
+        "en": "Obsolete",
+        "el": "Παρωχημένο"
+      },
+      "count": 22
+    },
+    {
+      "id": "dated",
+      "names": {
+        "en": "Dated",
+        "el": "Ξεπερασμένο"
+      },
+      "count": 4
+    },
+    {
+      "id": "british",
+      "names": {
+        "en": "Regional: British",
+        "el": "Τοπικό: Βρετανικό"
+      },
+      "count": 134
+    },
+    {
+      "id": "american",
+      "names": {
+        "en": "Regional: American",
+        "el": "Τοπικό: Αμερικανικό"
+      },
+      "count": 28
+    },
+    {
+      "id": "australian",
+      "names": {
+        "en": "Regional: Australian / Other",
+        "el": "Τοπικό: Αυστραλιανό / Άλλο"
+      },
+      "count": 5
+    },
+    {
+      "id": "idiom",
+      "names": {
+        "en": "Idiom",
+        "el": "Ιδιωματισμός"
+      },
+      "count": 602
+    },
+    {
+      "id": "proverb",
+      "names": {
+        "en": "Proverb",
+        "el": "Παροιμία"
+      },
+      "count": 134
+    },
+    {
+      "id": "phrasal_verb",
+      "names": {
+        "en": "Phrasal Verb",
+        "el": "Φραστικό ρήμα"
+      },
+      "count": 3510
+    },
+    {
+      "id": "abbreviation",
+      "names": {
+        "en": "Abbreviation / Acronym",
+        "el": "Συντομογραφία / Ακρωνύμιο"
+      },
+      "count": 15042
+    }
+  ],
+  "structures": [
+    {
+      "id": "simple",
+      "names": {
+        "en": "Simple",
+        "el": "Απλή"
+      },
+      "descriptions": {
+        "en": "One basic word (book)",
+        "el": "Μία βασική λέξη (book)"
+      },
+      "count": 177449
+    },
+    {
+      "id": "compound",
+      "names": {
+        "en": "Compound",
+        "el": "Σύνθετη"
+      },
+      "descriptions": {
+        "en": "Two words joined (bookshop)",
+        "el": "Δύο λέξεις ενωμένες (bookshop)"
+      },
+      "count": 17318
+    },
+    {
+      "id": "derived",
+      "names": {
+        "en": "Derived",
+        "el": "Παράγωγη"
+      },
+      "descriptions": {
+        "en": "Built with a prefix or suffix (unhappiness)",
+        "el": "Με πρόθημα ή επίθημα (unhappiness)"
+      },
+      "count": 60036
+    }
+  ]
+}

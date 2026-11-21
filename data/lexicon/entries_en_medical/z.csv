@@ -1,0 +1,428 @@
+id,word,type,pos,sense,meaning_id,synonyms,antonyms,related,origin,category,subject,usage,structure,code,domain,source
+438800,z,word,noun,,285587,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438801,"z, rat strain",phrase,noun,,285588,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+438802,z-4828,word,noun,,816,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+216906,z-average,word,noun,,285589,,,,,,medicine,,,,medical,NCI Thesaurus
+438803,z-axis voxel dimension,phrase,noun,,285591,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+438804,z-band streaming,phrase,noun,,285592,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+216907,z-coordinate,word,noun,,285593,,,,,,medicine,,,,medical,NCI Thesaurus
+216908,z-ctls,word,noun,,285594,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Autologous PD-L1/CD80/CD86-targeted CAR-T Cells')
+216909,z-dimension,word,noun,,285595,,,,,,medicine,,,,medical,NCI Thesaurus
+216910,z-score,word,noun,,285596,,,,,,medicine,,,,medical,NCI Thesaurus
+216911,z-stack,word,noun,,285597,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Z-Stacking')
+216912,z-stacking,word,noun,,285597,,,,,,medicine,,,,medical,NCI Thesaurus
+216913,zabadinostat,word,noun,,285598,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216914,zabicipril,word,noun,,285599,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216915,zabiciprilat,word,noun,,285600,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216916,zacatecas,word,noun,,285602,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216917,zactima,word,noun,,53360,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Vandetanib')
+216918,zadaxin,word,noun,,265252,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Thymalfasin')
+216919,zaditen,word,noun,,285604,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ketotifen Fumarate')
+216920,zaditor,word,noun,,285604,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ketotifen Fumarate')
+216921,zafirlukast,word,noun,,5191,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216922,zagam,word,noun,,250562,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Sparfloxacin')
+438805,zaidi recurrence risk score,phrase,noun,,236288,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216923,zaire,word,noun,,285607,,,,,,pharmacology,,simple,,medical,"NCI Thesaurus (synonym of 'Congo, the Democratic Republic of the')"
+216924,zairean,word,noun,,285611,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438806,zaki syndrome,phrase,noun,,285616,,,,,Disease,medicine,,,,medical,Disease Ontology
+216925,zalain,word,noun,,88823,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Sertaconazole Nitrate')
+216926,zalbin,word,noun,,285617,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Albinterferon Alfa-2b')
+216927,zalcitabine,word,noun,,84463,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216928,zaleplon,word,noun,,249860,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216929,zaleplon,word,noun,,285618,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zaleplon Measurement')
+216930,zalifrelimab,word,noun,,285619,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216931,zaltrap,word,noun,,10928,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ziv-Aflibercept')
+216932,zalutumumab,word,noun,,285620,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216933,zalypsis,word,noun,,260224,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Synthetic Alkaloid PM00104')
+216934,zamaporvint,word,noun,,236850,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216935,zambia,word,noun,,285621,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438807,zamtocabtagene autoleucel,phrase,noun,,285627,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216936,zamyl,word,noun,,169286,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Lintuzumab')
+216937,zanaflex,word,noun,,266375,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Tizanidine Hydrochloride')
+216938,zanamivir,word,noun,,126858,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216939,zandelisib,word,noun,,285628,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216940,zanidatamab,word,noun,,285629,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216941,zanolimumab,word,noun,,145446,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216942,zanosar,word,noun,,255899,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Streptozocin')
+216943,zansecimab,word,noun,,285631,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216944,zantac,word,noun,,226086,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ranitidine Hydrochloride')
+216945,zanubrutinib,word,noun,,48174,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+438808,zanubrutinib regimen,phrase,noun,,285632,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216946,zanubrutinib-obinutuzumab,word,noun,,196789,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Obinutuzumab/Zanubrutinib Regimen')
+216947,zanzalintinib,word,noun,,285633,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216948,zapnometinib,word,noun,,285639,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216949,zapotec,word,noun,,285641,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zapotec Language')
+216950,zarda,word,noun,,285647,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216951,zarnestra,word,noun,,266187,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Tipifarnib')
+216952,zarontin,word,noun,,108543,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ethosuximide')
+216953,zaroxolyn,word,noun,,94474,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Metolazone')
+216954,zarxio,word,noun,,118439,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Filgrastim')
+216955,zaspopathy,word,noun,,189041,,,,,,pharmacology,,simple,,medical,Disease Ontology (synonym of 'myofibrillar myopathy 4')
+216956,zatuximab,word,noun,,184999,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Modotuximab')
+216957,zavegepant,word,noun,,278422,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216958,zavesca,word,noun,,182968,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Miglustat')
+216959,zaxopam,word,noun,,202992,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Oxazepam')
+216960,zaza,word,noun,,91765,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zaza Language')
+216961,zazaki,word,noun,,91765,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zaza Language')
+438809,zbtb16-rara fusion protein expression,phrase,noun,,285654,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216962,zci,word,noun,,285655,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zeptocurie')
+438810,zd-4054,word,noun,,285656,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438811,zd0101,word,noun,,67861,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438812,zd2767,word,noun,,285657,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438813,zd6126,word,noun,,278272,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+216963,zdna,word,noun,,285658,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Z-DNA')
+438814,zdv,word,noun,,30940,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438815,zdx,word,noun,,133981,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438816,zea mays antigen,phrase,noun,,285659,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438817,zea mays antigen ige antibody measurement,phrase,noun,,285660,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438818,zea mays ige antibody rast score measurement,phrase,noun,,285661,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+438819,zebra bodies,phrase,noun,,285671,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438820,zebra finch neoplasm,phrase,noun,,285672,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216964,zebrafish,word,noun,,285673,,,,,,medicine,,compound,,medical,NCI Thesaurus
+438821,zebrafish allergy,phrase,noun,,285674,,,,,Disease,medicine,,,,medical,Disease Ontology
+216965,zebularine,word,noun,,285678,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216966,zebutinib,word,noun,,285679,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216967,zedenoleucel,word,noun,,285680,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216968,zegocractin,word,noun,,285681,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+438822,zeitz-han retinal dystrophy,phrase,noun,,285683,,,,,Disease,medicine,,,,medical,Disease Ontology
+216969,zejula,word,noun,,285684,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Niraparib Tosylate Monohydrate')
+216970,zelavespib,word,noun,,285685,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216971,zelboraf,word,noun,,278628,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Vemurafenib')
+216972,zeldox,word,noun,,285686,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ziprasidone')
+216973,zelenoleucel,word,noun,,285680,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zedenoleucel')
+438823,zellweger spectrum disorders,phrase,noun,,285687,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438824,zellweger syndrome,phrase,noun,,285688,,,,,Disease,medicine,,,ICD-10 E71.510,medical,Disease Ontology
+438825,zellweger syndrome,phrase,noun,,285689,,,,,Lab test / measurement,medicine,,,ICD-10 E71.510,medical,NCI Thesaurus
+454650,zellweger-like syndrome,phrase,noun,,1131,,,,,Diagnosis,medicine,,,ICD-10 E71.541,medical,ICD-10 (WHO 2019)
+438826,zellweger-like syndrome without peroxisomal anomalies,phrase,noun,,285690,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216974,zeluvalimab,word,noun,,285691,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216975,zemplar,word,noun,,205529,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Paricalcitol')
+216976,zemuron,word,noun,,235419,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Rocuronium Bromide')
+438827,zen003694,word,noun,,37872,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+216977,zenaga,word,noun,,285695,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zenaga Language')
+216978,zenapax,word,noun,,20550,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Daclizumab')
+216979,zeniplatin,word,noun,,285696,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216980,zenocutuzumab,word,noun,,285701,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216981,zenpep,word,noun,,79445,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Pancrelipase')
+216982,zentel,word,noun,,12846,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Albendazole')
+216983,zeolite,word,noun,,107364,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Erionite')
+216984,zepatier,word,noun,,101752,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Elbasvir/Grazoprevir')
+216985,zeposia,word,noun,,203164,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ozanimod Hydrochloride')
+216986,zepto,word,noun,,285704,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216987,zeptocurie,word,noun,,285655,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216988,zeptogram,word,noun,,285705,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216989,zeptometer,word,noun,,285706,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216990,zeptomole,word,noun,,285707,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216991,zepzelca,word,noun,,172932,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Lurbinectedin')
+216992,zerbaxa,word,noun,,57683,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ceftolozane-Tazobactam')
+216993,zeripatamig,word,noun,,285708,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216994,zerit,word,noun,,83117,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Stavudine')
+216995,zero,word,noun,,285715,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216996,zero,word,noun,,285716,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zero Activity Time')
+216997,zestril,word,noun,,169604,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Lisinopril')
+438828,zeta potential,phrase,noun,,285735,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+216998,zetasizer,word,noun,,285736,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Laser Doppler Velocimetry-Phase Analysis Light Scattering System')
+216999,zeteletinib,word,noun,,285737,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+217000,zetia,word,noun,,112255,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ezetimibe')
+217001,zetta,word,noun,,285587,,,,,,medicine,,simple,,medical,NCI Thesaurus
+217002,zeugopod,word,noun,,106571,,,,,,anatomy,,simple,,medical,Uberon (anatomy)
+438829,zeugopodial skeleton,phrase,noun,,285740,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+217003,zeugopodium,word,noun,,106571,,,,,,anatomy,,simple,,medical,Uberon (anatomy) (synonym of 'zeugopod')
+217004,zevalin,word,noun,,148068,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ibritumomab Tiuxetan')
+438830,zevorcabtagene autoleucel,phrase,noun,,285742,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+217005,zg,word,noun,,285705,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zeptogram')
+438831,zhongyao fufang,phrase,noun,,285743,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+217006,zhongyaofufang,word,noun,,285743,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zhongyao Fufang')
+217007,zhuang,word,noun,,64346,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zhuang Language')
+438832,zi-hth gaba gabaergic interneuron (primate),phrase,noun,,285744,,,,,Cell type,biology,,,,medical,Cell Ontology
+217008,ziac,word,noun,,40090,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Bisoprolol Fumarate/Hydrochlorothiazide')
+217009,ziagen,word,noun,,1003,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Abacavir Sulfate')
+217010,ziba-rx,word,noun,,31427,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Bacitracin Zinc')
+217011,zibotentan,word,noun,,285656,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+217012,ziconotide,word,noun,,219007,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+217013,zidapamide,word,noun,,285745,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+217014,zideron,word,noun,,95282,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Propoxyphene Hydrochloride')
+217015,zidesamtinib,word,noun,,285746,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+217016,zidovudine,word,noun,,30940,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+217017,ziextenzo,word,noun,,98299,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Pegfilgrastim')
+217018,ziftomenib,word,noun,,285748,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+217019,zigakibart,word,noun,,285750,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+217020,zika,word,noun,,285754,,,,,,pharmacology,,simple,,medical,MONDO (diseases) (synonym of 'Zika virus infectious disease')
+438833,zika fever,phrase,noun,,285755,,,,,Disease,medicine,,,,medical,Disease Ontology
+438834,zika virus,phrase,noun,,285756,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438835,zika virus congenital syndrome,phrase,noun,,285757,,,,,Disease,medicine,,,,medical,Disease Ontology
+438836,zika virus congenital syndrome,phrase,noun,,285758,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+439477,zika virus disease,phrase,noun,,23839,,,,,Diagnosis,medicine,,,ICD-10 A92.5,medical,ICD-10 (WHO 2019)
+450922,zika virus disease,phrase,noun,,23840,,,,,Diagnosis,medicine,,,ICD-10 A92.5,medical,ICD-10 (WHO 2019)
+438837,zika virus infection,phrase,noun,,285759,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438838,zika virus infectious disease,phrase,noun,,285754,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438839,zikv,word,noun,,285756,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+217021,zileuton,word,noun,,285760,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+217022,zilovertamab,word,noun,,65182,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+438840,zilovertamab vedotin,phrase,noun,,285764,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+217023,zilucoplan,word,noun,,285765,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+217024,zilurgisertib,word,noun,,285766,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+217025,zimbabwe,word,noun,,285767,,,,,,medicine,,simple,,medical,NCI Thesaurus
+217026,zimberelimab,word,noun,,285771,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+217027,zimlovisertib,word,noun,,285772,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+438841,zimmermann-laband syndrome,phrase,noun,,285773,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438842,zimmermann-laband syndrome 1,phrase,noun,,285774,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438843,zimmermann-laband syndrome 2,phrase,noun,,285775,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438844,zimmermann-laband syndrome 3,phrase,noun,,285776,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+217028,zimmermannella,word,noun,,222203,,,,,,medicine,,simple,,medical,NCI Thesaurus
+217029,zimovane,word,noun,,16235,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zopiclone')
+217030,zinacef,word,noun,,57688,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Cefuroxime Sodium')
+217031,zinc,word,noun,,285777,,,,,,medicine,,simple,,medical,NCI Thesaurus
+217032,zinc,word,noun,,285778,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zinc Measurement')
+438845,zinc citrate,phrase,noun,,285782,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438846,zinc deficiency disorder,phrase,noun,,285784,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438847,zinc gluconate,phrase,noun,,285785,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438848,zinc picolinate,phrase,noun,,285787,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438849,zinc protoporphyrin,phrase,noun,,285788,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+438850,zinc sulfate,phrase,noun,,285789,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+438851,zinc supplementation,phrase,noun,,285791,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+438852,zinc therapy,phrase,noun,,285792,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+438853,zinc undecylenate,phrase,noun,,285793,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+217033,zinc-protoporphyrin,word,noun,,285788,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Zinc Protoporphyrin')
+217034,zinecard,word,noun,,54394,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Dexrazoxane Hydrochloride')
+438854,zinner syndrome,phrase,noun,,285802,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+217035,zinostatin,word,noun,,143591,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+217036,zinplava,word,noun,,38320,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Bezlotoxumab')
+217037,zipalertinib,word,noun,,285815,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+438855,zipan-50,word,noun,,17629,,,,,Brand name,pharmacology,,,,medical,NCI Thesaurus
+217038,ziprasidone,word,noun,,285686,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+217039,ziprasidone,word,noun,,285816,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ziprasidone Measurement')
+438856,ziprasidone hydrochloride,phrase,noun,,130724,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438857,ziprasidone mesylate,phrase,noun,,130725,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+217040,zipsor,word,noun,,51805,,,,,,pharmacology,,derived,,medical,NCI Thesaurus (synonym of 'Diclofenac Potassium')
+217041,zirabev,word,noun,,20627,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Bevacizumab')
+438858,zirconium zr 89 anti-cd8 antibody zed88082a,phrase,noun,,285820,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438859,zirconium zr 89 df-iab2m,phrase,noun,,285821,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438860,zirconium zr 89 dfo-mstp2109a,phrase,noun,,285822,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438861,zirconium zr 89 nanocolloidal albumin,phrase,noun,,285823,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+438862,zirconium zr 89-dfo-crgdy peg-cy5-c' dots,phrase,noun,,285824,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438863,zirconium zr 89-dfo-regn3504,phrase,noun,,285825,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438864,zirconium zr 89-dfo-sc16.56,phrase,noun,,285826,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438865,zirconium zr 89-labeled monoclonal antibody mmot0530a,phrase,noun,,689,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+217042,zithromax,word,noun,,30915,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Azithromycin')
+217043,ziv-aflibercept,word,noun,,10928,,,,,,medicine,,,,medical,NCI Thesaurus
+217044,ziverel,word,noun,,285828,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Hyaluronic Acid/Chondroitin Sulfate/Poloxamer 407 Oral Solution')
+438866,zk-epo,word,noun,,237299,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+217045,zk-epothilone,word,noun,,237299,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Sagopilone')
+438867,zk-pra,word,noun,,171002,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438868,zli,word,noun,,285833,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Uberon (anatomy)
+217046,zlib,word,noun,,285834,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'zlib Compression')
+438869,zls,word,noun,,285773,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438870,zls1,word,noun,,285774,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438871,zls3,word,noun,,285776,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+217047,zm,word,noun,,285706,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zeptometer')
+217048,zmol,word,noun,,285707,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zeptomole')
+438872,zmp,word,noun,,12102,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+217049,zn,word,noun,,285777,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zinc')
+217050,zn-dtpa,word,noun,,208580,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Pentetate Zinc')
+217051,zndtpa,word,noun,,208580,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Pentetate Zinc')
+217052,znpp,word,noun,,285788,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zinc Protoporphyrin')
+438873,znt8a,word,noun,,247385,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+217053,zocor,word,noun,,245969,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Simvastatin')
+217054,zodex,word,noun,,12822,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Dexamethasone')
+438874,zoea stage,phrase,noun,,285842,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+217055,zofenopril,word,noun,,285843,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+217056,zofran,word,noun,,285844,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ondansetron Hydrochloride')
+438875,zofran odt,phrase,noun,,198834,,,,,Brand name,pharmacology,,,,medical,NCI Thesaurus
+217057,zoladex,word,noun,,133981,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Goserelin Acetate')
+217058,zolasartan,word,noun,,285847,,,,,,medicine,,simple,,medical,NCI Thesaurus
+217059,zolbetuximab,word,noun,,66061,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+217060,zoledronate,word,noun,,191004,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zoledronic Acid')
+438876,zoledronate disodium,phrase,noun,,285848,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438877,zoledronate trisodium,phrase,noun,,285849,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438878,zoledronic acid,phrase,noun,,191004,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438879,zoledronic acid anhydrous,phrase,noun,,285850,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+217061,zoligratinib,word,noun,,285851,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+217062,zolinza,word,noun,,237301,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Vorinostat')
+438880,zollinger ellison syndrome,phrase,noun,,285852,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438881,zollinger-ellison syndrome,phrase,noun,,285853,,,,,Disease,medicine,,,,medical,Disease Ontology
+438882,zollinger-ellison syndrome,phrase,noun,,285854,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438883,zollinger-ellison syndrome,phrase,noun,,285855,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438884,"zollinger-ellison syndrome, non-human animal",phrase,noun,,285857,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+217063,zolmitriptan,word,noun,,285858,,,,,,medicine,,simple,,medical,NCI Thesaurus
+217064,zoloft,word,noun,,285859,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Sertraline Hydrochloride')
+217065,zolpidem,word,noun,,285860,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zolpidem Measurement')
+217066,zometa,word,noun,,191004,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zoledronic Acid')
+217067,zomig,word,noun,,285858,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zolmitriptan')
+438885,zona arcuata of basilar membrane of cochlea,phrase,noun,,285865,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438886,zona fasciculata of adrenal gland,phrase,noun,,285866,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438887,zona glomerulosa of adrenal gland,phrase,noun,,285867,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438888,zona incerta,phrase,noun,,285868,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438889,zona intermedia of adrenal gland,phrase,noun,,285869,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438890,zona limitans intrathalamica,phrase,noun,,285833,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438891,zona pectinata of basilar membrane of cochlea,phrase,noun,,285870,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438892,zona pellucida,phrase,noun,,285871,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438893,zona reticularis of adrenal gland,phrase,noun,,285873,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438894,zonal area,phrase,noun,,285879,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438895,zonal element,phrase,noun,,285880,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438896,zonal layer of superior colliculus,phrase,noun,,285881,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438897,zonary placenta,phrase,noun,,285882,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+217068,zone,word,noun,,285883,,,,,,medicine,,simple,,medical,NCI Thesaurus
+479398,zone i fracture of sacrum,phrase,noun,,3941,,,,,Diagnosis,medicine,,,ICD-10 S32.11,medical,ICD-10 (WHO 2019)
+479403,zone ii fracture of sacrum,phrase,noun,,3941,,,,,Diagnosis,medicine,,,ICD-10 S32.12,medical,ICD-10 (WHO 2019)
+479408,zone iii fracture of sacrum,phrase,noun,,3941,,,,,Diagnosis,medicine,,,ICD-10 S32.13,medical,ICD-10 (WHO 2019)
+438898,zone of hyoid bone,phrase,noun,,285887,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438899,zone of long bone,phrase,noun,,285889,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438900,zone of polarizing activity,phrase,noun,,285890,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438901,zone of polarizing activity of pectoral appendage,phrase,noun,,285891,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438902,zone of polarizing activity of pelvic appendage,phrase,noun,,285892,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438903,zone of skin,phrase,noun,,246873,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+439123,zone of skin paget disease,phrase,noun,,82117,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438904,zone of stomach,phrase,noun,,285893,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+217069,zonegran,word,noun,,109584,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zonisamide')
+217070,zongertinib,word,noun,,285894,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+217071,zonisamide,word,noun,,109584,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+217072,zontivity,word,noun,,280815,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Vorapaxar Sulfate')
+438905,zonular cataract,phrase,noun,,285901,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+217073,zonules,word,noun,,259287,,,,,,anatomy,,simple,,medical,Uberon (anatomy) (synonym of 'suspensory ligament of lens')
+493795,zoological garden (zoo) as the place of occurrence of the external cause,phrase,noun,,7013,,,,,Diagnosis,medicine,,,ICD-10 Y92.834,medical,ICD-10 (WHO 2019)
+217074,zoology,word,noun,,285910,,,,,,medicine,,simple,,medical,NCI Thesaurus
+439262,"zoonotic bacterial disease, unspecified",phrase,noun,,7151,,,,,Diagnosis,medicine,,,ICD-10 A28.9,medical,ICD-10 (WHO 2019)
+450496,"zoonotic bacterial disease, unspecified",phrase,noun,,7152,,,,,Diagnosis,medicine,,,ICD-10 A28.9,medical,ICD-10 (WHO 2019)
+438906,zoonotic bacterial infection,phrase,noun,,285918,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438907,zoonotic infection,phrase,noun,,285919,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438908,zoonotic spillover,phrase,noun,,285920,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+217075,zoophobia,word,noun,,18144,,,,,,pharmacology,,simple,,medical,Disease Ontology (synonym of 'animal phobia')
+217076,zoosperm,word,noun,,251090,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Spermatozoon')
+217077,zopiclone,word,noun,,16235,,,,,,medicine,,simple,,medical,NCI Thesaurus
+217078,zopiclone,word,noun,,285928,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zopiclone Measurement')
+438909,zoptarelin doxorubicin,phrase,noun,,285929,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+217079,zorane,word,noun,,181664,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Metaxalone')
+217080,zorifertinib,word,noun,,285930,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+217081,zortress,word,noun,,10912,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Everolimus')
+217082,zorubicin,word,noun,,236346,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+438910,zorubicin hydrochloride,phrase,noun,,236347,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+217083,zostavax,word,noun,,278217,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Varicella-Zoster Virus Strain Oka/Merck Live Antigen')
+217084,zoster,word,noun,,61764,,,,,,pharmacology,,simple,,medical,Human Phenotype Ontology (synonym of 'Unusual VZV skin infection')
+217085,zoster,word,noun,,141514,,,,,,pharmacology,,simple,,medical,MONDO (diseases) (synonym of 'herpes zoster')
+439518,zoster [herpes zoster],phrase,noun,,93753,,,,,Diagnosis,medicine,,,ICD-10 B02,medical,ICD-10 (WHO 2019)
+450975,zoster [herpes zoster],phrase,noun,,44807,,,,,Diagnosis,medicine,,,ICD-10 B02,medical,ICD-10 (WHO 2019)
+450986,zoster conjunctivitis,phrase,noun,,44807,,,,,Diagnosis,medicine,,,ICD-10 B02.31,medical,ICD-10 (WHO 2019)
+439519,zoster encephalitis,phrase,noun,,93753,,,,,Diagnosis,medicine,,,ICD-10 B02.0,medical,ICD-10 (WHO 2019)
+450976,zoster encephalitis,phrase,noun,,44807,,,,,Diagnosis,medicine,,,ICD-10 B02.0,medical,ICD-10 (WHO 2019)
+450987,zoster iridocyclitis,phrase,noun,,44807,,,,,Diagnosis,medicine,,,ICD-10 B02.32,medical,ICD-10 (WHO 2019)
+450988,zoster keratitis,phrase,noun,,44807,,,,,Diagnosis,medicine,,,ICD-10 B02.33,medical,ICD-10 (WHO 2019)
+439520,zoster meningitis,phrase,noun,,93753,,,,,Diagnosis,medicine,,,ICD-10 B02.1,medical,ICD-10 (WHO 2019)
+450977,zoster meningitis,phrase,noun,,44807,,,,,Diagnosis,medicine,,,ICD-10 B02.1,medical,ICD-10 (WHO 2019)
+439522,zoster ocular disease,phrase,noun,,93753,,,,,Diagnosis,medicine,,,ICD-10 B02.3,medical,ICD-10 (WHO 2019)
+450984,zoster ocular disease,phrase,noun,,44807,,,,,Diagnosis,medicine,,,ICD-10 B02.3,medical,ICD-10 (WHO 2019)
+450985,"zoster ocular disease, unspecified",phrase,noun,,44807,,,,,Diagnosis,medicine,,,ICD-10 B02.30,medical,ICD-10 (WHO 2019)
+450989,zoster scleritis,phrase,noun,,44807,,,,,Diagnosis,medicine,,,ICD-10 B02.34,medical,ICD-10 (WHO 2019)
+438911,zoster sine herpete,phrase,noun,,285933,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438912,"zoster vaccine recombinant, adjuvanted",phrase,noun,,244228,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+439524,zoster with other complications,phrase,noun,,93753,,,,,Diagnosis,medicine,,,ICD-10 B02.8,medical,ICD-10 (WHO 2019)
+450992,zoster with other complications,phrase,noun,,44807,,,,,Diagnosis,medicine,,,ICD-10 B02.8,medical,ICD-10 (WHO 2019)
+439521,zoster with other nervous system involvement,phrase,noun,,93753,,,,,Diagnosis,medicine,,,ICD-10 B02.2,medical,ICD-10 (WHO 2019)
+450978,zoster with other nervous system involvement,phrase,noun,,44807,,,,,Diagnosis,medicine,,,ICD-10 B02.2,medical,ICD-10 (WHO 2019)
+439525,zoster without complication,phrase,noun,,93753,,,,,Diagnosis,medicine,,,ICD-10 B02.9,medical,ICD-10 (WHO 2019)
+450993,zoster without complications,phrase,noun,,44807,,,,,Diagnosis,medicine,,,ICD-10 B02.9,medical,ICD-10 (WHO 2019)
+217086,zosyn,word,noun,,212539,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Piperacillin-Tazobactam')
+438913,zotiraciclib citrate,phrase,noun,,285934,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+217087,zotizalkib,word,noun,,285935,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+217088,zovirax,word,noun,,5877,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Acyclovir')
+438914,zovirax for injection,phrase,noun,,7671,,,,,Brand name,pharmacology,,,,medical,NCI Thesaurus
+438915,zp,word,noun,,285788,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438916,zpa,word,noun,,285890,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Uberon (anatomy)
+438917,zpp,word,noun,,285788,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438918,zs,word,noun,,285687,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+217089,zscore,word,noun,,285596,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Z-Score')
+217090,ztalmy,word,noun,,126860,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ganaxolone')
+438919,zttk syndrome,phrase,noun,,285937,,,,,Disease,medicine,,,,medical,Disease Ontology
+217091,zubrod,word,noun,,285939,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zubrod Performance Status')
+438920,zubrod performance status,phrase,noun,,285939,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438921,zubrod performance status 0,phrase,noun,,285940,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+217092,zuc-leprfa,word,noun,,285588,,,,,,pharmacology,,,,medical,"NCI Thesaurus (synonym of 'Z, Rat Strain')"
+217093,zucker,word,noun,,285588,,,,,,pharmacology,,simple,,medical,"NCI Thesaurus (synonym of 'Z, Rat Strain')"
+438922,zuclomiphene citrate,phrase,noun,,285941,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+217094,zulu,word,noun,,285943,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zulu Language')
+217095,zuni,word,noun,,285947,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zuni Language')
+217096,zunsemetinib,word,noun,,285949,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+217097,zuotin,word,noun,,285950,,,,,,medicine,,simple,,medical,NCI Thesaurus
+217098,zuplenz,word,noun,,198834,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ondansetron')
+217099,zurinol,word,noun,,447,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Allopurinol')
+217100,zwitterion,word,noun,,285956,,,,,,medicine,,simple,,medical,Medical Action Ontology
+217101,zwitterions,word,noun,,285956,,,,,,pharmacology,,simple,,medical,Medical Action Ontology (synonym of 'zwitterion')
+438923,zws,word,noun,,285687,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+217102,zyban,word,noun,,49346,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Bupropion Hydrochloride Controlled-release')
+217103,zybrestat,word,noun,,50527,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Fosbretabulin Tromethamine')
+217104,zyclara,word,noun,,13041,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Imiquimod')
+217105,zydelig,word,noun,,148438,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Idelalisib')
+217106,zyflo,word,noun,,285760,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zileuton')
+217107,zygantrum,word,noun,,285958,,,,,,anatomy,,simple,,medical,Uberon (anatomy)
+217108,zygapophysis,word,noun,,285959,,,,,,anatomy,,simple,,medical,Uberon (anatomy)
+217109,zygion,word,noun,,285960,,,,,,anatomy,,simple,,medical,Uberon (anatomy)
+438924,zygodactyly 1,phrase,noun,,285963,,,,,Disease,medicine,,,,medical,Disease Ontology
+217110,zygoma,word,noun,,285964,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zygomatic Arch')
+217111,zygoma,word,noun,,285965,,,,,,anatomy,,simple,,medical,Uberon (anatomy) (synonym of 'zygomatic arch')
+438925,zygomatic arch,phrase,noun,,285964,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+438926,zygomatic arch,phrase,noun,,285965,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438927,zygomatic bone,phrase,noun,,61176,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+438928,zygomatic buttress,phrase,noun,,285967,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+438929,zygomatic fossa,phrase,noun,,285968,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+477578,"zygomatic fracture, left side",phrase,noun,,3944,,,,,Diagnosis,medicine,,,ICD-10 S02.40F,medical,ICD-10 (WHO 2019)
+477577,"zygomatic fracture, right side",phrase,noun,,3944,,,,,Diagnosis,medicine,,,ICD-10 S02.40E,medical,ICD-10 (WHO 2019)
+477572,"zygomatic fracture, unspecified side",phrase,noun,,3944,,,,,Diagnosis,medicine,,,ICD-10 S02.402,medical,ICD-10 (WHO 2019)
+438930,zygomatic gland,phrase,noun,,285969,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+438931,zygomatic gland,phrase,noun,,285970,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438932,zygomatic plate,phrase,noun,,285971,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438933,zygomatic process of frontal bone,phrase,noun,,285973,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438934,zygomatic process of maxilla,phrase,noun,,285974,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438935,zygomatic process of squamous part of temporal bone,phrase,noun,,285975,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438936,zygomatic process of temporal bone,phrase,noun,,285976,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438937,zygomatic ramus of squamosal,phrase,noun,,285977,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438938,zygomatico-orbital artery,phrase,noun,,285978,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438939,zygomaticofacial foramen of zygomatic bone,phrase,noun,,285979,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438940,zygomaticomaxillary suture,phrase,noun,,285980,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438941,zygomaticotemporal nerve,phrase,noun,,285981,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+217112,zygomaticus,word,noun,,285982,,,,,,anatomy,,simple,,medical,Uberon (anatomy) (synonym of 'zygomaticus muscle')
+438942,zygomaticus major muscle,phrase,noun,,285983,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+438943,zygomaticus major muscle,phrase,noun,,285984,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438944,zygomaticus minor muscle,phrase,noun,,285985,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+438945,zygomaticus minor muscle,phrase,noun,,285986,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438946,zygomaticus muscle,phrase,noun,,285987,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+438947,zygomaticus muscle,phrase,noun,,285982,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+217113,zygomycetes,word,noun,,285988,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zygomycota')
+217114,zygomycosis,word,noun,,187249,,,,,,pharmacology,,simple,ICD-10 B46,medical,Disease Ontology (synonym of 'mucormycosis')
+217115,zygomycosis,word,noun,,187250,,,,,,medicine,,simple,ICD-10 B46,medical,MONDO (diseases)
+451247,zygomycosis,word,noun,,6800,,,,,Diagnosis,medicine,,simple,ICD-10 B46,medical,ICD-10 (WHO 2019)
+439709,"zygomycosis, unspecified",phrase,noun,,7590,,,,,Diagnosis,medicine,,,ICD-10 B46.9,medical,ICD-10 (WHO 2019)
+451255,"zygomycosis, unspecified",phrase,noun,,6800,,,,,Diagnosis,medicine,,,ICD-10 B46.9,medical,ICD-10 (WHO 2019)
+217116,zygomycota,word,noun,,285988,,,,,,medicine,,simple,,medical,NCI Thesaurus
+217117,zygopod,word,noun,,106571,,,,,,anatomy,,simple,,medical,Uberon (anatomy) (synonym of 'zeugopod')
+217118,zygopodium,word,noun,,106571,,,,,,anatomy,,simple,,medical,Uberon (anatomy) (synonym of 'zeugopod')
+217119,zygosity,word,noun,,285989,,,,,,medicine,,simple,,medical,NCI Thesaurus
+217120,zygosphene,word,noun,,285990,,,,,,anatomy,,simple,,medical,Uberon (anatomy)
+217121,zygospore,word,noun,,285991,,,,,,biology,,simple,,medical,Cell Ontology
+217122,zygote,word,noun,,285993,,,,,,medicine,,simple,,medical,Medical Action Ontology
+217123,zygote,word,noun,,285994,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438948,zygote stage,phrase,noun,,285995,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438949,zygotic cleavage failure,phrase,noun,,285998,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+217124,zykadia,word,noun,,59188,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ceritinib')
+217125,zyloprim,word,noun,,14234,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Allopurinol Sodium')
+217126,zyloric,word,noun,,14234,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Allopurinol Sodium')
+217127,zymaderm,word,noun,,285999,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Iodine/Thuja occidentalis/Echinancea-based Homeopathic Formulation')
+217128,zymar,word,noun,,127602,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Gatifloxacin')
+217129,zymase,word,noun,,79445,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Pancrelipase')
+438950,zymbal gland,phrase,noun,,286001,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+438951,zymbal's gland,phrase,noun,,286002,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438952,zymbal's gland adenoma,phrase,noun,,286003,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438953,zymbal's gland carcinoma,phrase,noun,,286004,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438954,zymogen granule,phrase,noun,,286005,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+438955,zymogen granule membrane,phrase,noun,,286006,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+217130,zymohexase,word,noun,,13073,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Fructose-Bisphosphate Aldolase')
+217131,zymosan,word,noun,,286010,,,,,,medicine,,simple,,medical,NCI Thesaurus
+217132,zymostanol,word,noun,,37981,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Cholestanol Measurement')
+217133,zynlonta,word,noun,,171004,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Loncastuximab Tesirine')
+217134,zynyz,word,noun,,232868,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Retifanlimab')
+217135,zyprexa,word,noun,,198126,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Olanzapine')
+438956,zyprexa zydis,phrase,noun,,198126,,,,,Brand name,pharmacology,,,,medical,NCI Thesaurus
+217136,zyrtec,word,noun,,59633,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Cetirizine Hydrochloride')
+217137,zytiga,word,noun,,285478,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Abiraterone Acetate')
+217138,zytiga-lynparza-methylprednisolone,word,noun,,1456,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Abiraterone/Olaparib/Methylprednisolone Regimen')
+217139,zytiga-lynparza-prednisone,word,noun,,1457,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Abiraterone/Olaparib/Prednisone Regimen')
+217140,zyvox,word,noun,,169174,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Linezolid')

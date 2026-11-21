@@ -1,0 +1,833 @@
+id,word,type,pos,sense,meaning_id,synonyms,antonyms,related,origin,category,subject,usage,structure,code,domain,source
+384375,j wave,phrase,noun,,159349,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384376,j-pouch coloanal anastomosis,phrase,noun,,159350,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+384377,j-shaped sella turcica,phrase,noun,,159351,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+199963,j-tube,word,noun,,8907,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Administration via Jejunostomy')
+384378,j/cm2,word,noun,,159358,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+384379,j5 antiserum,phrase,noun,,159359,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+384380,j591,word,noun,,159360,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+384381,j6m0-mcmmaf,word,noun,,36335,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+384382,ja-das,word,noun,,159361,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+384383,jaccoud's syndrome,phrase,noun,,159378,,,,,Disease,medicine,,,,medical,Disease Ontology
+199964,jack,word,noun,,159379,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Jack Device')
+384384,jackson-weiss syndrome,phrase,noun,,159439,,,,,Disease,medicine,,,,medical,Disease Ontology
+384385,jackson-weiss syndrome,phrase,noun,,159440,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384386,jackson-weiss syndrome,phrase,noun,,159441,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384387,jacls,word,noun,,159448,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+384388,jacobsen syndrome,phrase,noun,,159462,,,,,Disease,medicine,,,,medical,Disease Ontology
+384389,jacobsen syndrome,phrase,noun,,159463,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384390,jacobsen syndrome,phrase,noun,,159464,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384391,"jacobsen syndrome, cattle",phrase,noun,,159465,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384392,"jacobsen syndrome, non-human animal",phrase,noun,,159466,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384393,jacobson's vein,phrase,noun,,159467,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384394,jadas,word,noun,,159361,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+199965,jadenu,word,noun,,86671,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Deferasirox')
+199966,jadit,word,noun,,48553,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Buclosamide')
+384395,jae,word,noun,,159493,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384396,jae1,word,noun,,101573,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384397,jaeger eye chart,phrase,noun,,159495,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+199967,jagdterrier,word,noun,,159506,,,,,,medicine,,simple,,medical,NCI Thesaurus
+199968,jail,word,noun,,159517,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Correctional Institution')
+384398,jak inhibitor,phrase,noun,,159524,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+384399,jak inhibitor incb047986,phrase,noun,,159525,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+384400,jak1 inhibitor,phrase,noun,,159526,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384401,jak1 inhibitor incb052793,phrase,noun,,159527,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+384402,jak2 inhibitor azd1480,phrase,noun,,159528,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+384403,jak2 inhibitor bs hh 002.sa,phrase,noun,,159529,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+384404,jak2 inhibitor tq05105,phrase,noun,,159530,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+384405,jak2 inhibitor xl019,phrase,noun,,159531,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+199969,jakafi,word,noun,,159532,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ruxolitinib Phosphate')
+384406,jakubowski's organ,phrase,noun,,159534,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384407,jalili syndrome,phrase,noun,,159537,,,,,Disease,medicine,,,,medical,Disease Ontology
+384408,jalili syndrome,phrase,noun,,159538,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+199970,jalisco,word,noun,,159539,,,,,,medicine,,simple,,medical,NCI Thesaurus
+384409,jals,word,noun,,159542,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+199971,jamaica,word,noun,,159554,,,,,,medicine,,simple,,medical,NCI Thesaurus
+199972,jamaican,word,noun,,159563,,,,,,medicine,,simple,,medical,NCI Thesaurus
+384410,jamais vu aura,phrase,noun,,159567,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+199973,jambul,word,noun,,159572,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+199974,jamesdicksonia,word,noun,,159612,,,,,,medicine,,simple,,medical,NCI Thesaurus
+384411,jansen's metaphyseal chondrodysplasia,phrase,noun,,159643,,,,,Disease,medicine,,,,medical,Disease Ontology
+199975,janssen,word,noun,,159646,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Janssen Pharmaceuticals')
+199976,january,word,noun,,159647,,,,,,medicine,,simple,,medical,NCI Thesaurus
+384412,janus kinase inhibitor therapy,phrase,noun,,159649,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+384413,janus kinase-3 deficiency,phrase,noun,,159650,,,,,Disease,medicine,,,,medical,Disease Ontology
+384414,janus kinase-3 deficiency,phrase,noun,,159651,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384415,janus study data repository,phrase,noun,,159652,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+199977,japan,word,noun,,159660,,,,,,medicine,,simple,,medical,NCI Thesaurus
+384416,japan association of childhood leukemia study,phrase,noun,,159448,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384417,japan children's cancer group neuroblastoma committee,phrase,noun,,159666,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+199978,japanese,word,noun,,159673,,,,,,medicine,,simple,,medical,NCI Thesaurus
+199979,japanese,word,noun,,159674,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Japanese Language')
+384418,japanese alder pollen,phrase,noun,,159677,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+384419,japanese cedar pollen antigen,phrase,noun,,159683,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+384420,japanese cypress pollen,phrase,noun,,159686,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+384421,japanese encephalitis,phrase,noun,,159688,,,,,Disease,medicine,,,ICD-10 A83.0,medical,Disease Ontology
+384422,japanese encephalitis,phrase,noun,,159689,,,,,Disease,medicine,,,ICD-10 A83.0,medical,MONDO (diseases)
+450879,japanese encephalitis,phrase,noun,,7551,,,,,Diagnosis,medicine,,,ICD-10 A83.0,medical,ICD-10 (WHO 2019)
+384423,japanese pediatric leukemia/lymphoma study group,phrase,noun,,159699,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384424,japanese spotted fever,phrase,noun,,159706,,,,,Disease,medicine,,,,medical,Disease Ontology
+384425,japanese spotted fever,phrase,noun,,159707,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384426,japanese white rabbit,phrase,noun,,159712,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+199980,jar,word,noun,,159716,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+199981,jar,word,noun,,159717,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Jar Dosing Unit')
+199982,jardiance,word,noun,,103598,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Empagliflozin')
+384427,jass rectal cancer prognostic classification 1987,phrase,noun,,159744,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384428,jatd,word,noun,,159747,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+199983,jaundice,word,noun,,148316,,,,,,medicine,,simple,,medical,Human Phenotype Ontology
+199984,jaundice,word,noun,,159750,,,,,,medicine,,simple,,medical,NCI Thesaurus
+199985,jaundice,word,noun,,148311,,,,,,medicine,,simple,,medical,Symptom Ontology
+199986,java,word,noun,,159761,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Java Programming Language')
+199987,javanese,word,noun,,159771,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Javanese Language')
+199988,jaw,word,noun,,159775,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Jaw Bone')
+199989,jaw,word,noun,,159776,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Jaw Device')
+199990,jaw,word,noun,,159777,,,,,,anatomy,,simple,,medical,Uberon (anatomy) (synonym of 'jaw skeleton')
+384429,jaw cancer,phrase,noun,,159782,,,,,Disease,medicine,,,,medical,Disease Ontology
+384430,jaw cancer,phrase,noun,,159783,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384431,jaw claudication,phrase,noun,,159784,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384432,jaw contracture,phrase,noun,,159785,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384433,jaw depressor muscle,phrase,noun,,159786,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384434,jaw fracture,phrase,noun,,159787,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384435,jaw hyperreflexia,phrase,noun,,159788,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384436,jaw hyporeflexia,phrase,noun,,159789,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384437,jaw joint,phrase,noun,,159790,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+384438,jaw mass,phrase,noun,,159791,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384439,jaw mesenchyme,phrase,noun,,159792,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384440,jaw neoplasm,phrase,noun,,159793,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384441,jaw pain,phrase,noun,,159794,,,,,Sign / symptom / phenotype,medicine,,,ICD-10 R68.84,medical,Human Phenotype Ontology
+384442,jaw region,phrase,noun,,159795,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384443,jaw skeleton,phrase,noun,,159777,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384444,jaw swelling,phrase,noun,,159796,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+199991,jaw-blinking,word,noun,,159797,,,,,,pharmacology,,,,medical,Disease Ontology (synonym of 'jaw-winking syndrome')
+199992,jaw-winking,word,noun,,159798,,,,,,pharmacology,,,,medical,MONDO (diseases) (synonym of 'jaw-winking syndrome')
+384445,jaw-winking syndrome,phrase,noun,,159797,,,,,Disease,medicine,,,,medical,Disease Ontology
+384446,jaw-winking syndrome,phrase,noun,,159798,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384447,jawad syndrome,phrase,noun,,159799,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384448,jax,word,noun,,159810,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+384449,jax info,phrase,noun,,159811,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+199993,jaypirca,word,noun,,159814,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Pirtobrutinib')
+384450,jazf1-suz12 ess,phrase,noun,,159818,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+384451,jbs,word,noun,,159826,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+384452,jbs,word,noun,,159827,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384453,jbts,word,noun,,159828,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+384454,jbts1,word,noun,,77226,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384455,jbts1,word,noun,,77227,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384456,jbts10,word,noun,,159829,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384457,jbts10,word,noun,,159830,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384458,jbts13,word,noun,,159831,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384459,jbts13,word,noun,,159832,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384460,jbts14,word,noun,,159833,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384461,jbts14,word,noun,,159834,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384462,jbts15,word,noun,,159835,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384463,jbts15,word,noun,,159836,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384464,jbts16,word,noun,,159837,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384465,jbts16,word,noun,,159838,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384466,jbts17,word,noun,,159839,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384467,jbts17,word,noun,,159840,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384468,jbts17,word,noun,,159841,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+384469,jbts18,word,noun,,159842,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384470,jbts18,word,noun,,159843,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384471,jbts2,word,noun,,77228,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384472,jbts2,word,noun,,77229,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384473,jbts20,word,noun,,159844,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384474,jbts20,word,noun,,159845,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384475,jbts21,word,noun,,159846,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384476,jbts21,word,noun,,159847,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384477,jbts22,word,noun,,159848,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384478,jbts22,word,noun,,159849,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384479,jbts23,word,noun,,159850,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384480,jbts23,word,noun,,159851,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384481,jbts24,word,noun,,159852,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384482,jbts24,word,noun,,159853,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384483,jbts25,word,noun,,159854,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384484,jbts25,word,noun,,159855,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384485,jbts26,word,noun,,159856,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384486,jbts26,word,noun,,159857,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384487,jbts27,word,noun,,159858,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384488,jbts27,word,noun,,159859,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384489,jbts28,word,noun,,159860,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384490,jbts28,word,noun,,159861,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384491,jbts3,word,noun,,159862,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384492,jbts3,word,noun,,159863,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384493,jbts3,word,noun,,159864,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+384494,jbts34,word,noun,,159865,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384495,jbts35,word,noun,,159866,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384496,jbts36,word,noun,,159867,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384497,jbts37,word,noun,,159868,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384498,jbts38,word,noun,,159869,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384499,jbts39,word,noun,,159870,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384500,jbts4,word,noun,,159871,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384501,jbts4,word,noun,,159872,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384502,jbts40,word,noun,,159873,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384503,jbts5,word,noun,,159874,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384504,jbts5,word,noun,,159875,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384505,jbts6,word,noun,,159876,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384506,jbts6,word,noun,,159877,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384507,jbts7,word,noun,,159878,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384508,jbts7,word,noun,,159879,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384509,jbts7,word,noun,,159880,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+384510,jbts8,word,noun,,159881,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384511,jbts8,word,noun,,159882,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384512,jbts9,word,noun,,159883,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384513,jbts9,word,noun,,159884,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384514,jbts9,word,noun,,159885,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+384515,jc encephalitis,phrase,noun,,159886,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384516,jc nephropathy,phrase,noun,,159887,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384517,jc virus antibody measurement,phrase,noun,,159888,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+384518,jc virus infection,phrase,noun,,159889,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384519,jccc,word,noun,,159890,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+384520,jccg,word,noun,,159666,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+384521,jcml,word,noun,,159891,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384522,jcml,word,noun,,159892,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+384523,jdm,word,noun,,62022,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+384524,jealous type delusional disorder,phrase,noun,,159895,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384525,jeb,word,noun,,99943,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384526,jeb-h,word,noun,,159918,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384527,jeb-h,word,noun,,159919,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384528,jeb-i,word,noun,,99944,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+199994,jeb-lo,word,noun,,159920,,,,,,pharmacology,,,,medical,MONDO (diseases) (synonym of 'late-onset junctional epidermolysis bullosa')
+384529,jeb-pa,word,noun,,159921,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384530,jeb-pa,word,noun,,159922,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384531,jeb-rr,word,noun,,106319,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384532,jebsen-taylor hand function test,phrase,noun,,159923,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+384533,jejunal adenocarcinoma,phrase,noun,,159935,,,,,Disease,medicine,,,,medical,Disease Ontology
+384534,jejunal adenocarcinoma,phrase,noun,,159936,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384535,jejunal adenocarcinoma,phrase,noun,,159937,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384536,jejunal arteriovenous malformation,phrase,noun,,159938,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384537,jejunal artery,phrase,noun,,159939,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384538,jejunal atresia,phrase,noun,,159940,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384539,jejunal cancer,phrase,noun,,159941,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384540,jejunal carcinoma,phrase,noun,,159942,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384541,jejunal epithelium,phrase,noun,,159943,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384542,jejunal fistula,phrase,noun,,159944,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+384543,jejunal goblet cell,phrase,noun,,159945,,,,,Cell type,biology,,,,medical,Cell Ontology
+384544,jejunal melanoma,phrase,noun,,159946,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384545,jejunal mucosa,phrase,noun,,159947,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384546,jejunal neoplasm,phrase,noun,,159948,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384547,jejunal neuroendocrine tumor,phrase,noun,,159949,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384548,jejunal neuroendocrine tumor g1,phrase,noun,,159950,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384549,jejunal neuroendocrine tumor g1,phrase,noun,,159951,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384550,jejunal neuroendocrine tumor g2,phrase,noun,,159952,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384551,jejunal neuroendocrine tumor g3,phrase,noun,,159953,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384552,"jejunal neuroendocrine tumor, well differentiated, low or intermediate grade",phrase,noun,,159954,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384553,jejunal somatostatin-producing neuroendocrine tumor,phrase,noun,,159955,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384554,jejunal somatostatinoma,phrase,noun,,159956,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384555,jejunal vein,phrase,noun,,159957,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384556,jejunal web,phrase,noun,,159958,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+199995,jejunitis,word,noun,,159961,,,,,,medicine,,simple,,medical,Human Phenotype Ontology
+384557,jejuno-ileal junction,phrase,noun,,159963,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+199996,jejunoileitis,word,noun,,159964,,,,,,medicine,,simple,,medical,Disease Ontology
+199997,jejunostomy,word,noun,,159967,,,,,,medicine,,simple,,medical,Medical Action Ontology
+199998,jejunostomy,word,noun,,159968,,,,,,medicine,,simple,,medical,NCI Thesaurus
+199999,jejunostomy,word,noun,,8907,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Administration via Jejunostomy')
+200000,jejunum,word,noun,,159969,,,,,,anatomy,,simple,,medical,Uberon (anatomy)
+384558,jejunum lamina propria,phrase,noun,,159971,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+200001,jelliffe,word,noun,,159979,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Jelliffe Equation for Creatinine Clearance')
+384559,jelliffe equation for creatinine clearance,phrase,noun,,159979,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+200002,jelmyto,word,noun,,15967,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Mitomycin')
+200003,jemperli,word,noun,,96039,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Dostarlimab')
+200004,jen-nh,word,noun,,126025,,,,,,pharmacology,,,,medical,Disease Ontology (synonym of 'junctional epidermolysis bullosa non-Herlitz type')
+200005,jen-nh,word,noun,,159990,,,,,,pharmacology,,,,medical,"MONDO (diseases) (synonym of 'junctional epidermolysis bullosa, non-Herlitz type')"
+200006,jeotgalibacillus,word,noun,,159997,,,,,,medicine,,simple,,medical,NCI Thesaurus
+384560,jerk-locked averaging,phrase,noun,,160017,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+384561,jerk-locked premyoclonus spikes,phrase,noun,,160018,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+200007,jersey,word,noun,,160037,,,,,,medicine,,simple,,medical,NCI Thesaurus
+384562,jervell and lange-nielsen syndrome,phrase,noun,,160051,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384563,jervell and lange-nielsen syndrome 1,phrase,noun,,160052,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384564,jervell and lange-nielsen syndrome 2,phrase,noun,,160053,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384565,jessner lymphocytic infiltration of the skin,phrase,noun,,160056,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384566,jet,word,noun,,142657,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384567,jet lag type circadian rhythm sleep disorder,phrase,noun,,160078,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384568,jeune syndrome,phrase,noun,,159747,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384569,jeune syndrome,phrase,noun,,160091,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384570,jeune syndrome - grk2-related,phrase,noun,,160092,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200008,jevtana,word,noun,,50565,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Cabazitaxel')
+384571,jfk coma recovery scale-revised clinical classification,phrase,noun,,80378,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+384572,jhd,word,noun,,160122,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384573,jhh,word,noun,,140327,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+384574,jia,word,noun,,160123,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384575,jianpi huatan decoction,phrase,noun,,160124,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+200009,jiaogulan,word,noun,,160126,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Gynostemma pentaphyllum Supplement')
+200010,jidi,word,noun,,160129,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Judeo-Persian Language')
+384576,jin fu kang,phrase,noun,,160156,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+200011,jindo,word,noun,,160157,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200012,jinfukang,word,noun,,160156,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Jin Fu Kang')
+200013,jingpho,word,noun,,160160,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Jingpho Language')
+384577,jip,word,noun,,160167,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+200014,jittery,word,noun,,160180,,,,,,medicine,,derived,,medical,NCI Thesaurus
+384578,jlcc,word,noun,,159810,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+384579,jlns,word,noun,,160052,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384580,jlns1,word,noun,,160052,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384581,jlns1,word,noun,,160051,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+384582,jlns2,word,noun,,160053,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384583,jlsm,word,noun,,160184,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+384584,jmadue,word,noun,,160185,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384585,jme,word,noun,,101597,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384586,jmml,word,noun,,159891,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384587,jmml,word,noun,,159892,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+384588,jna,word,noun,,160186,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384589,jncl,word,noun,,160187,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384590,jnp,word,noun,,160189,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+384591,jns,word,noun,,160191,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384592,jo-1 antibody measurement,phrase,noun,,160192,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+200015,joacamine,word,noun,,49712,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Busulfan')
+384593,joag,word,noun,,160194,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384594,joag1a,word,noun,,132112,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+200016,job,word,noun,,160197,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Computer Job')
+200017,job,word,noun,,160198,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Occupation')
+200018,jod-basedow,word,noun,,160251,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Iodine-Induced Hyperthyroidism')
+384595,jof,word,noun,,160256,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+200019,jog,word,noun,,160259,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Jogging')
+200020,jogging,word,noun,,160259,,,,,,medicine,,simple,,medical,NCI Thesaurus
+384596,johanson-blizzard syndrome,phrase,noun,,159826,,,,,Disease,medicine,,,,medical,Disease Ontology
+384597,johanson-blizzard syndrome,phrase,noun,,159827,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384598,johnson neuroectodermal syndrome,phrase,noun,,160362,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200021,johnsonella,word,noun,,160363,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200022,joint,word,noun,,25233,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200023,joint,word,noun,,160384,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Joint Device')
+384599,joint capsule,phrase,noun,,160393,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+384600,joint connecting upper and lower jaws,phrase,noun,,160395,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384601,joint contracture,phrase,noun,,75437,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384602,joint contracture,phrase,noun,,160396,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+384603,joint contracture of the 3rd finger,phrase,noun,,160397,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384604,joint contracture of the 4th finger,phrase,noun,,160398,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384605,joint contracture of the 5th finger,phrase,noun,,160399,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384606,joint contracture of the hand,phrase,noun,,160400,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384607,joint crepitus,phrase,noun,,160401,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+443969,"joint derangement, unspecified",phrase,noun,,6244,,,,,Diagnosis,medicine,,,ICD-10 M24.9,medical,ICD-10 (WHO 2019)
+467680,"joint derangement, unspecified",phrase,noun,,6243,,,,,Diagnosis,medicine,,,ICD-10 M24.9,medical,ICD-10 (WHO 2019)
+384608,joint dislocation,phrase,noun,,160402,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+443979,"joint disorder, unspecified",phrase,noun,,6244,,,,,Diagnosis,medicine,,,ICD-10 M25.9,medical,ICD-10 (WHO 2019)
+467977,"joint disorder, unspecified",phrase,noun,,6243,,,,,Diagnosis,medicine,,,ICD-10 M25.9,medical,ICD-10 (WHO 2019)
+384609,joint extensor surface localization,phrase,noun,,160403,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384610,joint flexor surface localization,phrase,noun,,160404,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384611,joint hemorrhage,phrase,noun,,140130,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384612,joint hypermobility,phrase,noun,,96263,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384613,"joint laxity, familial",phrase,noun,,160406,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384614,"joint laxity, short stature, and myopia",phrase,noun,,160184,,,,,Disease,medicine,,,,medical,Disease Ontology
+384615,joint of auditory ossicle,phrase,noun,,160407,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384616,joint of girdle,phrase,noun,,160408,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384617,joint of rib,phrase,noun,,160409,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384618,joint pain,phrase,noun,,25026,,,,,Symptom,medicine,,,,medical,Symptom Ontology
+384619,joint replacement,phrase,noun,,160411,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+384620,joint space of elbow,phrase,noun,,160414,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384621,joint stiffness,phrase,noun,,160415,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384622,joint subluxation,phrase,noun,,160416,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384623,joint task force type 2 myocardial infarction,phrase,noun,,160417,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+384624,joint task force type 3 myocardial infarction,phrase,noun,,160418,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+200024,joints,word,noun,,25233,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Joint')
+384625,jones test,phrase,noun,,160461,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+384626,jonsson comprehensive cancer center,phrase,noun,,159890,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+200025,jordan,word,noun,,160468,,,,,,medicine,,simple,,medical,NCI Thesaurus
+384627,joubert syndrome,phrase,noun,,159828,,,,,Disease,medicine,,,,medical,Disease Ontology
+384628,joubert syndrome,phrase,noun,,160517,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384629,joubert syndrome,phrase,noun,,160518,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384630,joubert syndrome 1,phrase,noun,,77226,,,,,Disease,medicine,,,,medical,Disease Ontology
+384631,joubert syndrome 1,phrase,noun,,77227,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384632,joubert syndrome 10,phrase,noun,,159829,,,,,Disease,medicine,,,,medical,Disease Ontology
+384633,joubert syndrome 10,phrase,noun,,159830,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384634,joubert syndrome 13,phrase,noun,,159831,,,,,Disease,medicine,,,,medical,Disease Ontology
+384635,joubert syndrome 13,phrase,noun,,159832,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384636,joubert syndrome 14,phrase,noun,,159833,,,,,Disease,medicine,,,,medical,Disease Ontology
+384637,joubert syndrome 14,phrase,noun,,159834,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384638,joubert syndrome 15,phrase,noun,,159835,,,,,Disease,medicine,,,,medical,Disease Ontology
+384639,joubert syndrome 15,phrase,noun,,159836,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384640,joubert syndrome 16,phrase,noun,,159837,,,,,Disease,medicine,,,,medical,Disease Ontology
+384641,joubert syndrome 16,phrase,noun,,159838,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384642,joubert syndrome 17,phrase,noun,,159839,,,,,Disease,medicine,,,,medical,Disease Ontology
+384643,joubert syndrome 17,phrase,noun,,159840,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384644,joubert syndrome 17,phrase,noun,,159841,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384645,joubert syndrome 18,phrase,noun,,159842,,,,,Disease,medicine,,,,medical,Disease Ontology
+384646,joubert syndrome 18,phrase,noun,,159843,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384647,joubert syndrome 2,phrase,noun,,77228,,,,,Disease,medicine,,,,medical,Disease Ontology
+384648,joubert syndrome 2,phrase,noun,,77229,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384649,joubert syndrome 20,phrase,noun,,159844,,,,,Disease,medicine,,,,medical,Disease Ontology
+384650,joubert syndrome 20,phrase,noun,,159845,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384651,joubert syndrome 21,phrase,noun,,159846,,,,,Disease,medicine,,,,medical,Disease Ontology
+384652,joubert syndrome 21,phrase,noun,,159847,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384653,joubert syndrome 22,phrase,noun,,159848,,,,,Disease,medicine,,,,medical,Disease Ontology
+384654,joubert syndrome 22,phrase,noun,,159849,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384655,joubert syndrome 23,phrase,noun,,159850,,,,,Disease,medicine,,,,medical,Disease Ontology
+384656,joubert syndrome 23,phrase,noun,,159851,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384657,joubert syndrome 24,phrase,noun,,159852,,,,,Disease,medicine,,,,medical,Disease Ontology
+384658,joubert syndrome 24,phrase,noun,,159853,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384659,joubert syndrome 25,phrase,noun,,159854,,,,,Disease,medicine,,,,medical,Disease Ontology
+384660,joubert syndrome 25,phrase,noun,,159855,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384661,joubert syndrome 26,phrase,noun,,159856,,,,,Disease,medicine,,,,medical,Disease Ontology
+384662,joubert syndrome 26,phrase,noun,,159857,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384663,joubert syndrome 27,phrase,noun,,159858,,,,,Disease,medicine,,,,medical,Disease Ontology
+384664,joubert syndrome 27,phrase,noun,,159859,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384665,joubert syndrome 28,phrase,noun,,159860,,,,,Disease,medicine,,,,medical,Disease Ontology
+384666,joubert syndrome 28,phrase,noun,,159861,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384667,joubert syndrome 29,phrase,noun,,160519,,,,,Disease,medicine,,,,medical,Disease Ontology
+384668,joubert syndrome 3,phrase,noun,,159862,,,,,Disease,medicine,,,,medical,Disease Ontology
+384669,joubert syndrome 3,phrase,noun,,159863,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384670,joubert syndrome 3,phrase,noun,,159864,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384671,joubert syndrome 30,phrase,noun,,160520,,,,,Disease,medicine,,,,medical,Disease Ontology
+384672,joubert syndrome 31,phrase,noun,,160521,,,,,Disease,medicine,,,,medical,Disease Ontology
+384673,joubert syndrome 32,phrase,noun,,160522,,,,,Disease,medicine,,,,medical,Disease Ontology
+384674,joubert syndrome 33,phrase,noun,,160523,,,,,Disease,medicine,,,,medical,Disease Ontology
+384675,joubert syndrome 34,phrase,noun,,159865,,,,,Disease,medicine,,,,medical,Disease Ontology
+384676,joubert syndrome 35,phrase,noun,,159866,,,,,Disease,medicine,,,,medical,Disease Ontology
+384677,joubert syndrome 36,phrase,noun,,159867,,,,,Disease,medicine,,,,medical,Disease Ontology
+384678,joubert syndrome 37,phrase,noun,,159868,,,,,Disease,medicine,,,,medical,Disease Ontology
+384679,joubert syndrome 38,phrase,noun,,159869,,,,,Disease,medicine,,,,medical,Disease Ontology
+384680,joubert syndrome 39,phrase,noun,,159870,,,,,Disease,medicine,,,,medical,Disease Ontology
+384681,joubert syndrome 4,phrase,noun,,159871,,,,,Disease,medicine,,,,medical,Disease Ontology
+384682,joubert syndrome 4,phrase,noun,,160524,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384683,joubert syndrome 40,phrase,noun,,159873,,,,,Disease,medicine,,,,medical,Disease Ontology
+384684,joubert syndrome 5,phrase,noun,,159874,,,,,Disease,medicine,,,,medical,Disease Ontology
+384685,joubert syndrome 5,phrase,noun,,159875,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384686,joubert syndrome 6,phrase,noun,,159876,,,,,Disease,medicine,,,,medical,Disease Ontology
+384687,joubert syndrome 6,phrase,noun,,159877,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384688,joubert syndrome 7,phrase,noun,,159878,,,,,Disease,medicine,,,,medical,Disease Ontology
+384689,joubert syndrome 7,phrase,noun,,159879,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384690,joubert syndrome 7,phrase,noun,,159880,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384691,joubert syndrome 8,phrase,noun,,159881,,,,,Disease,medicine,,,,medical,Disease Ontology
+384692,joubert syndrome 8,phrase,noun,,159882,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384693,joubert syndrome 9,phrase,noun,,159883,,,,,Disease,medicine,,,,medical,Disease Ontology
+384694,joubert syndrome 9,phrase,noun,,159884,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384695,joubert syndrome 9,phrase,noun,,159885,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384696,joubert syndrome and related disorders,phrase,noun,,160525,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384697,joubert syndrome with jeune asphyxiating thoracic dystrophy,phrase,noun,,160526,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384698,joubert syndrome with ocular defect,phrase,noun,,160527,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384699,joubert syndrome with oculorenal defect,phrase,noun,,77225,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384700,joubert syndrome with orofaciodigital defect,phrase,noun,,160528,,,,,Disease,medicine,,,,medical,Disease Ontology
+384701,joubert syndrome with renal defect,phrase,noun,,159872,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200026,joule,word,noun,,160529,,,,,,medicine,,simple,,medical,NCI Thesaurus
+384702,joule per square centimeter,phrase,noun,,159358,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+200027,journal,word,noun,,160530,,,,,,medicine,,simple,,medical,NCI Thesaurus
+384703,journal of the national cancer institute,phrase,noun,,160537,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+200028,journalism,word,noun,,160539,,,,,,medicine,,derived,,medical,NCI Thesaurus
+200029,joy,word,noun,,104985,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200030,joystick,word,noun,,160584,,,,,,pharmacology,,compound,,medical,NCI Thesaurus (synonym of 'Joystick Device')
+384704,jp-hht,word,noun,,160586,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384705,jpfs,word,noun,,160587,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+384706,jpg,word,noun,,160588,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384707,jpls,word,noun,,160589,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384708,jplsg,word,noun,,159699,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+384709,jpm,word,noun,,160590,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384710,jpof,word,noun,,160591,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+200031,jpred,word,noun,,160592,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200032,jps,word,noun,,160167,,,,,,pharmacology,,simple,,medical,MONDO (diseases) (synonym of 'juvenile polyposis syndrome')
+200033,jpsa,word,noun,,160593,,,,,,pharmacology,,simple,,medical,MONDO (diseases) (synonym of 'psoriasis-related juvenile idiopathic arthritis')
+200034,jr,word,noun,,160594,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Junior')
+384711,jra,word,noun,,63995,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384712,js-h,word,noun,,68229,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+384713,js-h,word,noun,,68230,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384714,js-o,word,noun,,160527,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384715,js-or,word,noun,,77225,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384716,js-r,word,noun,,159872,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+384717,jsle,word,noun,,62318,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+200035,jspa,word,noun,,160598,,,,,,pharmacology,,simple,,medical,MONDO (diseases) (synonym of 'juvenile spondyloarthropathy')
+200036,jspada,word,noun,,160599,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Juvenile Spondyloarthritis Disease Activity Index')
+384718,jsrd,word,noun,,160525,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+200037,jssc,word,noun,,160600,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Juvenile Systemic Sclerosis')
+384719,jta,word,noun,,160601,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384720,jtof,word,noun,,160602,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384721,jtof,word,noun,,160603,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+384722,juberg-hayward syndrome,phrase,noun,,160607,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200038,jublia,word,noun,,66617,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Efinaconazole')
+200039,judaism,word,noun,,160616,,,,,,medicine,,derived,,medical,NCI Thesaurus
+200040,judeo-arabic,word,noun,,160625,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Judeo-Arabic Language')
+200041,judeo-persian,word,noun,,160129,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Judeo-Persian Language')
+200042,judeo-spanish,word,noun,,160628,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Ladino Language')
+200043,judgement,word,noun,,160637,,,,,,pharmacology,,derived,,medical,NCI Thesaurus (synonym of 'Judgment')
+200044,judgment,word,noun,,160637,,,,,,medicine,,derived,,medical,NCI Thesaurus
+200045,jug,word,noun,,160683,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200046,jug,word,noun,,160684,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Jug Dosing Unit')
+384723,jugal bar,phrase,noun,,160691,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384724,jugal bone,phrase,noun,,160692,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384725,jugal point,phrase,noun,,160693,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384726,jugal ramule,phrase,noun,,160695,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+200047,jugulaire,word,noun,,66718,,,,,,anatomy,,simple,,medical,Uberon (anatomy) (synonym of 'urohyal')
+384727,jugular body,phrase,noun,,160718,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384728,jugular foramen,phrase,noun,,160719,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+384729,jugular foramen,phrase,noun,,160720,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384730,jugular foramen meningioma,phrase,noun,,160721,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384731,jugular foramen neoplasm,phrase,noun,,160722,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384732,jugular foramen stenosis,phrase,noun,,160723,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384733,jugular fossa,phrase,noun,,160724,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+384734,jugular ganglion cgrp neuron,phrase,noun,,160725,,,,,Cell type,biology,,,,medical,Cell Ontology
+384735,jugular ganglion sp neuron,phrase,noun,,160726,,,,,Cell type,biology,,,,medical,Cell Ontology
+384736,jugular ganglion sparcl1 neuron,phrase,noun,,160727,,,,,Cell type,biology,,,,medical,Cell Ontology
+384737,jugular ganglion trpv1 neuron,phrase,noun,,160728,,,,,Cell type,biology,,,,medical,Cell Ontology
+384738,jugular ganglion trpv2 neuron,phrase,noun,,160729,,,,,Cell type,biology,,,,medical,Cell Ontology
+384739,jugular lymph sac,phrase,noun,,160730,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384740,jugular vein,phrase,noun,,160731,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384741,jugular venous distension,phrase,noun,,160732,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+384742,jugulohyoideus muscle,phrase,noun,,160733,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384743,jugulotympanic paraganglioma,phrase,noun,,160734,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200048,juice,word,noun,,160735,,,,,,medicine,,simple,,medical,NCI Thesaurus
+384744,juice plus,phrase,noun,,125001,,,,,Brand name,pharmacology,,,,medical,NCI Thesaurus
+200049,jula,word,noun,,91973,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Dyula Language')
+200050,juluca,word,noun,,95337,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Dolutegravir Sodium/Rilpivirine Hydrochloride')
+200051,july,word,noun,,160766,,,,,,medicine,,simple,,medical,NCI Thesaurus
+492648,jump from burning building or structure in controlled fire,phrase,noun,,110824,,,,,Diagnosis,medicine,,,ICD-10 X02.5,medical,ICD-10 (WHO 2019)
+492634,jump from burning building or structure in uncontrolled fire,phrase,noun,,110824,,,,,Diagnosis,medicine,,,ICD-10 X00.5,medical,ICD-10 (WHO 2019)
+200052,jumper,word,noun,,160830,,,,,,pharmacology,,derived,,medical,NCI Thesaurus (synonym of 'Jumper Device')
+200053,jumping,word,noun,,44672,,,,,,medicine,,simple,,medical,Human Phenotype Ontology
+492171,jumping or diving from boat,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.7,medical,ICD-10 (WHO 2019)
+492175,jumping or diving from boat striking bottom,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.72,medical,ICD-10 (WHO 2019)
+492176,jumping or diving from boat striking bottom causing drowning and submersion,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.721,medical,ICD-10 (WHO 2019)
+492177,jumping or diving from boat striking bottom causing other injury,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.722,medical,ICD-10 (WHO 2019)
+492172,jumping or diving from boat striking water surface,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.71,medical,ICD-10 (WHO 2019)
+492173,jumping or diving from boat striking water surface causing drowning and submersion,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.711,medical,ICD-10 (WHO 2019)
+492174,jumping or diving from boat striking water surface causing other injury,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.712,medical,ICD-10 (WHO 2019)
+492164,jumping or diving into natural body of water,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.6,medical,ICD-10 (WHO 2019)
+492168,jumping or diving into natural body of water striking bottom,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.62,medical,ICD-10 (WHO 2019)
+492169,jumping or diving into natural body of water striking bottom causing drowning and submersion,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.621,medical,ICD-10 (WHO 2019)
+492170,jumping or diving into natural body of water striking bottom causing other injury,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.622,medical,ICD-10 (WHO 2019)
+492165,jumping or diving into natural body of water striking water surface,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.61,medical,ICD-10 (WHO 2019)
+492166,jumping or diving into natural body of water striking water surface causing drowning and submersion,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.611,medical,ICD-10 (WHO 2019)
+492167,jumping or diving into natural body of water striking water surface causing other injury,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.612,medical,ICD-10 (WHO 2019)
+492178,jumping or diving into other water,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.8,medical,ICD-10 (WHO 2019)
+492182,jumping or diving into other water striking bottom,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.82,medical,ICD-10 (WHO 2019)
+492183,jumping or diving into other water striking bottom causing drowning and submersion,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.821,medical,ICD-10 (WHO 2019)
+492184,jumping or diving into other water striking bottom causing other injury,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.822,medical,ICD-10 (WHO 2019)
+492185,jumping or diving into other water striking wall,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.83,medical,ICD-10 (WHO 2019)
+492186,jumping or diving into other water striking wall causing drowning and submersion,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.831,medical,ICD-10 (WHO 2019)
+492187,jumping or diving into other water striking wall causing other injury,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.832,medical,ICD-10 (WHO 2019)
+492179,jumping or diving into other water striking water surface,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.81,medical,ICD-10 (WHO 2019)
+492180,jumping or diving into other water striking water surface causing drowning and submersion,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.811,medical,ICD-10 (WHO 2019)
+492181,jumping or diving into other water striking water surface causing other injury,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.812,medical,ICD-10 (WHO 2019)
+492154,jumping or diving into swimming pool,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.5,medical,ICD-10 (WHO 2019)
+492158,jumping or diving into swimming pool striking bottom,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.52,medical,ICD-10 (WHO 2019)
+492159,jumping or diving into swimming pool striking bottom causing drowning and submersion,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.521,medical,ICD-10 (WHO 2019)
+492160,jumping or diving into swimming pool striking bottom causing other injury,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.522,medical,ICD-10 (WHO 2019)
+492161,jumping or diving into swimming pool striking wall,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.53,medical,ICD-10 (WHO 2019)
+492162,jumping or diving into swimming pool striking wall causing drowning and submersion,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.531,medical,ICD-10 (WHO 2019)
+492163,jumping or diving into swimming pool striking wall causing other injury,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.532,medical,ICD-10 (WHO 2019)
+492155,jumping or diving into swimming pool striking water surface,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.51,medical,ICD-10 (WHO 2019)
+492156,jumping or diving into swimming pool striking water surface causing drowning and submersion,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.511,medical,ICD-10 (WHO 2019)
+492157,jumping or diving into swimming pool striking water surface causing other injury,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.512,medical,ICD-10 (WHO 2019)
+492188,jumping or diving into unspecified water,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.9,medical,ICD-10 (WHO 2019)
+492189,jumping or diving into unspecified water causing drowning and submersion,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.91,medical,ICD-10 (WHO 2019)
+492190,jumping or diving into unspecified water causing other injury,phrase,noun,,114117,,,,,Diagnosis,medicine,,,ICD-10 W16.92,medical,ICD-10 (WHO 2019)
+384745,jun,word,noun,,160857,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+200054,junction,word,noun,,160859,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Junction Device')
+384746,junction of superior esophageal nerve and stomatogastric nerve (sensu cancer borealis),phrase,noun,,160861,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384747,junctional ectopic tachycardia,phrase,noun,,160862,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384748,junctional epidermolysis bullosa,phrase,noun,,160863,,,,,Disease,medicine,,,,medical,Disease Ontology
+384749,junctional epidermolysis bullosa,phrase,noun,,99943,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384750,junctional epidermolysis bullosa herlitz type,phrase,noun,,159918,,,,,Disease,medicine,,,,medical,Disease Ontology
+384751,junctional epidermolysis bullosa herlitz type,phrase,noun,,159919,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384752,junctional epidermolysis bullosa inversa,phrase,noun,,99944,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384753,junctional epidermolysis bullosa non-herlitz type,phrase,noun,,126025,,,,,Disease,medicine,,,,medical,Disease Ontology
+384754,junctional epidermolysis bullosa with pyloric atresia,phrase,noun,,159921,,,,,Disease,medicine,,,,medical,Disease Ontology
+384755,junctional epidermolysis bullosa with pyloric atresia,phrase,noun,,159922,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384756,"junctional epidermolysis bullosa, itga6-related, cattle",phrase,noun,,160864,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384757,"junctional epidermolysis bullosa, itgb4-related, cattle",phrase,noun,,160865,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384758,"junctional epidermolysis bullosa, itgb4-related, sheep",phrase,noun,,160866,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384759,"junctional epidermolysis bullosa, lama3-related, cattle",phrase,noun,,160867,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384760,"junctional epidermolysis bullosa, lama3-related, dog",phrase,noun,,160868,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384761,"junctional epidermolysis bullosa, lama3-related, horse",phrase,noun,,160869,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384762,"junctional epidermolysis bullosa, lamb3-related, dog",phrase,noun,,160870,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384763,"junctional epidermolysis bullosa, lamc2-related, cattle",phrase,noun,,160871,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384764,"junctional epidermolysis bullosa, lamc2-related, horse",phrase,noun,,160872,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384765,"junctional epidermolysis bullosa, lamc2-related, sheep",phrase,noun,,160873,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384766,"junctional epidermolysis bullosa, non-herlitz type",phrase,noun,,159990,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384767,junctional epithelial cell,phrase,noun,,160874,,,,,Cell type,biology,,,,medical,Cell Ontology
+442612,junctional premature depolarization,phrase,noun,,7154,,,,,Diagnosis,medicine,,,ICD-10 I49.2,medical,ICD-10 (WHO 2019)
+461046,junctional premature depolarization,phrase,noun,,7155,,,,,Diagnosis,medicine,,,ICD-10 I49.2,medical,ICD-10 (WHO 2019)
+384768,junctional tachycardia,phrase,noun,,160875,,,,,Symptom,medicine,,,,medical,Symptom Ontology
+384769,"junctionalis epidermolysis bullosa , non-human animal",phrase,noun,,160876,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384770,"junctionalis epidermolysis bullosa, cattle",phrase,noun,,160877,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384771,"junctionalis epidermolysis bullosa, col17a1-related, domestic cat",phrase,noun,,160878,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384772,"junctionalis epidermolysis bullosa, dog",phrase,noun,,160879,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384773,"junctionalis epidermolysis bullosa, domestic cat",phrase,noun,,160880,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384774,"junctionalis epidermolysis bullosa, lamb3-related, sheep",phrase,noun,,160881,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200055,june,word,noun,,160889,,,,,,medicine,,simple,,medical,NCI Thesaurus
+439489,junin haemorrhagic fever,phrase,noun,,23839,,,,,Diagnosis,medicine,,,ICD-10 A96.0,medical,ICD-10 (WHO 2019)
+450936,junin hemorrhagic fever,phrase,noun,,23840,,,,,Diagnosis,medicine,,,ICD-10 A96.0,medical,ICD-10 (WHO 2019)
+200056,junior,word,noun,,160594,,,,,,medicine,,simple,,medical,NCI Thesaurus
+384775,juniper tar,phrase,noun,,160938,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+200057,junovan,word,noun,,160961,,,,,,pharmacology,,compound,,medical,NCI Thesaurus (synonym of 'Mifamurtide')
+200058,jurisdiction,word,noun,,160972,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200059,just-in-time,word,noun,,161014,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Just-in-time-concept')
+200060,just-in-time-concept,word,noun,,161014,,,,,,medicine,,,,medical,NCI Thesaurus
+200061,justification,word,noun,,161023,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200062,juven,word,noun,,161058,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+384776,juvenile absence epilepsy,phrase,noun,,161064,,,,,Disease,medicine,,,,medical,Disease Ontology
+384777,juvenile absence epilepsy,phrase,noun,,159493,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384778,juvenile absence epilepsy 1,phrase,noun,,101573,,,,,Disease,medicine,,,,medical,Disease Ontology
+384779,juvenile amyotrophic lateral sclerosis,phrase,noun,,159542,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384780,juvenile amyotrophic lateral sclerosis type 27,phrase,noun,,161066,,,,,Disease,medicine,,,,medical,Disease Ontology
+384781,juvenile amyotrophic lateral sclerosis with dementia,phrase,noun,,161067,,,,,Disease,medicine,,,,medical,Disease Ontology
+468241,juvenile and adolescent idiopathic scoliosis,phrase,noun,,9226,,,,,Diagnosis,medicine,,,ICD-10 M41.1,medical,ICD-10 (WHO 2019)
+384782,juvenile ankylosing spondylitis,phrase,noun,,161068,,,,,Disease,medicine,,,ICD-10 M08.1,medical,Disease Ontology
+465953,juvenile ankylosing spondylitis,phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.1,medical,ICD-10 (WHO 2019)
+443841,juvenile arthritis,phrase,noun,,25044,,,,,Diagnosis,medicine,,,ICD-10 M08,medical,ICD-10 (WHO 2019)
+465919,juvenile arthritis,phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08,medical,ICD-10 (WHO 2019)
+384783,juvenile arthritis disease activity score,phrase,noun,,159361,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+443850,juvenile arthritis in crohn disease [regional enteritis],phrase,noun,,25044,,,,,Diagnosis,medicine,,,ICD-10 M09.1,medical,ICD-10 (WHO 2019)
+443848,juvenile arthritis in diseases classified elsewhere,phrase,noun,,25044,,,,,Diagnosis,medicine,,,ICD-10 M09,medical,ICD-10 (WHO 2019)
+443852,juvenile arthritis in other diseases classified elsewhere,phrase,noun,,25044,,,,,Diagnosis,medicine,,,ICD-10 M09.8,medical,ICD-10 (WHO 2019)
+443849,juvenile arthritis in psoriasis,phrase,noun,,25044,,,,,Diagnosis,medicine,,,ICD-10 M09.0,medical,ICD-10 (WHO 2019)
+443851,juvenile arthritis in ulcerative colitis,phrase,noun,,25044,,,,,Diagnosis,medicine,,,ICD-10 M09.2,medical,ICD-10 (WHO 2019)
+443843,juvenile arthritis with systemic onset,phrase,noun,,25044,,,,,Diagnosis,medicine,,,ICD-10 M08.2,medical,ICD-10 (WHO 2019)
+443847,"juvenile arthritis, unspecified",phrase,noun,,25044,,,,,Diagnosis,medicine,,,ICD-10 M08.9,medical,ICD-10 (WHO 2019)
+466052,"juvenile arthritis, unspecified",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.9,medical,ICD-10 (WHO 2019)
+466078,"juvenile arthritis, unspecified, ankle and foot",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.97,medical,ICD-10 (WHO 2019)
+466058,"juvenile arthritis, unspecified, elbow",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.92,medical,ICD-10 (WHO 2019)
+466066,"juvenile arthritis, unspecified, hand",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.94,medical,ICD-10 (WHO 2019)
+466070,"juvenile arthritis, unspecified, hip",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.95,medical,ICD-10 (WHO 2019)
+466074,"juvenile arthritis, unspecified, knee",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.96,medical,ICD-10 (WHO 2019)
+466080,"juvenile arthritis, unspecified, left ankle and foot",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.972,medical,ICD-10 (WHO 2019)
+466060,"juvenile arthritis, unspecified, left elbow",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.922,medical,ICD-10 (WHO 2019)
+466068,"juvenile arthritis, unspecified, left hand",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.942,medical,ICD-10 (WHO 2019)
+466072,"juvenile arthritis, unspecified, left hip",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.952,medical,ICD-10 (WHO 2019)
+466076,"juvenile arthritis, unspecified, left knee",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.962,medical,ICD-10 (WHO 2019)
+466056,"juvenile arthritis, unspecified, left shoulder",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.912,medical,ICD-10 (WHO 2019)
+466064,"juvenile arthritis, unspecified, left wrist",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.932,medical,ICD-10 (WHO 2019)
+466083,"juvenile arthritis, unspecified, multiple sites",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.99,medical,ICD-10 (WHO 2019)
+466084,"juvenile arthritis, unspecified, other specified site",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.9A,medical,ICD-10 (WHO 2019)
+466079,"juvenile arthritis, unspecified, right ankle and foot",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.971,medical,ICD-10 (WHO 2019)
+466059,"juvenile arthritis, unspecified, right elbow",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.921,medical,ICD-10 (WHO 2019)
+466067,"juvenile arthritis, unspecified, right hand",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.941,medical,ICD-10 (WHO 2019)
+466071,"juvenile arthritis, unspecified, right hip",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.951,medical,ICD-10 (WHO 2019)
+466075,"juvenile arthritis, unspecified, right knee",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.961,medical,ICD-10 (WHO 2019)
+466055,"juvenile arthritis, unspecified, right shoulder",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.911,medical,ICD-10 (WHO 2019)
+466063,"juvenile arthritis, unspecified, right wrist",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.931,medical,ICD-10 (WHO 2019)
+466054,"juvenile arthritis, unspecified, shoulder",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.91,medical,ICD-10 (WHO 2019)
+466081,"juvenile arthritis, unspecified, unspecified ankle and foot",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.979,medical,ICD-10 (WHO 2019)
+466061,"juvenile arthritis, unspecified, unspecified elbow",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.929,medical,ICD-10 (WHO 2019)
+466069,"juvenile arthritis, unspecified, unspecified hand",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.949,medical,ICD-10 (WHO 2019)
+466073,"juvenile arthritis, unspecified, unspecified hip",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.959,medical,ICD-10 (WHO 2019)
+466077,"juvenile arthritis, unspecified, unspecified knee",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.969,medical,ICD-10 (WHO 2019)
+466057,"juvenile arthritis, unspecified, unspecified shoulder",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.919,medical,ICD-10 (WHO 2019)
+466053,"juvenile arthritis, unspecified, unspecified site",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.90,medical,ICD-10 (WHO 2019)
+466065,"juvenile arthritis, unspecified, unspecified wrist",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.939,medical,ICD-10 (WHO 2019)
+466082,"juvenile arthritis, unspecified, vertebrae",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.98,medical,ICD-10 (WHO 2019)
+466062,"juvenile arthritis, unspecified, wrist",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.93,medical,ICD-10 (WHO 2019)
+384784,juvenile aseptic necrosis,phrase,noun,,161069,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384785,juvenile bilateral ovarian granulosa cell tumor,phrase,noun,,161070,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384786,juvenile breast papillomatosis,phrase,noun,,161072,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384787,juvenile cataract,phrase,noun,,161073,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384788,juvenile cataract-microcornea-renal glucosuria syndrome,phrase,noun,,161074,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384789,juvenile chronic polyarthritis,phrase,noun,,161075,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384790,juvenile colonic polyposis,phrase,noun,,161076,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384791,juvenile dermatitis herpetiformis,phrase,noun,,161078,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384792,juvenile dermatomyositis,phrase,noun,,161079,,,,,Disease,medicine,,,ICD-10 M33.0,medical,MONDO (diseases)
+468127,juvenile dermatomyositis,phrase,noun,,21454,,,,,Diagnosis,medicine,,,ICD-10 M33.0,medical,ICD-10 (WHO 2019)
+384793,juvenile dermatomyositis sine myositis,phrase,noun,,161080,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+468130,juvenile dermatomyositis with myopathy,phrase,noun,,21454,,,,,Diagnosis,medicine,,,ICD-10 M33.02,medical,ICD-10 (WHO 2019)
+468132,juvenile dermatomyositis with other organ involvement,phrase,noun,,21454,,,,,Diagnosis,medicine,,,ICD-10 M33.09,medical,ICD-10 (WHO 2019)
+468129,juvenile dermatomyositis with respiratory involvement,phrase,noun,,21454,,,,,Diagnosis,medicine,,,ICD-10 M33.01,medical,ICD-10 (WHO 2019)
+468131,juvenile dermatomyositis without myopathy,phrase,noun,,21454,,,,,Diagnosis,medicine,,,ICD-10 M33.03,medical,ICD-10 (WHO 2019)
+468128,"juvenile dermatomyositis, organ involvement unspecified",phrase,noun,,21454,,,,,Diagnosis,medicine,,,ICD-10 M33.00,medical,ICD-10 (WHO 2019)
+384794,juvenile gastrointestinal polyposis,phrase,noun,,161081,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+450655,juvenile general paresis,phrase,noun,,18610,,,,,Diagnosis,medicine,,,ICD-10 A50.45,medical,ICD-10 (WHO 2019)
+384795,juvenile glaucoma,phrase,noun,,161082,,,,,Disease,medicine,,,,medical,Disease Ontology
+384796,juvenile granulosa cell tumor,phrase,noun,,161083,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384797,juvenile hormone secreting cell,phrase,noun,,161084,,,,,Cell type,biology,,,,medical,Cell Ontology
+384798,juvenile huntington disease,phrase,noun,,160122,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384799,juvenile huntington disease,phrase,noun,,161085,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384800,juvenile hyaline fibromatosis,phrase,noun,,161086,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384801,juvenile hyaline fibromatosis,phrase,noun,,161087,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384802,juvenile idiopathic arthritis,phrase,noun,,161088,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384803,juvenile idiopathic arthritis,phrase,noun,,160123,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384804,juvenile idiopathic arthritis-associated uveitis,phrase,noun,,161089,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384805,juvenile idiopathic scoliosis,phrase,noun,,161090,,,,,Disease,medicine,,,ICD-10 M41.1,medical,MONDO (diseases)
+468242,juvenile idiopathic scoliosis,phrase,noun,,9226,,,,,Diagnosis,medicine,,,ICD-10 M41.11,medical,ICD-10 (WHO 2019)
+468243,"juvenile idiopathic scoliosis, cervical region",phrase,noun,,9226,,,,,Diagnosis,medicine,,,ICD-10 M41.112,medical,ICD-10 (WHO 2019)
+468244,"juvenile idiopathic scoliosis, cervicothoracic region",phrase,noun,,9226,,,,,Diagnosis,medicine,,,ICD-10 M41.113,medical,ICD-10 (WHO 2019)
+468247,"juvenile idiopathic scoliosis, lumbar region",phrase,noun,,9226,,,,,Diagnosis,medicine,,,ICD-10 M41.116,medical,ICD-10 (WHO 2019)
+468248,"juvenile idiopathic scoliosis, lumbosacral region",phrase,noun,,9226,,,,,Diagnosis,medicine,,,ICD-10 M41.117,medical,ICD-10 (WHO 2019)
+468249,"juvenile idiopathic scoliosis, site unspecified",phrase,noun,,9226,,,,,Diagnosis,medicine,,,ICD-10 M41.119,medical,ICD-10 (WHO 2019)
+468245,"juvenile idiopathic scoliosis, thoracic region",phrase,noun,,9226,,,,,Diagnosis,medicine,,,ICD-10 M41.114,medical,ICD-10 (WHO 2019)
+468246,"juvenile idiopathic scoliosis, thoracolumbar region",phrase,noun,,9226,,,,,Diagnosis,medicine,,,ICD-10 M41.115,medical,ICD-10 (WHO 2019)
+384806,juvenile myasthenia gravis,phrase,noun,,161091,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+440373,juvenile myelomonocytic leukaemia,phrase,noun,,7249,,,,,Diagnosis,medicine,,,ICD-10 C93.3,medical,ICD-10 (WHO 2019)
+384807,juvenile myelomonocytic leukemia,phrase,noun,,161092,,,,,Disease,medicine,,,ICD-10 C93.3,medical,Disease Ontology
+384808,juvenile myelomonocytic leukemia,phrase,noun,,161093,,,,,Sign / symptom / phenotype,medicine,,,ICD-10 C93.3,medical,Human Phenotype Ontology
+384809,juvenile myelomonocytic leukemia,phrase,noun,,159891,,,,,Disease,medicine,,,ICD-10 C93.3,medical,MONDO (diseases)
+384810,juvenile myelomonocytic leukemia,phrase,noun,,159892,,,,,Disease,medicine,,,ICD-10 C93.3,medical,NCI Thesaurus
+384811,juvenile myelomonocytic leukemia associated with neurofibromatosis,phrase,noun,,161094,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384812,juvenile myelomonocytic leukemia in remission,phrase,noun,,161095,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+452997,"juvenile myelomonocytic leukemia, in relapse",phrase,noun,,7253,,,,,Diagnosis,medicine,,,ICD-10 C93.32,medical,ICD-10 (WHO 2019)
+452996,"juvenile myelomonocytic leukemia, in remission",phrase,noun,,7253,,,,,Diagnosis,medicine,,,ICD-10 C93.31,medical,ICD-10 (WHO 2019)
+452995,"juvenile myelomonocytic leukemia, not having achieved remission",phrase,noun,,7253,,,,,Diagnosis,medicine,,,ICD-10 C93.30,medical,ICD-10 (WHO 2019)
+384813,juvenile myelomonocytic leukemia-like neoplasm,phrase,noun,,161096,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384814,juvenile myoclonic epilepsy,phrase,noun,,161097,,,,,Disease,medicine,,,,medical,Disease Ontology
+384815,juvenile myoclonic epilepsy,phrase,noun,,101597,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384816,juvenile myoclonic epilepsy 10,phrase,noun,,101598,,,,,Disease,medicine,,,,medical,Disease Ontology
+384817,juvenile myoclonic epilepsy 3,phrase,noun,,101599,,,,,Disease,medicine,,,,medical,Disease Ontology
+384818,juvenile myoclonic epilepsy 4,phrase,noun,,101600,,,,,Disease,medicine,,,,medical,Disease Ontology
+384819,juvenile myoclonic epilepsy 9,phrase,noun,,101601,,,,,Disease,medicine,,,,medical,Disease Ontology
+456182,juvenile myoclonic epilepsy [impulsive petit mal],phrase,noun,,1213,,,,,Diagnosis,medicine,,,ICD-10 G40.B,medical,ICD-10 (WHO 2019)
+456186,"juvenile myoclonic epilepsy, intractable",phrase,noun,,1213,,,,,Diagnosis,medicine,,,ICD-10 G40.B1,medical,ICD-10 (WHO 2019)
+456187,"juvenile myoclonic epilepsy, intractable, with status epilepticus",phrase,noun,,1213,,,,,Diagnosis,medicine,,,ICD-10 G40.B11,medical,ICD-10 (WHO 2019)
+456188,"juvenile myoclonic epilepsy, intractable, without status epilepticus",phrase,noun,,1213,,,,,Diagnosis,medicine,,,ICD-10 G40.B19,medical,ICD-10 (WHO 2019)
+456183,"juvenile myoclonic epilepsy, not intractable",phrase,noun,,1213,,,,,Diagnosis,medicine,,,ICD-10 G40.B0,medical,ICD-10 (WHO 2019)
+456184,"juvenile myoclonic epilepsy, not intractable, with status epilepticus",phrase,noun,,1213,,,,,Diagnosis,medicine,,,ICD-10 G40.B01,medical,ICD-10 (WHO 2019)
+456185,"juvenile myoclonic epilepsy, not intractable, without status epilepticus",phrase,noun,,1213,,,,,Diagnosis,medicine,,,ICD-10 G40.B09,medical,ICD-10 (WHO 2019)
+384820,juvenile nasopharyngeal angiofibroma,phrase,noun,,161098,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384821,juvenile nasopharyngeal angiofibroma,phrase,noun,,160186,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384822,juvenile nephropathic cystinosis,phrase,noun,,161099,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384823,juvenile neuronal ceroid lipofuscinosis,phrase,noun,,160187,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384824,juvenile onset,phrase,noun,,161100,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384825,juvenile onset parkinson disease 19a,phrase,noun,,161101,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384826,juvenile onset pityriasis rubra pilaris,phrase,noun,,161102,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384827,juvenile open angle glaucoma,phrase,noun,,160194,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384828,juvenile ossifying fibroma,phrase,noun,,160256,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384829,juvenile osteochondrosis,phrase,noun,,161103,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+444313,juvenile osteochondrosis of hand,phrase,noun,,63179,,,,,Diagnosis,medicine,,,ICD-10 M92.2,medical,ICD-10 (WHO 2019)
+444306,juvenile osteochondrosis of head of femur [legg-calvé-perthes],phrase,noun,,63179,,,,,Diagnosis,medicine,,,ICD-10 M91.1,medical,ICD-10 (WHO 2019)
+471744,juvenile osteochondrosis of head of femur [legg-calvé-perthes],phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M91.1,medical,ICD-10 (WHO 2019)
+471747,"juvenile osteochondrosis of head of femur [legg-calvé-perthes], left leg",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M91.12,medical,ICD-10 (WHO 2019)
+471746,"juvenile osteochondrosis of head of femur [legg-calvé-perthes], right leg",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M91.11,medical,ICD-10 (WHO 2019)
+471745,"juvenile osteochondrosis of head of femur [legg-calvé-perthes], unspecified leg",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M91.10,medical,ICD-10 (WHO 2019)
+444304,juvenile osteochondrosis of hip and pelvis,phrase,noun,,63179,,,,,Diagnosis,medicine,,,ICD-10 M91,medical,ICD-10 (WHO 2019)
+471742,juvenile osteochondrosis of hip and pelvis,phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M91,medical,ICD-10 (WHO 2019)
+444309,"juvenile osteochondrosis of hip and pelvis, unspecified",phrase,noun,,63179,,,,,Diagnosis,medicine,,,ICD-10 M91.9,medical,ICD-10 (WHO 2019)
+471763,"juvenile osteochondrosis of hip and pelvis, unspecified",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M91.9,medical,ICD-10 (WHO 2019)
+471766,"juvenile osteochondrosis of hip and pelvis, unspecified, left leg",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M91.92,medical,ICD-10 (WHO 2019)
+471765,"juvenile osteochondrosis of hip and pelvis, unspecified, right leg",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M91.91,medical,ICD-10 (WHO 2019)
+471764,"juvenile osteochondrosis of hip and pelvis, unspecified, unspecified leg",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M91.90,medical,ICD-10 (WHO 2019)
+444311,juvenile osteochondrosis of humerus,phrase,noun,,63179,,,,,Diagnosis,medicine,,,ICD-10 M92.0,medical,ICD-10 (WHO 2019)
+471768,juvenile osteochondrosis of humerus,phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.0,medical,ICD-10 (WHO 2019)
+471771,"juvenile osteochondrosis of humerus, left arm",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.02,medical,ICD-10 (WHO 2019)
+471770,"juvenile osteochondrosis of humerus, right arm",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.01,medical,ICD-10 (WHO 2019)
+471769,"juvenile osteochondrosis of humerus, unspecified arm",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.00,medical,ICD-10 (WHO 2019)
+444318,juvenile osteochondrosis of metatarsus,phrase,noun,,63179,,,,,Diagnosis,medicine,,,ICD-10 M92.7,medical,ICD-10 (WHO 2019)
+471826,juvenile osteochondrosis of metatarsus,phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.7,medical,ICD-10 (WHO 2019)
+471829,"juvenile osteochondrosis of metatarsus, left foot",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.72,medical,ICD-10 (WHO 2019)
+471828,"juvenile osteochondrosis of metatarsus, right foot",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.71,medical,ICD-10 (WHO 2019)
+471827,"juvenile osteochondrosis of metatarsus, unspecified foot",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.70,medical,ICD-10 (WHO 2019)
+444315,juvenile osteochondrosis of patella,phrase,noun,,63179,,,,,Diagnosis,medicine,,,ICD-10 M92.4,medical,ICD-10 (WHO 2019)
+471797,juvenile osteochondrosis of patella,phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.4,medical,ICD-10 (WHO 2019)
+471800,"juvenile osteochondrosis of patella, left knee",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.42,medical,ICD-10 (WHO 2019)
+471799,"juvenile osteochondrosis of patella, right knee",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.41,medical,ICD-10 (WHO 2019)
+471798,"juvenile osteochondrosis of patella, unspecified knee",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.40,medical,ICD-10 (WHO 2019)
+444305,juvenile osteochondrosis of pelvis,phrase,noun,,63179,,,,,Diagnosis,medicine,,,ICD-10 M91.0,medical,ICD-10 (WHO 2019)
+471743,juvenile osteochondrosis of pelvis,phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M91.0,medical,ICD-10 (WHO 2019)
+471807,juvenile osteochondrosis of proximal tibia,phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.51,medical,ICD-10 (WHO 2019)
+471810,"juvenile osteochondrosis of proximal tibia, bilateral",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.513,medical,ICD-10 (WHO 2019)
+471809,"juvenile osteochondrosis of proximal tibia, left leg",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.512,medical,ICD-10 (WHO 2019)
+471808,"juvenile osteochondrosis of proximal tibia, right leg",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.511,medical,ICD-10 (WHO 2019)
+471811,"juvenile osteochondrosis of proximal tibia, unspecified leg",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.519,medical,ICD-10 (WHO 2019)
+444312,juvenile osteochondrosis of radius and ulna,phrase,noun,,63179,,,,,Diagnosis,medicine,,,ICD-10 M92.1,medical,ICD-10 (WHO 2019)
+471772,juvenile osteochondrosis of radius and ulna,phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.1,medical,ICD-10 (WHO 2019)
+471775,"juvenile osteochondrosis of radius and ulna, left arm",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.12,medical,ICD-10 (WHO 2019)
+471774,"juvenile osteochondrosis of radius and ulna, right arm",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.11,medical,ICD-10 (WHO 2019)
+471773,"juvenile osteochondrosis of radius and ulna, unspecified arm",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.10,medical,ICD-10 (WHO 2019)
+444034,juvenile osteochondrosis of spine,phrase,noun,,9707,,,,,Diagnosis,medicine,,,ICD-10 M42.0,medical,ICD-10 (WHO 2019)
+468296,juvenile osteochondrosis of spine,phrase,noun,,9226,,,,,Diagnosis,medicine,,,ICD-10 M42.0,medical,ICD-10 (WHO 2019)
+468299,"juvenile osteochondrosis of spine, cervical region",phrase,noun,,9226,,,,,Diagnosis,medicine,,,ICD-10 M42.02,medical,ICD-10 (WHO 2019)
+468300,"juvenile osteochondrosis of spine, cervicothoracic region",phrase,noun,,9226,,,,,Diagnosis,medicine,,,ICD-10 M42.03,medical,ICD-10 (WHO 2019)
+468303,"juvenile osteochondrosis of spine, lumbar region",phrase,noun,,9226,,,,,Diagnosis,medicine,,,ICD-10 M42.06,medical,ICD-10 (WHO 2019)
+468304,"juvenile osteochondrosis of spine, lumbosacral region",phrase,noun,,9226,,,,,Diagnosis,medicine,,,ICD-10 M42.07,medical,ICD-10 (WHO 2019)
+468306,"juvenile osteochondrosis of spine, multiple sites in spine",phrase,noun,,9226,,,,,Diagnosis,medicine,,,ICD-10 M42.09,medical,ICD-10 (WHO 2019)
+468298,"juvenile osteochondrosis of spine, occipito-atlanto-axial region",phrase,noun,,9226,,,,,Diagnosis,medicine,,,ICD-10 M42.01,medical,ICD-10 (WHO 2019)
+468305,"juvenile osteochondrosis of spine, sacral and sacrococcygeal region",phrase,noun,,9226,,,,,Diagnosis,medicine,,,ICD-10 M42.08,medical,ICD-10 (WHO 2019)
+468297,"juvenile osteochondrosis of spine, site unspecified",phrase,noun,,9226,,,,,Diagnosis,medicine,,,ICD-10 M42.00,medical,ICD-10 (WHO 2019)
+468301,"juvenile osteochondrosis of spine, thoracic region",phrase,noun,,9226,,,,,Diagnosis,medicine,,,ICD-10 M42.04,medical,ICD-10 (WHO 2019)
+468302,"juvenile osteochondrosis of spine, thoracolumbar region",phrase,noun,,9226,,,,,Diagnosis,medicine,,,ICD-10 M42.05,medical,ICD-10 (WHO 2019)
+444317,juvenile osteochondrosis of tarsus,phrase,noun,,63179,,,,,Diagnosis,medicine,,,ICD-10 M92.6,medical,ICD-10 (WHO 2019)
+471822,juvenile osteochondrosis of tarsus,phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.6,medical,ICD-10 (WHO 2019)
+471825,"juvenile osteochondrosis of tarsus, left ankle",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.62,medical,ICD-10 (WHO 2019)
+471824,"juvenile osteochondrosis of tarsus, right ankle",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.61,medical,ICD-10 (WHO 2019)
+471823,"juvenile osteochondrosis of tarsus, unspecified ankle",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.60,medical,ICD-10 (WHO 2019)
+444316,juvenile osteochondrosis of tibia and fibula,phrase,noun,,63179,,,,,Diagnosis,medicine,,,ICD-10 M92.5,medical,ICD-10 (WHO 2019)
+471801,juvenile osteochondrosis of tibia and fibula,phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.5,medical,ICD-10 (WHO 2019)
+471812,juvenile osteochondrosis of tibia tubercle,phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.52,medical,ICD-10 (WHO 2019)
+471815,"juvenile osteochondrosis of tibia tubercle, bilateral",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.523,medical,ICD-10 (WHO 2019)
+471814,"juvenile osteochondrosis of tibia tubercle, left leg",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.522,medical,ICD-10 (WHO 2019)
+471813,"juvenile osteochondrosis of tibia tubercle, right leg",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.521,medical,ICD-10 (WHO 2019)
+471816,"juvenile osteochondrosis of tibia tubercle, unspecified leg",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.529,medical,ICD-10 (WHO 2019)
+471776,"juvenile osteochondrosis, hand",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.2,medical,ICD-10 (WHO 2019)
+444320,"juvenile osteochondrosis, unspecified",phrase,noun,,63179,,,,,Diagnosis,medicine,,,ICD-10 M92.9,medical,ICD-10 (WHO 2019)
+471831,"juvenile osteochondrosis, unspecified",phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M92.9,medical,ICD-10 (WHO 2019)
+384830,juvenile ovarian granulosa cell tumor,phrase,noun,,161104,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384831,juvenile overlap myositis,phrase,noun,,161105,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384832,juvenile paget disease,phrase,noun,,160588,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384833,juvenile paget disease,phrase,noun,,161106,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384834,juvenile pilocytic astrocytoma,phrase,noun,,161107,,,,,Disease,medicine,,,,medical,Disease Ontology
+443982,juvenile polyarteritis,phrase,noun,,21453,,,,,Diagnosis,medicine,,,ICD-10 M30.2,medical,ICD-10 (WHO 2019)
+468095,juvenile polyarteritis,phrase,noun,,21454,,,,,Diagnosis,medicine,,,ICD-10 M30.2,medical,ICD-10 (WHO 2019)
+443844,juvenile polyarthritis (seronegative),phrase,noun,,25044,,,,,Diagnosis,medicine,,,ICD-10 M08.3,medical,ICD-10 (WHO 2019)
+384835,juvenile polymyositis,phrase,noun,,160590,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384836,juvenile polyp,phrase,noun,,161108,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384837,juvenile polyposis of infancy,phrase,noun,,161109,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384838,juvenile polyposis syndrome,phrase,noun,,161110,,,,,Disease,medicine,,,,medical,Disease Ontology
+384839,juvenile polyposis syndrome,phrase,noun,,160167,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384840,juvenile polyposis syndrome,phrase,noun,,161111,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384841,juvenile polyposis-hereditary hemorrhagic telangiectasia syndrome,phrase,noun,,160586,,,,,Disease,medicine,,,,medical,Disease Ontology
+384842,juvenile polyposis/hereditary hemorrhagic telangiectasia syndrome,phrase,noun,,161112,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384843,juvenile primary fibromyalgia syndrome,phrase,noun,,160587,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384844,juvenile primary lateral sclerosis,phrase,noun,,160589,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+443842,juvenile rheumatoid arthritis,phrase,noun,,25044,,,,,Diagnosis,medicine,,,ICD-10 M08.0,medical,ICD-10 (WHO 2019)
+465954,juvenile rheumatoid arthritis with systemic onset,phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.2,medical,ICD-10 (WHO 2019)
+465980,"juvenile rheumatoid arthritis with systemic onset, ankle and foot",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.27,medical,ICD-10 (WHO 2019)
+465960,"juvenile rheumatoid arthritis with systemic onset, elbow",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.22,medical,ICD-10 (WHO 2019)
+465968,"juvenile rheumatoid arthritis with systemic onset, hand",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.24,medical,ICD-10 (WHO 2019)
+465972,"juvenile rheumatoid arthritis with systemic onset, hip",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.25,medical,ICD-10 (WHO 2019)
+465976,"juvenile rheumatoid arthritis with systemic onset, knee",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.26,medical,ICD-10 (WHO 2019)
+465982,"juvenile rheumatoid arthritis with systemic onset, left ankle and foot",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.272,medical,ICD-10 (WHO 2019)
+465962,"juvenile rheumatoid arthritis with systemic onset, left elbow",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.222,medical,ICD-10 (WHO 2019)
+465970,"juvenile rheumatoid arthritis with systemic onset, left hand",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.242,medical,ICD-10 (WHO 2019)
+465974,"juvenile rheumatoid arthritis with systemic onset, left hip",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.252,medical,ICD-10 (WHO 2019)
+465978,"juvenile rheumatoid arthritis with systemic onset, left knee",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.262,medical,ICD-10 (WHO 2019)
+465958,"juvenile rheumatoid arthritis with systemic onset, left shoulder",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.212,medical,ICD-10 (WHO 2019)
+465966,"juvenile rheumatoid arthritis with systemic onset, left wrist",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.232,medical,ICD-10 (WHO 2019)
+465985,"juvenile rheumatoid arthritis with systemic onset, multiple sites",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.29,medical,ICD-10 (WHO 2019)
+465986,"juvenile rheumatoid arthritis with systemic onset, other specified site",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.2A,medical,ICD-10 (WHO 2019)
+465981,"juvenile rheumatoid arthritis with systemic onset, right ankle and foot",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.271,medical,ICD-10 (WHO 2019)
+465961,"juvenile rheumatoid arthritis with systemic onset, right elbow",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.221,medical,ICD-10 (WHO 2019)
+465969,"juvenile rheumatoid arthritis with systemic onset, right hand",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.241,medical,ICD-10 (WHO 2019)
+465973,"juvenile rheumatoid arthritis with systemic onset, right hip",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.251,medical,ICD-10 (WHO 2019)
+465977,"juvenile rheumatoid arthritis with systemic onset, right knee",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.261,medical,ICD-10 (WHO 2019)
+465957,"juvenile rheumatoid arthritis with systemic onset, right shoulder",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.211,medical,ICD-10 (WHO 2019)
+465965,"juvenile rheumatoid arthritis with systemic onset, right wrist",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.231,medical,ICD-10 (WHO 2019)
+465956,"juvenile rheumatoid arthritis with systemic onset, shoulder",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.21,medical,ICD-10 (WHO 2019)
+465983,"juvenile rheumatoid arthritis with systemic onset, unspecified ankle and foot",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.279,medical,ICD-10 (WHO 2019)
+465963,"juvenile rheumatoid arthritis with systemic onset, unspecified elbow",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.229,medical,ICD-10 (WHO 2019)
+465971,"juvenile rheumatoid arthritis with systemic onset, unspecified hand",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.249,medical,ICD-10 (WHO 2019)
+465975,"juvenile rheumatoid arthritis with systemic onset, unspecified hip",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.259,medical,ICD-10 (WHO 2019)
+465979,"juvenile rheumatoid arthritis with systemic onset, unspecified knee",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.269,medical,ICD-10 (WHO 2019)
+465959,"juvenile rheumatoid arthritis with systemic onset, unspecified shoulder",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.219,medical,ICD-10 (WHO 2019)
+465955,"juvenile rheumatoid arthritis with systemic onset, unspecified site",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.20,medical,ICD-10 (WHO 2019)
+465967,"juvenile rheumatoid arthritis with systemic onset, unspecified wrist",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.239,medical,ICD-10 (WHO 2019)
+465984,"juvenile rheumatoid arthritis with systemic onset, vertebrae",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.28,medical,ICD-10 (WHO 2019)
+465964,"juvenile rheumatoid arthritis with systemic onset, wrist",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.23,medical,ICD-10 (WHO 2019)
+465987,juvenile rheumatoid polyarthritis (seronegative),phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M08.3,medical,ICD-10 (WHO 2019)
+384845,juvenile spinal muscular atrophy,phrase,noun,,161114,,,,,Disease,medicine,,,,medical,Disease Ontology
+384846,juvenile spondyloarthropathy,phrase,noun,,160598,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384847,juvenile stage,phrase,noun,,161115,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384848,juvenile temporal arteritis,phrase,noun,,160601,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384849,juvenile testicular granulosa cell tumor,phrase,noun,,161116,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384850,juvenile trabecular ossifying fibroma,phrase,noun,,160602,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384851,juvenile trabecular ossifying fibroma,phrase,noun,,160603,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384852,juvenile type ovarian granulosa cell tumor,phrase,noun,,161117,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384853,juvenile type testicular granulosa cell tumor,phrase,noun,,161118,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384854,juvenile type testicular granulosa cell tumor,phrase,noun,,161119,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384855,juvenile xanthogranuloma,phrase,noun,,161121,,,,,Disease,medicine,,,,medical,Disease Ontology
+384856,juvenile xanthogranuloma,phrase,noun,,161122,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384857,juvenile xanthogranuloma,phrase,noun,,161123,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384858,juvenile-onset parkinson's disease,phrase,noun,,161124,,,,,Disease,medicine,,,,medical,Disease Ontology
+200063,juveniles,word,noun,,161125,,,,,,anatomy,,simple,,medical,Uberon (anatomy) (synonym of 'sexually immature organism')
+384859,juxtacanalicular tissue cell,phrase,noun,,161127,,,,,Cell type,biology,,,,medical,Cell Ontology
+384860,juxtacortical osteosarcoma,phrase,noun,,161128,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384861,juxtaductal coarctation of the aorta,phrase,noun,,161129,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384862,juxtaductal region of aortic arch,phrase,noun,,161130,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384863,juxtafoveal choroidal neovascularization,phrase,noun,,161131,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384864,juxtaglomerular apparatus,phrase,noun,,161132,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+384865,juxtaglomerular apparatus,phrase,noun,,161133,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384866,juxtaglomerular cell tumor,phrase,noun,,161134,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384867,juxtaglomerular complex cell,phrase,noun,,161135,,,,,Cell type,biology,,,,medical,Cell Ontology
+384868,juxtamedullary cortex,phrase,noun,,161136,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384869,juxtaphrenic peak,phrase,noun,,161137,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384870,juxtaposition of the atrial appendages,phrase,noun,,161143,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+461910,"juxtarenal abdominal aortic aneurysm, ruptured",phrase,noun,,1177,,,,,Diagnosis,medicine,,,ICD-10 I71.32,medical,ICD-10 (WHO 2019)
+461915,"juxtarenal abdominal aortic aneurysm, without rupture",phrase,noun,,1177,,,,,Diagnosis,medicine,,,ICD-10 I71.42,medical,ICD-10 (WHO 2019)
+384871,juxtarestiform body,phrase,noun,,161144,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+384872,juxtascleral route of administration,phrase,noun,,161145,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+200064,juzen-taiho-to,word,noun,,161146,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Sipjeondaebo-tang')
+384873,jvd,word,noun,,161147,,,,,Abbreviation - exam,medicine,abbreviation,simple,,medical,Curated
+384874,jvd,word,noun,,160732,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+384875,jws,word,noun,,159439,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+384876,jws,word,noun,,159440,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384877,jxg,word,noun,,161122,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384878,jxg,word,noun,,161123,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+384879,jynneos,word,noun,,161148,,,,,Brand name,pharmacology,,simple,,medical,NCI Thesaurus

@@ -1,0 +1,961 @@
+id,word,type,pos,sense,meaning_id,synonyms,antonyms,related,origin,category,subject,usage,structure,code,domain,source
+182673,y,word,noun,1,285134,yttrium,,,,,chemistry,,simple,,general,WordNet
+182674,y,word,noun,2,284748,wye,,,,,linguistics,,simple,,general,WordNet
+244944,y chromosome,phrase,noun,1,285144,,,,,,biology,,,,general,WordNet
+247364,y-axis,word,noun,1,285147,,,,,,aviation,,,,general,WordNet
+244938,y-linked gene,phrase,noun,1,143365,holandric gene,,,,,biology,,,,general,WordNet
+320766,y-shaped,word,adj,1,285155,,,,,,linguistics,,,,general,WordNet
+182675,yacca,word,noun,1,214631,"podocarpus coriaceus,yacca podocarp",,,,,botany,,simple,,general,WordNet
+275182,yacca podocarp,phrase,noun,1,214631,"podocarpus coriaceus,yacca",,,,,botany,,,,general,WordNet
+182676,yacht,word,noun,1,225127,racing yacht,,,,,maritime,,simple,,general,WordNet
+182677,yacht,word,verb,1,285162,,,yachting,,,tourism,,simple,,general,WordNet
+242205,yacht chair,phrase,noun,1,285163,,,,,,,,,,general,WordNet
+256846,yacht club,phrase,noun,1,42816,boat club,,,,,marketing,,,,general,WordNet
+252971,yacht race,phrase,noun,1,237337,sailing-race,,,,,,,,,general,WordNet
+182678,yachted,word,verb,,285162,,,,,,tourism,,simple,,general,WordNet
+182679,yachting,word,noun,1,42831,"boating,boatings",,yacht,,,tourism,,simple,,general,WordNet
+182680,yachting,word,verb,,285162,,,,,,tourism,,simple,,general,WordNet
+236979,yachting cap,phrase,noun,1,161735,"kepi,peaked cap,service cap",,,,,,,,,general,WordNet
+182681,yachtings,word,noun,,42831,"boating,boatings",,,,,tourism,,simple,,general,WordNet
+182682,yachts,word,noun,,225127,racing yacht,,,,,maritime,,simple,,general,WordNet
+182683,yachts,word,verb,,285162,,,,,,tourism,,simple,,general,WordNet
+182684,yachtsman,word,noun,1,285164,"yachtsmen,yachtswoman,yachtswomen",,,,,maritime,,compound,,general,WordNet
+182685,yachtsmen,word,noun,,285164,"yachtsman,yachtswoman,yachtswomen",,,,,maritime,,compound,,general,WordNet
+182686,yachtswoman,word,noun,1,285164,"yachtsman,yachtsmen,yachtswomen",,,,,maritime,,compound,,general,WordNet
+182687,yachtswomen,word,noun,,285164,"yachtsman,yachtsmen,yachtswoman",,,,,maritime,,compound,,general,WordNet
+182688,yack,word,noun,1,50680,"cackle,chatter,yak,yakety-yak",,,,,,,simple,,general,WordNet
+182689,yack,word,verb,1,159781,"jaw,rattle on,yack away,yap away",,,,,automotive,,simple,,general,WordNet
+302948,yack away,phrasal verb,verb,1,159781,"jaw,rattle on,yack,yap away",,,,Phrasal verb,automotive,phrasal_verb,,,general,WordNet
+182690,yacked,word,verb,,159781,"jaw,rattle on,yack away,yap away",,,,,automotive,,simple,,general,WordNet
+182691,yacking,word,verb,,159781,"jaw,rattle on,yack away,yap away",,,,,automotive,,simple,,general,WordNet
+182692,yacks,word,noun,,50680,"cackle,chatter,yak,yakety-yak",,,,,,,simple,,general,WordNet
+182693,yacks,word,verb,,159781,"jaw,rattle on,yack away,yap away",,,,,automotive,,simple,,general,WordNet
+259573,yafo,word,noun,1,159497,"jaffa,joppa",,,,,maritime,,simple,,general,WordNet
+182694,yagi,word,noun,1,285166,yagi aerial,,,,,telecommunications,,simple,,general,WordNet
+242206,yagi aerial,phrase,noun,1,285166,yagi,,,,,telecommunications,,,,general,WordNet
+182695,yagis,word,noun,,285166,yagi aerial,,,,,telecommunications,,simple,,general,WordNet
+263517,yahi,word,noun,1,285167,yana,,,,,,,simple,,general,WordNet
+251048,yahi,word,noun,2,285168,,,,,,linguistics,,simple,,general,WordNet
+182696,yahoo,word,noun,1,49185,"bumpkin,chawbacon,hayseed,hick,rube,yokel",,,,,sociology,,simple,,general,WordNet
+182697,yahoo,word,noun,2,285169,,,,,,literature,,simple,,general,WordNet
+182698,yahoo,word,noun,3,285170,,,,,,finance,,simple,,general,WordNet
+182699,yahoos,word,noun,,49185,"bumpkin,chawbacon,hayseed,hick,rube,yokel",,,,,sociology,,simple,,general,WordNet
+182700,yahoos,word,noun,,285169,,,,,,literature,,simple,,general,WordNet
+182701,yahoos,word,noun,,285170,,,,,,finance,,simple,,general,WordNet
+263193,yahve,word,noun,1,159515,"jahvey,jahweh,jehovah,jhvh,wahvey,yahwe,yahweh,yhvh",,,,,religion,,simple,,general,WordNet
+182702,yahveh,word,noun,1,159515,"jahvey,jahweh,jehovah,jhvh,wahvey,yahwe,yahweh,yhvh",,,,,religion,,simple,,general,WordNet
+263191,yahwe,word,noun,1,159515,"jahvey,jahweh,jehovah,jhvh,wahvey,yahve,yahveh,yhvh",,,,,religion,,simple,,general,WordNet
+182703,yahweh,word,noun,1,159515,"jahvey,jahweh,jehovah,jhvh,wahvey,yahve,yahveh,yhvh",,,,,religion,,simple,,general,WordNet
+248930,yajur-veda,word,noun,1,285171,,,,,,religion,,,,general,WordNet
+182704,yak,word,noun,1,50680,"cackle,chatter,yack,yakety-yak",,,,,,,simple,,general,WordNet
+182705,yak,word,noun,2,44319,bos grunniens,,,,,animal_husbandry,,simple,,general,WordNet
+182706,yak,word,verb,1,125989,gab,,,,,,,simple,,general,WordNet
+254881,yak butter,phrase,noun,1,285172,,,,,,,,,,general,WordNet
+254799,yak's milk,phrase,noun,1,285173,,,,,,,,,,general,WordNet
+251907,yakety-yak,word,noun,1,50680,"cackle,chatter,yack,yak",,,,,,,,,general,WordNet
+182707,yakima,word,noun,1,285174,,,,,,geography,,simple,,general,WordNet
+182708,yakked,word,verb,,125989,gab,,,,,,,simple,,general,WordNet
+182709,yakking,word,verb,,125989,gab,,,,,,,simple,,general,WordNet
+182710,yaks,word,noun,,50680,"cackle,chatter,yack,yakety-yak",,,,,,,simple,,general,WordNet
+182711,yaks,word,noun,,44319,bos grunniens,,,,,animal_husbandry,,simple,,general,WordNet
+182712,yaks,word,verb,,125989,gab,,,,,,,simple,,general,WordNet
+182713,yakut,word,noun,1,285175,,,,,,geography,,simple,,general,WordNet
+182714,yakut,word,noun,2,285176,,,,,,linguistics,,simple,,general,WordNet
+266876,yakuza,word,noun,1,285177,,,,,,,,simple,,general,WordNet
+256848,yakuza,word,noun,2,285178,,,,,,law,,simple,,general,WordNet
+182715,yale,word,noun,1,285179,yale university,,,,,education,,simple,,general,WordNet
+182716,yale,word,noun,2,102918,elihu yale,,,,,education,,simple,,general,WordNet
+242207,yale university,phrase,noun,1,285179,yale,,,,,education,,,,general,WordNet
+260725,yalta,word,noun,1,285181,,,,,,law,,simple,,general,WordNet
+257385,yalta conference,phrase,noun,1,285182,,,,,,military,,,,general,WordNet
+259462,yaltopya,word,noun,1,4667,"abyssinia,ethiopia,federal democratic republic of ethiopia",,,,,politics,,simple,,general,WordNet
+262950,yalu,word,noun,1,285183,yalu river,,,,,geography,,simple,,general,WordNet
+262951,yalu river,phrase,noun,1,285183,yalu,,,,,geography,,,,general,WordNet
+222015,yalu river,phrase,noun,2,285184,,,,,,military,,,,general,WordNet
+182717,yam,word,noun,1,285185,,,,,,nutrition,,simple,,general,WordNet
+182718,yam,word,noun,2,285186,yam plant,,,,,nutrition,,simple,,general,WordNet
+182719,yam,word,noun,3,285187,,,,,,culinary,,simple,,general,WordNet
+254055,yam,word,noun,4,285188,,,,,,nutrition,,simple,,general,WordNet
+283221,yam bean,phrase,noun,1,203369,"pachyrhizus tuberosus,potato bean",,,,,nutrition,,,,general,WordNet
+283219,yam bean,phrase,noun,2,203368,pachyrhizus erosus,,,,,culinary,,,,general,WordNet
+278863,yam family,phrase,noun,1,91965,"dioscorea,dioscoreaceae,family dioscoreaceae,genus dioscorea",,,,,,,,,general,WordNet
+278865,yam plant,phrase,noun,1,285186,yam,,,,,nutrition,,,,general,WordNet
+263137,yama,word,noun,1,285189,,,,,,religion,,simple,,general,WordNet
+251383,yamaltu,word,noun,1,211892,"pidlimdi,tera",,,,,linguistics,,simple,,general,WordNet
+273846,yamamoto,word,noun,1,159003,isoroku yamamoto,,,,,maritime,,simple,,general,WordNet
+273848,yamani,word,noun,1,12049,ahmed zoki yamani,,,,,politics,,compound,,general,WordNet
+182720,yammer,word,verb,1,145022,"howl,wrawl,yowl",,,,,zoology,,simple,,general,WordNet
+182721,yammer,word,verb,2,135536,"grizzle,whine,yawp",,,,,,,simple,,general,WordNet
+182722,yammered,word,verb,,145022,"howl,wrawl,yowl",,,,,zoology,,simple,,general,WordNet
+182723,yammered,word,verb,,135536,"grizzle,whine,yawp",,,,,,,simple,,general,WordNet
+182724,yammering,word,verb,,145022,"howl,wrawl,yowl",,,,,zoology,,simple,,general,WordNet
+182725,yammering,word,verb,,135536,"grizzle,whine,yawp",,,,,,,simple,,general,WordNet
+182726,yammers,word,verb,,145022,"howl,wrawl,yowl",,,,,zoology,,simple,,general,WordNet
+182727,yammers,word,verb,,135536,"grizzle,whine,yawp",,,,,,,simple,,general,WordNet
+259202,yamoussukro,word,noun,1,285190,,,,,,,,simple,,general,WordNet
+182728,yams,word,noun,,285185,,,,,,nutrition,,simple,,general,WordNet
+182729,yams,word,noun,,285186,yam plant,,,,,nutrition,,simple,,general,WordNet
+182730,yams,word,noun,,285187,,,,,,culinary,,simple,,general,WordNet
+182731,yana,word,noun,1,285167,yahi,,,,,,,simple,,general,WordNet
+182732,yana,word,noun,2,285191,,,,,,linguistics,,simple,,general,WordNet
+182733,yanan,word,noun,1,285192,,,,,,linguistics,,simple,,general,WordNet
+182734,yang,word,noun,1,285193,,yin,,,,,,simple,,general,WordNet
+273850,yang chen ning,phrase,noun,1,61470,chen n. yang,,,,,ecology,,,,general,WordNet
+259036,yangon,word,noun,1,226084,rangoon,,,,,geography,,simple,,general,WordNet
+182735,yangs,word,noun,,285193,,,,,,,,simple,,general,WordNet
+182736,yangtze,word,noun,1,60128,"chang,chang jiang,changjiang,yangtze kiang,yangtze river",,,,,oceanography,,simple,,general,WordNet
+262955,yangtze kiang,phrase,noun,1,60128,"chang,chang jiang,changjiang,yangtze,yangtze river",,,,,oceanography,,,,general,WordNet
+262954,yangtze river,phrase,noun,1,60128,"chang,chang jiang,changjiang,yangtze,yangtze kiang",,,,,oceanography,,,,general,WordNet
+182737,yank,word,noun,1,195658,northerner,,,,,military,,simple,,general,WordNet
+182738,yank,word,noun,2,285197,yankee-doodle,,,,,,,simple,,general,WordNet
+182739,yank,word,verb,1,160011,jerk,,yanker,,,,,simple,,general,WordNet
+182740,yanked,word,verb,,160011,jerk,,,,,,,simple,,general,WordNet
+318777,yankee,word,adj,1,285198,,,,,,military,,derived,,general,WordNet
+182741,yankee,word,noun,1,195658,"northerner,yanks",,,,,military,,derived,,general,WordNet
+182742,yankee,word,noun,2,193167,new englander,,,,,,,derived,,general,WordNet
+182743,yankee,word,noun,3,285197,"yankee-doodle,yanks",,,,,,,derived,,general,WordNet
+279450,yankee corn,phrase,noun,1,120485,"flint corn,flint maize,zea mays indurata",,,,,,,,,general,WordNet
+263703,yankee-doodle,word,noun,1,285197,"yank,yankee",,,,,,,,,general,WordNet
+182744,yankees,word,noun,,195658,"northerner,yanks",,,,,military,,derived,,general,WordNet
+182745,yankees,word,noun,,193167,new englander,,,,,,,derived,,general,WordNet
+182746,yankees,word,noun,,285197,"yankee-doodle,yanks",,,,,,,derived,,general,WordNet
+182747,yanker,word,noun,1,160020,jerker,,yank,,,,,derived,,general,WordNet
+182748,yanking,word,verb,,160011,jerk,,,,,,,simple,,general,WordNet
+182749,yanks,word,noun,,195658,"northerner,yankee",,,,,military,,simple,,general,WordNet
+182750,yanks,word,noun,,285197,"yankee,yankee-doodle",,,,,,,simple,,general,WordNet
+182751,yanks,word,verb,,160011,jerk,,,,,,,simple,,general,WordNet
+275645,yanquapin,word,noun,1,15869,"american lotus,nelumbo lutea,water chinquapin",,,,,botany,,simple,,general,WordNet
+259049,yaounde,word,noun,1,53130,capital of cameroon,,,,,,,simple,,general,WordNet
+182752,yap,word,noun,1,50927,"cakehole,gob,hole,maw,trap",,,,,,informal,simple,,general,WordNet
+182753,yap,word,verb,1,285201,"yelp,yip",,,,,,,simple,,general,WordNet
+302950,yap away,phrasal verb,verb,1,159781,"jaw,rattle on,yack,yack away",,,,Phrasal verb,automotive,phrasal_verb,,,general,WordNet
+182754,yapped,word,verb,,285201,"yelp,yip",,,,,,,simple,,general,WordNet
+182755,yapping,word,verb,,285201,"yelp,yip",,,,,,,simple,,general,WordNet
+182756,yaps,word,noun,,50927,"cakehole,gob,hole,maw,trap",,,,,,informal,simple,,general,WordNet
+182757,yaps,word,verb,,285201,"yelp,yip",,,,,,,simple,,general,WordNet
+182758,yard,word,noun,1,203275,pace,,,,,,,simple,,general,WordNet
+182759,yard,word,noun,2,81611,"curtilage,grounds",,,,,architecture,,simple,,general,WordNet
+182760,yard,word,noun,3,285209,,,,,,architecture,,simple,,general,WordNet
+291339,yard,word,noun,4,62362,"chiliad,g,grand,k,m,one thousand,thou,thousand",,,,,,,simple,,general,WordNet
+290575,yard,word,noun,5,80991,cubic yard,,,,,,,simple,,general,WordNet
+258895,yard,word,noun,6,285211,,,,,,,,simple,,general,WordNet
+242210,yard,word,noun,7,225759,"railway yard,railyard",,,,,automotive,,simple,,general,WordNet
+242209,yard,word,noun,8,285212,,,,,,maritime,,simple,,general,WordNet
+242208,yard,word,noun,9,285213,,,,,,animal_husbandry,,simple,,general,WordNet
+266877,yard bird,phrase,noun,1,285214,yardbird,,,,,military,,,,general,WordNet
+264302,yard bird,phrase,noun,2,72377,"con,convict,inmate,yardbird",,,,,police,,,,general,WordNet
+242213,yard donkey,phrase,noun,1,285215,yarder,,,,,automotive,,,,general,WordNet
+242214,yard goods,phrase,noun,1,211925,piece goods,,,,,business,,,,general,WordNet
+279162,yard grass,phrase,noun,1,102244,"eleusine indica,goose grass,wire grass,yardgrass",,,,,botany,,,,general,WordNet
+258799,yard line,phrase,noun,1,285216,,,,,,sports,,,,general,WordNet
+242216,yard marker,phrase,noun,1,285217,,,,,,sports,,,,general,WordNet
+242217,yard measure,phrase,noun,1,285218,yardstick,,,,,,,,,general,WordNet
+221271,yard sale,phrase,noun,1,127004,garage sale,,,,,business,,,,general,WordNet
+283468,yard-long bean,phrase,noun,1,25930,"asparagus bean,vigna sesquipedalis,vigna unguiculata sesquipedalis",,,,,,,,,general,WordNet
+182761,yardage,word,noun,1,285220,,,,,,,,simple,,general,WordNet
+182762,yardages,word,noun,,285220,,,,,,,,simple,,general,WordNet
+182763,yardarm,word,noun,1,285222,,,,,,maritime,,compound,,general,WordNet
+182764,yardarms,word,noun,,285222,,,,,,maritime,,compound,,general,WordNet
+182765,yardbird,word,noun,1,285214,yard bird,,,,,military,,compound,,general,WordNet
+182766,yardbird,word,noun,2,72377,"con,convict,inmate,yard bird",,,,,police,,compound,,general,WordNet
+271681,yardbird parker,phrase,noun,1,39920,"bird parker,charles christopher parker,charlie parker,parker",,,,,,,,,general,WordNet
+182767,yardbirds,word,noun,,285214,yard bird,,,,,military,,compound,,general,WordNet
+182768,yardbirds,word,noun,,72377,"con,convict,inmate,yard bird",,,,,police,,compound,,general,WordNet
+182769,yarder,word,noun,1,285223,,,,,,,,derived,,general,WordNet
+182770,yarder,word,noun,2,285215,yard donkey,,,,,automotive,,derived,,general,WordNet
+182771,yardgrass,word,noun,1,102244,"eleusine indica,goose grass,wire grass,yard grass",,,,,botany,,compound,,general,WordNet
+266878,yardie,word,noun,1,285225,,,,,,law,,simple,,general,WordNet
+182772,yardman,word,noun,1,285227,yardmen,,,,,management,,compound,,general,WordNet
+182773,yardman,word,noun,2,285228,yardmen,,,,,law,,compound,,general,WordNet
+182774,yardmaster,word,noun,1,268010,"train dispatcher,trainmaster",,,,,railways,,compound,,general,WordNet
+182775,yardmasters,word,noun,,268010,"train dispatcher,trainmaster",,,,,railways,,compound,,general,WordNet
+182776,yardmen,word,noun,,285227,yardman,,,,,management,,compound,,general,WordNet
+182777,yardmen,word,noun,,285228,yardman,,,,,law,,compound,,general,WordNet
+182778,yards,word,noun,,203275,pace,,,,,,,simple,,general,WordNet
+182779,yards,word,noun,,81611,"curtilage,grounds",,,,,architecture,,simple,,general,WordNet
+182780,yards,word,noun,,285209,,,,,,architecture,,simple,,general,WordNet
+182781,yardstick,word,noun,1,285229,,,,,,,,compound,,general,WordNet
+182782,yardstick,word,noun,2,285218,yard measure,,,,,,,compound,,general,WordNet
+182783,yardsticks,word,noun,,285229,,,,,,,,compound,,general,WordNet
+182784,yardsticks,word,noun,,285218,yard measure,,,,,,,compound,,general,WordNet
+182785,yarmelke,word,noun,1,285232,"yarmulka,yarmulke",,,,,religion,,simple,,general,WordNet
+182786,yarmelkes,word,noun,,285232,"yarmulka,yarmulke",,,,,religion,,simple,,general,WordNet
+182787,yarmulka,word,noun,1,285232,"yarmelke,yarmulke",,,,,religion,,simple,,general,WordNet
+182788,yarmulke,word,noun,1,285232,yarmelke,,,,,religion,,simple,,general,WordNet
+182789,yarmulkes,word,noun,,285232,"yarmelke,yarmulka",,,,,religion,,simple,,general,WordNet
+182790,yarn,word,noun,1,189938,"narration,recital",,,,,accounting,,simple,,general,WordNet
+182791,yarn,word,noun,2,264836,thread,,,,,fashion,,simple,,general,WordNet
+182792,yarn,word,verb,1,285233,,,,,,,,simple,,general,WordNet
+299197,yarn-dye,word,verb,1,150665,impress,,,,,fashion,,,,general,WordNet
+314828,yarn-spinning,word,adj,1,285234,,,,,,literature,,,,general,WordNet
+182793,yarned,word,verb,,285233,,,,,,,,simple,,general,WordNet
+182794,yarning,word,verb,,285233,,,,,,,,simple,,general,WordNet
+182795,yarns,word,noun,,189938,"narration,recital",,,,,accounting,,simple,,general,WordNet
+182796,yarns,word,noun,,264836,thread,,,,,fashion,,simple,,general,WordNet
+182797,yarns,word,verb,,285233,,,,,,,,simple,,general,WordNet
+182798,yarrow,word,noun,1,5776,"achillea millefolium,milfoil",,,,,botany,,simple,,general,WordNet
+182799,yarrows,word,noun,,5776,"achillea millefolium,milfoil",,,,,botany,,simple,,general,WordNet
+182800,yashmac,word,noun,1,285236,yashmak,,,,,religion,,simple,,general,WordNet
+182801,yashmacs,word,noun,,285236,yashmak,,,,,religion,,simple,,general,WordNet
+182802,yashmak,word,noun,1,285236,yashmac,,,,,religion,,simple,,general,WordNet
+182803,yashmaks,word,noun,,285236,yashmac,,,,,religion,,simple,,general,WordNet
+267047,yasser arafat,phrase,noun,1,23223,arafat,,,,,,,,,general,WordNet
+273852,yastrzemski,word,noun,1,54666,carl yastrzemski,,,,,sports,,simple,,general,WordNet
+182804,yataghan,word,noun,1,285238,,,,,,music,,simple,,general,WordNet
+182805,yataghans,word,noun,,285238,,,,,,music,,simple,,general,WordNet
+293610,yatobyo,word,noun,1,86479,"deer fly fever,rabbit fever,tularaemia,tularemia",,,,,zoology,,simple,,general,WordNet
+182806,yaup,word,verb,1,145019,"howl,roar,ululate,wail,yawl",,,,,,,simple,,general,WordNet
+182807,yauped,word,verb,,145019,"howl,roar,ululate,wail,yawl",,,,,,,simple,,general,WordNet
+182808,yauping,word,verb,,145019,"howl,roar,ululate,wail,yawl",,,,,,,simple,,general,WordNet
+285234,yaupon holly,phrase,noun,1,171950,"low gallberry holly,tall gallberry holly",,,,,botany,,,,general,WordNet
+182809,yaups,word,verb,,145019,"howl,roar,ululate,wail,yawl",,,,,,,simple,,general,WordNet
+182810,yautia,word,noun,1,174822,"malanga,spoonflower,tannia,xanthosoma atrovirens,xanthosoma sagittifolium",,,,,nutrition,,simple,,general,WordNet
+182811,yautias,word,noun,,174822,"malanga,spoonflower,tannia,xanthosoma atrovirens,xanthosoma sagittifolium",,,,,nutrition,,simple,,general,WordNet
+182812,yavapai,word,noun,1,285239,,,,,,,,simple,,general,WordNet
+182813,yavapai,word,noun,2,285240,,,,,,linguistics,,simple,,general,WordNet
+182814,yaw,word,noun,1,259614,swerve,,,,,,,simple,,general,WordNet
+182815,yaw,word,verb,1,126989,gape,,,,,,,simple,,general,WordNet
+182816,yaw,word,verb,2,285241,,,,,,,,simple,,general,WordNet
+308666,yaw,word,verb,3,285243,,,,,,,,simple,,general,WordNet
+182817,yawed,word,verb,,126989,"gape,yawn",,,,,,,simple,,general,WordNet
+182818,yawed,word,verb,,285241,,,,,,,,simple,,general,WordNet
+182819,yawed,word,verb,,285243,,,,,,,,simple,,general,WordNet
+182820,yawing,word,verb,,126989,"gape,yawn",,,,,,,simple,,general,WordNet
+182821,yawing,word,verb,,285241,,,,,,,,simple,,general,WordNet
+182822,yawing,word,verb,,285243,,,,,,,,simple,,general,WordNet
+182823,yawl,word,noun,1,285245,,,,,,maritime,,simple,,general,WordNet
+182824,yawl,word,noun,2,83597,dandy,,,,,maritime,,simple,,general,WordNet
+182825,yawl,word,verb,1,145019,"howl,roar,ululate,wail,yaup",,,,,,,simple,,general,WordNet
+182826,yawled,word,verb,,145019,"howl,roar,ululate,wail,yaup",,,,,,,simple,,general,WordNet
+182827,yawling,word,verb,,145019,"howl,roar,ululate,wail,yaup",,,,,,,derived,,general,WordNet
+182828,yawls,word,noun,,285245,,,,,,maritime,,simple,,general,WordNet
+182829,yawls,word,noun,,83597,dandy,,,,,maritime,,simple,,general,WordNet
+182830,yawls,word,verb,,145019,"howl,roar,ululate,wail,yaup",,,,,,,simple,,general,WordNet
+182831,yawn,word,noun,1,201091,"oscitance,oscitancy",,,,,,,simple,,general,WordNet
+182832,yawn,word,verb,1,285246,,,"yawner,yawning",,,chemistry,,simple,,general,WordNet
+182833,yawn,word,verb,2,126989,"gape,yaws",,"yawner,yawning",,,,,simple,,general,WordNet
+182834,yawned,word,verb,,285246,,,,,,chemistry,,simple,,general,WordNet
+182835,yawned,word,verb,,126989,"gape,yaws",,,,,,,simple,,general,WordNet
+182836,yawner,word,noun,1,285248,,,yawn,,,,,derived,,general,WordNet
+182837,yawners,word,noun,,285248,,,,,,,,derived,,general,WordNet
+318987,yawning,word,adj,1,285249,,,,,,,,simple,,general,WordNet
+318998,yawning,word,adj,2,285252,,,,,,,,simple,,general,WordNet
+313267,yawning,word,adj,3,97717,"drowsy,oscitant",,,,,,,simple,,general,WordNet
+182838,yawning,word,noun,1,201091,"oscitance,oscitancy",,yawn,,,,,simple,,general,WordNet
+182839,yawning,word,verb,,285246,,,,,,chemistry,,simple,,general,WordNet
+182840,yawning,word,verb,,126989,"gape,yaws",,,,,,,simple,,general,WordNet
+182841,yawns,word,noun,,201091,"oscitance,oscitancy",,,,,,,simple,,general,WordNet
+182842,yawns,word,verb,,285246,,,,,,chemistry,,simple,,general,WordNet
+182843,yawns,word,verb,,126989,"gape,yaws",,,,,,,simple,,general,WordNet
+182844,yawp,word,verb,1,34819,bawl,,,,,,,simple,,general,WordNet
+182845,yawp,word,verb,2,135536,"grizzle,whine,yammer",,,,,,,simple,,general,WordNet
+182846,yawped,word,verb,,34819,bawl,,,,,,,simple,,general,WordNet
+182847,yawped,word,verb,,135536,"grizzle,whine,yammer",,,,,,,simple,,general,WordNet
+182848,yawping,word,verb,,34819,bawl,,,,,,,simple,,general,WordNet
+182849,yawping,word,verb,,135536,"grizzle,whine,yammer",,,,,,,simple,,general,WordNet
+182850,yawps,word,verb,,34819,bawl,,,,,,,simple,,general,WordNet
+182851,yawps,word,verb,,135536,"grizzle,whine,yammer",,,,,,,simple,,general,WordNet
+182853,yaws,word,noun,,259614,swerve,,,,,,,simple,,general,WordNet
+182852,yaws,word,noun,1,123799,"frambesia,framboesia",,,,,medicine,,simple,,general,WordNet
+182854,yaws,word,verb,,126989,"gape,yawn",,,,,,,simple,,general,WordNet
+495878,yay,word,interj,,285255,,,,,,,,simple,,general,Lex Hopper
+182855,yay,word,noun,1,40599,"black tai,bouyei,buyi,central thai,chinese shan,dehong dai,kam muang,khamti",,,,,linguistics,,simple,,general,WordNet
+182856,yazoo,word,noun,1,285256,yazoo river,,,,,geography,,simple,,general,WordNet
+262956,yazoo river,phrase,noun,1,285256,yazoo,,,,,geography,,,,general,WordNet
+294803,yb,word,noun,1,285257,ytterbium,,,,,chemistry,,simple,,general,WordNet
+290681,yb,word,noun,2,285258,yottabit,,,,,,,simple,,general,WordNet
+290678,yb,word,noun,3,285259,yottabyte,,,,,computing,,simple,,general,WordNet
+290675,yb,word,noun,4,285260,"yib,yobibyte,yottabyte",,,,,computing,,simple,,general,WordNet
+290680,ybit,word,noun,1,285258,yottabit,,,,,,,simple,,general,WordNet
+182858,yea,word,adv,1,285262,,,,,,,,simple,,general,WordNet
+182857,yea,word,noun,1,285264,yes,nay,,,,,,simple,,general,WordNet
+182859,yeah,word,adv,1,285262,,,,,,,,simple,,general,WordNet
+182860,year,word,noun,1,271194,"twelvemonth,yr,yrs",,yearly,,,,,simple,,general,WordNet
+182861,year,word,noun,2,285266,,,yearly,,,,,simple,,general,WordNet
+182862,year,word,noun,3,285268,,,yearly,,,astronomy,,simple,,general,WordNet
+256905,year,word,noun,4,65834,class,,yearly,,,education,,simple,,general,WordNet
+297461,year dot,phrase,noun,1,285271,,,,,,,,,,general,WordNet
+297486,year of grace,phrase,noun,1,285273,,,,,,religion,,,,general,WordNet
+318439,year-around,word,adj,1,285275,year-round,,,,,,,,,general,WordNet
+316588,year-end,word,adj,1,285278,,,,,,accounting,,,,general,WordNet
+297234,year-end,word,noun,1,285280,,,,,,,,,,general,WordNet
+318438,year-round,word,adj,1,285275,year-around,seasonal,,,,,,,,general,WordNet
+182863,yearbook,word,noun,1,285282,,,,,,education,,compound,,general,WordNet
+182864,yearbook,word,noun,2,18531,"annual,yearly",,,,,media,,compound,,general,WordNet
+182865,yearbooks,word,noun,,285282,,,,,,education,,compound,,general,WordNet
+182866,yearbooks,word,noun,,18531,"annual,yearly",,,,,media,,compound,,general,WordNet
+182867,yearlies,word,noun,,18531,"annual,yearbook",,,,,media,,derived,,general,WordNet
+182868,yearling,word,noun,1,32664,"bambini,bambino,kiddy,toddler,tot",,,,,,,derived,,general,WordNet
+182869,yearling,word,noun,2,285283,,,,,,,,derived,,general,WordNet
+182870,yearling,word,noun,3,285284,,,,,,zoology,,derived,,general,WordNet
+182871,yearlings,word,noun,,32664,"bambini,bambino,kiddy,toddler,tot",,,,,,,derived,,general,WordNet
+182872,yearlings,word,noun,,285283,,,,,,,,derived,,general,WordNet
+182873,yearlings,word,noun,,285284,,,,,,zoology,,derived,,general,WordNet
+182874,yearlong,word,adj,1,285285,,,,,,,,compound,,general,WordNet
+182876,yearly,word,adj,1,18526,annual,,year,,,,,derived,,general,WordNet
+182877,yearly,word,adv,1,18537,"annually,each year,every year",,,,,,,derived,,general,WordNet
+182875,yearly,word,noun,1,18531,"annual,yearbook",,,,,media,,derived,,general,WordNet
+182878,yearn,word,verb,1,137837,"hanker,long",,"yearner,yearning",,,,,simple,,general,WordNet
+182879,yearn,word,verb,2,5748,"ache,languish,pine,yen",,"yearner,yearning",,,,,simple,,general,WordNet
+182880,yearn,word,verb,3,285288,,,"yearner,yearning",,,,,simple,,general,WordNet
+182881,yearned,word,verb,,137837,"hanker,long",,,,,,,simple,,general,WordNet
+182882,yearned,word,verb,,5748,"ache,languish,pine,yen",,,,,,,simple,,general,WordNet
+182883,yearned,word,verb,,285288,,,,,,,,simple,,general,WordNet
+322272,yearned-for,word,adj,1,78323,"coveted,desired,in demand,longed-for,sought after,wished-for",,,,,,,,,general,WordNet
+182884,yearner,word,noun,1,171285,"longer,thirster",,yearn,,,,,derived,,general,WordNet
+182885,yearners,word,noun,,171285,"longer,thirster",,,,,,,derived,,general,WordNet
+182886,yearning,word,noun,1,145632,"hungriness,longing,longings",,yearn,,,,,simple,,general,WordNet
+182887,yearning,word,verb,,137837,"hanker,long",,,,,,,simple,,general,WordNet
+182888,yearning,word,verb,,5748,"ache,languish,pine,yen",,,,,,,simple,,general,WordNet
+182889,yearningly,word,adv,1,171296,longingly,,,,,,,derived,,general,WordNet
+182890,yearnings,word,noun,,145632,"hungriness,longing,longings",,,,,,,simple,,general,WordNet
+182891,yearns,word,verb,,137837,"hanker,long",,,,,,,simple,,general,WordNet
+182892,yearns,word,verb,,5748,"ache,languish,pine,yen",,,,,,,simple,,general,WordNet
+182893,yearns,word,verb,,285288,,,,,,,,simple,,general,WordNet
+182894,years,word,noun,1,11254,"age,eld,geezerhood,old age",,,,,,,simple,,general,WordNet
+182895,years,word,noun,2,11251,"age,long time",,,,,,,simple,,general,WordNet
+182896,years,word,noun,3,84340,days,,,,,,,simple,,general,WordNet
+182897,yeas,word,noun,,285264,yes,,,,,,,simple,,general,WordNet
+182898,yeast,word,noun,1,33537,barm,,yeasty,,,baking,,simple,,general,WordNet
+182899,yeast,word,noun,2,285291,,,yeasty,,,music,,simple,,general,WordNet
+253644,yeast cake,phrase,noun,1,285292,,,,,,baking,,,,general,WordNet
+182900,yeastier,word,adj,,285295,yeastlike,,,,,,,derived,,general,WordNet
+182901,yeastier,word,adj,,33542,"barmy,zestful,zesty",,,,,,,derived,,general,WordNet
+182902,yeastier,word,adj,,285296,,,,,,,,derived,,general,WordNet
+182903,yeastiest,word,adj,,285295,yeastlike,,,,,,,simple,,general,WordNet
+182904,yeastiest,word,adj,,33542,"barmy,zestful,zesty",,,,,,,simple,,general,WordNet
+182905,yeastiest,word,adj,,285296,,,,,,,,simple,,general,WordNet
+182906,yeastlike,word,adj,1,285295,yeasty,,,,,,,simple,,general,WordNet
+182907,yeasts,word,noun,,33537,barm,,,,,baking,,simple,,general,WordNet
+182908,yeasts,word,noun,,285291,,,,,,music,,simple,,general,WordNet
+182909,yeasty,word,adj,1,285295,yeastlike,,yeast,,,,,derived,,general,WordNet
+182910,yeasty,word,adj,2,33542,"barmy,zestful,zesty",,yeast,,,,,derived,,general,WordNet
+182911,yeasty,word,adj,3,285296,,,yeast,,,,,derived,,general,WordNet
+273854,yeats,word,noun,1,281100,"w. b. yeats,william butler yeats",,yeatsian,,,literature,,simple,,general,WordNet
+322939,yeatsian,word,adj,1,285298,,,yeats,,,,,simple,,general,WordNet
+260116,yeddo,word,noun,1,53163,"capital of japan,edo,japanese capital,tokio,tokyo,yedo",,,,,economics,,simple,,general,WordNet
+260117,yedo,word,noun,1,53163,"capital of japan,edo,japanese capital,tokio,tokyo,yeddo",,,,,economics,,simple,,general,WordNet
+271081,yehudi menuhin,phrase,noun,1,180242,"menuhin,sir yehudi menuhin",,,,,music,,,,general,WordNet
+260720,yekaterinoslav,word,noun,1,94906,dnipropetrovsk,,,,,geography,,simple,,general,WordNet
+182912,yell,word,noun,1,51375,"call,cries,cry,outcry,shout,vociferation",,,,,,,simple,,general,WordNet
+182913,yell,word,noun,2,79615,"cries,cry",,,,,psychology,,simple,,general,WordNet
+182914,yell,word,verb,1,51405,"call,cried,cry,holler,hollo,scream,shout,shout out",,"yelling,yeller",,,,,simple,,general,WordNet
+302343,yell,word,verb,2,239933,scream,,"yelling,yeller",,,,,simple,,general,WordNet
+182917,yelled,word,adj,1,244916,shouted,,,,,,,simple,,general,WordNet
+182915,yelled,word,verb,,51405,"call,cried,cry,holler,hollo,scream,shout,shout out",,,,,,,simple,,general,WordNet
+182916,yelled,word,verb,,239933,scream,,,,,,,simple,,general,WordNet
+182918,yeller,word,noun,1,34826,"bawler,bellower,roarer,screamer,screecher,shouter",,yell,,,,,derived,,general,WordNet
+182919,yellers,word,noun,,34826,"bawler,bellower,roarer,screamer,screecher,shouter",,,,,,,derived,,general,WordNet
+182920,yelling,word,noun,1,244918,shouting,,yell,,,medicine,,simple,,general,WordNet
+182921,yelling,word,verb,,51405,"call,cried,cry,holler,hollo,scream,shout,shout out",,,,,,,simple,,general,WordNet
+182922,yelling,word,verb,,239933,scream,,,,,,,simple,,general,WordNet
+182925,yellow,word,adj,1,284980,xanthous,,yellowness,,,,,simple,,general,WordNet
+313676,yellow,word,adj,2,61710,"chicken,chickenhearted,lily-livered,white-livered,yellow-bellied",,yellowness,,,,,simple,,general,WordNet
+318917,yellow,word,adj,3,285299,,,yellowness,,,,,simple,,general,WordNet
+320566,yellow,word,adj,4,238840,"scandalmongering,sensationalistic",,yellowness,,,,,simple,,general,WordNet
+317455,yellow,word,adj,5,285301,,,yellowness,,,,,simple,,general,WordNet
+317255,yellow,word,adj,6,148310,"icteric,jaundiced",,yellowness,,,anatomy,,simple,,general,WordNet
+182923,yellow,word,noun,1,285305,,,,,,,,simple,,general,WordNet
+182924,yellow,word,verb,1,285306,,,,,,,,simple,,general,WordNet
+282247,yellow adder's tongue,phrase,noun,1,15430,"amberbell,erythronium americanum,trout lily",,,,,botany,,,,general,WordNet
+278105,yellow ageratum,phrase,noun,1,10998,"african daisy,lonas annua,lonas inodora",,,,,botany,,,,general,WordNet
+282180,yellow asphodel,phrase,noun,1,26021,"asphodeline lutea,king's spear",,,,,botany,,,,general,WordNet
+283981,yellow avens,phrase,noun,1,131276,geum macrophyllum,,,,,botany,,,,general,WordNet
+283976,yellow avens,phrase,noun,2,131275,"geum alleppicum strictum,geum strictum",,,,,botany,,,,general,WordNet
+284706,yellow bachelor's button,phrase,noun,1,52508,"candyweed,orange milkwort,polygala lutea,yellow milkwort",,,,,botany,,,,general,WordNet
+231133,yellow bass,phrase,noun,1,186147,morone interrupta,,,,,oceanography,,,,general,WordNet
+254175,yellow bean,phrase,noun,1,282065,wax bean,,,,,,,,,general,WordNet
+284321,yellow bedstraw,phrase,noun,1,126425,"galium verum,our lady's bedstraw,yellow cleavers",,,,,botany,,,,general,WordNet
+285898,yellow bells,phrase,noun,1,51336,"california yellow bells,emmanthe penduliflora,whispering bells",,,,,botany,,,,general,WordNet
+288059,yellow berry,phrase,noun,1,48545,buckthorn berry,,,,,botany,,,,general,WordNet
+244782,yellow bile,phrase,noun,1,63065,choler,,,,,,,,,general,WordNet
+280657,yellow birch,phrase,noun,1,38177,"betula alleghaniensis,betula leutea",,,,,botany,,,,general,WordNet
+243885,yellow bone marrow,phrase,noun,1,285309,yellow marrow,,,,,anatomy,,,,general,WordNet
+279352,yellow bristle grass,phrase,noun,1,132139,"glaucous bristlegrass,setaria glauca,yellow bristlegrass,yellow foxtail",,,,,botany,,,,general,WordNet
+279351,yellow bristlegrass,phrase,noun,1,132139,"glaucous bristlegrass,setaria glauca,yellow bristle grass,yellow foxtail",,,,,botany,,,,general,WordNet
+285951,yellow bugle,phrase,noun,1,12593,"ajuga chamaepitys,ground pine",,,,,botany,,,,general,WordNet
+223262,yellow bunting,phrase,noun,1,103251,"emberiza citrinella,yellowhammer",,,,,,,,,general,WordNet
+281162,yellow cattley guava,phrase,noun,1,136096,"guava,psidium littorale,strawberry guava",,,,,botany,,,,general,WordNet
+275028,yellow cedar,phrase,noun,1,12795,"alaska cedar,chamaecyparis nootkatensis,nootka cypress,yellow cypress",,,,,agriculture,,,,general,WordNet
+277471,yellow chamomile,phrase,noun,1,19337,"anthemis tinctoria,dyers' chamomile,golden marguerite",,,,,botany,,,,general,WordNet
+280595,yellow chestnut oak,phrase,noun,1,62538,"chinkapin oak,chinquapin oak,quercus muehlenbergii",,,,,botany,,,,general,WordNet
+284322,yellow cleavers,phrase,noun,1,126425,"galium verum,our lady's bedstraw,yellow bedstraw",,,,,botany,,,,general,WordNet
+282457,yellow clintonia,phrase,noun,1,67001,"clintonia borealis,heal all",,,,,botany,,,,general,WordNet
+282062,yellow colicroot,phrase,noun,1,13183,aletris aurea,,,,,botany,,,,general,WordNet
+275027,yellow cypress,phrase,noun,1,12795,"alaska cedar,chamaecyparis nootkatensis,nootka cypress,yellow cedar",,,,,agriculture,,,,general,WordNet
+254252,yellow delicious,phrase,noun,1,133550,golden delicious,,,,,nutrition,,,,general,WordNet
+283734,yellow dock,phrase,noun,1,40256,"bitter dock,broad-leaved dock,rumex obtusifolius",,,,,botany,,,,general,WordNet
+293657,yellow dwarf,phrase,noun,1,285310,,,,,,botany,,,,general,WordNet
+292893,yellow fever,phrase,noun,1,40605,"black vomit,yellow jack",,,,,,,,,general,WordNet
+281938,yellow flag,phrase,noun,1,158256,"iris pseudacorus,yellow iris,yellow water flag",,,,,agriculture,,,,general,WordNet
+286350,yellow foxglove,phrase,noun,1,91454,"digitalis lutea,straw foxglove",,,,,botany,,,,general,WordNet
+279353,yellow foxtail,phrase,noun,1,132139,"glaucous bristlegrass,setaria glauca,yellow bristle grass,yellow bristlegrass",,,,,botany,,,,general,WordNet
+285936,yellow giant hyssop,phrase,noun,1,11213,agastache nepetoides,,,,,botany,,,,general,WordNet
+282212,yellow globe lily,phrase,noun,1,51664,"calochortus amabilis,golden fairy lantern",,,,,botany,,,,general,WordNet
+231441,yellow goatfish,phrase,noun,1,187521,mulloidichthys martinicus,,,,,education,,,,general,WordNet
+281629,yellow granadilla,phrase,noun,1,159557,"jamaica honeysuckle,passiflora laurifolia",,,,,nutrition,,,,general,WordNet
+254312,yellow granadilla,phrase,noun,2,36478,"bell apple,sweet cup,water lemon",,,,,nutrition,,,,general,WordNet
+242866,yellow green,phrase,noun,1,60876,"chartreuse,paris green,pea green,yellowish green",,,,,,,,,general,WordNet
+231826,yellow gurnard,phrase,noun,1,269563,"trigla lucerna,tub gurnard",,,,,,,,,general,WordNet
+278000,yellow hawkweed,phrase,noun,1,141904,"hieracium praealtum,king devil",,,,,,,,,general,WordNet
+286641,yellow henbane,phrase,noun,1,211510,physalis viscosa,,,,,botany,,,,general,WordNet
+284410,yellow honeysuckle,phrase,noun,1,171345,lonicera flava,,,,,botany,,,,general,WordNet
+284408,yellow honeysuckle,phrase,noun,2,171344,lonicera dioica,,,,,botany,,,,general,WordNet
+277349,yellow horned poppy,phrase,noun,1,132106,"glaucium flavum,horn poppy,horned poppy,sea poppy",,,,,botany,,,,general,WordNet
+228398,yellow hornet,phrase,noun,1,279366,"vespula maculifrons,yellow jacket",,,,,sociology,,,,general,WordNet
+281937,yellow iris,phrase,noun,1,158256,"iris pseudacorus,yellow flag,yellow water flag",,,,,agriculture,,,,general,WordNet
+278456,yellow ironweed,phrase,noun,1,6783,"actinomeris alternifolia,golden honey plant,golden ironweed,verbesina alternifolia,wingstem",,,,,botany,,,,general,WordNet
+283409,yellow jacaranda,phrase,noun,1,219076,"pride of bolivia,tipu,tipu tree",,,,,botany,,,,general,WordNet
+292892,yellow jack,phrase,noun,1,40605,"black vomit,yellow fever",,,,,,,,,general,WordNet
+242218,yellow jack,phrase,noun,2,285315,,,,,,maritime,,,,general,WordNet
+231218,yellow jack,phrase,noun,3,53587,"caranx bartholomaei,caranx hippos,crevalle jack,jack crevalle",,,,,zoology,,,,general,WordNet
+238602,yellow jacket,phrase,noun,1,191590,"nembutal,pentobarbital,pentobarbital sodium",,,,,business,,,,general,WordNet
+228397,yellow jacket,phrase,noun,2,279366,"vespula maculifrons,yellow hornet",,,,,sociology,,,,general,WordNet
+282569,yellow jasmine,phrase,noun,1,54805,"carolina jasmine,evening trumpet flower,gelsemium sempervirens,yellow jessamine",,,,,botany,,,,general,WordNet
+282570,yellow jessamine,phrase,noun,1,54805,"carolina jasmine,evening trumpet flower,gelsemium sempervirens,yellow jasmine",,,,,botany,,,,general,WordNet
+248056,yellow journalism,phrase,noun,1,260649,"tab,tabloid",,,,,media,,,,general,WordNet
+278639,yellow lady's slipper,phrase,noun,1,82659,"cypripedium calceolus,cypripedium parviflorum,yellow lady-slipper",,,,,,,,,general,WordNet
+278640,yellow lady-slipper,phrase,noun,1,82659,"cypripedium calceolus,cypripedium parviflorum,yellow lady's slipper",,,,,,,,,general,WordNet
+250838,yellow light,phrase,noun,1,285316,,,,,,,,,,general,WordNet
+283352,yellow locust,phrase,noun,1,40526,"black locust,robinia pseudoacacia",,,,,botany,,,,general,WordNet
+278938,yellow loosestrife,phrase,noun,1,127033,"garden loosestrife,lysimachia vulgaris",,,,,,,,,general,WordNet
+283136,yellow lupine,phrase,noun,1,172915,lupinus luteus,,,,,agriculture,,,,general,WordNet
+263448,yellow man,phrase,noun,1,285317,,,,,,,offensive,,,general,WordNet
+282222,yellow mariposa tulip,phrase,noun,1,51668,calochortus luteus,,,,,botany,,,,general,WordNet
+243884,yellow marrow,phrase,noun,1,285309,yellow bone marrow,,,,,anatomy,,,,general,WordNet
+294970,yellow metal,phrase,noun,1,14650,"alpha-beta brass,muntz metal",,,,,,,,,general,WordNet
+284705,yellow milkwort,phrase,noun,1,52508,"candyweed,orange milkwort,polygala lutea,yellow bachelor's button",,,,,botany,,,,general,WordNet
+285311,yellow mombin,phrase,noun,1,143325,"hog plum,spondias mombin,yellow mombin tree",,,,,botany,,,,general,WordNet
+254367,yellow mombin,phrase,noun,2,143327,hog plum,,,,,botany,,,,general,WordNet
+285312,yellow mombin tree,phrase,noun,1,143325,"hog plum,spondias mombin,yellow mombin",,,,,botany,,,,general,WordNet
+285537,yellow mountain saxifrage,phrase,noun,1,238589,saxifraga aizoides,,,,,botany,,,,general,WordNet
+279507,yellow nutgrass,phrase,noun,1,64367,"chufa,cyperus esculentus,earth almond,ground almond,rush nut",,,,,nutrition,,,,general,WordNet
+280645,yellow oak,phrase,noun,1,40547,"black oak,quercitron,quercitron oak,quercus velutina",,,,,botany,,,,general,WordNet
+295520,yellow ocher,phrase,noun,1,285323,yellow ochre,,,,,,,,,general,WordNet
+295521,yellow ochre,phrase,noun,1,285323,yellow ocher,,,,,,,,,general,WordNet
+276197,yellow oleander,phrase,noun,1,264147,"thevetia neriifolia,thevetia peruviana",,,,,botany,,,,general,WordNet
+252277,yellow pages,phrase,noun,1,285324,,,,,,business,,,,general,WordNet
+277988,yellow paper daisy,phrase,noun,1,133551,"golden everlasting,helichrysum bracteatum,strawflower",,,,,botany,,,,general,WordNet
+275602,yellow parilla,phrase,noun,1,52100,"canada moonseed,common moonseed,menispermum canadense",,,,,botany,,,,general,WordNet
+283401,yellow pea,phrase,noun,1,114333,"false lupine,golden pea,thermopsis macrophylla",,,,,botany,,,,general,WordNet
+231043,yellow perch,phrase,noun,1,208758,perca flavescens,,,,,,,,,general,WordNet
+294450,yellow peril,phrase,noun,1,285326,,,,,,,,,,general,WordNet
+278931,yellow pimpernel,phrase,noun,1,173508,lysimachia nemorum,,,,,botany,,,,general,WordNet
+274771,yellow pine,phrase,noun,1,285327,,,,,,,,,,general,WordNet
+274708,yellow pine,phrase,noun,2,285328,,,,,,,,,,general,WordNet
+285457,yellow pitcher plant,phrase,noun,1,145699,"huntsman's horn,huntsman's horns,sarracenia flava,trumpets,yellow trumpet",,,,,botany,,,,general,WordNet
+275632,yellow pond lily,phrase,noun,1,78399,"cow lily,nuphar advena,spatterdock",,,,,botany,,,,general,WordNet
+275596,yellow poplar,phrase,noun,1,270110,"true tulipwood,tulipwood,white poplar,whitewood",,,,,botany,,,,general,WordNet
+275591,yellow poplar,phrase,noun,2,52176,"canary whitewood,liriodendron tulipifera,tulip poplar,tulip tree",,,,,botany,,,,general,WordNet
+263445,yellow race,phrase,noun,1,185412,"mongolian race,mongoloid race",,,,,,,,,general,WordNet
+262114,yellow river,phrase,noun,1,145188,"huang he,hwang ho",,,,,oceanography,,,,general,WordNet
+277050,yellow rocket,phrase,noun,1,33200,"barbarea vulgaris,rockcress,rocket cress,sisymbrium barbarea",,,,,botany,,,,general,WordNet
+275821,yellow root,phrase,noun,1,133579,"golden seal,goldenseal,hydrastis canadensis,turmeric root",,,,,botany,,,,general,WordNet
+278419,yellow salsify,phrase,noun,1,267982,tragopogon dubius,,,,,botany,,,,general,WordNet
+276765,yellow sand verbena,phrase,noun,1,3991,abronia latifolia,,,,,botany,,,,general,WordNet
+262957,yellow sea,phrase,noun,1,145187,huang hai,,,,,,,,,general,WordNet
+277953,yellow spiny daisy,phrase,noun,1,137909,haplopappus spinulosus,,,,,botany,,,,general,WordNet
+293661,yellow spot,phrase,noun,1,285330,,,,,,botany,,,,general,WordNet
+244998,yellow spot,phrase,noun,2,173975,"macula,macula lutea,macular area",,,,,,,,,general,WordNet
+287924,yellow spot fungus,phrase,noun,1,58793,cercospora kopkei,,,,,medicine,,,,general,WordNet
+274928,yellow spruce,phrase,noun,1,99786,"eastern spruce,picea rubens,red spruce",,,,,forestry,,,,general,WordNet
+279585,yellow squash,phrase,noun,1,285331,,,,,,botany,,,,general,WordNet
+254081,yellow squash,phrase,noun,2,285332,,,,,,anatomy,,,,general,WordNet
+277716,yellow star-thistle,phrase,noun,1,33551,"barnaby's thistle,centaurea solstitialis",,,,,botany,,,,general,WordNet
+275958,yellow sweet clover,phrase,noun,1,179735,melilotus officinalis,,,,,botany,,,,general,WordNet
+283167,yellow trefoil,phrase,noun,1,40540,"black medick,hop clover,medicago lupulina,nonesuch clover",,,,,botany,,,,general,WordNet
+285456,yellow trumpet,phrase,noun,1,145699,"huntsman's horn,huntsman's horns,sarracenia flava,trumpets,yellow pitcher plant",,,,,botany,,,,general,WordNet
+254226,yellow turnip,phrase,noun,1,236824,"rutabaga,swede,swedish turnip",,,,,nutrition,,,,general,WordNet
+286295,yellow twining snapdragon,phrase,noun,1,21123,antirrhinum filipes,,,,,botany,,,,general,WordNet
+283072,yellow vetchling,phrase,noun,1,71278,"common vetchling,lathyrus pratensis,meadow pea",,,,,botany,,,,general,WordNet
+223525,yellow warbler,phrase,noun,1,87887,"dendroica petechia,golden warbler,yellowbird",,,,,,,,,general,WordNet
+281939,yellow water flag,phrase,noun,1,158256,"iris pseudacorus,yellow flag,yellow iris",,,,,agriculture,,,,general,WordNet
+275636,yellow water lily,phrase,noun,1,196455,nuphar lutea,,,,,botany,,,,general,WordNet
+277256,yellow watercress,phrase,noun,1,176853,"marsh cress,rorippa islandica",,,,,culinary,,,,general,WordNet
+263449,yellow woman,phrase,noun,1,285333,,,,,,,offensive,,,general,WordNet
+319502,yellow-banded,word,adj,1,285334,,,,,,,,,,general,WordNet
+314244,yellow-beige,word,adj,1,285335,yellowish-beige,,,,,,,,,general,WordNet
+313677,yellow-bellied,word,adj,1,61710,"chicken,chickenhearted,lily-livered,white-livered,yellow",,,,,,,,,general,WordNet
+225709,yellow-bellied sapsucker,phrase,noun,1,251395,sphyrapicus varius,,,,,,,,,general,WordNet
+224401,yellow-bellied terrapin,phrase,noun,1,222169,"pseudemys scripta,slider",,,,,business,,,,general,WordNet
+292955,yellow-blindness,word,noun,1,263368,tetartanopia,,,,,,,,,general,WordNet
+292953,yellow-blue color blindness,phrase,noun,1,285336,yellow-blue dichromacy,,,,,,,,,general,WordNet
+292952,yellow-blue dichromacy,phrase,noun,1,285336,yellow-blue color blindness,,,,,,,,,general,WordNet
+223264,yellow-breasted bunting,phrase,noun,1,103250,emberiza aureola,,,,,,,,,general,WordNet
+223541,yellow-breasted chat,phrase,noun,1,148309,icteria virens,,,,,zoology,,,,general,WordNet
+314050,yellow-brown,word,adj,1,15422,"amber,brownish-yellow",,,,,,,,,general,WordNet
+226809,yellow-crowned night heron,phrase,noun,1,196630,nyctanassa violacea,,,,,,,,,general,WordNet
+249233,yellow-dog contract,phrase,noun,1,285337,,,,,,business,,,,general,WordNet
+283745,yellow-eyed grass,phrase,noun,1,285338,,,,,,botany,,,,general,WordNet
+283743,yellow-eyed grass family,phrase,noun,1,115432,"family xyridaceae,xyridaceae",,,,,botany,,,,general,WordNet
+228308,yellow-fever mosquito,phrase,noun,1,10393,aedes aegypti,,,,,medicine,,,,general,WordNet
+314342,yellow-gray,word,adj,1,285339,"yellow-grey,yellowish-gray,yellowish-grey",,,,,,,,,general,WordNet
+314246,yellow-green,word,adj,1,285340,,,,,,,,,,general,WordNet
+222486,yellow-green algae,phrase,noun,1,285341,,,,,,,,,,general,WordNet
+314341,yellow-grey,word,adj,1,285339,"yellow-gray,yellowish-gray,yellowish-grey",,,,,,,,,general,WordNet
+275216,yellow-leaf sickle pine,phrase,noun,1,114008,falcatifolium taxoides,,,,,botany,,,,general,WordNet
+319503,yellow-marked,word,adj,1,285342,,,,,,,,,,general,WordNet
+314247,yellow-orange,word,adj,1,285343,yellowish-orange,,,,,,,,,general,WordNet
+225695,yellow-shafted flicker,phrase,noun,1,69168,"colaptes auratus,yellowhammer",,,,,,,,,general,WordNet
+319504,yellow-spotted,word,adj,1,285344,,,,,,,,,,general,WordNet
+319505,yellow-striped,word,adj,1,285345,,,,,,,,,,general,WordNet
+230271,yellow-throated marten,phrase,noun,1,60841,charronia flavigula,,,,,,,,,general,WordNet
+314249,yellow-tinged,word,adj,1,285346,,,,,,,,,,general,WordNet
+321932,yellow-tipped,word,adj,1,285347,,,,,,botany,,,,general,WordNet
+314345,yellow-white,word,adj,1,285348,yellowish-white,,,,,,,,,general,WordNet
+229635,yellowbelly marmot,phrase,noun,1,176779,"marmota flaviventris,rockchuck",,,,,,,,,general,WordNet
+182926,yellowbird,word,noun,1,87887,"dendroica petechia,golden warbler,yellow warbler",,,,,,,compound,,general,WordNet
+182927,yellowbird,word,noun,2,133598,"goldfinch,new world goldfinch,spinus tristis",,,,,,,compound,,general,WordNet
+182928,yellowcake,word,noun,1,285351,,,,,,chemistry,,compound,,general,WordNet
+182930,yellowed,word,adj,1,285299,,,,,,,,simple,,general,WordNet
+182929,yellowed,word,verb,,285306,,,,,,,,simple,,general,WordNet
+182931,yellower,word,adj,,284980,"xanthous,yellowish",,,,,,,derived,,general,WordNet
+182932,yellower,word,adj,,61710,"chicken,chickenhearted,lily-livered,white-livered,yellow-bellied",,,,,,,derived,,general,WordNet
+182933,yellower,word,adj,,285299,,,,,,,,derived,,general,WordNet
+182934,yellowest,word,adj,,284980,"xanthous,yellowish",,,,,,,simple,,general,WordNet
+182935,yellowest,word,adj,,61710,"chicken,chickenhearted,lily-livered,white-livered,yellow-bellied",,,,,,,simple,,general,WordNet
+182936,yellowest,word,adj,,285299,,,,,,,,simple,,general,WordNet
+182937,yellowfin,word,noun,1,265244,"thunnus albacares,yellowfin tuna",,,,,,,compound,,general,WordNet
+231403,yellowfin croaker,phrase,noun,1,258952,"surf fish,surffish,umbrina roncador",,,,,zoology,,,,general,WordNet
+231728,yellowfin mojarra,phrase,noun,1,131030,gerres cinereus,,,,,,,,,general,WordNet
+231649,yellowfin tuna,phrase,noun,1,265244,"thunnus albacares,yellowfin",,,,,,,,,general,WordNet
+182938,yellowhammer,word,noun,1,69168,"colaptes auratus,yellow-shafted flicker",,,,,,,compound,,general,WordNet
+182939,yellowhammer,word,noun,2,103251,"emberiza citrinella,yellow bunting",,,,,,,compound,,general,WordNet
+182940,yellowing,word,verb,,285306,,,,,,,,simple,,general,WordNet
+182941,yellowish,word,adj,1,284980,"xanthous,yellower",,,,,,,derived,,general,WordNet
+242910,yellowish brown,phrase,noun,1,48628,"buff,caramel,caramel brown,raw sienna",,,,,,,,,general,WordNet
+242867,yellowish green,phrase,noun,1,60876,"chartreuse,paris green,pea green,yellow green",,,,,,,,,general,WordNet
+242890,yellowish pink,phrase,noun,1,22946,"apricot,peach,salmon pink",,,,,,,,,general,WordNet
+314245,yellowish-beige,word,adj,1,285335,yellow-beige,,,,,,,,,general,WordNet
+314344,yellowish-gray,word,adj,1,285339,"yellow-gray,yellow-grey,yellowish-grey",,,,,,,,,general,WordNet
+314343,yellowish-grey,word,adj,1,285339,"yellow-gray,yellow-grey,yellowish-gray",,,,,,,,,general,WordNet
+314248,yellowish-orange,word,adj,1,285343,yellow-orange,,,,,,,,,general,WordNet
+314346,yellowish-white,word,adj,1,285348,yellow-white,,,,,,,,,general,WordNet
+182942,yellowknife,word,noun,1,285352,,,,,,geography,,compound,,general,WordNet
+182943,yellowlegs,word,noun,1,285353,,,,,,,,compound,,general,WordNet
+182944,yellowness,word,noun,1,285305,yellows,,yellow,,,,,derived,,general,WordNet
+182945,yellows,word,noun,,285305,yellowness,,,,,,,simple,,general,WordNet
+182946,yellows,word,verb,,285306,,,,,,,,simple,,general,WordNet
+182947,yellowstone,word,noun,1,285354,yellowstone river,,,,,geography,,compound,,general,WordNet
+258649,yellowstone national park,phrase,noun,1,285355,,,,,,,,,,general,WordNet
+262959,yellowstone river,phrase,noun,1,285354,yellowstone,,,,,geography,,,,general,WordNet
+182948,yellowtail,word,noun,1,197561,"ocyurus chrysurus,yellowtail snapper",,,,,nutrition,,compound,,general,WordNet
+182949,yellowtail,word,noun,2,242455,seriola dorsalis,,,,,zoology,,compound,,general,WordNet
+254475,yellowtail flounder,phrase,noun,1,285356,,,,,,,,,,general,WordNet
+231893,yellowtail flounder,phrase,noun,2,168737,limanda ferruginea,,,,,,,,,general,WordNet
+231315,yellowtail snapper,phrase,noun,1,197561,"ocyurus chrysurus,yellowtail",,,,,nutrition,,,,general,WordNet
+182950,yellowtails,word,noun,,197561,"ocyurus chrysurus,yellowtail snapper",,,,,nutrition,,compound,,general,WordNet
+182951,yellowtails,word,noun,,242455,seriola dorsalis,,,,,zoology,,compound,,general,WordNet
+182952,yellowthroat,word,noun,1,285357,,,,,,,,compound,,general,WordNet
+182953,yellowwood,word,noun,1,285358,,,,,,botany,,compound,,general,WordNet
+182954,yellowwood,word,noun,2,285359,yellowwood tree,,,,,botany,,compound,,general,WordNet
+275176,yellowwood tree,phrase,noun,1,285359,yellowwood,,,,,botany,,,,general,WordNet
+182955,yells,word,noun,,51375,"call,cries,cry,outcry,shout,vociferation",,,,,,,simple,,general,WordNet
+182956,yells,word,noun,,79615,"cries,cry",,,,,psychology,,simple,,general,WordNet
+182957,yells,word,verb,,51405,"call,cried,cry,holler,hollo,scream,shout,shout out",,,,,,,simple,,general,WordNet
+182958,yelp,word,noun,1,285360,yip,,,,,zoology,,simple,,general,WordNet
+182959,yelp,word,verb,1,285201,"yap,yip",,yelping,,,,,simple,,general,WordNet
+182960,yelped,word,verb,,285201,"yap,yip",,,,,,,simple,,general,WordNet
+182961,yelping,word,noun,1,285360,yip,,yelp,,,zoology,,simple,,general,WordNet
+182962,yelping,word,verb,,285201,"yap,yip",,,,,,,simple,,general,WordNet
+182963,yelps,word,noun,,285360,yip,,,,,zoology,,simple,,general,WordNet
+182964,yelps,word,verb,,285201,"yap,yip",,,,,,,simple,,general,WordNet
+182965,yemen,word,noun,1,231891,republic of yemen,,,,,politics,,simple,,general,WordNet
+182967,yemeni,word,adj,1,285362,,,,,,geography,,simple,,general,WordNet
+182966,yemeni,word,noun,1,285365,,,,,,geography,,simple,,general,WordNet
+291028,yemeni fils,phrase,noun,1,118591,fils,,,,,,,,,general,WordNet
+291026,yemeni monetary unit,phrase,noun,1,285366,,,,,,finance,,,,general,WordNet
+291027,yemeni rial,phrase,noun,1,234084,rial,,,,,finance,,,,general,WordNet
+182968,yen,word,noun,1,137838,"hankering,hankerings",,,,,,,simple,,general,WordNet
+182969,yen,word,noun,2,285367,,,,,,finance,,simple,,general,WordNet
+182970,yen,word,verb,1,5748,"ache,languish,pine,yearn",,,,,,,simple,,general,WordNet
+182971,yenisei,word,noun,1,285368,"yenisei river,yenisey,yenisey river",,,,,geography,,simple,,general,WordNet
+182972,yenisei,word,noun,2,104747,"enets,entsi,entsy,yenisei-samoyed",,,,,linguistics,,simple,,general,WordNet
+262960,yenisei river,phrase,noun,1,285368,"yenisei,yenisey,yenisey river",,,,,geography,,,,general,WordNet
+251274,yenisei-samoyed,word,noun,1,104747,"enets,entsi,entsy,yenisei,yeniseian",,,,,linguistics,,,,general,WordNet
+182973,yeniseian,word,noun,1,285369,,,,,,geography,,simple,,general,WordNet
+182974,yeniseian,word,noun,2,104747,"enets,entsi,entsy,yenisei-samoyed",,,,,linguistics,,simple,,general,WordNet
+262961,yenisey,word,noun,1,285368,"yenisei,yenisei river,yenisey river",,,,,geography,,simple,,general,WordNet
+262962,yenisey river,phrase,noun,1,285368,"yenisei,yenisei river,yenisey",,,,,geography,,,,general,WordNet
+182975,yenned,word,verb,,5748,"ache,languish,pine,yearn",,,,,,,simple,,general,WordNet
+182976,yenning,word,verb,,5748,"ache,languish,pine,yearn",,,,,,,simple,,general,WordNet
+182977,yens,word,noun,,137838,"hankering,hankerings",,,,,,,simple,,general,WordNet
+182978,yens,word,noun,,285367,,,,,,finance,,simple,,general,WordNet
+182979,yens,word,verb,,5748,"ache,languish,pine,yearn",,,,,,,simple,,general,WordNet
+182980,yenta,word,noun,1,285370,,,,Yiddish,,,vulgar,simple,,general,WordNet
+182981,yenta,word,noun,2,285371,,,,Yiddish,,,,simple,,general,WordNet
+182982,yentas,word,noun,,285370,,,,Yiddish,,,vulgar,simple,,general,WordNet
+182983,yentas,word,noun,,285371,,,,Yiddish,,,,simple,,general,WordNet
+182984,yeoman,word,noun,1,35949,"beefeater,yeoman of the guard,yeomen",,,,,politics,,simple,,general,WordNet
+182985,yeoman,word,noun,2,285372,yeomen,,,,,agriculture,,simple,,general,WordNet
+182986,yeomanries,word,noun,,285373,,,,,,agriculture,,simple,,general,WordNet
+182987,yeomanries,word,noun,,285374,,,,,,military,,simple,,general,WordNet
+182988,yeomanry,word,noun,1,285373,,,,,,agriculture,,simple,,general,WordNet
+182989,yeomanry,word,noun,2,285374,,,,,,military,,simple,,general,WordNet
+182990,yeomen,word,noun,,35949,"beefeater,yeoman,yeoman of the guard",,,,,politics,,simple,,general,WordNet
+182991,yeomen,word,noun,,285372,yeoman,,,,,agriculture,,simple,,general,WordNet
+286116,yerba buena,phrase,noun,1,182416,"micromeria chamissonis,micromeria douglasii,satureja douglasii",,,,,botany,,,,general,WordNet
+288154,yerba mansa,phrase,noun,1,17618,anemopsis californica,,,,,botany,,,,general,WordNet
+285903,yerba santa,phrase,noun,1,107361,eriodictyon californicum,,,,,botany,,,,general,WordNet
+260728,yerevan,word,noun,1,53122,"capital of armenia,erivan,jerevan",,,,,,,simple,,general,WordNet
+273857,yerkes,word,noun,1,235251,"robert m. yerkes,robert mearns yerkes",,,,,psychology,,simple,,general,WordNet
+273860,yersin,word,noun,1,13238,"alexandre emile jean yersin,alexandre yersin",,,,,education,,simple,,general,WordNet
+222227,yersinia pestis,phrase,noun,1,285377,,,,,,biology,,,,general,WordNet
+262963,yerupaja,word,noun,1,285380,,,,,,geography,,simple,,general,WordNet
+260428,yerwa-maiduguri,word,noun,1,174376,maiduguri,,,,,business,,,,general,WordNet
+495902,yes,word,interj,,285381,,,,,,,,simple,,general,Lex Hopper
+182992,yes,word,noun,1,285264,yea,no,,,,,,simple,,general,WordNet
+264718,yes-man,word,noun,1,121023,"flunkey,flunky,stooge",,,,,,,,,general,WordNet
+252092,yes-no question,phrase,noun,1,285384,,,,,,,,,,general,WordNet
+182993,yeses,word,noun,,285264,yea,,,,,,,simple,,general,WordNet
+182994,yeshiva,word,noun,1,285385,yeshivoth,,,,,religion,,simple,,general,WordNet
+182995,yeshivah,word,noun,1,285385,"yeshivas,yeshivoth",,,,,religion,,simple,,general,WordNet
+182996,yeshivahs,word,noun,,285385,"yeshivas,yeshivoth",,,,,religion,,simple,,general,WordNet
+182997,yeshivas,word,noun,,285385,"yeshivah,yeshivoth",,,,,religion,,simple,,general,WordNet
+182998,yeshivoth,word,noun,,285385,"yeshiva,yeshivah",,,,,religion,,simple,,general,WordNet
+183001,yesterday,word,adv,1,285386,,,,,,,,simple,,general,WordNet
+324723,yesterday,word,adv,2,285388,,,,,,,,simple,,general,WordNet
+182999,yesterday,word,noun,1,285390,,,,,,,,simple,,general,WordNet
+183000,yesterday,word,noun,2,285392,,,,,,,,simple,,general,WordNet
+183002,yesterdays,word,noun,,285390,,,,,,,,simple,,general,WordNet
+183003,yesterdays,word,noun,,285392,,,,,,,,simple,,general,WordNet
+183004,yesteryear,word,noun,1,206529,"past,past times",,,,,,,simple,,general,WordNet
+183005,yesteryears,word,noun,,206529,"past,past times",,,,,,,simple,,general,WordNet
+183006,yet,word,adv,1,285395,,,,,,,,simple,,general,WordNet
+183007,yet,word,adv,2,25440,"as yet,heretofore,hitherto,so far,thus far,til now,until now,up to now",,,,,,,simple,,general,WordNet
+183008,yet,word,adv,3,109080,"even,still",,,,,,,simple,,general,WordNet
+323378,yet,word,adv,4,151066,in time,,,,,,,simple,,general,WordNet
+323282,yet,word,adv,5,248940,so far,,,,,,,simple,,general,WordNet
+323272,yet,word,adv,6,13769,"all the same,even so,however,nevertheless,nonetheless,notwithstanding,still,withal",,,,,,,simple,,general,WordNet
+495841,yet,word,conj,,285398,,,,,,,,simple,,general,Lex Hopper
+183009,yeti,word,noun,1,3764,abominable snowman,,,,,,,simple,,general,WordNet
+183010,yetis,word,noun,,3764,abominable snowman,,,,,,,simple,,general,WordNet
+273865,yevgeni aleksandrovich yevtushenko,phrase,noun,1,285399,"yevgeni yevtushenko,yevtushenko",,,,,literature,,,,general,WordNet
+273864,yevgeni yevtushenko,phrase,noun,1,285399,"yevgeni aleksandrovich yevtushenko,yevtushenko",,,,,literature,,,,general,WordNet
+273863,yevtushenko,word,noun,1,285399,"yevgeni aleksandrovich yevtushenko,yevgeni yevtushenko",,,,,literature,,simple,,general,WordNet
+183011,yew,word,noun,1,285400,,,,,,agriculture,,simple,,general,WordNet
+183012,yew,word,noun,2,285401,,,,,,botany,,simple,,general,WordNet
+275288,yew family,phrase,noun,1,115339,"family taxaceae,taxaceae",,,,,,,,,general,WordNet
+183013,yews,word,noun,,285400,,,,,,agriculture,,simple,,general,WordNet
+183014,yews,word,noun,,285401,,,,,,botany,,simple,,general,WordNet
+260109,yezo,word,noun,1,112262,"ezo,hokkaido",,,,,geography,,simple,,general,WordNet
+263301,ygdrasil,word,noun,1,285404,yggdrasil,,,,,mythology,,simple,,general,WordNet
+183015,yggdrasil,word,noun,1,285404,ygdrasil,,,,,mythology,,simple,,general,WordNet
+263192,yhvh,word,noun,1,159515,"jahvey,jahweh,jehovah,jhvh,wahvey,yahve,yahveh,yahwe",,,,,religion,,simple,,general,WordNet
+183016,yhwh,word,noun,1,159515,"jahvey,jahweh,jehovah,jhvh,wahvey,yahve,yahveh,yahwe",,,,,religion,,simple,,general,WordNet
+183017,yi,word,noun,1,12611,"akha,hani,lahu,lisu,lolo",,,,,linguistics,,simple,,general,WordNet
+290676,yib,word,noun,1,285260,"yb,yobibyte,yottabyte",,,,,computing,,simple,,general,WordNet
+290683,yibit,word,noun,1,285406,yobibit,,,,,,,simple,,general,WordNet
+183018,yid,word,noun,1,146247,"hymie,kike,sheeny",,,,,sociology,offensive,simple,,general,WordNet
+183019,yiddish,word,noun,1,285408,,,,,,linguistics,,simple,,general,WordNet
+183020,yids,word,noun,,146247,"hymie,kike,sheeny",,,,,sociology,offensive,simple,,general,WordNet
+183021,yield,word,noun,1,201946,output,,,,,,,simple,,general,WordNet
+183022,yield,word,noun,2,159079,"issue,payoff,proceeds,return,take,takings",,,,,business,,simple,,general,WordNet
+183023,yield,word,noun,3,124995,fruit,,,,,,,simple,,general,WordNet
+291364,yield,word,noun,4,201948,"output,production",,,,,,,simple,,general,WordNet
+310379,yield,word,verb,1,10855,"afford,gave,give,given",,"yielding,yielder",,,,,simple,,general,WordNet
+300002,yield,word,verb,2,131881,give way,,"yielding,yielder",,,,,simple,,general,WordNet
+306420,yield,word,verb,3,128193,"generate,give,render,return",,"yielding,yielder",,,economics,,simple,,general,WordNet
+310285,yield,word,verb,4,57559,"cede,concede,grant",,"yielding,yielder",,,,,simple,,general,WordNet
+312323,yield,word,verb,5,230788,"relent,soften",stand,"yielding,yielder",,,,,simple,,general,WordNet
+307481,yield,word,verb,6,99647,"ease up,give,give way,move over",,"yielding,yielder",,,,,simple,,general,WordNet
+306424,yield,word,verb,7,131769,give,,"yielding,yielder",,,,,simple,,general,WordNet
+301821,yield,word,verb,8,72432,"concede,grant",,"yielding,yielder",,,,,simple,,general,WordNet
+311822,yield,word,verb,9,257587,succumb,,"yielding,yielder",,,,,simple,,general,WordNet
+310139,yield,word,verb,10,35353,"bear,pay",,"yielding,yielder",,,,,simple,,general,WordNet
+305350,yield,word,verb,11,131808,give,,"yielding,yielder",,,,,simple,,general,WordNet
+303388,yield,word,verb,12,285409,,,"yielding,yielder",,,,,simple,,general,WordNet
+301810,yield,word,verb,13,48522,"buckle under,give in,knuckle under,succumb",,"yielding,yielder",,,,,simple,,general,WordNet
+309820,yield up,phrasal verb,verb,1,285410,,,,,Phrasal verb,,phrasal_verb,,,general,WordNet
+183024,yielded,word,verb,,10855,"afford,gave,give,given",,,,,,,simple,,general,WordNet
+183025,yielded,word,verb,,131881,give way,,,,,,,simple,,general,WordNet
+183026,yielded,word,verb,,128193,"generate,give,render,return",,,,,economics,,simple,,general,WordNet
+183027,yielder,word,noun,1,259181,surrenderer,,yield,,,,,derived,,general,WordNet
+183028,yielders,word,noun,,259181,surrenderer,,,,,,,derived,,general,WordNet
+321554,yielding,word,adj,1,285411,,,,,,,,simple,,general,WordNet
+317184,yielding,word,adj,2,285413,,,,,,,,simple,,general,WordNet
+316660,yielding,word,adj,3,285415,,,,,,,,simple,,general,WordNet
+183029,yielding,word,noun,1,131898,"giving up,surrender",,yield,,,linguistics,,simple,,general,WordNet
+183030,yielding,word,noun,2,72436,"conceding,concession",,yield,,,,,simple,,general,WordNet
+183031,yielding,word,verb,,10855,"afford,gave,give,given",,,,,,,simple,,general,WordNet
+183032,yieldingly,word,adv,1,196756,obediently,,,,,,,derived,,general,WordNet
+183033,yields,word,noun,,201946,output,,,,,,,simple,,general,WordNet
+183034,yields,word,noun,,159079,"issue,payoff,proceeds,return,take,takings",,,,,business,,simple,,general,WordNet
+183035,yields,word,noun,,124995,fruit,,,,,,,simple,,general,WordNet
+495888,yikes,word,interj,,285417,,,,,,,,simple,,general,Lex Hopper
+183036,yin,word,noun,1,285418,,yang,,,,,,simple,,general,WordNet
+183037,yins,word,noun,,285418,,,,,,,,simple,,general,WordNet
+183038,yip,word,noun,1,285360,yelp,,,,,zoology,,simple,,general,WordNet
+183039,yip,word,verb,1,285201,"yap,yelp",,,,,,,simple,,general,WordNet
+183040,yipes,word,verb,,285201,"yap,yelp",,,,,,,simple,,general,WordNet
+183042,yips,word,noun,,285360,yelp,,,,,zoology,,simple,,general,WordNet
+183041,yips,word,noun,1,285420,,,,,,sports,,simple,,general,WordNet
+183043,yips,word,verb,,285201,"yap,yelp",,,,,,,simple,,general,WordNet
+183044,yis,word,noun,,12611,"akha,hani,lahu,lisu,lolo",,,,,linguistics,,simple,,general,WordNet
+259546,yisrael,word,noun,1,159051,"israel,sion,state of israel,zion",,,,,politics,,simple,,general,WordNet
+275429,ylang-ylang,word,noun,1,52162,"cananga odorata,ilang-ilang",,,,,botany,,,,general,WordNet
+183045,ylem,word,noun,1,285423,,,,,,chemistry,,simple,,general,WordNet
+183046,ylems,word,noun,,285423,,,,,,chemistry,,simple,,general,WordNet
+263302,ymir,word,noun,1,285425,,,,,,mythology,,simple,,general,WordNet
+242222,yo-yo,word,noun,1,285428,,,,,,games,,,,general,WordNet
+183047,yob,word,noun,1,49070,"bully,hooligan,roughneck,rowdy,ruffian,tough",,,,,,,simple,,general,WordNet
+183048,yobbo,word,noun,1,49070,"bully,hooligan,roughneck,rowdy,ruffian,tough,yobo,yobs",,,,,,,simple,,general,WordNet
+183049,yobbos,word,noun,,49070,"bully,hooligan,roughneck,rowdy,ruffian,tough,yobo,yobs",,,,,,,simple,,general,WordNet
+290682,yobibit,word,noun,1,285406,yibit,,,,,,,simple,,general,WordNet
+290674,yobibyte,word,noun,1,285260,"yb,yib,yottabyte",,,,,computing,,simple,,general,WordNet
+264041,yobo,word,noun,1,49070,"bully,hooligan,roughneck,rowdy,ruffian,tough,yobbo,yobs",,,,,,,simple,,general,WordNet
+183050,yobs,word,noun,,49070,"bully,hooligan,roughneck,rowdy,ruffian,tough,yobbo,yobo",,,,,,,simple,,general,WordNet
+183051,yodel,word,noun,1,285431,,,,,,music,,simple,,general,WordNet
+183052,yodel,word,verb,1,88880,"descant,warble",,"yodeller,yodeling",,,music,,simple,,general,WordNet
+183053,yodeled,word,verb,,88880,"descant,warble",,,,,music,,simple,,general,WordNet
+183054,yodeling,word,noun,1,285432,,,yodel,,,music,,simple,,general,WordNet
+183055,yodeling,word,verb,,88880,"descant,warble",,,,,music,,simple,,general,WordNet
+183056,yodelled,word,verb,,88880,"descant,warble",,,,,music,,simple,,general,WordNet
+183057,yodeller,word,noun,1,285433,,,yodel,,,music,,simple,,general,WordNet
+183058,yodellers,word,noun,,285433,,,,,,music,,simple,,general,WordNet
+183059,yodelling,word,verb,,88880,"descant,warble",,,,,music,,derived,,general,WordNet
+183060,yodels,word,noun,,285431,,,,,,music,,simple,,general,WordNet
+183061,yodels,word,verb,,88880,"descant,warble",,,,,music,,simple,,general,WordNet
+183062,yodh,word,noun,1,285434,,,,,,linguistics,,simple,,general,WordNet
+183063,yodhs,word,noun,,285434,,,,,,linguistics,,simple,,general,WordNet
+183064,yoga,word,noun,1,285435,,,"yogistic,yogic",,,religion,,simple,,general,WordNet
+183065,yoga,word,noun,2,285436,,,"yogistic,yogic",,,religion,,simple,,general,WordNet
+247965,yogacara,word,noun,1,285438,,,,,,religion,,simple,,general,WordNet
+183066,yogas,word,noun,,285435,,,,,,religion,,simple,,general,WordNet
+183067,yogas,word,noun,,285436,,,,,,religion,,simple,,general,WordNet
+183068,yoghourt,word,noun,1,285439,"yoghurt,yogurt",,,,,nutrition,,simple,,general,WordNet
+183069,yoghourts,word,noun,,285439,"yoghurt,yogurt",,,,,nutrition,,simple,,general,WordNet
+183070,yoghurt,word,noun,1,285439,"yoghourt,yogurt",,,,,nutrition,,simple,,general,WordNet
+183071,yoghurts,word,noun,,285439,"yoghourt,yogurt",,,,,nutrition,,simple,,general,WordNet
+183072,yogi,word,noun,1,37681,"berra,lawrence peter berra,yogi berra",,,,,sports,,simple,,general,WordNet
+183073,yogi,word,noun,2,285440,,,,,,religion,,simple,,general,WordNet
+267360,yogi berra,phrase,noun,1,37681,"berra,lawrence peter berra,yogi,yogin",,,,,sports,,,,general,WordNet
+183074,yogic,word,adj,1,285441,yogistic,,yoga,,,,,simple,,general,WordNet
+183075,yogin,word,noun,,37681,"berra,lawrence peter berra,yogi berra,yogis",,,,,sports,,simple,,general,WordNet
+183076,yogin,word,noun,,285440,yogis,,,,,religion,,simple,,general,WordNet
+183077,yogis,word,noun,,37681,"berra,lawrence peter berra,yogi berra,yogin",,,,,sports,,simple,,general,WordNet
+183078,yogis,word,noun,,285440,yogin,,,,,religion,,simple,,general,WordNet
+322860,yogistic,word,adj,1,285441,yogic,,yoga,,,,,simple,,general,WordNet
+183079,yogurt,word,noun,1,285439,"yoghourt,yoghurt",,,,,nutrition,,simple,,general,WordNet
+183080,yogurts,word,noun,,285439,"yoghourt,yoghurt",,,,,nutrition,,simple,,general,WordNet
+183081,yoke,word,noun,1,285444,,,,,,fashion,,simple,,general,WordNet
+183082,yoke,word,noun,2,285445,,,,,,,,simple,,general,WordNet
+183083,yoke,word,noun,3,45082,"brace,couple,couplet,distich,duad,duet,dui,duo",,,,,,,simple,,general,WordNet
+256849,yoke,word,noun,4,285448,,,,,,zoology,,simple,,general,WordNet
+242221,yoke,word,noun,5,285450,,,,,,,,simple,,general,WordNet
+242220,yoke,word,noun,6,78081,"coupling,couplings",,,,,,,simple,,general,WordNet
+242219,yoke,word,noun,7,285451,,,,,,zoology,,simple,,general,WordNet
+305624,yoke,word,verb,1,285452,,,,,,,,simple,,general,WordNet
+305622,yoke,word,verb,2,169250,link,,,,,,,simple,,general,WordNet
+305620,yoke,word,verb,3,285453,,unyoke,,,,,,simple,,general,WordNet
+183084,yoked,word,verb,,285452,,,,,,,,simple,,general,WordNet
+183085,yoked,word,verb,,169250,link,,,,,,,simple,,general,WordNet
+183086,yoked,word,verb,,285453,,,,,,,,simple,,general,WordNet
+183087,yokel,word,noun,1,49185,"bumpkin,chawbacon,hayseed,hick,rube,yahoo",,,,,sociology,,simple,,general,WordNet
+314602,yokel-like,word,adj,1,285455,,,,,,geography,proverb,,,general,WordNet
+183088,yokelish,word,adj,1,44724,"bounderish,ill-bred,lowbred,rude,underbred",,,,,,,derived,,general,WordNet
+183089,yokels,word,noun,,49185,"bumpkin,chawbacon,hayseed,hick,rube,yahoo",,,,,sociology,,simple,,general,WordNet
+183090,yokes,word,noun,,285444,,,,,,fashion,,simple,,general,WordNet
+183091,yokes,word,noun,,285445,,,,,,,,simple,,general,WordNet
+183092,yokes,word,noun,,45082,"brace,couple,couplet,distich,duad,duet,dui,duo",,,,,,,simple,,general,WordNet
+183093,yoking,word,verb,,285452,,,,,,,,simple,,general,WordNet
+183094,yoking,word,verb,,169250,link,,,,,,,simple,,general,WordNet
+183095,yoking,word,verb,,285453,,,,,,,,simple,,general,WordNet
+271589,yoko ono,phrase,noun,1,198984,ono,,,,,music,,,,general,WordNet
+183096,yokohama,word,noun,1,285458,,,,,,maritime,,simple,,general,WordNet
+183097,yokuts,word,noun,1,176625,mariposan,,,,,linguistics,,simple,,general,WordNet
+183098,yokuts,word,noun,2,285459,,,,,,,,simple,,general,WordNet
+183099,yolk,word,noun,1,101337,egg yolk,,,,,,,simple,,general,WordNet
+183100,yolk,word,noun,2,280402,vitellus,,,,,nutrition,,simple,,general,WordNet
+222835,yolk sac,phrase,noun,1,272191,"umbilical vesicle,vesicula umbilicus,vitelline sac",,,,,zoology,,,,general,WordNet
+222834,yolk sac,phrase,noun,2,285462,,,,,,zoology,,,,general,WordNet
+183101,yolks,word,noun,,101337,egg yolk,,,,,,,simple,,general,WordNet
+183102,yolks,word,noun,,280402,vitellus,,,,,nutrition,,simple,,general,WordNet
+297093,yom kippur,phrase,noun,1,84302,day of atonement,,,,,religion,,,,general,WordNet
+222040,yom kippur war,phrase,noun,1,23157,arab-israeli war,,,,,,,,,general,WordNet
+183103,yon,word,adj,1,285471,,,,,,linguistics,,simple,,general,WordNet
+183104,yon,word,adv,1,285475,,,,,,linguistics,archaic,simple,,general,WordNet
+183105,yonder,word,adj,1,285471,,,,,,linguistics,,simple,,general,WordNet
+183106,yonder,word,adv,1,285475,,,,,,linguistics,archaic,simple,,general,WordNet
+183107,yore,word,noun,1,285480,,,,,,,,simple,,general,WordNet
+183108,yores,word,noun,,285480,,,,,,,,simple,,general,WordNet
+183109,york,word,noun,1,144910,house of york,,,,,botany,,simple,,general,WordNet
+183110,yorkshire,word,noun,1,285482,,,,,,,,simple,,general,WordNet
+279215,yorkshire fog,phrase,noun,1,143366,"holcus lanatus,velvet grass",,,,,botany,,,,general,WordNet
+253933,yorkshire pudding,phrase,noun,1,285483,,,,,,culinary,,,,general,WordNet
+227481,yorkshire terrier,phrase,noun,1,285484,,,,,,animal_husbandry,,,,general,WordNet
+261390,yorktown,word,noun,1,285485,,,,,,military,,simple,,general,WordNet
+222016,yorktown,word,noun,2,245398,siege of yorktown,,,,,military,,simple,,general,WordNet
+183111,yoruba,word,noun,1,285487,,,,,,,,simple,,general,WordNet
+183112,yoruba,word,noun,2,12652,aku,,,,,linguistics,,simple,,general,WordNet
+183113,yosemite,word,noun,1,285488,yosemite falls,,,,,,,simple,,general,WordNet
+262964,yosemite falls,phrase,noun,1,285488,yosemite,,,,,,,,,general,WordNet
+258650,yosemite national park,phrase,noun,1,285489,,,,,,geology,,,,general,WordNet
+224247,yosemite toad,phrase,noun,1,48691,bufo canorus,,,,,forestry,,,,general,WordNet
+290679,yottabit,word,noun,1,285258,"yb,ybit",,,,,,,simple,,general,WordNet
+290677,yottabyte,word,noun,1,285259,yb,,,,,computing,,simple,,general,WordNet
+290673,yottabyte,word,noun,2,285260,"yb,yib,yobibyte",,,,,computing,,simple,,general,WordNet
+495713,you,word,pron,,285490,,,,,,,,simple,,general,Lex Hopper
+323850,you bet,idiom,adv,1,17403,"and how,you said it",,,,Idiom,,idiom,,,general,WordNet
+323851,you said it,phrase,adv,1,17403,"and how,you bet",,,,,,,,,general,WordNet
+289002,you-drive,word,noun,1,53543,"car rental,hire car,rent-a-car,self-drive,u-drive",,,,,real_estate,,,,general,WordNet
+318954,young,word,adj,1,149553,immature,old,youngness,,,,,simple,,general,WordNet
+315932,young,word,adj,2,193137,new,,youngness,,,agriculture,,simple,,general,WordNet
+318965,young,word,adj,3,279078,"vernal,youthful",,youngness,,,,,simple,,general,WordNet
+318931,young,word,adj,4,285507,,,youngness,,,,,simple,,general,WordNet
+316336,young,word,adj,5,275429,"unseasoned,untested,untried",,youngness,,,,,simple,,general,WordNet
+183114,young,word,noun,1,197951,offspring,,,,,zoology,,simple,,general,WordNet
+183115,young,word,noun,2,171616,loretta young,,,,,theatre_film,,simple,,general,WordNet
+183116,young,word,noun,3,283239,"whitney moore young jr.,whitney young",,,,,,,simple,,general,WordNet
+273876,young,word,noun,4,264583,thomas young,,,,,,,simple,,general,WordNet
+273873,young,word,noun,5,167373,"lester willis young,pres young",,,,,,,simple,,general,WordNet
+273871,young,word,noun,6,100923,edward young,,,,,literature,,simple,,general,WordNet
+273868,young,word,noun,7,82278,"cy young,danton true young",,,,,sports,,simple,,general,WordNet
+273866,young,word,noun,8,46977,brigham young,,,,,religion,,simple,,general,WordNet
+255323,young,word,noun,9,285510,youth,aged,,,,,,simple,,general,WordNet
+496229,young at heart,idiom,adj,,285514,,,,,Idiom,,idiom,,,general,Lex Hopper
+223936,young bird,phrase,noun,1,285517,,,,,,zoology,,,,general,WordNet
+266881,young buck,phrase,noun,1,285518,young man,,,,,,,,,general,WordNet
+222120,young carnivore,phrase,noun,1,80954,cub,,,,,zoology,,,,general,WordNet
+230722,young fish,phrase,noun,1,285519,,,,,,zoology,,,,general,WordNet
+265236,young girl,phrase,noun,1,160090,"jeune fille,lass,lassie",,,,,,,,,general,WordNet
+264838,young lady,phrase,noun,1,118519,"fille,girl,miss,missy,young woman",,,,,,,,,general,WordNet
+222116,young mammal,phrase,noun,1,285520,,,,,,zoology,,,,general,WordNet
+266882,young man,phrase,noun,1,285518,young buck,,,,,,,,,general,WordNet
+264013,young man,phrase,noun,2,35612,"beau,beaux,boyfriend,fellow,swain",,,,,,,,,general,WordNet
+266883,young person,phrase,noun,1,252689,"spring chicken,younker,youth",,,,,,,,,general,WordNet
+266886,young turk,phrase,noun,1,285522,,,,,,insurance,,,,general,WordNet
+266885,young turk,phrase,noun,2,285523,,,,,,,,,,general,WordNet
+264839,young woman,phrase,noun,1,118519,"fille,girl,miss,missy,young lady",,,,,,,,,general,WordNet
+290420,young's modulus,phrase,noun,1,285524,,,,,,,,,,general,WordNet
+318378,young-bearing,word,adj,1,101341,egg-producing,,,,,,,,,general,WordNet
+318375,young-begetting,word,adj,1,285525,,,,,,,,,,general,WordNet
+183118,younger,word,adj,,149553,immature,,,,,,,derived,,general,WordNet
+183119,younger,word,adj,,193137,new,,,,,agriculture,,derived,,general,WordNet
+183117,younger,word,adj,1,160595,jr.,,,,,,,derived,,general,WordNet
+183120,youngest,word,adj,,149553,immature,,,,,,,simple,,general,WordNet
+183121,youngest,word,adj,,193137,new,,,,,agriculture,,simple,,general,WordNet
+183122,youngest,word,adj,,279078,"vernal,youthful",,,,,,,simple,,general,WordNet
+183123,youngish,word,adj,1,285527,,,,,,,,derived,,general,WordNet
+183124,youngness,word,noun,1,285528,,oldness,young,,,,,derived,,general,WordNet
+183125,youngs,word,noun,,197951,offspring,,,,,zoology,,simple,,general,WordNet
+183126,youngs,word,noun,,171616,loretta young,,,,,theatre_film,,simple,,general,WordNet
+183127,youngs,word,noun,,283239,"whitney moore young jr.,whitney young",,,,,,,simple,,general,WordNet
+183128,youngster,word,noun,1,61843,"child,children,fry,kid,minor,nestling,nestlings,nipper",,,,,,,simple,,general,WordNet
+183129,youngsters,word,noun,,61843,"child,children,fry,kid,minor,nestling,nestlings,nipper",,,,,,,simple,,general,WordNet
+183130,youngstown,word,noun,1,285529,,,,,,geography,,simple,,general,WordNet
+183131,younker,word,noun,1,252689,"spring chicken,young person,youth",,,,,,,simple,,general,WordNet
+183132,younkers,word,noun,,252689,"spring chicken,young person,youth",,,,,,,simple,,general,WordNet
+495920,your,word,det,,285530,,,,,,,,simple,,general,Lex Hopper
+495714,yours,word,pron,,285533,,,,,,,,simple,,general,Lex Hopper
+495715,yourself,word,pron,,285534,,,,,,,,simple,,general,Lex Hopper
+495716,yourselves,word,pron,,285535,,,,,,,,simple,,general,Lex Hopper
+183133,youth,word,noun,1,252689,"spring chicken,young person,younker",,,,,,,simple,,general,WordNet
+183134,youth,word,noun,2,285510,young,,,,,,,simple,,general,WordNet
+183135,youth,word,noun,3,285537,,,,,,,,simple,,general,WordNet
+294153,youth,word,noun,4,285538,,,,,,,,simple,,general,WordNet
+297563,youth,word,noun,5,99420,early days,,,,,,,simple,,general,WordNet
+242733,youth,word,noun,6,161126,"juvenility,youthfulness",,,,,,,simple,,general,WordNet
+220035,youth crusade,phrase,noun,1,285539,youth movement,,,,,politics,,,,general,WordNet
+257177,youth culture,phrase,noun,1,285540,,,,,,sociology,,,,general,WordNet
+256942,youth gang,phrase,noun,1,285541,,,,,,,,,,general,WordNet
+236617,youth hostel,phrase,noun,1,144661,"hostel,student lodging",,,,,tourism,,,,general,WordNet
+220034,youth movement,phrase,noun,1,285539,youth crusade,,,,,politics,,,,general,WordNet
+257179,youth subculture,phrase,noun,1,285542,,,,,,sociology,,,,general,WordNet
+285639,youth-on-age,word,noun,1,211780,"pickaback plant,piggyback plant,tolmiea menziesii",,,,,botany,,,,general,WordNet
+183136,youthful,word,adj,1,279078,"vernal,young",,youthfulness,,,,,derived,,general,WordNet
+183137,youthfully,word,adv,1,285543,,,,,,,,derived,,general,WordNet
+183138,youthfulness,word,noun,1,161126,"juvenility,youth",,youthful,,,,,derived,,general,WordNet
+183139,youths,word,noun,,252689,"spring chicken,young person,younker",,,,,,,simple,,general,WordNet
+183140,youths,word,noun,,285510,young,,,,,,,simple,,general,WordNet
+183141,youths,word,noun,,285537,,,,,,,,simple,,general,WordNet
+183142,yowl,word,noun,1,36557,"bellow,holla,holler,hollo,holloa,roar,roarings",,,,,zoology,,simple,,general,WordNet
+183143,yowl,word,verb,1,145022,"howl,wrawl,yammer",,,,,zoology,,simple,,general,WordNet
+183144,yowl,word,verb,2,56352,caterwaul,,,,,zoology,,simple,,general,WordNet
+183145,yowled,word,verb,,145022,"howl,wrawl,yammer",,,,,zoology,,simple,,general,WordNet
+183146,yowled,word,verb,,56352,caterwaul,,,,,zoology,,simple,,general,WordNet
+183147,yowling,word,verb,,145022,"howl,wrawl,yammer",,,,,zoology,,simple,,general,WordNet
+183148,yowling,word,verb,,56352,caterwaul,,,,,zoology,,simple,,general,WordNet
+183149,yowls,word,noun,,36557,"bellow,holla,holler,hollo,holloa,roar,roarings",,,,,zoology,,simple,,general,WordNet
+183150,yowls,word,verb,,145022,"howl,wrawl,yammer",,,,,zoology,,simple,,general,WordNet
+183151,yowls,word,verb,,56352,caterwaul,,,,,zoology,,simple,,general,WordNet
+222024,ypres,word,noun,1,34750,"battle of ypres,third battle of ypres",,,,,military,,simple,,general,WordNet
+222021,ypres,word,noun,2,34751,"battle of ypres,second battle of ypres",,,,,military,,simple,,general,WordNet
+222018,ypres,word,noun,3,34752,"battle of ypres,first battle of ypres",,,,,military,,simple,,general,WordNet
+183152,yquem,word,noun,1,285550,,,,,,wine,,simple,,general,WordNet
+183153,yr,word,noun,1,271194,"twelvemonth,year",,,,,,,simple,,general,WordNet
+183154,yrs,word,noun,,271194,"twelvemonth,year",,,,,,,simple,,general,WordNet
+183155,ys,word,noun,,285134,yttrium,,,,,chemistry,,simple,,general,WordNet
+183156,ys,word,noun,,284748,wye,,,,,linguistics,,simple,,general,WordNet
+183157,ytterbite,word,noun,1,126082,gadolinite,,,,,geology,,simple,,general,WordNet
+183158,ytterbium,word,noun,1,285257,yb,,,,,chemistry,,simple,,general,WordNet
+183159,yttrium,word,noun,1,285134,"y,ys",,,,,chemistry,,simple,,general,WordNet
+183160,yttriums,word,noun,,285134,"y,ys",,,,,chemistry,,simple,,general,WordNet
+183161,yuan,word,noun,1,163249,kwai,,,,,finance,,simple,,general,WordNet
+183162,yuan,word,noun,2,185399,"mongol dynasty,yuan dynasty",,,,,history,,simple,,general,WordNet
+256477,yuan dynasty,phrase,noun,1,185399,"mongol dynasty,yuan",,,,,history,,,,general,WordNet
+183163,yuans,word,noun,,163249,kwai,,,,,finance,,simple,,general,WordNet
+183164,yuans,word,noun,,185399,"mongol dynasty,yuan dynasty",,,,,history,,simple,,general,WordNet
+259231,yucatan,word,noun,1,285561,,,,,,geography,,simple,,general,WordNet
+259229,yucatan,word,noun,2,285562,yucatan peninsula,,,,,oceanography,,simple,,general,WordNet
+259230,yucatan peninsula,phrase,noun,1,285562,yucatan,,,,,oceanography,,,,general,WordNet
+183165,yucatec,word,noun,1,285563,,,,,,geography,,simple,,general,WordNet
+183166,yucatec,word,noun,2,285564,,,,,,linguistics,,simple,,general,WordNet
+183167,yucateco,word,noun,1,285563,,,,,,geography,,simple,,general,WordNet
+183168,yucateco,word,noun,2,285564,,,,,,linguistics,,simple,,general,WordNet
+183169,yucca,word,noun,1,285565,,,,,,botany,,simple,,general,WordNet
+282534,yucca aloifolia,phrase,noun,1,250508,spanish bayonet,,,,,botany,,,,general,WordNet
+282536,yucca baccata,phrase,noun,1,250507,spanish bayonet,,,,,botany,,,,general,WordNet
+282538,yucca brevifolia,phrase,noun,1,160500,joshua tree,,,,,botany,,,,general,WordNet
+282540,yucca carnerosana,phrase,noun,1,250512,spanish dagger,,,,,botany,,,,general,WordNet
+282543,yucca elata,phrase,noun,1,248964,"soap tree,soap-weed,soapweed",,,,,,,,,general,WordNet
+282548,yucca filamentosa,phrase,noun,1,7815,"adam's needle,adam's needle-and-thread,needle palm,spoonleaf yucca",,,,,botany,,,,general,WordNet
+282550,yucca glauca,phrase,noun,1,35391,bear grass,,,,,botany,,,,general,WordNet
+282552,yucca gloriosa,phrase,noun,1,250511,spanish dagger,,,,,botany,,,,general,WordNet
+282554,yucca smalliana,phrase,noun,1,35390,bear grass,,,,,botany,,,,general,WordNet
+282556,yucca whipplei,phrase,noun,1,201650,our lord's candle,,,,,botany,,,,general,WordNet
+183170,yuccas,word,noun,,285565,,,,,,botany,,simple,,general,WordNet
+495896,yuck,word,interj,,285566,,,,,,,,simple,,general,Lex Hopper
+183171,yucky,word,adj,1,93147,"disgustful,disgusting,distasteful,foul,loathly,loathsome,repellant,repellent",,,,,,,derived,,general,WordNet
+251083,yue,word,noun,1,52804,"cantonese,cantonese dialect,yue dialect",,,,,geography,,simple,,general,WordNet
+251084,yue dialect,phrase,noun,1,52804,"cantonese,cantonese dialect,yue",,,,,geography,,,,general,WordNet
+183173,yugoslav,word,adj,1,285567,,,,,,geography,,simple,,general,WordNet
+183172,yugoslav,word,noun,1,160712,"jugoslav,jugoslavian",,,,,geography,,simple,,general,WordNet
+183174,yugoslavia,word,noun,1,116652,"federal republic of yugoslavia,jugoslavija,serbia and montenegro,union of serbia and montenegro",,yugoslavian,,,politics,,simple,,general,WordNet
+183175,yugoslavia,word,noun,2,285569,,,yugoslavian,,,oceanography,,simple,,general,WordNet
+183177,yugoslavian,word,adj,1,285567,,,yugoslavia,,,geography,,simple,,general,WordNet
+183176,yugoslavian,word,noun,1,160712,"jugoslav,jugoslavian,yugoslavs",,,,,geography,,simple,,general,WordNet
+290843,yugoslavian dinar,phrase,noun,1,91851,dinar,,,,,finance,,,,general,WordNet
+290842,yugoslavian monetary unit,phrase,noun,1,285571,,,,,,finance,,,,general,WordNet
+183178,yugoslavians,word,noun,,160712,"jugoslav,jugoslavian,yugoslavs",,,,,geography,,simple,,general,WordNet
+183179,yugoslavs,word,noun,,160712,"jugoslav,jugoslavian,yugoslavian",,,,,geography,,simple,,general,WordNet
+273881,yukawa,word,noun,1,141870,hideki yukawa,,,,,physics,,simple,,general,WordNet
+183180,yukon,word,noun,1,285573,yukon river,,,,,geography,,simple,,general,WordNet
+183181,yukon,word,noun,2,285574,yukon territory,,,,,geography,,simple,,general,WordNet
+262965,yukon river,phrase,noun,1,285573,yukon,,,,,geography,,,,general,WordNet
+259726,yukon territory,phrase,noun,1,285574,yukon,,,,,geography,,,,general,WordNet
+296830,yukon time,phrase,noun,1,12804,alaska standard time,,,,,,,,,general,WordNet
+280686,yukon white birch,phrase,noun,1,38180,betula neoalaskana,,,,,,,,,general,WordNet
+183182,yule,word,noun,1,63623,"christmas,christmastide,christmastime,noel,yuletide",,,,,,,simple,,general,WordNet
+296670,yule log,phrase,noun,1,285575,,,,,,,,,,general,WordNet
+183183,yules,word,noun,,63623,"christmas,christmastide,christmastime,noel,yuletide",,,,,,,simple,,general,WordNet
+183184,yuletide,word,noun,1,63623,"christmas,christmastide,christmastime,noel,yule",,,,,,,simple,,general,WordNet
+183185,yuletides,word,noun,,63623,"christmas,christmastide,christmastime,noel,yule",,,,,,,simple,,general,WordNet
+495897,yum,word,interj,,285576,,,,,,,,simple,,general,Lex Hopper
+183186,yuma,word,noun,1,285577,,,,,,,,simple,,general,WordNet
+183187,yuma,word,noun,2,285578,,,,,,geography,,simple,,general,WordNet
+183188,yuma,word,noun,3,285579,,,,,,linguistics,,simple,,general,WordNet
+183190,yuman,word,adj,1,285580,,,,,,sociology,,simple,,general,WordNet
+183189,yuman,word,noun,1,285581,,,,,,linguistics,,simple,,general,WordNet
+183191,yummier,word,adj,,87226,"delectable,delicious,luscious,pleasant-tasting,scrumptious,toothsome",,,,,,,derived,,general,WordNet
+183192,yummiest,word,adj,,87226,"delectable,delicious,luscious,pleasant-tasting,scrumptious,toothsome",,,,,,,simple,,general,WordNet
+183193,yummy,word,adj,1,87226,"delectable,delicious,luscious,pleasant-tasting,scrumptious,toothsome",,,,,,,simple,,general,WordNet
+259119,yunnan,word,noun,1,285584,yunnan province,,,,,geography,,simple,,general,WordNet
+259120,yunnan province,phrase,noun,1,285584,yunnan,,,,,geography,,,,general,WordNet
+183194,yuppie,word,noun,1,285585,,,,,,geography,,simple,,general,WordNet
+251270,yurak-samoyed,word,noun,1,191603,"nenets,nentsi,nentsy",,,,,linguistics,,,,general,WordNet
+268883,yuri alekseyevich gagarin,phrase,noun,1,126127,"gagarin,yuri gagarin",,,,,tourism,,,,general,WordNet
+268882,yuri gagarin,phrase,noun,1,126127,"gagarin,yuri alekseyevich gagarin",,,,,tourism,,,,general,WordNet
+183195,yurt,word,noun,1,285586,,,,,,architecture,,simple,,general,WordNet
+183196,yurts,word,noun,,285586,,,,,,architecture,,simple,,general,WordNet
+272963,yves tanguy,phrase,noun,1,261338,tanguy,,,,,visual_arts,,,,general,WordNet

@@ -1,0 +1,1216 @@
+id,word,type,pos,sense,meaning_id,synonyms,antonyms,related,origin,category,subject,usage,structure,code,domain,source
+437479,w/,word,noun,,281102,,,,,Abbreviation - documentation,medicine,abbreviation,,,medical,Curated
+437480,"w/nhg, rat strain",phrase,noun,,281103,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437481,w/o,word,noun,,281104,,,,,Abbreviation - documentation,medicine,abbreviation,,,medical,Curated
+437482,w/u,word,noun,,281105,,,,,Abbreviation - documentation,medicine,abbreviation,,,medical,Curated
+437483,waardenburg syndrome,phrase,noun,,281106,,,,,Disease,medicine,,,,medical,Disease Ontology
+437484,waardenburg syndrome,phrase,noun,,281107,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437485,waardenburg syndrome,phrase,noun,,281108,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437486,waardenburg syndrome type 1,phrase,noun,,281109,,,,,Disease,medicine,,,,medical,Disease Ontology
+437487,waardenburg syndrome type 1,phrase,noun,,281110,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437488,waardenburg syndrome type 1,phrase,noun,,281111,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437489,waardenburg syndrome type 2,phrase,noun,,281112,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437490,waardenburg syndrome type 2,phrase,noun,,281113,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437491,waardenburg syndrome type 2a,phrase,noun,,281114,,,,,Disease,medicine,,,,medical,Disease Ontology
+437492,waardenburg syndrome type 2a,phrase,noun,,281115,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437493,waardenburg syndrome type 2b,phrase,noun,,281116,,,,,Disease,medicine,,,,medical,Disease Ontology
+437494,waardenburg syndrome type 2c,phrase,noun,,281117,,,,,Disease,medicine,,,,medical,Disease Ontology
+437495,waardenburg syndrome type 2c,phrase,noun,,281118,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437496,waardenburg syndrome type 2e,phrase,noun,,281119,,,,,Disease,medicine,,,,medical,Disease Ontology
+437497,waardenburg syndrome type 2e,phrase,noun,,281120,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437498,waardenburg syndrome type 3,phrase,noun,,281121,,,,,Disease,medicine,,,,medical,Disease Ontology
+437499,waardenburg syndrome type 3,phrase,noun,,281122,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437500,waardenburg syndrome type 4,phrase,noun,,281123,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437501,waardenburg syndrome type 4a,phrase,noun,,281124,,,,,Disease,medicine,,,,medical,Disease Ontology
+437502,waardenburg syndrome type 4a,phrase,noun,,281125,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437503,waardenburg syndrome type 4b,phrase,noun,,281126,,,,,Disease,medicine,,,,medical,Disease Ontology
+437504,waardenburg syndrome type 4b,phrase,noun,,281127,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437505,waardenburg syndrome type 4c,phrase,noun,,281128,,,,,Disease,medicine,,,,medical,Disease Ontology
+437506,waardenburg syndrome type 4c,phrase,noun,,281129,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437507,"waardenburg syndrome, domestic cat",phrase,noun,,281130,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437508,"waardenburg syndrome, ednrb-related, sheep",phrase,noun,,281131,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437509,"waardenburg syndrome, golden hamster",phrase,noun,,281132,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437510,"waardenburg syndrome, mitf-related, golden hamster",phrase,noun,,281133,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437511,"waardenburg syndrome, mitf-related, pig",phrase,noun,,281134,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437512,"waardenburg syndrome, non-human animal",phrase,noun,,281135,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437513,"waardenburg syndrome, sox10-related, pig",phrase,noun,,281136,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437514,waardenburg-shah syndrome,phrase,noun,,281137,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437515,wabs,word,noun,,281139,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+437516,wabs,word,noun,,281140,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+437517,wad,word,noun,,281144,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+437518,waddling gait,phrase,noun,,281151,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+216505,wafer,word,noun,,281160,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Wafer Dosing Unit')
+437519,"wag, rat strain",phrase,noun,,281178,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216506,wage,word,noun,,71680,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Pay')
+437520,wagner disease,phrase,noun,,281197,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437521,wagr syndrome,phrase,noun,,281202,,,,,Disease,medicine,,,,medical,Disease Ontology
+437522,wagr syndrome,phrase,noun,,281203,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437523,wagr syndrome,phrase,noun,,281204,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216507,waha,word,noun,,28815,,,,,,pharmacology,,simple,,medical,"MONDO (diseases) (synonym of 'autoimmune hemolytic anemia, warm type')"
+437524,wai,word,noun,,281211,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+216508,waiha,word,noun,,28815,,,,,,pharmacology,,simple,,medical,"MONDO (diseases) (synonym of 'autoimmune hemolytic anemia, warm type')"
+437525,wais,word,noun,,281218,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+437526,wais-iv,word,noun,,281219,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+437527,waisman syndrome,phrase,noun,,281220,,,,,Disease,medicine,,,,medical,Disease Ontology
+216509,waist,word,noun,,281221,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216510,waist,word,noun,,281222,,,,,,anatomy,,simple,,medical,Uberon (anatomy)
+437528,waist circumference,phrase,noun,,281224,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437529,waist measurement,phrase,noun,,281225,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+437530,waist to heel length,phrase,noun,,281226,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437531,waist to hip ratio calculation,phrase,noun,,281227,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+216511,waitlist,word,noun,,281242,,,,,,pharmacology,,compound,,medical,NCI Thesaurus (synonym of 'Waiting List')
+216512,waiver,word,noun,,281244,,,,,,medicine,,derived,,medical,NCI Thesaurus
+216513,wake,word,noun,,30536,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Awaken')
+437532,wake after sleep onset,phrase,noun,,281250,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+216514,waking,word,noun,,281262,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Upon Awakening')
+437533,waldenstrom macroglobulinemia,phrase,noun,,281265,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+440342,waldenström macroglobulinaemia,phrase,noun,,7249,,,,,Diagnosis,medicine,,,ICD-10 C88.0,medical,ICD-10 (WHO 2019)
+437534,"waldenström macroglobulinaemia, dog",phrase,noun,,281266,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+452886,waldenström macroglobulinemia,phrase,noun,,7253,,,,,Diagnosis,medicine,,,ICD-10 C88.0,medical,ICD-10 (WHO 2019)
+452887,waldenström macroglobulinemia not having achieved remission,phrase,noun,,7253,,,,,Diagnosis,medicine,,,ICD-10 C88.00,medical,ICD-10 (WHO 2019)
+452888,"waldenström macroglobulinemia, in remission",phrase,noun,,7253,,,,,Diagnosis,medicine,,,ICD-10 C88.01,medical,ICD-10 (WHO 2019)
+437535,waldeyer ring,phrase,noun,,281267,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+437536,waldeyer's ring cancer,phrase,noun,,281268,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216515,walk,word,noun,,15552,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Walking')
+492259,walked into furniture,phrase,noun,,5146,,,,,Diagnosis,medicine,,,ICD-10 W22.03,medical,ICD-10 (WHO 2019)
+492258,walked into lamppost,phrase,noun,,5146,,,,,Diagnosis,medicine,,,ICD-10 W22.02,medical,ICD-10 (WHO 2019)
+492257,walked into wall,phrase,noun,,5146,,,,,Diagnosis,medicine,,,ICD-10 W22.01,medical,ICD-10 (WHO 2019)
+216516,walker,word,noun,,281349,,,,,,pharmacology,,derived,,medical,NCI Thesaurus (synonym of 'Walker Usually Used')
+437537,walker-warburg syndrome,phrase,noun,,281353,,,,,Disease,medicine,,,,medical,Disease Ontology
+437538,walker-warburg syndrome,phrase,noun,,281354,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+216517,walking,word,noun,,15552,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216518,walking,word,noun,,281356,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Usually Need Help from Another Person for Walking')
+216519,wall,word,noun,,281365,,,,,,medicine,,simple,,medical,NCI Thesaurus
+437539,wall of crypt of lieberkuhn,phrase,noun,,281386,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437540,wall of crypt of lieberkuhn of large intestine,phrase,noun,,281387,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437541,wall of crypt of lieberkuhn of small intestine,phrase,noun,,281388,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437542,wall of esophagus,phrase,noun,,281389,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437543,wall of fallopian tube ampulla,phrase,noun,,281390,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437544,wall of fallopian tube infundibulum,phrase,noun,,281391,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437545,wall of fallopian tube intramural segment,phrase,noun,,281392,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437546,wall of fallopian tube isthmus,phrase,noun,,281393,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437547,wall of heart,phrase,noun,,281394,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437548,wall of intestine,phrase,noun,,281395,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437549,wall of large intestine,phrase,noun,,281396,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437550,wall of left ventricle,phrase,noun,,281397,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437551,wall of right ventricle,phrase,noun,,281398,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437552,wall of small intestine,phrase,noun,,281399,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437553,wall of stomach,phrase,noun,,281400,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437554,wall of ureter,phrase,noun,,281401,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437555,wall of urinary bladder,phrase,noun,,281402,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437556,wallerian degeneration,phrase,noun,,281414,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437557,walleye dermal sarcoma,phrase,noun,,281415,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216520,walloon,word,noun,,281420,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Walloon Language')
+437558,walnut antigen,phrase,noun,,281445,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+437559,walnut antigen ige antibody measurement,phrase,noun,,281446,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+495514,wandering in diseases classified elsewhere,phrase,noun,,6222,,,,,Diagnosis,medicine,,,ICD-10 Z91.83,medical,ICD-10 (WHO 2019)
+437560,wandering spleen,phrase,noun,,281468,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+493191,war operation involving nuclear radiation effects of nuclear weapon,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.54,medical,ICD-10 (WHO 2019)
+493193,"war operation involving nuclear radiation effects of nuclear weapon, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.541,medical,ICD-10 (WHO 2019)
+493192,"war operation involving nuclear radiation effects of nuclear weapon, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.540,medical,ICD-10 (WHO 2019)
+493194,war operation involving other effects of nuclear weapons,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.59,medical,ICD-10 (WHO 2019)
+493196,"war operation involving other effects of nuclear weapons, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.591,medical,ICD-10 (WHO 2019)
+493195,"war operation involving other effects of nuclear weapons, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.590,medical,ICD-10 (WHO 2019)
+493085,war operations involving accidental detonation of onboard marine weapons,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.05,medical,ICD-10 (WHO 2019)
+493087,"war operations involving accidental detonation of onboard marine weapons, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.051,medical,ICD-10 (WHO 2019)
+493086,"war operations involving accidental detonation of onboard marine weapons, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.050,medical,ICD-10 (WHO 2019)
+449237,war operations involving biological weapons,phrase,noun,,166785,,,,,Diagnosis,medicine,,,ICD-10 Y36.6,medical,ICD-10 (WHO 2019)
+493197,war operations involving biological weapons,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.6,medical,ICD-10 (WHO 2019)
+493199,"war operations involving biological weapons, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.6X1,medical,ICD-10 (WHO 2019)
+493198,"war operations involving biological weapons, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.6X0,medical,ICD-10 (WHO 2019)
+449238,war operations involving chemical weapons and other forms of unconventional warfare,phrase,noun,,166785,,,,,Diagnosis,medicine,,,ICD-10 Y36.7,medical,ICD-10 (WHO 2019)
+493200,war operations involving chemical weapons and other forms of unconventional warfare,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.7,medical,ICD-10 (WHO 2019)
+493202,"war operations involving chemical weapons and other forms of unconventional warfare, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.7X1,medical,ICD-10 (WHO 2019)
+493201,"war operations involving chemical weapons and other forms of unconventional warfare, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.7X0,medical,ICD-10 (WHO 2019)
+493166,war operations involving combat using blunt or piercing object,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.45,medical,ICD-10 (WHO 2019)
+493168,"war operations involving combat using blunt or piercing object, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.451,medical,ICD-10 (WHO 2019)
+493167,"war operations involving combat using blunt or piercing object, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.450,medical,ICD-10 (WHO 2019)
+449232,war operations involving destruction of aircraft,phrase,noun,,166785,,,,,Diagnosis,medicine,,,ICD-10 Y36.1,medical,ICD-10 (WHO 2019)
+493091,war operations involving destruction of aircraft,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.1,medical,ICD-10 (WHO 2019)
+493104,war operations involving destruction of aircraft due to accidental detonation of onboard munitions and explosives,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.14,medical,ICD-10 (WHO 2019)
+493106,"war operations involving destruction of aircraft due to accidental detonation of onboard munitions and explosives, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.141,medical,ICD-10 (WHO 2019)
+493105,"war operations involving destruction of aircraft due to accidental detonation of onboard munitions and explosives, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.140,medical,ICD-10 (WHO 2019)
+493098,war operations involving destruction of aircraft due to collision with other aircraft,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.12,medical,ICD-10 (WHO 2019)
+493100,"war operations involving destruction of aircraft due to collision with other aircraft, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.121,medical,ICD-10 (WHO 2019)
+493099,"war operations involving destruction of aircraft due to collision with other aircraft, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.120,medical,ICD-10 (WHO 2019)
+493095,war operations involving destruction of aircraft due to enemy fire or explosives,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.11,medical,ICD-10 (WHO 2019)
+493097,"war operations involving destruction of aircraft due to enemy fire or explosives, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.111,medical,ICD-10 (WHO 2019)
+493096,"war operations involving destruction of aircraft due to enemy fire or explosives, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.110,medical,ICD-10 (WHO 2019)
+493101,war operations involving destruction of aircraft due to onboard fire,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.13,medical,ICD-10 (WHO 2019)
+493103,"war operations involving destruction of aircraft due to onboard fire, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.131,medical,ICD-10 (WHO 2019)
+493102,"war operations involving destruction of aircraft due to onboard fire, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.130,medical,ICD-10 (WHO 2019)
+493182,war operations involving direct blast effect of nuclear weapon,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.51,medical,ICD-10 (WHO 2019)
+493184,"war operations involving direct blast effect of nuclear weapon, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.511,medical,ICD-10 (WHO 2019)
+493183,"war operations involving direct blast effect of nuclear weapon, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.510,medical,ICD-10 (WHO 2019)
+493123,war operations involving explosion due to accidental detonation and discharge of own munitions or munitions launch device,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.24,medical,ICD-10 (WHO 2019)
+493125,"war operations involving explosion due to accidental detonation and discharge of own munitions or munitions launch device, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.241,medical,ICD-10 (WHO 2019)
+493124,"war operations involving explosion due to accidental detonation and discharge of own munitions or munitions launch device, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.240,medical,ICD-10 (WHO 2019)
+493114,war operations involving explosion of aerial bomb,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.21,medical,ICD-10 (WHO 2019)
+493116,"war operations involving explosion of aerial bomb, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.211,medical,ICD-10 (WHO 2019)
+493115,"war operations involving explosion of aerial bomb, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.210,medical,ICD-10 (WHO 2019)
+493073,war operations involving explosion of depth-charge,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.01,medical,ICD-10 (WHO 2019)
+493075,"war operations involving explosion of depth-charge, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.011,medical,ICD-10 (WHO 2019)
+493074,"war operations involving explosion of depth-charge, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.010,medical,ICD-10 (WHO 2019)
+493117,war operations involving explosion of guided missile,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.22,medical,ICD-10 (WHO 2019)
+493119,"war operations involving explosion of guided missile, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.221,medical,ICD-10 (WHO 2019)
+493118,"war operations involving explosion of guided missile, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.220,medical,ICD-10 (WHO 2019)
+493120,war operations involving explosion of improvised explosive device [ied],phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.23,medical,ICD-10 (WHO 2019)
+493122,"war operations involving explosion of improvised explosive device [ied], civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.231,medical,ICD-10 (WHO 2019)
+493121,"war operations involving explosion of improvised explosive device [ied], military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.230,medical,ICD-10 (WHO 2019)
+493076,war operations involving explosion of marine mine,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.02,medical,ICD-10 (WHO 2019)
+493078,"war operations involving explosion of marine mine, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.021,medical,ICD-10 (WHO 2019)
+493077,"war operations involving explosion of marine mine, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.020,medical,ICD-10 (WHO 2019)
+449231,war operations involving explosion of marine weapons,phrase,noun,,166785,,,,,Diagnosis,medicine,,,ICD-10 Y36.0,medical,ICD-10 (WHO 2019)
+493069,war operations involving explosion of marine weapons,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.0,medical,ICD-10 (WHO 2019)
+493088,war operations involving explosion of other marine weapons,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.09,medical,ICD-10 (WHO 2019)
+493090,"war operations involving explosion of other marine weapons, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.091,medical,ICD-10 (WHO 2019)
+493089,"war operations involving explosion of other marine weapons, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.090,medical,ICD-10 (WHO 2019)
+493079,war operations involving explosion of sea-based artillery shell,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.03,medical,ICD-10 (WHO 2019)
+493081,"war operations involving explosion of sea-based artillery shell, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.031,medical,ICD-10 (WHO 2019)
+493080,"war operations involving explosion of sea-based artillery shell, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.030,medical,ICD-10 (WHO 2019)
+493082,war operations involving explosion of torpedo,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.04,medical,ICD-10 (WHO 2019)
+493084,"war operations involving explosion of torpedo, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.041,medical,ICD-10 (WHO 2019)
+493083,"war operations involving explosion of torpedo, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.040,medical,ICD-10 (WHO 2019)
+493070,war operations involving explosion of unspecified marine weapon,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.00,medical,ICD-10 (WHO 2019)
+493072,"war operations involving explosion of unspecified marine weapon, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.001,medical,ICD-10 (WHO 2019)
+493071,"war operations involving explosion of unspecified marine weapon, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.000,medical,ICD-10 (WHO 2019)
+449235,war operations involving firearm discharge and other forms of conventional warfare,phrase,noun,,166785,,,,,Diagnosis,medicine,,,ICD-10 Y36.4,medical,ICD-10 (WHO 2019)
+493153,war operations involving firearm discharge and other forms of conventional warfare,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.4,medical,ICD-10 (WHO 2019)
+493157,war operations involving firearms pellets,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.42,medical,ICD-10 (WHO 2019)
+493159,"war operations involving firearms pellets, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.421,medical,ICD-10 (WHO 2019)
+493158,"war operations involving firearms pellets, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.420,medical,ICD-10 (WHO 2019)
+449234,"war operations involving fires, conflagrations and hot substances",phrase,noun,,166785,,,,,Diagnosis,medicine,,,ICD-10 Y36.3,medical,ICD-10 (WHO 2019)
+493137,"war operations involving fires, conflagrations and hot substances",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.3,medical,ICD-10 (WHO 2019)
+493147,war operations involving flamethrower,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.33,medical,ICD-10 (WHO 2019)
+493149,"war operations involving flamethrower, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.331,medical,ICD-10 (WHO 2019)
+493148,"war operations involving flamethrower, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.330,medical,ICD-10 (WHO 2019)
+493126,war operations involving fragments from munitions,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.25,medical,ICD-10 (WHO 2019)
+493128,"war operations involving fragments from munitions, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.251,medical,ICD-10 (WHO 2019)
+493127,"war operations involving fragments from munitions, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.250,medical,ICD-10 (WHO 2019)
+493132,war operations involving fragments from weapons,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.27,medical,ICD-10 (WHO 2019)
+493134,"war operations involving fragments from weapons, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.271,medical,ICD-10 (WHO 2019)
+493133,"war operations involving fragments from weapons, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.270,medical,ICD-10 (WHO 2019)
+493129,war operations involving fragments of improvised explosive device [ied],phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.26,medical,ICD-10 (WHO 2019)
+493131,"war operations involving fragments of improvised explosive device [ied], civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.261,medical,ICD-10 (WHO 2019)
+493130,"war operations involving fragments of improvised explosive device [ied], military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.260,medical,ICD-10 (WHO 2019)
+493219,war operations involving friendly fire,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.92,medical,ICD-10 (WHO 2019)
+493141,war operations involving gasoline bomb,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.31,medical,ICD-10 (WHO 2019)
+493143,"war operations involving gasoline bomb, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.311,medical,ICD-10 (WHO 2019)
+493142,"war operations involving gasoline bomb, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.310,medical,ICD-10 (WHO 2019)
+493144,war operations involving incendiary bullet,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.32,medical,ICD-10 (WHO 2019)
+493146,"war operations involving incendiary bullet, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.321,medical,ICD-10 (WHO 2019)
+493145,"war operations involving incendiary bullet, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.320,medical,ICD-10 (WHO 2019)
+493185,war operations involving indirect blast effect of nuclear weapon,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.52,medical,ICD-10 (WHO 2019)
+493187,"war operations involving indirect blast effect of nuclear weapon, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.521,medical,ICD-10 (WHO 2019)
+493186,"war operations involving indirect blast effect of nuclear weapon, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.520,medical,ICD-10 (WHO 2019)
+493169,war operations involving intentional restriction of air and airway,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.46,medical,ICD-10 (WHO 2019)
+493171,"war operations involving intentional restriction of air and airway, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.461,medical,ICD-10 (WHO 2019)
+493170,"war operations involving intentional restriction of air and airway, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.460,medical,ICD-10 (WHO 2019)
+449236,war operations involving nuclear weapons,phrase,noun,,166785,,,,,Diagnosis,medicine,,,ICD-10 Y36.5,medical,ICD-10 (WHO 2019)
+493178,war operations involving nuclear weapons,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.5,medical,ICD-10 (WHO 2019)
+493107,war operations involving other destruction of aircraft,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.19,medical,ICD-10 (WHO 2019)
+493109,"war operations involving other destruction of aircraft, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.191,medical,ICD-10 (WHO 2019)
+493108,"war operations involving other destruction of aircraft, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.190,medical,ICD-10 (WHO 2019)
+449233,war operations involving other explosions and fragments,phrase,noun,,166785,,,,,Diagnosis,medicine,,,ICD-10 Y36.2,medical,ICD-10 (WHO 2019)
+493110,war operations involving other explosions and fragments,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.2,medical,ICD-10 (WHO 2019)
+493136,"war operations involving other explosions and fragments, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.291,medical,ICD-10 (WHO 2019)
+493135,"war operations involving other explosions and fragments, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.290,medical,ICD-10 (WHO 2019)
+493160,war operations involving other firearms discharge,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.43,medical,ICD-10 (WHO 2019)
+493162,"war operations involving other firearms discharge, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.431,medical,ICD-10 (WHO 2019)
+493161,"war operations involving other firearms discharge, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.430,medical,ICD-10 (WHO 2019)
+493150,"war operations involving other fires, conflagrations and hot substances",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.39,medical,ICD-10 (WHO 2019)
+493152,"war operations involving other fires, conflagrations and hot substances, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.391,medical,ICD-10 (WHO 2019)
+493151,"war operations involving other fires, conflagrations and hot substances, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.390,medical,ICD-10 (WHO 2019)
+493175,war operations involving other forms of conventional warfare,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.49,medical,ICD-10 (WHO 2019)
+493177,"war operations involving other forms of conventional warfare, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.491,medical,ICD-10 (WHO 2019)
+493176,"war operations involving other forms of conventional warfare, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.490,medical,ICD-10 (WHO 2019)
+493154,war operations involving rubber bullets,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.41,medical,ICD-10 (WHO 2019)
+493156,"war operations involving rubber bullets, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.411,medical,ICD-10 (WHO 2019)
+493155,"war operations involving rubber bullets, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.410,medical,ICD-10 (WHO 2019)
+493188,war operations involving thermal radiation effect of nuclear weapon,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.53,medical,ICD-10 (WHO 2019)
+493190,"war operations involving thermal radiation effect of nuclear weapon, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.531,medical,ICD-10 (WHO 2019)
+493189,"war operations involving thermal radiation effect of nuclear weapon, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.530,medical,ICD-10 (WHO 2019)
+493163,war operations involving unarmed hand to hand combat,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.44,medical,ICD-10 (WHO 2019)
+493165,"war operations involving unarmed hand to hand combat, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.441,medical,ICD-10 (WHO 2019)
+493164,"war operations involving unarmed hand to hand combat, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.440,medical,ICD-10 (WHO 2019)
+493172,war operations involving unintentional restriction of air and airway,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.47,medical,ICD-10 (WHO 2019)
+493174,"war operations involving unintentional restriction of air and airway, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.471,medical,ICD-10 (WHO 2019)
+493173,"war operations involving unintentional restriction of air and airway, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.470,medical,ICD-10 (WHO 2019)
+493092,war operations involving unspecified destruction of aircraft,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.10,medical,ICD-10 (WHO 2019)
+493094,"war operations involving unspecified destruction of aircraft, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.101,medical,ICD-10 (WHO 2019)
+493093,"war operations involving unspecified destruction of aircraft, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.100,medical,ICD-10 (WHO 2019)
+493179,war operations involving unspecified effect of nuclear weapon,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.50,medical,ICD-10 (WHO 2019)
+493181,"war operations involving unspecified effect of nuclear weapon, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.501,medical,ICD-10 (WHO 2019)
+493180,"war operations involving unspecified effect of nuclear weapon, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.500,medical,ICD-10 (WHO 2019)
+493111,war operations involving unspecified explosion and fragments,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.20,medical,ICD-10 (WHO 2019)
+493113,"war operations involving unspecified explosion and fragments, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.201,medical,ICD-10 (WHO 2019)
+493112,"war operations involving unspecified explosion and fragments, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.200,medical,ICD-10 (WHO 2019)
+493138,"war operations involving unspecified fire, conflagration and hot substance",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.30,medical,ICD-10 (WHO 2019)
+493140,"war operations involving unspecified fire, conflagration and hot substance, civilian",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.301,medical,ICD-10 (WHO 2019)
+493139,"war operations involving unspecified fire, conflagration and hot substance, military personnel",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.300,medical,ICD-10 (WHO 2019)
+493218,war operations involving unspecified weapon of mass destruction [wmd],phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.91,medical,ICD-10 (WHO 2019)
+449239,war operations occurring after cessation of hostilities,phrase,noun,,166785,,,,,Diagnosis,medicine,,,ICD-10 Y36.8,medical,ICD-10 (WHO 2019)
+493203,war operations occurring after cessation of hostilities,phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.8,medical,ICD-10 (WHO 2019)
+449240,"war operations, unspecified",phrase,noun,,166785,,,,,Diagnosis,medicine,,,ICD-10 Y36.9,medical,ICD-10 (WHO 2019)
+493217,"war operations, unspecified",phrase,noun,,41111,,,,,Diagnosis,medicine,,,ICD-10 Y36.90,medical,ICD-10 (WHO 2019)
+216521,waray,word,noun,,281541,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Waray Language')
+437561,warbm,word,noun,,281546,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+437562,warbm,word,noun,,281547,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+437563,warbm1,word,noun,,281548,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+437564,warbm1,word,noun,,281549,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+437565,warbm2,word,noun,,281550,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+437566,warbm2,word,noun,,281551,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+437567,warbm3,word,noun,,281552,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+437568,warbm3,word,noun,,281553,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+437569,warbm4,word,noun,,281554,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+437570,warbm4,word,noun,,281555,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+437571,warburg effect,phrase,noun,,281556,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437572,warburg micro syndrome,phrase,noun,,281546,,,,,Disease,medicine,,,,medical,Disease Ontology
+437573,warburg micro syndrome,phrase,noun,,281547,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437574,warburg micro syndrome 1,phrase,noun,,281548,,,,,Disease,medicine,,,,medical,Disease Ontology
+437575,warburg micro syndrome 1,phrase,noun,,281549,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437576,warburg micro syndrome 2,phrase,noun,,281550,,,,,Disease,medicine,,,,medical,Disease Ontology
+437577,warburg micro syndrome 2,phrase,noun,,281551,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437578,warburg micro syndrome 3,phrase,noun,,281552,,,,,Disease,medicine,,,,medical,Disease Ontology
+437579,warburg micro syndrome 3,phrase,noun,,281553,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437580,warburg micro syndrome 4,phrase,noun,,281554,,,,,Disease,medicine,,,,medical,Disease Ontology
+437581,warburg micro syndrome 4,phrase,noun,,281555,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437582,warburg therapy,phrase,noun,,281557,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216522,ward,word,noun,,281558,,,,,,medicine,,simple,,medical,NCI Thesaurus
+437583,warf compound 42,phrase,noun,,68205,,,,,Brand name,pharmacology,,,,medical,NCI Thesaurus
+216523,warfarin,word,noun,,68205,,,,,,medicine,,simple,,medical,NCI Thesaurus
+437584,warfarin resistance,phrase,noun,,281575,,,,,Disease,medicine,,,,medical,Disease Ontology
+437585,warfarin sensitivity,phrase,noun,,281576,,,,,Disease,medicine,,,,medical,Disease Ontology
+437586,warfarin sodium,phrase,noun,,77772,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+437587,warm antibody autoimmune hemolytic anemia,phrase,noun,,281611,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+453738,warm autoimmune hemolytic anemia,phrase,noun,,6281,,,,,Diagnosis,medicine,,,ICD-10 D59.11,medical,ICD-10 (WHO 2019)
+437588,warm ischemia procedure,phrase,noun,,281613,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437589,warm reactive autoantibody positivity,phrase,noun,,281614,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437590,warm water immersion therapy,phrase,noun,,281623,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+216524,warm-up,word,noun,,281626,,,,,,medicine,,,,medical,NCI Thesaurus
+216525,warmth,word,noun,,281637,,,,,,medicine,,simple,,medical,NCI Thesaurus
+437591,warmth sensing thermoreceptor cell,phrase,noun,,281638,,,,,Cell type,biology,,,,medical,Cell Ontology
+216526,warning,word,noun,,56732,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216527,warning,word,noun,,281647,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'System Alert')
+437592,warsaw breakage syndrome,phrase,noun,,281139,,,,,Disease,medicine,,,,medical,Disease Ontology
+437593,warsaw breakage syndrome,phrase,noun,,281140,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216528,wart,word,noun,,279098,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Verrucous Lesion')
+437594,warthin tumor,phrase,noun,,8405,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437595,warthin-starry staining method,phrase,noun,,281672,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216529,warts,word,noun,,279101,,,,,,pharmacology,,simple,,medical,Human Phenotype Ontology (synonym of 'Verrucae')
+437596,warts-immunodeficiency-lymphedema-anogenital dysplasia syndrome,phrase,noun,,281677,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437597,warty carcinoma,phrase,noun,,281678,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437598,warty carcinoma of the penis,phrase,noun,,208443,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437599,warty dyskeratoma,phrase,noun,,281679,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437600,was,word,noun,,281680,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+437601,was adjuvant i-131 therapy administered,phrase,noun,,281681,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437602,was adjuvant post-operative immunological therapy administered,phrase,noun,,281682,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437603,was adjuvant post-operative pharmaceutical therapy administered,phrase,noun,,281683,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437604,was adjuvant post-operative radiation therapy administered,phrase,noun,,281684,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437605,was adjuvant post-operative targeted molecular therapy administered,phrase,noun,,281685,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437606,was another cd antigen tested,phrase,noun,,281686,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+437607,was csf sample positive for tumor cells,phrase,noun,,281687,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437608,was radiation therapy administered,phrase,noun,,281688,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437609,was tumor reoccurrence present after initial treatment,phrase,noun,,281689,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216530,wash,word,noun,,281692,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216531,wash,word,noun,,281693,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Cell Wash')
+216532,wash,word,noun,,158584,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Lavage')
+437610,washed platelets,phrase,noun,,281748,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437611,washed red blood cells,phrase,noun,,281749,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+216533,washer,word,noun,,281750,,,,,,pharmacology,,derived,,medical,NCI Thesaurus (synonym of 'Washer Device')
+216534,washington,word,noun,,281759,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216535,washo,word,noun,,281770,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Washo Language')
+216536,washoe,word,noun,,281770,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Washo Language')
+216537,washout,word,noun,,267733,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Tracer Clearance')
+216538,washout,word,noun,,281771,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Washout Period')
+437612,washout period,phrase,noun,,281771,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+437613,waso,word,noun,,281250,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+437614,waste material,phrase,noun,,281790,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437615,waste role,phrase,noun,,281802,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216539,wasting,word,noun,,281807,,,,,,medicine,,simple,,medical,Symptom Ontology
+454877,wasting disease (syndrome) due to underlying condition,phrase,noun,,1131,,,,,Diagnosis,medicine,,,ICD-10 E88.A,medical,ICD-10 (WHO 2019)
+437616,wat,word,noun,,116261,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+216540,water,word,noun,,281824,,,,,,medicine,,derived,,medical,MONDO (diseases)
+216541,water,word,noun,,281825,,,,,,medicine,,derived,,medical,NCI Thesaurus
+437617,water accumulation process,phrase,noun,,281839,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437618,water consumption,phrase,noun,,281857,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437619,water content determination,phrase,noun,,281858,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+437620,water deprivation test,phrase,noun,,281860,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+437621,water flow process,phrase,noun,,281869,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437622,water ice crystal,phrase,noun,,281877,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437623,water ice layer,phrase,noun,,281878,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437624,water intoxication,phrase,noun,,281879,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437625,water mass,phrase,noun,,281889,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437626,water on the lung,phrase,noun,,281899,,,,,Lay term -> medical,medicine,informal,,,medical,Curated
+437627,water surface,phrase,noun,,281915,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+491967,water transport accident involving military watercraft,phrase,noun,,34522,,,,,Diagnosis,medicine,,,ICD-10 V94.81,medical,ICD-10 (WHO 2019)
+437628,water vapor ablation,phrase,noun,,281920,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+437629,water vascular system,phrase,noun,,281921,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+216542,water-bath,word,noun,,281928,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Water Bath')
+437630,water-clear cell adenoma,phrase,noun,,281929,,,,,Disease,medicine,,,,medical,Disease Ontology
+437631,water-clear cell adenoma,phrase,noun,,281930,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437632,water-holding capacity,phrase,noun,,281938,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437633,water-soluble supplementation,phrase,noun,,281945,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+437634,water-soluble vitamin (role),phrase,noun,,281947,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+448903,water-transport-related drowning and submersion without accident to watercraft,phrase,noun,,5133,,,,,Diagnosis,medicine,,,ICD-10 V92,medical,ICD-10 (WHO 2019)
+448909,water-transport-related drowning and submersion without accident to watercraft : canoe or kayak,phrase,noun,,5133,,,,,Diagnosis,medicine,,,ICD-10 V92.5,medical,ICD-10 (WHO 2019)
+448906,water-transport-related drowning and submersion without accident to watercraft : fishing boat,phrase,noun,,5133,,,,,Diagnosis,medicine,,,ICD-10 V92.2,medical,ICD-10 (WHO 2019)
+448910,water-transport-related drowning and submersion without accident to watercraft : inflatable craft (nonpowered),phrase,noun,,5133,,,,,Diagnosis,medicine,,,ICD-10 V92.6,medical,ICD-10 (WHO 2019)
+448904,water-transport-related drowning and submersion without accident to watercraft : merchant ship,phrase,noun,,5133,,,,,Diagnosis,medicine,,,ICD-10 V92.0,medical,ICD-10 (WHO 2019)
+448907,water-transport-related drowning and submersion without accident to watercraft : other powered watercraft,phrase,noun,,5133,,,,,Diagnosis,medicine,,,ICD-10 V92.3,medical,ICD-10 (WHO 2019)
+448912,water-transport-related drowning and submersion without accident to watercraft : other unpowered watercraft,phrase,noun,,5133,,,,,Diagnosis,medicine,,,ICD-10 V92.8,medical,ICD-10 (WHO 2019)
+448905,water-transport-related drowning and submersion without accident to watercraft : passenger ship,phrase,noun,,5133,,,,,Diagnosis,medicine,,,ICD-10 V92.1,medical,ICD-10 (WHO 2019)
+448908,water-transport-related drowning and submersion without accident to watercraft : sailboat,phrase,noun,,5133,,,,,Diagnosis,medicine,,,ICD-10 V92.4,medical,ICD-10 (WHO 2019)
+448913,water-transport-related drowning and submersion without accident to watercraft : unspecified watercraft,phrase,noun,,5133,,,,,Diagnosis,medicine,,,ICD-10 V92.9,medical,ICD-10 (WHO 2019)
+448911,water-transport-related drowning and submersion without accident to watercraft : water-skis,phrase,noun,,5133,,,,,Diagnosis,medicine,,,ICD-10 V92.7,medical,ICD-10 (WHO 2019)
+216543,waterbath,word,noun,,281928,,,,,,pharmacology,,compound,,medical,NCI Thesaurus (synonym of 'Water Bath')
+437635,waterhouse-friderichsen syndrome,phrase,noun,,281969,,,,,Disease,medicine,,,ICD-10 A39.1,medical,Disease Ontology
+437636,waterhouse-friderichsen syndrome,phrase,noun,,281970,,,,,Disease,medicine,,,ICD-10 A39.1,medical,MONDO (diseases)
+450557,waterhouse-friderichsen syndrome,phrase,noun,,1161,,,,,Diagnosis,medicine,,,ICD-10 A39.1,medical,ICD-10 (WHO 2019)
+216544,waterpipe,word,noun,,43752,,,,,,medicine,,compound,,medical,NCI Thesaurus
+437637,wats-3d,word,noun,,282009,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+437638,wats3d,word,noun,,282009,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+437639,watson syndrome,phrase,noun,,282010,,,,,Disease,medicine,,,,medical,Disease Ontology
+437640,watson syndrome,phrase,noun,,282011,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216545,watt,word,noun,,282012,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216546,watt-hour,word,noun,,282013,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Watt Hour')
+216547,wattage,word,noun,,282015,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216548,wautersiella,word,noun,,282023,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216549,waveguide,word,noun,,282048,,,,,,pharmacology,,compound,,medical,NCI Thesaurus (synonym of 'Waveguide Device')
+216550,wavelength,word,noun,,282049,,,,,,medicine,,compound,,medical,NCI Thesaurus
+216551,wavy,word,adj,,282058,,,,,,medicine,,derived,,medical,NCI Thesaurus
+437641,wavy bistratified amacrine cell,phrase,noun,,282059,,,,,Cell type,biology,,,,medical,Cell Ontology
+437642,waxy casts,phrase,noun,,282088,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+216552,wb,word,noun,,280677,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Weber')
+437643,wb-dwi,word,noun,,174263,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+437644,wbc,word,noun,,167524,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Cell Ontology
+437645,wbc,word,noun,,282112,,,,,Abbreviation - lab,medicine,abbreviation,simple,,medical,Curated
+437646,wbc,word,noun,,167578,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Medical Action Ontology
+437647,wbc,word,noun,,167579,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+216553,wbcs,word,noun,,167564,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Leukocyte')
+437648,wbm,word,noun,,282113,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+437649,wbrt-ha,word,noun,,142595,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+437650,wbs,word,noun,,282115,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+437651,wbv,word,noun,,282117,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+437652,wcd,word,noun,,194226,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+437653,wdfa,word,noun,,282118,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+437654,wdhh,word,noun,,204301,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+437655,wdls,word,noun,,282119,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+437656,wdm,word,noun,,94016,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+437657,wdpcp-related ciliopathy,phrase,noun,,282120,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437658,wdpm,word,noun,,282121,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+437659,wdpmt,word,noun,,282122,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+437660,wdr5-related neurodevelopmental disorder,phrase,noun,,282123,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216554,weak,word,adj,,282125,,,,,,medicine,,simple,,medical,NCI Thesaurus
+437661,weak anal sphincter tone,phrase,noun,,282139,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437662,weak grip,phrase,noun,,282141,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437663,weak pulse,phrase,noun,,282143,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437664,weak voice,phrase,noun,,282144,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+216555,weakness,word,noun,,26613,,,,,,pharmacology,,derived,ICD-10 R53.1,medical,Human Phenotype Ontology (synonym of 'Asthenia')
+216556,weakness,word,noun,,282163,,,,,,medicine,,derived,ICD-10 R53.1,medical,NCI Thesaurus
+437665,weakness due to upper motor neuron dysfunction,phrase,noun,,282171,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437666,weakness of facial musculature,phrase,noun,,282172,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437667,weakness of muscles of respiration,phrase,noun,,282173,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437668,weakness of orbicularis oculi muscle,phrase,noun,,282174,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+489982,wear of articular bearing surface of internal prosthetic joint,phrase,noun,,3720,,,,,Diagnosis,medicine,,,ICD-10 T84.06,medical,ICD-10 (WHO 2019)
+489984,wear of articular bearing surface of internal prosthetic left hip joint,phrase,noun,,3720,,,,,Diagnosis,medicine,,,ICD-10 T84.061,medical,ICD-10 (WHO 2019)
+489986,wear of articular bearing surface of internal prosthetic left knee joint,phrase,noun,,3720,,,,,Diagnosis,medicine,,,ICD-10 T84.063,medical,ICD-10 (WHO 2019)
+489983,wear of articular bearing surface of internal prosthetic right hip joint,phrase,noun,,3720,,,,,Diagnosis,medicine,,,ICD-10 T84.060,medical,ICD-10 (WHO 2019)
+489985,wear of articular bearing surface of internal prosthetic right knee joint,phrase,noun,,3720,,,,,Diagnosis,medicine,,,ICD-10 T84.062,medical,ICD-10 (WHO 2019)
+489987,wear of articular bearing surface of other internal prosthetic joint,phrase,noun,,3720,,,,,Diagnosis,medicine,,,ICD-10 T84.068,medical,ICD-10 (WHO 2019)
+489988,wear of articular bearing surface of unspecified internal prosthetic joint,phrase,noun,,3720,,,,,Diagnosis,medicine,,,ICD-10 T84.069,medical,ICD-10 (WHO 2019)
+216557,weariness,word,noun,,282217,,,,,,medicine,,derived,,medical,Symptom Ontology
+216558,weather,word,noun,,282221,,,,,,medicine,,simple,,medical,NCI Thesaurus
+437669,weaver syndrome,phrase,noun,,282257,,,,,Disease,medicine,,,,medical,Disease Ontology
+437670,weaver syndrome,phrase,noun,,282258,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437671,weaver syndrome,phrase,noun,,282259,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437672,weaver-williams syndrome,phrase,noun,,282260,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216559,web,word,noun,,282262,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'World Wide Web')
+445832,web of larynx,phrase,noun,,5086,,,,,Diagnosis,medicine,,,ICD-10 Q31.0,medical,ICD-10 (WHO 2019)
+475723,web of larynx,phrase,noun,,5087,,,,,Diagnosis,medicine,,,ICD-10 Q31.0,medical,ICD-10 (WHO 2019)
+437673,web service definition language,phrase,noun,,282270,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437674,webbed autopod,phrase,noun,,282276,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437675,webbed digit,phrase,noun,,282277,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+446058,webbed fingers,phrase,noun,,5076,,,,,Diagnosis,medicine,,,ICD-10 Q70.1,medical,ICD-10 (WHO 2019)
+476110,webbed fingers,phrase,noun,,5077,,,,,Diagnosis,medicine,,,ICD-10 Q70.1,medical,ICD-10 (WHO 2019)
+476114,"webbed fingers, bilateral",phrase,noun,,5077,,,,,Diagnosis,medicine,,,ICD-10 Q70.13,medical,ICD-10 (WHO 2019)
+476113,"webbed fingers, left hand",phrase,noun,,5077,,,,,Diagnosis,medicine,,,ICD-10 Q70.12,medical,ICD-10 (WHO 2019)
+476112,"webbed fingers, right hand",phrase,noun,,5077,,,,,Diagnosis,medicine,,,ICD-10 Q70.11,medical,ICD-10 (WHO 2019)
+476111,"webbed fingers, unspecified hand",phrase,noun,,5077,,,,,Diagnosis,medicine,,,ICD-10 Q70.10,medical,ICD-10 (WHO 2019)
+437676,webbed interdigital region,phrase,noun,,282279,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437677,webbed interdigital region between manual digits,phrase,noun,,282280,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437678,webbed interdigital region between pedal digits,phrase,noun,,282281,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437679,webbed manual digit,phrase,noun,,282282,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437680,webbed manus,phrase,noun,,282283,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437681,webbed neck,phrase,noun,,282284,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437682,webbed pedal digit,phrase,noun,,282285,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437683,webbed penis,phrase,noun,,282286,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437684,webbed pes,phrase,noun,,282287,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+446060,webbed toes,phrase,noun,,5076,,,,,Diagnosis,medicine,,,ICD-10 Q70.3,medical,ICD-10 (WHO 2019)
+476120,webbed toes,phrase,noun,,5077,,,,,Diagnosis,medicine,,,ICD-10 Q70.3,medical,ICD-10 (WHO 2019)
+476124,"webbed toes, bilateral",phrase,noun,,5077,,,,,Diagnosis,medicine,,,ICD-10 Q70.33,medical,ICD-10 (WHO 2019)
+476123,"webbed toes, left foot",phrase,noun,,5077,,,,,Diagnosis,medicine,,,ICD-10 Q70.32,medical,ICD-10 (WHO 2019)
+476122,"webbed toes, right foot",phrase,noun,,5077,,,,,Diagnosis,medicine,,,ICD-10 Q70.31,medical,ICD-10 (WHO 2019)
+476121,"webbed toes, unspecified foot",phrase,noun,,5077,,,,,Diagnosis,medicine,,,ICD-10 Q70.30,medical,ICD-10 (WHO 2019)
+437685,webbing of bone in vertebral column,phrase,noun,,282291,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+445759,webbing of neck,phrase,noun,,4078,,,,,Diagnosis,medicine,,,ICD-10 Q18.3,medical,ICD-10 (WHO 2019)
+475601,webbing of neck,phrase,noun,,4079,,,,,Diagnosis,medicine,,,ICD-10 Q18.3,medical,ICD-10 (WHO 2019)
+216560,weber,word,noun,,280677,,,,,,medicine,,derived,,medical,NCI Thesaurus
+437686,weber's gland,phrase,noun,,282294,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+216561,weber-klippel-trenaunay,word,noun,,17840,,,,,,pharmacology,,,,medical,MONDO (diseases) (synonym of 'angioosteohypertrophic syndrome')
+437687,weberian apparatus,phrase,noun,,282297,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437688,weberian complex centrum,phrase,noun,,282298,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437689,weberian ossicle,phrase,noun,,282299,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437690,weberian ossicle set,phrase,noun,,282300,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437691,weberian vertebra,phrase,noun,,282301,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+216562,website,word,noun,,282304,,,,,,pharmacology,,compound,,medical,NCI Thesaurus (synonym of 'Web Site')
+437692,wechsler adult intelligence scale,phrase,noun,,281218,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437693,wechsler adult intelligence scale - fourth edition,phrase,noun,,281219,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437694,wechsler intelligence scale for children,phrase,noun,,282307,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437695,wechsler memory scale - fourth edition,phrase,noun,,282308,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437696,wechsler preschool and primary scale of intelligence,phrase,noun,,282309,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437697,wechsler preschool and primary scale of intelligence - fourth edition,phrase,noun,,282310,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437698,wed,word,noun,,232587,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+216563,wedding,word,noun,,282313,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216564,wedge,word,noun,,282325,,,,,,medicine,,simple,,medical,NCI Thesaurus
+437699,wedge biopsy,phrase,noun,,282329,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437700,wedge biopsy of liver,phrase,noun,,282330,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+479391,wedge compression fracture of fifth lumbar vertebra,phrase,noun,,3941,,,,,Diagnosis,medicine,,,ICD-10 S32.050,medical,ICD-10 (WHO 2019)
+479367,wedge compression fracture of first lumbar vertebra,phrase,noun,,3941,,,,,Diagnosis,medicine,,,ICD-10 S32.010,medical,ICD-10 (WHO 2019)
+478685,wedge compression fracture of first thoracic vertebra,phrase,noun,,3943,,,,,Diagnosis,medicine,,,ICD-10 S22.010,medical,ICD-10 (WHO 2019)
+479385,wedge compression fracture of fourth lumbar vertebra,phrase,noun,,3941,,,,,Diagnosis,medicine,,,ICD-10 S32.040,medical,ICD-10 (WHO 2019)
+478703,wedge compression fracture of fourth thoracic vertebra,phrase,noun,,3943,,,,,Diagnosis,medicine,,,ICD-10 S22.040,medical,ICD-10 (WHO 2019)
+479373,wedge compression fracture of second lumbar vertebra,phrase,noun,,3941,,,,,Diagnosis,medicine,,,ICD-10 S32.020,medical,ICD-10 (WHO 2019)
+478691,wedge compression fracture of second thoracic vertebra,phrase,noun,,3943,,,,,Diagnosis,medicine,,,ICD-10 S22.020,medical,ICD-10 (WHO 2019)
+478727,wedge compression fracture of t11-t12 vertebra,phrase,noun,,3943,,,,,Diagnosis,medicine,,,ICD-10 S22.080,medical,ICD-10 (WHO 2019)
+478709,wedge compression fracture of t5-t6 vertebra,phrase,noun,,3943,,,,,Diagnosis,medicine,,,ICD-10 S22.050,medical,ICD-10 (WHO 2019)
+478715,wedge compression fracture of t7-t8 vertebra,phrase,noun,,3943,,,,,Diagnosis,medicine,,,ICD-10 S22.060,medical,ICD-10 (WHO 2019)
+478721,wedge compression fracture of t9-t10 vertebra,phrase,noun,,3943,,,,,Diagnosis,medicine,,,ICD-10 S22.070,medical,ICD-10 (WHO 2019)
+479379,wedge compression fracture of third lumbar vertebra,phrase,noun,,3941,,,,,Diagnosis,medicine,,,ICD-10 S32.030,medical,ICD-10 (WHO 2019)
+478697,wedge compression fracture of third thoracic vertebra,phrase,noun,,3943,,,,,Diagnosis,medicine,,,ICD-10 S22.030,medical,ICD-10 (WHO 2019)
+479361,wedge compression fracture of unspecified lumbar vertebra,phrase,noun,,3941,,,,,Diagnosis,medicine,,,ICD-10 S32.000,medical,ICD-10 (WHO 2019)
+478679,wedge compression fracture of unspecified thoracic vertebra,phrase,noun,,3943,,,,,Diagnosis,medicine,,,ICD-10 S22.000,medical,ICD-10 (WHO 2019)
+437701,wedge excision,phrase,noun,,282332,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437702,wedge resection of lung,phrase,noun,,282333,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437703,wedge resection of tongue,phrase,noun,,282334,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437704,wedge-shaped growth pattern,phrase,noun,,282335,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216565,wednesday,word,noun,,282338,,,,,,medicine,,simple,,medical,NCI Thesaurus
+437705,wee1 inhibitor,phrase,noun,,282343,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+437706,wee1 kinase inhibitor debio 0123,phrase,noun,,282344,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+437707,wee1 kinase inhibitor imp7068,phrase,noun,,282345,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+437708,weed mix pollen antigen iga antibody measurement,phrase,noun,,282349,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+437709,weed mix pollen antigen ige antibody measurement,phrase,noun,,282350,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+437710,weed mix pollen antigen igg antibody measurement,phrase,noun,,282351,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+437711,weed mix pollen ige antibody rast score measurement,phrase,noun,,282352,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437712,weed mix pollen igg antibody rast score measurement,phrase,noun,,282353,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+216566,week,word,noun,,282362,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216567,weekday,word,noun,,282370,,,,,,medicine,,compound,,medical,NCI Thesaurus
+216568,weekend,word,noun,,282372,,,,,,medicine,,compound,,medical,NCI Thesaurus
+494448,weeks of gestation,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A,medical,ICD-10 (WHO 2019)
+494450,weeks of gestation of pregnancy not specified,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.00,medical,ICD-10 (WHO 2019)
+494449,"weeks of gestation of pregnancy, unspecified or less than 10 weeks",phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.0,medical,ICD-10 (WHO 2019)
+494454,"weeks of gestation of pregnancy, weeks 10-19",phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.1,medical,ICD-10 (WHO 2019)
+494465,"weeks of gestation of pregnancy, weeks 20-29",phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.2,medical,ICD-10 (WHO 2019)
+494476,"weeks of gestation of pregnancy, weeks 30-39",phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.3,medical,ICD-10 (WHO 2019)
+494487,"weeks of gestation of pregnancy, weeks 40 or greater",phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.4,medical,ICD-10 (WHO 2019)
+216569,weeksella,word,noun,,282381,,,,,,medicine,,simple,,medical,NCI Thesaurus
+443987,wegener granulomatosis,phrase,noun,,21453,,,,,Diagnosis,medicine,,,ICD-10 M31.3,medical,ICD-10 (WHO 2019)
+468105,wegener's granulomatosis,phrase,noun,,21454,,,,,Diagnosis,medicine,,,ICD-10 M31.3,medical,ICD-10 (WHO 2019)
+468107,wegener's granulomatosis with renal involvement,phrase,noun,,21454,,,,,Diagnosis,medicine,,,ICD-10 M31.31,medical,ICD-10 (WHO 2019)
+468106,wegener's granulomatosis without renal involvement,phrase,noun,,21454,,,,,Diagnosis,medicine,,,ICD-10 M31.30,medical,ICD-10 (WHO 2019)
+216570,wegovy,word,noun,,203169,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Semaglutide')
+216571,weight,word,noun,,282394,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216572,weight,word,noun,,282395,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Body Weight')
+216573,weight,word,noun,,282396,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Importance Weight')
+437713,weight at time of procedure,phrase,noun,,282407,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437714,weight gain,phrase,noun,,282408,,,,,Symptom,medicine,,,,medical,Symptom Ontology
+437715,weight lifting,phrase,noun,,282410,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+437716,weight loss,phrase,noun,,282411,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437717,weight loss,phrase,noun,,282412,,,,,Symptom,medicine,,,,medical,Symptom Ontology
+437718,weight loss avoidance recommendation,phrase,noun,,282413,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+437719,weight loss pharmacotherapy,phrase,noun,,282414,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+216574,weight-based,word,noun,,282415,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Weight-based Dose')
+437720,weight-based dose,phrase,noun,,282415,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+216575,weight-bearing,word,noun,,282416,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Weight Bearing')
+437721,weight-for-age percentile,phrase,noun,,282417,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437722,weight-for-height percentile,phrase,noun,,282418,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437723,weil's disease,phrase,noun,,282436,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216576,weileshu,word,noun,,282438,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Probiotic Supplement WeiLeShu')
+437724,weill-marchesani syndrome,phrase,noun,,282439,,,,,Disease,medicine,,,,medical,Disease Ontology
+437725,weill-marchesani syndrome,phrase,noun,,282440,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437726,weill-marchesani syndrome,phrase,noun,,282441,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437727,weill-marchesani syndrome 1,phrase,noun,,282442,,,,,Disease,medicine,,,,medical,Disease Ontology
+437728,weill-marchesani syndrome 1,phrase,noun,,282443,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437729,weill-marchesani syndrome 2,phrase,noun,,282444,,,,,Disease,medicine,,,,medical,Disease Ontology
+437730,"weill-marchesani syndrome 2, dominant",phrase,noun,,127986,,,,,Disease,medicine,abbreviation,,,medical,MONDO (diseases)
+437731,weill-marchesani syndrome 3,phrase,noun,,282445,,,,,Disease,medicine,,,,medical,Disease Ontology
+437732,weill-marchesani syndrome 3,phrase,noun,,282446,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437733,weill-marchesani syndrome 4,phrase,noun,,282447,,,,,Disease,medicine,,,,medical,Disease Ontology
+216577,weimaraner,word,noun,,282451,,,,,,medicine,,simple,,medical,NCI Thesaurus
+437734,weismann-netter syndrome,phrase,noun,,282460,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437735,weissenbacher-zweymuller syndrome,phrase,noun,,282462,,,,,Disease,medicine,,,,medical,Disease Ontology
+216578,welchol,word,noun,,63079,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Colesevelam Hydrochloride')
+216579,weld,word,noun,,282484,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Weld Device')
+216580,welding,word,noun,,282492,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Welding Occupations')
+216581,welgenaleucel,word,noun,,282497,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216582,welireg,word,noun,,36692,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Belzutifan')
+216583,well,word,adj,,139257,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Healthy')
+216584,well,word,noun,,282534,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Microplate Well')
+216585,well,word,noun,,282535,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Well Marginated Nodule')
+437736,well being visual analogue scale,phrase,noun,,282544,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437737,well differentiated,phrase,noun,,125947,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437738,well differentiated fibrosarcoma,phrase,noun,,282545,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437739,well differentiated hepatocellular carcinoma,phrase,noun,,282546,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437740,well differentiated leiomyosarcoma,phrase,noun,,282547,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437741,well differentiated malignant neoplasm,phrase,noun,,282548,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437742,well differentiated ovarian sertoli-leydig cell tumor,phrase,noun,,282549,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437743,well differentiated ovarian steroid cell tumor,phrase,noun,,282550,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437744,well differentiated papillary mesothelial tumor,phrase,noun,,282122,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437745,well differentiated papillary mesothelioma,phrase,noun,,282121,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437746,well perfused,phrase,noun,,282551,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+216586,well-being,word,noun,,139211,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Health')
+216587,well-defined,word,adj,,282569,,,,,,medicine,,,,medical,NCI Thesaurus
+437747,well-defined tumor margin,phrase,noun,,282570,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437748,well-differentiated fetal adenocarcinoma of the lung,phrase,noun,,282118,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437749,well-differentiated liposarcoma,phrase,noun,,282571,,,,,Disease,medicine,,,,medical,Disease Ontology
+437750,well-differentiated liposarcoma,phrase,noun,,282119,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216588,wellbeing,word,noun,,282544,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Well Being Visual Analogue Scale')
+216589,wellbutrin,word,noun,,15969,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Bupropion Hydrochloride')
+437751,wellbutrin sr,phrase,noun,,49346,,,,,Brand name,pharmacology,,,,medical,NCI Thesaurus
+437752,wellbutrin xl,phrase,noun,,49346,,,,,Brand name,pharmacology,,,,medical,NCI Thesaurus
+216590,wellcovorin,word,noun,,282623,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Leucovorin Calcium')
+216591,wellferon,word,noun,,282625,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Interferon Alfa-N1')
+437753,wells syndrome,phrase,noun,,282628,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216592,welsh,word,noun,,282629,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Welsh Language')
+216593,welt,word,noun,,143016,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Wheal')
+216594,wenckebach,word,noun,,282652,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'AV Block Second Degree Mobitz Type I by ECG Finding')
+437754,werdnig-hoffmann disease,phrase,noun,,247940,,,,,Disease,medicine,,,,medical,Disease Ontology
+437755,werdnig-hoffmann disease,phrase,noun,,282656,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+437756,were genomics performed on obtained tissue,phrase,noun,,282657,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+437757,werner syndrome,phrase,noun,,282658,,,,,Disease,medicine,,,,medical,Disease Ontology
+437758,werner syndrome,phrase,noun,,282659,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437759,werner syndrome,phrase,noun,,282660,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437760,werner syndrome helicase inhibitor,phrase,noun,,282661,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+437761,wernicke encephalopathy,phrase,noun,,282662,,,,,Disease,medicine,,,ICD-10 E51.2,medical,Disease Ontology
+437762,wernicke encephalopathy,phrase,noun,,282663,,,,,Disease,medicine,,,ICD-10 E51.2,medical,MONDO (diseases)
+454524,wernicke's encephalopathy,phrase,noun,,25655,,,,,Diagnosis,medicine,,,ICD-10 E51.2,medical,ICD-10 (WHO 2019)
+437763,wernicke-korsakoff syndrome,phrase,noun,,282666,,,,,Disease,medicine,,,,medical,Disease Ontology
+437764,wernicke-korsakoff syndrome,phrase,noun,,282667,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437765,wernicke-korsakoff syndrome,phrase,noun,,282668,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437766,wes,word,noun,,66963,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Medical Action Ontology
+437767,wes,word,noun,,282669,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+437768,wes test performed,phrase,noun,,282670,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+216595,west,word,noun,,282680,,,,,,medicine,,simple,,medical,NCI Thesaurus
+437769,west haven hepatic encephalopathy grade clinical classification,phrase,noun,,282696,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437770,west nile encephalitis,phrase,noun,,282700,,,,,Disease,medicine,,,,medical,Disease Ontology
+437771,west nile fever,phrase,noun,,282703,,,,,Disease,medicine,,,,medical,Disease Ontology
+437772,west nile fever,phrase,noun,,282704,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437773,west nile virus,phrase,noun,,282705,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+439476,west nile virus infection,phrase,noun,,23839,,,,,Diagnosis,medicine,,,ICD-10 A92.3,medical,ICD-10 (WHO 2019)
+450916,west nile virus infection,phrase,noun,,23840,,,,,Diagnosis,medicine,,,ICD-10 A92.3,medical,ICD-10 (WHO 2019)
+450918,west nile virus infection with encephalitis,phrase,noun,,23840,,,,,Diagnosis,medicine,,,ICD-10 A92.31,medical,ICD-10 (WHO 2019)
+450920,west nile virus infection with other complications,phrase,noun,,23840,,,,,Diagnosis,medicine,,,ICD-10 A92.39,medical,ICD-10 (WHO 2019)
+450919,west nile virus infection with other neurologic manifestation,phrase,noun,,23840,,,,,Diagnosis,medicine,,,ICD-10 A92.32,medical,ICD-10 (WHO 2019)
+450917,"west nile virus infection, unspecified",phrase,noun,,23840,,,,,Diagnosis,medicine,,,ICD-10 A92.30,medical,ICD-10 (WHO 2019)
+437774,west syndrome,phrase,noun,,282713,,,,,Disease,medicine,,,,medical,Disease Ontology
+437775,west syndrome,phrase,noun,,282714,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437776,west virginia,phrase,noun,,282715,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+437777,west-nile encephalitis,phrase,noun,,282719,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216596,westcort,word,noun,,146020,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Hydrocortisone Valerate')
+437778,western blotting,phrase,noun,,282736,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437779,western equine encephalitis,phrase,noun,,282740,,,,,Disease,medicine,,,ICD-10 A83.1,medical,Disease Ontology
+437780,western equine encephalitis,phrase,noun,,282741,,,,,Disease,medicine,,,ICD-10 A83.1,medical,MONDO (diseases)
+450880,western equine encephalitis,phrase,noun,,7551,,,,,Diagnosis,medicine,,,ICD-10 A83.1,medical,ICD-10 (WHO 2019)
+437781,"western equine encephalitis, non-human animal",phrase,noun,,282742,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437782,western equine encephalomyelitis,phrase,noun,,282743,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437783,western ragweed pollen iga measurement,phrase,noun,,282746,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437784,western ragweed pollen ige antibody rast score measurement,phrase,noun,,282747,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437785,western ragweed pollen ige measurement,phrase,noun,,282748,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437786,western ragweed pollen igg antibody rast score measurement,phrase,noun,,282749,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437787,western ragweed pollen igg measurement,phrase,noun,,282750,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437788,western ragweed pollen igg4 measurement,phrase,noun,,282751,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+216597,westie,word,noun,,282756,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'West Highland White Terrier')
+437789,westoll line,phrase,noun,,282760,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437790,wet beriberi,phrase,noun,,282783,,,,,Disease,medicine,,,ICD-10 E51.12,medical,Disease Ontology
+437791,wet cough,phrase,noun,,282785,,,,,Symptom,medicine,,,,medical,Symptom Ontology
+437792,wet macular degeneration,phrase,noun,,282788,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437793,wet voice,phrase,noun,,282790,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437794,wetness of soil,phrase,noun,,282796,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216598,wetterhoun,word,noun,,282798,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216599,wetting,word,noun,,239153,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Schirmer Test Wetting')
+437795,weyers acrofacial dysostosis,phrase,noun,,281144,,,,,Disease,medicine,,,,medical,Disease Ontology
+437796,wf,word,noun,,282800,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+437797,"wf, rat strain",phrase,noun,,282800,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437798,wf1 amacrine cell,phrase,noun,,282801,,,,,Cell type,biology,,,,medical,Cell Ontology
+437799,wf2 amacrine cell,phrase,noun,,282802,,,,,Cell type,biology,,,,medical,Cell Ontology
+437800,wf3-1 amacrine cell,phrase,noun,,282803,,,,,Cell type,biology,,,,medical,Cell Ontology
+437801,wf3-2 amacrine cell,phrase,noun,,282804,,,,,Cell type,biology,,,,medical,Cell Ontology
+437802,wf4 amacrine cell,phrase,noun,,282805,,,,,Cell type,biology,,,,medical,Cell Ontology
+437803,wfs,word,noun,,282806,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+437804,wfs,word,noun,,281970,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+437805,wfs1,word,noun,,90780,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+437806,wfs1,word,noun,,282807,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+437807,wfs2,word,noun,,282808,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+437808,wfs2,word,noun,,282809,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+437809,wgas,word,noun,,282810,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+437810,wgs,word,noun,,66962,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Medical Action Ontology
+437811,wgs,word,noun,,282811,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+437812,wgs test performed,phrase,noun,,282812,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+216600,wh,word,noun,,282013,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Watt Hour')
+437813,wh,word,noun,,282813,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+437814,"wh, rat strain",phrase,noun,,282813,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216601,wheal,word,noun,,143016,,,,,,medicine,,simple,,medical,NCI Thesaurus
+437815,wheat allergy,phrase,noun,,282852,,,,,Disease,medicine,,,,medical,Disease Ontology
+437816,wheat germ oil,phrase,noun,,282858,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437817,wheat plant,phrase,noun,,282860,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216602,wheel,word,noun,,282868,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Wheel Device')
+216603,wheelchair,word,noun,,282882,,,,,,medicine,,compound,,medical,NCI Thesaurus
+216604,wheelchair,word,noun,,282883,,,,,,pharmacology,,compound,,medical,NCI Thesaurus (synonym of 'Wheelchair Usually Used')
+490417,wheelchair (powered) colliding with stationary object,phrase,noun,,5134,,,,,Diagnosis,medicine,,,ICD-10 V00.812,medical,ICD-10 (WHO 2019)
+216605,wheeze,word,noun,,282896,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Wheezing')
+216606,wheezing,word,noun,,282904,,,,,,medicine,,simple,ICD-10 R06.2,medical,Human Phenotype Ontology
+216607,wheezing,word,noun,,282896,,,,,,medicine,,simple,ICD-10 R06.2,medical,NCI Thesaurus
+216608,wheezing,word,noun,,282905,,,,,,medicine,,simple,ICD-10 R06.2,medical,Symptom Ontology
+476541,wheezing,word,noun,,1715,,,,,Diagnosis,medicine,,simple,ICD-10 R06.2,medical,ICD-10 (WHO 2019)
+437818,wheg01,word,noun,,282696,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+216609,when,word,noun,,282910,,,,,,medicine,,simple,,medical,NCI Thesaurus
+437819,whey acidic protein staining method,phrase,noun,,282936,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+437820,whey protein isolate,phrase,noun,,149855,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437821,whey protein isolate-based nutritional supplement,phrase,noun,,44003,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+437822,whi,word,noun,,282937,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+437823,whim syndrome 1,phrase,noun,,282956,,,,,Disease,medicine,,,,medical,Disease Ontology
+437824,whim syndrome 1,phrase,noun,,282957,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437825,whims,word,noun,,282956,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+216610,whippet,word,noun,,282981,,,,,,medicine,,compound,,medical,NCI Thesaurus
+216611,whipple,word,noun,,204421,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Whipple Procedure')
+437826,whipple disease,phrase,noun,,282985,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+463887,whipple's disease,phrase,noun,,5152,,,,,Diagnosis,medicine,,,ICD-10 K90.81,medical,ICD-10 (WHO 2019)
+216612,whisker,word,noun,,279569,,,,,,pharmacology,,derived,,medical,NCI Thesaurus (synonym of 'Whiskers')
+216613,whiskers,word,noun,,279569,,,,,,medicine,,derived,,medical,NCI Thesaurus
+437827,whistling appearance,phrase,noun,,283049,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+216614,white,word,noun,,56480,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216615,white,word,noun,,283069,,,,,,medicine,,simple,,medical,NCI Thesaurus
+437828,white adipocyte,phrase,noun,,283075,,,,,Cell type,biology,,,,medical,Cell Ontology
+437829,white adipose tissue,phrase,noun,,283076,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+437830,white adipose tissue,phrase,noun,,283077,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437831,white appearance of duodenal mucosa,phrase,noun,,283078,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437832,white birch pollen,phrase,noun,,283080,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+437833,white blood cell cast measurement,phrase,noun,,283081,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437834,white blood cell lysis,phrase,noun,,283082,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437835,white cerebellum sign,phrase,noun,,283086,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437836,white elm pollen ige antibody rast score measurement,phrase,noun,,283091,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437837,white elm pollen igg antibody rast score measurement,phrase,noun,,283092,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437838,white eyebrow,phrase,noun,,283093,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437839,white eyelashes,phrase,noun,,283094,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437840,white fiber,phrase,noun,,283096,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+437841,white fibrocartilage,phrase,noun,,283097,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437842,white fibrous papulosis of the neck,phrase,noun,,283098,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437843,white forelock,phrase,noun,,283099,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437844,white forelock with malformations,phrase,noun,,283100,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437845,white hair,phrase,noun,,283103,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437846,white heifer disease,phrase,noun,,283105,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437847,white lesion of the oral mucosa,phrase,noun,,283109,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437848,white matter,phrase,noun,,283115,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+437849,white matter,phrase,noun,,283116,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+477199,"white matter disease, unspecified",phrase,noun,,1634,,,,,Diagnosis,medicine,,,ICD-10 R90.82,medical,ICD-10 (WHO 2019)
+437850,white matter globoid cells,phrase,noun,,283117,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437851,white matter hypoplasia-corpus callosum agenesis-intellectual disability syndrome,phrase,noun,,283118,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437852,white matter lamina of cerebellum,phrase,noun,,283119,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437853,white matter of cerebellum,phrase,noun,,283120,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437854,white matter of forebrain,phrase,noun,,283121,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437855,white matter of frontal lobe,phrase,noun,,283122,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437856,white matter of hindbrain,phrase,noun,,283123,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437857,white matter of limbic lobe,phrase,noun,,283124,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437858,white matter of medulla oblongata,phrase,noun,,283125,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437859,white matter of midbrain,phrase,noun,,283126,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437860,white matter of myelencephalon,phrase,noun,,283127,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437861,white matter of occipital lobe,phrase,noun,,283128,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437862,white matter of parietal lobe,phrase,noun,,283129,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437863,white matter of spinal cord,phrase,noun,,283130,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437864,white matter of superior colliculus,phrase,noun,,283131,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437865,white matter of telencephalon,phrase,noun,,283132,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437866,white matter of temporal lobe,phrase,noun,,283133,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437867,white matter of the cerebellar cortex,phrase,noun,,283134,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437868,white matter of the spinal cord,phrase,noun,,283135,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+437869,white muscle cell,phrase,noun,,283136,,,,,Cell type,biology,,,,medical,Cell Ontology
+437870,white muscle disease,phrase,noun,,283137,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437871,white oak pollen ige antibody rast score measurement,phrase,noun,,283142,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437872,white oral mucosal macule,phrase,noun,,283143,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437873,white papule,phrase,noun,,283148,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437874,white piedra,phrase,noun,,283150,,,,,Disease,medicine,,,ICD-10 B36.2,medical,Disease Ontology
+437875,white piedra,phrase,noun,,283151,,,,,Disease,medicine,,,ICD-10 B36.2,medical,MONDO (diseases)
+451161,white piedra,phrase,noun,,6800,,,,,Diagnosis,medicine,,,ICD-10 B36.2,medical,ICD-10 (WHO 2019)
+437876,white platelet syndrome,phrase,noun,,283154,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437877,white pulp lymphatic vessel,phrase,noun,,283155,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437878,white pulp of spleen,phrase,noun,,283156,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+437879,white shrimp allergy,phrase,noun,,283163,,,,,Disease,medicine,,,,medical,Disease Ontology
+437880,white sponge nevus,phrase,noun,,283166,,,,,Disease,medicine,,,,medical,Disease Ontology
+437881,white sponge nevus 1,phrase,noun,,283167,,,,,Disease,medicine,,,,medical,Disease Ontology
+437882,white sponge nevus 1,phrase,noun,,283168,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437883,white sponge nevus 2,phrase,noun,,283169,,,,,Disease,medicine,,,,medical,Disease Ontology
+437884,"white spotting coat colour, mitf-related, horse",phrase,noun,,283170,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437885,white streaks/specks on enamel,phrase,noun,,283172,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437886,white-sutton syndrome,phrase,noun,,186933,,,,,Disease,medicine,,,,medical,Disease Ontology
+216616,whitehead,word,noun,,67464,,,,,,pharmacology,,compound,,medical,Human Phenotype Ontology (synonym of 'Closed comedo')
+216617,whitening,word,noun,,283220,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Dental Whitening')
+216618,whitepox,word,noun,,12810,,,,,,pharmacology,,compound,,medical,Disease Ontology (synonym of 'variola minor')
+216619,whites,word,noun,,56480,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'White')
+437887,whitewater arroyo hemorrhagic fever,phrase,noun,,283230,,,,,Disease,medicine,,,,medical,Disease Ontology
+437888,whitewater arroyo hemorrhagic fever,phrase,noun,,283231,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437889,whitmore-jewett stage,phrase,noun,,283238,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437890,who aml classification of tumors,phrase,noun,,283249,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437891,who classification of tumors of hematopoietic and lymphoid tissue 2017,phrase,noun,,283250,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+437892,who disease severity scale used,phrase,noun,,283251,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437893,who neuroendocrine tumor grade,phrase,noun,,283252,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437894,who-art,word,noun,,283253,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+437895,who/isup fuhrman nuclear grade,phrase,noun,,283254,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437896,whoart,word,noun,,283253,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+437897,whodd,word,noun,,283256,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+216620,whole,word,noun,,283267,,,,,,medicine,,simple,,medical,Medical Action Ontology
+216621,whole,word,noun,,105479,,,,,,medicine,,simple,,medical,NCI Thesaurus
+437898,whole abdominopelvic intensity-modulated radiotherapy,phrase,noun,,283271,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437899,whole blood,phrase,noun,,283272,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437900,whole blood collection tube,phrase,noun,,283275,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437901,whole blood equivalent glucose measurement,phrase,noun,,283276,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437902,whole blood or product preparation,phrase,noun,,283277,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437903,whole blood or product procurement,phrase,noun,,283278,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437904,whole blood smear,phrase,noun,,283279,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437905,whole blood transfusion,phrase,noun,,283280,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437906,whole body examination,phrase,noun,,283281,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+437907,whole body vibration,phrase,noun,,282117,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437908,whole bone marrow,phrase,noun,,282113,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+437909,whole cell vaccine,phrase,noun,,283282,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+446195,"whole chromosome monosomy, meiotic nondisjunction",phrase,noun,,515,,,,,Diagnosis,medicine,,,ICD-10 Q93.0,medical,ICD-10 (WHO 2019)
+446196,"whole chromosome monosomy, mosaicism (mitotic nondisjunction)",phrase,noun,,515,,,,,Diagnosis,medicine,,,ICD-10 Q93.1,medical,ICD-10 (WHO 2019)
+476437,"whole chromosome monosomy, mosaicism (mitotic nondisjunction)",phrase,noun,,503,,,,,Diagnosis,medicine,,,ICD-10 Q93.1,medical,ICD-10 (WHO 2019)
+476436,"whole chromosome monosomy, nonmosaicism (meiotic nondisjunction)",phrase,noun,,503,,,,,Diagnosis,medicine,,,ICD-10 Q93.0,medical,ICD-10 (WHO 2019)
+446184,"whole chromosome trisomy, meiotic nondisjunction",phrase,noun,,515,,,,,Diagnosis,medicine,,,ICD-10 Q92.0,medical,ICD-10 (WHO 2019)
+446185,"whole chromosome trisomy, mosaicism (mitotic nondisjunction)",phrase,noun,,515,,,,,Diagnosis,medicine,,,ICD-10 Q92.1,medical,ICD-10 (WHO 2019)
+476426,"whole chromosome trisomy, mosaicism (mitotic nondisjunction)",phrase,noun,,503,,,,,Diagnosis,medicine,,,ICD-10 Q92.1,medical,ICD-10 (WHO 2019)
+476425,"whole chromosome trisomy, nonmosaicism (meiotic nondisjunction)",phrase,noun,,503,,,,,Diagnosis,medicine,,,ICD-10 Q92.0,medical,ICD-10 (WHO 2019)
+437910,whole egg antigen,phrase,noun,,283283,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+437911,whole exome sequencing,phrase,noun,,282669,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437912,whole form (sensu food),phrase,noun,,283284,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437913,whole genome association study,phrase,noun,,282810,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437914,whole genome sequencing,phrase,noun,,282811,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437915,whole genome sequencing read depth,phrase,noun,,283286,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437916,whole kidney transplantation,phrase,noun,,283287,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+437917,whole lung transplantation,phrase,noun,,283288,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+437918,whole organ transplantation,phrase,noun,,283290,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+437919,whole plant,phrase,noun,,283291,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+437920,whole transcriptome sequencing,phrase,noun,,235162,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437921,whole ventricular and spinal canal irradiation,phrase,noun,,283293,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437922,whole-abdominal irradiation,phrase,noun,,281211,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437923,whole-body scintigraphy,phrase,noun,,283294,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+437924,whole-brain radiotherapy,phrase,noun,,283295,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+216622,whole-grain,word,noun,,283296,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Whole Grain')
+437925,whole-immunoglobulin paraproteinemia,phrase,noun,,283297,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+216623,whole-pelvis,word,noun,,283298,,,,,,medicine,,,,medical,NCI Thesaurus
+437926,whole-ventricular radiation therapy,phrase,noun,,283299,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437927,whole-virion inactivated sars-cov-2 vaccine bbv152,phrase,noun,,283300,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+437928,whooping cough,phrase,noun,,283326,,,,,Lay term -> medical,medicine,informal,,ICD-10 A37,medical,Curated
+437929,whooping cough,phrase,noun,,283327,,,,,Sign / symptom / phenotype,medicine,,,ICD-10 A37,medical,Human Phenotype Ontology
+450537,whooping cough,phrase,noun,,1161,,,,,Diagnosis,medicine,,,ICD-10 A37,medical,ICD-10 (WHO 2019)
+439284,whooping cough due to bordetella parapertussis,phrase,noun,,1160,,,,,Diagnosis,medicine,,,ICD-10 A37.1,medical,ICD-10 (WHO 2019)
+450541,whooping cough due to bordetella parapertussis,phrase,noun,,1161,,,,,Diagnosis,medicine,,,ICD-10 A37.1,medical,ICD-10 (WHO 2019)
+450543,whooping cough due to bordetella parapertussis with pneumonia,phrase,noun,,1161,,,,,Diagnosis,medicine,,,ICD-10 A37.11,medical,ICD-10 (WHO 2019)
+450542,whooping cough due to bordetella parapertussis without pneumonia,phrase,noun,,1161,,,,,Diagnosis,medicine,,,ICD-10 A37.10,medical,ICD-10 (WHO 2019)
+439283,whooping cough due to bordetella pertussis,phrase,noun,,1160,,,,,Diagnosis,medicine,,,ICD-10 A37.0,medical,ICD-10 (WHO 2019)
+450538,whooping cough due to bordetella pertussis,phrase,noun,,1161,,,,,Diagnosis,medicine,,,ICD-10 A37.0,medical,ICD-10 (WHO 2019)
+450540,whooping cough due to bordetella pertussis with pneumonia,phrase,noun,,1161,,,,,Diagnosis,medicine,,,ICD-10 A37.01,medical,ICD-10 (WHO 2019)
+450539,whooping cough due to bordetella pertussis without pneumonia,phrase,noun,,1161,,,,,Diagnosis,medicine,,,ICD-10 A37.00,medical,ICD-10 (WHO 2019)
+439285,whooping cough due to other bordetella species,phrase,noun,,1160,,,,,Diagnosis,medicine,,,ICD-10 A37.8,medical,ICD-10 (WHO 2019)
+450544,whooping cough due to other bordetella species,phrase,noun,,1161,,,,,Diagnosis,medicine,,,ICD-10 A37.8,medical,ICD-10 (WHO 2019)
+450546,whooping cough due to other bordetella species with pneumonia,phrase,noun,,1161,,,,,Diagnosis,medicine,,,ICD-10 A37.81,medical,ICD-10 (WHO 2019)
+450545,whooping cough due to other bordetella species without pneumonia,phrase,noun,,1161,,,,,Diagnosis,medicine,,,ICD-10 A37.80,medical,ICD-10 (WHO 2019)
+439286,"whooping cough, unspecified",phrase,noun,,1160,,,,,Diagnosis,medicine,,,ICD-10 A37.9,medical,ICD-10 (WHO 2019)
+450547,"whooping cough, unspecified species",phrase,noun,,1161,,,,,Diagnosis,medicine,,,ICD-10 A37.9,medical,ICD-10 (WHO 2019)
+450549,"whooping cough, unspecified species with pneumonia",phrase,noun,,1161,,,,,Diagnosis,medicine,,,ICD-10 A37.91,medical,ICD-10 (WHO 2019)
+450548,"whooping cough, unspecified species without pneumonia",phrase,noun,,1161,,,,,Diagnosis,medicine,,,ICD-10 A37.90,medical,ICD-10 (WHO 2019)
+437930,whorl of hair,phrase,noun,,283338,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+216624,whorled,word,noun,,283339,,,,,,medicine,,simple,,medical,Human Phenotype Ontology
+437931,whsus,word,noun,,186933,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+437932,whsus,word,noun,,155671,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+437933,wi(wu),word,noun,,283343,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+216625,wickerhamomyces,word,noun,,283357,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216626,wide,word,adj,,283363,,,,,,medicine,,simple,,medical,NCI Thesaurus
+437934,wide anterior fontanel,phrase,noun,,283381,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437935,wide area transepithelial sampling,phrase,noun,,282009,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437936,wide capital femoral epiphyses,phrase,noun,,283382,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437937,wide cavum septum pellucidum,phrase,noun,,283383,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437938,wide cranial sutures,phrase,noun,,283384,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+445665,wide cranial sutures of newborn,phrase,noun,,6284,,,,,Diagnosis,medicine,,,ICD-10 P96.3,medical,ICD-10 (WHO 2019)
+475478,wide cranial sutures of newborn,phrase,noun,,6314,,,,,Diagnosis,medicine,,,ICD-10 P96.3,medical,ICD-10 (WHO 2019)
+437939,wide distal femoral metaphysis,phrase,noun,,283385,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437940,wide excision of lesion of lip,phrase,noun,,283386,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437941,wide field retinal amacrine cell,phrase,noun,,283387,,,,,Cell type,biology,,,,medical,Cell Ontology
+437942,wide humeral diaphysis,phrase,noun,,283388,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437943,wide intermamillary distance,phrase,noun,,283389,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437944,wide local excision,phrase,noun,,283390,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437945,wide mouth,phrase,noun,,173958,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437946,wide nasal base,phrase,noun,,283391,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437947,wide nasal bridge,phrase,noun,,283392,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437948,wide nasal ridge,phrase,noun,,283393,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437949,wide nose,phrase,noun,,283394,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437950,wide penis,phrase,noun,,283395,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437951,wide proximal femoral metaphysis,phrase,noun,,283396,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437952,wide pubic symphysis,phrase,noun,,283397,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437953,"wide range achievement test, 3rd edition",phrase,noun,,283398,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437954,wide sacroiliac joint,phrase,noun,,283399,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437955,wide skin excision,phrase,noun,,283401,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437956,wide space between 2nd and 3rd toes,phrase,noun,,283402,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437957,wide space between 4th and 5th toe,phrase,noun,,283403,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437958,wide ulnar metaphysis,phrase,noun,,283404,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437959,widely invasive lesion,phrase,noun,,283415,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437960,widely patent coronal suture,phrase,noun,,283416,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437961,widely patent fontanelles and sutures,phrase,noun,,283417,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437962,widely patent sagittal suture,phrase,noun,,283418,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437963,widely spaced primary teeth,phrase,noun,,283419,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437964,widely spaced teeth,phrase,noun,,283420,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437965,widely spaced toes,phrase,noun,,283421,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437966,widely-spaced maxillary central incisors,phrase,noun,,283422,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437967,widened atrophic scar,phrase,noun,,283427,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437968,widened cerebellar subarachnoid space,phrase,noun,,283428,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437969,widened cerebral subarachnoid space,phrase,noun,,283429,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437970,widened greater sciatic notch,phrase,noun,,283430,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437971,widened interpedicular distance,phrase,noun,,283431,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437972,widened mediastinum,phrase,noun,,283432,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+437973,widened subarachnoid space,phrase,noun,,283433,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+216627,wideness,word,noun,,283434,,,,,,pharmacology,,derived,,medical,NCI Thesaurus (synonym of 'Width')
+216628,widespread,word,noun,,91109,,,,,,pharmacology,,compound,,medical,NCI Thesaurus (synonym of 'Diffuse')
+216629,widespread,word,noun,,210289,,,,,,pharmacology,,compound,,medical,NCI Thesaurus (synonym of 'Pervasive')
+437974,widespread alveolar pneumocyte damage present,phrase,noun,,283438,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+437975,widespread metastasis,phrase,noun,,283439,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216630,widow,word,noun,,283440,,,,,,medicine,,simple,,medical,NCI Thesaurus
+437976,widow's peak,phrase,noun,,283444,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+216631,widowed,word,noun,,283448,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216632,widower,word,noun,,283449,,,,,,medicine,,derived,,medical,NCI Thesaurus
+216633,width,word,noun,,283434,,,,,,medicine,,simple,,medical,NCI Thesaurus
+437977,wieacker-wolff syndrome,phrase,noun,,178246,,,,,Disease,medicine,,,,medical,Disease Ontology
+437978,wieacker-wolff syndrome,phrase,noun,,178247,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437979,wiedemann-rautenstrauch syndrome,phrase,noun,,283453,,,,,Disease,medicine,,,,medical,Disease Ontology
+437980,wiedemann-rautenstrauch syndrome,phrase,noun,,283454,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437981,wiedemann-steiner syndrome,phrase,noun,,283455,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216634,wife,word,noun,,283460,,,,,,medicine,,simple,,medical,NCI Thesaurus
+492847,"wife, current, perpetrator of maltreatment and neglect",phrase,noun,,6177,,,,,Diagnosis,medicine,,,ICD-10 Y07.020,medical,ICD-10 (WHO 2019)
+492848,"wife, former, perpetrator of maltreatment and neglect",phrase,noun,,6177,,,,,Diagnosis,medicine,,,ICD-10 Y07.021,medical,ICD-10 (WHO 2019)
+492846,"wife, perpetrator of maltreatment and neglect",phrase,noun,,6177,,,,,Diagnosis,medicine,,,ICD-10 Y07.02,medical,ICD-10 (WHO 2019)
+216635,wigrettes,word,noun,,107302,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ergotamine Tartrate')
+216636,wilate,word,noun,,145328,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Human Coagulation Factor VIII/Von Willebrand Factor Complex')
+437982,wilcoxon signed rank test,phrase,noun,,283480,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437983,wild rye pollen ige antibody rast score measurement,phrase,noun,,283516,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+437984,wild type and mutant mgmt vector,phrase,noun,,283519,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+437985,wild-type amyloidosis,phrase,noun,,283524,,,,,Disease,medicine,,,,medical,Disease Ontology
+454838,wild-type transthyretin-related (attr) amyloidosis,phrase,noun,,1131,,,,,Diagnosis,medicine,,,ICD-10 E85.82,medical,ICD-10 (WHO 2019)
+493786,wilderness area,phrase,noun,,7013,,,,,Diagnosis,medicine,,,ICD-10 Y92.82,medical,ICD-10 (WHO 2019)
+437986,wildervanck syndrome,phrase,noun,,283546,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216637,wildtype,word,noun,,283563,,,,,,pharmacology,,compound,,medical,NCI Thesaurus (synonym of 'Wild Type')
+437987,wildtype staining pattern,phrase,noun,,283564,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+437988,williams syndrome,phrase,noun,,283588,,,,,Disease,medicine,,,ICD-10 Q93.82,medical,MONDO (diseases)
+437989,williams-beuren syndrome,phrase,noun,,282115,,,,,Disease,medicine,,,,medical,Disease Ontology
+216638,willing,word,noun,,227293,,,,,,pharmacology,,derived,,medical,NCI Thesaurus (synonym of 'Receptivity')
+216639,willingness,word,noun,,227293,,,,,,pharmacology,,derived,,medical,NCI Thesaurus (synonym of 'Receptivity')
+437990,wilms tumor,phrase,noun,,283606,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437991,wilms tumor 1,phrase,noun,,283607,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437992,wilms tumor 5,phrase,noun,,283608,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437993,wilms tumor 6,phrase,noun,,283609,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437994,wilms tumor histologic subtype,phrase,noun,,283610,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+437995,"wilms tumor, aniridia, genitourinary anomalies, intellectual disability, and obesity syndrome",phrase,noun,,283611,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437996,"wilms tumor, cattle",phrase,noun,,283612,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437997,"wilms tumor, dog",phrase,noun,,283613,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437998,"wilms tumor, non-human animal",phrase,noun,,283614,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+437999,"wilms tumor, pig",phrase,noun,,283615,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438000,"wilms tumor, sheep",phrase,noun,,283616,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438001,wilson disease,phrase,noun,,283617,,,,,Disease,medicine,,,,medical,Disease Ontology
+438002,wilson disease,phrase,noun,,283618,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438003,"wilson disease, atp7b-related, dog",phrase,noun,,283619,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438004,"wilson disease, atp7b-related, domestic cat",phrase,noun,,283620,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438005,"wilson disease, cattle",phrase,noun,,283621,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438006,"wilson disease, non-human animal",phrase,noun,,283622,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438007,"wilson disease, pig",phrase,noun,,283623,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438008,"wilson disease, sheep",phrase,noun,,283624,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438009,wilson sign,phrase,noun,,283625,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+454793,wilson's disease,phrase,noun,,1131,,,,,Diagnosis,medicine,,,ICD-10 E83.01,medical,ICD-10 (WHO 2019)
+438010,wilson's staining method,phrase,noun,,283627,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+445452,wilson-mikity syndrome,phrase,noun,,39997,,,,,Diagnosis,medicine,,,ICD-10 P27.0,medical,ICD-10 (WHO 2019)
+475189,wilson-mikity syndrome,phrase,noun,,47846,,,,,Diagnosis,medicine,,,ICD-10 P27.0,medical,ICD-10 (WHO 2019)
+438011,wilson-turner syndrome,phrase,noun,,187032,,,,,Disease,medicine,,,,medical,Disease Ontology
+438012,wilson-turner syndrome,phrase,noun,,187033,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438013,winchester syndrome,phrase,noun,,283654,,,,,Disease,medicine,,,,medical,Disease Ontology
+438014,winchester syndrome,phrase,noun,,283655,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438015,wind-swept deformity of the knees,phrase,noun,,283678,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+216640,window,word,noun,,283695,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216641,window,word,noun,,156758,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216642,window,word,noun,,283696,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Window Device')
+216643,windpipe,word,noun,,267738,,,,,,pharmacology,,compound,,medical,NCI Thesaurus (synonym of 'Trachea')
+216644,windpipe,word,noun,,267739,,,,,,anatomy,,compound,,medical,Uberon (anatomy) (synonym of 'trachea')
+216645,wine,word,noun,,283745,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216646,wing,word,noun,,283772,,,,,,anatomy,,simple,,medical,Uberon (anatomy)
+438016,wing feather,phrase,noun,,283784,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+216647,wingspan,word,noun,,24216,,,,,,pharmacology,,compound,,medical,NCI Thesaurus (synonym of 'Arm Span')
+216648,winobanin,word,noun,,64262,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Danazol')
+438017,winrho sdf,phrase,noun,,34880,,,,,Brand name,pharmacology,,,,medical,NCI Thesaurus
+216649,winship,word,noun,,283828,,,,,,pharmacology,,derived,,medical,NCI Thesaurus (synonym of 'Winship Cancer Institute')
+438018,winship cancer institute,phrase,noun,,283828,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216650,winstrol,word,noun,,253819,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Stanozolol')
+216651,winter,word,noun,,283831,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438019,winter squash,phrase,noun,,283839,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+438020,winter squash cultivar,phrase,noun,,81384,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+216652,wire,word,noun,,283856,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Wire Device')
+438021,wire-free radar localization of tumor,phrase,noun,,283871,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438022,wire-guided localization,phrase,noun,,283872,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+438023,wireless synchronized cardiac function monitoring device,phrase,noun,,280476,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+216653,wirumin,word,noun,,39266,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Moroxydine')
+438024,wisc,word,noun,,282307,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438025,wisc-iii,word,noun,,282307,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438026,wisc-iv,word,noun,,282307,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+216654,wisconsin,word,noun,,283896,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438027,wiskott-aldrich syndrome,phrase,noun,,283929,,,,,Disease,medicine,,,ICD-10 D82.0,medical,Disease Ontology
+438028,wiskott-aldrich syndrome,phrase,noun,,281680,,,,,Disease,medicine,,,ICD-10 D82.0,medical,MONDO (diseases)
+438029,wiskott-aldrich syndrome,phrase,noun,,283930,,,,,Disease,medicine,,,ICD-10 D82.0,medical,NCI Thesaurus
+453927,wiskott-aldrich syndrome,phrase,noun,,6904,,,,,Diagnosis,medicine,,,ICD-10 D82.0,medical,ICD-10 (WHO 2019)
+438030,wiskott-aldrich syndrome 2,phrase,noun,,283931,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438031,wissler syndrome,phrase,noun,,283940,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438032,wissler-fanconi syndrome,phrase,noun,,283941,,,,,Disease,medicine,,,,medical,Disease Ontology
+216655,wistar,word,noun,,283942,,,,,,pharmacology,,simple,,medical,"NCI Thesaurus (synonym of 'WIST, Rat Strain')"
+438033,wistar rabies virus strain pm-1503-3m vaccine,phrase,noun,,150084,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438034,"wistar unilever, rat strain",phrase,noun,,283343,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+216656,with,word,noun,,81203,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438035,with inducing agent,phrase,noun,,283960,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438036,with stimulating agent,phrase,noun,,283961,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+438037,with the rule astigmatism,phrase,noun,,283962,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438038,with tumor,phrase,noun,,283963,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216657,withdraw,word,noun,,233255,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216658,withdrawal,word,noun,,283965,,,,,,medicine,,derived,,medical,NCI Thesaurus
+216659,withdrawal,word,noun,,233255,,,,,,pharmacology,,derived,,medical,NCI Thesaurus (synonym of 'Withdraw')
+216660,withdrawal,word,noun,,283966,,,,,,pharmacology,,derived,,medical,NCI Thesaurus (synonym of 'Withdrawal Scale')
+438039,withdrawal disorder,phrase,noun,,283973,,,,,Disease,medicine,,,,medical,Disease Ontology
+445664,withdrawal symptoms from therapeutic use of drugs in newborn,phrase,noun,,6284,,,,,Diagnosis,medicine,,,ICD-10 P96.2,medical,ICD-10 (WHO 2019)
+475477,withdrawal symptoms from therapeutic use of drugs in newborn,phrase,noun,,6314,,,,,Diagnosis,medicine,,,ICD-10 P96.2,medical,ICD-10 (WHO 2019)
+216661,withdrawn,word,noun,,283981,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Study Withdrawn')
+216662,withers,word,noun,,283987,,,,,,anatomy,,derived,,medical,Uberon (anatomy)
+216663,within,word,noun,,155050,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438040,within 3 months of surgery,phrase,adj,,283998,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+438041,within normal limits,phrase,noun,,283999,,,,,Clinical phrase,medicine,,,,medical,Curated
+216664,without,word,noun,,195047,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438042,without binding agent,phrase,noun,,284004,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+438043,without stimulating agent,phrase,noun,,284007,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+216665,witness,word,noun,,284010,,,,,,medicine,,derived,,medical,NCI Thesaurus
+438044,witteveen-kolk syndrome,phrase,noun,,284016,,,,,Disease,medicine,,,,medical,Disease Ontology
+216666,wk,word,noun,,282362,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Week')
+438045,wli,word,noun,,234496,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438046,wmbio,word,noun,,187094,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438047,wms-iv,word,noun,,282308,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438048,wms2,word,noun,,127986,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438049,wn,word,noun,,284030,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438050,"wn, rat strain",phrase,noun,,284030,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438051,wnchrs,word,noun,,283655,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438052,wnl,word,noun,,284031,,,,,Abbreviation - documentation,medicine,abbreviation,simple,,medical,Curated
+438053,wns,word,noun,,282460,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438054,wnt signaling inhibitor sm04755,phrase,noun,,284032,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438055,wnt signaling pathway inhibitor,phrase,noun,,284033,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+216667,wnt-activated,word,noun,,284034,,,,,,pharmacology,,,,medical,"NCI Thesaurus (synonym of 'Medulloblastoma, WNT-Activated')"
+438056,wnt-activated deep penetrating/plexiform melanocytoma (nevus),phrase,noun,,284035,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438057,wnv,word,noun,,282705,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438058,wokvac,word,noun,,223307,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+216668,wolaitta,word,noun,,284049,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Wolaytta Language')
+216669,wolaytta,word,noun,,284049,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Wolaytta Language')
+438059,wolchok solid tumors 2009 oncology response criteria,phrase,noun,,158415,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438060,wolcott-rallison syndrome,phrase,noun,,284050,,,,,Disease,medicine,,,,medical,Disease Ontology
+438061,wolcott-rallison syndrome,phrase,noun,,284051,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438062,wolf-hirschhorn syndrome,phrase,noun,,284060,,,,,Disease,medicine,,,,medical,Disease Ontology
+438063,wolf-hirschhorn syndrome,phrase,noun,,284061,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438064,wolf-hirschhorn syndrome,phrase,noun,,284062,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438065,wolff-chaikoff phenomenon,phrase,noun,,284065,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+438066,wolff-parkinson-white syndrome,phrase,noun,,284066,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438067,wolff-parkinson-white syndrome,phrase,noun,,284067,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438068,"wolff-parkinson-white syndrome, cattle",phrase,noun,,284068,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438069,"wolff-parkinson-white syndrome, non-human animal",phrase,noun,,284069,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438070,wolffian adnexal tumor,phrase,noun,,116260,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438071,wolffian duct adenocarcinoma,phrase,noun,,284070,,,,,Disease,medicine,,,,medical,Disease Ontology
+438072,wolffian duct adenocarcinoma,phrase,noun,,284071,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438073,wolffian duct adenoma,phrase,noun,,284072,,,,,Disease,medicine,,,,medical,Disease Ontology
+438074,wolffian tumor,phrase,noun,,116261,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438075,wolfram syndrome,phrase,noun,,282806,,,,,Disease,medicine,,,,medical,Disease Ontology
+438076,wolfram syndrome,phrase,noun,,90781,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438077,wolfram syndrome,phrase,noun,,90782,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438078,wolfram syndrome 1,phrase,noun,,90780,,,,,Disease,medicine,,,,medical,Disease Ontology
+438079,wolfram syndrome 1,phrase,noun,,282807,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438080,wolfram syndrome 2,phrase,noun,,282808,,,,,Disease,medicine,,,,medical,Disease Ontology
+438081,wolfram syndrome 2,phrase,noun,,282809,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438082,"wolfram syndrome, mitochondrial form",phrase,noun,,284078,,,,,Disease,medicine,,,,medical,Disease Ontology
+438083,wolfram-like syndrome,phrase,noun,,284079,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216670,wolinella,word,noun,,284080,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438084,wolman disease,phrase,noun,,284083,,,,,Disease,medicine,,,,medical,Disease Ontology
+438085,wolman disease,phrase,noun,,284084,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438086,wolman disease,phrase,noun,,284085,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216671,wolof,word,noun,,284086,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Wolof Language')
+216672,woman,word,noun,,284089,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216673,womb,word,noun,,277394,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Uterus')
+438087,women who have lumpectomy and radiation therapy,phrase,noun,,284101,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438088,women who have mastectomy,phrase,noun,,284102,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438089,women's health initiative,phrase,noun,,282937,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216674,wood,word,noun,,284114,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438090,"wood treater, cabinet-maker and related trades worker",phrase,noun,,284133,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+216675,woodchuck,word,noun,,99788,,,,,,pharmacology,,compound,,medical,NCI Thesaurus (synonym of 'Eastern Woodchuck')
+438091,woodchuck hepatocellular carcinoma,phrase,noun,,284137,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438092,woodhouse-sakati syndrome,phrase,noun,,284157,,,,,Disease,medicine,,,,medical,Disease Ontology
+438093,woodhouse-sakati syndrome,phrase,noun,,284158,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438094,"woodhouse-sakati syndrome, dcaf17-related, golden hamster",phrase,noun,,284159,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216676,woodworkers,word,noun,,284177,,,,,,medicine,,derived,,medical,NCI Thesaurus
+438095,woolly hair,phrase,noun,,284195,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438096,woolly scalp hair,phrase,noun,,284197,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438097,wooly hair nevus,phrase,noun,,284200,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438098,"wooly hair, autosomal recessive 3",phrase,noun,,25371,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438099,wooly hair-palmoplantar keratoderma syndrome,phrase,noun,,284201,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216677,word,word,noun,,262883,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Term')
+438100,word decoding,phrase,noun,,284215,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+438101,word salad,phrase,noun,,284224,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+216678,work,word,noun,,163514,,,,,,medicine,,simple,,medical,NCI Thesaurus
+449593,work-related condition,phrase,noun,,12980,,,,,Diagnosis,medicine,,,ICD-10 Y96,medical,ICD-10 (WHO 2019)
+216679,work-up,word,noun,,284312,,,,,,medicine,,,,medical,NCI Thesaurus
+216680,workflow,word,noun,,284323,,,,,,medicine,,compound,,medical,NCI Thesaurus
+216681,workforce,word,noun,,284324,,,,,,medicine,,compound,,medical,NCI Thesaurus
+216682,worklist,word,noun,,284351,,,,,,medicine,,compound,,medical,NCI Thesaurus
+216683,workplace,word,noun,,284358,,,,,,pharmacology,,compound,,medical,NCI Thesaurus (synonym of 'Worksite')
+216684,worksheet,word,noun,,284362,,,,,,medicine,,compound,,medical,NCI Thesaurus
+216685,workshop,word,noun,,284365,,,,,,medicine,,compound,,medical,NCI Thesaurus
+216686,worksite,word,noun,,284358,,,,,,medicine,,compound,,medical,NCI Thesaurus
+216687,world,word,noun,,284370,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438102,world health organization adverse reaction terminology,phrase,noun,,283253,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+438103,world health organization drug dictionary,phrase,noun,,283256,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438104,wormian bone-multiple fractures-dentinogenesis imperfecta-skeletal dysplasia,phrase,noun,,284406,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438105,wormian bones,phrase,noun,,284407,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+476903,worries,word,noun,,11386,,,,,Diagnosis,medicine,,simple,ICD-10 R45.82,medical,ICD-10 (WHO 2019)
+216688,worry,word,noun,,284418,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216689,worry,word,noun,,284419,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Worry Subscale')
+438106,worry subscale,phrase,noun,,284419,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216690,worse,word,noun,,284436,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438107,worse in evening,phrase,noun,,284440,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+216691,worsened,word,noun,,284444,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Got Worse')
+438108,worsened end-organ perfusion,phrase,noun,,284445,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+216692,worst,word,noun,,284462,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438109,worster-drought syndrome,phrase,noun,,284473,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438110,worth syndrome,phrase,noun,,284484,,,,,Disease,medicine,,,,medical,Disease Ontology
+216693,worthlessness,word,noun,,172004,,,,,,pharmacology,,derived,,medical,Human Phenotype Ontology (synonym of 'Low self-esteem')
+216694,worthlessness,word,noun,,284499,,,,,,medicine,,derived,,medical,NCI Thesaurus
+216695,wortmannin,word,noun,,284504,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216696,wound,word,noun,,154416,,,,,,pharmacology,,simple,,medical,MONDO (diseases) (synonym of 'injury')
+438111,wound botulism,phrase,noun,,284513,,,,,Disease,medicine,,,ICD-10 A48.52,medical,Disease Ontology
+438112,wound botulism,phrase,noun,,284514,,,,,Disease,medicine,,,ICD-10 A48.52,medical,MONDO (diseases)
+438113,wound breakdown,phrase,noun,,284515,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+438114,wound care clinic,phrase,noun,,284516,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+438115,wound complication,phrase,noun,,284517,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438116,wound dehiscence,phrase,noun,,284518,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+438117,wound discharge,phrase,noun,,284519,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+438118,wound dressing material,phrase,noun,,284520,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438119,wound healing,phrase,noun,,284521,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+438120,wound infection,phrase,noun,,284522,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+439817,wound myiasis,phrase,noun,,28352,,,,,Diagnosis,medicine,,,ICD-10 B87.1,medical,ICD-10 (WHO 2019)
+451452,wound myiasis,phrase,noun,,28353,,,,,Diagnosis,medicine,,,ICD-10 B87.1,medical,ICD-10 (WHO 2019)
+438121,wppsi,word,noun,,282309,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438122,wppsi-iv,word,noun,,282310,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438123,wpw,word,noun,,284067,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438124,wrat-3,word,noun,,283398,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438125,wrinkly skin syndrome,phrase,noun,,284608,,,,,Disease,medicine,,,,medical,Disease Ontology
+438126,wrinkly skin syndrome,phrase,noun,,284609,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216697,wrist,word,noun,,284610,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Wrist Joint')
+216698,wrist,word,noun,,54890,,,,,,anatomy,,simple,,medical,Uberon (anatomy) (synonym of 'carpal region')
+438127,wrist arthritis,phrase,noun,,284611,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438128,wrist connective tissue,phrase,noun,,284613,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438129,wrist drop,phrase,noun,,284614,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+467137,wrist drop (acquired),phrase,noun,,6243,,,,,Diagnosis,medicine,,,ICD-10 M21.33,medical,ICD-10 (WHO 2019)
+467139,"wrist drop, left wrist",phrase,noun,,6243,,,,,Diagnosis,medicine,,,ICD-10 M21.332,medical,ICD-10 (WHO 2019)
+467138,"wrist drop, right wrist",phrase,noun,,6243,,,,,Diagnosis,medicine,,,ICD-10 M21.331,medical,ICD-10 (WHO 2019)
+467140,"wrist drop, unspecified wrist",phrase,noun,,6243,,,,,Diagnosis,medicine,,,ICD-10 M21.339,medical,ICD-10 (WHO 2019)
+438130,wrist flexion contracture,phrase,noun,,284615,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438131,wrist fracture,phrase,noun,,284616,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+438132,wrist ganglion,phrase,noun,,284617,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438133,wrist hypermobility,phrase,noun,,284618,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438134,wrist instability,phrase,noun,,284619,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438135,wrist joint,phrase,noun,,284620,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438136,wrist nerve,phrase,noun,,284621,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+443937,wrist or foot drop (acquired),phrase,noun,,6244,,,,,Diagnosis,medicine,,,ICD-10 M21.3,medical,ICD-10 (WHO 2019)
+467136,wrist or foot drop (acquired),phrase,noun,,6243,,,,,Diagnosis,medicine,,,ICD-10 M21.3,medical,ICD-10 (WHO 2019)
+438137,wrist pain,phrase,noun,,284623,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438138,wrist sign,phrase,noun,,284624,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+216699,write,word,noun,,284634,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216700,writer,word,noun,,28575,,,,,,pharmacology,,derived,,medical,NCI Thesaurus (synonym of 'Author')
+438139,writer's cramp,phrase,noun,,284668,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438140,writing disorder,phrase,noun,,284679,,,,,Disease,medicine,,,,medical,Disease Ontology
+438141,wrn inhibitor ro7589831,phrase,noun,,284692,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+216701,wrni,word,noun,,282661,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Werner Syndrome Helicase Inhibitor')
+216702,wrong,word,adj,,151866,,,,,,medicine,,simple,,medical,NCI Thesaurus
+449453,wrong fluid used in infusion,phrase,noun,,75076,,,,,Diagnosis,medicine,,,ICD-10 Y65.1,medical,ICD-10 (WHO 2019)
+493437,wrong fluid used in infusion,phrase,noun,,75077,,,,,Diagnosis,medicine,,,ICD-10 Y65.1,medical,ICD-10 (WHO 2019)
+438142,wrs,word,noun,,284051,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438143,wrwf,word,noun,,178246,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438144,wrwf,word,noun,,178247,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438145,wrwffr,word,noun,,117058,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438146,wrwfxlr,word,noun,,178247,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438147,ws,word,noun,,282658,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438148,ws,word,noun,,282659,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438149,ws,word,noun,,282660,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438150,ws1,word,noun,,281109,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438151,ws1,word,noun,,281110,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438152,ws2,word,noun,,281112,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438153,ws2-oa,word,noun,,197432,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438154,ws2a,word,noun,,281114,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438155,ws2a,word,noun,,281115,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438156,ws2b,word,noun,,281116,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438157,ws2c,word,noun,,281117,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438158,ws2c,word,noun,,281118,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438159,ws2e,word,noun,,281119,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438160,ws2e,word,noun,,281120,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438161,ws3,word,noun,,281121,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438162,ws3,word,noun,,281122,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438163,ws4,word,noun,,281137,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438164,ws4a,word,noun,,281124,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438165,ws4a,word,noun,,281125,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438166,ws4b,word,noun,,281126,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438167,ws4b,word,noun,,281127,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438168,ws4c,word,noun,,281128,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438169,ws4c,word,noun,,281129,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438170,wsdl,word,noun,,282270,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438171,wss,word,noun,,284608,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438172,wss,word,noun,,284609,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438173,wt limb-blood syndrome,phrase,noun,,284725,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438174,wt1,word,noun,,141347,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438175,wt1 124-138 peptide vaccine,phrase,noun,,284726,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438176,wt1 126-134 peptide vaccine,phrase,noun,,284727,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438177,wt1 235-243 peptide vaccine,phrase,noun,,284728,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438178,wt1 247-261 peptide vaccine,phrase,noun,,284729,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438179,wt1 analog peptide vaccine,phrase,noun,,284730,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438180,wt1 peptide vaccine ocv-501,phrase,noun,,284731,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438181,wt1 peptide vaccine wt2725,phrase,noun,,284732,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438182,wt1 peptide-loaded allogeneic dendritic cell vaccine,phrase,noun,,284733,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438183,wt1 protein-derived peptide vaccine dsp-7888,phrase,noun,,284734,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438184,wt1-sensitized allogeneic t-lymphocytes,phrase,noun,,284735,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438185,wt1/prame/survivin-specific cytotoxic t-lymphocytes,phrase,noun,,284736,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438186,wt1/prame/survivin-specific t-cells mana-312,phrase,noun,,284737,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438187,wt1/psma/htert-encoding plasmid dna ino-5401,phrase,noun,,284738,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438188,wt6,word,noun,,283609,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438189,wtli,word,noun,,234496,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438190,wts,word,noun,,187032,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438191,wts,word,noun,,187033,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438192,wtss,word,noun,,235162,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+216703,wu-ling-san,word,noun,,284739,,,,,,medicine,,,,medical,NCI Thesaurus
+438193,wucam,word,noun,,260510,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+216704,wuchereria,word,noun,,284740,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216705,wuhan,word,noun,,284742,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216706,wulst,word,noun,,284745,,,,,,anatomy,,simple,,medical,Uberon (anatomy)
+438194,wv,word,noun,,282715,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438195,wv-rt,word,noun,,283299,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438196,wvrt,word,noun,,283299,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438197,wvs,word,noun,,282259,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438198,wvsci,word,noun,,283293,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438199,wws,word,noun,,281354,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438200,wwtr1-camta1 fusion protein expression,phrase,noun,,284747,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438201,wxs,word,noun,,66963,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Medical Action Ontology
+438202,wxs,word,noun,,282669,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+216707,wyacort,word,noun,,179305,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Methylprednisolone')
+438203,wyburn-mason syndrome,phrase,noun,,52054,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216708,wymox,word,noun,,16325,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Amoxicillin')
+216709,wyoming,word,noun,,284752,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216710,wytensin,word,noun,,136007,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Guanabenz Acetate')
+438204,wzs,word,noun,,201117,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)

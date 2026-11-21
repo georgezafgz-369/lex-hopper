@@ -1,0 +1,645 @@
+id,word,type,pos,sense,meaning_id,synonyms,antonyms,related,origin,category,subject,usage,structure,code,domain,source
+183197,z,word,noun,,198512,omega,,,,,,,simple,,general,WordNet
+252669,z,word,noun,1,198513,omega,,,,,,,simple,,general,WordNet
+183198,z,word,noun,2,112252,"ezed,izzard",,,,,linguistics,,simple,,general,WordNet
+247365,z-axis,word,noun,1,285590,,,,,,,,,,general,WordNet
+251379,zaar,word,noun,1,31972,"bade,bokkos,daffo,ron,sayanci,warji",,,,,linguistics,,simple,,general,WordNet
+183199,zabaglione,word,noun,1,236932,sabayon,,,,,,,simple,,general,WordNet
+260489,zabrze,word,noun,1,285601,,,,,,geography,,simple,,general,WordNet
+273896,zacharias,word,noun,1,285603,zechariah,,,,,history,,simple,,general,WordNet
+248798,zacharias,word,noun,2,43899,"book of zachariah,zechariah",,,,,religion,,simple,,general,WordNet
+272996,zachary taylor,phrase,noun,1,218687,"president taylor,taylor",,,,,politics,,,,general,WordNet
+183200,zaftig,word,adj,1,50173,"buxom,zoftig",,,,,,,simple,,general,WordNet
+183201,zag,word,noun,1,285605,"zig,zigzag",,,,,,,simple,,general,WordNet
+183202,zaglossus,word,noun,1,130691,genus zaglossus,,,,,,,simple,,general,WordNet
+259689,zagreb,word,noun,1,285606,,,,,,,,simple,,general,WordNet
+183203,zags,word,noun,,285605,"zig,zigzag",,,,,,,simple,,general,WordNet
+273883,zaharias,word,noun,1,31264,"babe didrikson,babe zaharias,didrikson,mildred ella didrikson,mildred ella didrikson zaharias",,,,,sports,,simple,,general,WordNet
+183204,zaire,word,noun,1,285608,,,zairean,,,finance,,simple,,general,WordNet
+183205,zaire,word,noun,2,36388,"belgian congo,congo,democratic republic of the congo",,zairean,,,politics,,simple,,general,WordNet
+261889,zaire river,phrase,noun,1,74014,"congo,congo river",,,,,geography,,,,general,WordNet
+323080,zairean,word,adj,1,285609,zairese,,zaire,,,,,simple,,general,WordNet
+263715,zairean,word,noun,1,285612,zairese,,,,,geography,,simple,,general,WordNet
+183206,zaires,word,noun,,285608,,,,,,finance,,simple,,general,WordNet
+183207,zaires,word,noun,,36388,"belgian congo,congo,democratic republic of the congo",,,,,politics,,simple,,general,WordNet
+323081,zairese,word,adj,1,285609,zairean,,,,,,,simple,,general,WordNet
+263714,zairese,word,noun,1,285612,zairean,,,,,geography,,simple,,general,WordNet
+291109,zairese monetary unit,phrase,noun,1,285613,,,,,,finance,,,,general,WordNet
+183208,zakat,word,noun,1,285614,,,,,,religion,,simple,,general,WordNet
+234729,zalcitabine,word,noun,1,84464,"ddc,ddi,didanosine,dideoxycytosine,dideoxyinosine",,,,,military,,simple,,general,WordNet
+183209,zalophus,word,noun,1,108741,"eumetopias,genus eumetopias,genus zalophus",,,,,oceanography,,simple,,general,WordNet
+227375,zalophus californianus,phrase,noun,1,51327,"california sea lion,zalophus californicus",,,,,zoology,,,,general,WordNet
+227376,zalophus californicus,phrase,noun,1,51327,"california sea lion,zalophus californianus",,,,,zoology,,,,general,WordNet
+227378,zalophus lobatus,phrase,noun,1,28522,australian sea lion,,,,,oceanography,,,,general,WordNet
+222027,zama,word,noun,1,34753,battle of zama,,,,,military,,simple,,general,WordNet
+183210,zaman,word,noun,1,12880,"albizia saman,monkey pod,monkeypod,rain tree,saman,samen",,,,,botany,,simple,,general,WordNet
+183211,zamang,word,noun,1,12880,"albizia saman,monkey pod,monkeypod,rain tree,saman,samen",,,,,botany,,simple,,general,WordNet
+183212,zambezi,word,noun,1,79913,"crocodile river,limpopo,zambezi river",,,,,oceanography,,simple,,general,WordNet
+262966,zambezi river,phrase,noun,1,79913,"crocodile river,limpopo,zambezi",,,,,oceanography,,,,general,WordNet
+183213,zambia,word,noun,1,195652,"northern rhodesia,republic of zambia",,zambian,,,politics,,simple,,general,WordNet
+183215,zambian,word,adj,1,285622,,,zambia,,,,,simple,,general,WordNet
+183214,zambian,word,noun,1,285623,,,,,,geography,,simple,,general,WordNet
+290925,zambian kwacha,phrase,noun,1,163247,kwacha,,,,,finance,,,,general,WordNet
+290924,zambian monetary unit,phrase,noun,1,285624,,,,,,finance,,,,general,WordNet
+183216,zambians,word,noun,,285623,,,,,,geography,,simple,,general,WordNet
+242223,zamboni,word,noun,1,285625,,,,,,engineering,,simple,,general,WordNet
+183217,zamia,word,noun,1,285626,,,,,,,,simple,,general,WordNet
+274659,zamia family,phrase,noun,1,115433,"family zamiaceae,zamiaceae",,,,,,,,,general,WordNet
+274663,zamia pumila,phrase,noun,1,76091,"coontie,florida arrowroot,seminole bread",,,,,,,,,general,WordNet
+183218,zamiaceae,word,noun,1,115433,"family zamiaceae,zamia family",,,,,,,simple,,general,WordNet
+183219,zamias,word,noun,,285626,,,,,,,,simple,,general,WordNet
+269208,zane grey,phrase,noun,1,135400,grey,,,,,literature,,,,general,WordNet
+273889,zangwill,word,noun,1,159054,israel zangwill,,,,,literature,,simple,,general,WordNet
+183220,zanier,word,adj,,68616,"cockamamie,cockamamy,goofy,sappy,silly,wacky,whacky",,,,,,,derived,,general,WordNet
+183221,zanier,word,adj,,48681,"buffoonish,clownish,clownlike",,,,,,,derived,,general,WordNet
+183222,zanies,word,noun,,285630,,,,,,,,simple,,general,WordNet
+183223,zanies,word,noun,,45046,"bozo,cuckoo,fathead,geese,goof,goofball,goose,jackass",,,,,,,simple,,general,WordNet
+183224,zaniest,word,adj,,68616,"cockamamie,cockamamy,goofy,sappy,silly,wacky,whacky",,,,,,,simple,,general,WordNet
+183225,zaniest,word,adj,,48681,"buffoonish,clownish,clownlike",,,,,,,simple,,general,WordNet
+183226,zannichellia,word,noun,1,130693,genus zannichellia,,,,,botany,,simple,,general,WordNet
+283854,zannichellia palustris,phrase,noun,1,144444,horned pondweed,,,,,,,,,general,WordNet
+183227,zannichelliaceae,word,noun,1,115434,family zannichelliaceae,,,,,,,simple,,general,WordNet
+239374,zantac,word,noun,1,226087,ranitidine,,,,,business,,simple,,general,WordNet
+183228,zantedeschia,word,noun,1,130694,genus zantedeschia,,,,,,,simple,,general,WordNet
+276337,zantedeschia aethiopica,phrase,noun,1,25352,"arum lily,calla,calla lily",,,,,agriculture,,,,general,WordNet
+276339,zantedeschia rehmanii,phrase,noun,1,212397,pink calla,,,,,,,,,general,WordNet
+183229,zanthoxylum,word,noun,1,130695,genus zanthoxylum,,,,,botany,,simple,,general,WordNet
+284802,zanthoxylum americanum,phrase,noun,1,240243,"sea ash,toothache tree,zanthoxylum fraxineum",,,,,botany,,,,general,WordNet
+284807,zanthoxylum clava-herculis,phrase,noun,1,140945,"hercules'-club,hercules'-clubs,hercules-club",,,,,gardening,,,,general,WordNet
+284809,zanthoxylum flavum,phrase,noun,1,238375,"satinwood,west indian satinwood",,,,,botany,,,,general,WordNet
+284803,zanthoxylum fraxineum,phrase,noun,1,240243,"sea ash,toothache tree,zanthoxylum americanum",,,,,botany,,,,general,WordNet
+273891,zanuck,word,noun,1,83912,"darryl francis zanuck,darryl zanuck",,,,,theatre_film,,simple,,general,WordNet
+183232,zany,word,adj,1,68616,"cockamamie,cockamamy,goofy,sappy,silly,wacky,whacky",,,,,,,simple,,general,WordNet
+317611,zany,word,adj,2,48681,"buffoonish,clownish,clownlike",,,,,,,simple,,general,WordNet
+183230,zany,word,noun,1,285630,,,,,,,,simple,,general,WordNet
+183231,zany,word,noun,2,45046,"bozo,cuckoo,fathead,geese,goof,goofball,goose,jackass",,,,,,,simple,,general,WordNet
+183233,zanzibar,word,noun,1,285634,,,,,,politics,,simple,,general,WordNet
+295743,zanzibar copal,phrase,noun,1,18211,anime,,,,,botany,,,,general,WordNet
+183234,zap,word,noun,1,285635,,,,,,theatre_film,,simple,,general,WordNet
+183235,zap,word,verb,1,285637,,,zapper,,,,,simple,,general,WordNet
+183236,zap,word,verb,2,278094,vaporize,,zapper,,,electronics,,simple,,general,WordNet
+303479,zap,word,verb,3,27433,"atomise,nuke",,zapper,,,military,,simple,,general,WordNet
+299403,zap,word,verb,4,182173,"micro-cook,microwave,nuke",,zapper,,,culinary,,simple,,general,WordNet
+273894,zapata,word,noun,1,103507,emiliano zapata,,,,,,,simple,,general,WordNet
+183237,zapodidae,word,noun,1,115435,family zapodidae,,,,,,,simple,,general,WordNet
+183240,zapotec,word,adj,1,285640,,,,,,sociology,,simple,,general,WordNet
+183238,zapotec,word,noun,1,285642,,,,,,sociology,,simple,,general,WordNet
+183239,zapotec,word,noun,2,285643,,,,,,linguistics,,simple,,general,WordNet
+183241,zapotecan,word,noun,1,285642,,,,,,sociology,,simple,,general,WordNet
+183242,zapotecan,word,noun,2,285643,,,,,,linguistics,,simple,,general,WordNet
+183243,zapped,word,verb,,285637,,,,,,,,simple,,general,WordNet
+183244,zapped,word,verb,,278094,vaporize,,,,,electronics,,simple,,general,WordNet
+183245,zapped,word,verb,,27433,"atomise,nuke",,,,,military,,simple,,general,WordNet
+242224,zapper,word,noun,1,285644,,,zap,,,electronics,,simple,,general,WordNet
+183246,zapping,word,verb,,285637,,,,,,,,simple,,general,WordNet
+183247,zapping,word,verb,,278094,vaporize,,,,,electronics,,simple,,general,WordNet
+183248,zapping,word,verb,,27433,"atomise,nuke",,,,,military,,simple,,general,WordNet
+183249,zaps,word,noun,,285635,,,,,,theatre_film,,simple,,general,WordNet
+183250,zaps,word,verb,,285637,,,,,,,,simple,,general,WordNet
+183251,zaps,word,verb,,278094,vaporize,,,,,electronics,,simple,,general,WordNet
+183252,zapus,word,noun,1,130696,genus zapus,,,,,,,simple,,general,WordNet
+229531,zapus hudsonius,phrase,noun,1,178424,meadow jumping mouse,,,,,,,,,general,WordNet
+260806,zaragoza,word,noun,1,238161,saragossa,,,,,geography,,simple,,general,WordNet
+273925,zarathustra,word,noun,1,285646,zoroaster,,,,,,,simple,,general,WordNet
+183253,zarf,word,noun,1,285648,,,,,,drinks,,simple,,general,WordNet
+183254,zarfs,word,noun,,285648,,,,,,drinks,,simple,,general,WordNet
+260429,zaria,word,noun,1,285649,,,,,,business,,simple,,general,WordNet
+235389,zarontin,word,noun,1,103464,"emeside,ethosuximide",,,,,business,,simple,,general,WordNet
+263099,zarpanit,word,noun,1,238276,"sarpanitu,zirbanit",,,,,,,simple,,general,WordNet
+260141,zarqa,word,noun,1,30887,az zarqa,,,,,geography,,simple,,general,WordNet
+281261,zauschneria californica,phrase,noun,1,51314,"california fuchsia,epilobium canum canum,humming bird's trumpet",,,,,botany,,,,general,WordNet
+183255,zayin,word,noun,1,285650,,,,,,linguistics,,simple,,general,WordNet
+183256,zayins,word,noun,,285650,,,,,,linguistics,,simple,,general,WordNet
+290670,zb,word,noun,1,285651,zettabit,,,,,,,simple,,general,WordNet
+290667,zb,word,noun,2,285652,zettabyte,,,,,computing,,simple,,general,WordNet
+290664,zb,word,noun,3,285653,"zebibyte,zettabyte,zib",,,,,computing,,simple,,general,WordNet
+290669,zbit,word,noun,1,285651,zettabit,,,,,,,simple,,general,WordNet
+232503,zdv,word,noun,1,30982,"azt,retrovir,zidovudine",,,,,business,,simple,,general,WordNet
+183257,zea,word,noun,1,130697,genus zea,,,,,,,simple,,general,WordNet
+279437,zea mays,phrase,noun,1,76605,"corn,indian corn,maize",,,,,agriculture,,,,general,WordNet
+279455,zea mays amylacea,phrase,noun,1,120799,"flour corn,soft corn,squaw corn",,,,,,,,,general,WordNet
+279456,zea mays everta,phrase,noun,1,215842,popcorn,,,,,,,,,general,WordNet
+279447,zea mays indentata,phrase,noun,1,88033,dent corn,,,,,,,,,general,WordNet
+279451,zea mays indurata,phrase,noun,1,120485,"flint corn,flint maize,yankee corn",,,,,,,,,general,WordNet
+279444,zea mays rugosa,phrase,noun,1,135230,"green corn,sugar corn,sweet corn,sweet corn plant,zea saccharata",,,,,nutrition,,,,general,WordNet
+279445,zea saccharata,phrase,noun,1,135230,"green corn,sugar corn,sweet corn,sweet corn plant,zea mays rugosa",,,,,nutrition,,,,general,WordNet
+183258,zeal,word,noun,1,23750,"ardor,ardour,elan",,zealous,,,,,simple,,general,WordNet
+183259,zeal,word,noun,2,285662,,,zealous,,,,,simple,,general,WordNet
+183260,zeal,word,noun,3,99301,"eagerness,forwardness,readiness",,zealous,,,,,simple,,general,WordNet
+183261,zealand,word,noun,1,241223,"seeland,sjaelland",,,,,geography,,simple,,general,WordNet
+183262,zealander,word,noun,1,285664,,,,,,geography,,derived,,general,WordNet
+183263,zealanders,word,noun,,285664,,,,,,geography,,derived,,general,WordNet
+183264,zealot,word,noun,1,285665,,,,,,history,,simple,,general,WordNet
+183265,zealot,word,noun,2,97875,"drumbeater,partisan",,,,,,,simple,,general,WordNet
+183266,zealotries,word,noun,,115496,"fanaticism,fanatism",,,,,,,simple,,general,WordNet
+183267,zealotry,word,noun,1,115496,"fanaticism,fanatism",,,,,,,simple,,general,WordNet
+183268,zealots,word,noun,,285665,,,,,,history,,simple,,general,WordNet
+183269,zealots,word,noun,,97875,"drumbeater,partisan",,,,,,,simple,,general,WordNet
+183270,zealous,word,adj,1,30402,avid,,zeal,,,,,derived,,general,WordNet
+183271,zealously,word,adv,1,285666,,,,,,,,derived,,general,WordNet
+183272,zeals,word,noun,,23750,"ardor,ardour,elan",,,,,,,simple,,general,WordNet
+183273,zeals,word,noun,,285662,,,,,,,,simple,,general,WordNet
+183274,zeals,word,noun,,99301,"eagerness,forwardness,readiness",,,,,,,simple,,general,WordNet
+183275,zeaxanthin,word,noun,1,285668,,,,,,,,simple,,general,WordNet
+290671,zebibit,word,noun,1,285669,zibit,,,,,,,simple,,general,WordNet
+290663,zebibyte,word,noun,1,285653,"zb,zettabyte,zib",,,,,computing,,simple,,general,WordNet
+183276,zebra,word,noun,1,285670,,,,,,,,simple,,general,WordNet
+238558,zebra crossing,phrase,noun,1,207807,pedestrian crossing,,,,,,,,,general,WordNet
+223325,zebra finch,phrase,noun,1,214658,poephila castanotis,,,,,fashion,,,,general,WordNet
+226469,zebra mussel,phrase,noun,1,97106,dreissena polymorpha,,,,,nutrition,,,,general,WordNet
+278572,zebra orchid,phrase,noun,1,50953,caladenia cairnsiana,,,,,botany,,,,general,WordNet
+224475,zebra-tailed lizard,phrase,noun,1,51592,"callisaurus draconoides,gridiron-tailed lizard",,,,,zoology,,,,general,WordNet
+183277,zebras,word,noun,,285670,,,,,,,,simple,,general,WordNet
+183278,zebrawood,word,noun,1,285675,,,,,,botany,,compound,,general,WordNet
+183279,zebrawood,word,noun,2,285676,zebrawood tree,,,,,botany,,compound,,general,WordNet
+275922,zebrawood family,phrase,noun,1,74258,"connaraceae,family connaraceae",,,,,botany,,,,general,WordNet
+275920,zebrawood tree,phrase,noun,1,285676,zebrawood,,,,,botany,,,,general,WordNet
+183280,zebu,word,noun,1,285677,,,,,,animal_husbandry,,simple,,general,WordNet
+183281,zebus,word,noun,,285677,,,,,,animal_husbandry,,simple,,general,WordNet
+183282,zechariah,word,noun,1,285603,zacharias,,,,,history,,simple,,general,WordNet
+183283,zechariah,word,noun,2,43899,"book of zachariah,zacharias",,,,,religion,,simple,,general,WordNet
+183284,zed,word,noun,1,112252,"ezed,izzard,zee,zs",,,,,linguistics,,simple,,general,WordNet
+183285,zeds,word,noun,,112252,"ezed,izzard,zees,zs",,,,,linguistics,,simple,,general,WordNet
+183286,zee,word,noun,1,112252,"ezed,izzard,zs",,,,,linguistics,,simple,,general,WordNet
+273897,zeeman,word,noun,1,211997,pieter zeeman,,,,,physics,,simple,,general,WordNet
+183287,zees,word,noun,,112252,"ezed,izzard,zed,zs",,,,,linguistics,,simple,,general,WordNet
+183288,zeidae,word,noun,1,115436,family zeidae,,,,,zoology,,simple,,general,WordNet
+183289,zeitgeist,word,noun,1,285682,,,,,,,,simple,,general,WordNet
+269386,zellig harris,phrase,noun,1,138347,"harris,zellig sabbatai harris",,,,,linguistics,,,,general,WordNet
+269387,zellig sabbatai harris,phrase,noun,1,138347,"harris,zellig harris",,,,,linguistics,,,,general,WordNet
+183290,zen,word,noun,1,285692,zen buddhism,,,,,education,,simple,,general,WordNet
+183291,zen,word,noun,2,285693,zen buddhism,,,,,religion,,simple,,general,WordNet
+183292,zen,word,noun,3,5887,"acid,back breaker,battery-acid,dose,dot,elvis,loony toons,lucy in the sky with diamonds",,,,,nutrition,,simple,,general,WordNet
+256117,zen buddhism,phrase,noun,1,285692,zen,,,,,education,,,,general,WordNet
+247964,zen buddhism,phrase,noun,2,285693,zen,,,,,religion,,,,general,WordNet
+263544,zen buddhist,phrase,noun,1,285694,,,zen,,,religion,,,,general,WordNet
+183293,zenaidura,word,noun,1,130698,genus zenaidura,,,,,,,simple,,general,WordNet
+225505,zenaidura macroura,phrase,noun,1,186654,mourning dove,,,,,,,,,general,WordNet
+183294,zend,word,noun,1,30375,"avestan,gathic",,,,,history,,simple,,general,WordNet
+248735,zend-avesta,word,noun,1,30373,avesta,,,,,history,,,,general,WordNet
+183295,zenith,word,noun,1,285697,,nadir,zenithal,,,astronomy,,simple,,general,WordNet
+183296,zenithal,word,adj,1,285698,,,zenith,,,,,derived,,general,WordNet
+183297,zeniths,word,noun,,285697,,,,,,astronomy,,simple,,general,WordNet
+273901,zeno,word,noun,1,285699,zeno of elea,,,,,history,,simple,,general,WordNet
+273899,zeno,word,noun,2,285700,zeno of citium,,,,,education,,simple,,general,WordNet
+273900,zeno of citium,phrase,noun,1,285700,zeno,,,,,education,,,,general,WordNet
+273902,zeno of elea,phrase,noun,1,285699,zeno,,,,,history,,,,general,WordNet
+183298,zeolite,word,noun,1,285702,,,,,,geology,,simple,,general,WordNet
+183299,zeolites,word,noun,,285702,,,,,,geology,,simple,,general,WordNet
+222779,zeomorphi,word,noun,1,200364,order zeomorphi,,,,,,,simple,,general,WordNet
+183300,zep,word,noun,1,43381,"bomber,cuban sandwich,grinder,hero,hero sandwich,hoagie,hoagy,italian sandwich",,,,,,,simple,,general,WordNet
+183301,zephaniah,word,noun,1,249962,sophonias,,,,,history,,simple,,general,WordNet
+183302,zephaniah,word,noun,2,43900,"book of zephaniah,sophonias",,,,,religion,,simple,,general,WordNet
+183303,zephyr,word,noun,1,12310,"air,breeze,gentle wind",,,,,meteorology,,simple,,general,WordNet
+183304,zephyr,word,noun,2,285703,,,,,,mythology,,simple,,general,WordNet
+183305,zephyrs,word,noun,,12310,"air,breeze,gentle wind",,,,,meteorology,,simple,,general,WordNet
+183306,zephyrs,word,noun,,285703,,,,,,mythology,,simple,,general,WordNet
+183307,zeppelin,word,noun,1,77829,count ferdinand von zeppelin,,,,,automotive,,simple,,general,WordNet
+183308,zeppelin,word,noun,2,134336,graf zeppelin,,,,,military,,simple,,general,WordNet
+183309,zeppelins,word,noun,,77829,count ferdinand von zeppelin,,,,,automotive,,simple,,general,WordNet
+183310,zeppelins,word,noun,,134336,graf zeppelin,,,,,military,,simple,,general,WordNet
+270902,zeppo,word,noun,1,140925,"herbert marx,marx",,,,,,,simple,,general,WordNet
+320877,zero,word,adj,1,285709,,,,,,,,simple,,general,WordNet
+321345,zero,word,adj,2,285711,,,,,,,,simple,,general,WordNet
+321077,zero,word,adj,3,285713,,,,,,,,simple,,general,WordNet
+323102,zero,word,adj,4,285714,,,,,,,,simple,,general,WordNet
+183311,zero,word,noun,1,28269,"aught,cipher,cypher,goose egg,nada,naught,nil,nix",,,,,,,simple,,general,WordNet
+183312,zero,word,noun,2,64885,"cipher,cypher,nought",,,,,mathematics,,simple,,general,WordNet
+183313,zero,word,noun,3,285717,zero point,,,,,,,simple,,general,WordNet
+242226,zero,word,noun,4,285718,,,,,,meteorology,,simple,,general,WordNet
+299283,zero,word,verb,1,285719,,,,,,music,,simple,,general,WordNet
+299281,zero,word,verb,2,285720,,,,,,military,,simple,,general,WordNet
+289462,zero coupon bond,phrase,noun,1,285722,zero-coupon bond,,,,,police,,,,general,WordNet
+289927,zero coupon security,phrase,noun,1,285723,zero-coupon security,,,,,police,,,,general,WordNet
+297393,zero hour,phrase,noun,1,285724,,,,,,,,,,general,WordNet
+303606,zero in,phrasal verb,verb,1,143728,"home in,range in",,,,Phrasal verb,,phrasal_verb,,,general,WordNet
+299282,zero in,phrasal verb,verb,2,285720,zeroed,,,,Phrasal verb,military,phrasal_verb,,,general,WordNet
+246795,zero point,phrase,noun,1,285717,zero,,,,,,,,,general,WordNet
+247897,zero tolerance,idiom,noun,1,285725,,,,,Idiom,law,idiom,,,general,WordNet
+289463,zero-coupon bond,phrase,noun,1,285722,zero coupon bond,,,,,police,,,,general,WordNet
+289926,zero-coupon security,phrase,noun,1,285723,zero coupon security,,,,,police,,,,general,WordNet
+218875,zero-sum game,phrase,noun,1,285727,,,,,,sports,,,,general,WordNet
+249921,zero-tolerance policy,phrase,noun,1,285728,,,,,,,,,,general,WordNet
+183314,zeroed,word,verb,,285719,,,,,,music,,simple,,general,WordNet
+183315,zeroed,word,verb,,285720,zero in,,,,,military,,simple,,general,WordNet
+183316,zeroes,word,noun,,28269,"aught,cipher,cypher,goose egg,nada,naught,nil,nix",,,,,,,simple,,general,WordNet
+183317,zeroes,word,noun,,64885,"cipher,cypher,nought",,,,,mathematics,,simple,,general,WordNet
+183318,zeroes,word,noun,,285717,zero point,,,,,,,simple,,general,WordNet
+183319,zeroing,word,verb,,285719,,,,,,music,,simple,,general,WordNet
+183320,zeroing,word,verb,,285720,zero in,,,,,military,,simple,,general,WordNet
+183321,zeros,word,noun,,28269,"aught,cipher,cypher,goose egg,nada,naught,nil,nix",,,,,,,simple,,general,WordNet
+183322,zeros,word,noun,,64885,"cipher,cypher,nought",,,,,mathematics,,simple,,general,WordNet
+183323,zeros,word,noun,,285717,zero point,,,,,,,simple,,general,WordNet
+183324,zeroth,word,adj,1,285730,,,,,,,,simple,,general,WordNet
+183325,zest,word,noun,1,136460,"gusto,relish,zestfulness",,zesty,,,,,simple,,general,WordNet
+183326,zest,word,noun,2,193798,"nip,piquance,piquancy,piquantness,tang,tanginess",,zesty,,,baking,,simple,,general,WordNet
+183327,zest,word,verb,1,251408,"spice,spice up",,,,,culinary,,simple,,general,WordNet
+183328,zested,word,verb,,251408,"spice,spice up",,,,,culinary,,simple,,general,WordNet
+183329,zestful,word,adj,1,33542,"barmy,yeasty,zesty",,zestfulness,,,,,derived,,general,WordNet
+183330,zestfully,word,adv,1,285732,zestily,,,,,,,derived,,general,WordNet
+183331,zestfulness,word,noun,1,136460,"gusto,relish,zest",,zestful,,,,,derived,,general,WordNet
+324684,zestily,word,adv,1,285732,zestfully,,,,,,,derived,,general,WordNet
+183332,zesting,word,verb,,251408,"spice,spice up",,,,,culinary,,simple,,general,WordNet
+237335,zestril,word,noun,1,169605,"lisinopril,prinival",,,,,business,,simple,,general,WordNet
+183333,zests,word,noun,,136460,"gusto,relish,zestfulness",,,,,,,simple,,general,WordNet
+183334,zests,word,noun,,193798,"nip,piquance,piquancy,piquantness,tang,tanginess",,,,,baking,,simple,,general,WordNet
+183335,zests,word,verb,,251408,"spice,spice up",,,,,culinary,,simple,,general,WordNet
+183336,zesty,word,adj,1,212562,"piquant,savory,savoury,spicy",,zest,,,,,derived,,general,WordNet
+183337,zesty,word,adj,2,33542,"barmy,yeasty,zestful",,zest,,,,,derived,,general,WordNet
+183338,zeta,word,noun,1,285734,,,,,,linguistics,,simple,,general,WordNet
+183339,zetas,word,noun,,285734,,,,,,linguistics,,simple,,general,WordNet
+260284,zetland,word,noun,1,244079,"shetland,shetland islands",,,,,geography,,simple,,general,WordNet
+290668,zettabit,word,noun,1,285651,"zb,zbit",,,,,,,simple,,general,WordNet
+290666,zettabyte,word,noun,1,285652,zb,,,,,computing,,simple,,general,WordNet
+290662,zettabyte,word,noun,2,285653,"zb,zebibyte,zib",,,,,computing,,simple,,general,WordNet
+183340,zeugma,word,noun,1,285738,,,,,,,,simple,,general,WordNet
+183341,zeugmas,word,noun,,285738,,,,,,,,simple,,general,WordNet
+183342,zeus,word,noun,1,285741,,,,,,mythology,,simple,,general,WordNet
+183343,zeus,word,noun,2,130699,genus zeus,,,,,,,simple,,general,WordNet
+222784,zeus faber,phrase,noun,1,160298,john dory,,,,,,,,,general,WordNet
+258090,zhou,word,noun,1,63559,"chou,chou dynasty,choux,chow,chow dynasty,zhou dynasty",,,,,history,,simple,,general,WordNet
+258091,zhou dynasty,phrase,noun,1,63559,"chou,chou dynasty,choux,chow,chow dynasty,zhou",,,,,history,,,,general,WordNet
+273905,zhou en-lai,phrase,noun,1,63561,chou en-lai,,,,,,,,,general,WordNet
+262967,zhu jiang,phrase,noun,1,52802,"canton river,chu kiang,pearl river",,,,,oceanography,,,,general,WordNet
+251137,zhuang,word,noun,1,40599,"black tai,bouyei,buyi,central thai,chinese shan,dehong dai,kam muang,khamti",,,,,linguistics,,simple,,general,WordNet
+273907,zhukov,word,noun,1,130858,"georgi konstantinovich zhukov,georgi zhukov",,,,,,,simple,,general,WordNet
+290665,zib,word,noun,1,285653,"zb,zebibyte,zettabyte",,,,,computing,,simple,,general,WordNet
+290672,zibit,word,noun,1,285669,zebibit,,,,,,,simple,,general,WordNet
+232501,zidovudine,word,noun,1,30982,"azt,retrovir,zdv",,,,,business,,simple,,general,WordNet
+273910,ziegfeld,word,noun,1,120545,"flo ziegfeld,florenz ziegfeld",,,,,,,simple,,general,WordNet
+251550,ziegfeld follies,phrase,noun,1,285747,,,,,,,,,,general,WordNet
+273913,ziegler,word,noun,1,161343,karl waldemar ziegler,,,,,chemistry,,simple,,general,WordNet
+183344,zig,word,noun,1,285605,zag,,,,,,,simple,,general,WordNet
+321499,zig-zag,word,adj,1,285749,zigzag,,zigzag,,,mathematics,,,,general,WordNet
+282406,zigadene,word,noun,1,84879,death camas,,,,,botany,,simple,,general,WordNet
+282403,zigadenus,word,noun,1,130700,genus zigadenus,,,,,botany,,simple,,general,WordNet
+282408,zigadenus elegans,phrase,noun,1,13593,alkali grass,,,,,botany,,,,general,WordNet
+282410,zigadenus glaucus,phrase,noun,1,283085,white camas,,,,,botany,,,,general,WordNet
+282412,zigadenus nuttalli,phrase,noun,1,214857,poison camas,,,,,botany,,,,general,WordNet
+282414,zigadenus venenosus,phrase,noun,1,134786,"grassy death camas,zigadenus venenosus gramineus",,,,,animal_husbandry,,,,general,WordNet
+282415,zigadenus venenosus gramineus,phrase,noun,1,134786,"grassy death camas,zigadenus venenosus",,,,,animal_husbandry,,,,general,WordNet
+183345,ziggurat,word,noun,1,285751,"zikkurat,zikurat",,,,,history,,simple,,general,WordNet
+183346,ziggurats,word,noun,,285751,"zikkurat,zikurat",,,,,history,,simple,,general,WordNet
+183347,zigs,word,noun,,285605,"zag,zigzag",,,,,,,simple,,general,WordNet
+183350,zigzag,word,adj,1,285749,zig-zag,,,,,mathematics,,simple,,general,WordNet
+324685,zigzag,word,adv,1,285752,,,,,,,,simple,,general,WordNet
+183348,zigzag,word,noun,1,285605,"zag,zigs",,zig-zag,,,,,simple,,general,WordNet
+183349,zigzag,word,verb,1,78973,crank,,,,,tourism,,simple,,general,WordNet
+278343,zigzag goldenrod,phrase,noun,1,44070,"boott's goldenrod,broad leaved goldenrod,elliott's goldenrod,ohio goldenrod,rough-stemmed goldenrod,showy goldenrod,tall goldenrod",,,,,,,,,general,WordNet
+183351,zigzagged,word,verb,,78973,crank,,,,,tourism,,simple,,general,WordNet
+183352,zigzagging,word,verb,,78973,crank,,,,,tourism,,simple,,general,WordNet
+183353,zigzags,word,noun,,285605,"zag,zigs",,,,,,,simple,,general,WordNet
+183354,zigzags,word,verb,,78973,crank,,,,,tourism,,simple,,general,WordNet
+183355,zikkurat,word,noun,1,285751,"ziggurat,zikurat",,,,,history,,simple,,general,WordNet
+183356,zikkurats,word,noun,,285751,"ziggurat,zikurat",,,,,history,,simple,,general,WordNet
+183357,zikurat,word,noun,1,285751,"ziggurat,zikkurat",,,,,history,,simple,,general,WordNet
+183358,zikurats,word,noun,,285751,"ziggurat,zikkurat",,,,,history,,simple,,general,WordNet
+183359,zilch,word,noun,1,28269,"aught,cipher,cypher,goose egg,nada,naught,nil,nix",,,,,,,simple,,general,WordNet
+183360,zilches,word,noun,,28269,"aught,cipher,cypher,goose egg,nada,naught,nil,nix",,,,,,,simple,,general,WordNet
+183361,zill,word,noun,1,285761,,,,,,chemistry,,simple,,general,WordNet
+183363,zillion,word,adj,1,285762,,,,,,,,simple,,general,WordNet
+183362,zillion,word,noun,1,39194,"billion,gazillion,jillion,million,trillion",,,,,,,simple,,general,WordNet
+183364,zillions,word,noun,,39194,"billion,gazillion,jillion,million,trillion",,,,,,,simple,,general,WordNet
+183365,zills,word,noun,,285761,,,,,,chemistry,,simple,,general,WordNet
+183366,zimbabwe,word,noun,1,231892,"republic of zimbabwe,rhodesia,southern rhodesia",,zimbabwean,,,politics,,simple,,general,WordNet
+323083,zimbabwean,word,adj,1,285768,,,zimbabwe,,,,,simple,,general,WordNet
+263716,zimbabwean,word,noun,1,285769,,,,,,geography,,simple,,general,WordNet
+290871,zimbabwean dollar,phrase,noun,1,285770,,,,,,finance,,,,general,WordNet
+273915,zimbalist,word,noun,1,101253,efrem zimbalist,,,,,music,,simple,,general,WordNet
+241839,zimmer,word,noun,1,281351,"walker,zimmer frame",,,,,business,,simple,,general,WordNet
+241840,zimmer frame,phrase,noun,1,281351,"walker,zimmer",,,,,business,,,,general,WordNet
+233716,zinacef,word,noun,1,57673,"ceftin,cefuroxime",,,,,business,,simple,,general,WordNet
+183367,zinc,word,noun,1,285779,zn,,,,,chemistry,,simple,,general,WordNet
+183368,zinc,word,verb,1,285780,,,,,,,,simple,,general,WordNet
+296687,zinc blende,phrase,noun,1,41437,"blende,sphalerite",,,,,geology,,,,general,WordNet
+296657,zinc cadmium sulfide,phrase,noun,1,285781,,,,,,,,,,general,WordNet
+293218,zinc deficiency,phrase,noun,1,285783,,,,,,medicine,,,,general,WordNet
+242227,zinc ointment,phrase,noun,1,285786,,,,,,medicine,,,,general,WordNet
+296688,zinc oxide,phrase,noun,1,120883,"flowers of zinc,philosopher's wool,philosophers' wool",,,,,chemistry,,,,general,WordNet
+296692,zinc sulfate,phrase,noun,1,283177,"white vitriol,zinc sulphate,zinc vitriol",,,,,,,,,general,WordNet
+296696,zinc sulfide,phrase,noun,1,285790,zinc sulphide,,,,,chemistry,,,,general,WordNet
+296693,zinc sulphate,phrase,noun,1,283177,"white vitriol,zinc sulfate,zinc vitriol",,,,,,,,,general,WordNet
+296697,zinc sulphide,phrase,noun,1,285790,zinc sulfide,,,,,chemistry,,,,general,WordNet
+296695,zinc vitriol,phrase,noun,1,283177,"white vitriol,zinc sulfate,zinc sulphate",,,,,,,,,general,WordNet
+296698,zinc white,phrase,noun,1,62527,chinese white,,,,,chemistry,,,,general,WordNet
+183369,zinced,word,verb,,285780,,,,,,,,simple,,general,WordNet
+183370,zincing,word,verb,,285780,,,,,,,,simple,,general,WordNet
+183371,zincs,word,noun,,285779,zn,,,,,chemistry,,simple,,general,WordNet
+183372,zincs,word,verb,,285780,,,,,,,,simple,,general,WordNet
+183373,zinfandel,word,noun,1,285794,,,,,,wine,,simple,,general,WordNet
+183374,zinfandel,word,noun,2,285795,,,,,,wine,,simple,,general,WordNet
+183375,zing,word,noun,1,285796,,,,,,,,simple,,general,WordNet
+183376,zing,word,noun,2,98953,"dynamism,oomph,pizzaz,pizzazz",,,,,,,simple,,general,WordNet
+183377,zinger,word,noun,1,285798,,,,,,,,derived,,general,WordNet
+183378,zingers,word,noun,,285798,,,,,,,,derived,,general,WordNet
+183379,zingiber,word,noun,1,130701,genus zingiber,,,,,botany,,simple,,general,WordNet
+281374,zingiber officinale,phrase,noun,1,52801,"canton ginger,common ginger,stem ginger",,,,,agriculture,,,,general,WordNet
+183380,zingiberaceae,word,noun,1,115437,"family zingiberaceae,ginger family",,,,,botany,,simple,,general,WordNet
+183381,zings,word,noun,,285796,,,,,,,,simple,,general,WordNet
+183382,zings,word,noun,,98953,"dynamism,oomph,pizzaz,pizzazz",,,,,,,simple,,general,WordNet
+183383,zinjanthropus,word,noun,1,130702,genus zinjanthropus,,,,,,,simple,,general,WordNet
+183384,zinkenite,word,noun,1,285801,,,,,,chemistry,,simple,,general,WordNet
+273917,zinnemann,word,noun,1,124017,fred zinnemann,,,,,theatre_film,,simple,,general,WordNet
+183385,zinnia,word,noun,1,198184,"old maid,old maid flower",,,,,botany,,simple,,general,WordNet
+278486,zinnia acerosa,phrase,noun,1,283181,white zinnia,,,,,botany,,,,general,WordNet
+278488,zinnia grandiflora,phrase,noun,1,169856,little golden zinnia,,,,,botany,,,,general,WordNet
+183386,zinnias,word,noun,,198184,"old maid,old maid flower",,,,,botany,,simple,,general,WordNet
+183387,zinnwaldite,word,noun,1,285803,,,,,,,,simple,,general,WordNet
+273919,zinsser,word,noun,1,137854,hans zinsser,,,,,biology,,simple,,general,WordNet
+273921,zinzendorf,word,noun,1,77833,count nikolaus ludwig von zinzendorf,,,,,religion,,simple,,general,WordNet
+183388,zion,word,noun,1,246317,sion,,,,,politics,,simple,,general,WordNet
+183389,zion,word,noun,2,159051,"israel,sion,state of israel,yisrael",,,,,politics,,simple,,general,WordNet
+183390,zion,word,noun,3,246319,"sion,utopia",,,,,,,simple,,general,WordNet
+258651,zion national park,phrase,noun,1,285804,,,,,,geography,,,,general,WordNet
+183391,zionism,word,noun,1,285805,,,zionist,,,,,derived,,general,WordNet
+183392,zionism,word,noun,2,285806,zionist movement,,zionist,,,religion,,derived,,general,WordNet
+183394,zionist,word,adj,1,285807,,,,,,,,derived,,general,WordNet
+183395,zionist,word,adj,2,285809,,,,,,,,derived,,general,WordNet
+183393,zionist,word,noun,1,285811,,,zionism,,,religion,,derived,,general,WordNet
+258089,zionist movement,phrase,noun,1,285806,zionism,,,,,religion,,,,general,WordNet
+183396,zionists,word,noun,,285811,,,,,,religion,,derived,,general,WordNet
+183397,zip,word,noun,1,28269,"aught,cipher,cypher,goose egg,nada,naught,nil,nix",,zippy,,,,,simple,,general,WordNet
+183398,zip,word,noun,2,216661,"postal code,postcode,zip code",,zippy,,,linguistics,,simple,,general,WordNet
+183399,zip,word,noun,3,104699,"energy,vigor,vigour",,zippy,,,,,simple,,general,WordNet
+240268,zip,word,noun,4,247602,"slide fastener,zip fastener",,zippy,,,,,simple,,general,WordNet
+304763,zip,word,verb,1,285812,zippered,,zipper,,,,,simple,,general,WordNet
+308820,zip,word,verb,2,145731,"hurry,sped,speeded,travel rapidly",,zipper,,,,,simple,,general,WordNet
+308791,zip by,phrasal verb,verb,1,121247,"fly by,whisk by",,,,Phrasal verb,,phrasal_verb,,,general,WordNet
+248439,zip code,phrase,noun,1,216661,"postal code,postcode,zip",,,,,linguistics,,,,general,WordNet
+240269,zip fastener,phrase,noun,1,247602,"slide fastener,zip,zipper",,,,,,,,,general,WordNet
+242228,zip gun,phrase,noun,1,285814,,,,,,,,,,general,WordNet
+304762,zip up,phrasal verb,verb,1,285812,"zipped,zipper",unzip,,,Phrasal verb,,phrasal_verb,,,general,WordNet
+183400,ziphiidae,word,noun,1,114876,"family hyperodontidae,family ziphiidae,hyperodontidae",,,,,zoology,,simple,,general,WordNet
+183401,zipped,word,verb,,285812,"zip up,zipper",,,,,,,simple,,general,WordNet
+183402,zipped,word,verb,,145731,"hurry,sped,speeded,travel rapidly",,,,,,,simple,,general,WordNet
+183403,zipper,word,noun,1,247602,"slide fastener,zip fastener",,zip,,,,,simple,,general,WordNet
+183404,zipper,word,verb,1,285812,"zip up,zipped",,,,,,,simple,,general,WordNet
+183405,zippered,word,verb,,285812,"zip,zip up",,,,,,,simple,,general,WordNet
+183406,zippering,word,verb,,285812,"zip,zip up",,,,,,,simple,,general,WordNet
+183407,zippers,word,noun,,247602,"slide fastener,zip fastener",,,,,,,simple,,general,WordNet
+183408,zippers,word,verb,,285812,"zip up,zipped",,,,,,,simple,,general,WordNet
+183409,zippier,word,adj,,13148,"alert,brisk,lively,merry,rattling,snappy,spanking",,,,,,,derived,,general,WordNet
+183410,zippier,word,adj,,44665,"bouncing,bouncy,peppy,spirited",,,,,,,derived,,general,WordNet
+183411,zippiest,word,adj,,13148,"alert,brisk,lively,merry,rattling,snappy,spanking",,,,,,,simple,,general,WordNet
+183412,zippiest,word,adj,,44665,"bouncing,bouncy,peppy,spirited",,,,,,,simple,,general,WordNet
+183413,zipping,word,verb,,285812,"zip up,zipper",,,,,,,simple,,general,WordNet
+183414,zipping,word,verb,,145731,"hurry,sped,speeded,travel rapidly",,,,,,,simple,,general,WordNet
+291284,zippo,word,noun,1,28269,"aught,cipher,cypher,goose egg,nada,naught,nil,nix",,,,,,,simple,,general,WordNet
+183415,zippy,word,adj,1,13148,"alert,brisk,lively,merry,rattling,snappy,spanking",,zip,,,,,simple,,general,WordNet
+183416,zippy,word,adj,2,44665,"bouncing,bouncy,peppy,spirited",,zip,,,,,simple,,general,WordNet
+183417,zips,word,noun,,28269,"aught,cipher,cypher,goose egg,nada,naught,nil,nix",,,,,,,simple,,general,WordNet
+183418,zips,word,noun,,216661,"postal code,postcode,zip code",,,,,linguistics,,simple,,general,WordNet
+183419,zips,word,noun,,104699,"energy,vigor,vigour",,,,,,,simple,,general,WordNet
+183420,zirbanit,word,noun,1,238276,"sarpanitu,zarpanit",,,,,,,simple,,general,WordNet
+183421,zircon,word,noun,1,285817,zirconium silicate,,,,,geology,,simple,,general,WordNet
+183422,zirconia,word,noun,1,285818,"zirconium dioxide,zirconium oxide",,,,,chemistry,,simple,,general,WordNet
+183423,zirconias,word,noun,,285818,"zirconium dioxide,zirconium oxide",,,,,chemistry,,simple,,general,WordNet
+183424,zirconium,word,noun,1,285819,zr,,,,,physics,,simple,,general,WordNet
+296702,zirconium dioxide,phrase,noun,1,285818,"zirconia,zirconium oxide",,,,,chemistry,,,,general,WordNet
+296701,zirconium oxide,phrase,noun,1,285818,"zirconia,zirconium dioxide",,,,,chemistry,,,,general,WordNet
+296700,zirconium silicate,phrase,noun,1,285817,zircon,,,,,geology,,,,general,WordNet
+183425,zircons,word,noun,,285817,zirconium silicate,,,,,geology,,simple,,general,WordNet
+183426,zit,word,noun,1,141840,"hickey,pimple",,,,,medicine,,simple,,general,WordNet
+183427,zither,word,noun,1,65331,cither,,,,,music,,simple,,general,WordNet
+183428,zithern,word,noun,1,65331,"cither,zithers",,,,,music,,simple,,general,WordNet
+183429,zitherns,word,noun,,65331,"cither,zithers",,,,,music,,simple,,general,WordNet
+183430,zithers,word,noun,,65331,"cither,zithern",,,,,music,,simple,,general,WordNet
+232506,zithromax,word,noun,1,30947,azithromycin,,,,,medicine,,simple,,general,WordNet
+183431,ziti,word,noun,1,285827,,,,,,,,simple,,general,WordNet
+183432,zitis,word,noun,,285827,,,,,,,,simple,,general,WordNet
+183433,zits,word,noun,,141840,"hickey,pimple",,,,,medicine,,simple,,general,WordNet
+183434,zizania,word,noun,1,130704,genus zizania,,,,,,,simple,,general,WordNet
+279461,zizania aquatica,phrase,noun,1,283514,wild rice,,,,,botany,,,,general,WordNet
+288078,ziziphus,word,noun,1,130705,genus ziziphus,,,,,botany,,simple,,general,WordNet
+288083,ziziphus jujuba,phrase,noun,1,63584,"christ's-thorn,jerusalem thorn,jujube,jujube bush",,,,,botany,,,,general,WordNet
+288085,ziziphus lotus,phrase,noun,1,171756,lotus tree,,,,,botany,,,,general,WordNet
+183435,zizz,word,noun,1,285829,,,,,,,,simple,,general,WordNet
+183436,zizz,word,noun,2,285831,,,,,,,,simple,,general,WordNet
+183437,zloties,word,noun,,285835,,,,,,finance,,simple,,general,WordNet
+183438,zloty,word,noun,1,285835,,,,,,finance,,simple,,general,WordNet
+183439,zlotys,word,noun,,285835,,,,,,finance,,simple,,general,WordNet
+183440,zn,word,noun,1,285779,zinc,,,,,chemistry,,simple,,general,WordNet
+183441,zoanthropy,word,noun,1,285836,,,,,,zoology,,simple,,general,WordNet
+183442,zoarces,word,noun,1,130706,genus zoarces,,,,,,,simple,,general,WordNet
+231576,zoarces viviparus,phrase,noun,1,280477,viviparous eelpout,,,,,,,,,general,WordNet
+183443,zoarcidae,word,noun,1,115438,family zoarcidae,,,,,,,simple,,general,WordNet
+240173,zocor,word,noun,1,245970,simvastatin,,,,,anatomy,,simple,,general,WordNet
+183444,zodiac,word,noun,1,285837,,,zodiacal,,,astronomy,,simple,,general,WordNet
+183445,zodiac,word,noun,2,285838,,,zodiacal,,,astronomy,,simple,,general,WordNet
+183446,zodiacal,word,adj,1,285839,,,zodiac,,,,,derived,,general,WordNet
+274513,zodiacal light,phrase,noun,1,285841,,,,,,aviation,,,,general,WordNet
+183447,zodiacs,word,noun,,285837,,,,,,astronomy,,simple,,general,WordNet
+183448,zodiacs,word,noun,,285838,,,,,,astronomy,,simple,,general,WordNet
+183449,zoftig,word,adj,1,50173,"buxom,zaftig",,,,,,,simple,,general,WordNet
+183450,zoic,word,adj,1,285845,,,,,,zoology,,simple,,general,WordNet
+279463,zoisia,word,noun,1,130707,"genus zoisia,genus zoysia",,,,,law,,simple,,general,WordNet
+273923,zola,word,noun,1,103503,emile zola,,,,,literature,,simple,,general,WordNet
+183451,zolaesque,word,adj,1,285846,,,,,,,,simple,,general,WordNet
+294255,zollinger-ellison syndrome,phrase,noun,1,285856,,,,,,medicine,,,,general,WordNet
+239966,zoloft,word,noun,1,242626,sertraline,,,,,business,,simple,,general,WordNet
+260351,zomba,word,noun,1,285861,,,,,,geography,,simple,,general,WordNet
+183452,zombi,word,noun,1,285862,"zombi spirit,zombie spirit",,,,,,,simple,,general,WordNet
+183453,zombi,word,noun,2,248640,snake god,,,,,religion,,simple,,general,WordNet
+183454,zombi,word,noun,3,170126,living dead,,,,,,,simple,,general,WordNet
+263854,zombi,word,noun,4,29130,"automata,automaton",,,,,engineering,,simple,,general,WordNet
+255193,zombi,word,noun,5,285863,,,,,,drinks,,simple,,general,WordNet
+266889,zombi spirit,phrase,noun,1,285862,"zombi,zombie spirit",,,,,,,,,general,WordNet
+183455,zombie,word,noun,1,170126,living dead,,,,,,,simple,,general,WordNet
+183456,zombie,word,noun,2,285862,"zombi spirit,zombie spirit",,,,,,,simple,,general,WordNet
+183457,zombie,word,noun,3,248640,snake god,,,,,religion,,simple,,general,WordNet
+263855,zombie,word,noun,4,29130,"automata,automaton",,,,,engineering,,simple,,general,WordNet
+255192,zombie,word,noun,5,285863,,,,,,drinks,,simple,,general,WordNet
+266890,zombie spirit,phrase,noun,1,285862,"zombi,zombi spirit",,,,,,,,,general,WordNet
+183458,zombies,word,noun,,170126,living dead,,,,,,,simple,,general,WordNet
+183459,zombies,word,noun,,285862,"zombi spirit,zombie spirit",,,,,,,simple,,general,WordNet
+183460,zombies,word,noun,,248640,snake god,,,,,religion,,simple,,general,WordNet
+183461,zombis,word,noun,,285862,"zombi spirit,zombie spirit",,,,,,,simple,,general,WordNet
+183462,zombis,word,noun,,248640,snake god,,,,,religion,,simple,,general,WordNet
+183463,zombis,word,noun,,170126,living dead,,,,,,,simple,,general,WordNet
+183464,zona,word,noun,1,285864,zone,,,,,anatomy,,simple,,general,WordNet
+245887,zona pellucida,phrase,noun,1,285872,,,,,,agriculture,,,,general,WordNet
+183465,zonal,word,adj,1,285874,zonary,,,,,,,derived,,general,WordNet
+183466,zonal,word,adj,2,285876,,azonal,,,,,,derived,,general,WordNet
+284540,zonal pelargonium,phrase,noun,1,35824,"bedding geranium,fish geranium,pelargonium hortorum",,,,,botany,,,,general,WordNet
+183467,zonary,word,adj,1,285874,zonal,,zone,,,,,simple,,general,WordNet
+183468,zone,word,noun,1,285884,,,zonary,,,,,simple,,general,WordNet
+183469,zone,word,noun,2,130739,geographical zone,,zonary,,,geography,,simple,,general,WordNet
+183470,zone,word,noun,3,285885,,,zonary,,,geography,,simple,,general,WordNet
+245906,zone,word,noun,4,285864,,,zonary,,,anatomy,,simple,,general,WordNet
+311213,zone,word,verb,1,94374,district,,,,,geography,,simple,,general,WordNet
+299449,zone,word,verb,2,206261,partition,,,,,,,simple,,general,WordNet
+220861,zone fire,phrase,noun,1,285886,,,,,,military,,,,general,WordNet
+258381,zone of interior,phrase,noun,1,285888,,,,,,theatre_film,,,,general,WordNet
+183471,zoned,word,verb,,94374,district,,,,,geography,,simple,,general,WordNet
+183472,zoned,word,verb,,206261,partition,,,,,,,simple,,general,WordNet
+183473,zones,word,noun,,285884,,,,,,,,simple,,general,WordNet
+183474,zones,word,noun,,130739,geographical zone,,,,,geography,,simple,,general,WordNet
+183475,zones,word,noun,,285885,,,,,,geography,,simple,,general,WordNet
+183476,zoning,word,noun,1,285895,,,,,,business,,simple,,general,WordNet
+183477,zoning,word,verb,,94374,district,,,,,geography,,simple,,general,WordNet
+183478,zoning,word,verb,,206261,partition,,,,,,,simple,,general,WordNet
+257841,zoning board,phrase,noun,1,285896,,,,,,,,,,general,WordNet
+257842,zoning commission,phrase,noun,1,285897,,,,,,business,,,,general,WordNet
+297883,zonk out,phrasal verb,verb,1,40557,"black out,pass out",,,,Phrasal verb,education,phrasal_verb,,,general,WordNet
+297815,zonk out,phrasal verb,verb,2,285898,,,,,Phrasal verb,automotive,phrasal_verb,,,general,WordNet
+183479,zonotrichia,word,noun,1,130708,genus zonotrichia,,,,,,,simple,,general,WordNet
+223235,zonotrichia albicollis,phrase,noun,1,283203,"white-throated sparrow,whitethroat",,,,,,,,,general,WordNet
+223237,zonotrichia leucophrys,phrase,noun,1,283189,white-crowned sparrow,,,,,,,,,general,WordNet
+183480,zonula,word,noun,1,285900,zonule,,,,,,,simple,,general,WordNet
+183481,zonulas,word,noun,,285900,zonules,,,,,,,simple,,general,WordNet
+183482,zonule,word,noun,1,285900,,,,,,,,simple,,general,WordNet
+183483,zonules,word,noun,,285900,zonula,,,,,,,simple,,general,WordNet
+183484,zoo,word,noun,1,179976,"menagerie,zoological garden",,,,,zoology,,simple,,general,WordNet
+266891,zoo keeper,phrase,noun,1,285902,,,,,,gardening,,,,general,WordNet
+183485,zooerastia,word,noun,1,37836,"bestiality,zooerasty",,,,,zoology,,simple,,general,WordNet
+220286,zooerasty,word,noun,1,37836,"bestiality,zooerastia",,,,,zoology,,simple,,general,WordNet
+183486,zooflagellate,word,noun,1,285903,zoomastigote,,,,,botany,,simple,,general,WordNet
+183487,zooid,word,noun,1,285904,,,,,,zoology,,simple,,general,WordNet
+183488,zooids,word,noun,,285904,,,,,,zoology,,simple,,general,WordNet
+183489,zoolatries,word,noun,,18164,animal-worship,,,,,religion,,simple,,general,WordNet
+183490,zoolatry,word,noun,1,18164,animal-worship,,,,,religion,,simple,,general,WordNet
+183491,zoological,word,adj,1,285905,,,zoology,,,zoology,,simple,,general,WordNet
+183492,zoological,word,adj,2,285907,,,zoology,,,zoology,,simple,,general,WordNet
+237689,zoological garden,phrase,noun,1,179976,"menagerie,zoo",,,,,zoology,,,,general,WordNet
+247583,zoological science,phrase,noun,1,285909,zoology,,,,,biology,,,,general,WordNet
+183493,zoologies,word,noun,,116296,fauna,,,,,zoology,,simple,,general,WordNet
+183494,zoologies,word,noun,,285909,zoological science,,,,,biology,,simple,,general,WordNet
+183495,zoologist,word,noun,1,18150,animal scientist,,zoology,,,biology,,simple,,general,WordNet
+183496,zoologists,word,noun,,18150,animal scientist,,,,,biology,,simple,,general,WordNet
+183497,zoology,word,noun,1,116296,fauna,,"zoological,zoologist",,,zoology,,simple,,general,WordNet
+183498,zoology,word,noun,2,285909,zoological science,,"zoological,zoologist",,,biology,,simple,,general,WordNet
+183499,zoom,word,noun,1,226175,"rapid climb,rapid growth",,,,,,,simple,,general,WordNet
+183500,zoom,word,noun,2,248972,soar,,,,,,,simple,,general,WordNet
+183501,zoom,word,verb,1,283246,"whizz,whizz along,zoom along",,,,,,,simple,,general,WordNet
+308822,zoom,word,verb,2,285911,,,,,,,,simple,,general,WordNet
+308061,zoom,word,verb,3,248973,"soar,soar up,soar upwards,surge",,,,,,,simple,,general,WordNet
+308815,zoom along,phrasal verb,verb,1,283246,"whizz,whizz along,zoom",,,,Phrasal verb,,phrasal_verb,,,general,WordNet
+309405,zoom in,phrasal verb,verb,1,285912,,,,,Phrasal verb,education,phrasal_verb,,,general,WordNet
+241124,zoom lens,phrase,noun,1,262304,telephoto lens,,,,,photography,,,,general,WordNet
+183502,zoomastigina,word,noun,1,256741,subclass zoomastigina,,,,,,,simple,,general,WordNet
+222600,zoomastigote,word,noun,1,285903,zooflagellate,,,,,botany,,simple,,general,WordNet
+183503,zoomed,word,verb,,283246,"whizz,whizz along,zoom along",,,,,,,simple,,general,WordNet
+183504,zoomed,word,verb,,285911,,,,,,,,simple,,general,WordNet
+183505,zoomed,word,verb,,248973,"soar,soar up,soar upwards,surge",,,,,,,simple,,general,WordNet
+183506,zooming,word,verb,,283246,"whizz,whizz along,zoom along",,,,,,,simple,,general,WordNet
+183507,zooming,word,verb,,285911,,,,,,,,simple,,general,WordNet
+183508,zooming,word,verb,,248973,"soar,soar up,soar upwards,surge",,,,,,,simple,,general,WordNet
+183509,zoomorphism,word,noun,1,285914,,,,,,religion,,simple,,general,WordNet
+183510,zooms,word,noun,,226175,"rapid climb,rapid growth",,,,,,,simple,,general,WordNet
+183511,zooms,word,noun,,248972,soar,,,,,,,simple,,general,WordNet
+183512,zooms,word,verb,,283246,"whizz,whizz along,zoom along",,,,,,,simple,,general,WordNet
+183513,zoonoses,word,noun,,285915,"zoonosis,zoonotic disease",,,,,zoology,,simple,,general,WordNet
+183514,zoonosis,word,noun,1,285915,"zoonoses,zoonotic disease",,zoonotic,,,zoology,,simple,,general,WordNet
+183515,zoonotic,word,adj,1,285916,,,zoonosis,,,,,simple,,general,WordNet
+293611,zoonotic disease,phrase,noun,1,285915,"zoonoses,zoonosis",,,,,zoology,,,,general,WordNet
+183516,zoophagous,word,adj,1,120293,"flesh-eating,meat-eating",,,,,zoology,,simple,,general,WordNet
+183517,zoophilia,word,noun,1,285921,zoophilism,,,,,zoology,,simple,,general,WordNet
+183518,zoophilism,word,noun,1,285921,zoophilia,,,,,zoology,,simple,,general,WordNet
+183519,zoophobia,word,noun,1,285922,,,,,,zoology,,simple,,general,WordNet
+183520,zoophyte,word,noun,1,285923,,,,,,oceanography,,simple,,general,WordNet
+183521,zoophytes,word,noun,,285923,,,,,,oceanography,,simple,,general,WordNet
+183522,zooplankton,word,noun,1,285924,,,,,,zoology,,simple,,general,WordNet
+183523,zoopsia,word,noun,1,285925,,,,,,zoology,,simple,,general,WordNet
+183524,zoos,word,noun,,179976,"menagerie,zoological garden",,,,,zoology,,simple,,general,WordNet
+183525,zoospore,word,noun,1,285926,,,,,,,,simple,,general,WordNet
+183526,zoospores,word,noun,,285926,,,,,,,,simple,,general,WordNet
+242229,zoot suit,phrase,noun,1,285927,,,,,,,,,,general,WordNet
+183527,zootoxin,word,noun,1,18157,animal toxin,,,,,biology,,simple,,general,WordNet
+183528,zori,word,noun,1,223728,pusher,,,,,,,simple,,general,WordNet
+183529,zoril,word,noun,1,148324,ictonyx frenata,,,,,,,simple,,general,WordNet
+183530,zorils,word,noun,,148324,ictonyx frenata,,,,,,,simple,,general,WordNet
+183531,zoris,word,noun,,223728,pusher,,,,,,,simple,,general,WordNet
+183532,zoroaster,word,noun,1,285646,zarathustra,,zoroastrian,,,,,simple,,general,WordNet
+183534,zoroastrian,word,adj,1,285931,,,zoroaster,,,religion,,simple,,general,WordNet
+183533,zoroastrian,word,noun,1,285932,,,,,,,,simple,,general,WordNet
+183535,zoroastrianism,word,noun,1,177996,mazdaism,,,,,religion,,derived,,general,WordNet
+183536,zoroastrians,word,noun,,285932,,,,,,,,simple,,general,WordNet
+183537,zoster,word,noun,1,141515,"herpes zoster,shingles",,,,,anatomy,,simple,,general,WordNet
+183538,zostera,word,noun,1,130709,genus zostera,,,,,botany,,simple,,general,WordNet
+283860,zostera marina,phrase,noun,1,101029,"eelgrass,grass wrack,sea wrack",,,,,botany,,,,general,WordNet
+183539,zosteraceae,word,noun,1,101031,"eelgrass family,family zosteraceae",,,,,,,simple,,general,WordNet
+183540,zosters,word,noun,,141515,"herpes zoster,shingles",,,,,anatomy,,simple,,general,WordNet
+232044,zovirax,word,noun,1,7670,acyclovir,,,,,medicine,,simple,,general,WordNet
+183541,zoysia,word,noun,1,285936,,,,,,botany,,simple,,general,WordNet
+279470,zoysia japonica,phrase,noun,1,159692,"japanese lawn grass,korean lawn grass",,,,,law,,,,general,WordNet
+279467,zoysia matrella,phrase,noun,1,159682,"japanese carpet grass,manila grass",,,,,law,,,,general,WordNet
+279473,zoysia tenuifolia,phrase,noun,1,163098,"korean velvet grass,mascarene grass",,,,,botany,,,,general,WordNet
+183542,zoysias,word,noun,,285936,,,,,,botany,,simple,,general,WordNet
+294804,zr,word,noun,1,285819,zirconium,,,,,physics,,simple,,general,WordNet
+183543,zs,word,noun,,198512,omega,,,,,,,simple,,general,WordNet
+183544,zs,word,noun,,112252,"ezed,izzard,zed,zee",,,,,linguistics,,simple,,general,WordNet
+273926,zsigmondy,word,noun,1,234216,richard adolph zsigmondy,,,,,chemistry,,simple,,general,WordNet
+263106,zu,word,noun,1,285938,,,,,,religion,,simple,,general,WordNet
+263107,zubird,word,noun,1,285938,,,,,,religion,,simple,,general,WordNet
+183545,zucchini,word,noun,1,78089,courgette,,,,,botany,,simple,,general,WordNet
+183546,zucchini,word,noun,2,78090,courgette,,,,,,,simple,,general,WordNet
+183547,zucchinis,word,noun,,78089,courgette,,,,,botany,,simple,,general,WordNet
+183548,zucchinis,word,noun,,78090,courgette,,,,,,,simple,,general,WordNet
+262971,zuider zee,phrase,noun,1,285942,,,,,,oceanography,,,,general,WordNet
+273928,zukerman,word,noun,1,212288,pinchas zukerman,,,,,music,,simple,,general,WordNet
+183549,zulu,word,noun,1,285944,,,,,,geography,,simple,,general,WordNet
+183550,zulu,word,noun,2,285945,,,,,,sociology,,simple,,general,WordNet
+183551,zulu,word,noun,3,285946,,,,,,literature,,simple,,general,WordNet
+183552,zulus,word,noun,,285944,,,,,,geography,,simple,,general,WordNet
+183553,zulus,word,noun,,285945,,,,,,sociology,,simple,,general,WordNet
+183554,zulus,word,noun,,285946,,,,,,literature,,simple,,general,WordNet
+183555,zuni,word,noun,1,285948,,,,,,,,simple,,general,WordNet
+183556,zunis,word,noun,,285948,,,,,,,,simple,,general,WordNet
+183557,zurich,word,noun,1,285951,,,,,,geography,,simple,,general,WordNet
+266893,zurvan,word,noun,1,285953,,,,,,religion,,simple,,general,WordNet
+256430,zurvanism,word,noun,1,285954,,,,,,,,derived,,general,WordNet
+247982,zurvanism,word,noun,2,285955,,,,,,philosophy,,derived,,general,WordNet
+273930,zweig,word,noun,1,254393,stefan zweig,,,,,literature,,simple,,general,WordNet
+183558,zwieback,word,noun,1,48299,"brussels biscuit,rusk,twice-baked bread",,,,,culinary,,simple,,general,WordNet
+183559,zwiebacks,word,noun,,48299,"brussels biscuit,rusk,twice-baked bread",,,,,culinary,,simple,,general,WordNet
+273932,zwingli,word,noun,1,145276,"huldreich zwingli,ulrich zwingli",,,,,religion,,simple,,general,WordNet
+273935,zworykin,word,noun,1,280491,vladimir kosma zworykin,,,,,,,simple,,general,WordNet
+183560,zydeco,word,noun,1,285957,,,,,,music,,simple,,general,WordNet
+183561,zydecos,word,noun,,285957,,,,,,music,,simple,,general,WordNet
+183562,zygnema,word,noun,1,130710,genus zygnema,,,,,,,simple,,general,WordNet
+183563,zygnemales,word,noun,1,200365,"order zygnemales,order zygnematales,zygnematales",,,,,,,simple,,general,WordNet
+183564,zygnemataceae,word,noun,1,115439,family zygnemataceae,,,,,,,simple,,general,WordNet
+183565,zygnematales,word,noun,1,200365,"order zygnemales,order zygnematales,zygnemales",,,,,,,simple,,general,WordNet
+183566,zygocactus,word,noun,1,130711,genus zygocactus,,,,,botany,,simple,,general,WordNet
+276890,zygocactus truncatus,phrase,noun,1,78609,"crab cactus,schlumbergera truncatus,thanksgiving cactus",,,,,agriculture,,,,general,WordNet
+183567,zygodactyl,word,adj,1,285961,,heterodactyl,,,,zoology,,simple,,general,WordNet
+227976,zygodactyl foot,phrase,noun,1,285962,,heterodactyl foot,,,,zoology,,,,general,WordNet
+183568,zygoma,word,noun,1,23723,"arcus zygomaticus,zygomatic arch",,zygomatic,,,construction,,simple,,general,WordNet
+183569,zygomas,word,noun,,23723,"arcus zygomaticus,zygomatic arch",,,,,construction,,simple,,general,WordNet
+183571,zygomatic,word,adj,1,285966,,,zygoma,,,geography,,simple,,general,WordNet
+183570,zygomatic,word,noun,1,61177,"cheekbone,jugal bone,malar,malar bone,os zygomaticum,zygomatic bone",,,,,anatomy,,simple,,general,WordNet
+243873,zygomatic arch,phrase,noun,1,23723,"arcus zygomaticus,zygoma",,,,,construction,,,,general,WordNet
+243812,zygomatic bone,phrase,noun,1,61177,"cheekbone,jugal bone,malar,malar bone,os zygomaticum,zygomatic",,,,,anatomy,,,,general,WordNet
+245551,zygomatic process,phrase,noun,1,285972,,,,,,anatomy,,,,general,WordNet
+183572,zygomorphic,word,adj,1,38962,"bilaterally symmetrical,zygomorphous",actinomorphic,,,,aviation,,simple,,general,WordNet
+183573,zygomorphous,word,adj,1,38962,"bilaterally symmetrical,zygomorphic",,,,,aviation,,simple,,general,WordNet
+183574,zygomycetes,word,noun,1,65924,class zygomycetes,,,,,,,simple,,general,WordNet
+287194,zygomycota,word,noun,1,256841,"subdivision zygomycota,subdivision zygomycotina,zygomycotina",,,,,,,simple,,general,WordNet
+287196,zygomycotina,word,noun,1,256841,"subdivision zygomycota,subdivision zygomycotina,zygomycota",,,,,,,simple,,general,WordNet
+183575,zygophyllaceae,word,noun,1,35326,"bean-caper family,family zygophyllaceae",,,,,botany,,simple,,general,WordNet
+183576,zygophyllum,word,noun,1,130712,genus zygophyllum,,,,,botany,,simple,,general,WordNet
+284856,zygophyllum fabago,phrase,noun,1,35315,"bean caper,syrian bean caper",,,,,botany,,,,general,WordNet
+183577,zygoptera,word,noun,1,257253,suborder zygoptera,,,,,,,simple,,general,WordNet
+183578,zygospore,word,noun,1,285992,,,,,,biology,,simple,,general,WordNet
+183579,zygote,word,noun,1,117374,fertilized ovum,,zygotic,,,biology,,simple,,general,WordNet
+183580,zygotene,word,noun,1,285996,,,,,,,,simple,,general,WordNet
+183581,zygotenes,word,noun,,285996,,,,,,,,simple,,general,WordNet
+183582,zygotes,word,noun,,117374,fertilized ovum,,,,,biology,,simple,,general,WordNet
+183583,zygotic,word,adj,1,285997,,,zygote,,,,,derived,,general,WordNet
+232155,zyloprim,word,noun,1,14233,allopurinol,,,,,business,,simple,,general,WordNet
+183584,zymase,word,noun,1,286000,,,,,,biology,,simple,,general,WordNet
+183585,zymases,word,noun,,286000,,,,,,biology,,simple,,general,WordNet
+183586,zymogen,word,noun,1,220142,proenzyme,,,,,biology,,simple,,general,WordNet
+183587,zymogens,word,noun,,220142,proenzyme,,,,,biology,,simple,,general,WordNet
+183588,zymoid,word,adj,1,286007,,,,,,biology,,simple,,general,WordNet
+183589,zymologies,word,noun,,286008,zymurgy,,,,,wine,,simple,,general,WordNet
+183590,zymology,word,noun,1,286008,zymurgy,,,,,wine,,simple,,general,WordNet
+183591,zymolysis,word,noun,1,117272,"ferment,fermentation,zymosis",,zymolytic,,,,,simple,,general,WordNet
+183592,zymolytic,word,adj,1,286009,zymotic,,zymolysis,,,,,simple,,general,WordNet
+183593,zymosis,word,noun,1,117272,"ferment,fermentation,zymolysis",,zymotic,,,,,simple,,general,WordNet
+183594,zymosis,word,noun,2,286011,,,zymotic,,,medicine,,simple,,general,WordNet
+183595,zymotic,word,adj,1,286009,zymolytic,,zymosis,,,,,simple,,general,WordNet
+183596,zymotic,word,adj,2,286012,,,zymosis,,,medicine,,simple,,general,WordNet
+183597,zymurgies,word,noun,,286008,zymology,,,,,wine,,simple,,general,WordNet
+183598,zymurgy,word,noun,1,286008,zymology,,,,,wine,,simple,,general,WordNet
+183599,zyrian,word,noun,1,163061,komi,,,,,linguistics,,simple,,general,WordNet

@@ -1,0 +1,638 @@
+id,word,type,pos,sense,meaning_id,synonyms,antonyms,related,origin,category,subject,usage,structure,code,domain,source
+438205,x bone,phrase,noun,,284755,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438206,x chromosome-bearing sperm cell,phrase,noun,,284758,,,,,Cell type,biology,,,,medical,Cell Ontology
+438207,x small rings,phrase,noun,,284759,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438208,x-act,word,noun,,109369,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438209,x-ald,word,noun,,9467,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438210,x-amni,word,noun,,111645,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438211,x-axis voxel dimension,phrase,noun,,284761,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+216711,x-coordinate,word,noun,,284762,,,,,,medicine,,,,medical,NCI Thesaurus
+438212,x-corpor,word,noun,,111677,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+216712,x-dimension,word,noun,,284763,,,,,,medicine,,,,medical,NCI Thesaurus
+216713,x-inactivation,word,noun,,173468,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'X-Chromosome Inactivation')
+216714,x-linked,word,noun,,284766,,,,,,pharmacology,,,,medical,Human Phenotype Ontology (synonym of 'X-linked inheritance')
+438213,x-linked aarskog syndrome,phrase,noun,,284767,,,,,Disease,medicine,,,,medical,Disease Ontology
+438214,x-linked adrenal hypoplasia congenita,phrase,noun,,284768,,,,,Disease,medicine,,,,medical,Disease Ontology
+438215,x-linked adrenal hypoplasia congenita,phrase,noun,,284769,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+454643,x-linked adrenoleukodystrophy,phrase,noun,,1131,,,,,Diagnosis,medicine,,,ICD-10 E71.52,medical,ICD-10 (WHO 2019)
+454647,"x-linked adrenoleukodystrophy, unspecified type",phrase,noun,,1131,,,,,Diagnosis,medicine,,,ICD-10 E71.529,medical,ICD-10 (WHO 2019)
+438216,x-linked agammaglobulinemia,phrase,noun,,284770,,,,,Disease,medicine,,,,medical,Disease Ontology
+438217,x-linked agammaglobulinemia,phrase,noun,,284771,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+438218,x-linked alport syndrome,phrase,noun,,284772,,,,,Disease,medicine,,,,medical,Disease Ontology
+438219,x-linked alport syndrome,phrase,noun,,284773,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438220,x-linked amelogenesis imperfecta hypoplastic/hypomaturation 2,phrase,noun,,12210,,,,,Disease,medicine,,,,medical,Disease Ontology
+438221,x-linked atrophic macular degeneration,phrase,noun,,284774,,,,,Disease,medicine,,,,medical,Disease Ontology
+438222,"x-linked canine shaking pup, plp1-related, dog",phrase,noun,,244994,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438223,x-linked cardiac valvular dysplasia,phrase,noun,,82245,,,,,Disease,medicine,,,,medical,Disease Ontology
+438224,x-linked central congenital hypothyroidism with late-onset testicular enlargement,phrase,noun,,64342,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438225,x-linked central diabetes insipidus,phrase,noun,,284775,,,,,Disease,medicine,,,,medical,Disease Ontology
+438226,x-linked centronuclear myopathy,phrase,noun,,68133,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438227,x-linked cerebellar ataxia,phrase,noun,,284776,,,,,Disease,medicine,,,,medical,Disease Ontology
+438228,x-linked cerebellar ataxia,phrase,noun,,284777,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438229,x-linked cerebral adrenoleukodystrophy,phrase,noun,,284778,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438230,x-linked cerebral-cerebellar-coloboma syndrome syndrome,phrase,noun,,284779,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438231,x-linked chondrodysplasia punctata,phrase,noun,,78588,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438232,x-linked chondrodysplasia punctata 1,phrase,noun,,284780,,,,,Disease,medicine,,,,medical,Disease Ontology
+438233,x-linked chondrodysplasia punctata 1,phrase,noun,,284781,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438234,x-linked chondrodysplasia punctata 2,phrase,noun,,284782,,,,,Disease,medicine,,,,medical,Disease Ontology
+438235,x-linked chondrodysplasia punctata 2,phrase,noun,,57447,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438236,x-linked chronic granulomatous disease,phrase,noun,,57395,,,,,Disease,medicine,,,,medical,Disease Ontology
+438237,x-linked chronic granulomatous disease,phrase,noun,,57396,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438238,x-linked chronic idiopathic intestinal pseudo-obstruction,phrase,noun,,284783,,,,,Disease,medicine,,,,medical,Disease Ontology
+438239,x-linked cleft palate with or without ankyloglossia,phrase,noun,,284784,,,,,Disease,medicine,,,,medical,Disease Ontology
+438240,x-linked colobomatous microphthalmia-microcephaly-intellectual disability-short stature syndrome,phrase,noun,,284785,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438241,x-linked complex neurodevelopmental disorder,phrase,noun,,284786,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438242,x-linked complicated corpus callosum dysgenesis,phrase,noun,,284787,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438243,x-linked complicated spastic paraplegia type 1,phrase,noun,,251273,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438244,x-linked cone dysfunction syndrome with myopia,phrase,noun,,284788,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438245,x-linked cone-rod dystrophy,phrase,noun,,284789,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438246,x-linked cone-rod dystrophy 1,phrase,noun,,68732,,,,,Disease,medicine,,,,medical,Disease Ontology
+438247,x-linked cone-rod dystrophy 2,phrase,noun,,68733,,,,,Disease,medicine,,,,medical,Disease Ontology
+438248,x-linked cone-rod dystrophy 3,phrase,noun,,76503,,,,,Disease,medicine,,,,medical,Disease Ontology
+438249,x-linked congenital bilateral absence of vas deferens,phrase,noun,,56837,,,,,Disease,medicine,,,,medical,Disease Ontology
+438250,x-linked congenital generalized hypertrichosis,phrase,noun,,284790,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438251,x-linked congenital hemolytic anemia,phrase,noun,,284791,,,,,Disease,medicine,,,,medical,Disease Ontology
+438252,x-linked congenital hydrocephalus,phrase,noun,,284792,,,,,Disease,medicine,,,,medical,Disease Ontology
+438253,x-linked congenital myopathy with fiber-type disproportion,phrase,noun,,59723,,,,,Disease,medicine,,,,medical,Disease Ontology
+438254,x-linked congenital stationary night blindness,phrase,noun,,284793,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438255,x-linked corneal dermoid,phrase,noun,,284794,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438256,x-linked deafness 1,phrase,noun,,90062,,,,,Disease,medicine,,,,medical,Disease Ontology
+438257,x-linked deafness 2,phrase,noun,,90063,,,,,Disease,medicine,,,,medical,Disease Ontology
+438258,x-linked deafness 3,phrase,noun,,90064,,,,,Disease,medicine,,,,medical,Disease Ontology
+438259,x-linked deafness 4,phrase,noun,,90065,,,,,Disease,medicine,,,,medical,Disease Ontology
+438260,x-linked deafness 5,phrase,noun,,28345,,,,,Disease,medicine,,,,medical,Disease Ontology
+438261,x-linked deafness 6,phrase,noun,,90068,,,,,Disease,medicine,,,,medical,Disease Ontology
+438262,x-linked deafness 7,phrase,noun,,90069,,,,,Disease,medicine,,,,medical,Disease Ontology
+438263,x-linked diffuse leiomyomatosis-alport syndrome,phrase,noun,,284795,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438264,x-linked disease,phrase,noun,,284796,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438265,"x-linked disease, non-human animal",phrase,noun,,284797,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438266,x-linked distal spinal muscular atrophy 3,phrase,noun,,98063,,,,,Disease,medicine,,,,medical,Disease Ontology
+438267,x-linked distal spinal muscular atrophy type 3,phrase,noun,,98064,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438268,"x-linked dominant chondrodysplasia, chassaing-lacombe type",phrase,noun,,284798,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438269,x-linked dominant disease,phrase,noun,,284799,,,,,Disease,medicine,,,,medical,Disease Ontology
+438270,x-linked dominant disease,phrase,noun,,284800,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438271,x-linked dominant hypophosphatemic rickets,phrase,noun,,284801,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438272,x-linked dominant hypophosphatemic rickets,phrase,noun,,284802,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438273,x-linked dominant inheritance,phrase,noun,,284803,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438274,x-linked dyserythropoietic anemia,phrase,noun,,284805,,,,,Disease,medicine,,,,medical,Disease Ontology
+438275,x-linked dyskeratosis congenita,phrase,noun,,94796,,,,,Disease,medicine,,,,medical,Disease Ontology
+438276,x-linked dystonia parkinsonism,phrase,noun,,99219,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438277,x-linked dystonia-parkinsonism,phrase,noun,,284806,,,,,Disease,medicine,,,,medical,Disease Ontology
+438278,x-linked dystonia-parkinsonism,phrase,noun,,99213,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438279,x-linked ehlers-danlos syndrome,phrase,noun,,284807,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438280,x-linked emery-dreifuss muscular dystrophy,phrase,noun,,103451,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438281,x-linked emery-dreifuss muscular dystrophy 1,phrase,noun,,100796,,,,,Disease,medicine,,,,medical,Disease Ontology
+438282,x-linked emery-dreifuss muscular dystrophy 6,phrase,noun,,100798,,,,,Disease,medicine,,,,medical,Disease Ontology
+438283,x-linked endothelial corneal dystrophy,phrase,noun,,284808,,,,,Disease,medicine,,,,medical,Disease Ontology
+438284,x-linked endothelial corneal dystrophy,phrase,noun,,284809,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438285,x-linked epilepsy with variable learning disabilities and behavior disorders,phrase,noun,,284810,,,,,Disease,medicine,,,,medical,Disease Ontology
+438286,x-linked erythropoietic protoporphyria,phrase,noun,,284811,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438287,x-linked exudative vitreoretinopathy 2,phrase,noun,,109316,,,,,Disease,medicine,,,,medical,Disease Ontology
+438288,x-linked female-restricted neurodegenerative disorder with parkinsonism and cognitive impairment,phrase,noun,,191012,,,,,Disease,medicine,,,,medical,Disease Ontology
+438289,x-linked hereditary ataxia,phrase,noun,,284813,,,,,Disease,medicine,,,,medical,Disease Ontology
+438290,x-linked hereditary sensory and autonomic neuropathy with hearing loss,phrase,noun,,284814,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438291,x-linked hereditary sensory neuropathy,phrase,noun,,284815,,,,,Disease,medicine,,,,medical,Disease Ontology
+438292,x-linked heterotaxy [identifier] in blood or tissue by fish narrative,phrase,noun,,284816,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+438293,x-linked hydrocephalus with stenosis of the aqueduct of sylvius,phrase,noun,,145119,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438294,x-linked hyper igm syndrome,phrase,noun,,142323,,,,,Disease,medicine,,,,medical,Disease Ontology
+438295,x-linked hypohidrotic ectodermal dysplasia,phrase,noun,,284817,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438296,"x-linked hypohidrotic ectodermal dysplasia, eda-related, cattle",phrase,noun,,284818,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438297,"x-linked hypohidrotic ectodermal dysplasia, eda-related, dog",phrase,noun,,284819,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438298,x-linked hypoparathyroidism,phrase,noun,,147766,,,,,Disease,medicine,,,,medical,Disease Ontology
+438299,x-linked hypophosphatemic rickets,phrase,noun,,284820,,,,,Disease,medicine,,,,medical,Disease Ontology
+438300,x-linked ichthyosis,phrase,noun,,284821,,,,,Disease,medicine,,,ICD-10 Q80.1,medical,Disease Ontology
+438301,x-linked ichthyosis,phrase,noun,,284822,,,,,Disease,medicine,,,ICD-10 Q80.1,medical,NCI Thesaurus
+476328,x-linked ichthyosis,phrase,noun,,4251,,,,,Diagnosis,medicine,,,ICD-10 Q80.1,medical,ICD-10 (WHO 2019)
+438302,x-linked ichthyosis syndrome,phrase,noun,,284823,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438303,x-linked immunodeficiency 74,phrase,noun,,149463,,,,,Disease,medicine,,,,medical,Disease Ontology
+438304,"x-linked immunodeficiency with magnesium defect, epstein-barr virus infection and neoplasia",phrase,noun,,284824,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438305,"x-linked immunodeficiency with magnesium defect, epstein-barr virus infection, and neoplasia",phrase,noun,,284825,,,,,Disease,medicine,,,,medical,Disease Ontology
+438306,x-linked immunoneurologic disorder,phrase,noun,,284826,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438307,x-linked inheritance,phrase,noun,,284766,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438308,x-linked inherited disorder,phrase,noun,,284827,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438309,x-linked intellectual developmental disorder 108,phrase,noun,,186984,,,,,Disease,medicine,,,,medical,Disease Ontology
+438310,x-linked intellectual developmental disorder 109,phrase,noun,,284828,,,,,Disease,medicine,,,,medical,Disease Ontology
+438311,x-linked intellectual disability,phrase,noun,,284829,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438312,x-linked intellectual disability with hypopituitarism,phrase,noun,,284830,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438313,x-linked intellectual disability with or without nystagmus,phrase,noun,,284831,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438314,"x-linked intellectual disability, cantagrel type",phrase,noun,,187023,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438315,"x-linked intellectual disability, cilliers type",phrase,noun,,284832,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438316,"x-linked intellectual disability, golabi-ito-hall type",phrase,noun,,284833,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438317,"x-linked intellectual disability, pai type",phrase,noun,,284834,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438318,"x-linked intellectual disability, schimke type",phrase,noun,,284835,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438319,"x-linked intellectual disability, seemanova type",phrase,noun,,284836,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438320,"x-linked intellectual disability, stevenson type",phrase,noun,,284837,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438321,"x-linked intellectual disability, stoll type",phrase,noun,,284838,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438322,"x-linked intellectual disability, van esch type",phrase,noun,,278964,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438323,x-linked intellectual disability-acromegaly-hyperactivity syndrome,phrase,noun,,284839,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438324,x-linked intellectual disability-ataxia-apraxia syndrome,phrase,noun,,284840,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438325,x-linked intellectual disability-cardiomegaly-congestive heart failure syndrome,phrase,noun,,187030,,,,,Disease,medicine,,,,medical,Disease Ontology
+438326,x-linked intellectual disability-corpus callosum agenesis-spastic quadriparesis syndrome,phrase,noun,,284841,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438327,x-linked intellectual disability-craniofacioskeletal syndrome,phrase,noun,,284842,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438328,x-linked intellectual disability-epilepsy-progressive joint contractures-dysmorphism syndrome,phrase,noun,,284843,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438329,x-linked intellectual disability-hypogammaglobulinemia-progressive neurological deterioration syndrome,phrase,noun,,284844,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438330,x-linked intellectual disability-hypogonadism-ichthyosis-obesity-short stature syndrome,phrase,noun,,284845,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438331,x-linked intellectual disability-hypotonic facies syndrome-1,phrase,noun,,284846,,,,,Disease,medicine,,,,medical,Disease Ontology
+438332,x-linked intellectual disability-limb spasticity-retinal dystrophy-diabetes insipidus syndrome,phrase,noun,,284847,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438333,x-linked intellectual disability-macrocephaly-macroorchidism syndrome,phrase,noun,,284848,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438334,x-linked intellectual disability-plagiocephaly syndrome,phrase,noun,,284849,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438335,x-linked intellectual disability-precocious puberty-obesity syndrome,phrase,noun,,284850,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438336,x-linked intellectual disability-psychosis-macroorchidism syndrome,phrase,noun,,187029,,,,,Disease,medicine,,,,medical,Disease Ontology
+438337,x-linked intellectual disability-retinitis pigmentosa syndrome,phrase,noun,,284851,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438338,x-linked intellectual disability-short stature-overweight syndrome,phrase,noun,,186985,,,,,Disease,medicine,,,,medical,Disease Ontology
+438339,x-linked juvenile retinoschisis 1,phrase,noun,,284852,,,,,Disease,medicine,,,,medical,Disease Ontology
+438340,x-linked keratosis follicularis spinulosa decalvans,phrase,noun,,284853,,,,,Disease,medicine,,,,medical,Disease Ontology
+438341,x-linked lethal multiple pterygium syndrome,phrase,noun,,284854,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438342,x-linked lissencephaly 1,phrase,noun,,284855,,,,,Disease,medicine,,,,medical,Disease Ontology
+438343,x-linked lissencephaly 2,phrase,noun,,284856,,,,,Disease,medicine,,,,medical,Disease Ontology
+438344,x-linked lissencephaly with abnormal genitalia,phrase,noun,,284857,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438345,x-linked lymphoproliferative disease due to sh2d1a deficiency,phrase,noun,,284858,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438346,x-linked lymphoproliferative disease due to xiap deficiency,phrase,noun,,284859,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438347,x-linked lymphoproliferative syndrome,phrase,noun,,284860,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438348,x-linked lymphoproliferative syndrome,phrase,noun,,284861,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438349,x-linked lymphoproliferative syndrome 1,phrase,noun,,284862,,,,,Disease,medicine,,,,medical,Disease Ontology
+438350,x-linked lymphoproliferative syndrome 1,phrase,noun,,149439,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438351,x-linked lymphoproliferative syndrome 2,phrase,noun,,284863,,,,,Disease,medicine,,,,medical,Disease Ontology
+438352,x-linked lymphoproliferative syndrome 2,phrase,noun,,284864,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438353,x-linked mandibulofacial dysostosis,phrase,noun,,284865,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438354,x-linked mendelian susceptibility to mycobacterial diseases,phrase,noun,,284866,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438355,x-linked mendelian susceptibility to mycobacterial diseases due to cybb deficiency,phrase,noun,,284867,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438356,x-linked mental retardation gustavson type,phrase,noun,,284868,,,,,Disease,medicine,,,,medical,Disease Ontology
+438357,x-linked microcephaly-growth retardation-prognathism-cryptorchidism syndrome,phrase,noun,,284869,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438358,x-linked mixed hearing loss with perilymphatic gusher,phrase,noun,,90067,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438359,x-linked monogenic disease,phrase,noun,,284870,,,,,Disease,medicine,,,,medical,Disease Ontology
+438360,x-linked mutilating palmoplantar keratoderma with periorificial keratotic plaques,phrase,noun,,198456,,,,,Disease,medicine,,,,medical,Disease Ontology
+438361,x-linked myopathy with excessive autophagy,phrase,noun,,284871,,,,,Disease,medicine,,,,medical,Disease Ontology
+438362,x-linked myopathy with excessive autophagy,phrase,noun,,284872,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438363,x-linked myopathy with postural muscle atrophy,phrase,noun,,284873,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438364,x-linked myotubular myopathy,phrase,noun,,187086,,,,,Disease,medicine,,,ICD-10 G71.220,medical,MONDO (diseases)
+438365,x-linked myotubular myopathy-abnormal genitalia syndrome,phrase,noun,,284874,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438366,x-linked nephrogenic diabetes insipidus,phrase,noun,,284875,,,,,Disease,medicine,,,,medical,Disease Ontology
+438367,x-linked nephrolithiasis type i,phrase,noun,,196014,,,,,Disease,medicine,,,,medical,Disease Ontology
+438368,"x-linked neurodegenerative syndrome, bertini type",phrase,noun,,284876,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438369,"x-linked neurodegenerative syndrome, hamel type",phrase,noun,,284877,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438370,x-linked neurodevelopmental disorder with poor or absent speech and behavioral abnormalities,phrase,noun,,191317,,,,,Disease,medicine,,,,medical,Disease Ontology
+438371,x-linked non progressive cerebellar ataxia,phrase,noun,,239021,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438372,x-linked nonsyndromic deafness,phrase,noun,,284878,,,,,Disease,medicine,,,,medical,Disease Ontology
+438373,x-linked nonsyndromic hearing loss,phrase,noun,,284879,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+454597,x-linked ocular albinism,phrase,noun,,1131,,,,,Diagnosis,medicine,,,ICD-10 E70.310,medical,ICD-10 (WHO 2019)
+438374,x-linked opitz g/bbb syndrome,phrase,noun,,284880,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438375,x-linked panhypopituitarism,phrase,noun,,211424,,,,,Disease,medicine,,,,medical,Disease Ontology
+438376,"x-linked paralytic tremor, plp1-related, rabbit",phrase,noun,,222546,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438377,x-linked parkinsonism-spasticity syndrome,phrase,noun,,284881,,,,,Disease,medicine,,,,medical,Disease Ontology
+438378,x-linked parkinsonism-spasticity syndrome,phrase,noun,,284882,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438379,"x-linked progressive retinal atrophy 1, rpgr-related, dog",phrase,noun,,284883,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438380,"x-linked progressive retinal atrophy 2, rpgr-related, dog",phrase,noun,,284884,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438381,"x-linked progressive retinal atrophy, type 3, dog",phrase,noun,,284885,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438382,x-linked properdin deficiency,phrase,noun,,59708,,,,,Disease,medicine,,,,medical,Disease Ontology
+438383,x-linked recessive disease,phrase,noun,,284886,,,,,Disease,medicine,,,,medical,Disease Ontology
+438384,x-linked recessive disease,phrase,noun,,284887,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438385,x-linked recessive hypophosphatemic rickets,phrase,noun,,284888,,,,,Disease,medicine,,,,medical,Disease Ontology
+438386,x-linked recessive inheritance,phrase,noun,,284889,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438387,x-linked recessive mitochondrial myopathy,phrase,noun,,284891,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438388,x-linked recessive ocular albinism,phrase,noun,,196689,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438389,x-linked reticulate pigmentary disorder,phrase,noun,,284892,,,,,Disease,medicine,,,,medical,Disease Ontology
+438390,x-linked reticulate pigmentary disorder,phrase,noun,,207410,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438391,"x-linked retinal dystrophy, gardner-hardcastle type",phrase,noun,,226642,,,,,Disease,medicine,,,,medical,Disease Ontology
+438392,x-linked retinitis pigmentosa and sinorespiratory infections,phrase,noun,,284893,,,,,Disease,medicine,,,,medical,Disease Ontology
+438393,x-linked retinoschisis,phrase,noun,,284894,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438394,x-linked scapuloperoneal muscular dystrophy,phrase,noun,,284895,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438395,x-linked severe combined immunodeficiency,phrase,noun,,239404,,,,,Disease,medicine,,,,medical,Disease Ontology
+438396,"x-linked severe combined immunodeficiency disease, il2rg-related, dog",phrase,noun,,284897,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438397,"x-linked severe combined immunodeficiency disease, il2rg-related, golden hamster",phrase,noun,,284898,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438398,"x-linked severe combined immunodeficiency disease, il2rg-related, pig",phrase,noun,,284899,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438399,x-linked severe congenital neutropenia,phrase,noun,,239672,,,,,Disease,medicine,,,,medical,Disease Ontology
+438400,x-linked severe congenital neutropenia,phrase,noun,,284900,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438401,x-linked sideroblastic anemia with ataxia,phrase,noun,,284901,,,,,Disease,medicine,,,,medical,Disease Ontology
+438402,x-linked sideroblastic anemia with ataxia,phrase,noun,,25466,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438403,x-linked spermatogenic failure 1,phrase,noun,,251276,,,,,Disease,medicine,,,,medical,Disease Ontology
+438404,x-linked spermatogenic failure 1,phrase,noun,,251277,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438405,x-linked spermatogenic failure 2,phrase,noun,,251278,,,,,Disease,medicine,,,,medical,Disease Ontology
+438406,x-linked spermatogenic failure 3,phrase,noun,,251279,,,,,Disease,medicine,,,,medical,Disease Ontology
+438407,x-linked spermatogenic failure 4,phrase,noun,,251280,,,,,Disease,medicine,,,,medical,Disease Ontology
+438408,x-linked spermatogenic failure 5,phrase,noun,,251281,,,,,Disease,medicine,,,,medical,Disease Ontology
+438409,x-linked spermatogenic failure 6,phrase,noun,,251282,,,,,Disease,medicine,,,,medical,Disease Ontology
+438410,x-linked spermatogenic failure 7,phrase,noun,,251283,,,,,Disease,medicine,,,,medical,Disease Ontology
+438411,x-linked spermatogenic failure 8,phrase,noun,,251284,,,,,Disease,medicine,,,,medical,Disease Ontology
+438412,x-linked spermatogenic failure 9,phrase,noun,,284902,,,,,Disease,medicine,,,,medical,Disease Ontology
+438413,x-linked spinal muscular atrophy 2,phrase,noun,,248242,,,,,Disease,medicine,,,,medical,Disease Ontology
+438414,x-linked spinocerebellar ataxia 1,phrase,noun,,239014,,,,,Disease,medicine,,,,medical,Disease Ontology
+438415,x-linked spinocerebellar ataxia 2,phrase,noun,,239015,,,,,Disease,medicine,,,,medical,Disease Ontology
+438416,x-linked spinocerebellar ataxia 3,phrase,noun,,239016,,,,,Disease,medicine,,,,medical,Disease Ontology
+438417,x-linked spinocerebellar ataxia 4,phrase,noun,,239018,,,,,Disease,medicine,,,,medical,Disease Ontology
+438418,x-linked spinocerebellar ataxia 5,phrase,noun,,239020,,,,,Disease,medicine,,,,medical,Disease Ontology
+438419,x-linked spinocerebellar ataxia type 3,phrase,noun,,239017,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438420,x-linked spinocerebellar ataxia type 4,phrase,noun,,239019,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438421,x-linked spondyloepimetaphyseal dysplasia,phrase,noun,,241689,,,,,Disease,medicine,,,,medical,Disease Ontology
+438422,x-linked spondyloepimetaphyseal dysplasia,phrase,noun,,284903,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438423,x-linked spondyloepiphyseal dysplasia tarda,phrase,noun,,284904,,,,,Disease,medicine,,,,medical,Disease Ontology
+438424,x-linked syndromic complex neurodevelopmental disorder,phrase,noun,,284905,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438425,x-linked syndromic intellectual disability,phrase,noun,,284906,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438426,x-linked thrombocytopenia with beta-thalassemia,phrase,noun,,284907,,,,,Disease,medicine,,,,medical,Disease Ontology
+438427,x-linked thrombophilia due to factor ix defect,phrase,noun,,264819,,,,,Disease,medicine,,,,medical,Disease Ontology
+438428,x-linked vacterl association,phrase,noun,,277608,,,,,Disease,medicine,,,,medical,Disease Ontology
+438429,x-linked warfarin sensitivity,phrase,noun,,284908,,,,,Disease,medicine,,,,medical,Disease Ontology
+438430,x-lumin,word,noun,,111799,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+216715,x-radiation,word,noun,,284910,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'X-Ray')
+216716,x-ray,word,noun,,284910,,,,,,medicine,,,,medical,NCI Thesaurus
+216717,x-ray,word,noun,,284912,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Radiography Study File')
+216718,x-ray,word,noun,,225509,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'X-Ray Imaging')
+438431,x-ray angiography,phrase,noun,,225477,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+438432,x-ray cerebral angiography procedure,phrase,noun,,284916,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+449402,x-ray contrast media,phrase,noun,,455,,,,,Diagnosis,medicine,,,ICD-10 Y57.5,medical,ICD-10 (WHO 2019)
+438433,x-ray coronary angiography procedure,phrase,noun,,284917,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+438434,x-ray crystallography shared resource,phrase,noun,,284918,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438435,x-ray imaging,phrase,noun,,225509,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+438436,x-ray microangiography,phrase,noun,,284922,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+438437,x-ray photoelectron spectroscopy,phrase,noun,,107776,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438438,x-ray pulmonary angiography procedure,phrase,noun,,284923,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+438439,x-ray therapy,phrase,noun,,284924,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438440,x-ray-based angiogram,phrase,noun,,284927,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+216719,x-trozine,word,noun,,8684,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Phendimetrazine Tartrate')
+216720,xalatan,word,noun,,165158,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Latanoprost')
+216721,xalkori,word,noun,,79868,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Crizotinib')
+216722,xaluritamig,word,noun,,284928,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+438441,xan1,word,noun,,284929,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438442,xan1,word,noun,,284930,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438443,xan2,word,noun,,284931,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438444,xan2,word,noun,,284932,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+216723,xanafide,word,noun,,284933,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Amonafide L-Malate')
+216724,xanax,word,noun,,14825,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Alprazolam')
+216725,xanelim,word,noun,,101054,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Efalizumab')
+438445,xanth-,word,noun,,284934,,,,,Word part - root (combining form),linguistics,,,,medical,Curated
+216726,xanthelasma,word,noun,,284936,,,,,,medicine,,simple,,medical,Human Phenotype Ontology
+442045,xanthelasma of eyelid,phrase,noun,,7160,,,,,Diagnosis,medicine,,,ICD-10 H02.6,medical,ICD-10 (WHO 2019)
+457088,xanthelasma of eyelid,phrase,noun,,2483,,,,,Diagnosis,medicine,,,ICD-10 H02.6,medical,ICD-10 (WHO 2019)
+457095,"xanthelasma of left eye, unspecified eyelid",phrase,noun,,2483,,,,,Diagnosis,medicine,,,ICD-10 H02.66,medical,ICD-10 (WHO 2019)
+457094,xanthelasma of left lower eyelid,phrase,noun,,2483,,,,,Diagnosis,medicine,,,ICD-10 H02.65,medical,ICD-10 (WHO 2019)
+457093,xanthelasma of left upper eyelid,phrase,noun,,2483,,,,,Diagnosis,medicine,,,ICD-10 H02.64,medical,ICD-10 (WHO 2019)
+457092,"xanthelasma of right eye, unspecified eyelid",phrase,noun,,2483,,,,,Diagnosis,medicine,,,ICD-10 H02.63,medical,ICD-10 (WHO 2019)
+457091,xanthelasma of right lower eyelid,phrase,noun,,2483,,,,,Diagnosis,medicine,,,ICD-10 H02.62,medical,ICD-10 (WHO 2019)
+457090,xanthelasma of right upper eyelid,phrase,noun,,2483,,,,,Diagnosis,medicine,,,ICD-10 H02.61,medical,ICD-10 (WHO 2019)
+457089,"xanthelasma of unspecified eye, unspecified eyelid",phrase,noun,,2483,,,,,Diagnosis,medicine,,,ICD-10 H02.60,medical,ICD-10 (WHO 2019)
+216727,xanthelasmatosis,word,noun,,284938,,,,,,pharmacology,,simple,,medical,Disease Ontology (synonym of 'xanthomatosis')
+438446,xanthine nephrolithiasis,phrase,noun,,284941,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438447,xanthine oxidase inhibitor agent therapy,phrase,noun,,284942,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+216728,xanthinuria,word,noun,,284943,,,,,,medicine,,simple,,medical,Disease Ontology
+216729,xanthinuria,word,noun,,284944,,,,,,medicine,,simple,,medical,Human Phenotype Ontology
+216730,xanthinuria,word,noun,,284945,,,,,,medicine,,simple,,medical,MONDO (diseases)
+438448,xanthinuria type i,phrase,noun,,284929,,,,,Disease,medicine,,,,medical,Disease Ontology
+438449,xanthinuria type i,phrase,noun,,284930,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438450,xanthinuria type ii,phrase,noun,,284931,,,,,Disease,medicine,,,,medical,Disease Ontology
+438451,xanthinuria type ii,phrase,noun,,284932,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438452,"xanthinuria, dog",phrase,noun,,284946,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438453,"xanthinuria, domestic cat",phrase,noun,,284947,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438454,"xanthinuria, goat",phrase,noun,,284948,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438455,"xanthinuria, mocos-related, cattle",phrase,noun,,284949,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438456,"xanthinuria, non-human animal",phrase,noun,,284950,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438457,"xanthinuria, type ii, dog",phrase,noun,,284951,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438458,"xanthinuria, xdh-related, dog",phrase,noun,,284952,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438459,"xanthinuria, xdh-related, domestic cat",phrase,noun,,284953,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216731,xanthoblast,word,noun,,284954,,,,,,biology,,simple,,medical,Cell Ontology
+216732,xanthochromia,word,noun,,284955,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Xanthochromia Measurement')
+438460,xanthogranulomatous cholecystitis,phrase,noun,,284956,,,,,Disease,medicine,,,,medical,Disease Ontology
+438461,xanthogranulomatous cholecystitis,phrase,noun,,284957,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438462,xanthogranulomatous hypophysitis,phrase,noun,,284958,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438463,xanthogranulomatous pyelonephritis,phrase,noun,,284959,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438464,xanthogranulomatous pyelonephritis,phrase,noun,,284960,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216733,xanthohumol,word,noun,,284961,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216734,xanthoma,word,noun,,284936,,,,,,pharmacology,,simple,,medical,Human Phenotype Ontology (synonym of 'Xanthelasma')
+216735,xanthoma,word,noun,,284962,,,,,,medicine,,simple,,medical,MONDO (diseases)
+216736,xanthoma,word,noun,,284963,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438465,xanthoma of bone,phrase,noun,,284966,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438466,xanthomas of the palmar creases,phrase,noun,,284967,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+216737,xanthomata,word,noun,,284968,,,,,,pharmacology,,simple,,medical,Human Phenotype Ontology (synonym of 'Xanthomatosis')
+216738,xanthomatosis,word,noun,,284938,,,,,,medicine,,simple,,medical,Disease Ontology
+216739,xanthomatosis,word,noun,,284968,,,,,,medicine,,simple,,medical,Human Phenotype Ontology
+216740,xanthomatosis,word,noun,,284969,,,,,,medicine,,simple,,medical,MONDO (diseases)
+438467,"xanthomatosis, non-human animal",phrase,noun,,284970,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438468,"xanthomatosis, yellow-footed rock-wallaby",phrase,noun,,284971,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438469,xanthomatous hypophysitis,phrase,noun,,284972,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216741,xanthomonadaceae,word,noun,,284974,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216742,xanthomonas,word,noun,,284975,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438470,xanthophore cell,phrase,noun,,284976,,,,,Cell type,biology,,,,medical,Cell Ontology
+216743,xanthophyll,word,noun,,284977,,,,,,medicine,,simple,,medical,Medical Action Ontology
+216744,xanthophyll,word,noun,,7894,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Lutein')
+216745,xanthophylls,word,noun,,284977,,,,,,pharmacology,,simple,,medical,Medical Action Ontology (synonym of 'xanthophyll')
+216746,xanthophylls,word,noun,,7894,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Lutein')
+216747,xanthotoxin,word,noun,,16144,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Methoxsalen')
+216748,xanturat,word,noun,,14234,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Allopurinol Sodium')
+216749,xarelto,word,noun,,235112,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Rivaroxaban')
+216750,xatmep,word,noun,,269097,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Methotrexate Sodium')
+438471,xav-19,word,noun,,20509,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438472,xbp1-us/xbp1-sp/cd138/cs1 multipeptide vaccine pvx-410,phrase,noun,,284981,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+216751,xcytrin,word,noun,,127803,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Motexafin Gadolinium')
+438473,xdat,word,noun,,265036,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438474,xdp,word,noun,,99213,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438475,xdp,word,noun,,99219,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438476,xdr,word,noun,,111399,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438477,xdr-tb,word,noun,,111400,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438478,xdr-tb,word,noun,,111401,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+216752,xe,word,noun,,284982,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Xenon')
+438479,xecd,word,noun,,284808,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438480,xecd,word,noun,,284809,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+216753,xeliri,word,noun,,52992,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'XELIRI Regimen')
+438481,xeliri regimen,phrase,noun,,52992,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216754,xeljanz,word,noun,,266576,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Tofacitinib Citrate')
+216755,xeloda,word,noun,,52977,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Capecitabine')
+216756,xeloda-platinol,word,noun,,52981,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Capecitabine/Cisplatin Regimen')
+438482,xelox regimen,phrase,noun,,53012,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216757,xembify,word,noun,,149789,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Immune Globulin Subcutaneous Human')
+438483,xen glaucoma treatment system usage,phrase,noun,,284984,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+216758,xenalamine,word,noun,,284985,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Xenazoic Acid')
+216759,xenaldial,word,noun,,284985,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Xenygloxal')
+216760,xenarthrale,word,noun,,284986,,,,,,anatomy,,simple,,medical,Uberon (anatomy)
+438484,xenazoic acid,phrase,noun,,284985,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+216761,xenical,word,noun,,14001,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Orlistat')
+216762,xenobiotic,word,noun,,284987,,,,,,medicine,,simple,,medical,MONDO (diseases)
+438485,xenobiotic metabolite,phrase,noun,,284988,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+438486,xenogeneic tyrosinase dna vaccine,phrase,noun,,284990,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+216763,xenograft,word,noun,,141635,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438487,xenograft model,phrase,noun,,284991,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216764,xenon,word,noun,,284982,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438488,xenon xe-133,phrase,noun,,284993,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+216765,xenopus,word,noun,,284998,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216766,xenopus,word,noun,,284999,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Xenopus laevis')
+438489,xenopus neoplasm,phrase,noun,,285000,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216767,xenotransplant,word,noun,,141635,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Xenograft')
+216768,xenotransplantation,word,noun,,285003,,,,,,medicine,,derived,,medical,NCI Thesaurus
+438490,xenotropic murine leukemia virus-related virus,phrase,noun,,285004,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216769,xentuzumab,word,noun,,285005,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216770,xenygloxal,word,noun,,284985,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216771,xeomin,word,noun,,3730,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Botulinum Toxin Type A')
+438491,xer-,word,noun,,285006,,,,,Word part - root (combining form),linguistics,,,,medical,Curated
+216772,xerecept,word,noun,,77351,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Corticorelin Acetate')
+216773,xermelo,word,noun,,285010,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Telotristat Etiprate')
+216774,xeroderma,word,noun,,285011,,,,,,medicine,,simple,,medical,NCI Thesaurus
+456875,xeroderma of eyelid,phrase,noun,,2483,,,,,Diagnosis,medicine,,,ICD-10 H01.14,medical,ICD-10 (WHO 2019)
+456881,"xeroderma of left eye, unspecified eyelid",phrase,noun,,2483,,,,,Diagnosis,medicine,,,ICD-10 H01.146,medical,ICD-10 (WHO 2019)
+456880,xeroderma of left lower eyelid,phrase,noun,,2483,,,,,Diagnosis,medicine,,,ICD-10 H01.145,medical,ICD-10 (WHO 2019)
+456879,xeroderma of left upper eyelid,phrase,noun,,2483,,,,,Diagnosis,medicine,,,ICD-10 H01.144,medical,ICD-10 (WHO 2019)
+456878,"xeroderma of right eye, unspecified eyelid",phrase,noun,,2483,,,,,Diagnosis,medicine,,,ICD-10 H01.143,medical,ICD-10 (WHO 2019)
+456877,xeroderma of right lower eyelid,phrase,noun,,2483,,,,,Diagnosis,medicine,,,ICD-10 H01.142,medical,ICD-10 (WHO 2019)
+456876,xeroderma of right upper eyelid,phrase,noun,,2483,,,,,Diagnosis,medicine,,,ICD-10 H01.141,medical,ICD-10 (WHO 2019)
+456882,"xeroderma of unspecified eye, unspecified eyelid",phrase,noun,,2483,,,,,Diagnosis,medicine,,,ICD-10 H01.149,medical,ICD-10 (WHO 2019)
+438492,xeroderma pigmentosum,phrase,noun,,285013,,,,,Disease,medicine,,,ICD-10 Q82.1,medical,Disease Ontology
+438493,xeroderma pigmentosum,phrase,noun,,285014,,,,,Disease,medicine,,,ICD-10 Q82.1,medical,MONDO (diseases)
+438494,xeroderma pigmentosum,phrase,noun,,285015,,,,,Disease,medicine,,,ICD-10 Q82.1,medical,NCI Thesaurus
+476341,xeroderma pigmentosum,phrase,noun,,4251,,,,,Diagnosis,medicine,,,ICD-10 Q82.1,medical,ICD-10 (WHO 2019)
+438495,xeroderma pigmentosum group a,phrase,noun,,285017,,,,,Disease,medicine,,,,medical,Disease Ontology
+438496,xeroderma pigmentosum group a,phrase,noun,,285018,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438497,xeroderma pigmentosum group b,phrase,noun,,285019,,,,,Disease,medicine,,,,medical,Disease Ontology
+438498,xeroderma pigmentosum group b,phrase,noun,,285020,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438499,xeroderma pigmentosum group c,phrase,noun,,285021,,,,,Disease,medicine,,,,medical,Disease Ontology
+438500,xeroderma pigmentosum group c,phrase,noun,,285022,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438501,xeroderma pigmentosum group d,phrase,noun,,285023,,,,,Disease,medicine,,,,medical,Disease Ontology
+438502,xeroderma pigmentosum group d,phrase,noun,,285024,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438503,xeroderma pigmentosum group e,phrase,noun,,285025,,,,,Disease,medicine,,,,medical,Disease Ontology
+438504,xeroderma pigmentosum group e,phrase,noun,,285026,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438505,xeroderma pigmentosum group f,phrase,noun,,285027,,,,,Disease,medicine,,,,medical,Disease Ontology
+438506,xeroderma pigmentosum group f,phrase,noun,,285028,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438507,xeroderma pigmentosum group g,phrase,noun,,285029,,,,,Disease,medicine,,,,medical,Disease Ontology
+438508,xeroderma pigmentosum group g,phrase,noun,,285030,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438509,xeroderma pigmentosum variant type,phrase,noun,,285031,,,,,Disease,medicine,,,,medical,Disease Ontology
+438510,xeroderma pigmentosum variant type,phrase,noun,,285032,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438511,"xeroderma pigmentosum, complementation group c",phrase,noun,,285022,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438512,"xeroderma pigmentosum, complementation group e",phrase,noun,,285026,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+438513,xeroderma pigmentosum-cockayne syndrome complex,phrase,noun,,285033,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438514,xeroderma pigmentosum-cockayne syndrome complex,phrase,noun,,285034,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216775,xerodermosteosis,word,noun,,246623,,,,,,pharmacology,,simple,,medical,Disease Ontology (synonym of 'Sjogren's syndrome')
+216776,xerophthalmia,word,noun,,285040,,,,,,medicine,,simple,,medical,Disease Ontology
+216777,xerophthalmia,word,noun,,161793,,,,,,pharmacology,,simple,,medical,Human Phenotype Ontology (synonym of 'Keratoconjunctivitis sicca')
+216778,xerophthalmia,word,noun,,285041,,,,,,medicine,,simple,,medical,MONDO (diseases)
+216779,xeroradiography,word,noun,,285045,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216780,xerosis,word,noun,,97991,,,,,,pharmacology,,simple,,medical,Human Phenotype Ontology (synonym of 'Dry skin')
+216781,xerosis,word,noun,,285047,,,,,,medicine,,simple,,medical,NCI Thesaurus
+443738,xerosis cutis,phrase,noun,,6297,,,,,Diagnosis,medicine,,,ICD-10 L85.3,medical,ICD-10 (WHO 2019)
+464519,xerosis cutis,phrase,noun,,4803,,,,,Diagnosis,medicine,,,ICD-10 L85.3,medical,ICD-10 (WHO 2019)
+216782,xerostomia,word,noun,,285048,,,,,,medicine,,simple,,medical,Human Phenotype Ontology
+216783,xerostomia,word,noun,,285049,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216784,xevinapant,word,noun,,285052,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+438515,xfe progeroid syndrome,phrase,noun,,285053,,,,,Disease,medicine,,,,medical,Disease Ontology
+438516,xfe progeroid syndrome,phrase,noun,,285054,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438517,xfe progeroid syndrome,phrase,noun,,285055,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+438518,xfeps,word,noun,,285053,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438519,xfeps,word,noun,,285054,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438520,xfeps,word,noun,,285055,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438521,xfg,word,noun,,110007,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438522,xfg,word,noun,,110009,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438523,xfs,word,noun,,110009,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+216785,xgeva,word,noun,,87955,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Denosumab')
+438524,xhed,word,noun,,100478,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438525,xhed,word,noun,,284817,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438526,xhigm,word,noun,,142324,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438527,xhim,word,noun,,142323,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+216786,xhosa,word,noun,,285056,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Xhosa Language')
+438528,xia-gibbs syndrome,phrase,noun,,186931,,,,,Disease,medicine,,,,medical,Disease Ontology
+216787,xiaflex,word,noun,,285060,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Collagenase Clostridium histolyticum EN3835')
+438529,xiamen boson biotech,phrase,noun,,285061,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216788,xian-ling-gu-bao,word,noun,,285062,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Xianling Gubao')
+438530,xiang sha liu jun zi decoction,phrase,noun,,285063,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+216789,xianlinggubao,word,noun,,285062,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Xianling Gubao')
+216790,xiao-chai-hu-tang,word,noun,,161675,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Sho-Saiko-To')
+438531,xiap antisense oligonucleotide aeg35156,phrase,noun,,127929,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+216791,xifaxan,word,noun,,234390,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Rifaximin')
+216792,xiidra,word,noun,,168286,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Lifitegrast')
+216793,xiliertinib,word,noun,,263781,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216794,xilonix,word,noun,,37634,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Bermekimab')
+216795,xinlay,word,noun,,285064,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Atrasentan Hydrochloride')
+216796,xinmailong,word,noun,,285065,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216797,xipamide,word,noun,,285066,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216798,xiphihumeralis,word,noun,,285067,,,,,,anatomy,,simple,,medical,Uberon (anatomy)
+216799,xiphiplastron,word,noun,,285068,,,,,,anatomy,,simple,,medical,Uberon (anatomy)
+438532,xiphisternal joint,phrase,noun,,285069,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+216800,xiphisternum,word,noun,,285070,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Xiphoid Process')
+216801,xiphisternum,word,noun,,285071,,,,,,anatomy,,simple,,medical,Uberon (anatomy) (synonym of 'xiphoid process')
+438533,xiphoid cartilage,phrase,noun,,285072,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438534,xiphoid process,phrase,noun,,285071,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438535,xiphoid process bone,phrase,noun,,285074,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+438536,xiphophorus melanoma,phrase,noun,,285075,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216802,xirestomig,word,noun,,285076,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216803,xitsonga,word,noun,,270277,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Tsonga Language')
+438537,xk aprosencephaly,phrase,noun,,285077,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216804,xk-aprosencephaly,word,noun,,285077,,,,,,pharmacology,,,,medical,MONDO (diseases) (synonym of 'XK aprosencephaly')
+438538,xk-related neurodegenerative disease,phrase,noun,,184576,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+216805,xl-thrombocytopenia,word,noun,,263664,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Thrombocytopenia 1')
+438539,xlaad,word,noun,,94836,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438540,xlaad,word,noun,,94837,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438541,xlag,word,noun,,284856,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438542,xlcm,word,noun,,67955,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438543,xlcnm,word,noun,,58589,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438544,xlcnm,word,noun,,187086,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438545,xlcnm,word,noun,,68133,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438546,xlcsnb,word,noun,,284793,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438547,xldpp,word,noun,,284811,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438548,xlh,word,noun,,284801,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438549,xlhed,word,noun,,100478,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438550,xli,word,noun,,227324,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438551,xlid,word,noun,,284831,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438552,xlid111,word,noun,,194737,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438553,xlid50,word,noun,,186999,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438554,xlid98,word,noun,,187023,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438555,xlis1,word,noun,,284855,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438556,xlis2,word,noun,,284856,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438557,xlmtm,word,noun,,58589,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438558,xlmtm,word,noun,,187086,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438559,xln,word,noun,,239672,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438560,xloa,word,noun,,196689,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438561,xlos,word,noun,,284880,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438562,xlp1,word,noun,,284862,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438563,xlp1,word,noun,,149439,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438564,xlp1/sap,word,noun,,149439,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438565,xlp2,word,noun,,284863,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438566,xlp2,word,noun,,284859,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438567,xlp2,word,noun,,284864,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438568,xlp2/xiap,word,noun,,284864,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438569,xlpdr,word,noun,,207410,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438570,xlpp,word,noun,,284811,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438571,xlpra1,word,noun,,284883,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438572,xlpra2,word,noun,,284884,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438573,xlrs,word,noun,,284852,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438574,xlrs,word,noun,,284894,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438575,xlsa,word,noun,,245352,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438576,xlsa-a,word,noun,,25466,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438577,xlt,word,noun,,263664,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438578,xltt,word,noun,,284907,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438579,xltt,word,noun,,38035,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438580,xm-pro-c3,word,noun,,80203,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438581,xmc,word,noun,,334,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438582,xmea,word,noun,,284871,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438583,xmea,word,noun,,284872,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438584,xmen,word,noun,,284825,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438585,xmen,word,noun,,284824,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438586,xml path language,phrase,noun,,285078,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+438587,xmpma,word,noun,,100798,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438588,xmpma,word,noun,,284873,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438589,xmrv,word,noun,,285004,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438590,xmvd,word,noun,,82245,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438591,xo,word,noun,,499,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438592,xo syndrome,phrase,noun,,285079,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+216806,xofigo,word,noun,,14773,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Radium Ra 223 Dichloride')
+216807,xolair,word,noun,,198449,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Omalizumab')
+216808,xolamin,word,noun,,11214,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Clemastine Fumarate')
+216809,xolegel,word,noun,,161895,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ketoconazole')
+216810,xoloitzcuintli,word,noun,,285080,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216811,xopenex,word,noun,,167659,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Levalbuterol Hydrochloride')
+216812,xospata,word,noun,,131564,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Gilteritinib Fumarate')
+216813,xospata-azacitidine,word,noun,,30892,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Azacitidine/Gilteritinib Regimen')
+216814,xp,word,noun,,285081,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438593,xp,word,noun,,285014,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438594,xp,word,noun,,52981,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438595,xp-a,word,noun,,285018,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438596,xp-b,word,noun,,285020,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438597,xp-c,word,noun,,285022,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438598,xp-cs,word,noun,,285034,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438599,xp-d,word,noun,,285024,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438600,xp-e,word,noun,,285026,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438601,xp-f,word,noun,,285028,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438602,xp-g,word,noun,,285030,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438603,xp/cs,word,noun,,285034,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+438604,xp1,word,noun,,285017,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438605,xp1,word,noun,,285018,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438606,xp22.3 microdeletion syndrome,phrase,noun,,285082,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438607,xp3,word,noun,,285021,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438608,xp3,word,noun,,285022,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438609,xp4,word,noun,,285023,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438610,xp4,word,noun,,285024,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438611,xp5,word,noun,,285025,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438612,xp5,word,noun,,285026,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438613,xp6,word,noun,,285027,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438614,xp6,word,noun,,285028,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438615,xp7,word,noun,,285029,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438616,xp7,word,noun,,285030,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438617,xp8,word,noun,,285023,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,Disease Ontology
+438618,xpa,word,noun,,285017,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438619,xpa,word,noun,,285018,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+216815,xpath,word,noun,,285078,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'XML Path Language')
+438620,xpb,word,noun,,285019,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438621,xpb,word,noun,,285020,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438622,xpbc,word,noun,,285019,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438623,xpbc,word,noun,,285020,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438624,xpc,word,noun,,285021,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438625,xpc,word,noun,,285022,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438626,xpcc,word,noun,,285021,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438627,xpcc,word,noun,,285022,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+216816,xpd,word,noun,,241603,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'XPd Regimen')
+438628,xpd,word,noun,,285023,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438629,xpd,word,noun,,285024,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438630,xpd regimen,phrase,noun,,241603,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+438631,xpdc,word,noun,,285023,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438632,xpdc,word,noun,,285024,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438633,xpds,word,noun,,284881,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438634,xpds,word,noun,,284882,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438635,xpe,word,noun,,285025,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438636,xpe,word,noun,,285026,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438637,xpf,word,noun,,285027,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438638,xpf,word,noun,,285028,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438639,xpg,word,noun,,285029,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438640,xpg,word,noun,,285030,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438641,xph,word,noun,,285023,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438642,xpid,word,noun,,94836,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438643,xpid,word,noun,,94837,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438644,xpo1 inhibitor,phrase,noun,,246006,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438645,xpo1 inhibitor wj01024,phrase,noun,,285083,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+438646,xpo1 inhibitor wj01075,phrase,noun,,285084,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+216817,xpovio,word,noun,,241601,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Selinexor')
+438647,xps,word,noun,,107776,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438648,xpv,word,noun,,285031,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438649,xpv,word,noun,,285032,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+216818,xq,word,noun,,285085,,,,,,medicine,,simple,,medical,NCI Thesaurus
+438650,xq12-q13.3 duplication syndrome,phrase,noun,,285086,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438651,xq27.3q28 duplication syndrome,phrase,noun,,285087,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438652,xrn,word,noun,,196014,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438653,xscid,word,noun,,239404,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+438654,xscid,word,noun,,239405,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438655,xsljz,word,noun,,285063,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438656,xsljzt,word,noun,,285063,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+216819,xtandi,word,noun,,105714,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Enzalutamide')
+438657,xtc,word,noun,,331,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+438658,"xx difference of sexual development, cattle",phrase,noun,,285089,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438659,"xx difference of sexual development, common carp",phrase,noun,,285090,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438660,"xx difference of sexual development, dog",phrase,noun,,285091,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438661,"xx difference of sexual development, domestic cat",phrase,noun,,285092,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438662,"xx difference of sexual development, eastern gray kangaroo",phrase,noun,,285093,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438663,"xx difference of sexual development, goat",phrase,noun,,285094,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438664,"xx difference of sexual development, guppy",phrase,noun,,285095,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438665,"xx difference of sexual development, horse",phrase,noun,,285096,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438666,"xx difference of sexual development, japanese flounder",phrase,noun,,285097,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438667,"xx difference of sexual development, japanese medaka",phrase,noun,,285098,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438668,"xx difference of sexual development, llama",phrase,noun,,285099,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438669,"xx difference of sexual development, pig",phrase,noun,,285100,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438670,"xx difference of sexual development, red kangaroo",phrase,noun,,285101,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438671,"xx sex reversal, pig",phrase,noun,,285102,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438672,xx-gd,word,noun,,501,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+438673,xxsr,word,noun,,285091,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+438674,"xy difference of sexual development, cattle",phrase,noun,,285106,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438675,"xy difference of sexual development, dog",phrase,noun,,285107,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438676,"xy difference of sexual development, domestic cat",phrase,noun,,285108,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438677,"xy difference of sexual development, goat",phrase,noun,,285109,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438678,"xy difference of sexual development, horse",phrase,noun,,285110,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438679,"xy difference of sexual development, hsd17b3-related, dog",phrase,noun,,285111,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438680,"xy difference of sexual development, wood lemming",phrase,noun,,285112,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438681,"xy sex reversal, medaka",phrase,noun,,285113,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438682,"xy sex reversal, nr5a1-related, dog",phrase,noun,,285114,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438683,"xy sex reversal, pig",phrase,noun,,285115,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438684,"xy sex reversal, sdy-related, chinook salmon",phrase,noun,,285116,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438685,"xy sex reversal, sheep",phrase,noun,,285117,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438686,"xy sex reversal, sry-related, cattle",phrase,noun,,285118,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438687,"xy sex reversal, sry-related, horse",phrase,noun,,285119,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438688,"xy sex reversal, sry-related, rabbit",phrase,noun,,285120,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438689,"xy sex reversal, sry-related, western roe deer",phrase,noun,,285121,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438690,xy type gonadal dysgenesis-associated anomalies syndrome,phrase,noun,,285122,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438691,xy/x0,word,noun,,498,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+216820,xylene,word,noun,,91755,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216821,xylimelts,word,noun,,285125,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Xylitol-containing Oral Adhering Discs')
+216822,xylitol,word,noun,,285126,,,,,,medicine,,simple,,medical,NCI Thesaurus
+216823,xylocaine,word,noun,,168109,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Lidocaine Hydrochloride')
+216824,xylocaine-epinephrine,word,noun,,168110,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Lidocaine Hydrochloride/Epinephrine')
+216825,xylocitin,word,noun,,168109,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Lidocaine Hydrochloride')
+216826,xylol,word,noun,,91755,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Xylene')
+216827,xylonest,word,noun,,65305,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Prilocaine Hydrochloride')
+216828,xylose,word,noun,,285128,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Xylose Measurement')
+438692,xylose to xylose dose ratio measurement,phrase,noun,,285129,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+216829,xylotocan,word,noun,,261534,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Tocainide Hydrochloride')
+216830,xylotox,word,noun,,168109,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Lidocaine Hydrochloride')
+216831,xylylcarb,word,noun,,285131,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+216832,xyntha,word,noun,,10631,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Moroctocog Alfa')
+216833,xyotax,word,noun,,203473,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Paclitaxel Poliglumex')
+216834,xyzal,word,noun,,167780,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Levocetirizine Dihydrochloride')

@@ -1,0 +1,291 @@
+id,word,type,pos,sense,meaning_id,synonyms,antonyms,related,origin,category,subject,usage,structure,code,domain,source
+414709,q fever,phrase,noun,,224160,,,,,Disease,medicine,,,ICD-10 A78,medical,Disease Ontology
+414710,q fever,phrase,noun,,78502,,,,,Disease,medicine,,,ICD-10 A78,medical,MONDO (diseases)
+450848,q fever,phrase,noun,,17105,,,,,Diagnosis,medicine,,,ICD-10 A78,medical,ICD-10 (WHO 2019)
+414711,q-can plus,phrase,noun,,117289,,,,,Brand name,pharmacology,,,,medical,NCI Thesaurus
+209614,q-cells,word,noun,,135910,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Allogeneic Glial Progenitor Cells')
+209615,q-urol,word,noun,,224162,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Quercetin/Rye Flower Pollen/Bromelain/Papain Supplement')
+209616,q-value,word,noun,,224163,,,,,,medicine,,,,medical,NCI Thesaurus
+414712,q.s.,word,noun,,224164,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+414713,q4h,word,noun,,224165,,,,,Abbreviation - dosing,pharmacology,abbreviation,,,medical,Curated
+414714,qam,word,noun,,224167,,,,,Abbreviation - dosing,pharmacology,abbreviation,simple,,medical,Curated
+209617,qapzola,word,noun,,21626,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Apaziquone')
+209618,qatar,word,noun,,224168,,,,,,medicine,,simple,,medical,NCI Thesaurus
+414715,qazi markouizos syndrome,phrase,noun,,224171,,,,,Disease,medicine,,,,medical,Disease Ontology
+414716,qazi markouizos syndrome,phrase,noun,,224172,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+414717,qc slide review,phrase,noun,,224173,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+414718,qct,word,noun,,224175,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+414719,qd,word,noun,,224176,,,,,Abbreviation - dosing,pharmacology,abbreviation,simple,,medical,Curated
+414720,qhs,word,noun,,224179,,,,,Abbreviation - dosing,pharmacology,abbreviation,simple,,medical,Curated
+414721,qiagen hpv lab test,phrase,noun,,224180,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+414722,qid,word,noun,,224184,,,,,Abbreviation - dosing,pharmacology,abbreviation,simple,,medical,Curated
+414723,qids-sr - energy level,phrase,noun,,224185,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+209619,qilisheng,word,noun,,224186,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Qilisheng Immunoregulatory Oral Solution')
+209620,qing-shu-yi-qi-tang,word,noun,,224188,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Astragalus-based Formulation Qing Shu Yi Qi Tang')
+209621,qinlock,word,noun,,224189,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ripretinib')
+414724,qiv,word,noun,,224190,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+209622,qmsp,word,noun,,224191,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Quantitative Methylation-Specific Polymerase Chain Reaction')
+414725,qmt,word,noun,,224192,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+209623,qn,word,adj,,224193,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Quantitative Concept')
+414726,qnasl,word,noun,,35736,,,,,Brand name,pharmacology,,simple,,medical,NCI Thesaurus
+209624,qobm,word,noun,,224194,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Quantitative Oblique Back-Illumination Microscopy')
+414727,qoc,word,noun,,224195,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+414728,qol,word,noun,,224196,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+414729,qol-csv,word,noun,,224197,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+209625,qpcr,word,noun,,224199,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Real Time PCR')
+414730,qpd,word,noun,,35084,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+414731,qpet score,phrase,noun,,224200,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+414732,qpm,word,noun,,224201,,,,,Abbreviation - dosing,pharmacology,abbreviation,simple,,medical,Curated
+209626,qrt-pcr,word,noun,,224202,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Quantitative Reverse Transcriptase PCR')
+209627,qrtpcr,word,noun,,224202,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Quantitative Reverse Transcriptase PCR')
+414733,qs,word,noun,,224164,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+414734,qs-dg,word,noun,,149844,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+209628,qt,word,noun,,224203,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Quart')
+414735,qtci - individually corrected,phrase,noun,,224204,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+209629,quaalude,word,noun,,56353,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Methaqualone')
+414736,quad test assessment,phrase,noun,,224216,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+209630,quadramet,word,noun,,224218,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Samarium Sm-153 Lexidronam Pentasodium')
+209631,quadrant,word,noun,,224222,,,,,,medicine,,simple,,medical,NCI Thesaurus
+414737,quadrant of breast,phrase,noun,,224227,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+209632,quadrantectomy,word,noun,,224229,,,,,,medicine,,simple,,medical,NCI Thesaurus
+209633,quadrate,word,noun,,224234,,,,,,anatomy,,compound,,medical,Uberon (anatomy) (synonym of 'quadrate bone')
+414738,quadrate bone,phrase,noun,,224234,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+414739,quadrate condyle,phrase,noun,,224237,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+414740,quadrate dorsal process,phrase,noun,,224238,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+414741,quadrate lobe hepatic sinusoid,phrase,noun,,224239,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+414742,quadrate lobe of liver,phrase,noun,,224240,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+414743,quadrate posterodorsal process,phrase,noun,,224241,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+414744,quadrate ventral process,phrase,noun,,224242,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+414745,quadrate-articular joint,phrase,noun,,224243,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+414746,quadrate-hyomandibula joint,phrase,noun,,224244,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+414747,quadrate-metapterygoid joint,phrase,noun,,224245,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+414748,quadrato-orbital commissure,phrase,noun,,224253,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+414749,quadratoethmoid process,phrase,noun,,224254,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+209634,quadratojugal,word,noun,,224255,,,,,,anatomy,,simple,,medical,Uberon (anatomy) (synonym of 'quadratojugal bone')
+414750,quadratojugal bone,phrase,noun,,224255,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+414751,quadratus femoris,phrase,noun,,224257,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+414752,quadratus lumborum,phrase,noun,,224258,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+414753,quadratus lumborum muscle,phrase,noun,,224259,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+414754,quadri-,word,noun,,224261,,,,,Word part - prefix,linguistics,,,,medical,Curated
+209635,quadriceps,word,noun,,224263,,,,,,anatomy,,simple,,medical,Uberon (anatomy) (synonym of 'quadriceps femoris')
+414755,quadriceps aplasia,phrase,noun,,224264,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+414756,quadriceps femoris,phrase,noun,,224263,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+414757,quadriceps muscle atrophy,phrase,noun,,224265,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+414758,quadriceps muscle weakness,phrase,noun,,224266,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+414759,quadriceps tendon,phrase,noun,,224267,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+414760,quadricuspid aortic valve,phrase,noun,,224268,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+414761,quadrigeminal artery,phrase,noun,,224269,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+414762,quadrigeminal cistern,phrase,noun,,224270,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+414763,quadrigeminal cistern,phrase,noun,,224271,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+209636,quadriparesis,word,noun,,224279,,,,,,pharmacology,,simple,,medical,Human Phenotype Ontology (synonym of 'Tetraparesis')
+209637,quadriplegia,word,noun,,224280,,,,,,pharmacology,,simple,ICD-10 G82.5,medical,Human Phenotype Ontology (synonym of 'Tetraplegia')
+209638,quadriplegia,word,noun,,224281,,,,,,medicine,,simple,ICD-10 G82.5,medical,MONDO (diseases)
+456627,"quadriplegia, c1-c4 complete",phrase,noun,,27120,,,,,Diagnosis,medicine,,,ICD-10 G82.51,medical,ICD-10 (WHO 2019)
+456628,"quadriplegia, c1-c4 incomplete",phrase,noun,,27120,,,,,Diagnosis,medicine,,,ICD-10 G82.52,medical,ICD-10 (WHO 2019)
+456629,"quadriplegia, c5-c7 complete",phrase,noun,,27120,,,,,Diagnosis,medicine,,,ICD-10 G82.53,medical,ICD-10 (WHO 2019)
+456630,"quadriplegia, c5-c7 incomplete",phrase,noun,,27120,,,,,Diagnosis,medicine,,,ICD-10 G82.54,medical,ICD-10 (WHO 2019)
+456626,"quadriplegia, unspecified",phrase,noun,,27120,,,,,Diagnosis,medicine,,,ICD-10 G82.50,medical,ICD-10 (WHO 2019)
+414764,quadrivalent inactivated influenza vaccine,phrase,noun,,224190,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+414765,quadruple gallop rhythm,phrase,noun,,224292,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+494437,"quadruplet liveborn infant, delivered by cesarean",phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z38.64,medical,ICD-10 (WHO 2019)
+494436,"quadruplet liveborn infant, delivered vaginally",phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z38.63,medical,ICD-10 (WHO 2019)
+444975,quadruplet pregnancy,phrase,noun,,18987,,,,,Diagnosis,medicine,,,ICD-10 O30.2,medical,ICD-10 (WHO 2019)
+473899,quadruplet pregnancy,phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.2,medical,ICD-10 (WHO 2019)
+473910,quadruplet pregnancy with two or more monoamniotic fetuses,phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.22,medical,ICD-10 (WHO 2019)
+473911,"quadruplet pregnancy with two or more monoamniotic fetuses, first trimester",phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.221,medical,ICD-10 (WHO 2019)
+473912,"quadruplet pregnancy with two or more monoamniotic fetuses, second trimester",phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.222,medical,ICD-10 (WHO 2019)
+473913,"quadruplet pregnancy with two or more monoamniotic fetuses, third trimester",phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.223,medical,ICD-10 (WHO 2019)
+473914,"quadruplet pregnancy with two or more monoamniotic fetuses, unspecified trimester",phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.229,medical,ICD-10 (WHO 2019)
+473905,quadruplet pregnancy with two or more monochorionic fetuses,phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.21,medical,ICD-10 (WHO 2019)
+473906,"quadruplet pregnancy with two or more monochorionic fetuses, first trimester",phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.211,medical,ICD-10 (WHO 2019)
+473907,"quadruplet pregnancy with two or more monochorionic fetuses, second trimester",phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.212,medical,ICD-10 (WHO 2019)
+473908,"quadruplet pregnancy with two or more monochorionic fetuses, third trimester",phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.213,medical,ICD-10 (WHO 2019)
+473909,"quadruplet pregnancy with two or more monochorionic fetuses, unspecified trimester",phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.219,medical,ICD-10 (WHO 2019)
+473915,"quadruplet pregnancy, quadrachorionic/quadra-amniotic",phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.23,medical,ICD-10 (WHO 2019)
+473916,"quadruplet pregnancy, quadrachorionic/quadra-amniotic, first trimester",phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.231,medical,ICD-10 (WHO 2019)
+473917,"quadruplet pregnancy, quadrachorionic/quadra-amniotic, second trimester",phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.232,medical,ICD-10 (WHO 2019)
+473918,"quadruplet pregnancy, quadrachorionic/quadra-amniotic, third trimester",phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.233,medical,ICD-10 (WHO 2019)
+473919,"quadruplet pregnancy, quadrachorionic/quadra-amniotic, unspecified trimester",phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.239,medical,ICD-10 (WHO 2019)
+473920,"quadruplet pregnancy, unable to determine number of placenta and number of amniotic sacs",phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.29,medical,ICD-10 (WHO 2019)
+473921,"quadruplet pregnancy, unable to determine number of placenta and number of amniotic sacs, first trimester",phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.291,medical,ICD-10 (WHO 2019)
+473922,"quadruplet pregnancy, unable to determine number of placenta and number of amniotic sacs, second trimester",phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.292,medical,ICD-10 (WHO 2019)
+473923,"quadruplet pregnancy, unable to determine number of placenta and number of amniotic sacs, third trimester",phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.293,medical,ICD-10 (WHO 2019)
+473924,"quadruplet pregnancy, unable to determine number of placenta and number of amniotic sacs, unspecified trimester",phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.299,medical,ICD-10 (WHO 2019)
+473900,"quadruplet pregnancy, unspecified number of placenta and unspecified number of amniotic sacs",phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.20,medical,ICD-10 (WHO 2019)
+473901,"quadruplet pregnancy, unspecified number of placenta and unspecified number of amniotic sacs, first trimester",phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.201,medical,ICD-10 (WHO 2019)
+473902,"quadruplet pregnancy, unspecified number of placenta and unspecified number of amniotic sacs, second trimester",phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.202,medical,ICD-10 (WHO 2019)
+473903,"quadruplet pregnancy, unspecified number of placenta and unspecified number of amniotic sacs, third trimester",phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.203,medical,ICD-10 (WHO 2019)
+473904,"quadruplet pregnancy, unspecified number of placenta and unspecified number of amniotic sacs, unspecified trimester",phrase,noun,,18990,,,,,Diagnosis,medicine,,,ICD-10 O30.209,medical,ICD-10 (WHO 2019)
+494411,"quadruplets, all liveborn",phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z37.52,medical,ICD-10 (WHO 2019)
+494417,"quadruplets, some liveborn",phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z37.62,medical,ICD-10 (WHO 2019)
+209639,quadrupole,word,noun,,224298,,,,,,medicine,,simple,,medical,NCI Thesaurus
+209640,quail,word,noun,,224303,,,,,,medicine,,simple,,medical,NCI Thesaurus
+209641,qualaquin,word,noun,,224327,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Quinine Sulfate')
+209642,qualification,word,noun,,224328,,,,,,medicine,,simple,,medical,NCI Thesaurus
+209643,qualifications,word,noun,,163551,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Laboratory Certification Document')
+209644,qualifier,word,noun,,92965,,,,,,pharmacology,,derived,,medical,MONDO (diseases) (synonym of 'disease characteristic')
+209645,qualifier,word,noun,,184991,,,,,,medicine,,derived,,medical,NCI Thesaurus
+209646,qualifier,word,noun,,224343,,,,,,pharmacology,,derived,,medical,NCI Thesaurus (synonym of 'NCI Thesaurus Qualifier')
+209647,qualifying,word,noun,,224346,,,,,,medicine,,simple,,medical,NCI Thesaurus
+209648,qualitative,word,noun,,224352,,,,,,medicine,,simple,,medical,Medical Action Ontology
+209649,qualitative,word,noun,,224353,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Qualitative Concept')
+414766,qualitative assay,phrase,noun,,224354,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+414767,qualitative concept,phrase,noun,,224353,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+440822,qualitative platelet defects,phrase,noun,,13953,,,,,Diagnosis,medicine,,,ICD-10 D69.1,medical,ICD-10 (WHO 2019)
+453808,qualitative platelet defects,phrase,noun,,6246,,,,,Diagnosis,medicine,,,ICD-10 D69.1,medical,ICD-10 (WHO 2019)
+414768,qualitative sexual maturity microscopic examination,phrase,noun,,224355,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+414769,qualitative water consumption,phrase,noun,,224356,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+209650,quality,word,noun,,224363,,,,,,medicine,,simple,,medical,Medical Action Ontology
+209651,quality,word,noun,,224364,,,,,,medicine,,simple,,medical,NCI Thesaurus
+414770,quality of a gas,phrase,noun,,127195,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+414771,quality of a liquid,phrase,noun,,169569,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+414772,quality of a substance,phrase,noun,,224373,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+414773,quality of care,phrase,noun,,224195,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+414774,quality of health care assessment,phrase,noun,,224374,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+414775,quality of interaction of a substance with electromagnetic radiation,phrase,noun,,224375,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+414776,quality of life,phrase,noun,,224196,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+414777,quality of life patient/cancer survivor version,phrase,noun,,224197,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+209652,quality-of-life,word,noun,,224196,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Quality of Life')
+209653,quant-it,word,noun,,224381,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Quant-iT PicoGreen Assay')
+414778,quant-it picogreen assay,phrase,noun,,224381,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+414779,quantifiable measurable residual disease positivity,phrase,noun,,224387,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+209654,quantification,word,noun,,224388,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Quantitation')
+414780,quantification test,phrase,noun,,224391,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+209655,quantify,word,noun,,224388,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Quantitation')
+209656,quantile,word,noun,,224394,,,,,,medicine,,simple,,medical,NCI Thesaurus
+209657,quantitation,word,noun,,224388,,,,,,medicine,,simple,,medical,NCI Thesaurus
+414781,quantitation range,phrase,noun,,224399,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+414782,quantitation type dimension,phrase,noun,,224400,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+209660,quantitative,word,adj,,224193,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Quantitative Concept')
+209658,quantitative,word,noun,,224408,,,,,,medicine,,simple,,medical,Medical Action Ontology
+209659,quantitative,word,noun,,16306,,,,,,pharmacology,,simple,,medical,Medical Action Ontology (synonym of 'amount')
+414783,quantitative assay,phrase,noun,,224410,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+414784,quantitative computed tomography,phrase,noun,,224175,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+414785,quantitative coronary angiography,phrase,noun,,224411,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+414786,quantitative muscle testing,phrase,noun,,224192,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+414787,quantitative organ enlargement assessment,phrase,noun,,224412,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+414788,quantitative peripheral angiography,phrase,noun,,224413,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+414789,quantitative result,phrase,noun,,224414,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+414790,quantitative reverse transcriptase pcr,phrase,noun,,224202,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+414791,quantitative ultrasound,phrase,noun,,224415,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+414792,quantitative ultrasound spectroscopy,phrase,noun,,224416,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+209661,quantity,word,noun,,16307,,,,,,medicine,,simple,,medical,NCI Thesaurus
+414793,quantity distributed anticipated total,phrase,noun,,224422,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+414794,quantity distributed per reporting interval,phrase,noun,,224423,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+414795,quantity sufficient,phrase,noun,,224164,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+414796,quantra hemostasis analysis,phrase,noun,,224424,,,,,Brand name,pharmacology,,,,medical,NCI Thesaurus
+414797,quantra qplus,phrase,noun,,224424,,,,,Brand name,pharmacology,,,,medical,NCI Thesaurus
+414798,quantum mechanics,phrase,noun,,224429,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+414799,quaque die,phrase,noun,,224436,,,,Latin,Latin phrase,medicine,,,,medical,Curated
+209662,quarantine,word,noun,,224437,,,,,,medicine,,simple,,medical,NCI Thesaurus
+209663,quarfloxacin,word,noun,,224442,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Quarfloxin')
+209664,quarfloxin,word,noun,,224442,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+209665,quart,word,noun,,224203,,,,,,medicine,,simple,,medical,NCI Thesaurus
+414800,quart british,phrase,noun,,224457,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+209666,quarter,word,noun,,224461,,,,,,medicine,,derived,,medical,NCI Thesaurus
+209667,quartile,word,noun,,224517,,,,,,medicine,,simple,,medical,NCI Thesaurus
+209668,quartz,word,noun,,224520,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Respirable Crystalline Silica')
+414801,quater in die,phrase,noun,,224537,,,,Latin,Latin phrase,medicine,,,,medical,Curated
+414802,quaternary ammonium ion,phrase,noun,,224543,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+414803,quaternary nitrogen compound,phrase,noun,,224544,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+209669,quaternization,word,noun,,224545,,,,,,medicine,,simple,,medical,NCI Thesaurus
+209670,quavonlimab,word,noun,,224556,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+209671,quazepam,word,noun,,95716,,,,,,medicine,,simple,,medical,NCI Thesaurus
+209672,quazepam,word,noun,,224559,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Quazepam Measurement')
+209673,qubit,word,noun,,224560,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Qubit Assay')
+414804,qubit assay,phrase,noun,,224560,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+209674,quebec,word,noun,,224564,,,,,,medicine,,simple,,medical,NCI Thesaurus
+414805,quebec platelet disorder,phrase,noun,,35083,,,,,Disease,medicine,,,,medical,Disease Ontology
+414806,quebec platelet disorder,phrase,noun,,35084,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+209675,quechua,word,noun,,224570,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Quechuan Language')
+209676,quechuan,word,noun,,224570,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Quechuan Language')
+414807,queensland tick typhus,phrase,noun,,224604,,,,,Disease,medicine,,,,medical,Disease Ontology
+414808,queensland tick typhus,phrase,noun,,224605,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+209677,queer,word,noun,,224606,,,,,,medicine,,simple,,medical,NCI Thesaurus
+209678,queer,word,noun,,128016,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Genderqueer')
+209679,quelicin,word,noun,,17574,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Succinylcholine Chloride')
+209680,quelling,word,noun,,224614,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'RNA Interference')
+209681,quellor,word,noun,,94840,,,,,,pharmacology,,derived,,medical,NCI Thesaurus (synonym of 'Pegipanermin')
+414809,quelprud nodule,phrase,noun,,224617,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+209682,quemliclustat,word,noun,,224618,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+209683,quercetin,word,noun,,224629,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+414810,quercetin/rye flower pollen/bromelain/papain supplement,phrase,noun,,224162,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+414811,quercetin/saw palmetto/cranberry/bromelain/papain/zinc supplement,phrase,noun,,221146,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+209684,quercinitol,word,noun,,68711,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Scyllitol')
+414812,quercus alba pollen antigen,phrase,noun,,224631,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+209685,queretaro,word,noun,,224640,,,,,,medicine,,simple,,medical,NCI Thesaurus
+209686,query,word,noun,,224644,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Question')
+209687,question,word,noun,,224644,,,,,,medicine,,simple,,medical,NCI Thesaurus
+414813,question mark ear,phrase,noun,,224661,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+209688,questioning,word,noun,,224670,,,,,,medicine,,simple,,medical,NCI Thesaurus
+209689,questioning,word,noun,,224671,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Gender Questioning Identity')
+209690,questran,word,noun,,63118,,,,,,pharmacology,,compound,,medical,NCI Thesaurus (synonym of 'Cholestyramine')
+209691,quetiapine,word,noun,,224677,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+209692,quetiapine,word,noun,,224678,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Quetiapine Measurement')
+414814,quetiapine fumarate,phrase,noun,,224679,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+209693,queue,word,noun,,118216,,,,,,medicine,,simple,,medical,NCI Thesaurus
+414815,quick freeze,phrase,noun,,224706,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+414816,quick trials program,phrase,noun,,224711,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+209694,quickdash,word,noun,,224721,,,,,,pharmacology,,compound,,medical,NCI Thesaurus (synonym of 'QuickDASH Outcome Measure')
+209695,quicksilver,word,noun,,141768,,,,,,pharmacology,,compound,,medical,NCI Thesaurus (synonym of 'Mercury')
+414817,quickvue at-home otc covid-19 test,phrase,noun,,224738,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+209696,quidel,word,noun,,224740,,,,,,medicine,,simple,,medical,NCI Thesaurus
+414818,quiescent fibroblast,phrase,noun,,224748,,,,,Cell type,biology,,,,medical,Cell Ontology
+414819,quiescent onset of chronic graft versus host disease,phrase,noun,,224749,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+414820,quiescent skeletal muscle satellite cell,phrase,noun,,224750,,,,,Cell type,biology,,,,medical,Cell Ontology
+209697,quietim,word,noun,,589,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Oxitriptan')
+209698,quill,word,noun,,33258,,,,,,anatomy,,simple,,medical,Uberon (anatomy) (synonym of 'barbed keratin-coated spine')
+414821,quillivant xr,phrase,noun,,72618,,,,,Brand name,pharmacology,,,,medical,NCI Thesaurus
+209699,quinacillin,word,noun,,224795,,,,,,medicine,,simple,,medical,NCI Thesaurus
+209700,quinaglute,word,noun,,98675,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Quinidine Gluconate')
+209701,quinalphos,word,noun,,181759,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+209702,quinamed,word,noun,,16261,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Amonafide Dihydrochloride')
+209703,quinapril,word,noun,,224796,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+414822,quinapril hydrochloride,phrase,noun,,5462,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+209704,quincarbate,word,noun,,224797,,,,,,medicine,,simple,,medical,NCI Thesaurus
+209705,quinethazone,word,noun,,224803,,,,,,medicine,,simple,,medical,NCI Thesaurus
+209706,quinidex,word,noun,,224804,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Quinidine Sulfate')
+209707,quinidine,word,noun,,224806,,,,,,medicine,,simple,,medical,NCI Thesaurus
+414823,quinidine allergy,phrase,noun,,224807,,,,,Disease,medicine,,,,medical,Disease Ontology
+414824,quinidine gluconate,phrase,noun,,98675,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+414825,quinidine sulfate,phrase,noun,,224804,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+209708,quinine,word,noun,,224808,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+414826,quinine sulfate,phrase,noun,,224327,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+414827,quinolone antibacterial agent therapy,phrase,noun,,224811,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+414828,quinolone antibiotic,phrase,noun,,224812,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+414829,quinolone antibiotic,phrase,noun,,224813,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+414830,quinolonyl-oxazolidinone antibiotic dnv3837,phrase,noun,,224814,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+209709,quinone,word,noun,,224815,,,,,,medicine,,simple,,medical,Medical Action Ontology
+414831,quinone compound,phrase,noun,,224816,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+209710,quinones,word,noun,,224815,,,,,,pharmacology,,simple,,medical,Medical Action Ontology (synonym of 'quinone')
+414832,quinquaud's folliculitis decalvans,phrase,noun,,224818,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+209711,quinsy,word,noun,,209722,,,,,,pharmacology,,derived,,medical,MONDO (diseases) (synonym of 'peritonsillar abscess')
+209712,quintile,word,noun,,224828,,,,,,medicine,,simple,,medical,NCI Thesaurus
+494439,"quintuplet liveborn infant, delivered by cesarean",phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z38.66,medical,ICD-10 (WHO 2019)
+494438,"quintuplet liveborn infant, delivered vaginally",phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z38.65,medical,ICD-10 (WHO 2019)
+494412,"quintuplets, all liveborn",phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z37.53,medical,ICD-10 (WHO 2019)
+494418,"quintuplets, some liveborn",phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z37.63,medical,ICD-10 (WHO 2019)
+209713,quinupristin,word,noun,,224835,,,,,,medicine,,simple,,medical,NCI Thesaurus
+209714,quipazine,word,noun,,224836,,,,,,medicine,,simple,,medical,NCI Thesaurus
+414833,quipazine maleate,phrase,noun,,224837,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+209715,quisinostat,word,noun,,224846,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+209716,quit,word,noun,,57469,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Stop')
+414834,quit2heal,word,noun,,224847,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+209717,quitbot,word,noun,,224848,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'QuitBot Smoking Cessation Program')
+209718,quitguide,word,noun,,224874,,,,,,medicine,,simple,,medical,NCI Thesaurus
+209719,quitline,word,noun,,224875,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Quitline Program')
+414835,quitline program,phrase,noun,,224875,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+209720,quixin,word,noun,,167669,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Levofloxacin')
+209721,quizartinib,word,noun,,224895,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+414836,quizartinib dihydrochloride,phrase,noun,,224896,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+414837,quizartinib regimen,phrase,noun,,224897,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+209722,quizartinib-cytarabine,word,noun,,82834,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Cytarabine/Quizartinib Regimen')
+209723,quorn,word,noun,,188691,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Mycoprotein')
+209724,quotation,word,noun,,224915,,,,,,medicine,,derived,,medical,NCI Thesaurus
+209725,quote,word,noun,,224915,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Quotation')
+209726,quotidian,word,noun,,224924,,,,,,medicine,,simple,,medical,Human Phenotype Ontology
+414838,quotidian fever,phrase,noun,,224925,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+209727,quotient,word,noun,,224926,,,,,,medicine,,simple,,medical,NCI Thesaurus
+414839,qus,word,noun,,224416,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+414840,quso f-22,phrase,noun,,50541,,,,,Brand name,pharmacology,,,,medical,NCI Thesaurus
+209728,qvar,word,noun,,35736,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Beclomethasone Dipropionate')

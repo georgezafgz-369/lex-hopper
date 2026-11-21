@@ -1,0 +1,1328 @@
+id,word,type,pos,sense,meaning_id,synonyms,antonyms,related,origin,category,subject,usage,structure,code,domain,source
+128880,q,word,noun,1,224159,,,,,,linguistics,,simple,,general,WordNet
+292873,q fever,phrase,noun,1,224161,,,,,,medicine,,,,general,WordNet
+249969,qabala,word,noun,1,50546,"cabala,cabbala,cabbalah,kabala,kabbala,kabbalah",,qabalistic,,,,,simple,,general,WordNet
+249970,qabalah,word,noun,1,50546,"cabala,cabbala,cabbalah,kabala,kabbala,kabbalah",,,,,,,simple,,general,WordNet
+316193,qabalistic,word,adj,1,50553,"cabalistic,cryptic,cryptical,kabbalistic,sibylline",,qabala,,,,,simple,,general,WordNet
+128881,qabbala,word,noun,1,50547,"cabala,cabbala,cabbalah,kabala,kabbala,kabbalah",,,,,history,,simple,,general,WordNet
+128882,qabbalah,word,noun,1,50547,"cabala,cabbala,cabbalah,kabala,kabbala,kabbalah",,,,,history,,simple,,general,WordNet
+271982,qaddafi,word,noun,1,126071,"gaddafi,khadafy,muammar al-qaddafi,muammar el-qaddafi,qadhafi",,,,,politics,,simple,,general,WordNet
+271983,qadhafi,word,noun,1,126071,"gaddafi,khadafy,muammar al-qaddafi,muammar el-qaddafi,qaddafi",,,,,politics,,simple,,general,WordNet
+128883,qadi,word,noun,1,224166,,,,,,law,,simple,,general,WordNet
+255573,qaeda,word,noun,1,12700,"al-qa'ida,al-qaeda,al-qaida,base",,,,,religion,,simple,,general,WordNet
+258976,qandahar,word,noun,1,161265,kandahar,,,,,business,,simple,,general,WordNet
+261493,qara qum,phrase,noun,1,161316,"kara kum,turkestan desert",,,,,oceanography,,,,general,WordNet
+255773,qassam brigades,phrase,noun,1,159335,"iz al-din al-qassam battalions,salah al-din battalions",,,,,military,,,,general,WordNet
+128884,qat,word,noun,1,11022,"african tea,arabian tea,cat,kat,khat,quat",,,,,botany,,simple,,general,WordNet
+128885,qatar,word,noun,1,161396,"katar,state of katar,state of qatar",,,,,geography,,simple,,general,WordNet
+128886,qatar,word,noun,2,161397,"katar,katar peninsula,qatar peninsula",,,,,geography,,simple,,general,WordNet
+260498,qatar peninsula,phrase,noun,1,161397,"katar,katar peninsula,qatar",,,,,geography,,,,general,WordNet
+323037,qatari,word,adj,1,161398,katari,,,,,geography,,simple,,general,WordNet
+263643,qatari,word,noun,1,161401,katari,,,,,geography,,simple,,general,WordNet
+291033,qatari dirham,phrase,noun,1,92322,dirham,,,,,,,,,general,WordNet
+291031,qatari monetary unit,phrase,noun,1,224169,,,,,,finance,,,,general,WordNet
+291032,qatari riyal,phrase,noun,1,224170,riyal,,,,,finance,,,,general,WordNet
+128887,qats,word,noun,,11022,"african tea,arabian tea,cat,kat,khat,quat",,,,,botany,,simple,,general,WordNet
+247672,qcd,word,noun,1,224174,quantum chromodynamics,,,,,physics,,simple,,general,WordNet
+128888,qed,word,noun,1,224177,quantum electrodynamics,,,,,physics,,simple,,general,WordNet
+291041,qepiq,word,noun,1,224178,,,,,,,,simple,,general,WordNet
+292342,qi,word,noun,1,59759,"ch'i,chi,ki",,,,,medicine,,simple,,general,WordNet
+251095,qiang,word,noun,1,224181,,,,,,linguistics,,simple,,general,WordNet
+251096,qiangic,word,noun,1,224181,,,,,,linguistics,,derived,,general,WordNet
+128889,qibla,word,noun,1,224182,,,,,,religion,,simple,,general,WordNet
+128890,qibla,word,noun,2,224183,,,,,,religion,,simple,,general,WordNet
+256454,qin,word,noun,1,59760,"ch'in,ch'in dynasty,qin dynasty",,,,,politics,,simple,,general,WordNet
+256455,qin dynasty,phrase,noun,1,59760,"ch'in,ch'in dynasty,qin",,,,,politics,,,,general,WordNet
+128891,qindarka,word,noun,1,224187,qintar,,,,,,,simple,,general,WordNet
+256458,qing,word,noun,1,59762,"ch'ing,ch'ing dynasty,manchu,manchu dynasty,qing dynasty",,,,,history,,simple,,general,WordNet
+256459,qing dynasty,phrase,noun,1,59762,"ch'ing,ch'ing dynasty,manchu,manchu dynasty,qing",,,,,history,,,,general,WordNet
+128892,qintar,word,noun,1,224187,qindarka,,,,,,,simple,,general,WordNet
+128893,qintars,word,noun,,224187,qindarka,,,,,,,simple,,general,WordNet
+261497,qizil qum,phrase,noun,1,162695,"kizil kum,kyzyl kum",,,,,oceanography,,,,general,WordNet
+128894,qoph,word,noun,1,224198,,,,,,linguistics,,simple,,general,WordNet
+128895,qophs,word,noun,,224198,,,,,,linguistics,,simple,,general,WordNet
+128896,qs,word,noun,,224159,,,,,,linguistics,,simple,,general,WordNet
+128897,quaalude,word,noun,1,181735,methaqualone,,,,,pharmacology,,simple,,general,WordNet
+128898,quaaludes,word,noun,,181735,methaqualone,,,,,pharmacology,,simple,,general,WordNet
+319931,quack,word,adj,1,224205,,,,,,medicine,,simple,,general,WordNet
+128899,quack,word,noun,1,224207,,,,,,medicine,,simple,,general,WordNet
+128900,quack,word,noun,2,224208,,,,,,,,simple,,general,WordNet
+128901,quack,word,verb,1,224209,,,quackery,,,,,simple,,general,WordNet
+297780,quack,word,verb,2,224211,,,quackery,,,medicine,,simple,,general,WordNet
+279008,quack grass,phrase,noun,1,11942,"agropyron repens,couch grass,dog grass,quackgrass,quick grass,witch grass,witchgrass",,,,,botany,,,,general,WordNet
+225738,quack-quack,word,noun,1,224212,,,,,,,,,,general,WordNet
+128902,quacked,word,verb,,224209,,,,,,,,simple,,general,WordNet
+128903,quacked,word,verb,,224211,,,,,,medicine,,simple,,general,WordNet
+128904,quackeries,word,noun,,103663,empiricism,,,,,medicine,,simple,,general,WordNet
+128905,quackeries,word,noun,,60740,charlatanism,,,,,,,simple,,general,WordNet
+128906,quackery,word,noun,1,103663,empiricism,,quack,,,medicine,,simple,,general,WordNet
+128907,quackery,word,noun,2,60740,charlatanism,,quack,,,,,simple,,general,WordNet
+279007,quackgrass,word,noun,1,11942,"agropyron repens,couch grass,dog grass,quack grass,quick grass,witch grass,witchgrass",,,,,botany,,compound,,general,WordNet
+128908,quacking,word,verb,,224209,,,,,,,,simple,,general,WordNet
+128909,quacking,word,verb,,224211,,,,,,medicine,,simple,,general,WordNet
+128910,quacks,word,noun,,224207,,,,,,medicine,,simple,,general,WordNet
+128911,quacks,word,noun,,224208,,,,,,,,simple,,general,WordNet
+128912,quacks,word,verb,,224209,,,,,,,,simple,,general,WordNet
+128913,quad,word,noun,1,224213,quadruplet,,,,,,,simple,,general,WordNet
+128914,quad,word,noun,2,188340,"musculus quadriceps femoris,quadriceps,quadriceps femoris",,,,,anatomy,,simple,,general,WordNet
+128915,quad,word,noun,3,224214,space,,,,,media,,simple,,general,WordNet
+239244,quad,word,noun,4,224215,quadrangle,,,,,architecture,,simple,,general,WordNet
+128916,quadragesima,word,noun,1,224217,quadrigesima sunday,,,,,,,simple,,general,WordNet
+128917,quadrangle,word,noun,1,224219,"quadrilateral,tetragon",,quadrangular,,,mathematics,,simple,,general,WordNet
+128918,quadrangle,word,noun,2,224215,quad,,quadrangular,,,architecture,,simple,,general,WordNet
+128919,quadrangles,word,noun,,224219,"quadrilateral,tetragon",,,,,mathematics,,simple,,general,WordNet
+128920,quadrangles,word,noun,,224215,quad,,,,,architecture,,simple,,general,WordNet
+128921,quadrangular,word,adj,1,224220,,,quadrangle,,,,,simple,,general,WordNet
+291865,quadrangular prism,phrase,noun,1,224221,,,,,,,,,,general,WordNet
+128922,quadrant,word,noun,1,224223,quarter-circle,,,,,,,simple,,general,WordNet
+128923,quadrant,word,noun,2,224224,,,,,,aviation,,simple,,general,WordNet
+128924,quadrant,word,noun,3,224225,,,,,,,,simple,,general,WordNet
+239246,quadrant,word,noun,4,224226,,,,,,music,,simple,,general,WordNet
+294489,quadrantanopia,word,noun,1,224228,,,,,,,,simple,,general,WordNet
+128925,quadrants,word,noun,,224223,quarter-circle,,,,,,,simple,,general,WordNet
+128926,quadrants,word,noun,,224224,,,,,,aviation,,simple,,general,WordNet
+128927,quadrants,word,noun,,224225,,,,,,,,simple,,general,WordNet
+128928,quadraphonic,word,adj,1,224230,"quadrasonic,quadriphonic,quadrisonic",,quadraphony,,,,,simple,,general,WordNet
+239248,quadraphonic system,phrase,noun,1,224232,"quadraphony,quadriphonic system",,,,,,,,,general,WordNet
+239247,quadraphony,word,noun,1,224232,"quadraphonic system,quadriphonic system",,quadraphonic,,,,,simple,,general,WordNet
+323041,quadrasonic,word,adj,1,224230,"quadraphonic,quadriphonic,quadrisonic",,,,,,,simple,,general,WordNet
+128931,quadrate,word,adj,1,224233,,,,,,mathematics,,compound,,general,WordNet
+128929,quadrate,word,noun,1,224235,,,,,,,,compound,,general,WordNet
+128930,quadrate,word,noun,2,224236,,,,,,,,compound,,general,WordNet
+128932,quadrates,word,noun,,224235,,,,,,,,compound,,general,WordNet
+128933,quadrates,word,noun,,224236,,,,,,,,compound,,general,WordNet
+128936,quadratic,word,adj,1,224246,,,,,,,,derived,,general,WordNet
+323039,quadratic,word,adj,2,224248,,,,,,,,derived,,general,WordNet
+128934,quadratic,word,noun,1,224250,quadratic equation,,,,,mathematics,,derived,,general,WordNet
+128935,quadratic,word,noun,2,224251,quadratic polynomial,,,,,,,derived,,general,WordNet
+249954,quadratic equation,phrase,noun,1,224250,quadratic,,,,,mathematics,,,,general,WordNet
+246828,quadratic polynomial,phrase,noun,1,224251,quadratic,,,,,,,,,general,WordNet
+128938,quadratics,word,noun,,224250,quadratic equation,,,,,mathematics,,derived,,general,WordNet
+128939,quadratics,word,noun,,224251,quadratic polynomial,,,,,,,derived,,general,WordNet
+128937,quadratics,word,noun,1,224252,,,,,,mathematics,,derived,,general,WordNet
+128940,quadrature,word,noun,1,224256,,,,,,construction,,simple,,general,WordNet
+128941,quadratures,word,noun,,224256,,,,,,construction,,simple,,general,WordNet
+128942,quadrennia,word,noun,,224260,quadrennium,,,,,,,simple,,general,WordNet
+128943,quadrennium,word,noun,1,224260,quadrennia,,,,,,,simple,,general,WordNet
+128944,quadrenniums,word,noun,,224260,quadrennia,,,,,,,simple,,general,WordNet
+128945,quadric,word,noun,1,224262,quadric surface,,,,,mathematics,,simple,,general,WordNet
+291923,quadric surface,phrase,noun,1,224262,quadric,,,,,mathematics,,,,general,WordNet
+128946,quadriceps,word,noun,1,188340,"musculus quadriceps femoris,quad,quadriceps femoris",,,,,anatomy,,simple,,general,WordNet
+243923,quadriceps femoris,phrase,noun,1,188340,"musculus quadriceps femoris,quad,quadriceps",,,,,anatomy,,,,general,WordNet
+128947,quadricepses,word,noun,,188340,"musculus quadriceps femoris,quad,quadriceps femoris",,,,,anatomy,,simple,,general,WordNet
+128948,quadrics,word,noun,,224262,quadric surface,,,,,mathematics,,simple,,general,WordNet
+297151,quadrigesima sunday,phrase,noun,1,224217,quadragesima,,,,,,,,,general,WordNet
+128950,quadrilateral,word,adj,1,123401,four-sided,,,,,,,simple,,general,WordNet
+128949,quadrilateral,word,noun,1,224219,"quadrangle,tetragon",,,,,mathematics,,simple,,general,WordNet
+128951,quadrilaterals,word,noun,,224219,"quadrangle,tetragon",,,,,mathematics,,simple,,general,WordNet
+128952,quadrille,word,noun,1,224272,,,,,,music,,simple,,general,WordNet
+128953,quadrille,word,noun,2,224273,,,,,,,,simple,,general,WordNet
+128954,quadrilles,word,noun,,224272,,,,,,music,,simple,,general,WordNet
+128955,quadrilles,word,noun,,224273,,,,,,,,simple,,general,WordNet
+128956,quadrillion,word,noun,1,224274,septillion,,,,,,,simple,,general,WordNet
+128957,quadrillion,word,noun,2,224276,,,,,,,,simple,,general,WordNet
+128958,quadrillions,word,noun,,224274,septillion,,,,,,,simple,,general,WordNet
+128959,quadrillions,word,noun,,224276,,,,,,,,simple,,general,WordNet
+128961,quadrillionth,word,adj,1,224277,,,,,,,,simple,,general,WordNet
+128960,quadrillionth,word,noun,1,198911,one-quadrillionth,,,,,,,simple,,general,WordNet
+128962,quadrillionths,word,noun,,198911,one-quadrillionth,,,,,,,simple,,general,WordNet
+265961,quadripara,word,noun,1,224278,,,,,,medicine,,simple,,general,WordNet
+128963,quadripartite,word,adj,1,123394,four-party,,,,,,,simple,,general,WordNet
+128964,quadriphonic,word,adj,1,224230,"quadraphonic,quadrasonic,quadrisonic",,,,,,,simple,,general,WordNet
+239249,quadriphonic system,phrase,noun,1,224232,"quadraphonic system,quadraphony",,,,,,,,,general,WordNet
+128965,quadriplegia,word,noun,1,224282,,,,,,,,simple,,general,WordNet
+128966,quadriplegic,word,noun,1,224283,,,,,,,,simple,,general,WordNet
+323042,quadrisonic,word,adj,1,224230,"quadraphonic,quadrasonic,quadriphonic",,,,,,,simple,,general,WordNet
+128967,quadrivium,word,noun,1,224284,,,,,,history,,simple,,general,WordNet
+128968,quadroon,word,noun,1,224285,,,,,,,,simple,,general,WordNet
+128969,quadroons,word,noun,,224285,,,,,,,,simple,,general,WordNet
+128970,quadrumvirate,word,noun,1,224286,,,,,,,,simple,,general,WordNet
+128972,quadruped,word,adj,1,123382,four-footed,biped,,,,,,simple,,general,WordNet
+128971,quadruped,word,noun,1,224287,,,quadrupedal,,,zoology,,simple,,general,WordNet
+128973,quadrupedal,word,adj,1,123382,four-footed,bipedal,quadruped,,,,,derived,,general,WordNet
+128974,quadrupeds,word,noun,,224287,,,,,,zoology,,simple,,general,WordNet
+321172,quadruple,word,adj,1,123377,"four-fold,fourfold,quadruplicate",,,,,,,simple,,general,WordNet
+321170,quadruple,word,adj,2,123380,"four-fold,fourfold",,,,,,,simple,,general,WordNet
+128975,quadruple,word,noun,1,224288,"quartet,quartette",,quadruplicate,,,,,simple,,general,WordNet
+128976,quadruple,word,noun,2,224289,,,quadruplicate,,,,,simple,,general,WordNet
+128977,quadruple,word,verb,1,224290,,,"quadruplicate,quadrupling",,,,,simple,,general,WordNet
+297553,quadruple time,phrase,noun,1,71179,"common measure,common time,four-four time",,,,,,,,,general,WordNet
+128978,quadrupled,word,verb,,224290,,,,,,,,simple,,general,WordNet
+128979,quadruples,word,noun,,224288,"quadruplet,quartet,quartette",,,,,,,simple,,general,WordNet
+128980,quadruples,word,noun,,224289,,,,,,,,simple,,general,WordNet
+128981,quadruples,word,verb,,224290,,,,,,,,simple,,general,WordNet
+128982,quadruplet,word,noun,1,123364,"four,foursome,iv,little joe,quartet,quatern,quaternary,quaternion",,,,,mathematics,,simple,,general,WordNet
+128983,quadruplet,word,noun,2,224213,quad,,,,,,,simple,,general,WordNet
+128984,quadruplet,word,noun,3,224288,"quadruples,quartet,quartette",,,,,,,simple,,general,WordNet
+128985,quadruplets,word,noun,,123364,"four,foursome,iv,little joe,quartet,quatern,quaternary,quaternion",,,,,mathematics,,simple,,general,WordNet
+128986,quadruplets,word,noun,,224213,quad,,,,,,,simple,,general,WordNet
+128987,quadruplets,word,noun,,224288,"quadruples,quartet,quartette",,,,,,,simple,,general,WordNet
+128988,quadruplex,word,adj,1,123377,"four-fold,fourfold,quadruplicate",,,,,,,simple,,general,WordNet
+128991,quadruplicate,word,adj,1,123377,"four-fold,fourfold,quadruple,quadruplex",,,,,,,simple,,general,WordNet
+128989,quadruplicate,word,noun,1,224293,,,quadruple,,,,,simple,,general,WordNet
+128990,quadruplicate,word,verb,1,224295,,,quadruple,,,,,simple,,general,WordNet
+128992,quadruplicated,word,verb,,224295,,,,,,,,simple,,general,WordNet
+128993,quadruplicates,word,noun,,224293,,,,,,,,simple,,general,WordNet
+128994,quadruplicates,word,verb,,224295,,,,,,,,simple,,general,WordNet
+128995,quadruplicating,word,verb,,224295,,,,,,,,simple,,general,WordNet
+128996,quadrupling,word,noun,1,224297,,,quadruple,,,,,simple,,general,WordNet
+128997,quadrupling,word,verb,,224290,,,,,,,,simple,,general,WordNet
+128998,quads,word,noun,,224213,quadruplet,,,,,,,simple,,general,WordNet
+128999,quads,word,noun,,188340,"musculus quadriceps femoris,quadriceps,quadriceps femoris",,,,,anatomy,,simple,,general,WordNet
+129000,quads,word,noun,,224214,space,,,,,media,,simple,,general,WordNet
+129001,quaestor,word,noun,1,224299,,,,,,finance,,simple,,general,WordNet
+129002,quaestors,word,noun,,224299,,,,,,finance,,simple,,general,WordNet
+129003,quaff,word,noun,1,224300,,,,,,anatomy,,simple,,general,WordNet
+129004,quaff,word,verb,1,136295,"gulp,swig",,quaffer,,,,,simple,,general,WordNet
+129005,quaffed,word,verb,,136295,"gulp,swig",,,,,,,simple,,general,WordNet
+129006,quaffer,word,noun,1,224301,,,quaff,,,drinks,,derived,,general,WordNet
+129007,quaffers,word,noun,,224301,,,,,,drinks,,derived,,general,WordNet
+129008,quaffing,word,verb,,136295,"gulp,swig",,,,,,,simple,,general,WordNet
+129009,quaffs,word,noun,,224300,,,,,,anatomy,,simple,,general,WordNet
+129010,quaffs,word,verb,,136295,"gulp,swig",,,,,,,simple,,general,WordNet
+129011,quag,word,noun,1,183853,"mire,morass,quagmires,slack",,quaggy,,,,,simple,,general,WordNet
+129012,quagga,word,noun,1,107207,equus quagga,,,,,zoology,,simple,,general,WordNet
+129013,quaggas,word,noun,,107207,equus quagga,,,,,zoology,,simple,,general,WordNet
+129014,quaggier,word,adj,,43120,"boggy,marshy,miry,mucky,muddy,sloppy,sloughy,soggy",,,,,,,derived,,general,WordNet
+129015,quaggiest,word,adj,,43120,"boggy,marshy,miry,mucky,muddy,sloppy,sloughy,soggy",,,,,,,simple,,general,WordNet
+129016,quaggy,word,adj,1,43120,"boggy,marshy,miry,mucky,muddy,sloppy,sloughy,soggy",,quag,,,,,simple,,general,WordNet
+129017,quagmire,word,noun,1,183853,"mire,morass,quags,slack",,,,,,,simple,,general,WordNet
+129018,quagmires,word,noun,,183853,"mire,morass,quag,slack",,,,,,,simple,,general,WordNet
+129019,quags,word,noun,,183853,"mire,morass,quagmire,slack",,,,,,,simple,,general,WordNet
+129020,quahaug,word,noun,1,138104,"hard-shell clam,quahog,round clam",,,,,culinary,,simple,,general,WordNet
+129021,quahaug,word,noun,2,138030,"hard clam,hard-shell clam,mercenaria mercenaria,quahog,round clam,venus mercenaria",,,,,finance,,simple,,general,WordNet
+129022,quahaugs,word,noun,,138104,"hard-shell clam,quahog,round clam",,,,,culinary,,simple,,general,WordNet
+129023,quahaugs,word,noun,,138030,"hard clam,hard-shell clam,mercenaria mercenaria,quahog,round clam,venus mercenaria",,,,,finance,,simple,,general,WordNet
+129024,quahog,word,noun,1,138104,"hard-shell clam,quahaug,round clam",,,,,culinary,,simple,,general,WordNet
+129025,quahog,word,noun,2,138030,"hard clam,hard-shell clam,mercenaria mercenaria,quahaug,round clam,venus mercenaria",,,,,finance,,simple,,general,WordNet
+129026,quahogs,word,noun,,138104,"hard-shell clam,quahaug,round clam",,,,,culinary,,simple,,general,WordNet
+129027,quahogs,word,noun,,138030,"hard clam,hard-shell clam,mercenaria mercenaria,quahaug,round clam,venus mercenaria",,,,,finance,,simple,,general,WordNet
+260162,quai d'orsay,phrase,noun,1,224302,,,,,,politics,,,,general,WordNet
+256161,quai d'orsay,phrase,noun,2,124297,french foreign office,,,,,,,,,general,WordNet
+129028,quail,word,noun,1,224304,,,,,,culinary,,simple,,general,WordNet
+129029,quail,word,noun,2,224305,,,,,,zoology,,simple,,general,WordNet
+129030,quail,word,verb,1,79693,"cringe,flinch,funk,recoil,shrank,shrink,shrunk,shrunken",,,,,medicine,,simple,,general,WordNet
+307152,quail at,phrasal verb,verb,1,22776,apprehend,,,,Phrasal verb,psychology,phrasal_verb,,,general,WordNet
+276707,quail brush,phrase,noun,1,27617,"atriplex lentiformis,quail bush,white thistle",,,,,botany,,,,general,WordNet
+276706,quail bush,phrase,noun,1,27617,"atriplex lentiformis,quail brush,white thistle",,,,,botany,,,,general,WordNet
+129031,quailed,word,verb,,79693,"cringe,flinch,funk,recoil,shrank,shrink,shrunk,shrunken",,,,,medicine,,simple,,general,WordNet
+129032,quailing,word,verb,,79693,"cringe,flinch,funk,recoil,shrank,shrink,shrunk,shrunken",,,,,medicine,,derived,,general,WordNet
+129033,quails,word,noun,,224304,,,,,,culinary,,simple,,general,WordNet
+129034,quails,word,noun,,224305,,,,,,zoology,,simple,,general,WordNet
+129035,quails,word,verb,,79693,"cringe,flinch,funk,recoil,shrank,shrink,shrunk,shrunken",,,,,medicine,,simple,,general,WordNet
+129036,quaint,word,adj,1,224306,,,quaintness,,,,,simple,,general,WordNet
+129037,quaint,word,adj,2,224309,,,quaintness,,,,,simple,,general,WordNet
+129038,quaint,word,adj,3,198224,"old-time,olde worlde",,quaintness,,,fashion,,simple,,general,WordNet
+129039,quainter,word,adj,,224306,,,,,,,,derived,,general,WordNet
+129040,quainter,word,adj,,224309,,,,,,,,derived,,general,WordNet
+129041,quainter,word,adj,,198224,"old-time,olde worlde",,,,,fashion,,derived,,general,WordNet
+129042,quaintest,word,adj,,224306,,,,,,,,simple,,general,WordNet
+129043,quaintest,word,adj,,224309,,,,,,,,simple,,general,WordNet
+129044,quaintest,word,adj,,198224,"old-time,olde worlde",,,,,fashion,,simple,,general,WordNet
+129045,quaintly,word,adv,1,224313,,,,,,,,derived,,general,WordNet
+129046,quaintly,word,adv,2,224315,,,,,,fashion,,derived,,general,WordNet
+129047,quaintness,word,noun,1,224317,,,quaint,,,fashion,,derived,,general,WordNet
+129048,quaintness,word,noun,2,224319,,,quaint,,,fashion,,derived,,general,WordNet
+129049,quake,word,noun,1,99616,"earthquake,seism,temblor",,,,,geology,,simple,,general,WordNet
+129050,quake,word,verb,1,204123,"palpitate,quiver",,quaker,,,,,simple,,general,WordNet
+129051,quake,word,verb,2,224321,tremor,,quaker,,,,,simple,,general,WordNet
+129052,quaked,word,verb,,204123,"palpitate,quiver",,,,,,,simple,,general,WordNet
+129053,quaked,word,verb,,224321,tremor,,,,,,,simple,,general,WordNet
+129054,quaker,word,noun,1,124539,friend,,quake,,,religion,,derived,,general,WordNet
+129055,quaker,word,noun,2,224323,trembler,,quake,,,,,derived,,general,WordNet
+239250,quaker gun,phrase,noun,1,224324,,,,,,military,,,,general,WordNet
+129056,quakerism,word,noun,1,224325,,,,,,military,,derived,,general,WordNet
+129058,quakers,word,noun,,124539,friend,,,,,religion,,derived,,general,WordNet
+129059,quakers,word,noun,,224323,trembler,,,,,,,derived,,general,WordNet
+129057,quakers,word,noun,1,224326,"religious society of friends,society of friends",,,,,religion,,derived,,general,WordNet
+129060,quakes,word,noun,,99616,"earthquake,seism,temblor",,,,,geology,,simple,,general,WordNet
+129061,quakes,word,verb,,204123,"palpitate,quiver",,,,,,,simple,,general,WordNet
+129062,quakes,word,verb,,224321,tremor,,,,,,,simple,,general,WordNet
+129063,quaking,word,verb,,204123,"palpitate,quiver",,,,,,,simple,,general,WordNet
+129064,quaking,word,verb,,224321,tremor,,,,,,,simple,,general,WordNet
+284993,quaking aspen,phrase,noun,1,108880,"european quaking aspen,populus tremula",,,,,,,,,general,WordNet
+129065,qualification,word,noun,1,174757,"making,makings",,qualify,,,,,simple,,general,WordNet
+129066,qualification,word,noun,2,224329,,,qualify,,,,,simple,,general,WordNet
+129067,qualification,word,noun,3,224331,reservation,,qualify,,,,,simple,,general,WordNet
+129068,qualifications,word,noun,,174757,"making,makings",,,,,,,simple,,general,WordNet
+129069,qualifications,word,noun,,224329,,,,,,,,simple,,general,WordNet
+129070,qualifications,word,noun,,224331,reservation,,,,,,,simple,,general,WordNet
+319929,qualified,word,adj,1,224333,,unqualified,,,,,,simple,,general,WordNet
+319940,qualified,word,adj,2,224335,,unqualified,,,,,,simple,,general,WordNet
+320085,qualified,word,adj,3,59274,certified,,,,,,,simple,,general,WordNet
+318596,qualified,word,adj,4,224337,restricted,,,,,,,simple,,general,WordNet
+315027,qualified,word,adj,5,88343,"dependant,dependent",,,,,,,simple,,general,WordNet
+129071,qualified,word,verb,,178579,measure up,,,,,,,simple,,general,WordNet
+129072,qualified,word,verb,,224338,,,,,,,,simple,,general,WordNet
+129073,qualified,word,verb,,224341,restrict,,,,,,,simple,,general,WordNet
+129074,qualifier,word,noun,1,224344,,,qualify,,,,,derived,,general,WordNet
+129075,qualifier,word,noun,2,184992,modifier,,qualify,,,linguistics,,derived,,general,WordNet
+129076,qualifiers,word,noun,,224344,,,,,,,,derived,,general,WordNet
+129077,qualifiers,word,noun,,184992,modifier,,,,,linguistics,,derived,,general,WordNet
+129078,qualifies,word,verb,,178579,measure up,,,,,,,simple,,general,WordNet
+129079,qualifies,word,verb,,224338,,,,,,,,simple,,general,WordNet
+129080,qualifies,word,verb,,224341,restrict,,,,,,,simple,,general,WordNet
+129081,qualify,word,verb,1,178579,measure up,,"qualification,quality,qualifier,qualifying",,,,,simple,,general,WordNet
+129082,qualify,word,verb,2,224338,,disqualify,"qualification,quality,qualifier,qualifying",,,,,simple,,general,WordNet
+129083,qualify,word,verb,3,224341,restrict,,"qualification,quality,qualifier,qualifying",,,,,simple,,general,WordNet
+299296,qualify,word,verb,4,93621,dispose,disqualify,"qualification,quality,qualifier,qualifying",,,,,simple,,general,WordNet
+302840,qualify,word,verb,5,72886,"condition,specify,stipulate",,"qualification,quality,qualifier,qualifying",,,economics,,simple,,general,WordNet
+302577,qualify,word,verb,6,60422,characterise,,"qualification,quality,qualifier,qualifying",,,,,simple,,general,WordNet
+298631,qualify,word,verb,7,184961,modify,,"qualification,quality,qualifier,qualifying",,,,,simple,,general,WordNet
+129084,qualifying,word,noun,1,168931,"limiting,modification",,qualify,,,linguistics,,simple,,general,WordNet
+129085,qualifying,word,noun,2,206397,"pass,passing",,qualify,,,,,simple,,general,WordNet
+129086,qualifying,word,verb,,178579,measure up,,,,,,,simple,,general,WordNet
+248290,qualifying adjective,phrase,noun,1,88950,descriptive adjective,,,,,linguistics,,,,general,WordNet
+129087,qualitative,word,adj,1,224347,,quantitative,,,,,,simple,,general,WordNet
+129088,qualitative,word,adj,2,224351,,,,,,,,simple,,general,WordNet
+219431,qualitative analysis,phrase,noun,1,61331,chemical analysis,,,,,,,,,general,WordNet
+129089,qualitatively,word,adv,1,224357,,,,,,,,derived,,general,WordNet
+129090,qualities,word,noun,,224359,,,,,,,,simple,,general,WordNet
+129091,qualities,word,noun,,51252,"caliber,calibre",,,,,,,simple,,general,WordNet
+129092,qualities,word,noun,,60394,"character,lineament",,,,,,,simple,,general,WordNet
+321630,quality,word,adj,1,62936,"choice,prime,prize,select",,,,,,,simple,,general,WordNet
+313660,quality,word,adj,2,224360,,,,,,sociology,,simple,,general,WordNet
+129093,quality,word,noun,,224359,,,,,,,,simple,,general,WordNet
+242452,quality,word,noun,1,224365,,,qualify,,,,,simple,,general,WordNet
+129094,quality,word,noun,2,51252,"caliber,calibre",,qualify,,,,,simple,,general,WordNet
+129095,quality,word,noun,3,60394,"character,lineament",,qualify,,,,,simple,,general,WordNet
+242961,quality,word,noun,4,224367,"timber,timbre,tone",,qualify,,,music,,simple,,general,WordNet
+292052,quality,word,noun,5,224370,,,qualify,,,sociology,,simple,,general,WordNet
+220053,quality control,phrase,noun,1,224372,,,,,,economics,,,,general,WordNet
+292148,quality of life,phrase,noun,1,224376,,,,,,sociology,,,,general,WordNet
+129096,qualm,word,noun,1,184009,"misgiving,misgivings,scruple",,,,,sports_medicine,,simple,,general,WordNet
+129097,qualm,word,noun,2,224378,"queasiness,squeamishness",,,,,,,simple,,general,WordNet
+129098,qualms,word,noun,,184009,"misgiving,misgivings,scruple",,,,,sports_medicine,,simple,,general,WordNet
+129099,qualms,word,noun,,224378,"queasiness,squeamishness",,,,,,,simple,,general,WordNet
+129100,quamash,word,noun,1,51792,"camas,camash,camass,camosh",,,,,botany,,simple,,general,WordNet
+129101,quamashes,word,noun,,51792,"camas,camash,camass,camosh",,,,,botany,,simple,,general,WordNet
+282229,quamassia,word,noun,1,51793,"camassia,genus camassia,genus quamassia",,,,,nutrition,,simple,,general,WordNet
+285834,quamoclit pennata,phrase,noun,1,82638,"cypress vine,indian pink,ipomoea quamoclit,star-glory",,,,,botany,,,,general,WordNet
+129102,quandang,word,noun,1,108678,"eucarya acuminata,fusanus acuminatus,quandong,quandong tree",,,,,nutrition,,simple,,general,WordNet
+129103,quandang,word,noun,2,190411,"native peach,quandong,quantong",,,,,botany,,simple,,general,WordNet
+129104,quandangs,word,noun,,108678,"eucarya acuminata,fusanus acuminatus,quandong,quandong tree",,,,,nutrition,,simple,,general,WordNet
+129105,quandangs,word,noun,,190411,"native peach,quandong,quantong",,,,,botany,,simple,,general,WordNet
+129106,quandaries,word,noun,,214149,"plight,predicament",,,,,,,simple,,general,WordNet
+129107,quandaries,word,noun,,91648,dilemma,,,,,,,simple,,general,WordNet
+129108,quandary,word,noun,1,214149,"plight,predicament",,,,,,,simple,,general,WordNet
+129109,quandary,word,noun,2,91648,dilemma,,,,,,,simple,,general,WordNet
+129110,quandong,word,noun,1,108678,"eucarya acuminata,fusanus acuminatus,quandang,quandong tree",,,,,nutrition,,simple,,general,WordNet
+129111,quandong,word,noun,2,42435,blue fig,,,,,botany,,simple,,general,WordNet
+129112,quandong,word,noun,3,42436,"blue fig,brisbane quandong,elaeocarpus grandis,quandong tree,silver quandong tree",,,,,botany,,simple,,general,WordNet
+254389,quandong,word,noun,4,190411,"native peach,quandang,quantong",,,,,botany,,simple,,general,WordNet
+254391,quandong nut,phrase,noun,1,224379,,,,,,botany,,,,general,WordNet
+285022,quandong tree,phrase,noun,1,108678,"eucarya acuminata,fusanus acuminatus,quandang,quandong",,,,,nutrition,,,,general,WordNet
+279889,quandong tree,phrase,noun,2,42436,"blue fig,brisbane quandong,elaeocarpus grandis,quandong,silver quandong tree",,,,,botany,,,,general,WordNet
+129113,quandongs,word,noun,,108678,"eucarya acuminata,fusanus acuminatus,quandang,quandong tree",,,,,nutrition,,simple,,general,WordNet
+129114,quandongs,word,noun,,42435,blue fig,,,,,botany,,simple,,general,WordNet
+129115,quandongs,word,noun,,42436,"blue fig,brisbane quandong,elaeocarpus grandis,quandong tree,silver quandong tree",,,,,botany,,simple,,general,WordNet
+129116,quango,word,noun,1,224380,quasi-ngo,,,,,politics,,simple,,general,WordNet
+129117,quangos,word,noun,,224380,quasi-ngo,,,,,politics,,simple,,general,WordNet
+129118,quanta,word,noun,,224382,quantum,,,,,physics,,simple,,general,WordNet
+129119,quanta,word,noun,,224383,quantum,,,,,physics,,simple,,general,WordNet
+129120,quantal,word,adj,1,224384,quantized,,quantum,,,physics,,simple,,general,WordNet
+129121,quantic,word,noun,1,224385,,,,,,,,simple,,general,WordNet
+129122,quantics,word,noun,,224385,,,,,,,,simple,,general,WordNet
+129123,quantifiability,word,noun,1,178535,measurability,,quantifiable,,,,,simple,,general,WordNet
+129124,quantifiable,word,adj,1,224386,,,quantifiability,,,,,derived,,general,WordNet
+129125,quantification,word,noun,1,224389,,,quantify,,,,,simple,,general,WordNet
+129126,quantification,word,noun,2,224390,,,quantify,,,,,simple,,general,WordNet
+129127,quantifications,word,noun,,224389,,,,,,,,simple,,general,WordNet
+129128,quantifications,word,noun,,224390,,,,,,,,simple,,general,WordNet
+129129,quantified,word,verb,,224392,,,,,,,,simple,,general,WordNet
+129130,quantified,word,verb,,178575,measure,,,,,,,simple,,general,WordNet
+129131,quantifier,word,noun,1,170928,logical quantifier,,,,,philosophy,,derived,,general,WordNet
+129132,quantifier,word,noun,2,224393,,,,,,linguistics,,derived,,general,WordNet
+129133,quantifiers,word,noun,,170928,logical quantifier,,,,,philosophy,,derived,,general,WordNet
+129134,quantifiers,word,noun,,224393,,,,,,linguistics,,derived,,general,WordNet
+129135,quantifies,word,verb,,224392,,,,,,,,simple,,general,WordNet
+129136,quantifies,word,verb,,178575,measure,,,,,,,simple,,general,WordNet
+129137,quantify,word,verb,1,224392,,,"quantification,quantity",,,,,simple,,general,WordNet
+129138,quantify,word,verb,2,178575,measure,,"quantification,quantity",,,,,simple,,general,WordNet
+129139,quantifying,word,verb,,224392,,,,,,,,simple,,general,WordNet
+129140,quantifying,word,verb,,178575,measure,,,,,,,simple,,general,WordNet
+218431,quantisation,word,noun,1,224395,,,quantise,,,physics,,derived,,general,WordNet
+301151,quantise,word,verb,1,224396,,,quantisation,,,,,simple,,general,WordNet
+300968,quantise,word,verb,2,224397,,,quantisation,,,physics,,simple,,general,WordNet
+129141,quantitative,word,adj,1,224401,,qualitative,,,,,,simple,,general,WordNet
+129142,quantitative,word,adj,2,224404,,,,,,,,simple,,general,WordNet
+129143,quantitative,word,adj,3,224406,,"syllabic,accentual",,,,literature,,simple,,general,WordNet
+219432,quantitative analysis,phrase,noun,1,224409,quantitative chemical analysis,,,,,chemistry,,,,general,WordNet
+219433,quantitative chemical analysis,phrase,noun,1,224409,quantitative analysis,,,,,chemistry,,,,general,WordNet
+291571,quantitative relation,phrase,noun,1,174304,magnitude relation,,,,,,,,,general,WordNet
+129144,quantitatively,word,adv,1,224417,,,,,,,,derived,,general,WordNet
+129145,quantities,word,noun,,16313,"amount,measure",,,,,,,simple,,general,WordNet
+129146,quantities,word,noun,,224419,,,,,,,,simple,,general,WordNet
+129147,quantities,word,noun,,224421,,,,,,mathematics,,simple,,general,WordNet
+129148,quantity,word,noun,1,16313,"amount,measure",,quantify,,,,,simple,,general,WordNet
+129149,quantity,word,noun,2,224419,,,quantify,,,,,simple,,general,WordNet
+129150,quantity,word,noun,3,224421,,,quantify,,,mathematics,,simple,,general,WordNet
+290686,quantity unit,phrase,noun,1,60691,charge unit,,,,,electronics,,,,general,WordNet
+129151,quantization,word,noun,1,224395,,,quantize,,,physics,,derived,,general,WordNet
+129152,quantize,word,verb,1,224396,,,quantization,,,,,simple,,general,WordNet
+129153,quantize,word,verb,2,224397,,,quantization,,,physics,,simple,,general,WordNet
+129156,quantized,word,adj,1,224384,quantal,,,,,physics,,simple,,general,WordNet
+129154,quantized,word,verb,,224396,,,,,,,,simple,,general,WordNet
+129155,quantized,word,verb,,224397,,,,,,physics,,simple,,general,WordNet
+129157,quantizes,word,verb,,224396,,,,,,,,simple,,general,WordNet
+129158,quantizes,word,verb,,224397,,,,,,physics,,simple,,general,WordNet
+129159,quantizing,word,verb,,224396,,,,,,,,simple,,general,WordNet
+129160,quantizing,word,verb,,224397,,,,,,physics,,simple,,general,WordNet
+129161,quantong,word,noun,1,190411,"native peach,quandang,quandong",,,,,botany,,simple,,general,WordNet
+129162,quantongs,word,noun,,190411,"native peach,quandang,quandong",,,,,botany,,simple,,general,WordNet
+129163,quantum,word,noun,1,224382,quanta,,quantal,,,physics,,simple,,general,WordNet
+129164,quantum,word,noun,2,224383,quanta,,quantal,,,physics,,simple,,general,WordNet
+247671,quantum chromodynamics,phrase,noun,1,224174,qcd,,,,,physics,,,,general,WordNet
+247670,quantum electrodynamics,phrase,noun,1,224177,qed,,,,,physics,,,,general,WordNet
+247669,quantum field theory,phrase,noun,1,224425,,,,,,physics,,,,general,WordNet
+252681,quantum jump,phrase,noun,1,224426,,,,,,physics,,,,general,WordNet
+252680,quantum jump,phrase,noun,2,224427,quantum leap,,,,,,,,,general,WordNet
+252679,quantum leap,phrase,noun,1,224427,quantum jump,,,,,,,,,general,WordNet
+247668,quantum mechanics,phrase,noun,1,224430,,,,,,physics,,,,general,WordNet
+247602,quantum physics,phrase,noun,1,224431,,,,,,physics,,,,general,WordNet
+247645,quantum theory,phrase,noun,1,224432,,,,,,physics,,,,general,WordNet
+262587,quaoar,word,noun,1,224433,,,,,,astronomy,,simple,,general,WordNet
+129165,quapaw,word,noun,1,224434,,,,,,geography,,simple,,general,WordNet
+129166,quapaw,word,noun,2,224435,,,,,,linguistics,,simple,,general,WordNet
+129167,quarantine,word,noun,1,224438,,,,,,medicine,,simple,,general,WordNet
+129168,quarantine,word,noun,2,224439,,,,,,medicine,,simple,,general,WordNet
+129169,quarantine,word,verb,1,224440,,,,,,medicine,,simple,,general,WordNet
+129171,quarantined,word,adj,1,158834,isolated,,,,,,,simple,,general,WordNet
+129170,quarantined,word,verb,,224440,,,,,,medicine,,simple,,general,WordNet
+129172,quarantines,word,noun,,224438,,,,,,medicine,,simple,,general,WordNet
+129173,quarantines,word,noun,,224439,,,,,,medicine,,simple,,general,WordNet
+129174,quarantines,word,verb,,224440,,,,,,medicine,,simple,,general,WordNet
+129175,quarantining,word,verb,,224440,,,,,,medicine,,simple,,general,WordNet
+129176,quark,word,noun,1,224443,,,,,,physics,,simple,,general,WordNet
+129177,quark,word,noun,2,224445,quark cheese,,,,,,,simple,,general,WordNet
+254867,quark cheese,phrase,noun,1,224445,quark,,,,,,,,,general,WordNet
+129178,quarks,word,noun,,224443,,,,,,physics,,simple,,general,WordNet
+129179,quarks,word,noun,,224445,quark cheese,,,,,,,simple,,general,WordNet
+129180,quarrel,word,noun,1,98763,"dustup,row,run-in,words,wrangle",,,,,,,simple,,general,WordNet
+129181,quarrel,word,noun,2,224446,,,,,,,,simple,,general,WordNet
+129182,quarrel,word,verb,1,14972,"altercate,argufy,dispute,scrap",,"quarreller,quarreler",,,,,simple,,general,WordNet
+129183,quarreled,word,verb,,14972,"altercate,argufy,dispute,scrap",,,,,,,simple,,general,WordNet
+129184,quarreler,word,noun,1,224447,quarreller,,quarrel,,,,,derived,,general,WordNet
+129185,quarrelers,word,noun,,224447,quarreller,,,,,,,derived,,general,WordNet
+129186,quarreling,word,verb,,14972,"altercate,argufy,dispute,scrap",,,,,,,simple,,general,WordNet
+129187,quarrelled,word,verb,,14972,"altercate,argufy,dispute,scrap",,,,,,,simple,,general,WordNet
+129188,quarreller,word,noun,1,224447,quarreler,,quarrel,,,,,compound,,general,WordNet
+129189,quarrellers,word,noun,,224447,quarreler,,,,,,,compound,,general,WordNet
+129190,quarrelling,word,verb,,14972,"altercate,argufy,dispute,scrap",,,,,,,derived,,general,WordNet
+129191,quarrels,word,noun,,98763,"dustup,row,run-in,words,wrangle",,,,,,,simple,,general,WordNet
+129192,quarrels,word,noun,,224446,,,,,,,,simple,,general,WordNet
+129193,quarrels,word,verb,,14972,"altercate,argufy,dispute,scrap",,,,,,,simple,,general,WordNet
+129194,quarrelsome,word,adj,1,224448,,,quarrelsomeness,,,,,simple,,general,WordNet
+129195,quarrelsomeness,word,noun,1,75169,contentiousness,,quarrelsome,,,,,derived,,general,WordNet
+129196,quarried,word,verb,,224451,,,,,,,,simple,,general,WordNet
+129197,quarrier,word,noun,1,224453,"quarryman,quarrymen",,quarry,,,,,derived,,general,WordNet
+129198,quarriers,word,noun,,224453,"quarryman,quarrymen",,,,,,,derived,,general,WordNet
+129199,quarries,word,noun,,113913,"fair game,prey,target",,,,,,,simple,,general,WordNet
+129200,quarries,word,noun,,212666,"pit,stone pit",,,,,,,simple,,general,WordNet
+129201,quarries,word,noun,,218999,prey,,,,,nutrition,,simple,,general,WordNet
+129202,quarry,word,noun,1,113913,"fair game,prey,target",,,,,,,simple,,general,WordNet
+129203,quarry,word,noun,2,212666,"pit,stone pit",,,,,,,simple,,general,WordNet
+129204,quarry,word,noun,3,218999,prey,,,,,nutrition,,simple,,general,WordNet
+303664,quarry,word,verb,1,224451,,,"quarrier,quarrying",,,,,simple,,general,WordNet
+129205,quarrying,word,noun,1,224454,,,quarry,,,architecture,,simple,,general,WordNet
+129206,quarrying,word,verb,,224451,,,,,,,,simple,,general,WordNet
+129207,quarryman,word,noun,1,224453,"quarrier,quarrymen",,,,,,,compound,,general,WordNet
+129208,quarrymen,word,noun,,224453,"quarrier,quarryman",,,,,,,compound,,general,WordNet
+129209,quart,word,noun,1,224455,,,,,,,,simple,,general,WordNet
+129210,quart,word,noun,2,224456,,,,,,,,simple,,general,WordNet
+129211,quart,word,noun,3,97984,dry quart,,,,,,,simple,,general,WordNet
+129213,quartan,word,adj,1,224458,,,,,,medicine,,simple,,general,WordNet
+129212,quartan,word,noun,1,224460,,,,,,medicine,,simple,,general,WordNet
+129214,quartans,word,noun,,224460,,,,,,medicine,,simple,,general,WordNet
+129215,quarter,word,noun,1,123444,"fourth,fourth part,one-fourth,one-quarter,twenty-five percent",,quarterly,,,,,derived,,general,WordNet
+129216,quarter,word,noun,2,224462,,,quarterly,,,geography,,derived,,general,WordNet
+129217,quarter,word,noun,3,224464,,,quarterly,,,sports,,derived,,general,WordNet
+297421,quarter,word,noun,4,224466,,,quarterly,,,,,derived,,general,WordNet
+297378,quarter,word,noun,5,224469,,,quarterly,,,education,,derived,,general,WordNet
+297257,quarter,word,noun,6,224471,,,quarterly,,,,,derived,,general,WordNet
+291644,quarter,word,noun,7,224473,,,quarterly,,,,,derived,,general,WordNet
+291153,quarter,word,noun,8,224475,,,quarterly,,,,,derived,,general,WordNet
+290589,quarter,word,noun,9,224476,,,quarterly,,,,,derived,,general,WordNet
+289762,quarter,word,noun,10,224477,,,quarterly,,,finance,,derived,,general,WordNet
+265962,quarter,word,noun,11,224479,,,quarterly,,,,,derived,,general,WordNet
+240697,quarter,word,noun,12,11076,"after part,poop,stern,tail",,quarterly,,,maritime,,derived,,general,WordNet
+239251,quarter,word,noun,13,224481,,,quarterly,,,fashion,,derived,,general,WordNet
+221752,quarter,word,noun,14,224482,,,quarterly,,,,,derived,,general,WordNet
+312019,quarter,word,verb,1,39166,"billet,canton",,"quarters,quartering",,,military,,derived,,general,WordNet
+311078,quarter,word,verb,2,96940,"draw,draw and quarter",,"quarters,quartering",,,zoology,,derived,,general,WordNet
+306039,quarter,word,verb,3,224484,,,"quarters,quartering",,,,,derived,,general,WordNet
+300992,quarter,word,verb,4,224486,,,"quarters,quartering",,,,,derived,,general,WordNet
+293603,quarter crack,phrase,noun,1,224487,,,,,,zoology,,,,general,WordNet
+296959,quarter day,phrase,noun,1,224488,,,,,,religion,,,,general,WordNet
+229748,quarter horse,phrase,noun,1,224489,,,,,,zoology,,,,general,WordNet
+290752,quarter mile,phrase,noun,1,224490,,,,,,,,,,general,WordNet
+250812,quarter note,phrase,noun,1,80253,crotchet,,,,,music,,,,general,WordNet
+239252,quarter plate,phrase,noun,1,224491,,,,,,photography,,,,general,WordNet
+291151,quarter pound,phrase,noun,1,224492,,,,,,,,,,general,WordNet
+250813,quarter rest,phrase,noun,1,224493,,,,,,music,,,,general,WordNet
+238370,quarter round,phrase,noun,1,202908,"ovoli,ovolo,thumb",,,,,,,,,general,WordNet
+290556,quarter section,phrase,noun,1,224494,,,,,,,,,,general,WordNet
+257425,quarter sessions,phrase,noun,1,224495,,,,,,law,,,,general,WordNet
+289468,quarter stock,phrase,noun,1,224496,,,,,,stock_market,,,,general,WordNet
+250737,quarter tone,phrase,noun,1,224497,quarter-tone,,,,,,,,,general,WordNet
+297256,quarter-century,word,noun,1,224498,,,,,,,,,,general,WordNet
+258718,quarter-circle,word,noun,1,224223,quadrant,,,,,,,,,general,WordNet
+297389,quarter-hour,word,noun,1,224499,,,,,,,,,,general,WordNet
+250738,quarter-tone,word,noun,1,224497,quarter tone,,,,,,,,,general,WordNet
+285728,quarter-vine,word,noun,1,38825,"bignonia capreolata,cross vine,quartervine,trumpet flower",,,,,botany,,,,general,WordNet
+129218,quarterback,word,noun,1,118134,"field general,signal caller",,,,,sports,,compound,,general,WordNet
+129219,quarterback,word,noun,2,118135,"field general,signal caller",,,,,sports,,compound,,general,WordNet
+129220,quarterback,word,verb,1,224500,,,,,,,,compound,,general,WordNet
+129221,quarterbacks,word,noun,,118134,"field general,signal caller",,,,,sports,,compound,,general,WordNet
+129222,quarterbacks,word,noun,,118135,"field general,signal caller",,,,,sports,,compound,,general,WordNet
+129223,quarterbacks,word,verb,,224500,,,,,,,,compound,,general,WordNet
+129224,quarterdeck,word,noun,1,224501,,,,,,maritime,,compound,,general,WordNet
+129225,quarterdecks,word,noun,,224501,,,,,,maritime,,compound,,general,WordNet
+129226,quartered,word,verb,,39166,"billet,canton",,,,,military,,derived,,general,WordNet
+129227,quartered,word,verb,,96940,"draw,draw and quarter",,,,,zoology,,derived,,general,WordNet
+129228,quartered,word,verb,,224484,,,,,,,,derived,,general,WordNet
+129229,quarterfinal,word,noun,1,224502,,,,,,sports,,compound,,general,WordNet
+129230,quartering,word,noun,1,224503,,,quarter,,,,,derived,,general,WordNet
+129231,quartering,word,noun,2,224504,,,quarter,,,military,,derived,,general,WordNet
+129232,quartering,word,noun,3,224505,,,quarter,,,,,derived,,general,WordNet
+129233,quarterings,word,noun,,224503,,,,,,,,simple,,general,WordNet
+129234,quarterings,word,noun,,224504,,,,,,military,,simple,,general,WordNet
+129235,quarterings,word,noun,,224505,,,,,,,,simple,,general,WordNet
+129236,quarterlies,word,noun,,224506,,,,,,media,,derived,,general,WordNet
+129237,quarterlight,word,noun,1,224507,,,,,,automotive,,compound,,general,WordNet
+129239,quarterly,word,adj,1,224508,,,quarter,,,,,derived,,general,WordNet
+129240,quarterly,word,adv,1,224510,,,,,,,,derived,,general,WordNet
+324566,quarterly,word,adv,2,109212,every quarter,,,,,,,derived,,general,WordNet
+129238,quarterly,word,noun,1,224506,,,,,,media,,derived,,general,WordNet
+129241,quartermaster,word,noun,1,224512,,,,,,military,,compound,,general,WordNet
+265965,quartermaster general,phrase,noun,1,224513,,,,,,military,,,,general,WordNet
+129242,quartermasters,word,noun,,224512,,,,,,military,,compound,,general,WordNet
+129243,quartern,word,noun,1,123444,"fourth,fourth part,one-fourth,one-quarter,quarters,twenty-five percent",,,,,,,simple,,general,WordNet
+129244,quarterns,word,noun,,123444,"fourth,fourth part,one-fourth,one-quarter,quarters,twenty-five percent",,,,,,,simple,,general,WordNet
+129246,quarters,word,noun,,123444,"fourth,fourth part,one-fourth,one-quarter,quartern,twenty-five percent",,quarter,,,,,derived,,general,WordNet
+129247,quarters,word,noun,,224462,,,quarter,,,geography,,derived,,general,WordNet
+129245,quarters,word,noun,1,170129,living quarters,,quarter,,,,,derived,,general,WordNet
+129248,quarterstaff,word,noun,1,224514,quarterstaves,,,,,military,,compound,,general,WordNet
+129249,quarterstaves,word,noun,,224514,quarterstaff,,,,,military,,compound,,general,WordNet
+285727,quartervine,word,noun,1,38825,"bignonia capreolata,cross vine,quarter-vine,trumpet flower",,,,,botany,,simple,,general,WordNet
+129250,quartet,word,noun,1,123364,"four,foursome,iv,little joe,quadruplet,quatern,quaternary,quaternion",,,,,mathematics,,simple,,general,WordNet
+129251,quartet,word,noun,2,224515,,,,,,music,,simple,,general,WordNet
+129252,quartet,word,noun,3,224288,"quadruple,quadruplet",,,,,,,simple,,general,WordNet
+255439,quartet,word,noun,4,123419,foursome,,,,,,,simple,,general,WordNet
+251618,quartet,word,noun,5,224516,,,,,,music,,simple,,general,WordNet
+129253,quartets,word,noun,,123364,"four,foursome,iv,little joe,quadruplet,quatern,quaternary,quaternion",,,,,mathematics,,simple,,general,WordNet
+129254,quartets,word,noun,,224515,quartette,,,,,music,,simple,,general,WordNet
+129255,quartets,word,noun,,224288,"quadruple,quadruplet,quartette",,,,,,,simple,,general,WordNet
+129256,quartette,word,noun,1,224515,quartets,,,,,music,,simple,,general,WordNet
+129257,quartette,word,noun,2,224288,"quadruple,quadruplet,quartets",,,,,,,simple,,general,WordNet
+129258,quartette,word,noun,3,123419,foursome,,,,,,,simple,,general,WordNet
+251619,quartette,word,noun,4,224516,,,,,,music,,simple,,general,WordNet
+129259,quartic,word,noun,1,39864,"biquadrate,biquadratic,fourth power",,,,,mathematics,,derived,,general,WordNet
+246825,quartic polynomial,phrase,noun,1,39867,"biquadratic,biquadratic polynomial",,,,,,,,,general,WordNet
+129260,quartics,word,noun,,39864,"biquadrate,biquadratic,fourth power",,,,,mathematics,,derived,,general,WordNet
+129261,quartile,word,noun,1,224518,,,,,,statistics,,simple,,general,WordNet
+129262,quartiles,word,noun,,224518,,,,,,statistics,,simple,,general,WordNet
+129263,quarto,word,noun,1,224519,,,,,,botany,,simple,,general,WordNet
+129264,quartos,word,noun,,224519,,,,,,botany,,simple,,general,WordNet
+129265,quarts,word,noun,,224455,,,,,,,,simple,,general,WordNet
+129266,quarts,word,noun,,224456,,,,,,,,simple,,general,WordNet
+129267,quarts,word,noun,,97984,dry quart,,,,,,,simple,,general,WordNet
+129268,quartz,word,noun,1,80797,"crystal,lechatelierite,quartz glass,vitreous silica",,,,,,,simple,,general,WordNet
+129269,quartz,word,noun,2,224521,,,,,,geology,,simple,,general,WordNet
+239253,quartz battery,phrase,noun,1,224522,quartz mill,,,,,geology,,,,general,WordNet
+239255,quartz crystal,phrase,noun,1,224523,,,,,,geology,,,,general,WordNet
+295662,quartz glass,phrase,noun,1,80797,"crystal,lechatelierite,quartz,vitreous silica",,,,,,,,,general,WordNet
+239256,quartz lamp,phrase,noun,1,224524,,,,,,geology,,,,general,WordNet
+239254,quartz mill,phrase,noun,1,224522,quartz battery,,,,,geology,,,,general,WordNet
+234530,quartz oscillator,phrase,noun,1,80820,crystal oscillator,,,,,geology,,,,general,WordNet
+129270,quartzes,word,noun,,80797,"crystal,lechatelierite,quartz glass,vitreous silica",,,,,,,simple,,general,WordNet
+129271,quartzes,word,noun,,224521,,,,,,geology,,simple,,general,WordNet
+129272,quartzite,word,noun,1,224525,,,,,,geology,,simple,,general,WordNet
+129273,quartzose,word,adj,1,224526,,,,,,geology,,simple,,general,WordNet
+129274,quasar,word,noun,1,224527,quasi-stellar radio source,,,,,telecommunications,,simple,,general,WordNet
+129275,quasars,word,noun,,224527,quasi-stellar radio source,,,,,telecommunications,,simple,,general,WordNet
+129276,quash,word,verb,1,161596,"keep down,reduce,repress,subdue,subjugate",,,,,,,simple,,general,WordNet
+129277,quash,word,verb,2,18548,"annul,avoid,invalidate,nullify,void",,,,,,,simple,,general,WordNet
+129278,quashed,word,verb,,161596,"keep down,reduce,repress,subdue,subjugate",,,,,,,simple,,general,WordNet
+129279,quashed,word,verb,,18548,"annul,avoid,invalidate,nullify,void",,,,,,,simple,,general,WordNet
+129280,quashes,word,verb,,161596,"keep down,reduce,repress,subdue,subjugate",,,,,,,simple,,general,WordNet
+129281,quashes,word,verb,,18548,"annul,avoid,invalidate,nullify,void",,,,,,,simple,,general,WordNet
+129282,quashing,word,verb,,161596,"keep down,reduce,repress,subdue,subjugate",,,,,,,simple,,general,WordNet
+129283,quashing,word,verb,,18548,"annul,avoid,invalidate,nullify,void",,,,,,,simple,,general,WordNet
+129284,quasi,word,adj,1,224528,,,,,,,,simple,,general,WordNet
+249214,quasi contract,phrase,noun,1,224531,,,,,,law,,,,general,WordNet
+255831,quasi-ngo,word,noun,1,224380,quango,,,,,politics,,,,general,WordNet
+320418,quasi-religious,word,adj,1,224532,,,,,,religion,,,,general,WordNet
+315337,quasi-royal,word,adj,1,224533,,,,,,politics,,,,general,WordNet
+262588,quasi-stellar radio source,phrase,noun,1,224527,quasar,,,,,telecommunications,,,,general,WordNet
+129285,quasiparticle,word,noun,1,224535,,,,,,physics,,compound,,general,WordNet
+129286,quassia,word,noun,1,224536,,,,,,botany,,simple,,general,WordNet
+129287,quassia,word,noun,2,40285,"bitterwood,quassia amara",,,,,botany,,simple,,general,WordNet
+284838,quassia amara,phrase,noun,1,40285,"bitterwood,quassia",,,,,botany,,,,general,WordNet
+284811,quassia family,phrase,noun,1,115285,"family simaroubaceae,simaroubaceae",,,,,botany,,,,general,WordNet
+129288,quassias,word,noun,,224536,,,,,,botany,,simple,,general,WordNet
+129289,quassias,word,noun,,40285,"bitterwood,quassia amara",,,,,botany,,simple,,general,WordNet
+129290,quat,word,noun,1,11022,"african tea,arabian tea,cat,kat,khat,qat",,,,,botany,,simple,,general,WordNet
+129291,quatercentenary,word,noun,1,224538,quatercentennial,,,,,,,simple,,general,WordNet
+297495,quatercentennial,word,noun,1,224538,quatercentenary,,,,,,,simple,,general,WordNet
+129292,quatern,word,noun,1,123364,"four,foursome,iv,little joe,quadruplet,quartet,quaternaries,quaternities",,,,,mathematics,,simple,,general,WordNet
+129293,quaternaries,word,noun,,11341,"age of man,quaternary period",,,,,,,simple,,general,WordNet
+129294,quaternaries,word,noun,,123364,"four,foursome,iv,little joe,quadruplet,quartet,quatern,quaternion",,,,,mathematics,,simple,,general,WordNet
+129297,quaternary,word,adj,1,224539,quaternate,,,,,,,simple,,general,WordNet
+321082,quaternary,word,adj,2,123437,fourth,,,,,,,simple,,general,WordNet
+129295,quaternary,word,noun,1,11341,"age of man,quaternary period",,,,,,,simple,,general,WordNet
+129296,quaternary,word,noun,2,123364,"four,foursome,iv,little joe,quadruplet,quartet,quaternion,quaternity",,,,,mathematics,,simple,,general,WordNet
+294864,quaternary ammonium compound,phrase,noun,1,224542,,,,,,physics,,,,general,WordNet
+296750,quaternary period,phrase,noun,1,11341,"age of man,quaternary",,,,,,,,,general,WordNet
+129298,quaternate,word,adj,1,224539,quaternary,,,,,,,simple,,general,WordNet
+129299,quaternion,word,noun,1,123364,"four,foursome,iv,little joe,quadruplet,quartet,quaternary,quaternity",,,,,mathematics,,simple,,general,WordNet
+129300,quaternities,word,noun,,123364,"four,foursome,iv,little joe,quadruplet,quartet,quatern,quaternary",,,,,mathematics,,derived,,general,WordNet
+129301,quaternity,word,noun,1,123364,"four,foursome,iv,little joe,quadruplet,quartet,quaternary,quaternion",,,,,mathematics,,derived,,general,WordNet
+129302,quatrain,word,noun,1,224546,,,,,,,,simple,,general,WordNet
+129303,quatrains,word,noun,,224546,,,,,,,,simple,,general,WordNet
+129304,quattrocento,word,noun,1,224547,,,,,,visual_arts,,simple,,general,WordNet
+129305,quaver,word,noun,1,224548,,,,,,,,simple,,general,WordNet
+129306,quaver,word,noun,2,101507,eighth note,,,,,music,,simple,,general,WordNet
+129307,quaver,word,verb,1,224549,waver,,,,,,,simple,,general,WordNet
+303023,quaver,word,verb,2,224550,"trill,warble",,,,,music,,simple,,general,WordNet
+129308,quavered,word,verb,,224549,waver,,,,,,,simple,,general,WordNet
+129309,quavered,word,verb,,224550,"trill,warble",,,,,music,,simple,,general,WordNet
+129312,quavering,word,adj,1,224551,tremulous,,,,,,,simple,,general,WordNet
+129310,quavering,word,verb,,224549,waver,,,,,,,simple,,general,WordNet
+129311,quavering,word,verb,,224550,"trill,warble",,,,,music,,simple,,general,WordNet
+129313,quaveringly,word,adv,1,224554,,,,,,,,derived,,general,WordNet
+129314,quavers,word,noun,,224548,,,,,,,,simple,,general,WordNet
+129315,quavers,word,noun,,101507,eighth note,,,,,music,,simple,,general,WordNet
+129316,quavers,word,verb,,224549,waver,,,,,,,simple,,general,WordNet
+129317,quay,word,noun,1,224557,,,,,,,,simple,,general,WordNet
+129318,quayage,word,noun,1,224558,wharfage,,,,,,,simple,,general,WordNet
+129319,quayages,word,noun,,224558,wharfage,,,,,,,simple,,general,WordNet
+129320,quays,word,noun,,224557,,,,,,,,simple,,general,WordNet
+129321,queasier,word,adj,,170242,"loathsome,nauseating,nauseous,noisome,offensive,sickening,vile",,,,,,,derived,,general,WordNet
+129322,queasier,word,adj,,190604,"nauseated,nauseous,sick,sickish",,,,,,,derived,,general,WordNet
+129323,queasier,word,adj,,21348,"anxious,nervous,uneasy,unquiet",,,,,psychology,,derived,,general,WordNet
+129324,queasiest,word,adj,,170242,"loathsome,nauseating,nauseous,noisome,offensive,sickening,vile",,,,,,,simple,,general,WordNet
+129325,queasiest,word,adj,,190604,"nauseated,nauseous,sick,sickish",,,,,,,simple,,general,WordNet
+129326,queasiest,word,adj,,21348,"anxious,nervous,uneasy,unquiet",,,,,psychology,,simple,,general,WordNet
+129327,queasily,word,adv,1,224561,,,,,,,,derived,,general,WordNet
+129328,queasiness,word,noun,1,224378,"qualm,squeamishness",,queasy,,,,,derived,,general,WordNet
+129329,queasiness,word,noun,2,224563,"restlessness,uneasiness",,queasy,,,,,derived,,general,WordNet
+129330,queasy,word,adj,1,170242,"loathsome,nauseating,nauseous,noisome,offensive,sickening,vile",,queasiness,,,,,simple,,general,WordNet
+129331,queasy,word,adj,2,190604,"nauseated,nauseous,sick,sickish",,queasiness,,,,,simple,,general,WordNet
+129332,queasy,word,adj,3,21348,"anxious,nervous,uneasy,unquiet",,queasiness,,,psychology,,simple,,general,WordNet
+129333,quebec,word,noun,1,224565,quebec city,,,,,geography,,simple,,general,WordNet
+129334,quebec,word,noun,2,224566,,,,,,geography,,simple,,general,WordNet
+239257,quebec bridge,phrase,noun,1,224567,,,,,,construction,,,,general,WordNet
+259725,quebec city,phrase,noun,1,224565,quebec,,,,,geography,,,,general,WordNet
+322855,quebecois,word,adj,1,224568,,,,,,geography,,simple,,general,WordNet
+265966,quebecois,word,noun,1,224569,,,,,,geography,,simple,,general,WordNet
+129335,quechua,word,noun,1,161512,kechua,,quechuan,,,history,,simple,,general,WordNet
+129336,quechua,word,noun,2,161513,kechua,,quechuan,,,history,,simple,,general,WordNet
+129337,quechua,word,noun,3,161514,"kechua,kechuan,quechuan language",,quechuan,,,linguistics,,simple,,general,WordNet
+129339,quechuan,word,adj,1,161515,kechuan,,quechua,,,linguistics,,simple,,general,WordNet
+129338,quechuan,word,noun,1,161514,"kechua,kechuan,quechuan language",,,,,linguistics,,simple,,general,WordNet
+251012,quechuan language,phrase,noun,1,161514,"kechua,kechuan,quechua,quechuan",,,,,linguistics,,,,general,WordNet
+246409,queckenstedt's test,phrase,noun,1,224571,,,,,,anatomy,,,,general,WordNet
+129340,queen,word,noun,1,224572,,,queenly,,,zoology,,simple,,general,WordNet
+129341,queen,word,noun,2,117015,"female monarch,queen regnant",king,queenly,,,,,simple,,general,WordNet
+129342,queen,word,noun,3,224573,,,queenly,,,politics,,simple,,general,WordNet
+265970,queen,word,noun,4,224574,,,queenly,,,,,simple,,general,WordNet
+265180,queen,word,noun,5,162484,"king,world-beater",,queenly,,,,,simple,,general,WordNet
+264615,queen,word,noun,6,113724,"fag,faggot,fagot,fairy,nance,pansy,poof,poove",,queenly,,,,offensive,simple,,general,WordNet
+239259,queen,word,noun,7,224577,,,queenly,,,politics,,simple,,general,WordNet
+239258,queen,word,noun,8,224578,,,queenly,,,games,,simple,,general,WordNet
+229710,queen,word,noun,9,224579,queen mole rat,,queenly,,,,,simple,,general,WordNet
+227693,queen,word,noun,10,224580,tabby,,queenly,,,zoology,,simple,,general,WordNet
+311680,queen,word,verb,1,224581,,,,,,politics,,simple,,general,WordNet
+308185,queen,word,verb,2,224582,,,,,,politics,,simple,,general,WordNet
+286884,queen anne's lace,phrase,noun,1,84166,"daucus carota,wild carrot",,,,,botany,,,,general,WordNet
+228348,queen bee,phrase,noun,1,224584,,,,,,,,,,general,WordNet
+262589,queen charlotte sound,phrase,noun,1,224585,,,,,,oceanography,,,,general,WordNet
+261291,queen city,phrase,noun,1,60804,charlotte,,,,,geography,,,,general,WordNet
+265971,queen consort,phrase,noun,1,224586,,,,,,politics,,,,general,WordNet
+265972,queen dowager,phrase,noun,1,224587,,,,,,politics,,,,general,WordNet
+269851,queen isabella,phrase,noun,1,158646,"isabella,isabella i,isabella the catholic",,,,,politics,,,,general,WordNet
+311677,queen it over,phrase,verb,1,6690,"act superior,lord it over,put on airs",,,,,maritime,,,,general,WordNet
+258719,queen maud land,phrase,noun,1,224588,,,,,,oceanography,,,,general,WordNet
+229711,queen mole rat,phrase,noun,1,224579,queen,,,,,,,,,general,WordNet
+265973,queen mother,phrase,noun,1,224589,,,,,,politics,,,,general,WordNet
+265969,queen of england,phrase,noun,1,162497,"king of england,king of great britain",,,,,,,,,general,WordNet
+239260,queen post,phrase,noun,1,224591,,,,,,construction,,,,general,WordNet
+265974,queen regent,phrase,noun,1,224592,,,,,,politics,,,,general,WordNet
+265967,queen regnant,phrase,noun,1,117015,"female monarch,queen",,,,,,,,,general,WordNet
+231852,queen triggerfish,phrase,noun,1,32413,"balistes vetula,bessy cerca,oldwench,oldwife,oldwives",,,,,zoology,,,,general,WordNet
+273395,queen victoria,phrase,noun,1,224593,victoria,,,,,politics,,,,general,WordNet
+265975,queen's counsel,phrase,noun,1,224594,,,,,,politics,,,,general,WordNet
+281121,queen's crape myrtle,phrase,noun,1,164016,"lagerstroemia speciosa,pride-of-india",,,,,gardening,,,,general,WordNet
+282460,queen's cup,phrase,noun,1,46885,"bride's bonnet,clintonia uniflora",,,,,botany,,,,general,WordNet
+251209,queen's english,phrase,noun,1,162506,king's english,,,,,,,,,general,WordNet
+318041,queen-size,word,adj,1,224595,,,,,,politics,,,,general,WordNet
+318042,queen-sized,word,adj,1,224595,,,,,,politics,,,,general,WordNet
+129343,queened,word,verb,,224581,,,,,,politics,,simple,,general,WordNet
+129344,queened,word,verb,,224582,,,,,,politics,,simple,,general,WordNet
+129345,queenfish,word,noun,1,224597,"seriphus politus,white croaker",,,,,music,,compound,,general,WordNet
+129346,queenfishes,word,noun,,224597,"seriphus politus,white croaker",,,,,music,,compound,,general,WordNet
+129347,queening,word,verb,,224581,,,,,,politics,,simple,,general,WordNet
+129348,queening,word,verb,,224582,,,,,,politics,,simple,,general,WordNet
+129349,queenlier,word,adj,,224598,queenlike,,,,,politics,,derived,,general,WordNet
+129350,queenliest,word,adj,,224598,queenlike,,,,,politics,,simple,,general,WordNet
+129351,queenlike,word,adj,1,224598,queenly,,,,,politics,,simple,,general,WordNet
+129352,queenly,word,adj,1,224598,queenlike,,queen,,,politics,,derived,,general,WordNet
+129354,queens,word,noun,,224572,,,,,,zoology,,simple,,general,WordNet
+129355,queens,word,noun,,117015,"female monarch,queen regnant",,,,,,,simple,,general,WordNet
+129353,queens,word,noun,1,47887,"bronx,brooklyn,staten island",,,,,geography,,simple,,general,WordNet
+239261,queensboro bridge,phrase,noun,1,224602,,,,,,politics,,,,general,WordNet
+259732,queensland,word,noun,1,224603,,,,,,,,compound,,general,WordNet
+279929,queensland bottletree,phrase,noun,1,45170,"brachychiton rupestris,narrow-leaved bottletree,sterculia rupestris",,,,,botany,,,,general,WordNet
+281752,queensland grass-cloth plant,phrase,noun,1,212560,pipturus argenteus,,,,,botany,,,,general,WordNet
+279837,queensland hemp,phrase,noun,1,159986,"jellyleaf,sida rhombifolia",,,,,botany,,,,general,WordNet
+275147,queensland kauri,phrase,noun,1,11225,"agathis robusta,dundathu pine,smooth bark kauri",,,,,forestry,,,,general,WordNet
+230739,queensland lungfish,phrase,noun,1,28515,"australian lungfish,neoceratodus forsteri",,,,,politics,,,,general,WordNet
+280098,queensland nut,phrase,noun,1,173713,macadamia tetraphylla,,,,,botany,,,,general,WordNet
+316427,queer,word,adj,1,81434,"curious,funny,odd,peculiar,rum,rummy,singular",,queerness,,,,,simple,,general,WordNet
+317343,queer,word,adj,2,127709,"gay,homophile",,queerness,,,,,simple,,general,WordNet
+129356,queer,word,noun,1,113724,"fag,faggot,fagot,fairy,nance,pansy,poof,poove",,,,,,offensive,simple,,general,WordNet
+129357,queer,word,verb,1,32050,"baffle,bilk,cross,foil,frustrate,scotch,spoil,thwart",,,,,,,simple,,general,WordNet
+129358,queer,word,verb,2,104138,"endanger,expose,peril,scupper",,,,,,,simple,,general,WordNet
+265214,queer bird,phrase,noun,1,163075,"kook,odd fellow,odd fish,odd man out,queer duck",,,,,,,,,general,WordNet
+265215,queer duck,phrase,noun,1,163075,"kook,odd fellow,odd fish,odd man out,queer bird",,,,,,,,,general,WordNet
+129359,queered,word,verb,,32050,"baffle,bilk,cross,foil,frustrate,scotch,spoil,thwart",,,,,,,simple,,general,WordNet
+129360,queered,word,verb,,104138,"endanger,expose,peril,scupper",,,,,,,simple,,general,WordNet
+129361,queerer,word,adj,,81434,"curious,funny,odd,peculiar,rum,rummy,singular",,,,,,,derived,,general,WordNet
+129362,queerer,word,adj,,127709,"gay,homophile",,,,,,,derived,,general,WordNet
+129363,queerest,word,adj,,81434,"curious,funny,odd,peculiar,rum,rummy,singular",,,,,,,simple,,general,WordNet
+129364,queerest,word,adj,,127709,"gay,homophile",,,,,,,simple,,general,WordNet
+129365,queering,word,verb,,32050,"baffle,bilk,cross,foil,frustrate,scotch,spoil,thwart",,,,,,,simple,,general,WordNet
+129366,queering,word,verb,,104138,"endanger,expose,peril,scupper",,,,,,,simple,,general,WordNet
+129367,queerly,word,adv,1,125631,"funnily,oddly,strangely",,,,,,,derived,,general,WordNet
+129368,queerly,word,adv,2,119466,fishily,,,,,,,derived,,general,WordNet
+129369,queerness,word,noun,1,80254,"crotchet,oddity,quirk,quirkiness",,queer,,,,,derived,,general,WordNet
+129370,queerness,word,noun,2,127717,"gayness,homoeroticism,homosexualism,homosexuality",,queer,,,,,derived,,general,WordNet
+129371,queers,word,noun,,113724,"fag,faggot,fagot,fairy,nance,pansy,poof,poove",,,,,,offensive,simple,,general,WordNet
+129372,queers,word,verb,,32050,"baffle,bilk,cross,foil,frustrate,scotch,spoil,thwart",,,,,,,simple,,general,WordNet
+129373,queers,word,verb,,104138,"endanger,expose,peril,scupper",,,,,,,simple,,general,WordNet
+129374,quell,word,verb,1,224607,"quench,squelch",,quelling,,,,,simple,,general,WordNet
+129375,quell,word,verb,2,22393,"appease,stay",,quelling,,,,,simple,,general,WordNet
+129378,quelled,word,adj,1,224610,"quenched,squelched",,,,,,,simple,,general,WordNet
+129376,quelled,word,verb,,224607,"quench,squelch",,,,,,,simple,,general,WordNet
+129377,quelled,word,verb,,22393,"appease,stay",,,,,,,simple,,general,WordNet
+129379,quelling,word,noun,1,80560,"crushing,stifling,suppression",,quell,,,literature,,simple,,general,WordNet
+129380,quelling,word,verb,,224607,"quench,squelch",,,,,,,simple,,general,WordNet
+129381,quelling,word,verb,,22393,"appease,stay",,,,,,,simple,,general,WordNet
+129382,quells,word,verb,,224607,"quench,squelch",,,,,,,simple,,general,WordNet
+129383,quells,word,verb,,22393,"appease,stay",,,,,,,simple,,general,WordNet
+129384,quellung,word,noun,1,224615,quellung reaction,,,,,biology,,simple,,general,WordNet
+290299,quellung reaction,phrase,noun,1,224615,quellung,,,,,biology,,,,general,WordNet
+129385,quench,word,verb,1,13852,"allay,assuage,slake",,quenching,,,,,simple,,general,WordNet
+129386,quench,word,verb,2,42275,"blow out,extinguish,snuff out",,quenching,,,,,simple,,general,WordNet
+129387,quench,word,verb,3,224619,,,quenching,,,electronics,,simple,,general,WordNet
+300146,quench,word,verb,4,224607,"quell,squelch",,quenching,,,,,simple,,general,WordNet
+299967,quench,word,verb,5,224620,,,quenching,,,chemistry,,simple,,general,WordNet
+299707,quench,word,verb,6,224621,,,quenching,,,,,simple,,general,WordNet
+318524,quenched,word,adj,1,224623,"satisfied,slaked",,,,,,,simple,,general,WordNet
+314741,quenched,word,adj,2,224610,"quelled,squelched",,,,,,,simple,,general,WordNet
+129388,quenched,word,verb,,13852,"allay,assuage,slake",,,,,,,simple,,general,WordNet
+129389,quenched,word,verb,,42275,"blow out,extinguish,snuff out",,,,,,,simple,,general,WordNet
+129390,quenched,word,verb,,224619,,,,,,electronics,,simple,,general,WordNet
+296222,quenched steel,phrase,noun,1,224625,,,,,,,,,,general,WordNet
+129391,quenches,word,verb,,13852,"allay,assuage,slake",,,,,,,simple,,general,WordNet
+129392,quenches,word,verb,,42275,"blow out,extinguish,snuff out",,,,,,,simple,,general,WordNet
+129393,quenches,word,verb,,224619,,,,,,electronics,,simple,,general,WordNet
+129394,quenching,word,noun,1,111604,"extinction,extinguishing",,quench,,,,,simple,,general,WordNet
+129395,quenching,word,verb,,13852,"allay,assuage,slake",,,,,,,simple,,general,WordNet
+129396,quenching,word,verb,,42275,"blow out,extinguish,snuff out",,,,,,,simple,,general,WordNet
+129397,quenchless,word,adj,1,224626,unquenchable,,,,,,,derived,,general,WordNet
+272968,quentin jerome tarantino,phrase,noun,1,224628,"quentin tarantino,tarantino",,,,,theatre_film,,,,general,WordNet
+272967,quentin tarantino,phrase,noun,1,224628,"quentin jerome tarantino,tarantino",,,,,theatre_film,,,,general,WordNet
+129398,quercitron,word,noun,1,224630,,,,,,botany,,simple,,general,WordNet
+129399,quercitron,word,noun,2,40547,"black oak,quercus velutina,yellow oak",,,,,botany,,simple,,general,WordNet
+280646,quercitron oak,phrase,noun,1,40547,"black oak,quercus velutina,yellow oak",,,,,botany,,,,general,WordNet
+129400,quercus,word,noun,1,130053,genus quercus,,,,,,,simple,,general,WordNet
+280519,quercus agrifolia,phrase,noun,1,51316,"california live oak,coast live oak",,,,,botany,,,,general,WordNet
+280522,quercus alba,phrase,noun,1,15928,american white oak,,,,,botany,,,,general,WordNet
+280524,quercus arizonica,phrase,noun,1,24165,arizona white oak,,,,,botany,,,,general,WordNet
+280527,quercus bicolor,phrase,noun,1,224632,"swamp oak,swamp white oak",,,,,botany,,,,general,WordNet
+280627,quercus borealis,phrase,noun,1,195651,"northern red oak,quercus rubra",,,,,botany,,,,general,WordNet
+280530,quercus cerris,phrase,noun,1,108897,"european turkey oak,turkey oak",,,,,botany,,,,general,WordNet
+280535,quercus chrysolepis,phrase,noun,1,52835,"canyon live oak,canyon oak,iron oak,maul oak",,,,,botany,,,,general,WordNet
+280537,quercus coccinea,phrase,noun,1,224633,scarlet oak,,,,,botany,,,,general,WordNet
+280540,quercus ellipsoidalis,phrase,noun,1,159400,"jack oak,northern pin oak",,,,,botany,,,,general,WordNet
+280545,quercus falcata,phrase,noun,1,224634,"southern red oak,swamp red oak,turkey oak",,,,,botany,,,,general,WordNet
+280549,quercus garryana,phrase,noun,1,127123,"garry oak,oregon oak,oregon white oak",,,,,botany,,,,general,WordNet
+280591,quercus grosseserrata,phrase,noun,1,159696,"japanese oak,quercus mongolica",,,,,agriculture,,,,general,WordNet
+280554,quercus ilex,phrase,noun,1,109162,"evergreen oak,holly-leaved oak,holm oak,holm tree",,,,,botany,,,,general,WordNet
+280557,quercus ilicifolia,phrase,noun,1,35398,bear oak,,,,,botany,,,,general,WordNet
+280560,quercus imbricaria,phrase,noun,1,165643,"laurel oak,shingle oak",,,,,botany,,,,general,WordNet
+280563,quercus incana,phrase,noun,1,42562,"bluejack oak,turkey oak",,,,,botany,,,,general,WordNet
+280565,quercus kelloggii,phrase,noun,1,51302,california black oak,,,,,botany,,,,general,WordNet
+280568,quercus laevis,phrase,noun,1,15919,"american turkey oak,turkey oak",,,,,botany,,,,general,WordNet
+280571,quercus laurifolia,phrase,noun,1,165642,"laurel oak,pin oak",,,,,,,,,general,WordNet
+280575,quercus lobata,phrase,noun,1,51334,"california white oak,roble,valley oak,valley white oak",,,,,botany,,,,general,WordNet
+280577,quercus lyrata,phrase,noun,1,202542,overcup oak,,,,,forestry,,,,general,WordNet
+280582,quercus macrocarpa,phrase,noun,1,49351,"bur oak,burr oak,mossy-cup oak,mossycup oak",,,,,agriculture,,,,general,WordNet
+280586,quercus marilandica,phrase,noun,1,40713,"blackjack,blackjack oak,jack oak",,,,,botany,,,,general,WordNet
+280588,quercus michauxii,phrase,noun,1,224635,swamp chestnut oak,,,,,botany,,,,general,WordNet
+280590,quercus mongolica,phrase,noun,1,159696,"japanese oak,quercus grosseserrata",,,,,agriculture,,,,general,WordNet
+280611,quercus montana,phrase,noun,1,34284,"basket oak,cow oak,quercus prinus",,,,,forestry,,,,general,WordNet
+280596,quercus muehlenbergii,phrase,noun,1,62538,"chinkapin oak,chinquapin oak,yellow chestnut oak",,,,,botany,,,,general,WordNet
+280599,quercus myrtifolia,phrase,noun,1,189262,"myrtle oak,seaside scrub oak",,,,,botany,,,,general,WordNet
+280602,quercus nigra,phrase,noun,1,216519,"possum oak,water oak",,,,,agriculture,,,,general,WordNet
+280605,quercus nuttalli,phrase,noun,1,196599,"nuttall oak,nuttall's oak",,,,,geography,,,,general,WordNet
+280614,quercus palustris,phrase,noun,1,212263,"pin oak,swamp oak",,,,,botany,,,,general,WordNet
+280606,quercus petraea,phrase,noun,1,98701,"durmast,quercus sessiliflora",,,,,,,,,general,WordNet
+280616,quercus phellos,phrase,noun,1,224636,willow oak,,,,,botany,,,,general,WordNet
+280620,quercus prinoides,phrase,noun,1,98839,"dwarf chinkapin oak,dwarf chinquapin oak,dwarf oak",,,,,botany,,,,general,WordNet
+280610,quercus prinus,phrase,noun,1,34284,"basket oak,cow oak,quercus montana",,,,,forestry,,,,general,WordNet
+280624,quercus robur,phrase,noun,1,71198,"common oak,english oak,pedunculate oak",,,,,botany,,,,general,WordNet
+280626,quercus rubra,phrase,noun,1,195651,"northern red oak,quercus borealis",,,,,botany,,,,general,WordNet
+280607,quercus sessiliflora,phrase,noun,1,98701,"durmast,quercus petraea",,,,,,,,,general,WordNet
+280630,quercus shumardii,phrase,noun,1,224637,"shumard oak,shumard red oak",,,,,agriculture,,,,general,WordNet
+280635,quercus stellata,phrase,noun,1,44977,"box white oak,brash oak,iron oak,post oak",,,,,botany,,,,general,WordNet
+280637,quercus suber,phrase,noun,1,76581,cork oak,,,,,business,,,,general,WordNet
+280639,quercus texana,phrase,noun,1,224638,spanish oak,,,,,botany,,,,general,WordNet
+280641,quercus vaccinifolia,phrase,noun,1,145214,huckleberry oak,,,,,botany,,,,general,WordNet
+280643,quercus variabilis,phrase,noun,1,62496,chinese cork oak,,,,,botany,,,,general,WordNet
+280647,quercus velutina,phrase,noun,1,40547,"black oak,quercitron,quercitron oak,yellow oak",,,,,botany,,,,general,WordNet
+280649,quercus virginiana,phrase,noun,1,224639,southern live oak,,,,,agriculture,,,,general,WordNet
+280651,quercus wislizenii,phrase,noun,1,156091,"interior live oak,quercus wizlizenii",,,,,botany,,,,general,WordNet
+280652,quercus wizlizenii,phrase,noun,1,156091,"interior live oak,quercus wislizenii",,,,,botany,,,,general,WordNet
+129401,queried,word,verb,,224641,question,,,,,,,simple,,general,WordNet
+129402,querier,word,noun,1,25869,"asker,enquirer,inquirer,questioner",,query,,,,,derived,,general,WordNet
+129403,queriers,word,noun,,25869,"asker,enquirer,inquirer,questioner",,,,,,,derived,,general,WordNet
+129404,queries,word,noun,,105170,"enquiry,inquiry,interrogation,question",,,,,,,simple,,general,WordNet
+129405,queries,word,verb,,224641,question,,,,,,,simple,,general,WordNet
+129406,quern,word,noun,1,224642,,,,,,,,simple,,general,WordNet
+129407,querns,word,noun,,224642,,,,,,,,simple,,general,WordNet
+129408,querulous,word,adj,1,124473,"fretful,whiney,whiny",,querulousness,,,,,simple,,general,WordNet
+129409,querulously,word,adv,1,123604,"fractiously,peevishly",,,,,,,derived,,general,WordNet
+129410,querulousness,word,noun,1,224643,,,querulous,,,,,derived,,general,WordNet
+129411,query,word,noun,1,105170,"enquiry,inquiry,interrogation,question",,,,,,,simple,,general,WordNet
+129412,query,word,verb,1,224641,question,,querier,,,,,simple,,general,WordNet
+250932,query language,phrase,noun,1,70788,"command language,search language",,,,,linguistics,,,,general,WordNet
+129413,querying,word,verb,,224641,question,,,,,,,simple,,general,WordNet
+255028,quesadilla,word,noun,1,224645,,,,,,law,,simple,,general,WordNet
+129414,quest,word,noun,1,223660,"pursuance,pursuit",,,,,psychology,,simple,,general,WordNet
+129415,quest,word,noun,2,224646,seeking,,,,,,,simple,,general,WordNet
+129416,quest,word,verb,1,224648,,,quester,,,,,simple,,general,WordNet
+308444,quest,word,verb,2,224651,,,quester,,,sports,,simple,,general,WordNet
+303012,quest,word,verb,3,34842,bay,,quester,,,zoology,,simple,,general,WordNet
+301690,quest,word,verb,4,224653,,,quester,,,religion,,simple,,general,WordNet
+301558,quest,word,verb,5,37764,"bespeak,bespoke,bespoken,call for,request",,quester,,,,,simple,,general,WordNet
+304580,quest after,phrasal verb,verb,1,133239,"go after,pursue,quest for",,,,Phrasal verb,,phrasal_verb,,,general,WordNet
+304578,quest for,phrasal verb,verb,1,133239,"go after,pursue,quest after",,,,Phrasal verb,,phrasal_verb,,,general,WordNet
+129417,quested,word,verb,,224648,,,,,,,,simple,,general,WordNet
+129418,quested,word,verb,,224651,,,,,,sports,,simple,,general,WordNet
+129419,quested,word,verb,,34842,bay,,,,,zoology,,simple,,general,WordNet
+129420,quester,word,noun,1,224654,"searcher,seeker",,quest,,,,,derived,,general,WordNet
+129421,questers,word,noun,,224654,"searcher,seeker",,,,,,,derived,,general,WordNet
+129422,questing,word,verb,,224648,,,,,,,,simple,,general,WordNet
+129423,questing,word,verb,,224651,,,,,,sports,,simple,,general,WordNet
+129424,questing,word,verb,,34842,bay,,,,,zoology,,simple,,general,WordNet
+129425,question,word,noun,1,105170,"enquiry,inquiry,interrogation,query",answer,,,,,,simple,,general,WordNet
+129426,question,word,noun,2,138907,head,,,,,,,simple,,general,WordNet
+129427,question,word,noun,3,156638,"interrogation,interrogative,interrogative sentence",,,,,,,simple,,general,WordNet
+242503,question,word,noun,4,96296,"doubt,doubtfulness,dubiousness",,,,,,,simple,,general,WordNet
+252000,question,word,noun,5,186449,motion,,,,,politics,,simple,,general,WordNet
+251994,question,word,noun,6,224656,,,,,,,,simple,,general,WordNet
+302120,question,word,verb,1,51494,"call into question,oppugn",,"questioning,questioner",,,,,simple,,general,WordNet
+301710,question,word,verb,2,156635,interrogate,,"questioning,questioner",,,,,simple,,general,WordNet
+301699,question,word,verb,3,224641,query,,"questioning,questioner",,,,,simple,,general,WordNet
+301834,question,word,verb,4,156837,interview,,"questioning,questioner",,,telecommunications,,simple,,general,WordNet
+302417,question,word,verb,5,224658,wonder,,"questioning,questioner",,,,,simple,,general,WordNet
+250703,question mark,phrase,noun,1,156642,interrogation point,,,,,,,,,general,WordNet
+265976,question master,phrase,noun,1,224662,quizmaster,,,,,telecommunications,,,,general,WordNet
+250417,question of fact,phrase,noun,1,177628,matter of fact,,,,,law,,,,general,WordNet
+250419,question of law,phrase,noun,1,177630,matter of law,,,,,law,,,,general,WordNet
+252116,question sheet,phrase,noun,1,109495,"exam paper,examination paper,test paper",,,,,education,,,,general,WordNet
+297732,question time,phrase,noun,1,224663,,,,,,politics,,,,general,WordNet
+129428,questionable,word,adj,1,224664,,unquestionable,,,,,,derived,,general,WordNet
+129429,questionable,word,adj,2,73402,"confutable,confutative,refutable",,,,,,,derived,,general,WordNet
+129430,questionably,word,adv,1,98121,dubiously,,,,,,,derived,,general,WordNet
+129431,questioned,word,verb,,51494,"call into question,oppugn",,,,,,,simple,,general,WordNet
+129432,questioned,word,verb,,156635,interrogate,,,,,,,simple,,general,WordNet
+129433,questioned,word,verb,,224641,query,,,,,,,simple,,general,WordNet
+129434,questioner,word,noun,1,25869,"asker,enquirer,inquirer,querier",,question,,,,,derived,,general,WordNet
+129435,questioners,word,noun,,25869,"asker,enquirer,inquirer,querier",,,,,,,derived,,general,WordNet
+319414,questioning,word,adj,1,224668,quizzical,,,,,,,simple,,general,WordNet
+322068,questioning,word,adj,2,96320,"doubting,sceptical,skeptical",,,,,,,simple,,general,WordNet
+315383,questioning,word,adj,3,154707,"inquisitive,speculative,wondering",,,,,,,simple,,general,WordNet
+129436,questioning,word,noun,1,154702,inquiring,,question,,,,,simple,,general,WordNet
+129437,questioning,word,verb,,51494,"call into question,oppugn",,,,,,,simple,,general,WordNet
+129438,questioning,word,verb,,156635,interrogate,,,,,,,simple,,general,WordNet
+129439,questioningly,word,adv,1,224672,wonderingly,,,,,,,derived,,general,WordNet
+129440,questioningly,word,adv,2,224674,quizzically,,,,,,,derived,,general,WordNet
+129441,questionings,word,noun,,154702,inquiring,,,,,,,simple,,general,WordNet
+129442,questionnaire,word,noun,1,224676,,,,,,statistics,,simple,,general,WordNet
+129443,questionnaires,word,noun,,224676,,,,,,statistics,,simple,,general,WordNet
+129444,questions,word,noun,,105170,"enquiry,inquiry,interrogation,query",,,,,,,simple,,general,WordNet
+129445,questions,word,noun,,138907,head,,,,,,,simple,,general,WordNet
+129446,questions,word,noun,,156638,"interrogation,interrogative,interrogative sentence",,,,,,,simple,,general,WordNet
+129447,quests,word,noun,,223660,"pursuance,pursuit",,,,,psychology,,simple,,general,WordNet
+129448,quests,word,noun,,224646,seeking,,,,,,,simple,,general,WordNet
+129449,quests,word,verb,,224648,,,,,,,,simple,,general,WordNet
+129450,quetch,word,verb,1,71741,"complain,kick,kvetch,plain,sound off",,,,,,,simple,,general,WordNet
+129451,quetzal,word,noun,1,224680,,,,,,finance,,simple,,general,WordNet
+129452,quetzal,word,noun,2,224681,quetzal bird,,,,,,,simple,,general,WordNet
+225727,quetzal bird,phrase,noun,1,224681,quetzal,,,,,,,,,general,WordNet
+129453,quetzalcoatl,word,noun,1,224682,,,,,,religion,,simple,,general,WordNet
+129454,quetzals,word,noun,,224680,,,,,,finance,,simple,,general,WordNet
+129455,quetzals,word,noun,,224681,quetzal bird,,,,,,,simple,,general,WordNet
+129456,queue,word,noun,1,224683,waiting line,,,,,automotive,,simple,,general,WordNet
+129457,queue,word,noun,2,224684,,,,,,,,simple,,general,WordNet
+129458,queue,word,noun,3,224685,,,,,,,,simple,,general,WordNet
+308686,queue,word,verb,1,169095,line up,,,,,,,simple,,general,WordNet
+308685,queue up,phrasal verb,verb,1,169095,"line up,queued",,,,Phrasal verb,,phrasal_verb,,,general,WordNet
+129459,queued,word,verb,,169095,"line up,queue up",,,,,,,simple,,general,WordNet
+129460,queueing,word,verb,,169095,"line up,queue up",,,,,,,simple,,general,WordNet
+129461,queues,word,noun,,224683,waiting line,,,,,automotive,,simple,,general,WordNet
+129462,queues,word,noun,,224684,,,,,,,,simple,,general,WordNet
+129463,queues,word,noun,,224685,,,,,,,,simple,,general,WordNet
+129464,queuing,word,verb,,169095,"line up,queue up",,,,,,,simple,,general,WordNet
+260469,quezon city,phrase,noun,1,224686,,,,,,geography,,,,general,WordNet
+292280,qui vive,phrase,noun,1,13162,alert,,,,,,,,,general,WordNet
+129465,quiaquia,word,noun,1,64599,"cigarfish,decapterus punctatus,round scad",,,,,zoology,,simple,,general,WordNet
+129466,quibble,word,noun,1,56770,"cavil,quiddity",,,,,,,simple,,general,WordNet
+129467,quibble,word,verb,1,224687,,,quibbler,,,,,simple,,general,WordNet
+129468,quibble,word,verb,2,38506,"bicker,brabble,niggle,pettifog,squabble",,quibbler,,,,,simple,,general,WordNet
+129469,quibbled,word,verb,,224687,,,,,,,,simple,,general,WordNet
+129470,quibbled,word,verb,,38506,"bicker,brabble,niggle,pettifog,squabble",,,,,,,simple,,general,WordNet
+129471,quibbler,word,noun,1,56771,"caviler,caviller,pettifogger",,quibble,,,,,derived,,general,WordNet
+129472,quibblers,word,noun,,56771,"caviler,caviller,pettifogger",,,,,,,derived,,general,WordNet
+129473,quibbles,word,noun,,56770,"cavil,quiddity",,,,,,,simple,,general,WordNet
+129474,quibbles,word,verb,,224687,,,,,,,,simple,,general,WordNet
+129475,quibbles,word,verb,,38506,"bicker,brabble,niggle,pettifog,squabble",,,,,,,simple,,general,WordNet
+129476,quibbling,word,verb,,224687,,,,,,,,simple,,general,WordNet
+129477,quibbling,word,verb,,38506,"bicker,brabble,niggle,pettifog,squabble",,,,,,,simple,,general,WordNet
+129478,quiche,word,noun,1,224688,,,,,,,,simple,,general,WordNet
+129479,quiche,word,noun,2,224689,,,,,,baking,,simple,,general,WordNet
+129480,quiche,word,noun,3,224690,,,,,,linguistics,,simple,,general,WordNet
+253526,quiche lorraine,phrase,noun,1,224691,,,,,,,,,,general,WordNet
+129481,quiches,word,noun,,224688,,,,,,,,simple,,general,WordNet
+129482,quiches,word,noun,,224689,,,,,,baking,,simple,,general,WordNet
+129483,quiches,word,noun,,224690,,,,,,linguistics,,simple,,general,WordNet
+129485,quick,word,adj,1,224692,speedy,,quickness,,,,,simple,,general,WordNet
+129486,quick,word,adj,2,115969,"fast,flying",,quickness,,,,,simple,,general,WordNet
+312821,quick,word,adj,3,11660,"agile,nimble,spry",,quickness,,,,,simple,,general,WordNet
+317869,quick,word,adj,4,224698,ready,,quickness,,,,,simple,,general,WordNet
+316475,quick,word,adj,5,149664,"immediate,prompt,straightaway",,quickness,,,,,simple,,general,WordNet
+316249,quick,word,adj,6,224701,warm,,quickness,,,,,simple,,general,WordNet
+323694,quick,word,adv,1,220770,promptly,,,,,,,simple,,general,WordNet
+129484,quick,word,noun,1,224704,,,,,,medicine,,simple,,general,WordNet
+289407,quick assets,phrase,noun,1,81520,"current assets,liquid assets",,,,,finance,,,,general,WordNet
+253886,quick bread,phrase,noun,1,224705,,,,,,baking,,,,general,WordNet
+289053,quick buck,phrase,noun,1,116004,fast buck,,,,,,,,,general,WordNet
+218049,quick fix,phrase,noun,1,32737,"band aid,quickie,quicky",,,,,,,,,general,WordNet
+279009,quick grass,phrase,noun,1,11942,"agropyron repens,couch grass,dog grass,quack grass,quackgrass,witch grass,witchgrass",,,,,botany,,,,general,WordNet
+218117,quick march,phrase,noun,1,224707,,,,,,,,,,general,WordNet
+265977,quick study,phrase,noun,1,224708,sponge,,,,,,,,,general,WordNet
+253186,quick temper,phrase,noun,1,158154,"irascibility,short temper,spleen",,,,,,,,,general,WordNet
+297658,quick time,phrase,noun,1,224710,,,,,,,,,,general,WordNet
+313975,quick-change,word,adj,1,224712,,,,,,,,,,general,WordNet
+313976,quick-drying,word,adj,1,224714,,,,,,,,,,general,WordNet
+315483,quick-eared,word,adj,1,224715,sharp-eared,,,,,,,,,general,WordNet
+299726,quick-freeze,word,verb,1,119996,flash-freeze,,,,,culinary,,,,general,WordNet
+316868,quick-frozen,word,adj,1,119998,"flash-frozen,frozen",,,,,nutrition,,,,general,WordNet
+320790,quick-sighted,word,adj,1,23993,"argus-eyed,hawk-eyed,keen-sighted,lynx-eyed,sharp-eyed,sharp-sighted",,,,,,,,,general,WordNet
+319352,quick-sighted,word,adj,2,224716,"sharp-eyed,sharp-sighted",,,,,,,,,general,WordNet
+317127,quick-tempered,word,adj,1,63074,"choleric,hot-tempered,hotheaded,irascible,short-tempered",,,,,,,,,general,WordNet
+312936,quick-witted,word,adj,1,224718,,,quick-wittedness,,,psychology,,,,general,WordNet
+245936,quick-wittedness,word,noun,1,180193,"mental quickness,quickness",,quick-witted,,,,,,,general,WordNet
+129487,quicken,word,verb,1,4860,"accelerate,sped,speed up,speeded",,"quickening,quickener",,,,,simple,,general,WordNet
+129488,quicken,word,verb,2,224722,whet,,"quickening,quickener",,,medicine,,simple,,general,WordNet
+129489,quicken,word,verb,3,157844,invigorate,,"quickening,quickener",,,,,simple,,general,WordNet
+298080,quicken,word,verb,4,224724,,,"quickening,quickener",,,,,simple,,general,WordNet
+297890,quicken,word,verb,5,18187,"animate,reanimate,recreate,renovate,repair,revive,revivify,vivify",,"quickening,quickener",,,,,simple,,general,WordNet
+129490,quickened,word,verb,,4860,"accelerate,sped,speed up,speeded",,,,,,,simple,,general,WordNet
+129491,quickened,word,verb,,224722,whet,,,,,medicine,,simple,,general,WordNet
+129492,quickened,word,verb,,157844,invigorate,,,,,,,simple,,general,WordNet
+129493,quickener,word,noun,1,105099,"enlivener,invigorator",,quicken,,,,,derived,,general,WordNet
+129494,quickening,word,noun,1,224726,,,quicken,,,,,simple,,general,WordNet
+129495,quickening,word,noun,2,224728,,,quicken,,,zoology,,simple,,general,WordNet
+129496,quickening,word,noun,3,4878,"acceleration,speedup",,quicken,,,,,simple,,general,WordNet
+129497,quickens,word,verb,,4860,"accelerate,sped,speed up,speeded",,,,,,,simple,,general,WordNet
+129498,quickens,word,verb,,224722,whet,,,,,medicine,,simple,,general,WordNet
+129499,quickens,word,verb,,157844,invigorate,,,,,,,simple,,general,WordNet
+129500,quicker,word,adj,,224692,speedy,,,,,,,derived,,general,WordNet
+129501,quicker,word,adj,,115969,"fast,flying",,,,,,,derived,,general,WordNet
+129502,quicker,word,adj,,11660,"agile,nimble,spry",,,,,,,derived,,general,WordNet
+323573,quicker,word,adv,1,116065,faster,,,,,,,derived,,general,WordNet
+129503,quickest,word,adj,,224692,speedy,,,,,,,simple,,general,WordNet
+129504,quickest,word,adj,,115969,"fast,flying",,,,,,,simple,,general,WordNet
+129505,quickest,word,adj,,11660,"agile,nimble,spry",,,,,,,simple,,general,WordNet
+323576,quickest,word,adv,1,116066,fastest,,,,,,,simple,,general,WordNet
+129506,quickie,word,noun,1,32737,"band aid,quick fix,quicky",,,,,,,simple,,general,WordNet
+129507,quickies,word,noun,,32737,"band aid,quick fix",,,,,,,derived,,general,WordNet
+129508,quicklime,word,noun,1,49604,"burnt lime,calces,calcined lime,calcium oxide,calx,fluxing lime,lime,unslaked lime",,,,,chemistry,,compound,,general,WordNet
+129509,quickly,word,adv,1,21541,"apace,chop-chop,rapidly,speedily",slowly,,,,,,derived,,general,WordNet
+129510,quickly,word,adv,2,220770,promptly,,,,,,,derived,,general,WordNet
+129511,quickly,word,adv,3,81585,cursorily,,,,,,,derived,,general,WordNet
+129512,quickness,word,noun,1,8528,"adeptness,adroitness,deftness,facility",,quick,,,,,derived,,general,WordNet
+129513,quickness,word,noun,2,180193,"mental quickness,quick-wittedness",,quick,,,,,derived,,general,WordNet
+129514,quickness,word,noun,3,57746,"celerity,rapidity,rapidness,speediness",,quick,,,,,derived,,general,WordNet
+129515,quicks,word,noun,,224704,,,,,,medicine,,simple,,general,WordNet
+129516,quicksand,word,noun,1,224729,,,,,,,,compound,,general,WordNet
+129517,quicksand,word,noun,2,224730,,,,,,,,compound,,general,WordNet
+129518,quicksands,word,noun,,224729,,,,,,,,compound,,general,WordNet
+129519,quicksands,word,noun,,224730,,,,,,,,compound,,general,WordNet
+129521,quickset,word,adj,1,224731,,,,,,botany,,compound,,general,WordNet
+129520,quickset,word,noun,1,224733,,,,,,botany,,compound,,general,WordNet
+129522,quicksets,word,noun,,224733,,,,,,botany,,compound,,general,WordNet
+129524,quicksilver,word,adj,1,107460,"erratic,fickle,mercurial",,,,,,,compound,,general,WordNet
+129523,quicksilver,word,noun,1,141769,"hg,hydrargyrum,mercury",,,,,chemistry,,compound,,general,WordNet
+129525,quickstep,word,noun,1,224735,,,,,,military,,compound,,general,WordNet
+129526,quickstep,word,noun,2,224736,,,,,,,,compound,,general,WordNet
+129527,quickstep,word,verb,1,224737,,,,,,,,compound,,general,WordNet
+129528,quicksteps,word,noun,,224735,,,,,,military,,compound,,general,WordNet
+129529,quicksteps,word,noun,,224736,,,,,,,,compound,,general,WordNet
+129530,quicksteps,word,verb,,224737,,,,,,,,compound,,general,WordNet
+218050,quicky,word,noun,1,32737,"band aid,quick fix,quickie",,,,,,,derived,,general,WordNet
+129531,quid,word,noun,1,47327,"british pound,british pound sterling,pound,pound sterling",,,,,finance,,simple,,general,WordNet
+129532,quid,word,noun,2,224739,quid pro quo,,,,,,,simple,,general,WordNet
+129533,quid,word,noun,3,60969,"chaw,chew,cud,plug,wad",,,,,,,simple,,general,WordNet
+289360,quid pro quo,phrase,noun,1,224739,quid,,,,,,,,,general,WordNet
+129534,quiddities,word,noun,,56770,"cavil,quibble",,,,,,,simple,,general,WordNet
+129535,quiddities,word,noun,,136828,haecceity,,,,,,,simple,,general,WordNet
+129536,quiddity,word,noun,1,56770,"cavil,quibble",,,,,,,simple,,general,WordNet
+129537,quiddity,word,noun,2,136828,haecceity,,,,,,,simple,,general,WordNet
+129538,quidnunc,word,noun,1,49937,"busybody,nosey-parker,nosy-parker",,,,,,,simple,,general,WordNet
+129539,quidnuncs,word,noun,,49937,"busybody,nosey-parker,nosy-parker",,,,,,,simple,,general,WordNet
+129540,quids,word,noun,,47327,"british pound,british pound sterling,pound,pound sterling",,,,,finance,,simple,,general,WordNet
+129541,quids,word,noun,,224739,quid pro quo,,,,,,,simple,,general,WordNet
+129542,quids,word,noun,,60969,"chaw,chew,cud,plug,wad",,,,,,,simple,,general,WordNet
+129543,quiesce,word,verb,1,145774,"hush,pipe down,quiet,quiet down,quieten",,quiescent,,,,,simple,,general,WordNet
+129544,quiesced,word,verb,,145774,"hush,pipe down,quiet,quiet down,quieten",,,,,,,simple,,general,WordNet
+129545,quiescence,word,noun,1,95737,dormancy,,quiescent,,,,,derived,,general,WordNet
+129546,quiescence,word,noun,2,95739,"dormancy,sleeping,sleepings",,quiescent,,,,,derived,,general,WordNet
+129547,quiescency,word,noun,1,95737,"dormancy,quiescence",,"quiescent,dormant",,,,,derived,,general,WordNet
+129548,quiescency,word,noun,2,95739,"dormancy,quiescence,sleeping,sleepings",,"quiescent,dormant",,,,,derived,,general,WordNet
+129549,quiescent,word,adj,1,224741,,,"quiescency,quiescence,quiesce",,,,,derived,,general,WordNet
+129550,quiescent,word,adj,2,224743,,,"quiescency,quiescence,quiesce",,,,,derived,,general,WordNet
+129551,quiescent,word,adj,3,224745,,,"quiescency,quiescence,quiesce",,,,,derived,,general,WordNet
+312848,quiescent,word,adj,4,224746,,,"quiescency,quiescence,quiesce",,,medicine,,derived,,general,WordNet
+129552,quiescing,word,verb,,145774,"hush,pipe down,quiet,quiet down,quieten",,,,,,,simple,,general,WordNet
+319970,quiet,word,adj,1,224751,,unquiet,quietness,,,,,simple,,general,WordNet
+319964,quiet,word,adj,2,224756,,noisy,quietness,,,,,simple,,general,WordNet
+319706,quiet,word,adj,3,224759,restrained,,quietness,,,,,simple,,general,WordNet
+318283,quiet,word,adj,4,145781,"hushed,muted,subdued",,quietness,,,,,simple,,general,WordNet
+313833,quiet,word,adj,5,213073,"placid,smooth,still,tranquil,unruffled",,quietness,,,,,simple,,general,WordNet
+312868,quiet,word,adj,6,224761,,active,quietness,,,astronomy,,simple,,general,WordNet
+324170,quiet,word,adv,1,224762,,,,,,,,simple,,general,WordNet
+129553,quiet,word,noun,1,172481,lull,,,,,meteorology,,simple,,general,WordNet
+129554,quiet,word,noun,2,224766,"tranquility,tranquillity",,,,,,,simple,,general,WordNet
+129555,quiet,word,noun,3,224767,silence,,,,,,,simple,,general,WordNet
+242691,quiet,word,noun,4,213082,"placidity,repose,serenity,tranquility,tranquillity",,,,,psychology,,simple,,general,WordNet
+309579,quiet,word,verb,1,145774,"hush,pipe down,quiesce,quiet down,quietening",,,,,,,simple,,general,WordNet
+307074,quiet,word,verb,2,51644,"calm,calm down,lull,quietening,still,stilled,tranquilize,tranquillise",,,,,,,simple,,general,WordNet
+309580,quiet down,phrasal verb,verb,1,145774,"hush,pipe down,quiesce,quiet,quieten",,,,Phrasal verb,,phrasal_verb,,,general,WordNet
+129556,quieted,word,verb,,145774,"hush,pipe down,quiesce,quiet down,quieten",,,,,,,simple,,general,WordNet
+129557,quieted,word,verb,,51644,"calm,calm down,lull,quieten,still,stilled,tranquilize,tranquillise",,,,,,,simple,,general,WordNet
+129558,quieten,word,verb,1,145774,"hush,pipe down,quiesce,quiet down,quieted",louden,,,,,,simple,,general,WordNet
+129559,quieten,word,verb,2,51644,"calm,calm down,lull,quieted,still,stilled,tranquilize,tranquillise",,,,,,,simple,,general,WordNet
+129560,quieten,word,verb,3,145772,"hush,hush up,shut up,silence,still,stilled",louden,,,,,,simple,,general,WordNet
+129561,quietened,word,verb,,145774,"hush,pipe down,quiesce,quiet down,quieted",,,,,,,simple,,general,WordNet
+129562,quietened,word,verb,,51644,"calm,calm down,lull,quieted,still,stilled,tranquilize,tranquillise",,,,,,,simple,,general,WordNet
+129563,quietened,word,verb,,145772,"hush,hush up,shut up,silence,still,stilled",,,,,,,simple,,general,WordNet
+129564,quietening,word,verb,,145774,"hush,pipe down,quiesce,quiet,quiet down",,,,,,,simple,,general,WordNet
+129565,quietening,word,verb,,51644,"calm,calm down,lull,quiet,still,stilled,tranquilize,tranquillise",,,,,,,simple,,general,WordNet
+129566,quietening,word,verb,,145772,"hush,hush up,shut up,silence,still,stilled",,,,,,,simple,,general,WordNet
+129567,quietens,word,verb,,145774,"hush,pipe down,quiesce,quiet down,quieted",,,,,,,simple,,general,WordNet
+129568,quietens,word,verb,,51644,"calm,calm down,lull,quieted,still,stilled,tranquilize,tranquillise",,,,,,,simple,,general,WordNet
+129569,quietens,word,verb,,145772,"hush,hush up,shut up,silence,still,stilled",,,,,,,simple,,general,WordNet
+129570,quieter,word,adj,,224751,,,,,,,,derived,,general,WordNet
+129571,quieter,word,adj,,224756,,,,,,,,derived,,general,WordNet
+129572,quieter,word,adj,,224759,restrained,,,,,,,derived,,general,WordNet
+129573,quietest,word,adj,,224751,,,,,,,,simple,,general,WordNet
+129574,quietest,word,adj,,224756,,,,,,,,simple,,general,WordNet
+129575,quietest,word,adj,,224759,restrained,,,,,,,simple,,general,WordNet
+129576,quieting,word,verb,,145774,"hush,pipe down,quiesce,quiet down,quieten",,,,,,,simple,,general,WordNet
+129577,quieting,word,verb,,51644,"calm,calm down,lull,quieten,still,stilled,tranquilize,tranquillise",,,,,,,simple,,general,WordNet
+129578,quietism,word,noun,1,224770,,,quietist,,,religion,,derived,,general,WordNet
+129579,quietisms,word,noun,,224770,,,,,,religion,,derived,,general,WordNet
+129580,quietist,word,noun,1,224771,,,quietism,,,religion,,derived,,general,WordNet
+129581,quietists,word,noun,,224771,,,,,,religion,,derived,,general,WordNet
+129582,quietly,word,adv,1,224772,softly,,,,,,,derived,,general,WordNet
+129583,quietly,word,adv,2,224775,,noisily,,,,,,derived,,general,WordNet
+129584,quietly,word,adv,3,224762,,unquietly,,,,,,derived,,general,WordNet
+324568,quietly,word,adv,4,224778,restfully,,,,,,,derived,,general,WordNet
+129585,quietness,word,noun,1,224780,soundlessness,,quiet,,,,,derived,,general,WordNet
+129586,quietness,word,noun,2,224781,"quietude,tranquility,tranquillity",,quiet,,,,,derived,,general,WordNet
+129587,quiets,word,noun,,172481,lull,,,,,meteorology,,simple,,general,WordNet
+129588,quiets,word,noun,,224766,"tranquility,tranquillity",,,,,,,simple,,general,WordNet
+129589,quiets,word,noun,,224767,silence,,,,,,,simple,,general,WordNet
+129590,quietude,word,noun,1,224781,"quietness,tranquility,tranquillity",,,,,,,simple,,general,WordNet
+129591,quietudes,word,noun,,224781,"quietness,tranquility,tranquillity",,,,,,,simple,,general,WordNet
+129592,quietus,word,noun,1,108384,"eternal rest,eternal sleep,rest,sleep",,,,,,,simple,,general,WordNet
+129593,quietuses,word,noun,,108384,"eternal rest,eternal sleep,rest,sleep",,,,,,,simple,,general,WordNet
+129594,quiff,word,noun,1,224782,,,,,,,,simple,,general,WordNet
+129595,quiffs,word,noun,,224782,,,,,,,,simple,,general,WordNet
+129596,quill,word,noun,1,224783,,,,,,zoology,,simple,,general,WordNet
+129597,quill,word,noun,2,224784,,,,,,anatomy,,simple,,general,WordNet
+129598,quill,word,noun,3,120433,"flight feather,pinion,quill feather",,,,,zoology,,simple,,general,WordNet
+230383,quill,word,noun,4,50972,"calamus,shaft",,,,,anatomy,,simple,,general,WordNet
+230388,quill feather,phrase,noun,1,120433,"flight feather,pinion,quill",,,,,zoology,,,,general,WordNet
+239262,quill pen,phrase,noun,1,224783,quills,,,,,zoology,,,,general,WordNet
+129599,quills,word,noun,,224783,quill pen,,,,,zoology,,simple,,general,WordNet
+129600,quills,word,noun,,224784,,,,,,anatomy,,simple,,general,WordNet
+129601,quills,word,noun,,120433,"flight feather,pinion,quill feather",,,,,zoology,,simple,,general,WordNet
+129602,quillwort,word,noun,1,224785,,,,,,botany,,compound,,general,WordNet
+288835,quillwort family,phrase,noun,1,114891,"family isoetaceae,isoetaceae",,,,,,,,,general,WordNet
+129603,quilt,word,noun,1,70696,"comfort,puff",,,,,fashion,,simple,,general,WordNet
+129604,quilt,word,verb,1,224786,,,quilting,,,fashion,,simple,,general,WordNet
+129605,quilt,word,verb,2,224788,,,quilting,,,,,simple,,general,WordNet
+129608,quilted,word,adj,1,224789,,,,,,fashion,,simple,,general,WordNet
+129606,quilted,word,verb,,224786,,,,,,fashion,,simple,,general,WordNet
+129607,quilted,word,verb,,224788,,,,,,,,simple,,general,WordNet
+239265,quilted bedspread,phrase,noun,1,224790,,,,,,construction,,,,general,WordNet
+129609,quilting,word,noun,1,224791,,,quilt,,,fashion,,simple,,general,WordNet
+129610,quilting,word,noun,2,224792,,,quilt,,,fashion,,simple,,general,WordNet
+129611,quilting,word,verb,,224786,,,,,,fashion,,simple,,general,WordNet
+255422,quilting bee,phrase,noun,1,224793,,,,,,,,,,general,WordNet
+129612,quiltings,word,noun,,224791,,,,,,fashion,,simple,,general,WordNet
+129613,quiltings,word,noun,,224792,,,,,,fashion,,simple,,general,WordNet
+129614,quilts,word,noun,,70696,"comfort,puff",,,,,fashion,,simple,,general,WordNet
+129615,quilts,word,verb,,224786,,,,,,fashion,,simple,,general,WordNet
+129616,quilts,word,verb,,224788,,,,,,,,simple,,general,WordNet
+129617,quin,word,noun,1,224794,quintuplet,,,,,,,simple,,general,WordNet
+129618,quinacrine,word,noun,1,27069,"atabrine,mepacrine,quinacrine hydrochloride",,,,,business,,simple,,general,WordNet
+239266,quinacrine hydrochloride,phrase,noun,1,27069,"atabrine,mepacrine,quinacrine",,,,,business,,,,general,WordNet
+129619,quince,word,noun,1,82528,"cydonia oblonga,quince bush",,,,,botany,,simple,,general,WordNet
+129620,quince,word,noun,2,224798,,,,,,chemistry,,simple,,general,WordNet
+283952,quince bush,phrase,noun,1,82528,"cydonia oblonga,quince",,,,,botany,,,,general,WordNet
+129622,quincentenary,word,adj,1,224799,quincentennial,,,,,,,simple,,general,WordNet
+129621,quincentenary,word,noun,1,224801,quincentennial,,,,,,,simple,,general,WordNet
+129624,quincentennial,word,adj,1,224799,quincentenary,,,,,,,simple,,general,WordNet
+129623,quincentennial,word,noun,1,224801,quincentenary,,,,,,,simple,,general,WordNet
+129625,quinces,word,noun,,82528,"cydonia oblonga,quince bush",,,,,botany,,simple,,general,WordNet
+129626,quinces,word,noun,,224798,,,,,,chemistry,,simple,,general,WordNet
+129627,quincies,word,noun,,160501,josiah quincy,,,,,politics,,derived,,general,WordNet
+292724,quincke's edema,phrase,noun,1,17776,"angioedema,atrophedema,giant hives,periodic edema",,,,,nutrition,,,,general,WordNet
+129628,quincy,word,noun,1,160501,josiah quincy,,,,,politics,,derived,,general,WordNet
+271991,quine,word,noun,1,224802,"w. v. quine,willard van orman quine",,,,,philosophy,,simple,,general,WordNet
+239267,quinidex,word,noun,1,224805,"quinidine,quinora",,,,,business,,simple,,general,WordNet
+129629,quinidine,word,noun,1,224805,"quinidex,quinora",,,,,business,,simple,,general,WordNet
+129630,quinine,word,noun,1,224809,,,,,,chemistry,,simple,,general,WordNet
+255257,quinine water,phrase,noun,1,224810,"tonic,tonic water",,,,,culinary,,,,general,WordNet
+129631,quinines,word,noun,,224809,,,,,,chemistry,,simple,,general,WordNet
+230898,quinnat salmon,phrase,noun,1,62551,"chinook,chinook salmon,king salmon,oncorhynchus tshawytscha",,,,,nutrition,,,,general,WordNet
+129632,quinone,word,noun,1,37542,benzoquinone,,,,,nutrition,,simple,,general,WordNet
+129633,quinones,word,noun,,37542,benzoquinone,,,,,nutrition,,simple,,general,WordNet
+239268,quinora,word,noun,1,224805,"quinidex,quinidine",,,,,business,,simple,,general,WordNet
+129634,quinquagesima,word,noun,1,224817,quinquagesima sunday,,,,,,,simple,,general,WordNet
+297150,quinquagesima sunday,phrase,noun,1,224817,quinquagesima,,,,,,,,,general,WordNet
+129635,quinquefoliate,word,adj,1,224819,,,,,,botany,,simple,,general,WordNet
+288170,quinquefoliate leaf,phrase,noun,1,224820,,,,,,botany,,,,general,WordNet
+129636,quinquennia,word,noun,,172989,"lustrum,quinquennium",,,,,,,simple,,general,WordNet
+129637,quinquennium,word,noun,1,172989,"lustrum,quinquennia",,,,,,,simple,,general,WordNet
+129638,quinquenniums,word,noun,,172989,"lustrum,quinquennia",,,,,,,simple,,general,WordNet
+129639,quins,word,noun,,224794,"quint,quintuplet",,,,,,,simple,,general,WordNet
+129640,quinsies,word,noun,,209723,peritonsillar abscess,,,,,medicine,,derived,,general,WordNet
+129641,quinsy,word,noun,1,209723,peritonsillar abscess,,,,,medicine,,derived,,general,WordNet
+129642,quint,word,noun,1,64874,"cinque,fin,five,fivesome,little phoebe,pentad,phoebe,quintuplet",,,,,mathematics,,simple,,general,WordNet
+129643,quint,word,noun,2,224794,"quins,quintuplet",,,,,,,simple,,general,WordNet
+129644,quintal,word,noun,1,58242,"centner,doppelzentner,hundredweight,metric hundredweight",,,,,,,derived,,general,WordNet
+129645,quintal,word,noun,2,58119,"cental,centner,cwt,hundredweight,short hundredweight",,,,,,,derived,,general,WordNet
+129646,quintals,word,noun,,58242,"centner,doppelzentner,hundredweight,metric hundredweight",,,,,,,derived,,general,WordNet
+129647,quintals,word,noun,,58119,"cental,centner,cwt,hundredweight,short hundredweight",,,,,,,derived,,general,WordNet
+259258,quintana roo,phrase,noun,1,224821,,,,,,geography,,,,general,WordNet
+129648,quintessence,word,noun,1,108423,ether,,quintessential,,,,,simple,,general,WordNet
+129649,quintessence,word,noun,2,224822,,,quintessential,,,,,simple,,general,WordNet
+129650,quintessence,word,noun,3,224823,,,quintessential,,,education,,simple,,general,WordNet
+129651,quintessential,word,adj,1,224824,,,quintessence,,,education,,simple,,general,WordNet
+129652,quintet,word,noun,1,224825,,,,,,music,,simple,,general,WordNet
+129653,quintet,word,noun,2,64874,"cinque,fin,five,fivesome,little phoebe,pentad,phoebe,quints",,,,,mathematics,,simple,,general,WordNet
+129654,quintet,word,noun,3,224826,,,,,,music,,simple,,general,WordNet
+255445,quintet,word,noun,4,224827,"quintuple,quintuplet",,,,,,,simple,,general,WordNet
+255440,quintet,word,noun,5,119618,fivesome,,,,,,,simple,,general,WordNet
+129655,quintets,word,noun,,224825,quintette,,,,,music,,simple,,general,WordNet
+129656,quintets,word,noun,,64874,"cinque,fin,five,fivesome,little phoebe,pentad,phoebe,quints",,,,,mathematics,,simple,,general,WordNet
+129657,quintets,word,noun,,224826,quintette,,,,,music,,simple,,general,WordNet
+129658,quintette,word,noun,1,224826,quintets,,,,,music,,simple,,general,WordNet
+129659,quintette,word,noun,2,224827,"quintuple,quintuplet",,,,,,,simple,,general,WordNet
+129660,quintette,word,noun,3,119618,fivesome,,,,,,,simple,,general,WordNet
+251620,quintette,word,noun,4,224825,quintets,,,,,music,,simple,,general,WordNet
+129661,quintillion,word,noun,1,198860,"one million million million,trillion",,,,,,,simple,,general,WordNet
+129662,quintillions,word,noun,,198860,"one million million million,trillion",,,,,,,simple,,general,WordNet
+129664,quintillionth,word,adj,1,224829,,,,,,,,simple,,general,WordNet
+129663,quintillionth,word,noun,1,198912,one-quintillionth,,,,,,,simple,,general,WordNet
+129665,quintillionths,word,noun,,198912,one-quintillionth,,,,,,,simple,,general,WordNet
+265978,quintipara,word,noun,1,224830,,,,,,medicine,,simple,,general,WordNet
+129666,quints,word,noun,,64874,"cinque,fin,five,fivesome,little phoebe,pentad,phoebe,quintet",,,,,mathematics,,simple,,general,WordNet
+129667,quints,word,noun,,224794,"quins,quintuplet",,,,,,,simple,,general,WordNet
+129670,quintuple,word,adj,1,119603,"five-fold,fivefold",,,,,,,simple,,general,WordNet
+129668,quintuple,word,noun,1,224827,"quintet,quintette",,,,,,,simple,,general,WordNet
+129669,quintuple,word,verb,1,224831,,,quintupling,,,,,simple,,general,WordNet
+129671,quintupled,word,verb,,224831,,,,,,,,simple,,general,WordNet
+129672,quintuples,word,noun,,224827,"quintet,quintette,quintuplet",,,,,,,simple,,general,WordNet
+129673,quintuples,word,verb,,224831,,,,,,,,simple,,general,WordNet
+129674,quintuplet,word,noun,1,64874,"cinque,fin,five,fivesome,little phoebe,pentad,phoebe,quint",,,,,mathematics,,simple,,general,WordNet
+129675,quintuplet,word,noun,2,224794,"quin,quint",,,,,,,simple,,general,WordNet
+129676,quintuplet,word,noun,3,224827,"quintet,quintette,quintuples",,,,,,,simple,,general,WordNet
+129677,quintuplets,word,noun,,64874,"cinque,fin,five,fivesome,little phoebe,pentad,phoebe,quint",,,,,mathematics,,simple,,general,WordNet
+129678,quintuplets,word,noun,,224794,"quin,quint",,,,,,,simple,,general,WordNet
+129679,quintuplets,word,noun,,224827,"quintet,quintette,quintuples",,,,,,,simple,,general,WordNet
+129680,quintupling,word,noun,1,224833,,,quintuple,,,,,simple,,general,WordNet
+129681,quintupling,word,verb,,224831,,,,,,,,simple,,general,WordNet
+129682,quip,word,noun,1,106416,epigram,,,,,,,simple,,general,WordNet
+129683,quip,word,noun,2,78639,"crack,sally,wisecrack",,,,,,,simple,,general,WordNet
+129684,quip,word,verb,1,126117,gag,,,,,,,simple,,general,WordNet
+129685,quipped,word,verb,,126117,gag,,,,,,,simple,,general,WordNet
+129686,quipping,word,verb,,126117,gag,,,,,,,simple,,general,WordNet
+129687,quips,word,noun,,106416,epigram,,,,,,,simple,,general,WordNet
+129688,quips,word,noun,,78639,"crack,sally,wisecrack",,,,,,,simple,,general,WordNet
+129689,quips,word,verb,,126117,gag,,,,,,,simple,,general,WordNet
+129690,quipu,word,noun,1,224838,,,,,,history,,simple,,general,WordNet
+129691,quipus,word,noun,,224838,,,,,,history,,simple,,general,WordNet
+129692,quira,word,noun,1,204214,panama redwood,,,,,botany,,simple,,general,WordNet
+129693,quira,word,noun,2,224839,,,,,,economics,,simple,,general,WordNet
+129694,quire,word,noun,1,224840,,,,,,,,simple,,general,WordNet
+129695,quires,word,noun,,224840,,,,,,,,simple,,general,WordNet
+129696,quirk,word,noun,1,80254,"crotchet,oddity,queerness,quirkiness",,quirky,,,,,simple,,general,WordNet
+129697,quirk,word,noun,2,224841,,,quirky,,,,,simple,,general,WordNet
+129698,quirk,word,verb,1,224842,,,,,,,,simple,,general,WordNet
+239269,quirk bead,phrase,noun,1,35223,bead and quirk,,,,,,,,,general,WordNet
+239271,quirk molding,phrase,noun,1,224844,quirk moulding,,,,,,,,,general,WordNet
+239272,quirk moulding,phrase,noun,1,224844,quirk molding,,,,,,,,,general,WordNet
+129699,quirked,word,verb,,224842,,,,,,,,simple,,general,WordNet
+129700,quirkiness,word,noun,1,80254,"crotchet,oddity,queerness,quirk",,quirky,,,,,derived,,general,WordNet
+129701,quirking,word,verb,,224842,,,,,,,,simple,,general,WordNet
+129702,quirks,word,noun,,80254,"crotchet,oddity,queerness,quirkiness",,,,,,,simple,,general,WordNet
+129703,quirks,word,noun,,224841,,,,,,,,simple,,general,WordNet
+129704,quirks,word,verb,,224842,,,,,,,,simple,,general,WordNet
+129705,quirky,word,adj,1,115703,"far-out,kinky,offbeat,way-out",,"quirk,quirkiness",,,,informal,derived,,general,WordNet
+129706,quirt,word,noun,1,224845,,,,,,,,simple,,general,WordNet
+129707,quirts,word,noun,,224845,,,,,,,,simple,,general,WordNet
+223579,quiscalus,word,noun,1,130054,genus quiscalus,,,,,,,simple,,general,WordNet
+223583,quiscalus quiscula,phrase,noun,1,223597,purple grackle,,,,,,,,,general,WordNet
+129708,quisling,word,noun,1,69374,"collaborationist,collaborator",,,,,,,simple,,general,WordNet
+129709,quislingism,word,noun,1,69373,"collaboration,collaborationism",,,,,geography,,derived,,general,WordNet
+129710,quislings,word,noun,,69374,"collaborationist,collaborator",,,,,,,simple,,general,WordNet
+129711,quit,word,verb,1,57471,"cease,discontinue,give up,lay off,stop",,quitter,,,,,simple,,general,WordNet
+129712,quit,word,verb,2,166331,"leave office,resign,step down",,quitter,,,,,simple,,general,WordNet
+129713,quit,word,verb,3,4128,"absent,depart,remove,take leave",,quitter,,,,,simple,,general,WordNet
+309781,quit,word,verb,4,122742,"foreswear,relinquish,renounce",,quitter,,,,,simple,,general,WordNet
+303200,quit,word,verb,5,64362,"chuck up the sponge,drop by the wayside,drop out,fall by the wayside,give up,throw in,throw in the towel",,quitter,,,,,simple,,general,WordNet
+129714,quitclaim,word,noun,1,224849,quitclaim deed,,,,,,,simple,,general,WordNet
+129715,quitclaim,word,noun,2,224850,,,,,,,,simple,,general,WordNet
+249342,quitclaim deed,phrase,noun,1,224849,quitclaim,,,,,,,,,general,WordNet
+129716,quitclaims,word,noun,,224849,quitclaim deed,,,,,,,simple,,general,WordNet
+129717,quitclaims,word,noun,,224850,,,,,,,,simple,,general,WordNet
+129718,quite,word,adv,1,224851,rather,,,,,,,simple,,general,WordNet
+129719,quite,word,adv,2,224856,,,,,,,,simple,,general,WordNet
+129720,quite,word,adv,3,224863,,,,,,,,simple,,general,WordNet
+323231,quite,word,adv,4,224869,,,,,,,,simple,,general,WordNet
+323229,quite a,phrase,adv,1,224863,,,,,,,,,,general,WordNet
+291415,quite a little,phrase,noun,1,34468,"batch,deal,flock,good deal,great deal,hatful,heap,lot",,,,,,,,,general,WordNet
+323230,quite an,phrase,adv,1,224863,,,,,,,,,,general,WordNet
+129721,quiting,word,verb,,57471,"cease,discontinue,give up,lay off,stop",,,,,,,simple,,general,WordNet
+129722,quiting,word,verb,,166331,"leave office,resign,step down",,,,,,,simple,,general,WordNet
+129723,quiting,word,verb,,4128,"absent,depart,remove,take leave",,,,,,,simple,,general,WordNet
+129724,quito,word,noun,1,53141,capital of ecuador,,,,,,,simple,,general,WordNet
+316174,quits,word,adj,1,224876,,,,,,finance,,simple,,general,WordNet
+129725,quits,word,verb,,57471,"cease,discontinue,give up,lay off,stop",,,,,,,simple,,general,WordNet
+129726,quits,word,verb,,166331,"leave office,resign,step down",,,,,,,simple,,general,WordNet
+129727,quits,word,verb,,4128,"absent,depart,remove,take leave",,,,,,,simple,,general,WordNet
+129728,quittance,word,noun,1,224879,,,,,,finance,,simple,,general,WordNet
+129729,quittance,word,noun,2,224880,repayment,,,,,finance,,simple,,general,WordNet
+129730,quittances,word,noun,,224879,,,,,,finance,,simple,,general,WordNet
+129731,quittances,word,noun,,224880,repayment,,,,,finance,,simple,,general,WordNet
+129732,quitted,word,verb,,57471,"cease,discontinue,give up,lay off,stop",,,,,,,simple,,general,WordNet
+129733,quitted,word,verb,,166331,"leave office,resign,step down",,,,,,,simple,,general,WordNet
+129734,quitted,word,verb,,4128,"absent,depart,remove,take leave",,,,,,,simple,,general,WordNet
+129735,quitter,word,noun,1,224881,,,quit,,,,,simple,,general,WordNet
+129736,quitters,word,noun,,224881,,,,,,,,simple,,general,WordNet
+129737,quitting,word,verb,,57471,"cease,discontinue,give up,lay off,stop",,,,,,,simple,,general,WordNet
+129738,quitting,word,verb,,166331,"leave office,resign,step down",,,,,,,simple,,general,WordNet
+129739,quitting,word,verb,,4128,"absent,depart,remove,take leave",,,,,,,simple,,general,WordNet
+129740,quiver,word,noun,1,62368,"chill,frisson,shiver,shudder,thrill,tingle",,,,,,,simple,,general,WordNet
+129741,quiver,word,noun,2,204128,"palpitation,shakiness,shaking,shakings,trembling,vibration",,,,,,,simple,,general,WordNet
+129742,quiver,word,noun,3,224882,,,,,,,,simple,,general,WordNet
+218297,quiver,word,noun,4,224883,vibration,,,,,,,simple,,general,WordNet
+307733,quiver,word,verb,1,204123,"palpitate,quake",,quivering,,,,,simple,,general,WordNet
+307660,quiver,word,verb,2,120406,"flicker,flitter,flutter,waver",,quivering,,,,,simple,,general,WordNet
+307667,quiver,word,verb,3,35550,"beat,pulsate",,quivering,,,,,simple,,general,WordNet
+129743,quivered,word,verb,,204123,"palpitate,quake",,,,,,,simple,,general,WordNet
+129744,quivered,word,verb,,120406,"flicker,flitter,flutter,waver",,,,,,,simple,,general,WordNet
+129745,quivered,word,verb,,35550,"beat,pulsate",,,,,,,simple,,general,WordNet
+129746,quivering,word,noun,1,204128,"palpitation,shakiness,shaking,shakings,trembling,vibration",,quiver,,,,,simple,,general,WordNet
+129747,quivering,word,noun,2,224883,vibration,,quiver,,,,,simple,,general,WordNet
+129748,quivering,word,verb,,204123,"palpitate,quake",,,,,,,simple,,general,WordNet
+129749,quivers,word,noun,,62368,"chill,frisson,shiver,shudder,thrill,tingle",,,,,,,simple,,general,WordNet
+129750,quivers,word,noun,,204128,"palpitation,shakiness,shaking,shakings,trembling,vibration",,,,,,,simple,,general,WordNet
+129751,quivers,word,noun,,224882,,,,,,,,simple,,general,WordNet
+129752,quixotic,word,adj,1,224884,"romantic,wild-eyed",,,,,,,simple,,general,WordNet
+129753,quixotically,word,adv,1,224888,,,,,,,,compound,,general,WordNet
+129754,quixotism,word,noun,1,162858,knight errantry,,,,,psychology,,simple,,general,WordNet
+129755,quiz,word,noun,1,224890,,,,,,education,,simple,,general,WordNet
+129756,quiz,word,verb,1,224891,test,,quizzer,,,education,,simple,,general,WordNet
+249721,quiz program,phrase,noun,1,224894,,,,,,sports,,,,general,WordNet
+129757,quizmaster,word,noun,1,224662,question master,,,,,telecommunications,,compound,,general,WordNet
+129758,quizzed,word,verb,,224891,"quizzes,test",,,,,education,,simple,,general,WordNet
+129759,quizzer,word,noun,1,109510,"examiner,tester",,quiz,,,,,simple,,general,WordNet
+129760,quizzers,word,noun,,109510,"examiner,tester",,,,,,,simple,,general,WordNet
+129761,quizzes,word,noun,,224890,,,,,,education,,simple,,general,WordNet
+129762,quizzes,word,verb,,224891,"quizzed,test",,,,,education,,simple,,general,WordNet
+129763,quizzical,word,adj,1,184739,"mocking,teasing",,,,,,,simple,,general,WordNet
+129764,quizzical,word,adj,2,224668,questioning,,,,,,,simple,,general,WordNet
+129765,quizzically,word,adv,1,224674,questioningly,,,,,,,derived,,general,WordNet
+129766,quizzing,word,verb,,224891,"quizzes,test",,,,,education,,simple,,general,WordNet
+260073,qum,word,noun,1,224898,,,,,,religion,,simple,,general,WordNet
+221561,quo warranto,phrase,noun,1,224899,,,,,,literature,,,,general,WordNet
+129767,quodlibet,word,noun,1,224900,,,,,,,,simple,,general,WordNet
+129768,quoin,word,noun,1,69078,coign,,,,,,,simple,,general,WordNet
+129769,quoin,word,noun,2,69079,coign,,,,,architecture,,simple,,general,WordNet
+129770,quoin,word,noun,3,76785,corner,,,,,architecture,,simple,,general,WordNet
+129771,quoins,word,noun,,69078,coign,,,,,,,simple,,general,WordNet
+129772,quoins,word,noun,,69079,coign,,,,,architecture,,simple,,general,WordNet
+129773,quoins,word,noun,,76785,corner,,,,,architecture,,simple,,general,WordNet
+129774,quoit,word,noun,1,224901,,,,,,sports,,simple,,general,WordNet
+129776,quoits,word,noun,,224901,,,,,,sports,,simple,,general,WordNet
+129775,quoits,word,noun,1,144569,horseshoes,,,,,sports,,simple,,general,WordNet
+129777,quondam,word,adj,1,107501,"erstwhile,former,old,one-time,onetime,sometime",,,,,,,simple,,general,WordNet
+238142,quonset hut,phrase,noun,1,193853,nissen hut,,,,,,,,,general,WordNet
+129778,quoratean,word,noun,1,163190,kulanapan,,,,,linguistics,,simple,,general,WordNet
+129779,quorum,word,noun,1,224902,,,,,,business,,simple,,general,WordNet
+129780,quorums,word,noun,,224902,,,,,,business,,simple,,general,WordNet
+129781,quota,word,noun,1,224903,,,,,,,,simple,,general,WordNet
+129782,quota,word,noun,2,224905,,,,,,,,simple,,general,WordNet
+129783,quota,word,noun,3,224906,,,,,,,,simple,,general,WordNet
+129784,quotability,word,noun,1,224908,,,quotable,,,,,simple,,general,WordNet
+129785,quotable,word,adj,1,224909,repeatable,unquotable,quotability,,,,,derived,,general,WordNet
+129786,quotable,word,adj,2,224912,,,quotability,,,,,derived,,general,WordNet
+129787,quotas,word,noun,,224903,,,,,,,,simple,,general,WordNet
+129788,quotas,word,noun,,224905,,,,,,,,simple,,general,WordNet
+129789,quotas,word,noun,,224906,,,,,,,,simple,,general,WordNet
+129790,quotation,word,noun,1,6020,"acknowledgment,citation,cite,credit,mention,reference",,quote,,,,,derived,,general,WordNet
+129791,quotation,word,noun,2,65310,"citation,quote",,quote,,,,,derived,,general,WordNet
+129792,quotation,word,noun,3,224916,,,quote,,,economics,,derived,,general,WordNet
+220978,quotation,word,noun,4,224917,,,quote,,,,,derived,,general,WordNet
+250705,quotation mark,phrase,noun,1,157800,"inverted comma,quote",,,,,,,,,general,WordNet
+129793,quotations,word,noun,,6020,"acknowledgment,citation,cite,credit,mention,reference",,,,,,,derived,,general,WordNet
+129794,quotations,word,noun,,65310,"citation,quote",,,,,,,derived,,general,WordNet
+129795,quotations,word,noun,,224916,,,,,,economics,,derived,,general,WordNet
+129796,quote,word,noun,1,157800,"inverted comma,quotation mark",,,,,,,simple,,general,WordNet
+129797,quote,word,noun,2,65310,"citation,quotation",,,,,,,simple,,general,WordNet
+129798,quote,word,verb,1,65318,cite,,"quotation,quoter",,,,,simple,,general,WordNet
+302866,quote,word,verb,2,224919,,,"quotation,quoter",,,economics,,simple,,general,WordNet
+302864,quote,word,verb,3,65320,cite,,"quotation,quoter",,,,,simple,,general,WordNet
+302782,quote,word,verb,4,224921,,,"quotation,quoter",,,,,simple,,general,WordNet
+129799,quoted,word,verb,,65318,cite,,,,,,,simple,,general,WordNet
+129800,quoted,word,verb,,224919,,,,,,economics,,simple,,general,WordNet
+129801,quoted,word,verb,,65320,cite,,,,,,,simple,,general,WordNet
+129802,quoter,word,noun,1,224923,,,quote,,,literature,,derived,,general,WordNet
+129803,quoters,word,noun,,224923,,,,,,literature,,derived,,general,WordNet
+129804,quotes,word,noun,,157800,"inverted comma,quotation mark",,,,,,,simple,,general,WordNet
+129805,quotes,word,noun,,65310,"citation,quotation",,,,,,,simple,,general,WordNet
+129806,quotes,word,verb,,65318,cite,,,,,,,simple,,general,WordNet
+129807,quotidian,word,adj,1,109217,"everyday,mundane,routine,unremarkable,workaday",,,,,,,simple,,general,WordNet
+129808,quotient,word,noun,1,224927,,,,,,,,simple,,general,WordNet
+129809,quotient,word,noun,2,224928,,,,,,,,simple,,general,WordNet
+221533,quotient verdict,phrase,noun,1,224929,,,,,,law,,,,general,WordNet
+129810,quotients,word,noun,,224927,,,,,,,,simple,,general,WordNet
+129811,quotients,word,noun,,224928,,,,,,,,simple,,general,WordNet
+129812,quoting,word,verb,,65318,cite,,,,,,,simple,,general,WordNet
+129813,quoting,word,verb,,224919,,,,,,economics,,simple,,general,WordNet
+129814,quoting,word,verb,,65320,cite,,,,,,,simple,,general,WordNet
+248918,quran,word,noun,1,12701,"al-qur'an,book,koran",,,,,religion,,simple,,general,WordNet
+129815,qurush,word,noun,1,224930,,,,,,,,simple,,general,WordNet
+129816,qurushes,word,noun,,224930,,,,,,,,simple,,general,WordNet
+239273,qwerty keyboard,phrase,noun,1,224931,,,,,,linguistics,,,,general,WordNet

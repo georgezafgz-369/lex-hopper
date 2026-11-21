@@ -1,0 +1,1187 @@
+id,word,type,pos,sense,meaning_id,synonyms,antonyms,related,origin,category,subject,usage,structure,code,domain,source
+384880,k,word,noun,,161150,,,,,Abbreviation - lab,medicine,abbreviation,simple,,medical,Curated
+384881,k-562,word,noun,,161158,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+200065,k-awards,word,noun,,161159,,,,,,pharmacology,,,,medical,"NCI Thesaurus (synonym of 'Research Career Programs, K-Series')"
+200066,k-lor,word,noun,,58083,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Potassium Chloride')
+384882,k-npc,word,noun,,161161,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+384883,k-ras asp-13 mutant protein,phrase,noun,,161162,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+384884,k-ras gly-12 mutant protein,phrase,noun,,161163,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+384885,k-ras protein vaccine,phrase,noun,,161164,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+384886,k-ras val-12 mutant protein,phrase,noun,,161165,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+384887,k222,word,noun,,145124,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+384888,k222ta2,word,noun,,145124,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+384889,k3,word,noun,,161167,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+384890,k3 rate constant,phrase,noun,,161167,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+384891,k562,word,noun,,161158,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+384892,k8/k18,word,noun,,161168,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+200067,kabardian,word,noun,,161170,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kabardian Language')
+200068,kabardino-cherkess,word,noun,,161170,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Kabardian Language')
+384893,kabuki syndrome,phrase,noun,,161172,,,,,Disease,medicine,,,ICD-10 Q89.81,medical,Disease Ontology
+384894,kabuki syndrome,phrase,noun,,161173,,,,,Disease,medicine,,,ICD-10 Q89.81,medical,MONDO (diseases)
+384895,kabuki syndrome,phrase,noun,,161174,,,,,Disease,medicine,,,ICD-10 Q89.81,medical,NCI Thesaurus
+200069,kabyle,word,noun,,161175,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kabyle Language')
+200070,kachin,word,noun,,160160,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Jingpho Language')
+200071,kadcyla,word,noun,,161182,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Trastuzumab Emtansine')
+200072,kadian,word,noun,,30411,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Morphine Sulfate')
+384896,kaf,word,noun,,23107,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+384897,kagami-ogata syndrome,phrase,noun,,161189,,,,,Disease,medicine,,,,medical,Disease Ontology
+384898,kahook dual blade migs,phrase,noun,,161192,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+384899,kahrizi syndrome,phrase,noun,,161194,,,,,Disease,medicine,,,,medical,Disease Ontology
+384900,kahrizi syndrome,phrase,noun,,161195,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200073,kala-azar,word,noun,,161205,,,,,,pharmacology,,,,medical,Disease Ontology (synonym of 'visceral leishmaniasis')
+200074,kala-azar,word,noun,,161206,,,,,,pharmacology,,,,medical,MONDO (diseases) (synonym of 'visceral leishmaniasis')
+200075,kala-azar,word,noun,,161207,,,,,,medicine,,,,medical,NCI Thesaurus
+200076,kalaallisut,word,noun,,135311,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Greenlandic Language')
+200077,kaletra,word,noun,,161219,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Lopinavir/Ritonavir')
+384901,kali turgidum pollen antigen,phrase,noun,,161222,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+200078,kalimin,word,noun,,161223,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Pyridostigmine Bromide')
+200079,kallikrein,word,noun,,161229,,,,,,medicine,,simple,,medical,NCI Thesaurus
+384902,kallikrein inhibitor mdpk67b,phrase,noun,,161230,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+384903,kallikrein inhibitor unit,phrase,noun,,161231,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+384904,kallmann syndrome,phrase,noun,,161233,,,,,Disease,medicine,,,,medical,Disease Ontology
+384905,kallmann syndrome,phrase,noun,,161234,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384906,kallmann syndrome-heart disease syndrome,phrase,noun,,161235,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200080,kalmyk,word,noun,,161238,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Oirat Language')
+200081,kamba,word,noun,,161245,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kamba Language')
+200082,kampuchea,word,noun,,51807,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Cambodia')
+200083,kampuchean,word,noun,,51810,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Cambodian')
+384907,kanamycin a sulfate,phrase,noun,,161258,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+384908,kand,word,noun,,161264,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+384909,kandori fleck retina,phrase,noun,,161267,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200084,kanglaite,word,noun,,161275,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+200085,kanitinib,word,noun,,161276,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+200086,kanjinti,word,noun,,140936,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Trastuzumab')
+200087,kannada,word,noun,,161277,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kannada Language')
+200088,kansas,word,noun,,161282,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200089,kanuri,word,noun,,161287,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kanuri Language')
+384910,kanzaki disease,phrase,noun,,161288,,,,,Disease,medicine,,,,medical,Disease Ontology
+200090,kaolin,word,noun,,161291,,,,,,medicine,,simple,,medical,MONDO (diseases)
+384911,kaolin dust,phrase,noun,,161292,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384912,kaolin pneumoconiosis,phrase,noun,,161293,,,,,Disease,medicine,,,,medical,Disease Ontology
+384913,kaolin pneumoconiosis,phrase,noun,,161294,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200091,kaolinite,word,noun,,161295,,,,,,medicine,,simple,,medical,MONDO (diseases)
+200092,kaolinosis,word,noun,,161293,,,,,,pharmacology,,simple,,medical,Disease Ontology (synonym of 'kaolin pneumoconiosis')
+200093,kapampangan,word,noun,,161298,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Pampanga Language')
+200094,kapidex,word,noun,,90018,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Dexlansoprazole')
+440105,kaposi sarcoma,phrase,noun,,161302,,,,,Diagnosis,medicine,,,ICD-10 C46,medical,ICD-10 (WHO 2019)
+440109,kaposi sarcoma of lymph nodes,phrase,noun,,161302,,,,,Diagnosis,medicine,,,ICD-10 C46.3,medical,ICD-10 (WHO 2019)
+440111,kaposi sarcoma of multiple organs,phrase,noun,,161302,,,,,Diagnosis,medicine,,,ICD-10 C46.8,medical,ICD-10 (WHO 2019)
+440110,kaposi sarcoma of other sites,phrase,noun,,161302,,,,,Diagnosis,medicine,,,ICD-10 C46.7,medical,ICD-10 (WHO 2019)
+440108,kaposi sarcoma of palate,phrase,noun,,161302,,,,,Diagnosis,medicine,,,ICD-10 C46.2,medical,ICD-10 (WHO 2019)
+440106,kaposi sarcoma of skin,phrase,noun,,161302,,,,,Diagnosis,medicine,,,ICD-10 C46.0,medical,ICD-10 (WHO 2019)
+440107,kaposi sarcoma of soft tissue,phrase,noun,,161302,,,,,Diagnosis,medicine,,,ICD-10 C46.1,medical,ICD-10 (WHO 2019)
+384914,kaposi sarcoma related to immunosuppressive treatment,phrase,noun,,161303,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+440112,"kaposi sarcoma, unspecified",phrase,noun,,161302,,,,,Diagnosis,medicine,,,ICD-10 C46.9,medical,ICD-10 (WHO 2019)
+384915,kaposi's sarcoma,phrase,noun,,161304,,,,,Disease,medicine,,,ICD-10 C46,medical,Disease Ontology
+384916,kaposi's sarcoma,phrase,noun,,161305,,,,,Sign / symptom / phenotype,medicine,,,ICD-10 C46,medical,Human Phenotype Ontology
+384917,kaposi's sarcoma,phrase,noun,,161306,,,,,Disease,medicine,,,ICD-10 C46,medical,MONDO (diseases)
+451957,kaposi's sarcoma of gastrointestinal sites,phrase,noun,,127494,,,,,Diagnosis,medicine,,,ICD-10 C46.4,medical,ICD-10 (WHO 2019)
+451961,kaposi's sarcoma of left lung,phrase,noun,,127494,,,,,Diagnosis,medicine,,,ICD-10 C46.52,medical,ICD-10 (WHO 2019)
+451958,kaposi's sarcoma of lung,phrase,noun,,127494,,,,,Diagnosis,medicine,,,ICD-10 C46.5,medical,ICD-10 (WHO 2019)
+451956,kaposi's sarcoma of lymph nodes,phrase,noun,,127494,,,,,Diagnosis,medicine,,,ICD-10 C46.3,medical,ICD-10 (WHO 2019)
+451962,kaposi's sarcoma of other sites,phrase,noun,,127494,,,,,Diagnosis,medicine,,,ICD-10 C46.7,medical,ICD-10 (WHO 2019)
+451955,kaposi's sarcoma of palate,phrase,noun,,127494,,,,,Diagnosis,medicine,,,ICD-10 C46.2,medical,ICD-10 (WHO 2019)
+451960,kaposi's sarcoma of right lung,phrase,noun,,127494,,,,,Diagnosis,medicine,,,ICD-10 C46.51,medical,ICD-10 (WHO 2019)
+451953,kaposi's sarcoma of skin,phrase,noun,,127494,,,,,Diagnosis,medicine,,,ICD-10 C46.0,medical,ICD-10 (WHO 2019)
+451954,kaposi's sarcoma of soft tissue,phrase,noun,,127494,,,,,Diagnosis,medicine,,,ICD-10 C46.1,medical,ICD-10 (WHO 2019)
+451959,kaposi's sarcoma of unspecified lung,phrase,noun,,127494,,,,,Diagnosis,medicine,,,ICD-10 C46.50,medical,ICD-10 (WHO 2019)
+451963,"kaposi's sarcoma, unspecified",phrase,noun,,127494,,,,,Diagnosis,medicine,,,ICD-10 C46.9,medical,ICD-10 (WHO 2019)
+384918,kaposiform hemangioendothelioma,phrase,noun,,161309,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384919,kaposiform hemangioendothelioma,phrase,noun,,161310,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384920,kaposiform lymphangiomatosis,phrase,noun,,161311,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384921,kappa bence jones proteinuria,phrase,noun,,161313,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+384922,kappa light chain to lambda light chain ratio measurement,phrase,noun,,161314,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+384923,kapur-toriello syndrome,phrase,noun,,161315,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200095,kara-kalpak,word,noun,,161318,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Kara-Kalpak Language')
+200096,karachay-balkar,word,noun,,161319,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Karachay-Balkar Language')
+200097,karat,word,noun,,53601,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Carat of Gold Alloy')
+200098,karelian,word,noun,,161330,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Karelian Language')
+200099,karenitecin,word,noun,,77484,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Cositecan')
+200100,kari'nja,word,noun,,161333,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Carib Language')
+384924,kariminejad neurodevelopmental syndrome,phrase,noun,,161334,,,,,Disease,medicine,,,,medical,Disease Ontology
+200101,karminomitsin,word,noun,,54693,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Carubicin')
+200102,karminomycin,word,noun,,54693,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Carubicin')
+200103,karnofsky,word,noun,,161348,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Karnofsky Performance Status')
+384925,karnofsky performance status 100,phrase,noun,,161349,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384926,karnofsky performance status 20,phrase,noun,,161350,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+384927,karnofsky performance status 80,phrase,noun,,161351,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384928,karnofsky performance status 90,phrase,adj,,161352,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+200104,karonudib,word,noun,,161355,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+384929,karsch-neugebauer syndrome,phrase,noun,,161357,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384930,kartagener syndrome,phrase,noun,,161358,,,,,Disease,medicine,,,,medical,Disease Ontology
+384931,kartagener syndrome,phrase,noun,,161359,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+200105,karyocytomegaly,word,noun,,161362,,,,,,medicine,,simple,,medical,NCI Thesaurus
+384932,karyomegalic interstitial nephritis,phrase,noun,,161367,,,,,Disease,medicine,,,,medical,Disease Ontology
+384933,karyomegalic interstitial nephritis,phrase,noun,,161368,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200106,karyomegaly,word,noun,,161369,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200107,karyometry,word,noun,,161370,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200108,karyorrhexis,word,noun,,161372,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200109,karyosome,word,noun,,161373,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200110,karyotype,word,noun,,161374,,,,,,medicine,,simple,,medical,NCI Thesaurus
+476456,"karyotype 45, x",phrase,noun,,503,,,,,Diagnosis,medicine,,,ICD-10 Q96.0,medical,ICD-10 (WHO 2019)
+446214,"karyotype 45,x",phrase,noun,,515,,,,,Diagnosis,medicine,,,ICD-10 Q96.0,medical,ICD-10 (WHO 2019)
+476457,"karyotype 46, x iso (xq)",phrase,noun,,503,,,,,Diagnosis,medicine,,,ICD-10 Q96.1,medical,ICD-10 (WHO 2019)
+476458,"karyotype 46, x with abnormal sex chromosome, except iso (xq)",phrase,noun,,503,,,,,Diagnosis,medicine,,,ICD-10 Q96.2,medical,ICD-10 (WHO 2019)
+446215,"karyotype 46,x iso (xq)",phrase,noun,,515,,,,,Diagnosis,medicine,,,ICD-10 Q96.1,medical,ICD-10 (WHO 2019)
+446216,"karyotype 46,x with abnormal sex chromosome, except iso (xq)",phrase,noun,,515,,,,,Diagnosis,medicine,,,ICD-10 Q96.2,medical,ICD-10 (WHO 2019)
+476464,"karyotype 47, xxx",phrase,noun,,503,,,,,Diagnosis,medicine,,,ICD-10 Q97.0,medical,ICD-10 (WHO 2019)
+476475,"karyotype 47, xyy",phrase,noun,,503,,,,,Diagnosis,medicine,,,ICD-10 Q98.5,medical,ICD-10 (WHO 2019)
+446222,"karyotype 47,xxx",phrase,noun,,515,,,,,Diagnosis,medicine,,,ICD-10 Q97.0,medical,ICD-10 (WHO 2019)
+446234,"karyotype 47,xyy",phrase,noun,,515,,,,,Diagnosis,medicine,,,ICD-10 Q98.5,medical,ICD-10 (WHO 2019)
+384934,karyotype [identifier] in blood or tissue by fish narrative,phrase,noun,,161376,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+384935,karyotype [identifier] in urine by fish narrative,phrase,noun,,161377,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+200111,karyotyping,word,noun,,161378,,,,,,medicine,,simple,,medical,Medical Action Ontology
+200112,karyotyping,word,noun,,161379,,,,,,medicine,,simple,,medical,NCI Thesaurus
+384936,kasabach-merritt syndrome,phrase,noun,,161380,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+443867,kaschin-beck disease,phrase,noun,,25044,,,,,Diagnosis,medicine,,,ICD-10 M12.1,medical,ICD-10 (WHO 2019)
+466410,kaschin-beck disease,phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.1,medical,ICD-10 (WHO 2019)
+466436,"kaschin-beck disease, ankle and foot",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.17,medical,ICD-10 (WHO 2019)
+466416,"kaschin-beck disease, elbow",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.12,medical,ICD-10 (WHO 2019)
+466424,"kaschin-beck disease, hand",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.14,medical,ICD-10 (WHO 2019)
+466428,"kaschin-beck disease, hip",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.15,medical,ICD-10 (WHO 2019)
+466432,"kaschin-beck disease, knee",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.16,medical,ICD-10 (WHO 2019)
+466438,"kaschin-beck disease, left ankle and foot",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.172,medical,ICD-10 (WHO 2019)
+466418,"kaschin-beck disease, left elbow",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.122,medical,ICD-10 (WHO 2019)
+466426,"kaschin-beck disease, left hand",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.142,medical,ICD-10 (WHO 2019)
+466430,"kaschin-beck disease, left hip",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.152,medical,ICD-10 (WHO 2019)
+466434,"kaschin-beck disease, left knee",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.162,medical,ICD-10 (WHO 2019)
+466414,"kaschin-beck disease, left shoulder",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.112,medical,ICD-10 (WHO 2019)
+466422,"kaschin-beck disease, left wrist",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.132,medical,ICD-10 (WHO 2019)
+466441,"kaschin-beck disease, multiple sites",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.19,medical,ICD-10 (WHO 2019)
+466437,"kaschin-beck disease, right ankle and foot",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.171,medical,ICD-10 (WHO 2019)
+466417,"kaschin-beck disease, right elbow",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.121,medical,ICD-10 (WHO 2019)
+466425,"kaschin-beck disease, right hand",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.141,medical,ICD-10 (WHO 2019)
+466429,"kaschin-beck disease, right hip",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.151,medical,ICD-10 (WHO 2019)
+466433,"kaschin-beck disease, right knee",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.161,medical,ICD-10 (WHO 2019)
+466413,"kaschin-beck disease, right shoulder",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.111,medical,ICD-10 (WHO 2019)
+466421,"kaschin-beck disease, right wrist",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.131,medical,ICD-10 (WHO 2019)
+466412,"kaschin-beck disease, shoulder",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.11,medical,ICD-10 (WHO 2019)
+466439,"kaschin-beck disease, unspecified ankle and foot",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.179,medical,ICD-10 (WHO 2019)
+466419,"kaschin-beck disease, unspecified elbow",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.129,medical,ICD-10 (WHO 2019)
+466427,"kaschin-beck disease, unspecified hand",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.149,medical,ICD-10 (WHO 2019)
+466431,"kaschin-beck disease, unspecified hip",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.159,medical,ICD-10 (WHO 2019)
+466435,"kaschin-beck disease, unspecified knee",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.169,medical,ICD-10 (WHO 2019)
+466415,"kaschin-beck disease, unspecified shoulder",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.119,medical,ICD-10 (WHO 2019)
+466411,"kaschin-beck disease, unspecified site",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.10,medical,ICD-10 (WHO 2019)
+466423,"kaschin-beck disease, unspecified wrist",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.139,medical,ICD-10 (WHO 2019)
+466440,"kaschin-beck disease, vertebrae",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.18,medical,ICD-10 (WHO 2019)
+466420,"kaschin-beck disease, wrist",phrase,noun,,3026,,,,,Diagnosis,medicine,,,ICD-10 M12.13,medical,ICD-10 (WHO 2019)
+384937,kashin-beck disease,phrase,noun,,161384,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200113,kashmiri,word,noun,,161388,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kashmiri Language')
+200114,kashubian,word,noun,,55624,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kashubian Language')
+200115,kat,word,noun,,161392,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Katal')
+384938,kat6 inhibitor pf-07248144,phrase,noun,,161393,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+200116,kataegis,word,noun,,161394,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200117,katal,word,noun,,161392,,,,,,medicine,,derived,,medical,NCI Thesaurus
+384939,kaufman oculocerebrofacial syndrome,phrase,noun,,161415,,,,,Disease,medicine,,,,medical,Disease Ontology
+384940,kava-based supplement,phrase,noun,,161421,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+384941,kave,word,noun,,161422,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+384942,kave regimen,phrase,noun,,161422,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384943,kawasaki disease,phrase,noun,,161425,,,,,Disease,medicine,,,,medical,Disease Ontology
+384944,kawasaki disease,phrase,noun,,161426,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384945,kawasaki disease laboratory finding,phrase,noun,,161428,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384946,kawasaki disease symptom,phrase,noun,,161429,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384947,kawasaki disease symptom onset age,phrase,noun,,161430,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384948,kawasaki disease symptom onset date,phrase,noun,,161431,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384949,kawasaki disease-associated coronary artery aneurysm z-score,phrase,noun,,161432,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+384950,kawasaki disease-associated coronary artery aneurysm z-score finding,phrase,noun,,161433,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+200118,kayexalate,word,noun,,161437,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Sodium Polystyrene Sulfonate')
+384951,kayser-fleischer ring,phrase,noun,,161442,,,,,Sign / symptom / phenotype,medicine,,,ICD-10 H18.04,medical,Human Phenotype Ontology
+457957,"kayser-fleischer ring, bilateral",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H18.043,medical,ICD-10 (WHO 2019)
+457956,"kayser-fleischer ring, left eye",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H18.042,medical,ICD-10 (WHO 2019)
+457955,"kayser-fleischer ring, right eye",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H18.041,medical,ICD-10 (WHO 2019)
+457958,"kayser-fleischer ring, unspecified eye",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H18.049,medical,ICD-10 (WHO 2019)
+200119,kazakh,word,noun,,161447,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kazakh Language')
+200120,kazakhstan,word,noun,,161448,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200121,kazakstan,word,noun,,161448,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kazakhstan')
+384952,kbg syndrome,phrase,noun,,161456,,,,,Disease,medicine,,,,medical,Disease Ontology
+384953,kbg syndrome,phrase,noun,,161457,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200122,kbq,word,noun,,161459,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kilobecquerel')
+200123,kcal,word,noun,,50942,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Calorie')
+384954,kcd,word,noun,,54573,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+384955,kci,word,noun,,33195,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+384956,kcnd2-related neurodevelopmental disorder with or without seizures,phrase,noun,,161461,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384957,kcnh1 associated disorder,phrase,noun,,161462,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384958,kcnk3-related developmental delay with sleep apnea,phrase,noun,,161463,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384959,kcnq2-nee,word,noun,,86212,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+456162,kcnq2-related epilepsy,phrase,noun,,1213,,,,,Diagnosis,medicine,,,ICD-10 G40.84,medical,ICD-10 (WHO 2019)
+456165,"kcnq2-related epilepsy, intractable, with status epilepticus",phrase,noun,,1213,,,,,Diagnosis,medicine,,,ICD-10 G40.843,medical,ICD-10 (WHO 2019)
+456166,"kcnq2-related epilepsy, intractable, without status epilepticus",phrase,noun,,1213,,,,,Diagnosis,medicine,,,ICD-10 G40.844,medical,ICD-10 (WHO 2019)
+456163,"kcnq2-related epilepsy, not intractable, with status epilepticus",phrase,noun,,1213,,,,,Diagnosis,medicine,,,ICD-10 G40.841,medical,ICD-10 (WHO 2019)
+456164,"kcnq2-related epilepsy, not intractable, without status epilepticus",phrase,noun,,1213,,,,,Diagnosis,medicine,,,ICD-10 G40.842,medical,ICD-10 (WHO 2019)
+384960,kcnv2-related retinopathy,phrase,noun,,161464,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384961,kcrd regimen,phrase,noun,,54574,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+384962,kcs2,word,noun,,29422,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+200124,kcyd,word,noun,,54573,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'CCD Regimen')
+384963,kd,word,noun,,54576,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+200125,kda,word,noun,,161465,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kilodalton')
+384964,kdigo-aki - kdigo aki stage,phrase,noun,,161466,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384965,kdii,word,noun,,161467,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+384966,kdm2b-related neurodevelopmental disorder,phrase,noun,,161468,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+384967,kdqol-36 version 1 - bother ability to work around house,phrase,noun,,161469,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384968,kdqol-36 version 1 - bother dependent on doctors and staff,phrase,noun,,161470,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384969,kdqol-36 version 1 - bother dietary restriction,phrase,noun,,161471,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384970,kdqol-36 version 1 - bother fluid restriction,phrase,noun,,161472,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384971,kdqol-36 version 1 - bother stress caused by disease,phrase,noun,,161473,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384972,kdqol-36 version 1 - bother your ability to travel,phrase,noun,,161474,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384973,kdqol-36 version 1 - bother your personal appearance,phrase,noun,,161475,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384974,kdqol-36 version 1 - bother your sex life,phrase,noun,,161476,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384975,kdqol-36 version 1 - bothered by chest pain,phrase,noun,,161477,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384976,kdqol-36 version 1 - bothered by cramps,phrase,noun,,161478,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384977,kdqol-36 version 1 - bothered by dry skin,phrase,noun,,161479,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384978,kdqol-36 version 1 - bothered by faintness or dizziness,phrase,noun,,161480,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384979,kdqol-36 version 1 - bothered by itchy skin,phrase,noun,,161481,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384980,kdqol-36 version 1 - bothered by lack of appetite,phrase,noun,,161482,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384981,kdqol-36 version 1 - bothered by nausea or upset stomach,phrase,noun,,161483,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384982,kdqol-36 version 1 - bothered by numbness in hands or feet,phrase,noun,,161484,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384983,kdqol-36 version 1 - bothered by problems catheter site,phrase,noun,,161485,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384984,kdqol-36 version 1 - bothered by problems with access site,phrase,noun,,161486,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384985,kdqol-36 version 1 - bothered by shortness of breath,phrase,noun,,161487,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384986,kdqol-36 version 1 - bothered by soreness in muscles,phrase,noun,,161488,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384987,kdqol-36 version 1 - bothered by washed out or drained,phrase,noun,,161489,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384988,kdqol-36 version 1 - did you have a lot of energy,phrase,noun,,161490,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384989,kdqol-36 version 1 - emotional: accomplished less,phrase,noun,,161491,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384990,kdqol-36 version 1 - emotional: did work less carefully,phrase,noun,,161492,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384991,kdqol-36 version 1 - frustrated deal with kidney disease,phrase,noun,,161493,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384992,kdqol-36 version 1 - have you felt calm and peaceful,phrase,noun,,161494,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384993,kdqol-36 version 1 - i feel like a burden on my family,phrase,noun,,161495,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384994,kdqol-36 version 1 - in general you say your health is,phrase,noun,,161496,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384995,kdqol-36 version 1 - kidney disease interferes with life,phrase,noun,,161497,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384996,kdqol-36 version 1 - limit climbing several flights,phrase,noun,,161498,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384997,kdqol-36 version 1 - limit moderate activities,phrase,noun,,161499,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384998,kdqol-36 version 1 - pain interfere with normal work,phrase,noun,,161500,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+384999,kdqol-36 version 1 - physical: accomplished less,phrase,noun,,161501,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385000,kdqol-36 version 1 - physical: limited kind of work,phrase,noun,,161502,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385001,kdqol-36 version 1 - time physical or emotional interfered,phrase,noun,,161503,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385002,kdqol-36 version 1 - time spent deal with kidney disease,phrase,noun,,161504,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385003,kdqol-36 version 1 - you felt downhearted and blue,phrase,noun,,161505,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385004,kdr,word,noun,,57084,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Medical Action Ontology
+200126,kdvs,word,noun,,161506,,,,,,pharmacology,,simple,,medical,Disease Ontology (synonym of 'Koolen de Vries syndrome')
+200127,kdvs,word,noun,,161507,,,,,,pharmacology,,simple,,medical,MONDO (diseases) (synonym of 'Koolen-de Vries syndrome')
+385005,kearns-sayre syndrome,phrase,noun,,161509,,,,,Disease,medicine,,,ICD-10 H49.81,medical,Disease Ontology
+385006,kearns-sayre syndrome,phrase,noun,,161510,,,,,Disease,medicine,,,ICD-10 H49.81,medical,MONDO (diseases)
+385007,kearns-sayre syndrome,phrase,noun,,161511,,,,,Anatomy,anatomy,,,ICD-10 H49.81,medical,NCI Thesaurus
+459420,"kearns-sayre syndrome, bilateral",phrase,noun,,5231,,,,,Diagnosis,medicine,,,ICD-10 H49.813,medical,ICD-10 (WHO 2019)
+459419,"kearns-sayre syndrome, left eye",phrase,noun,,5231,,,,,Diagnosis,medicine,,,ICD-10 H49.812,medical,ICD-10 (WHO 2019)
+459418,"kearns-sayre syndrome, right eye",phrase,noun,,5231,,,,,Diagnosis,medicine,,,ICD-10 H49.811,medical,ICD-10 (WHO 2019)
+459421,"kearns-sayre syndrome, unspecified eye",phrase,noun,,5231,,,,,Diagnosis,medicine,,,ICD-10 H49.819,medical,ICD-10 (WHO 2019)
+200128,keds,word,noun,,101438,,,,,,pharmacology,,simple,,medical,"MONDO (diseases) (synonym of 'Ehlers-Danlos syndrome, kyphoscoliotic type, PLOD1-related, horse')"
+200129,keds,word,noun,,161517,,,,,,pharmacology,,simple,,medical,MONDO (diseases) (synonym of 'kyphoscoliotic Ehlers-Danlos syndrome')
+200130,keel,word,noun,,161518,,,,,,anatomy,,simple,,medical,Uberon (anatomy)
+200131,keep,word,noun,,161537,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Retain')
+200132,keeshond,word,noun,,161664,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200133,kefir,word,noun,,161666,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200134,keflex,word,noun,,58637,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Cephalexin')
+200135,keflin,word,noun,,58685,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Cephalothin Sodium')
+200136,keftab,word,noun,,58639,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Cephalexin Hydrochloride')
+200137,kefurox,word,noun,,57688,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Cefuroxime Sodium')
+200138,kefzol,word,noun,,17298,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Cefazolin Sodium')
+200139,keg,word,noun,,161667,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200140,kegel,word,noun,,161670,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kegel Exercise')
+385008,kegel nation app,phrase,noun,,161672,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+385009,keipert syndrome,phrase,noun,,161673,,,,,Disease,medicine,,,,medical,Disease Ontology
+385010,keipert syndrome,phrase,noun,,161674,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200141,keisho-to,word,noun,,161675,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Sho-Saiko-To')
+200142,keloid,word,noun,,161680,,,,,,medicine,,simple,,medical,MONDO (diseases)
+200143,kelosomia,word,noun,,58034,,,,,,pharmacology,,simple,,medical,Human Phenotype Ontology (synonym of 'Thoracoabdominal eventration')
+200144,kelvin,word,noun,,161687,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200145,kemadrin,word,noun,,161688,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Procyclidine Hydrochloride')
+200146,kemstro,word,noun,,31746,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Baclofen')
+200147,kenalog,word,noun,,13978,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Triamcinolone Acetonide')
+200148,kengreal,word,noun,,52532,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Cangrelor Tetrasodium')
+385011,kennedy disease,phrase,noun,,161703,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385012,kennedy's disease,phrase,noun,,161704,,,,,Disease,medicine,,,,medical,Disease Ontology
+385013,kenny-caffey syndrome,phrase,noun,,161711,,,,,Disease,medicine,,,,medical,Disease Ontology
+385014,kenny-caffey syndrome,phrase,noun,,161712,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385015,kenny-caffey syndrome type 1,phrase,noun,,161713,,,,,Disease,medicine,,,,medical,Disease Ontology
+385016,kenny-caffey syndrome type 2,phrase,noun,,161714,,,,,Disease,medicine,,,,medical,Disease Ontology
+200149,kentucky,word,noun,,161718,,,,,,medicine,,simple,,medical,NCI Thesaurus
+385017,kentucky bluegrass pollen antigen,phrase,noun,,161720,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+200150,kenya,word,noun,,161723,,,,,,medicine,,simple,,medical,NCI Thesaurus
+385018,kenyon cell,phrase,noun,,161730,,,,,Cell type,biology,,,,medical,Cell Ontology
+200151,keoxifene,word,noun,,161734,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Raloxifene')
+200152,kephir,word,noun,,161666,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kefir')
+200153,kepivance,word,noun,,161736,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Palifermin')
+200154,kepone,word,noun,,62734,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Chlordecone')
+385019,keppen-lubinsky syndrome,phrase,noun,,161741,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200155,keppra,word,noun,,161742,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Levetiracetam')
+385020,ker,word,noun,,161747,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+200156,keracaine,word,noun,,12925,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Proparacaine Hydrochloride')
+200157,kerastat,word,noun,,161749,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Topical Keratin')
+385021,kerat-,word,noun,,161750,,,,,Word part - root (combining form),linguistics,,,,medical,Curated
+385022,keratan sulfate,phrase,noun,,161752,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+385023,keratan sulfate excretion in urine,phrase,noun,,161753,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+200158,keratectomy,word,noun,,161755,,,,,,medicine,,simple,,medical,Medical Action Ontology
+200159,keratin,word,noun,,82873,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Cytokeratin')
+385024,keratin filament,phrase,noun,,161756,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+385025,keratin filament,phrase,noun,,161757,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+385026,keratin present,phrase,noun,,161758,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+385027,keratin-based acellular structure,phrase,noun,,161759,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385028,keratin-based scale,phrase,noun,,161760,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385029,keratin-coated spine,phrase,noun,,161761,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+200160,keratinization,word,noun,,161765,,,,,,medicine,,derived,,medical,NCI Thesaurus
+385030,keratinized cell of hair follicle,phrase,noun,,161766,,,,,Cell type,biology,,,,medical,Cell Ontology
+385031,keratinized cell of the oral mucosa,phrase,noun,,161767,,,,,Cell type,biology,,,,medical,Cell Ontology
+385032,keratinized epithelial cell of the anal canal,phrase,noun,,161768,,,,,Cell type,biology,,,,medical,Cell Ontology
+385033,keratinized squamous cell of esophagus,phrase,noun,,161769,,,,,Cell type,biology,,,,medical,Cell Ontology
+385034,keratinized stratified squamous epithelium,phrase,noun,,161770,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385035,keratinizing dysplasia,phrase,noun,,161771,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385036,keratinizing primary intraosseous squamous cell carcinoma-solid type,phrase,noun,,161772,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385037,keratinizing squamous cell carcinoma,phrase,noun,,161773,,,,,Disease,medicine,,,,medical,Disease Ontology
+385038,keratinizing squamous cell carcinoma,phrase,noun,,161774,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200161,keratinocyte,word,noun,,161775,,,,,,biology,,simple,,medical,Cell Ontology
+200162,keratinocyte,word,noun,,161776,,,,,,medicine,,simple,,medical,NCI Thesaurus
+385039,keratinocyte stem cell,phrase,noun,,161777,,,,,Cell type,biology,,,,medical,Cell Ontology
+385040,keratinocyte vacuolization,phrase,noun,,161778,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+200163,keratinocytes,word,noun,,161776,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Keratinocyte')
+200164,keratitis,word,noun,,161779,,,,,,medicine,,simple,ICD-10 H16,medical,Disease Ontology
+200165,keratitis,word,noun,,161780,,,,,,medicine,,simple,ICD-10 H16,medical,Human Phenotype Ontology
+457757,keratitis,word,noun,,7158,,,,,Diagnosis,medicine,,simple,ICD-10 H16,medical,ICD-10 (WHO 2019)
+442118,keratitis and keratoconjunctivitis in other diseases classified elsewhere,phrase,noun,,7157,,,,,Diagnosis,medicine,,,ICD-10 H19.3,medical,ICD-10 (WHO 2019)
+442117,keratitis and keratoconjunctivitis in other infectious and parasitic diseases classified elsewhere,phrase,noun,,7157,,,,,Diagnosis,medicine,,,ICD-10 H19.2,medical,ICD-10 (WHO 2019)
+385041,"keratitis, dog",phrase,noun,,161782,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385042,"keratitis, horse",phrase,noun,,161783,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385043,"keratitis, non-human animal",phrase,noun,,161784,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+442099,"keratitis, unspecified",phrase,noun,,7157,,,,,Diagnosis,medicine,,,ICD-10 H16.9,medical,ICD-10 (WHO 2019)
+200166,keratoacanthoma,word,noun,,161785,,,,,,medicine,,simple,,medical,Human Phenotype Ontology
+200167,keratoacanthoma,word,noun,,161786,,,,,,medicine,,simple,,medical,MONDO (diseases)
+200168,keratoacanthoma,word,noun,,161787,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200169,keratoconjunctivitis,word,noun,,161790,,,,,,medicine,,simple,ICD-10 H16.2,medical,Human Phenotype Ontology
+200170,keratoconjunctivitis,word,noun,,161791,,,,,,medicine,,simple,ICD-10 H16.2,medical,MONDO (diseases)
+457817,keratoconjunctivitis,word,noun,,7158,,,,,Diagnosis,medicine,,simple,ICD-10 H16.2,medical,ICD-10 (WHO 2019)
+451334,keratoconjunctivitis due to acanthamoeba,phrase,noun,,4752,,,,,Diagnosis,medicine,,,ICD-10 B60.13,medical,ICD-10 (WHO 2019)
+439617,keratoconjunctivitis due to adenovirus,phrase,noun,,7244,,,,,Diagnosis,medicine,,,ICD-10 B30.0,medical,ICD-10 (WHO 2019)
+451126,keratoconjunctivitis due to adenovirus,phrase,noun,,7245,,,,,Diagnosis,medicine,,,ICD-10 B30.0,medical,ICD-10 (WHO 2019)
+385044,keratoconjunctivitis sicca,phrase,noun,,161793,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+457828,"keratoconjunctivitis sicca, not specified as sjögren's",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H16.22,medical,ICD-10 (WHO 2019)
+457831,"keratoconjunctivitis sicca, not specified as sjögren's, bilateral",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H16.223,medical,ICD-10 (WHO 2019)
+457830,"keratoconjunctivitis sicca, not specified as sjögren's, left eye",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H16.222,medical,ICD-10 (WHO 2019)
+457829,"keratoconjunctivitis sicca, not specified as sjögren's, right eye",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H16.221,medical,ICD-10 (WHO 2019)
+457832,"keratoconjunctivitis sicca, not specified as sjögren's, unspecified eye",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H16.229,medical,ICD-10 (WHO 2019)
+385045,"keratoconjunctivitis, infectious",phrase,noun,,161794,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385046,"keratoconjunctivitis, non-human animal",phrase,noun,,161795,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200171,keratoconus,word,noun,,161796,,,,,,medicine,,simple,ICD-10 H18.6,medical,Disease Ontology
+200172,keratoconus,word,noun,,161797,,,,,,medicine,,simple,ICD-10 H18.6,medical,Human Phenotype Ontology
+200173,keratoconus,word,noun,,161798,,,,,,medicine,,simple,ICD-10 H18.6,medical,MONDO (diseases)
+458067,keratoconus,word,noun,,7158,,,,,Diagnosis,medicine,,simple,ICD-10 H18.6,medical,ICD-10 (WHO 2019)
+385047,keratoconus 1,phrase,noun,,161800,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+458073,"keratoconus, stable",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H18.61,medical,ICD-10 (WHO 2019)
+458076,"keratoconus, stable, bilateral",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H18.613,medical,ICD-10 (WHO 2019)
+458075,"keratoconus, stable, left eye",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H18.612,medical,ICD-10 (WHO 2019)
+458074,"keratoconus, stable, right eye",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H18.611,medical,ICD-10 (WHO 2019)
+458077,"keratoconus, stable, unspecified eye",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H18.619,medical,ICD-10 (WHO 2019)
+458068,"keratoconus, unspecified",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H18.60,medical,ICD-10 (WHO 2019)
+458071,"keratoconus, unspecified, bilateral",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H18.603,medical,ICD-10 (WHO 2019)
+458070,"keratoconus, unspecified, left eye",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H18.602,medical,ICD-10 (WHO 2019)
+458069,"keratoconus, unspecified, right eye",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H18.601,medical,ICD-10 (WHO 2019)
+458072,"keratoconus, unspecified, unspecified eye",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H18.609,medical,ICD-10 (WHO 2019)
+458078,"keratoconus, unstable",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H18.62,medical,ICD-10 (WHO 2019)
+458081,"keratoconus, unstable, bilateral",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H18.623,medical,ICD-10 (WHO 2019)
+458080,"keratoconus, unstable, left eye",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H18.622,medical,ICD-10 (WHO 2019)
+458079,"keratoconus, unstable, right eye",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H18.621,medical,ICD-10 (WHO 2019)
+458082,"keratoconus, unstable, unspecified eye",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H18.629,medical,ICD-10 (WHO 2019)
+385048,keratocystic odontogenic tumor,phrase,noun,,161801,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200174,keratocystoma,word,noun,,161802,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Parotid Gland Keratocystoma')
+200175,keratocyte,word,noun,,161803,,,,,,biology,,simple,,medical,Cell Ontology
+200176,keratocyte,word,noun,,161804,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Keratocyte Count')
+200177,keratoderma,word,noun,,161805,,,,,,pharmacology,,simple,,medical,Human Phenotype Ontology (synonym of 'Palmoplantar keratoderma')
+200178,keratoderma,word,noun,,161806,,,,,,pharmacology,,simple,,medical,MONDO (diseases) (synonym of 'keratosis')
+385049,keratoderma hereditarium mutilans,phrase,noun,,161809,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+443741,keratoderma in diseases classified elsewhere,phrase,noun,,6297,,,,,Diagnosis,medicine,,,ICD-10 L86,medical,ICD-10 (WHO 2019)
+464522,keratoderma in diseases classified elsewhere,phrase,noun,,4803,,,,,Diagnosis,medicine,,,ICD-10 L86,medical,ICD-10 (WHO 2019)
+200179,keratoglobus,word,noun,,161810,,,,,,medicine,,simple,,medical,Human Phenotype Ontology
+200180,keratography,word,noun,,161811,,,,,,medicine,,simple,,medical,NCI Thesaurus
+385050,keratolytic agent therapy,phrase,noun,,161814,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+385051,keratolytic drug,phrase,noun,,161815,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+385052,keratolytic winter erythema,phrase,noun,,161816,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+449390,"keratolytics, keratoplastics and other hair treatment drugs and preparations",phrase,noun,,455,,,,,Diagnosis,medicine,,,ICD-10 Y56.4,medical,ICD-10 (WHO 2019)
+200181,keratomalacia,word,noun,,161817,,,,,,medicine,,simple,ICD-10 H18.44,medical,MONDO (diseases)
+458021,"keratomalacia, bilateral",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H18.443,medical,ICD-10 (WHO 2019)
+458020,"keratomalacia, left eye",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H18.442,medical,ICD-10 (WHO 2019)
+458019,"keratomalacia, right eye",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H18.441,medical,ICD-10 (WHO 2019)
+458022,"keratomalacia, unspecified eye",phrase,noun,,7158,,,,,Diagnosis,medicine,,,ICD-10 H18.449,medical,ICD-10 (WHO 2019)
+200182,keratometry,word,noun,,161747,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200183,keratopathy,word,noun,,161822,,,,,,medicine,,simple,,medical,MONDO (diseases)
+442295,keratopathy (bullous aphakic) following cataract surgery,phrase,noun,,18627,,,,,Diagnosis,medicine,,,ICD-10 H59.0,medical,ICD-10 (WHO 2019)
+459787,keratopathy (bullous aphakic) following cataract surgery,phrase,noun,,5158,,,,,Diagnosis,medicine,,,ICD-10 H59.01,medical,ICD-10 (WHO 2019)
+459790,"keratopathy (bullous aphakic) following cataract surgery, bilateral",phrase,noun,,5158,,,,,Diagnosis,medicine,,,ICD-10 H59.013,medical,ICD-10 (WHO 2019)
+459789,"keratopathy (bullous aphakic) following cataract surgery, left eye",phrase,noun,,5158,,,,,Diagnosis,medicine,,,ICD-10 H59.012,medical,ICD-10 (WHO 2019)
+459788,"keratopathy (bullous aphakic) following cataract surgery, right eye",phrase,noun,,5158,,,,,Diagnosis,medicine,,,ICD-10 H59.011,medical,ICD-10 (WHO 2019)
+459791,"keratopathy (bullous aphakic) following cataract surgery, unspecified eye",phrase,noun,,5158,,,,,Diagnosis,medicine,,,ICD-10 H59.019,medical,ICD-10 (WHO 2019)
+385053,"keratopathy, non-human animal",phrase,noun,,161823,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200184,keratoplasty,word,noun,,76736,,,,,,pharmacology,,simple,,medical,Medical Action Ontology (synonym of 'corneal transplantation')
+200185,keratosis,word,noun,,161827,,,,,,medicine,,simple,,medical,Disease Ontology
+200186,keratosis,word,noun,,161806,,,,,,medicine,,simple,,medical,MONDO (diseases)
+200187,keratosis,word,noun,,161828,,,,,,medicine,,simple,,medical,NCI Thesaurus
+464524,keratosis follicularis et parafollicularis in cutem penetrans,phrase,noun,,4803,,,,,Diagnosis,medicine,,,ICD-10 L87.0,medical,ICD-10 (WHO 2019)
+443743,keratosis follicularis et parafollicularis in cutem penetrans [kyrle],phrase,noun,,6297,,,,,Diagnosis,medicine,,,ICD-10 L87.0,medical,ICD-10 (WHO 2019)
+385054,keratosis follicularis spinulosa decalvans,phrase,noun,,161830,,,,,Disease,medicine,,,,medical,Disease Ontology
+385055,keratosis follicularis spinulosa decalvans,phrase,noun,,161831,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385056,keratosis follicularis-dwarfism-cerebral atrophy syndrome,phrase,noun,,161832,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385057,keratosis linearis-ichthyosis congenita-sclerosing keratoderma syndrome,phrase,noun,,161833,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385058,keratosis palmaris et plantaris-clinodactyly syndrome,phrase,noun,,161834,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385059,keratosis palmoplantaris striata,phrase,noun,,161835,,,,,Disease,medicine,,,,medical,Disease Ontology
+385060,keratosis palmoplantaris striata 1,phrase,noun,,161836,,,,,Disease,medicine,,,,medical,Disease Ontology
+385061,keratosis palmoplantaris striata 2,phrase,noun,,161837,,,,,Disease,medicine,,,,medical,Disease Ontology
+385062,keratosis palmoplantaris striata 2,phrase,noun,,161838,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385063,keratosis palmoplantaris striata 3,phrase,noun,,161839,,,,,Disease,medicine,,,,medical,Disease Ontology
+385064,keratosis pilaris,phrase,noun,,161840,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+385065,keratosis pilaris,phrase,noun,,161841,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385066,keratosis pilaris,phrase,noun,,161842,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385067,keratosis pilaris atrophicans,phrase,noun,,161844,,,,,Disease,medicine,,,,medical,Disease Ontology
+385068,keratosis pilaris atrophicans,phrase,noun,,161845,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385069,keratosis pilaris atrophicans faciei,phrase,noun,,161846,,,,,Disease,medicine,,,,medical,Disease Ontology
+443737,keratosis punctata (palmaris et plantaris),phrase,noun,,6297,,,,,Diagnosis,medicine,,,ICD-10 L85.2,medical,ICD-10 (WHO 2019)
+464518,keratosis punctata (palmaris et plantaris),phrase,noun,,4803,,,,,Diagnosis,medicine,,,ICD-10 L85.2,medical,ICD-10 (WHO 2019)
+200188,kerecid,word,noun,,87846,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Idoxuridine')
+200189,kerion,word,noun,,161850,,,,,,medicine,,simple,,medical,Human Phenotype Ontology
+385070,kerion celsi,phrase,noun,,161852,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200190,kerlone,word,noun,,38060,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Betaxolol Hydrochloride')
+200191,kernel,word,noun,,161856,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200192,kernicterus,word,noun,,161861,,,,,,medicine,,simple,ICD-10 P57,medical,Disease Ontology
+200193,kernicterus,word,noun,,161862,,,,,,medicine,,simple,ICD-10 P57,medical,Human Phenotype Ontology
+200194,kernicterus,word,noun,,161863,,,,,,medicine,,simple,ICD-10 P57,medical,NCI Thesaurus
+475314,kernicterus,word,noun,,3722,,,,,Diagnosis,medicine,,simple,ICD-10 P57,medical,ICD-10 (WHO 2019)
+385071,kernicterus due to isoimmunization,phrase,noun,,161865,,,,,Disease,medicine,,,ICD-10 P57.0,medical,MONDO (diseases)
+475315,kernicterus due to isoimmunization,phrase,noun,,3722,,,,,Diagnosis,medicine,,,ICD-10 P57.0,medical,ICD-10 (WHO 2019)
+445545,"kernicterus, unspecified",phrase,noun,,3721,,,,,Diagnosis,medicine,,,ICD-10 P57.9,medical,ICD-10 (WHO 2019)
+475317,"kernicterus, unspecified",phrase,noun,,3722,,,,,Diagnosis,medicine,,,ICD-10 P57.9,medical,ICD-10 (WHO 2019)
+200195,kerstersia,word,noun,,161872,,,,,,medicine,,simple,,medical,NCI Thesaurus
+385072,keshan disease,phrase,noun,,161874,,,,,Disease,medicine,,,,medical,Disease Ontology
+385073,keshan disease,phrase,noun,,161875,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200196,kesimpta,word,noun,,25388,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ofatumumab')
+200197,ketalar,word,noun,,161876,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ketamine Hydrochloride')
+200198,ketamine,word,noun,,161878,,,,,,medicine,,simple,,medical,MONDO (diseases)
+200199,ketamine,word,noun,,161879,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+200200,ketamine,word,noun,,161880,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ketamine Measurement')
+385074,ketamine hydrochloride,phrase,noun,,161876,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385075,ketamine-induced biliary dilatation,phrase,noun,,161881,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385076,ketamine/amitriptyline np-h cream,phrase,noun,,161882,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+200201,ketanserin,word,noun,,161883,,,,,,medicine,,simple,,medical,NCI Thesaurus
+385077,ketanserin tartrate,phrase,noun,,161884,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+200202,ketantin,word,noun,,161885,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Meplazumab')
+200203,kethoxal,word,noun,,61620,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+200204,keto,word,noun,,161889,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ketogenic Diet')
+200205,ketoacidaemia,word,noun,,161890,,,,,,pharmacology,,simple,,medical,Disease Ontology (synonym of 'maple syrup urine disease')
+200206,ketoacidaemia,word,noun,,161891,,,,,,pharmacology,,simple,,medical,MONDO (diseases) (synonym of 'maple syrup urine disease')
+200207,ketoacidosis,word,noun,,161892,,,,,,medicine,,simple,,medical,Human Phenotype Ontology
+385078,ketoaldonic acid,phrase,noun,,161893,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+200208,ketobemidone,word,noun,,161894,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ketobemidone Measurement')
+200209,ketobun-a,word,noun,,14234,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Allopurinol Sodium')
+200210,ketoconazole,word,noun,,161895,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+200211,ketoconazole-doxorubicin-vinblastine-estramustine,word,noun,,161422,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'KAVE Regimen')
+200212,ketoconazole-hydrocortisone,word,noun,,146021,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Hydrocortisone/Ketoconazole Regimen')
+385079,ketogenic diet intake,phrase,noun,,161896,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+385080,ketogenic diet intake avoidance,phrase,noun,,161897,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+200213,ketohexose,word,noun,,161898,,,,,,medicine,,simple,,medical,Medical Action Ontology
+200214,ketoisoleucine,word,noun,,161900,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ketoisoleucine Measurement')
+200215,ketoleucine,word,noun,,161901,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ketoleucine Measurement')
+200216,ketonaciduria,word,noun,,161902,,,,,,pharmacology,,simple,,medical,Human Phenotype Ontology (synonym of 'Ketonuria')
+200217,ketone,word,noun,,161903,,,,,,medicine,,simple,,medical,Medical Action Ontology
+200218,ketone,word,noun,,161904,,,,,,medicine,,simple,,medical,NCI Thesaurus
+385081,ketone body biosynthetic process,phrase,noun,,161906,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+385082,ketone body metabolic process,phrase,noun,,161907,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+385083,ketone measurement,phrase,noun,,161909,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+200219,ketone-iq,word,noun,,161910,,,,,,pharmacology,,,,medical,"NCI Thesaurus (synonym of 'R-1,3-Butanediol-based Supplement')"
+200220,ketonemia,word,noun,,146609,,,,,,pharmacology,,simple,,medical,Human Phenotype Ontology (synonym of 'Hyperketonemia')
+200221,ketones,word,noun,,161903,,,,,,pharmacology,,simple,,medical,Medical Action Ontology (synonym of 'ketone')
+200222,ketones,word,noun,,161909,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ketone Measurement')
+200223,ketones,word,noun,,161904,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ketone')
+200224,ketonuria,word,noun,,161902,,,,,,medicine,,simple,,medical,Human Phenotype Ontology
+200225,ketonuria,word,noun,,161911,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200226,ketoprofen,word,noun,,53084,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+385084,ketoprofen photoallergic dermatitis,phrase,noun,,161913,,,,,Disease,medicine,,,,medical,Disease Ontology
+200227,ketorolac,word,noun,,161914,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+200228,ketose,word,noun,,161916,,,,,,medicine,,simple,,medical,Medical Action Ontology
+200229,ketosis,word,noun,,146610,,,,,,medicine,,simple,,medical,Human Phenotype Ontology
+385085,ketosis prevention recommendation,phrase,noun,,161918,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+385086,ketotic hypoglycemia,phrase,noun,,161920,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+385087,ketotic hypoglycemia,phrase,noun,,161921,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+200230,ketotifen,word,noun,,12819,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+200231,ketotrexate,word,noun,,161922,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+200232,ketovaline,word,noun,,161923,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ketovaline Measurement')
+385088,keutel syndrome,phrase,noun,,161929,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200233,kev,word,noun,,161930,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kiloelectronvolt')
+200234,kevadon,word,noun,,14718,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Thalidomide')
+200235,kevetrin,word,noun,,161931,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Thioureidobutyronitrile')
+200236,kevzara,word,noun,,161932,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Sarilumab')
+200237,key,word,noun,,161933,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200238,key-pred,word,noun,,25249,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Prednisolone Acetate')
+385089,key-pred sp,phrase,noun,,12600,,,,,Brand name,pharmacology,,,,medical,NCI Thesaurus
+200239,keyboard,word,noun,,161969,,,,,,pharmacology,,compound,,medical,NCI Thesaurus (synonym of 'Keyboard Device')
+200240,keyer,word,noun,,161980,,,,,,pharmacology,,derived,,medical,NCI Thesaurus (synonym of 'Keyer Device')
+200241,keynatinib,word,noun,,161985,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+200242,keypad,word,noun,,161996,,,,,,pharmacology,,compound,,medical,NCI Thesaurus (synonym of 'Keypad Device')
+200243,keytruda,word,noun,,161998,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Pembrolizumab')
+200244,keytruda-alimta,word,noun,,161999,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Pembrolizumab/Pemetrexed Regimen')
+200245,keyword,word,noun,,162000,,,,,,medicine,,compound,,medical,NCI Thesaurus
+385090,kfss,word,noun,,162001,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+385091,kfss1,word,noun,,162001,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+200246,kg,word,noun,,162002,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kilogram')
+200247,kgf,word,noun,,162005,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kilogram-Force')
+385092,kgf-hs,word,noun,,162006,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+200248,khaini,word,noun,,162010,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200249,khasi,word,noun,,162023,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Khasi Language')
+385093,khe,word,noun,,161310,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+200250,khelloside,word,noun,,162025,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200251,khep,word,noun,,140595,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Heparin Potassium')
+200252,khloditan,word,noun,,62709,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Mitotane')
+385094,khm,word,noun,,162030,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+385095,khm,word,noun,,161809,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+200253,khoisan,word,noun,,162032,,,,,,medicine,,simple,,medical,NCI Thesaurus
+385096,khrz,word,noun,,161194,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+200254,khz,word,noun,,162039,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kilohertz')
+200255,ki,word,noun,,162040,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kibi')
+385097,ki-67 positive cells 10-20 percent,phrase,noun,,162042,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385098,ki-67 positive cells 15 percent or less,phrase,noun,,162043,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385099,ki-67 positive cells 20 percent or less,phrase,noun,,162044,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385100,ki-67 positive cells 3-55 percent,phrase,noun,,162045,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385101,ki-67 positive cells greater than 10 percent,phrase,noun,,162046,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385102,ki-67 positive cells greater than 20 percent,phrase,noun,,162047,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385103,ki-67 positive cells greater than 50 percent,phrase,noun,,162048,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385104,ki-67 positive cells greater than or equal to 10 percent,phrase,noun,,162049,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385105,ki-67 positive cells greater than or equal to 15 percent,phrase,noun,,162050,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385106,ki-67 positive cells greater than or equal to 20 percent,phrase,noun,,162051,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385107,ki-67 positive cells greater than or equal to 3 percent,phrase,noun,,162052,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385108,ki-67 positive cells greater than or equal to 30 percent,phrase,noun,,162053,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385109,ki-67 positive cells greater than or equal to 5 percent,phrase,noun,,162054,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385110,ki-67 positive cells greater than or equal to 50 percent,phrase,noun,,162055,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385111,ki-67 positive cells less than 10 percent,phrase,noun,,162056,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385112,ki-67 positive cells less than or equal to 10 percent,phrase,noun,,162057,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385113,ki-67 positive cells less than or equal to 30 percent,phrase,noun,,162058,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385114,ki-67 positive cells less than or equal to 50 percent,phrase,noun,,162059,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+200256,ki-ras,word,noun,,162060,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Oncogene K-Ras')
+200257,kibi,word,noun,,162040,,,,,,medicine,,simple,,medical,NCI Thesaurus
+385115,kics,word,noun,,162114,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+385116,kid (goat),phrase,noun,,162121,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385117,kid syndrome,phrase,noun,,162123,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200258,kidney,word,noun,,162129,,,,,,pharmacology,,simple,,medical,Medical Action Ontology (synonym of 'kidney (raw)')
+200259,kidney,word,noun,,162130,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200260,kidney,word,noun,,162131,,,,,,anatomy,,simple,,medical,Uberon (anatomy)
+385118,kidney (raw),phrase,noun,,162129,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+385119,kidney afferent arteriole cell,phrase,noun,,162134,,,,,Cell type,biology,,,,medical,Cell Ontology
+385120,kidney afferent arteriole endothelial cell,phrase,noun,,162135,,,,,Cell type,biology,,,,medical,Cell Ontology
+385121,kidney afferent arteriole smooth muscle cell,phrase,noun,,162136,,,,,Cell type,biology,,,,medical,Cell Ontology
+385122,kidney and ureter neoplasm,phrase,noun,,162137,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385123,kidney angiomyolipoma,phrase,noun,,162138,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385124,kidney arcuate artery,phrase,noun,,162139,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385125,kidney arcuate vein,phrase,noun,,162140,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385126,kidney arterial blood vessel,phrase,noun,,162141,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385127,kidney arterial blood vessel cell,phrase,noun,,162142,,,,,Cell type,biology,,,,medical,Cell Ontology
+385128,kidney benign neoplasm,phrase,noun,,162144,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385129,kidney biopsy,phrase,noun,,162145,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+385130,kidney blood vessel,phrase,noun,,162146,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385131,kidney blood vessel cell,phrase,noun,,162147,,,,,Cell type,biology,,,,medical,Cell Ontology
+385132,kidney burkitt lymphoma,phrase,noun,,162148,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385133,kidney calyx,phrase,noun,,162149,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385134,kidney cancer,phrase,noun,,162150,,,,,Disease,medicine,,,,medical,Disease Ontology
+385135,kidney cancer,phrase,noun,,162151,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+439050,kidney cancer,phrase,noun,,162152,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385136,kidney cancer pm0 tnm finding,phrase,noun,,162153,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385137,kidney capillary,phrase,noun,,162154,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385138,kidney capillary endothelial cell,phrase,noun,,162155,,,,,Cell type,biology,,,,medical,Cell Ontology
+385139,kidney capsule,phrase,noun,,162156,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385140,kidney carcinoma in situ,phrase,noun,,162157,,,,,Disease,medicine,,,,medical,Disease Ontology
+385141,kidney carcinoma in situ,phrase,noun,,162158,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385142,"kidney carcinoma in situ, non-human animal",phrase,noun,,162159,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385143,kidney cell,phrase,noun,,162160,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+385144,kidney classic angiomyolipoma,phrase,noun,,162161,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385145,kidney clear cell sarcoma,phrase,noun,,162162,,,,,Disease,medicine,,,,medical,Disease Ontology
+385146,kidney collecting duct alpha-intercalated cell,phrase,noun,,162163,,,,,Cell type,biology,,,,medical,Cell Ontology
+385147,kidney collecting duct beta-intercalated cell,phrase,noun,,31113,,,,,Cell type,biology,,,,medical,Cell Ontology
+385148,kidney collecting duct cell,phrase,noun,,162164,,,,,Cell type,biology,,,,medical,Cell Ontology
+385149,kidney collecting duct epithelial cell,phrase,noun,,162165,,,,,Cell type,biology,,,,medical,Cell Ontology
+385150,kidney collecting duct epithelium,phrase,noun,,162166,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385151,kidney collecting duct intercalated cell,phrase,noun,,162167,,,,,Cell type,biology,,,,medical,Cell Ontology
+385152,kidney collecting duct principal cell,phrase,noun,,162168,,,,,Cell type,biology,,,,medical,Cell Ontology
+385153,kidney connecting tubule alpha-intercalated cell,phrase,noun,,162169,,,,,Cell type,biology,,,,medical,Cell Ontology
+385154,kidney connecting tubule beta-intercalated cell,phrase,noun,,162170,,,,,Cell type,biology,,,,medical,Cell Ontology
+385155,kidney connecting tubule epithelial cell,phrase,noun,,162171,,,,,Cell type,biology,,,,medical,Cell Ontology
+385156,kidney connecting tubule intercalated cell,phrase,noun,,162172,,,,,Cell type,biology,,,,medical,Cell Ontology
+385157,kidney connecting tubule principal cell,phrase,noun,,162173,,,,,Cell type,biology,,,,medical,Cell Ontology
+385158,kidney corpuscule cell,phrase,noun,,162174,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+385159,kidney cortex artery cell,phrase,noun,,162175,,,,,Cell type,biology,,,,medical,Cell Ontology
+385160,kidney cortex collecting duct epithelial cell,phrase,noun,,162176,,,,,Cell type,biology,,,,medical,Cell Ontology
+385161,kidney cortex collecting duct intercalated cell,phrase,noun,,162177,,,,,Cell type,biology,,,,medical,Cell Ontology
+385162,kidney cortex collecting duct principal cell,phrase,noun,,162178,,,,,Cell type,biology,,,,medical,Cell Ontology
+385163,kidney cortex disease,phrase,noun,,162179,,,,,Disease,medicine,,,,medical,Disease Ontology
+385164,kidney cortex disease,phrase,noun,,162180,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385165,kidney cortex interstitial cell,phrase,noun,,162181,,,,,Cell type,biology,,,,medical,Cell Ontology
+385166,kidney cortex necrosis,phrase,noun,,162182,,,,,Disease,medicine,,,,medical,Disease Ontology
+385167,kidney cortex necrosis,phrase,noun,,162183,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385168,kidney cortex peritubular capillary cell,phrase,noun,,162184,,,,,Cell type,biology,,,,medical,Cell Ontology
+385169,kidney cortex tubule cell,phrase,noun,,162185,,,,,Cell type,biology,,,,medical,Cell Ontology
+385170,kidney cortex vein cell,phrase,noun,,162186,,,,,Cell type,biology,,,,medical,Cell Ontology
+385171,kidney cortical cell,phrase,noun,,162187,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+385172,kidney corticomedullary boundary,phrase,noun,,162188,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385173,kidney ct,phrase,noun,,162189,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+449550,kidney dialysis,phrase,noun,,16539,,,,,Diagnosis,medicine,,,ICD-10 Y84.1,medical,ICD-10 (WHO 2019)
+493537,"kidney dialysis as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",phrase,noun,,16540,,,,,Diagnosis,medicine,,,ICD-10 Y84.1,medical,ICD-10 (WHO 2019)
+385174,kidney diffuse large b-cell lymphoma,phrase,noun,,162190,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385175,kidney disease,phrase,noun,,162191,,,,,Disease,medicine,,,,medical,Disease Ontology
+385176,kidney disorder,phrase,noun,,162193,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385177,kidney disorder,phrase,noun,,162194,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385178,kidney distal convoluted tubule epithelial cell,phrase,noun,,162195,,,,,Cell type,biology,,,,medical,Cell Ontology
+449922,kidney donor,phrase,noun,,8794,,,,,Diagnosis,medicine,,,ICD-10 Z52.4,medical,ICD-10 (WHO 2019)
+494677,kidney donor,phrase,noun,,11087,,,,,Diagnosis,medicine,,,ICD-10 Z52.4,medical,ICD-10 (WHO 2019)
+385179,kidney efferent arteriole cell,phrase,noun,,162196,,,,,Cell type,biology,,,,medical,Cell Ontology
+385180,kidney efferent arteriole endothelial cell,phrase,noun,,162197,,,,,Cell type,biology,,,,medical,Cell Ontology
+385181,kidney efferent arteriole smooth muscle cell,phrase,noun,,162198,,,,,Cell type,biology,,,,medical,Cell Ontology
+385182,kidney epithelial cell,phrase,noun,,162199,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+385183,kidney epithelium,phrase,noun,,162200,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385184,kidney ewing sarcoma,phrase,noun,,162201,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385185,kidney failure,phrase,noun,,162202,,,,,Disease,medicine,,,,medical,Disease Ontology
+385186,kidney failure,phrase,noun,,162203,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385187,"kidney failure, non-human animal",phrase,noun,,162205,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385188,kidney fibrosarcoma,phrase,noun,,162207,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385189,"kidney fibrosarcoma, non-human animal",phrase,noun,,162208,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385190,kidney field,phrase,noun,,162209,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385191,kidney function testing,phrase,noun,,162210,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+385192,kidney germ cell tumor,phrase,noun,,162211,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385193,kidney glomerular epithelial cell,phrase,noun,,162212,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+385194,kidney glomerular epithelial cell morphology measurement,phrase,noun,,162213,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+385195,kidney granular cell,phrase,noun,,162214,,,,,Cell type,biology,,,,medical,Cell Ontology
+385196,kidney hemangiopericytoma,phrase,noun,,162215,,,,,Disease,medicine,,,,medical,Disease Ontology
+385197,kidney hemangiopericytoma,phrase,noun,,162216,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385198,kidney hypertrophy,phrase,noun,,162217,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385199,kidney injury molecule-1/creatinine ratio measurement,phrase,noun,,162218,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+385200,kidney inner medulla cell,phrase,noun,,162219,,,,,Cell type,biology,,,,medical,Cell Ontology
+385201,kidney inner medulla collecting duct epithelial cell,phrase,noun,,162220,,,,,Cell type,biology,,,,medical,Cell Ontology
+385202,kidney inner medulla collecting duct intercalated cell,phrase,noun,,162221,,,,,Cell type,biology,,,,medical,Cell Ontology
+385203,kidney inner medulla collecting duct principal cell,phrase,noun,,162222,,,,,Cell type,biology,,,,medical,Cell Ontology
+385204,kidney inner medulla interstitial cell,phrase,noun,,162223,,,,,Cell type,biology,,,,medical,Cell Ontology
+385205,kidney intake avoidance,phrase,noun,,162224,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+385206,kidney interpolar region,phrase,noun,,162225,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385207,kidney interstitial cell,phrase,noun,,162226,,,,,Cell type,biology,,,,medical,Cell Ontology
+385208,kidney interstitial fibroblast,phrase,noun,,162227,,,,,Cell type,biology,,,,medical,Cell Ontology
+385209,kidney interstitial fibrocyte,phrase,noun,,162228,,,,,Cell type,biology,,,,medical,Cell Ontology
+385210,kidney interstitium,phrase,noun,,162229,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385211,kidney large cell neuroendocrine carcinoma,phrase,noun,,162230,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385212,kidney leiomyoma,phrase,noun,,162231,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385213,kidney leiomyosarcoma,phrase,noun,,162232,,,,,Disease,medicine,,,,medical,Disease Ontology
+385214,kidney leiomyosarcoma,phrase,noun,,162233,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385215,kidney lipoma,phrase,noun,,162234,,,,,Disease,medicine,,,,medical,Disease Ontology
+385216,kidney lipoma,phrase,noun,,162235,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385217,kidney liposarcoma,phrase,noun,,162236,,,,,Disease,medicine,,,,medical,Disease Ontology
+385218,kidney liposarcoma,phrase,noun,,162237,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385219,kidney loop of henle ascending limb epithelial cell,phrase,noun,,162238,,,,,Cell type,biology,,,,medical,Cell Ontology
+385220,kidney loop of henle cortical thick ascending limb epithelial cell,phrase,noun,,162239,,,,,Cell type,biology,,,,medical,Cell Ontology
+385221,kidney loop of henle descending limb epithelial cell,phrase,noun,,162240,,,,,Cell type,biology,,,,medical,Cell Ontology
+385222,kidney loop of henle epithelial cell,phrase,noun,,162241,,,,,Cell type,biology,,,,medical,Cell Ontology
+385223,kidney loop of henle long descending thin limb inner medulla,phrase,noun,,162242,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385224,kidney loop of henle long descending thin limb inner medulla epithelial cell,phrase,noun,,162243,,,,,Cell type,biology,,,,medical,Cell Ontology
+385225,kidney loop of henle long descending thin limb outer medulla,phrase,noun,,162244,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385226,kidney loop of henle long descending thin limb outer medulla epithelial cell,phrase,noun,,162245,,,,,Cell type,biology,,,,medical,Cell Ontology
+385227,kidney loop of henle medullary thick ascending limb epithelial cell,phrase,noun,,162246,,,,,Cell type,biology,,,,medical,Cell Ontology
+385228,kidney loop of henle short descending thin limb epithelial cell,phrase,noun,,162247,,,,,Cell type,biology,,,,medical,Cell Ontology
+385229,kidney loop of henle thick ascending limb epithelial cell,phrase,noun,,162248,,,,,Cell type,biology,,,,medical,Cell Ontology
+385230,kidney loop of henle thin ascending limb epithelial cell,phrase,noun,,162249,,,,,Cell type,biology,,,,medical,Cell Ontology
+385231,kidney loop of henle thin descending limb epithelial cell,phrase,noun,,162250,,,,,Cell type,biology,,,,medical,Cell Ontology
+385232,kidney lymphatic vessel,phrase,noun,,162251,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385233,kidney lymphoma,phrase,noun,,162252,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385234,kidney medulla cell,phrase,noun,,162253,,,,,Cell type,biology,,,,medical,Cell Ontology
+385235,kidney medulla collecting duct epithelial cell,phrase,noun,,162254,,,,,Cell type,biology,,,,medical,Cell Ontology
+385236,kidney medulla interstitial cell,phrase,noun,,162255,,,,,Cell type,biology,,,,medical,Cell Ontology
+385237,kidney medullary carcinoma,phrase,noun,,162256,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385238,kidney mesenchyme,phrase,noun,,162257,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385239,kidney mixed epithelial and stromal tumor,phrase,noun,,162258,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385240,kidney neoplasm,phrase,noun,,162259,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385241,"kidney neoplasm, non-human animal",phrase,noun,,162260,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385242,kidney nerve cell,phrase,noun,,162261,,,,,Cell type,biology,,,,medical,Cell Ontology
+385243,kidney neuroendocrine carcinoma,phrase,noun,,162262,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385244,kidney neuroendocrine neoplasm,phrase,noun,,162263,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385245,kidney neuroendocrine tumor,phrase,noun,,162264,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385246,kidney oncocytoma,phrase,noun,,162265,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385247,kidney osteogenic sarcoma,phrase,noun,,162266,,,,,Disease,medicine,,,,medical,Disease Ontology
+385248,kidney osteogenic sarcoma,phrase,noun,,162267,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385249,kidney outer medulla cell,phrase,noun,,162268,,,,,Cell type,biology,,,,medical,Cell Ontology
+385250,kidney outer medulla collecting duct epithelial cell,phrase,noun,,162269,,,,,Cell type,biology,,,,medical,Cell Ontology
+385251,kidney outer medulla collecting duct intercalated cell,phrase,noun,,162270,,,,,Cell type,biology,,,,medical,Cell Ontology
+385252,kidney outer medulla collecting duct principal cell,phrase,noun,,162271,,,,,Cell type,biology,,,,medical,Cell Ontology
+385253,kidney outer medulla inner stripe,phrase,noun,,162272,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385254,kidney outer medulla interstitial cell,phrase,noun,,162273,,,,,Cell type,biology,,,,medical,Cell Ontology
+385255,kidney outer medulla outer stripe,phrase,noun,,162274,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385256,kidney outer medulla peritubular capillary cell,phrase,noun,,162275,,,,,Cell type,biology,,,,medical,Cell Ontology
+385257,kidney papillary duct intercalated cell,phrase,noun,,162276,,,,,Cell type,biology,,,,medical,Cell Ontology
+385258,kidney papillary duct principal cell,phrase,noun,,162277,,,,,Cell type,biology,,,,medical,Cell Ontology
+385259,kidney papillary duct principal epithelial cell,phrase,noun,,162278,,,,,Cell type,biology,,,,medical,Cell Ontology
+385260,kidney papillary necrosis,phrase,noun,,162279,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385261,kidney part,phrase,noun,,162280,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+385262,kidney pelvis cell,phrase,noun,,162281,,,,,Cell type,biology,,,,medical,Cell Ontology
+385263,kidney pelvis papillary carcinoma,phrase,noun,,162282,,,,,Disease,medicine,,,,medical,Disease Ontology
+385264,kidney pelvis sarcomatoid transitional cell carcinoma,phrase,noun,,162283,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385265,kidney pelvis smooth muscle,phrase,noun,,162284,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385266,kidney pelvis smooth muscle cell,phrase,noun,,162285,,,,,Cell type,biology,,,,medical,Cell Ontology
+385267,kidney pelvis urothelial cell,phrase,noun,,162286,,,,,Cell type,biology,,,,medical,Cell Ontology
+385268,kidney pelvis urothelium,phrase,noun,,162287,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385269,kidney proximal convoluted tubule epithelial cell,phrase,noun,,162289,,,,,Cell type,biology,,,,medical,Cell Ontology
+385270,kidney proximal straight tubule epithelial cell,phrase,noun,,162290,,,,,Cell type,biology,,,,medical,Cell Ontology
+385271,kidney pyramid,phrase,noun,,162291,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385272,kidney radiation therapy,phrase,noun,,162292,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+385273,kidney resident dendritic cell,phrase,noun,,162293,,,,,Cell type,biology,,,,medical,Cell Ontology
+385274,kidney resident macrophage,phrase,noun,,162294,,,,,Cell type,biology,,,,medical,Cell Ontology
+385275,kidney rhabdoid cancer,phrase,noun,,162295,,,,,Disease,medicine,,,,medical,Disease Ontology
+385276,kidney rudiment,phrase,noun,,162296,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385277,kidney sarcoma,phrase,noun,,162297,,,,,Disease,medicine,,,,medical,Disease Ontology
+385278,kidney sarcoma,phrase,noun,,162298,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385279,kidney sarcoma,phrase,noun,,162299,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385280,kidney small cell neuroendocrine carcinoma,phrase,noun,,162300,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385281,kidney solitary fibrous tumor,phrase,noun,,162301,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385282,kidney stone,phrase,noun,,162302,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+385283,kidney stones,phrase,noun,,162304,,,,,Lay term -> medical,medicine,informal,,,medical,Curated
+385284,kidney synovial sarcoma,phrase,noun,,162305,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385285,kidney teratoma,phrase,noun,,162306,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+490220,kidney transplant failure,phrase,noun,,3720,,,,,Diagnosis,medicine,,,ICD-10 T86.12,medical,ICD-10 (WHO 2019)
+447949,kidney transplant failure and rejection,phrase,noun,,3719,,,,,Diagnosis,medicine,,,ICD-10 T86.1,medical,ICD-10 (WHO 2019)
+490221,kidney transplant infection,phrase,noun,,3720,,,,,Diagnosis,medicine,,,ICD-10 T86.13,medical,ICD-10 (WHO 2019)
+490219,kidney transplant rejection,phrase,noun,,3720,,,,,Diagnosis,medicine,,,ICD-10 T86.11,medical,ICD-10 (WHO 2019)
+450245,kidney transplant status,phrase,noun,,6223,,,,,Diagnosis,medicine,,,ICD-10 Z94.0,medical,ICD-10 (WHO 2019)
+495577,kidney transplant status,phrase,noun,,6222,,,,,Diagnosis,medicine,,,ICD-10 Z94.0,medical,ICD-10 (WHO 2019)
+385286,kidney tubule cell,phrase,noun,,162307,,,,,Cell type,biology,,,,medical,Cell Ontology
+385287,"kidney tumor, lower pole",phrase,noun,,162308,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385288,"kidney tumor, middle section",phrase,noun,,162309,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385289,"kidney tumor, upper pole",phrase,noun,,162310,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385290,kidney vascular disorder,phrase,noun,,162311,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385291,kidney vasculature,phrase,noun,,162312,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385292,kidney venous blood vessel cell,phrase,noun,,162313,,,,,Cell type,biology,,,,medical,Cell Ontology
+385293,kidney wilms tumor,phrase,noun,,162314,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200261,kidneys,word,noun,,162130,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kidney')
+200262,kidrolase,word,noun,,25920,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Asparaginase')
+385294,kienbock disease,phrase,noun,,162316,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+444323,kienböck disease of adults,phrase,noun,,63179,,,,,Diagnosis,medicine,,,ICD-10 M93.1,medical,ICD-10 (WHO 2019)
+471874,kienböck's disease of adults,phrase,noun,,7554,,,,,Diagnosis,medicine,,,ICD-10 M93.1,medical,ICD-10 (WHO 2019)
+385295,kif18a inhibitor,phrase,noun,,162320,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385296,kif18a inhibitor vls-1488,phrase,noun,,162321,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385297,kif1a related neurological disorder,phrase,noun,,161264,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385298,kif5a-related neurological disorder,phrase,noun,,162322,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385299,kif7-related ciliopathy,phrase,noun,,162323,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385300,kikuchi-fujimoto disease,phrase,noun,,162325,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385301,kikuchi-fujimoto disease,phrase,noun,,162326,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+200263,kikuyu,word,noun,,131500,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kikuyu Language')
+200264,kill,word,noun,,89322,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Sacrifice')
+200265,kilo,word,noun,,162385,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200266,kilobecquerel,word,noun,,161459,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200267,kilocalorie,word,noun,,50942,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Calorie')
+200268,kilodalton,word,noun,,161465,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200269,kiloelectronvolt,word,noun,,161930,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200270,kilogram,word,noun,,162002,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200271,kilogram-calorie,word,noun,,50942,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Calorie')
+200272,kilogram-force,word,noun,,162005,,,,,,medicine,,,,medical,NCI Thesaurus
+200273,kilograms,word,noun,,162002,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kilogram')
+200274,kilohertz,word,noun,,162039,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200275,kiloherz,word,noun,,162039,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kilohertz')
+200276,kilojoule,word,noun,,162387,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200277,kilometer,word,noun,,162388,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200278,kilopascal,word,noun,,162391,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200279,kilopond,word,noun,,162005,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kilogram-Force')
+200280,kilopound,word,noun,,162392,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200281,kilosecond,word,noun,,162393,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200282,kilounit,word,noun,,103,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200283,kilovolt,word,noun,,162396,,,,,,medicine,,simple,,medical,NCI Thesaurus
+385302,kilovoltage radiation generator,phrase,noun,,162399,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+200284,kilowatt-hour,word,noun,,162401,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Kilowatt Hour')
+385303,kilqs,word,noun,,162402,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+385304,kilquist syndrome,phrase,noun,,162402,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200285,kiluba,word,noun,,162406,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Luba-Katanga Language')
+200286,kimbundu,word,noun,,162409,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kimbundu Language')
+200287,kimchi,word,noun,,162410,,,,,,medicine,,simple,,medical,NCI Thesaurus
+385305,kimmel cancer center,phrase,noun,,162411,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+200288,kimmtrak,word,noun,,162412,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Tebentafusp')
+385306,kimura disease,phrase,noun,,162414,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385307,kimura membrane,phrase,noun,,162415,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+200289,kin,word,noun,,161368,,,,,,pharmacology,,simple,,medical,MONDO (diseases) (synonym of 'karyomegalic interstitial nephritis')
+385308,kin,word,noun,,161367,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+200290,kinase,word,noun,,162422,,,,,,medicine,,simple,,medical,NCI Thesaurus
+385309,kinase inhibitor sensitivity,phrase,noun,,162424,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+200291,kind,word,noun,,162432,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200292,kind,word,noun,,162433,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Type')
+200293,kindergarten,word,noun,,162444,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kindergarten Completion')
+385310,kindergarten completion,phrase,noun,,162444,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+385311,kindler syndrome,phrase,noun,,162447,,,,,Disease,medicine,,,,medical,Disease Ontology
+385312,kindler syndrome,phrase,noun,,162448,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200294,kinect-tolf,word,noun,,162459,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Kinect-Enhanced Training for The-Optimal-Lymph-Flow')
+200295,kineret,word,noun,,16815,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Anakinra')
+200296,kinesigenic,word,noun,,162462,,,,,,pharmacology,,simple,,medical,Human Phenotype Ontology (synonym of 'Triggered by sudden movement')
+200297,kinesiophobia,word,noun,,162464,,,,,,medicine,,simple,,medical,Human Phenotype Ontology
+200298,kinesiotherapist,word,noun,,162465,,,,,,pharmacology,,simple,,medical,NCI Thesaurus
+385313,kinesthetic behavior,phrase,noun,,162467,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+385314,kinethmoid bone,phrase,noun,,162468,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385315,kinethmoid cartilage,phrase,noun,,162469,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385316,kinetic microparticle immunoassay,phrase,noun,,162474,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385317,kinetic tremor,phrase,noun,,162477,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+200299,kinetics,word,noun,,162478,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200300,kinetosome,word,noun,,162481,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Basal Body')
+200301,kinevac,word,noun,,162482,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Sincalide')
+385318,king denborough syndrome,phrase,noun,,162493,,,,,Disease,medicine,,,,medical,Disease Ontology
+200302,king's-cure-all,word,noun,,162509,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Evening Primrose Oil')
+385319,king-denborough syndrome,phrase,noun,,162510,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200303,kingdom,word,noun,,162515,,,,,,medicine,,derived,,medical,NCI Thesaurus
+200304,kingella,word,noun,,162540,,,,,,medicine,,simple,,medical,NCI Thesaurus
+385320,kinked brainstem,phrase,noun,,162562,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+444468,kinking and stricture of ureter without hydronephrosis,phrase,noun,,7640,,,,,Diagnosis,medicine,,,ICD-10 N13.5,medical,ICD-10 (WHO 2019)
+200305,kinocilium,word,noun,,162567,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200306,kinome,word,noun,,162568,,,,,,medicine,,simple,,medical,NCI Thesaurus
+385321,kins,word,noun,,162569,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+385322,kinsship syndrome,phrase,noun,,162569,,,,,Disease,medicine,,,,medical,Disease Ontology
+385323,kinsship syndrome,phrase,noun,,162573,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200307,kinyarwanda,word,noun,,162575,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kinyarwanda Language')
+200308,kirdki,word,noun,,91765,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zaza Language')
+200309,kirghiz,word,noun,,162588,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kyrgyz Language')
+200310,kiribati,word,noun,,162590,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200311,kiribati,word,noun,,162591,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200312,kiribati,word,noun,,131515,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Gilbertese Language')
+200313,kirmanjki,word,noun,,91765,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Zaza Language')
+200314,kirundi,word,noun,,162601,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kirundi Language')
+200315,kisqali,word,noun,,162605,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ribociclib')
+385324,kisqali and femara co-pack,phrase,noun,,162606,,,,,Brand name,pharmacology,,,,medical,NCI Thesaurus
+385325,kisqali/femara,word,noun,,162606,,,,,Brand name,pharmacology,,,,medical,NCI Thesaurus
+444060,kissing spine,phrase,noun,,18323,,,,,Diagnosis,medicine,,,ICD-10 M48.2,medical,ICD-10 (WHO 2019)
+468552,kissing spine,phrase,noun,,18324,,,,,Diagnosis,medicine,,,ICD-10 M48.2,medical,ICD-10 (WHO 2019)
+468555,"kissing spine, cervical region",phrase,noun,,18324,,,,,Diagnosis,medicine,,,ICD-10 M48.22,medical,ICD-10 (WHO 2019)
+468556,"kissing spine, cervicothoracic region",phrase,noun,,18324,,,,,Diagnosis,medicine,,,ICD-10 M48.23,medical,ICD-10 (WHO 2019)
+468559,"kissing spine, lumbar region",phrase,noun,,18324,,,,,Diagnosis,medicine,,,ICD-10 M48.26,medical,ICD-10 (WHO 2019)
+468560,"kissing spine, lumbosacral region",phrase,noun,,18324,,,,,Diagnosis,medicine,,,ICD-10 M48.27,medical,ICD-10 (WHO 2019)
+468554,"kissing spine, occipito-atlanto-axial region",phrase,noun,,18324,,,,,Diagnosis,medicine,,,ICD-10 M48.21,medical,ICD-10 (WHO 2019)
+468553,"kissing spine, site unspecified",phrase,noun,,18324,,,,,Diagnosis,medicine,,,ICD-10 M48.20,medical,ICD-10 (WHO 2019)
+468557,"kissing spine, thoracic region",phrase,noun,,18324,,,,,Diagnosis,medicine,,,ICD-10 M48.24,medical,ICD-10 (WHO 2019)
+468558,"kissing spine, thoracolumbar region",phrase,noun,,18324,,,,,Diagnosis,medicine,,,ICD-10 M48.25,medical,ICD-10 (WHO 2019)
+385326,kisspeptin neuron,phrase,noun,,162620,,,,,Cell type,biology,,,,medical,Cell Ontology
+200316,kit,word,noun,,162622,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kit Device')
+200317,kit,word,noun,,162623,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kit Dosing Unit')
+385327,kit,word,noun,,56978,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Medical Action Ontology
+385328,kit,word,noun,,162624,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+385329,kit and sca1-positive hematopoietic stem cell,phrase,noun,,162630,,,,,Cell type,biology,,,,medical,Cell Ontology
+385330,kit-low proerythroblast,phrase,noun,,162634,,,,,Cell type,biology,,,,medical,Cell Ontology
+385331,"kit-low, cd34-positive eosinophil progenitor cell",phrase,noun,,162635,,,,,Cell type,biology,,,,medical,Cell Ontology
+385332,kit-mutant inhibitor idrx-42,phrase,noun,,162636,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385333,"kit-negative, ly-76 high basophilic erythroblast",phrase,noun,,162637,,,,,Cell type,biology,,,,medical,Cell Ontology
+385334,"kit-negative, ly-76 high orthochromatophilic erythroblasts",phrase,noun,,162638,,,,,Cell type,biology,,,,medical,Cell Ontology
+385335,"kit-negative, ly-76 high polychromatophilic erythroblast",phrase,noun,,162639,,,,,Cell type,biology,,,,medical,Cell Ontology
+385336,kit-positive erythroid progenitor cell,phrase,noun,,162640,,,,,Cell type,biology,,,,medical,Cell Ontology
+385337,kit-positive granulocyte monocyte progenitor,phrase,noun,,162641,,,,,Cell type,biology,,,,medical,Cell Ontology
+385338,kit-positive macrophage dendritic cell progenitor,phrase,noun,,162642,,,,,Cell type,biology,,,,medical,Cell Ontology
+385339,kit-positive megakaryocyte progenitor cell,phrase,noun,,162643,,,,,Cell type,biology,,,,medical,Cell Ontology
+385340,"kit-positive, cd34-negative megakaryocyte erythroid progenitor cell",phrase,noun,,162644,,,,,Cell type,biology,,,,medical,Cell Ontology
+385341,"kit-positive, cd34-positive common myeloid progenitor",phrase,noun,,162645,,,,,Cell type,biology,,,,medical,Cell Ontology
+385342,"kit-positive, integrin beta7-high basophil mast progenitor cell",phrase,noun,,162646,,,,,Cell type,biology,,,,medical,Cell Ontology
+385343,"kit-positive, sca1-positive common lymphoid progenitor",phrase,noun,,162647,,,,,Cell type,biology,,,,medical,Cell Ontology
+200318,kitchen,word,noun,,162649,,,,,,medicine,,compound,,medical,NCI Thesaurus
+493589,kitchen in apartment as the place of occurrence of the external cause,phrase,noun,,7013,,,,,Diagnosis,medicine,,,ICD-10 Y92.030,medical,ICD-10 (WHO 2019)
+493595,kitchen in boarding-house as the place of occurrence of the external cause,phrase,noun,,7013,,,,,Diagnosis,medicine,,,ICD-10 Y92.040,medical,ICD-10 (WHO 2019)
+493617,kitchen in children's home and orphanage as the place of occurrence of the external cause,phrase,noun,,7013,,,,,Diagnosis,medicine,,,ICD-10 Y92.110,medical,ICD-10 (WHO 2019)
+493578,kitchen in mobile home as the place of occurrence of the external cause,phrase,noun,,7013,,,,,Diagnosis,medicine,,,ICD-10 Y92.020,medical,ICD-10 (WHO 2019)
+493627,kitchen in nursing home as the place of occurrence of the external cause,phrase,noun,,7013,,,,,Diagnosis,medicine,,,ICD-10 Y92.120,medical,ICD-10 (WHO 2019)
+493605,kitchen in other non-institutional residence as the place of occurrence of the external cause,phrase,noun,,7013,,,,,Diagnosis,medicine,,,ICD-10 Y92.090,medical,ICD-10 (WHO 2019)
+493673,kitchen in other specified residential institution as the place of occurrence of the external cause,phrase,noun,,7013,,,,,Diagnosis,medicine,,,ICD-10 Y92.190,medical,ICD-10 (WHO 2019)
+493646,kitchen in prison as the place of occurrence of the external cause,phrase,noun,,7013,,,,,Diagnosis,medicine,,,ICD-10 Y92.140,medical,ICD-10 (WHO 2019)
+493655,kitchen in reform school as the place of occurrence of the external cause,phrase,noun,,7013,,,,,Diagnosis,medicine,,,ICD-10 Y92.150,medical,ICD-10 (WHO 2019)
+493666,kitchen in school dormitory as the place of occurrence of the external cause,phrase,noun,,7013,,,,,Diagnosis,medicine,,,ICD-10 Y92.160,medical,ICD-10 (WHO 2019)
+493567,kitchen of single-family (private) house as the place of occurrence of the external cause,phrase,noun,,7013,,,,,Diagnosis,medicine,,,ICD-10 Y92.010,medical,ICD-10 (WHO 2019)
+493559,kitchen of unspecified non-institutional (private) residence as the place of occurrence of the external cause,phrase,noun,,7013,,,,,Diagnosis,medicine,,,ICD-10 Y92.000,medical,ICD-10 (WHO 2019)
+493637,kitchen on military base as the place of occurrence of the external cause,phrase,noun,,7013,,,,,Diagnosis,medicine,,,ICD-10 Y92.130,medical,ICD-10 (WHO 2019)
+385344,kite pharma,phrase,noun,,162676,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+200319,kiu,word,noun,,162690,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kilointernational Unit')
+385345,kiu,word,noun,,161231,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+385346,kiu/kg,word,noun,,156468,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+200320,kivexa,word,noun,,1004,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Abacavir Sulfate/Lamivudine')
+385347,kiz-related retinopathy,phrase,noun,,162694,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200321,kj,word,noun,,162387,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kilojoule')
+200322,klamathweed,word,noun,,162700,,,,,,pharmacology,,compound,,medical,NCI Thesaurus (synonym of 'Hypericum perforatum')
+385348,klatskin's tumor,phrase,noun,,162703,,,,,Disease,medicine,,,,medical,Disease Ontology
+200323,klazomania,word,noun,,162705,,,,,,medicine,,simple,,medical,Human Phenotype Ontology
+200324,klb,word,noun,,162392,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kilopound')
+200325,klebsiella,word,noun,,162706,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200326,klebsiella,word,noun,,162707,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Klebsiella Measurement')
+385349,klebsiella infectious disease,phrase,noun,,162709,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385350,klebsiella liver abscess,phrase,noun,,162710,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+385351,klebsiella pneumonia,phrase,noun,,162711,,,,,Disease,medicine,,,,medical,Disease Ontology
+385352,klebsiella pneumonia,phrase,noun,,162712,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+451497,klebsiella pneumoniae [k. pneumoniae] as the cause of diseases classified elsewhere,phrase,noun,,5959,,,,,Diagnosis,medicine,,,ICD-10 B96.1,medical,ICD-10 (WHO 2019)
+439856,klebsiella pneumoniae [k. pneumoniae] as the cause of diseases classified to other chapters,phrase,noun,,8498,,,,,Diagnosis,medicine,,,ICD-10 B96.1,medical,ICD-10 (WHO 2019)
+200327,kleeblattschaedel,word,noun,,67694,,,,,,pharmacology,,simple,,medical,Human Phenotype Ontology (synonym of 'Cloverleaf skull')
+385353,kleefstra syndrome,phrase,noun,,162714,,,,,Disease,medicine,,,ICD-10 Q87.86,medical,Disease Ontology
+385354,kleefstra syndrome,phrase,noun,,162715,,,,,Disease,medicine,,,ICD-10 Q87.86,medical,MONDO (diseases)
+385355,kleefstra syndrome 1,phrase,noun,,162716,,,,,Disease,medicine,,,,medical,Disease Ontology
+385356,kleefstra syndrome 1,phrase,noun,,162717,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385357,kleefstra syndrome 2,phrase,noun,,162718,,,,,Disease,medicine,,,,medical,Disease Ontology
+385358,kleefstra syndrome 2,phrase,noun,,162719,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385359,kleefstra syndrome due to a point mutation,phrase,noun,,162720,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385360,klefs1,word,noun,,162717,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+385361,kleihauer-betke staining procedure,phrase,noun,,162722,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+385362,kleine-levin syndrome,phrase,noun,,162725,,,,,Disease,medicine,,,,medical,Disease Ontology
+385363,kleine-levin syndrome,phrase,noun,,162726,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385364,kleine-levin syndrome,phrase,noun,,162727,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+200328,kleptomania,word,noun,,162729,,,,,,medicine,,simple,ICD-10 F63.2,medical,Disease Ontology
+200329,kleptomania,word,noun,,72269,,,,,,pharmacology,,simple,ICD-10 F63.2,medical,Human Phenotype Ontology (synonym of 'Compulsive stealing')
+200330,kleptomania,word,noun,,162730,,,,,,medicine,,simple,ICD-10 F63.2,medical,MONDO (diseases)
+385365,klh,word,noun,,162733,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+385366,klh-lymphoma ig vaccine,phrase,noun,,162734,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385367,klh/ny-eso-1/mart-1 peptide-pulsed dendritic cell vaccine,phrase,noun,,162735,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385368,klhl9-related early-onset distal myopathy,phrase,noun,,162736,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385369,klinefelter syndrome,phrase,noun,,162738,,,,,Disease,medicine,,,,medical,Disease Ontology
+385370,klinefelter syndrome,phrase,noun,,162739,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+476471,"klinefelter syndrome karyotype 47, xxy",phrase,noun,,503,,,,,Diagnosis,medicine,,,ICD-10 Q98.0,medical,ICD-10 (WHO 2019)
+446229,"klinefelter syndrome karyotype 47,xxy",phrase,noun,,515,,,,,Diagnosis,medicine,,,ICD-10 Q98.0,medical,ICD-10 (WHO 2019)
+446231,"klinefelter syndrome, male with 46,xx karyotype",phrase,noun,,515,,,,,Diagnosis,medicine,,,ICD-10 Q98.2,medical,ICD-10 (WHO 2019)
+446230,"klinefelter syndrome, male with more than two x chromosomes",phrase,noun,,515,,,,,Diagnosis,medicine,,,ICD-10 Q98.1,medical,ICD-10 (WHO 2019)
+476472,"klinefelter syndrome, male with more than two x chromosomes",phrase,noun,,503,,,,,Diagnosis,medicine,,,ICD-10 Q98.1,medical,ICD-10 (WHO 2019)
+446233,"klinefelter syndrome, unspecified",phrase,noun,,515,,,,,Diagnosis,medicine,,,ICD-10 Q98.4,medical,ICD-10 (WHO 2019)
+476474,"klinefelter syndrome, unspecified",phrase,noun,,503,,,,,Diagnosis,medicine,,,ICD-10 Q98.4,medical,ICD-10 (WHO 2019)
+385371,klippel-feil syndrome,phrase,noun,,162741,,,,,Disease,medicine,,,ICD-10 Q76.1,medical,Disease Ontology
+385372,klippel-feil syndrome,phrase,noun,,162742,,,,,Disease,medicine,,,ICD-10 Q76.1,medical,MONDO (diseases)
+476269,klippel-feil syndrome,phrase,noun,,5077,,,,,Diagnosis,medicine,,,ICD-10 Q76.1,medical,ICD-10 (WHO 2019)
+385373,klippel-feil syndrome 1,phrase,noun,,162743,,,,,Disease,medicine,,,,medical,Disease Ontology
+385374,"klippel-feil syndrome 1, autosomal dominant",phrase,noun,,162744,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385375,klippel-feil syndrome 2,phrase,noun,,162745,,,,,Disease,medicine,,,,medical,Disease Ontology
+385376,"klippel-feil syndrome 2, autosomal recessive",phrase,noun,,162746,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385377,klippel-feil syndrome 3,phrase,noun,,162747,,,,,Disease,medicine,,,,medical,Disease Ontology
+385378,"klippel-feil syndrome 3, autosomal dominant",phrase,noun,,162748,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385379,klippel-feil syndrome 4,phrase,noun,,162749,,,,,Disease,medicine,,,,medical,Disease Ontology
+385380,klippel-trenaunay syndrome,phrase,noun,,162750,,,,,Disease,medicine,,,,medical,Disease Ontology
+385381,klippel-trenaunay-weber syndrome,phrase,noun,,162751,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385382,klk,word,noun,,161229,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+200331,kloeckera,word,noun,,137859,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Hanseniaspora')
+200332,klonopin,word,noun,,67259,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Clonazepam')
+200333,klorvess,word,noun,,58083,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Potassium Chloride')
+200334,klotho,word,noun,,162754,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Klotho Protein Measurement')
+200335,klotrix,word,noun,,58083,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Potassium Chloride')
+385383,klrb1-like protein,phrase,noun,,162755,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+385384,"klrg1-positive innate lymphoid cell, human",phrase,noun,,162756,,,,,Cell type,biology,,,,medical,Cell Ontology
+445395,klumpke paralysis due to birth injury,phrase,noun,,40006,,,,,Diagnosis,medicine,,,ICD-10 P14.1,medical,ICD-10 (WHO 2019)
+385385,klumpke's paralysis,phrase,noun,,162758,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+475125,klumpke's paralysis due to birth injury,phrase,noun,,40007,,,,,Diagnosis,medicine,,,ICD-10 P14.1,medical,ICD-10 (WHO 2019)
+385386,kluver-bucy syndrome,phrase,noun,,162760,,,,,Disease,medicine,,,,medical,Disease Ontology
+385387,kluver-bucy syndrome,phrase,noun,,162761,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385388,kluver-bucy syndrome,phrase,noun,,162762,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+200336,kluyvera,word,noun,,162763,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200337,kluyveromyces,word,noun,,162764,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200338,km,word,noun,,162767,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200339,km,word,noun,,162388,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kilometer')
+385389,km12,word,noun,,138785,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385390,kmg,word,noun,,162768,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+385391,kmin,word,noun,,161367,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+385392,kmin,word,noun,,161368,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+385393,kms,word,noun,,161172,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+385394,kms,word,noun,,161173,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+385395,kms,word,noun,,161174,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+385396,kmt2a-aff1 fusion protein expression,phrase,noun,,162769,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385397,kmt2a-mllt1 fusion protein expression,phrase,noun,,162770,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385398,kndy neuron,phrase,noun,,162779,,,,,Cell type,biology,,,,medical,Cell Ontology
+200340,knee,word,noun,,162785,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Knee Joint')
+200341,knee,word,noun,,162786,,,,,,anatomy,,simple,,medical,Uberon (anatomy)
+385399,knee arthroplasty,phrase,noun,,162789,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+385400,knee clonus,phrase,noun,,162792,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+385401,knee connective tissue,phrase,noun,,162793,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385402,knee contracture,phrase,noun,,162794,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+385403,knee extension contracture,phrase,noun,,162795,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+385404,knee flexion contracture,phrase,noun,,162796,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+385405,knee joint,phrase,noun,,162798,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385406,knee joint effusion,phrase,noun,,162799,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+385407,knee joint hypermobility,phrase,noun,,162800,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+385408,knee joint tendons,phrase,noun,,162801,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+385409,knee pain,phrase,noun,,162803,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+385410,knee pain,phrase,noun,,162804,,,,,Symptom,medicine,,,,medical,Symptom Ontology
+385411,knee replacement,phrase,noun,,162806,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+385412,knee replacement surgery,phrase,noun,,162807,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+385413,knee to heel length measurement,phrase,noun,,162808,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+200342,kneel,word,noun,,162816,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kneeling')
+200343,kneeling,word,noun,,162816,,,,,,medicine,,derived,,medical,NCI Thesaurus
+200344,knemometry,word,noun,,162827,,,,,,medicine,,simple,,medical,NCI Thesaurus
+385414,kni-272,word,noun,,162835,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385415,kniest dysplasia,phrase,noun,,162837,,,,,Disease,medicine,,,,medical,Disease Ontology
+385416,kniest dysplasia,phrase,noun,,162838,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385417,kniest dysplasia,phrase,noun,,162839,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+492415,"knife, sword or dagger entering into or through a natural orifice",phrase,noun,,5146,,,,,Diagnosis,medicine,,,ICD-10 W44.H2,medical,ICD-10 (WHO 2019)
+385418,knight cancer institute,phrase,noun,,162857,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+200345,knob,word,noun,,162883,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Knob Device')
+200346,knock-in,word,noun,,162924,,,,,,medicine,,,,medical,NCI Thesaurus
+200347,knock-out,word,noun,,162927,,,,,,medicine,,,,medical,NCI Thesaurus
+200348,knockout,word,noun,,162927,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Knock-out')
+200349,knoellia,word,noun,,162941,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200350,knowgene,word,noun,,162988,,,,,,pharmacology,,compound,,medical,NCI Thesaurus (synonym of 'KnowGene Scale')
+385419,"knowledge, attitudes, behaviors",phrase,noun,,163003,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+200351,known,word,noun,,114704,,,,,,medicine,,simple,,medical,NCI Thesaurus
+385420,known coronary artery disease,phrase,noun,,163011,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385421,known family history of rheumatic fever or rheumatic heart disease,phrase,noun,,163012,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385422,known history of acute rheumatic fever or rheumatic heart disease,phrase,noun,,163013,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385423,known history of congenital heart disease,phrase,noun,,163014,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385424,known history of kawasaki disease,phrase,noun,,163015,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+200352,knuckle,word,noun,,163017,,,,,,anatomy,,simple,,medical,Uberon (anatomy) (synonym of 'metacarpophalangeal joint')
+385425,knuckle pad,phrase,noun,,84479,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+444178,knuckle pads,phrase,noun,,4032,,,,,Diagnosis,medicine,,,ICD-10 M72.1,medical,ICD-10 (WHO 2019)
+470113,knuckle pads,phrase,noun,,4033,,,,,Diagnosis,medicine,,,ICD-10 M72.1,medical,ICD-10 (WHO 2019)
+200353,knuckles,word,noun,,163017,,,,,,anatomy,,simple,,medical,Uberon (anatomy) (synonym of 'metacarpophalangeal joint')
+200354,kocuria,word,noun,,163031,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200355,kodamaea,word,noun,,163032,,,,,,medicine,,simple,,medical,NCI Thesaurus
+385426,koebner phenomenon,phrase,noun,,163034,,,,Greek,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+385427,koeppe nodules,phrase,noun,,163035,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+385428,kohler's disease,phrase,noun,,163038,,,,,Disease,medicine,,,,medical,Disease Ontology
+385429,kohlschutter-tonz syndrome,phrase,noun,,163041,,,,,Disease,medicine,,,,medical,Disease Ontology
+200356,koilocytosis,word,noun,,163042,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Koilocytotic Atypia')
+200357,koilonychia,word,noun,,72399,,,,,,pharmacology,,simple,,medical,Human Phenotype Ontology (synonym of 'Concave nail')
+385430,koller's sickle,phrase,noun,,163055,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+385431,kolmer-agduhr neuron,phrase,noun,,163056,,,,,Cell type,biology,,,,medical,Cell Ontology
+200358,kombucha,word,noun,,163058,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200359,komed-hc,word,noun,,10551,,,,,,pharmacology,,,,medical,NCI Thesaurus (synonym of 'Therapeutic Hydrocortisone')
+200360,komi,word,noun,,163059,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Komi Language')
+385432,kommerell diverticulum,phrase,noun,,163062,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385433,komogorov-smirnov test,phrase,noun,,163063,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+200361,komondor,word,noun,,163064,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200362,konakion,word,noun,,23038,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Phytonadione')
+200363,kongo,word,noun,,163066,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kongo Language')
+385434,koniocellular cell,phrase,noun,,163068,,,,,Cell type,biology,,,,medical,Cell Ontology
+200364,koniocortex,word,noun,,163069,,,,,,anatomy,,simple,,medical,Uberon (anatomy)
+200365,konkani,word,noun,,163070,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Konkani Language')
+200366,konzo,word,noun,,55586,,,,,,pharmacology,,simple,,medical,MONDO (diseases) (synonym of 'cassavism')
+385435,koolen de vries syndrome,phrase,noun,,161506,,,,,Disease,medicine,,,,medical,Disease Ontology
+385436,koolen-de vries syndrome,phrase,noun,,161507,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200367,kootenai,word,noun,,163077,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kutenai Language')
+200368,kootenay,word,noun,,163077,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kutenai Language')
+200369,kordicepin,word,noun,,76358,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Cordycepin')
+200370,korean,word,noun,,163092,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200371,korean,word,noun,,163093,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Korean Language')
+385437,korean hemorrhagic fever,phrase,noun,,163096,,,,,Disease,medicine,,,,medical,Disease Ontology
+200372,korlym,word,noun,,163100,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Mifepristone')
+385438,korsakoff syndrome,phrase,noun,,163101,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385439,kos,word,noun,,161189,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+385440,kos-953,word,noun,,153,,,,,Brand name,pharmacology,,,,medical,NCI Thesaurus
+200373,koselugo,word,noun,,163105,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Selumetinib Sulfate')
+200374,kosovo,word,noun,,163107,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200375,kosraean,word,noun,,163109,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200376,kosraean,word,noun,,163110,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kosraean Language')
+385441,kostmann syndrome,phrase,noun,,163112,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385442,kousseff syndrome,phrase,noun,,163120,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200377,kp,word,noun,,162392,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kilopound')
+385443,kp,word,noun,,161841,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+385444,kp,word,noun,,161842,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+200378,kpa,word,noun,,162391,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kilopascal')
+385445,kpd,word,noun,,90155,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+385446,kpd,word,noun,,78543,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+385447,kpd regimen,phrase,noun,,78543,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+200379,kpelle,word,noun,,163124,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kpelle Language')
+385448,kplbs,word,noun,,161741,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+385449,kpts,word,noun,,161673,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+385450,kpts,word,noun,,161674,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+385451,krabbe disease,phrase,noun,,163128,,,,,Disease,medicine,,,ICD-10 E75.23,medical,MONDO (diseases)
+385452,krabbe disease,phrase,noun,,163129,,,,,Disease,medicine,,,ICD-10 E75.23,medical,NCI Thesaurus
+385453,"krabbe disease, domestic cat",phrase,noun,,163130,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385454,"krabbe disease, galc-related, dog",phrase,noun,,163131,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385455,"krabbe disease, galc-related, rhesus macaque",phrase,noun,,163132,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385456,"krabbe disease, non-human animal",phrase,noun,,163133,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385457,"krabbe disease, sheep",phrase,noun,,163134,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385458,kras cys-12 mutant protein,phrase,noun,,163138,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385459,kras inhibitor,phrase,noun,,163139,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385460,kras inhibitor bi 3706674,phrase,noun,,163140,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385461,kras mutant inhibitor qtx3034,phrase,noun,,163141,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385462,krause's gland,phrase,noun,,163145,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+200380,krazati,word,noun,,7798,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Adagrasib')
+200381,krd,word,noun,,54579,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'KRd Regimen')
+385463,krd regimen,phrase,noun,,54579,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+200382,krdc,word,noun,,54574,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'KCRd Regimen')
+385464,krebs 2 carcinoma,phrase,noun,,163146,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200383,krestin,word,noun,,163149,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Polysaccharide-K')
+200384,kretek,word,noun,,163150,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200385,kringle,word,noun,,163153,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kringle Domain')
+385465,kringle domain,phrase,noun,,163153,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+200386,krintafel,word,noun,,23232,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Tafenoquine Succinate')
+385466,krn5500,word,noun,,163156,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+200387,kromfohrlander,word,noun,,163157,,,,,,medicine,,simple,,medical,NCI Thesaurus
+385467,krs,word,noun,,163164,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+385468,krt1-related nonepidermolytic palmoplantar keratoderma,phrase,noun,,163165,,,,,Disease,medicine,,,,medical,Disease Ontology
+385469,krukenberg carcinoma,phrase,noun,,163167,,,,,Disease,medicine,,,,medical,Disease Ontology
+385470,krukenberg carcinoma,phrase,noun,,163168,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385471,krukenberg tumor,phrase,noun,,163169,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385472,kruskal-wallis test,phrase,noun,,163170,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+200388,krystexxa,word,noun,,163171,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Pegloticase')
+200389,ks,word,noun,,162393,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kilosecond')
+385473,ks,word,noun,,161306,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+385474,ks,word,noun,,162448,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+385475,ksa-klh,word,noun,,163172,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+385476,ksa-klh conjugate vaccine,phrase,noun,,163172,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+200390,ksanka,word,noun,,163077,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kutenai Language')
+385477,ksd,word,noun,,39308,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+200391,ksec,word,noun,,162393,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kilosecond')
+385478,kshv,word,noun,,141792,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+385479,kshv inflammatory cytokine syndrome,phrase,noun,,162114,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385480,kshv/hhv8-mcd,word,noun,,141797,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+385481,ksp inhibitor azd4877,phrase,noun,,163174,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385482,ksp inhibitor sb-743921,phrase,noun,,163175,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+385483,kss,word,noun,,161509,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+385484,kss,word,noun,,161510,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+385485,ksvh/hhv8+ glpd,phrase,noun,,132666,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+385486,ktcnct,word,noun,,100736,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+385487,ktoc,word,noun,,161801,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,MONDO (diseases)
+200392,ktunaxa,word,noun,,163077,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kutenai Language')
+385488,ktzs,word,noun,,163041,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,Disease Ontology
+200393,ku,word,noun,,161465,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kilodalton')
+200394,ku,word,noun,,103,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kilounit')
+200395,ku,word,noun,,163176,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ku Protein')
+200396,kuanyama,word,noun,,163179,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kwanyama Language')
+385489,kucc,word,noun,,163182,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+385490,kufor-rakeb syndrome,phrase,noun,,163185,,,,,Disease,medicine,,,,medical,Disease Ontology
+385491,kufor-rakeb syndrome,phrase,noun,,163186,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385492,kumar imwg 2016 oncology response criteria,phrase,noun,,163191,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+385493,kummell disease,phrase,noun,,163194,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200397,kumyk,word,noun,,163196,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kumyk Language')
+200398,kunecatechins,word,noun,,163199,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Sinecatechins')
+200399,kunits,word,noun,,103,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kilounit')
+385494,kunjin encephalitis,phrase,noun,,163201,,,,,Disease,medicine,,,,medical,Disease Ontology
+385495,kunjin virus infectous disease,phrase,noun,,163202,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385496,kupffer cell,phrase,noun,,163204,,,,,Cell type,biology,,,,medical,Cell Ontology
+385497,kupffer's vesicle,phrase,noun,,163206,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+200400,kurd,word,noun,,163208,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kurdish')
+200401,kurdish,word,noun,,163208,,,,,,medicine,,derived,,medical,NCI Thesaurus
+200402,kurdish,word,noun,,163212,,,,,,pharmacology,,derived,,medical,NCI Thesaurus (synonym of 'Kurdish Language')
+200403,kurlovia,word,noun,,78455,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Ehrlichia')
+200404,kurthia,word,noun,,163222,,,,,,medicine,,simple,,medical,NCI Thesaurus
+385498,kurtzke expanded disability status scale clinical classification,phrase,noun,,100845,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+385499,kurtzke functional systems scores clinical classification,phrase,noun,,162001,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+200405,kuru,word,noun,,163223,,,,,,medicine,,simple,ICD-10 A81.81,medical,MONDO (diseases)
+200406,kurukh,word,noun,,163225,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kurukh Language')
+200407,kurux,word,noun,,163225,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kurukh Language')
+200408,kusaiean,word,noun,,163110,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kosraean Language')
+200409,kutenai,word,noun,,163077,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kutenai Language')
+200410,kuvasz,word,noun,,163230,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200411,kuwait,word,noun,,163233,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200412,kv,word,noun,,162396,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kilovolt')
+385500,kvo,word,noun,,163244,,,,,Abbreviation - route,pharmacology,abbreviation,simple,,medical,Curated
+200413,kvp,word,noun,,163245,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kilovolt Peak')
+200414,kwanyama,word,noun,,163179,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kwanyama Language')
+200415,kwashiokor,word,noun,,163258,,,,,,pharmacology,,simple,,medical,Disease Ontology (synonym of 'kwashiorkor')
+200416,kwashiorkor,word,noun,,163258,,,,,,medicine,,simple,ICD-10 E40,medical,Disease Ontology
+200417,kwashiorkor,word,noun,,163259,,,,,,medicine,,simple,ICD-10 E40,medical,MONDO (diseases)
+200418,kwashiorkor,word,noun,,163260,,,,,,medicine,,simple,ICD-10 E40,medical,NCI Thesaurus
+454502,kwashiorkor,word,noun,,163261,,,,,Diagnosis,medicine,,simple,ICD-10 E40,medical,ICD-10 (WHO 2019)
+200419,kwh,word,noun,,162401,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kilowatt Hour')
+385501,ky-related neuromyopathy,phrase,noun,,163267,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385502,kyasanur forest disease,phrase,noun,,163268,,,,,Disease,medicine,,,ICD-10 A98.2,medical,Disease Ontology
+385503,kyasanur forest disease,phrase,noun,,163269,,,,,Disease,medicine,,,ICD-10 A98.2,medical,MONDO (diseases)
+450942,kyasanur forest disease,phrase,noun,,23840,,,,,Diagnosis,medicine,,,ICD-10 A98.2,medical,ICD-10 (WHO 2019)
+200420,kybella,word,noun,,163271,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Deoxycholic Acid')
+200421,kymarabine,word,noun,,23132,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Fazarabine')
+200422,kymriah,word,noun,,163272,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Tisagenlecleucel')
+385504,kyn,word,noun,,163273,,,,,Abbreviation / acronym,medicine,abbreviation,simple,,medical,NCI Thesaurus
+200423,kynacyte,word,noun,,163274,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Safingol')
+200424,kynex,word,noun,,98704,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Sulfamethoxypyridazine')
+200425,kynurenine,word,noun,,163273,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200426,kynurenine,word,noun,,163275,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kynurenine Measurement')
+200427,kyocristine,word,noun,,163276,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Vincristine Sulfate')
+385505,kyphomelic dysplasia,phrase,noun,,163278,,,,,Disease,medicine,,,,medical,Disease Ontology
+385506,kyphomelic dysplasia,phrase,noun,,163279,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+385507,"kyphomelic dysplasia, itai-ikegawa type",phrase,noun,,161467,,,,,Disease,medicine,,,,medical,Disease Ontology
+200428,kyphoplasty,word,noun,,163280,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200429,kyphoscoliosis,word,noun,,163281,,,,,,medicine,,simple,,medical,Human Phenotype Ontology
+385508,kyphoscoliotic ehlers-danlos syndrome,phrase,noun,,161517,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+442506,kyphoscoliotic heart disease,phrase,noun,,17676,,,,,Diagnosis,medicine,,,ICD-10 I27.1,medical,ICD-10 (WHO 2019)
+460909,kyphoscoliotic heart disease,phrase,noun,,17677,,,,,Diagnosis,medicine,,,ICD-10 I27.1,medical,ICD-10 (WHO 2019)
+200430,kyphosis,word,noun,,163282,,,,,,medicine,,simple,,medical,Disease Ontology
+200431,kyphosis,word,noun,,146613,,,,,,medicine,,simple,,medical,Human Phenotype Ontology
+200432,kyphosis,word,noun,,163283,,,,,,medicine,,simple,,medical,NCI Thesaurus
+444020,kyphosis and lordosis,phrase,noun,,9707,,,,,Diagnosis,medicine,,,ICD-10 M40,medical,ICD-10 (WHO 2019)
+468191,kyphosis and lordosis,phrase,noun,,9226,,,,,Diagnosis,medicine,,,ICD-10 M40,medical,ICD-10 (WHO 2019)
+200433,kyprolis,word,noun,,54571,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Carfilzomib')
+200434,kyrgyz,word,noun,,162588,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Kyrgyz Language')
+200435,kyrgyzstan,word,noun,,163284,,,,,,medicine,,simple,,medical,NCI Thesaurus
+385509,kyrle disease,phrase,noun,,163287,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+200436,kytococcus,word,noun,,163288,,,,,,medicine,,simple,,medical,NCI Thesaurus
+200437,kytril,word,noun,,134525,,,,,,pharmacology,,simple,,medical,NCI Thesaurus (synonym of 'Granisetron Hydrochloride')

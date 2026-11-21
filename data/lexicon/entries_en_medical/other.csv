@@ -1,0 +1,929 @@
+id,word,type,pos,sense,meaning_id,synonyms,antonyms,related,origin,category,subject,usage,structure,code,domain,source
+456693,(idiopathic) normal pressure hydrocephalus,phrase,noun,,1,,,,,Diagnosis,medicine,,,ICD-10 G91.2,medical,ICD-10 (WHO 2019)
+473255,(induced) termination of pregnancy with other and unspecified complications,phrase,noun,,2,,,,,Diagnosis,medicine,,,ICD-10 O04.8,medical,ICD-10 (WHO 2019)
+473265,(induced) termination of pregnancy with other complications,phrase,noun,,2,,,,,Diagnosis,medicine,,,ICD-10 O04.89,medical,ICD-10 (WHO 2019)
+473256,(induced) termination of pregnancy with unspecified complications,phrase,noun,,2,,,,,Diagnosis,medicine,,,ICD-10 O04.80,medical,ICD-10 (WHO 2019)
+324746,"010 brassica (cole or cabbage) vegetables, head cabbage, flowerhead brassicas (vb) (ccpr)",phrase,noun,,3,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+324747,02 vegetables (ccpr),phrase,noun,,4,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+324748,022 tree nuts (tn) (ccpr),phrase,noun,,5,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+324749,04 nuts and seeds (ccpr),phrase,noun,,6,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+324750,1,word,noun,,7,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324751,1,word,noun,,8,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324752,1,word,noun,,9,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324753,1*,word,noun,,9,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324754,"1,2,3-trichloropropane",word,noun,,10,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324755,"1,2-dimethylhydrazine",word,noun,,11,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324756,"1,2-dimethylhydrazine dihydrochloride",phrase,noun,,12,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324757,"1,24,25(oh)3 d2",phrase,noun,,13,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324758,"1,24,25-trihydroxyergocalciferol",word,noun,,13,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324759,"1,25(oh)2-d3",word,noun,,14,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324760,"1,25-dhcc",word,noun,,14,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324761,"1,3-butadiene",word,noun,,15,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324762,"1,3-dichloropropene",word,noun,,16,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324763,"1,3-dimethyl-6-(3-ethylureido)-uridine",word,noun,,17,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324764,"1,3-thiazolium cation",phrase,noun,,18,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+324765,"1,4-benzoquinones",word,noun,,19,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+324766,"1,4-dioxane",word,noun,,20,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324767,"1,4-naphthoquinones",word,noun,,21,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+324768,"1,4-phenylenediamine allergic contact dermatitis",phrase,noun,,22,,,,,Disease,medicine,,,,medical,Disease Ontology
+324769,"1,6-dinitropyrene",word,noun,,23,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324770,"1,8-dinitropyrene",word,noun,,24,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324771,1-2,word,noun,,25,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324772,1-2 finger cutaneous syndactyly,phrase,noun,,26,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+324773,1-2 toe syndactyly,phrase,noun,,27,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+324774,1-3 finger cutaneous syndactyly,phrase,noun,,28,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+324775,1-3 toe syndactyly,phrase,noun,,29,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+324776,1-4 finger cutaneous syndactyly,phrase,noun,,30,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+324777,1-4 toe syndactyly,phrase,noun,,31,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+324778,1-5 finger cutaneous syndactyly,phrase,noun,,32,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+324779,1-5 toe syndactyly,phrase,noun,,33,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+324780,"1-amino-2,4-dibromoanthraquinone",word,noun,,34,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324781,1-amino-2-methylanthraquinone,word,noun,,35,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324782,"1-chloro-2,4-dinitrobenzene allergic contact dermatitis",phrase,noun,,36,,,,,Disease,medicine,,,,medical,Disease Ontology
+324783,1-d extent,phrase,noun,,37,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+324784,1-mehis,word,noun,,38,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324785,1-methylhistidine,word,noun,,38,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324786,1-nitropyrene,word,noun,,39,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324787,1-np,word,noun,,39,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324788,1-o-hexadecylpropanediol-cdv,word,noun,,40,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324789,1-phenylpropan-2-amine,word,noun,,41,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+324790,1/ng,word,noun,,42,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324791,1/nl,word,noun,,43,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324792,1/ug,word,noun,,44,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324793,10 meter walk/run functional test question,phrase,noun,,45,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+324794,10 pairs of ribs,phrase,noun,,46,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+494455,10 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.10,medical,ICD-10 (WHO 2019)
+324795,10*10.copies}/ml,word,noun,,48,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324796,10*2.{copies}/ml,word,noun,,49,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324797,10*3.[cfu],word,noun,,50,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324798,10*3.[iu]/ml,word,noun,,51,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324799,10*3.{dna copies}/ml,phrase,noun,,52,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324800,10*3.{rna copies}/ml,phrase,noun,,53,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324801,10*3/[hpf],word,noun,,54,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324802,10*3/g,word,noun,,55,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324803,10*3{organisms},word,noun,,56,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324804,10*4.[cfu],word,noun,,57,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324805,10*4.[cfu]/ml,word,noun,,58,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324806,10*4.[iu]/ml,word,noun,,59,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324807,10*4/[hpf],word,noun,,60,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324808,10*4/l,word,noun,,61,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324809,10*5.[cfu],word,noun,,62,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324810,10*5.[cfu]/ml,word,noun,,63,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324811,10*5.[hpf],word,noun,,64,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324812,10*5.[iu]/ml,word,noun,,65,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324813,10*5/kg,word,noun,,66,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324814,10*6.[cfu],word,noun,,67,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324815,10*6.[iu]/ml,word,noun,,68,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324816,10*6.[tcid_50]/{dose},word,noun,,69,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324817,10*6.u,word,noun,,70,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324818,10*6.{dna copies}/ml,phrase,noun,,71,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324819,10*6.{rna copies}/ml,phrase,noun,,72,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324820,10*6/[hpf],word,noun,,73,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324821,10*6/g,word,noun,,44,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324822,10*6/kg,word,noun,,55,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324823,10*6/{ejaculate u},phrase,noun,,74,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324824,10*6{organisms},word,noun,,75,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324825,10*7.[cfu],word,noun,,76,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324826,10*7.[cfu]/ml,word,noun,,77,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324827,10*7.[iu]/ml,word,noun,,78,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324828,10*7/kg,word,noun,,79,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324829,10*7/l,word,noun,,80,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324830,10*8.[cfu],word,noun,,81,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324831,10*8.[iu]/ml,word,noun,,82,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324832,10*8.[tcid_50]/{dose},word,noun,,83,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324833,10*9.[cfu],word,noun,,84,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324834,10*9.[iu]/ml,word,noun,,85,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324835,10*9/g,word,noun,,42,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324836,10*9/l,word,noun,,43,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324837,10*9/ul,word,noun,,86,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324838,10*9{organisms},word,noun,,87,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324839,10-2 visual field testing,phrase,noun,,88,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+324840,10-50,word,noun,,89,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324841,10-deacetyltaxol,word,noun,,90,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324842,10-edam,word,noun,,91,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324843,10-meter walk/run - test grade,phrase,noun,,92,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+324844,10-meter walk/run - time to walk/run 10 meters,phrase,noun,,93,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+324845,10-meter walk/run - was walk/run performed,phrase,noun,,94,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+324846,10-meter walk/run - wear orthoses,phrase,noun,,95,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+324847,10-meter walk/run test functional test,phrase,noun,,96,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+324848,10.[iu]/ml,word,noun,,97,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324849,10.{copies}/ml,word,noun,,98,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324850,10/mg,word,noun,,79,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324851,100.{copies}/ml,word,noun,,49,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324852,10^10.{copies}/ml,word,noun,,48,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324853,10^12/kg,word,noun,,42,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324854,10^12/ml,word,noun,,86,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324855,10^15/l,word,noun,,86,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324856,10^2.{copies}/ml,word,noun,,49,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324857,10^2/g,word,noun,,66,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324858,10^2{rbc},word,noun,,99,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324859,10^3 cfu,phrase,noun,,50,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324860,10^3.[cfu],word,noun,,50,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324861,10^3.[iu]/ml,word,noun,,51,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324862,10^3.{dna copies}/ml,phrase,noun,,52,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324863,10^3.{rna copies}/ml,phrase,noun,,53,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324864,10^3/[hpf],word,noun,,54,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324865,10^3/dl,word,noun,,61,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324866,10^3/g,word,noun,,55,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324867,10^3/mg,word,noun,,44,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324868,10^3/mm3,word,noun,,43,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324869,10^3/pl,word,noun,,86,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324870,10^3/ug,word,noun,,42,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324871,10^3/ul,word,noun,,43,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324872,10^3{organisms},word,noun,,56,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324873,10^3{rbc},word,noun,,100,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324874,10^4.[cfu],word,noun,,57,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324875,10^4.[cfu]/ml,word,noun,,58,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324876,10^4.[iu]/ml,word,noun,,59,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324877,10^4/[hpf],word,noun,,60,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324878,10^4/g,word,noun,,79,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324879,10^4/l,word,noun,,61,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324880,10^5.[cfu],word,noun,,62,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324881,10^5.[cfu]/ml,word,noun,,63,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324882,10^5.[hpf],word,noun,,64,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324883,10^5.[iu]/ml,word,noun,,65,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324884,10^5/kg,word,noun,,66,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324885,10^6 cfu,phrase,noun,,67,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324886,10^6.[cfu],word,noun,,67,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324887,10^6.[iu]/ml,word,noun,,68,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324888,10^6.[tcid_50]/{dose},word,noun,,69,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324889,10^6.u,word,noun,,70,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324890,10^6.{dna copies}/ml,phrase,noun,,71,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324891,10^6.{rna copies}/ml,phrase,noun,,72,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324892,10^6/[hpf],word,noun,,73,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324893,10^6/dl,word,noun,,80,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324894,10^6/g,word,noun,,44,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324895,10^6/kg,word,noun,,55,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324896,10^6/mg,word,noun,,42,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324897,10^6/ml,word,noun,,43,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324898,10^6/mm3,word,noun,,43,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324899,10^6/nl,word,noun,,86,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324900,10^6/{ejaculate u},phrase,noun,,74,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324901,10^6u,word,noun,,70,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324902,10^6{organisms},word,noun,,75,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324903,10^6{vp},word,noun,,101,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324904,10^7.[cfu],word,noun,,76,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324905,10^7.[cfu]/ml,word,noun,,77,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324906,10^7.[iu]/ml,word,noun,,78,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324907,10^7.[tcid50],word,noun,,102,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324908,10^7/kg,word,noun,,79,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324909,10^7/l,word,noun,,80,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324910,10^8.[cfu],word,noun,,81,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324911,10^8.[iu]/ml,word,noun,,82,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324912,10^8.[tcid_50]/{dose},word,noun,,83,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324913,10^9 cfu,phrase,noun,,84,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324914,10^9.[cfu],word,noun,,84,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324915,10^9.[iu]/ml,word,noun,,85,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324916,10^9/g,word,noun,,42,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324917,10^9/kg,word,noun,,44,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324918,10^9/l,word,noun,,43,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324919,10^9/ul,word,noun,,86,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324920,10^9{organisms},word,noun,,87,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324921,10e3 u,phrase,noun,,103,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324922,10e3/dl,word,noun,,61,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324923,10e3cfu,word,noun,,50,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324924,10e6 cfu,phrase,noun,,67,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324925,10e6 vp,phrase,noun,,101,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324926,10e6u,word,noun,,70,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324927,10e9/l,word,noun,,43,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324928,10th grade completion,phrase,noun,,104,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+324929,11 pairs of ribs,phrase,noun,,105,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+324930,11 thoracic vertebrae,phrase,noun,,106,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+494456,11 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.11,medical,ICD-10 (WHO 2019)
+324931,117-126:fgf-5 peptide,phrase,noun,,107,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+324932,11beta-hydroxy steroid,phrase,noun,,108,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+324933,11c topotecan,phrase,noun,,109,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324934,11c-gln,word,noun,,110,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324935,11c-meaib,word,noun,,111,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324936,11d10,word,noun,,112,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324937,11d10 alugel anti-idiotype monoclonal antibody,phrase,noun,,113,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324938,11p15.4 microduplication syndrome,phrase,noun,,114,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+324939,11th grade completion,phrase,noun,,115,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+494457,12 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.12,medical,ICD-10 (WHO 2019)
+324940,12-allyldeoxoartemisinin,word,noun,,116,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324941,12-core prostate biopsy,phrase,noun,,117,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+324942,12-lipoxygenase inhibitor vlx-1005,phrase,noun,,118,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324943,124i-cg250,word,noun,,119,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324944,125iudr,word,noun,,120,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+324945,12q14 microdeletion syndrome,phrase,noun,,121,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+324946,12q15q21.1 microdeletion syndrome,phrase,noun,,122,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+494458,13 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.13,medical,ICD-10 (WHO 2019)
+324947,13-cra/tmz,word,noun,,123,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324948,13-deoxydoxorubicin,word,noun,,124,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324949,131-iodine,word,noun,,125,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324950,131i-f16sip,word,noun,,126,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324951,131i-hucc49-deltach2,word,noun,,127,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324952,131i-ipa,word,noun,,128,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324953,131i-mabf19,word,noun,,129,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324954,131i-moab cc49-deltach2,phrase,noun,,127,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324955,1358f,word,noun,,130,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324956,13nh3,word,noun,,131,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324957,13q12.3 microdeletion syndrome,phrase,noun,,132,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+494459,14 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.14,medical,ICD-10 (WHO 2019)
+324958,14-n/15-n metabolic labeling quantification,phrase,noun,,133,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324959,14c bms-275183,phrase,noun,,134,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324960,14g2a,word,noun,,135,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324961,14q11.2 microduplication syndrome,phrase,noun,,136,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+324962,14q12 microdeletion syndrome,phrase,noun,,137,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+324963,14q32 duplication syndrome,phrase,noun,,138,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+324964,15 ml conical tube,phrase,noun,,139,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+494460,15 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.15,medical,ICD-10 (WHO 2019)
+324965,15o-o2,word,noun,,140,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324966,15o2,word,noun,,140,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324967,15q overgrowth syndrome,phrase,noun,,141,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+324968,15q11q13 microduplication syndrome,phrase,noun,,142,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+324969,15q14 microdeletion syndrome,phrase,noun,,143,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+494461,16 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.16,medical,ICD-10 (WHO 2019)
+324970,"16,16-dimethyl prostaglandin e2",phrase,noun,,144,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324971,16-23-d3,word,noun,,145,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324972,16p11.2p12.2 microduplication syndrome,phrase,noun,,146,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+324973,16p12.1p12.3 triplication syndrome,phrase,noun,,147,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+324974,16p13.11 microdeletion syndrome,phrase,noun,,148,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+324975,16p13.11 microduplication syndrome,phrase,noun,,149,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+324976,16q24.1 microdeletion syndrome,phrase,noun,,150,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+324977,16q24.3 microdeletion syndrome,phrase,noun,,151,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+494462,17 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.17,medical,ICD-10 (WHO 2019)
+324978,17-1a,word,noun,,152,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324979,17-aag,word,noun,,153,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324980,17-alpha-hydroxypregnenolone,word,noun,,154,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324981,17-beta hydroxysteroid dehydrogenase 3 deficiency,phrase,noun,,155,,,,,Disease,medicine,,,,medical,Disease Ontology
+324982,17-dmag,word,noun,,156,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324983,17q11.2 microduplication syndrome,phrase,noun,,157,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+324984,17q21 microdeletion syndrome,phrase,noun,,158,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+324985,17q24.2 microdeletion syndrome,phrase,noun,,159,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+324986,18 f-naf,phrase,noun,,160,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+494463,18 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.18,medical,ICD-10 (WHO 2019)
+324987,18-f-fluoroacetate,word,noun,,161,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+324988,186re,word,noun,,162,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324989,188re-hedp,word,noun,,163,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324990,18f-ah111585,word,noun,,164,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324991,18f-asis,word,noun,,165,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324992,18f-avb6-bp,word,noun,,166,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324993,18f-da,word,noun,,167,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324994,18f-dcfbc,word,noun,,168,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324995,18f-dopa,word,noun,,169,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324996,18f-fac,word,noun,,170,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324997,18f-faza,word,noun,,171,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324998,18f-fbntp,word,noun,,172,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+324999,18f-fdht,word,noun,,173,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325000,18f-fdopa,word,noun,,169,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325001,18f-fet,word,noun,,174,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325002,18f-fetrp,word,noun,,175,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325003,18f-fhbg,word,noun,,176,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325004,18f-fmau,word,noun,,177,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325005,18f-fmch,word,noun,,178,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325006,18f-fp-peg3-rgd2,word,noun,,179,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325007,18f-fp-prgd2,word,noun,,179,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325008,18f-fpm,word,noun,,180,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325009,18f-fpprgd2,word,noun,,179,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325010,18f-mefamp,word,noun,,181,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325011,18f-nos,word,noun,,182,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325012,18f-rhpsma 7.3 pet/ct scan,phrase,noun,,183,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+325013,18fdg,word,noun,,184,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325014,18fet,word,noun,,174,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325015,18p-,word,noun,,185,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+494464,19 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.19,medical,ICD-10 (WHO 2019)
+325016,19-nor-p,word,noun,,186,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325017,19-norprogesterone,word,noun,,186,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325018,19p13.12 microdeletion syndrome,phrase,noun,,187,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325019,19p13.3 microduplication syndrome,phrase,noun,,188,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325020,19q/19p chromosome deletion [number ratio] in tissue by fish,phrase,noun,,189,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+325021,1b4m-dtpa-conjugated mub3,phrase,noun,,190,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325022,1c1-mcmmaf,word,noun,,191,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325023,1h-pyrazol,word,noun,,192,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325024,1mh,word,noun,,38,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325025,1p/19q codeletion status,phrase,noun,,193,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+325026,1p/1q chromosome deletion [number ratio] in tissue by fish,phrase,noun,,194,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+325027,1p21.3 microdeletion syndrome,phrase,noun,,195,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325028,1p36 deletion syndrome,phrase,noun,,196,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325029,1q44 microdeletion syndrome,phrase,noun,,197,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325030,1rm,word,noun,,198,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325031,1st arch mandibular mesenchyme,phrase,noun,,199,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325032,1st arch mandibular mesenchyme from head mesenchyme,phrase,noun,,200,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325033,1st arch mandibular mesenchyme from neural crest,phrase,noun,,201,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325034,1st arch maxillary mesenchyme,phrase,noun,,202,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325035,1st arch maxillary mesenchyme from head mesenchyme,phrase,noun,,203,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325036,1st arch maxillary mesenchyme from neural crest,phrase,noun,,204,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325037,1st arch mesenchyme,phrase,noun,,205,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325038,1st arch mesenchyme from head mesenchyme,phrase,noun,,206,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325039,1st arch mesenchyme from neural crest,phrase,noun,,207,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325040,1st arch pharyngeal cleft,phrase,noun,,208,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325041,1st grade completion,phrase,noun,,209,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325042,2,word,noun,,210,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325043,2,word,noun,,211,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325044,2'-f-ara-deoxyuridine,word,noun,,212,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325045,2'-f-dd-araa,word,noun,,213,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325046,2'-fdda,word,noun,,213,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325047,2'ndg,word,noun,,214,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325048,"2,3,5-trimethacarb",word,noun,,215,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325049,"2,3-dibromopropanol",word,noun,,216,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325050,"2,4,6-trichlorophenol",word,noun,,217,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325051,"2,4,d/2,4,5,t",word,noun,,218,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325052,"2,4-daa sulphate",phrase,noun,,219,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325053,"2,4-diaminoanisole sulfate",phrase,noun,,219,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325054,"2,4-diaminotoluene",word,noun,,220,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325055,"2,4-dinitrophenyl allergic contact dermatitis",phrase,noun,,221,,,,,Disease,medicine,,,,medical,Disease Ontology
+325056,"2,6-diaminopurine",word,noun,,222,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+325057,"2,6-dimethyl-2-(3-ethylureido)-pyridine",word,noun,,17,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325058,"2,6-dimethyl-4-(3-ethylureido)-pyridine",word,noun,,17,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325059,"2,8-dihydroxyadenine crystalluria",phrase,noun,,223,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325060,"2-(2,6-dioxopiperidin-3-yl)-1h-isoindole-1,3(2h)-dione",word,noun,,224,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325061,2-(3-ethylureido)-pyridine,word,noun,,17,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325062,2--hydroxyphenylacetic aciduria,phrase,noun,,225,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325063,2-3 finger cutaneous syndactyly,phrase,noun,,226,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325064,2-3 toe syndactyly,phrase,noun,,227,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325065,2-3-layered lissencephaly,phrase,noun,,228,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325066,2-4 finger cutaneous syndactyly,phrase,noun,,229,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325067,2-4 toe cutaneous syndactyly,phrase,noun,,230,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325068,2-4 toe syndactyly,phrase,noun,,231,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325069,2-5 finger cutaneous syndactyly,phrase,noun,,232,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325070,2-5 toe syndactyly,phrase,noun,,233,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+438957,"2-[(3r)-2,6-dioxopiperidin-3-yl]-1h-isoindole-1,3(2h)-dione",word,noun,,234,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+438958,"2-[(3s)-2,6-dioxopiperidin-3-yl]-1h-isoindole-1,3(2h)-dione",word,noun,,235,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325071,2-aaf,word,noun,,236,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325072,2-acetylaminofluorene,word,noun,,236,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325073,"2-amino-1-methyl-6-phenylimidazo[4,5-b]pyridine",word,noun,,237,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325074,"2-amino-3,4-dimethylimidazole[4,5-f]quinoline",word,noun,,238,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325075,"2-amino-3-methylimidazo[4,5-f]quinoline",word,noun,,239,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325076,2-amino-3-methylpentanoic acid,phrase,noun,,240,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325077,2-aminoadipic 2-oxoadipic aciduria,phrase,noun,,241,,,,,Disease,medicine,,,,medical,Disease Ontology
+325078,2-aminoanthraquinone,word,noun,,242,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325079,"2-aminooctadec-4-ene-1,3-diol",word,noun,,243,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325080,"2-aminooctadecene-1,3-diol",word,noun,,244,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325081,2-cda,word,noun,,245,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325082,2-d shape,phrase,noun,,246,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325083,2-dacmpp,word,noun,,247,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325084,2-deoxy-d-glucose,word,noun,,248,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325085,2-dg,word,noun,,248,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325086,2-ethylhydracylic aciduria,phrase,noun,,249,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325087,2-ethylhydrazide,word,noun,,250,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325088,2-faa,word,noun,,236,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325089,2-fad,word,noun,,251,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325090,2-fluoroadenine,word,noun,,251,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325091,2-fluorofucose,word,noun,,252,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325092,2-fluoropropionyl-labeled pegylated dimeric rgd peptide,phrase,noun,,179,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325093,2-hg,word,noun,,253,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325094,2-hydroxy-5-methylquinone,word,noun,,254,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325095,2-hydroxyadipic aciduria,phrase,noun,,255,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325096,2-hydroxyethyl methacrylate,phrase,noun,,256,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325097,2-hydroxyflutamide depot,phrase,noun,,257,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325098,2-hydroxyglutarate aciduria,phrase,noun,,258,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325099,2-hydroxyglutaric aciduria,phrase,noun,,259,,,,,Disease,medicine,,,,medical,Disease Ontology
+325100,2-hydroxyglutaric aciduria,phrase,noun,,260,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325101,2-hydroxypropanoic acid,phrase,noun,,261,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325102,2-mee2,word,noun,,262,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325103,2-meoe2,word,noun,,262,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325104,2-methoxyestradiol,word,noun,,262,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325105,2-methylbutyryl glycinuria,phrase,noun,,263,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325106,2-methylbutyryl-coa dehydrogenase deficiency,phrase,noun,,264,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325107,2-methylhippuric acid,phrase,noun,,265,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325108,2-mha,word,noun,,265,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325109,2-naphthylamine,word,noun,,266,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325110,2-nitroanisole,word,noun,,267,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325111,2-nitropropane,word,noun,,268,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325112,2-np,word,noun,,268,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325113,2-oxido-5-methylquinone,word,noun,,269,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325114,2-oxo monocarboxylic acid,phrase,noun,,270,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325115,2-oxo monocarboxylic acid anion,phrase,noun,,271,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325116,2-oxoadipic aciduria,phrase,noun,,272,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+480210,2-part displaced fracture of surgical neck of left humerus,phrase,noun,,273,,,,,Diagnosis,medicine,,,ICD-10 S42.222,medical,ICD-10 (WHO 2019)
+480209,2-part displaced fracture of surgical neck of right humerus,phrase,noun,,273,,,,,Diagnosis,medicine,,,ICD-10 S42.221,medical,ICD-10 (WHO 2019)
+480211,2-part displaced fracture of surgical neck of unspecified humerus,phrase,noun,,273,,,,,Diagnosis,medicine,,,ICD-10 S42.223,medical,ICD-10 (WHO 2019)
+480208,2-part fracture of surgical neck of humerus,phrase,noun,,273,,,,,Diagnosis,medicine,,,ICD-10 S42.22,medical,ICD-10 (WHO 2019)
+480213,2-part nondisplaced fracture of surgical neck of left humerus,phrase,noun,,273,,,,,Diagnosis,medicine,,,ICD-10 S42.225,medical,ICD-10 (WHO 2019)
+480212,2-part nondisplaced fracture of surgical neck of right humerus,phrase,noun,,273,,,,,Diagnosis,medicine,,,ICD-10 S42.224,medical,ICD-10 (WHO 2019)
+480214,2-part nondisplaced fracture of surgical neck of unspecified humerus,phrase,noun,,273,,,,,Diagnosis,medicine,,,ICD-10 S42.226,medical,ICD-10 (WHO 2019)
+325117,2-pyranones,word,noun,,274,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325118,2-ring heterocyclic compound,phrase,noun,,275,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325119,2-saturated fatty acid anion,phrase,noun,,276,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+494466,20 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.20,medical,ICD-10 (WHO 2019)
+325120,20-methylcholanthrene,word,noun,,277,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325121,20-oxo steroid,phrase,noun,,278,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325122,2010 japanese modification of 2009 ckd-epi formula,phrase,noun,,279,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325123,2019-ncov,word,noun,,280,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325124,20p12.3 microdeletion syndrome,phrase,noun,,281,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325125,20p13 microdeletion syndrome,phrase,noun,,282,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325126,20q11.2 microdeletion syndrome,phrase,noun,,283,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325127,20q11.2 microduplication syndrome,phrase,noun,,284,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325128,20q13.33 microdeletion syndrome,phrase,noun,,285,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+494467,21 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.21,medical,ICD-10 (WHO 2019)
+325129,21-ohd,word,noun,,286,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+494468,22 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.22,medical,ICD-10 (WHO 2019)
+325130,22q telomere deletion syndrome,phrase,noun,,287,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325131,22q-related schwannomatosis,phrase,noun,,288,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325132,22q11.2 deletion syndrome,phrase,noun,,289,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325133,22q11.2 deletion syndrome,phrase,noun,,290,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325134,22q11.2ds,word,noun,,289,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+325135,22q11ds,word,noun,,289,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+494469,23 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.23,medical,ICD-10 (WHO 2019)
+438959,24 h urine for total protein,phrase,noun,,291,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+438960,24 hour urine protein,phrase,noun,,291,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+438961,24 hour urine protein test,phrase,noun,,291,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+494470,24 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.24,medical,ICD-10 (WHO 2019)
+325136,"24,25(oh)(2)d",word,noun,,292,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325137,"24,25(oh)2 d3",phrase,noun,,292,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325138,"24,25-dihydroxycholecalciferol",word,noun,,292,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325139,24-hour urine collection,phrase,noun,,291,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+438962,24-hour urine protein,phrase,noun,,291,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325140,24g7 epitope,phrase,noun,,293,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325141,24h ptu,phrase,noun,,291,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+494471,25 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.25,medical,ICD-10 (WHO 2019)
+325142,25-hydroxyvitamin d less than 30 ng/ml,phrase,noun,,294,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325143,25-hydroxyvitamin d less than 32 ng/ml,phrase,noun,,295,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325144,25-hydroxyvitamin d less than 66 ng/ml,phrase,noun,,296,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+494472,26 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.26,medical,ICD-10 (WHO 2019)
+494473,27 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.27,medical,ICD-10 (WHO 2019)
+325145,27-35(27l):mart-1 peptide,phrase,noun,,297,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+494474,28 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.28,medical,ICD-10 (WHO 2019)
+494475,29 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.29,medical,ICD-10 (WHO 2019)
+325146,2:1 atrioventricular block,phrase,noun,,298,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325147,2b1,word,noun,,299,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325148,2c4,word,noun,,300,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325149,2cda,word,noun,,245,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325150,2d patient compensator,phrase,noun,,301,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325151,2g-1 tcr retroviral vector-transduced lymphocytes,phrase,noun,,302,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325152,2hg,word,noun,,253,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325153,2me2,word,noun,,262,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325154,2morrow,word,noun,,303,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325155,2morrow smoking and tobacco cessation program,phrase,noun,,303,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+325156,2nd arch ectoderm,phrase,noun,,304,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325157,2nd arch endoderm,phrase,noun,,305,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325158,2nd arch mesenchyme,phrase,noun,,306,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325159,2nd arch mesenchyme from head mesenchyme,phrase,noun,,307,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325160,2nd arch mesenchyme from neural crest,phrase,noun,,308,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325161,2nd arch pharyngeal cleft,phrase,noun,,309,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325162,2nd grade completion,phrase,noun,,310,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325163,2p13.2 microdeletion syndrome,phrase,noun,,311,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325164,2p21 microdeletion syndrome,phrase,noun,,312,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325165,2p21 microdeletion syndrome without cystinuria,phrase,noun,,313,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325166,2q23.1 microdeletion syndrome,phrase,noun,,314,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325167,2q23.1 microduplication syndrome,phrase,noun,,315,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325168,2q24 microdeletion syndrome,phrase,noun,,316,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325169,2q31.1 microdeletion syndrome,phrase,noun,,317,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325170,2q33.1 microdeletion syndrome,phrase,noun,,318,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325171,2q37 microdeletion syndrome,phrase,noun,,319,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325172,2w-vdc-mesna+ifo-gcsf treatment arm of aews0031,phrase,noun,,320,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+325173,2x-121 drp,phrase,noun,,321,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325174,3'-c-ethynylcytidine,word,noun,,322,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325175,3'-da phosphoramidate nuc-7738,phrase,noun,,323,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325176,3'-fddg,word,noun,,324,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325177,3'-val-l-dc,word,noun,,325,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325178,"3,3-dichlorobenzidine",word,noun,,326,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325179,"3,4-dap",word,noun,,327,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325180,"3,4-dhpea",word,noun,,328,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325181,"3,4-methylenedioxy-n-ethylamphetamine measurement",phrase,noun,,329,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325182,"3,4-methylenedioxyamphetamine measurement",phrase,noun,,330,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325183,"3,4-methylenedioxymethamphetamine",word,noun,,331,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325184,"3,5-dihydroxy-3-methylpentanoate",word,noun,,332,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325185,"3,5-dihydroxy-3-methylpentanoic acid",phrase,noun,,333,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325186,"3,5-xylyl methylcarbamate",phrase,noun,,334,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325187,3-4 finger cutaneous syndactyly,phrase,noun,,335,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325188,3-4 finger osseus syndactyly,phrase,noun,,336,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325189,3-4 metacarpal synostosis,phrase,noun,,337,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325190,3-4 toe cutaneous syndactyly,phrase,noun,,338,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325191,3-4 toe syndactyly,phrase,noun,,339,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325192,3-5 finger cutaneous syndactyly,phrase,noun,,340,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325193,3-5 finger syndactyly,phrase,noun,,341,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325194,3-5 toe syndactyly,phrase,noun,,342,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325195,3-6 weeks after start of radiation therapy,phrase,noun,,343,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+438963,"3-[(2r)-2,4-dihydroxy-3,3-dimethylbutanamido]propanoate",word,noun,,344,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+438964,"3-[(2r)-2,4-dihydroxy-3,3-dimethylbutanamido]propanoic acid",phrase,noun,,345,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325196,3-aminoisobutyric acid,phrase,noun,,346,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325197,3-ap,word,noun,,347,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325198,3-apct,word,noun,,347,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325199,3-bromopyruvate-based agent kat-101,phrase,noun,,348,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325200,3-chloro-2-methylpropene,word,noun,,349,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325201,3-d shape,phrase,noun,,350,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325202,3-deazauridine,word,noun,,351,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325203,3-dimensional conformal accelerated partial breast irradiation,phrase,noun,,352,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+325204,3-dimensional conformal radiation therapy,phrase,noun,,353,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325205,3-dimensional medical modeling,phrase,noun,,354,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+325206,3-dimensional t1-weighted magnetic resonance imaging,phrase,noun,,355,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+325207,3-dimensional ultrasound mode,phrase,noun,,356,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+325208,3-hydroxy carboxylic acid,phrase,noun,,357,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325209,3-hydroxy monocarboxylic acid,phrase,noun,,358,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325210,3-hydroxy steroid,phrase,noun,,359,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325211,3-hydroxy-3-methylglutaric aciduria,phrase,noun,,360,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325212,3-hydroxy-3-methylglutaryl-coa lyase deficiency,phrase,noun,,361,,,,,Disease,medicine,,,,medical,Disease Ontology
+325213,3-hydroxy-3-methylglutaryl-coa synthase deficiency,phrase,noun,,362,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325214,3-hydroxydicarboxylic aciduria,phrase,noun,,363,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325215,3-hydroxyisobutryl-coa hydrolase deficiency,phrase,noun,,364,,,,,Disease,medicine,,,,medical,Disease Ontology
+325216,3-hydroxyisobutyric aciduria,phrase,noun,,365,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325217,3-hydroxyisobutyryl-coa hydrolase deficiency,phrase,noun,,366,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325218,3-hydroxyisovaleric aciduria,phrase,noun,,367,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325219,3-hydroxysteroid dehydrogenase inhibitor,phrase,noun,,368,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325220,3-m syndrome,phrase,noun,,369,,,,,Disease,medicine,,,,medical,Disease Ontology
+325221,3-m syndrome,phrase,noun,,370,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325222,3-methyl fatty acid anion,phrase,noun,,371,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325223,3-methylcrotonyl-coa carboxylase 1 deficiency,phrase,noun,,372,,,,,Disease,medicine,,,,medical,Disease Ontology
+325224,3-methylcrotonyl-coa carboxylase 1 deficiency,phrase,noun,,373,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325225,3-methylcrotonyl-coa carboxylase 2 deficiency,phrase,noun,,374,,,,,Disease,medicine,,,,medical,Disease Ontology
+325226,3-methylcrotonyl-coa carboxylase 2 deficiency,phrase,noun,,375,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325227,3-methylcrotonyl-coa carboxylase deficiency,phrase,noun,,376,,,,,Disease,medicine,,,,medical,Disease Ontology
+325228,3-methylcrotonyl-coa carboxylase deficiency,phrase,noun,,377,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325229,3-methylglutaconic aciduria,phrase,noun,,378,,,,,Disease,medicine,,,ICD-10 E71.111,medical,Disease Ontology
+325230,3-methylglutaconic aciduria,phrase,noun,,379,,,,,Sign / symptom / phenotype,medicine,,,ICD-10 E71.111,medical,Human Phenotype Ontology
+325231,3-methylglutaconic aciduria,phrase,noun,,380,,,,,Disease,medicine,,,ICD-10 E71.111,medical,MONDO (diseases)
+325232,3-methylglutaconic aciduria type 1,phrase,noun,,381,,,,,Disease,medicine,,,,medical,Disease Ontology
+325233,3-methylglutaconic aciduria type 1,phrase,noun,,382,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325234,3-methylglutaconic aciduria type 3,phrase,noun,,383,,,,,Disease,medicine,,,,medical,Disease Ontology
+325235,3-methylglutaconic aciduria type 3,phrase,noun,,384,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325236,3-methylglutaconic aciduria type 4,phrase,noun,,385,,,,,Disease,medicine,,,,medical,Disease Ontology
+325237,3-methylglutaconic aciduria type 4,phrase,noun,,386,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325238,3-methylglutaconic aciduria type 5,phrase,noun,,387,,,,,Disease,medicine,,,,medical,Disease Ontology
+325239,3-methylglutaconic aciduria type 5,phrase,noun,,388,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325240,3-methylglutaconic aciduria type 7,phrase,noun,,389,,,,,Disease,medicine,,,,medical,Disease Ontology
+325241,3-methylglutaconic aciduria type 7a,phrase,noun,,390,,,,,Disease,medicine,,,,medical,Disease Ontology
+325242,3-methylglutaconic aciduria type 7b,phrase,noun,,391,,,,,Disease,medicine,,,,medical,Disease Ontology
+325243,3-methylglutaconic aciduria type 8,phrase,noun,,392,,,,,Disease,medicine,,,,medical,Disease Ontology
+325244,3-methylglutaconic aciduria type 9,phrase,noun,,393,,,,,Disease,medicine,,,,medical,Disease Ontology
+325245,"3-methylglutaconic aciduria with deafness, encephalopathy, and leigh-like syndrome",phrase,noun,,394,,,,,Disease,medicine,,,,medical,Disease Ontology
+325246,"3-methylglutaconic aciduria with deafness, encephalopathy, and leigh-like syndrome",phrase,noun,,395,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325247,3-methylglutaric aciduria,phrase,noun,,396,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325248,3-methylhippuric acid,phrase,noun,,397,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325249,3-mha,word,noun,,397,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325250,3-nitrotyrosine,word,noun,,398,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325251,3-nt,word,noun,,398,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325252,3-oxo steroid,phrase,noun,,399,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325253,3-oxo-delta(4) steroid,phrase,noun,,400,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325254,3-oxo-delta(4)-steroid group,phrase,noun,,401,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+480215,3-part fracture of surgical neck of humerus,phrase,noun,,273,,,,,Diagnosis,medicine,,,ICD-10 S42.23,medical,ICD-10 (WHO 2019)
+480217,3-part fracture of surgical neck of left humerus,phrase,noun,,273,,,,,Diagnosis,medicine,,,ICD-10 S42.232,medical,ICD-10 (WHO 2019)
+480216,3-part fracture of surgical neck of right humerus,phrase,noun,,273,,,,,Diagnosis,medicine,,,ICD-10 S42.231,medical,ICD-10 (WHO 2019)
+480218,3-part fracture of surgical neck of unspecified humerus,phrase,noun,,273,,,,,Diagnosis,medicine,,,ICD-10 S42.239,medical,ICD-10 (WHO 2019)
+325255,30 day prior medications,phrase,noun,,402,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+494477,30 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.30,medical,ICD-10 (WHO 2019)
+325256,31,word,noun,,403,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+494478,31 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.31,medical,ICD-10 (WHO 2019)
+494479,32 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.32,medical,ICD-10 (WHO 2019)
+325257,33,word,noun,,404,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+494480,33 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.33,medical,ICD-10 (WHO 2019)
+325258,34,word,noun,,405,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+494481,34 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.34,medical,ICD-10 (WHO 2019)
+325259,35,word,noun,,406,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+494482,35 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.35,medical,ICD-10 (WHO 2019)
+494483,36 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.36,medical,ICD-10 (WHO 2019)
+325260,360 nm-cone,phrase,noun,,407,,,,,Cell type,biology,,,,medical,Cell Ontology
+325261,3622w94,word,noun,,408,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+494484,37 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.37,medical,ICD-10 (WHO 2019)
+494485,38 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.38,medical,ICD-10 (WHO 2019)
+325262,39,word,noun,,409,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+494486,39 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.39,medical,ICD-10 (WHO 2019)
+325263,3alpha-diol g,phrase,noun,,410,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325264,3alpha-diol-g,word,noun,,410,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325265,3alpha-hydroxy steroid,phrase,noun,,411,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325266,3beta-hydroxy steroid,phrase,noun,,412,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325267,3beta-hydroxy-delta(5)-steroid,word,noun,,413,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325268,3beta-sterol,word,noun,,414,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325269,3d facial analysis,phrase,noun,,415,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325270,3d-crt,word,noun,,353,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325271,3f8,word,noun,,416,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325272,3h-dt-li,word,noun,,417,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325273,3h-thymidine labeling index,phrase,noun,,417,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325274,3h1 aluminum hydroxide-precipitated anti-idiotype monoclonal antibody,phrase,noun,,418,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325275,3m syndrome 1,phrase,noun,,419,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325276,3m syndrome 2,phrase,noun,,420,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325277,3m syndrome 3,phrase,noun,,421,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325278,3mc syndrome,phrase,noun,,422,,,,,Disease,medicine,,,,medical,Disease Ontology
+325279,3mc syndrome,phrase,noun,,423,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325280,3mc syndrome 1,phrase,noun,,424,,,,,Disease,medicine,,,,medical,Disease Ontology
+325281,3mc syndrome 1,phrase,noun,,425,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325282,3mc syndrome 2,phrase,noun,,426,,,,,Disease,medicine,,,,medical,Disease Ontology
+325283,3mc syndrome 2,phrase,noun,,427,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325284,3mc syndrome 3,phrase,noun,,428,,,,,Disease,medicine,,,,medical,Disease Ontology
+325285,3mc syndrome 3,phrase,noun,,429,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325286,3p deletion syndrome,phrase,noun,,430,,,,,Disease,medicine,,,,medical,Disease Ontology
+325287,3p- syndrome,phrase,noun,,431,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325288,3p25.3 microdeletion syndrome,phrase,noun,,432,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325289,3q abnormality,phrase,noun,,433,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+325290,3q26 microduplication syndrome,phrase,noun,,434,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325291,3q27.3 microdeletion syndrome,phrase,noun,,435,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325292,3rd arch ectoderm,phrase,noun,,436,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325293,3rd arch endoderm,phrase,noun,,437,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325294,3rd arch mesenchyme,phrase,noun,,438,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325295,3rd arch mesenchyme from head mesenchyme,phrase,noun,,439,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325296,3rd arch mesenchyme from neural crest,phrase,noun,,440,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325297,3rd arch pharyngeal cleft,phrase,noun,,441,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325298,3rd grade completion,phrase,noun,,442,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325299,3tc,word,noun,,443,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325300,3w-vdc-mesna+ifo-gcsf treatment arm of aews0031,phrase,noun,,444,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+325301,4 stair ascend functional test question,phrase,noun,,445,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325302,4 stair descend functional test question,phrase,noun,,446,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325303,4'-hpp,word,noun,,447,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325304,4'-iodo-4'-deoxydoxorubicin,word,noun,,448,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325305,"4,4'-bipyridine",word,noun,,449,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325306,4-(3-ethylureido)-cytosine,word,noun,,17,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325307,4-5 finger cutaneous syndactyly,phrase,noun,,450,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325308,4-5 toe cutaneous syndactyly,phrase,noun,,451,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325309,4-5 toe syndactyly,phrase,noun,,452,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325310,4-amino-3-hydroxybutanoate,word,noun,,453,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325311,4-aminophenol,word,noun,,454,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+449290,4-aminophenol derivatives,phrase,noun,,455,,,,,Diagnosis,medicine,,,ICD-10 Y45.5,medical,ICD-10 (WHO 2019)
+325312,4-beta-hydroxycholesterol to total cholesterol ratio measurement,phrase,noun,,456,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325313,4-chloro-ortho-phenylenediamine,word,noun,,457,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325314,4-cl-kyn,word,noun,,458,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325315,4-dimensional conformal radiation therapy,phrase,noun,,459,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325316,4-dimensional magnetic resonance imaging,phrase,noun,,460,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325317,4-dmdr,word,noun,,461,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325318,4-hpb,word,noun,,462,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325319,4-hpr,word,noun,,463,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325320,4-hydroxy-1-(3-pyridyl)-1-butanone,word,noun,,462,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325321,4-hydroxy-4-methyloxan-2-one,word,noun,,464,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325322,4-hydroxyestradiol,word,noun,,465,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325323,4-hydroxyestrone,word,noun,,466,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325324,4-hydroxyphenylacetic aciduria,phrase,noun,,467,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325325,4-hydroxyphenyllactic aciduria,phrase,noun,,468,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325326,4-hydroxyphenylpyruvate dioxygenase inhibitor therapy,phrase,noun,,469,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325327,4-hydroxyphenylpyruvic aciduria,phrase,noun,,470,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325328,4-layered lissencephaly,phrase,noun,,471,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325329,4-methyl-2-(3-ethylureido)-pyridine,word,noun,,472,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325330,4-methylhippuric acid,phrase,noun,,473,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325331,4-mha,word,noun,,473,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325332,4-nitroestrone 3-methyl ether,phrase,noun,,474,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325333,4-nitropyrene,word,noun,,475,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325334,4-nitroquinoline-1-oxide,word,noun,,476,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325335,4-oha,word,noun,,477,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325336,4-ohad,word,noun,,477,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325337,4-ohe(1),word,noun,,466,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325338,4-ohe1,word,noun,,466,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325339,4-ohe2,word,noun,,465,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325340,4-oht,word,noun,,478,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+480219,4-part fracture of surgical neck of humerus,phrase,noun,,273,,,,,Diagnosis,medicine,,,ICD-10 S42.24,medical,ICD-10 (WHO 2019)
+480221,4-part fracture of surgical neck of left humerus,phrase,noun,,273,,,,,Diagnosis,medicine,,,ICD-10 S42.242,medical,ICD-10 (WHO 2019)
+480220,4-part fracture of surgical neck of right humerus,phrase,noun,,273,,,,,Diagnosis,medicine,,,ICD-10 S42.241,medical,ICD-10 (WHO 2019)
+480222,4-part fracture of surgical neck of unspecified humerus,phrase,noun,,273,,,,,Diagnosis,medicine,,,ICD-10 S42.249,medical,ICD-10 (WHO 2019)
+325341,4-peptide melanoma vaccine,phrase,noun,,479,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325342,4-stair ascend - test grade,phrase,noun,,480,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325343,4-stair ascend - time to do 4-stair ascend,phrase,noun,,481,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325344,4-stair ascend - was 4-stair ascend performed,phrase,noun,,482,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325345,4-stair ascend - wear orthoses,phrase,noun,,483,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325346,4-stair descend - test grade,phrase,noun,,484,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325347,4-stair descend - time to do 4-stair descend,phrase,noun,,485,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325348,4-stair descend - was 4-stair descend performed,phrase,noun,,486,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325349,4-stair descend - wear orthoses,phrase,noun,,487,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325350,4-tert-butylphenol allergic contact dermatitis,phrase,noun,,488,,,,,Disease,medicine,,,,medical,Disease Ontology
+325351,4-thio-arac,word,noun,,489,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325352,4-vinyl-1-cyclohexene diepoxide,phrase,noun,,490,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325353,4-vinylcyclohexene dioxide respiratory allergy,phrase,noun,,491,,,,,Disease,medicine,,,,medical,Disease Ontology
+325354,40,word,noun,,492,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+494488,40 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.40,medical,ICD-10 (WHO 2019)
+494489,41 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.41,medical,ICD-10 (WHO 2019)
+325355,42,word,noun,,493,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+494490,42 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.42,medical,ICD-10 (WHO 2019)
+325356,43,word,noun,,494,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325357,44,word,noun,,495,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325358,45,word,noun,,496,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325359,"45,x/46,xy mixed gonadal dysgenesis",phrase,noun,,497,,,,,Disease,medicine,,,,medical,Disease Ontology
+325360,"45,x/46,xy mixed gonadal dysgenesis",phrase,noun,,498,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325361,"45,xo",word,noun,,499,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325362,"45,xo karyotype",phrase,noun,,499,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325363,45xo,word,noun,,499,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325364,46 xx gonadal dysgenesis,phrase,noun,,500,,,,,Disease,medicine,,,,medical,Disease Ontology
+325365,46 xx gonadal dysgenesis,phrase,noun,,501,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325366,46 xy differences of sex development,phrase,noun,,502,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+476482,"46, xx true hermaphrodite",phrase,noun,,503,,,,,Diagnosis,medicine,,,ICD-10 Q99.1,medical,ICD-10 (WHO 2019)
+325367,"46,xx disorder of sex development",phrase,noun,,504,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325368,"46,xx disorder of sex development-anorectal anomalies syndrome",phrase,noun,,505,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325369,"46,xx ovotesticular difference of sex development",phrase,noun,,506,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+325370,"46,xx ovotesticular disorder of sex development",phrase,noun,,507,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325371,"46,xx sex reversal",phrase,noun,,508,,,,,Disease,medicine,,,,medical,Disease Ontology
+325372,"46,xx sex reversal 1",phrase,noun,,509,,,,,Disease,medicine,,,,medical,Disease Ontology
+325373,"46,xx sex reversal 2",phrase,noun,,510,,,,,Disease,medicine,,,,medical,Disease Ontology
+325374,"46,xx sex reversal 3",phrase,noun,,511,,,,,Disease,medicine,,,,medical,Disease Ontology
+325375,"46,xx sex reversal 4",phrase,noun,,512,,,,,Disease,medicine,,,,medical,Disease Ontology
+325376,"46,xx sex reversal 5",phrase,noun,,513,,,,,Disease,medicine,,,,medical,Disease Ontology
+325377,"46,xx testicular disorder of sex development",phrase,noun,,514,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+446241,"46,xx true hermaphrodite",phrase,noun,,515,,,,,Diagnosis,medicine,,,ICD-10 Q99.1,medical,ICD-10 (WHO 2019)
+325378,"46,xy complete gonadal dysgenesis",phrase,noun,,516,,,,,Disease,medicine,,,,medical,Disease Ontology
+325379,"46,xy complete gonadal dysgenesis",phrase,noun,,517,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325380,"46,xy disorder of androgen action",phrase,noun,,518,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+325381,"46,xy disorder of sex development due to 17-beta-hydroxysteroid dehydrogenase 3 deficiency",phrase,noun,,519,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325382,"46,xy disorder of sex development due to 5-alpha-reductase 2 deficiency",phrase,noun,,520,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325383,"46,xy gonadal dysgenesis with minifascicular neuropathy",phrase,noun,,521,,,,,Disease,medicine,,,,medical,Disease Ontology
+325384,"46,xy ovotesticular differences of sex development",phrase,noun,,522,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+325385,"46,xy ovotesticular disorder of sex development",phrase,noun,,523,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325386,"46,xy partial gonadal dysgenesis",phrase,noun,,524,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325387,"46,xy sex reversal 1",phrase,noun,,525,,,,,Disease,medicine,,,,medical,Disease Ontology
+325388,"46,xy sex reversal 10",phrase,noun,,526,,,,,Disease,medicine,,,,medical,Disease Ontology
+325389,"46,xy sex reversal 11",phrase,noun,,527,,,,,Disease,medicine,,,,medical,Disease Ontology
+325390,"46,xy sex reversal 11",phrase,noun,,528,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325391,"46,xy sex reversal 2",phrase,noun,,529,,,,,Disease,medicine,,,,medical,Disease Ontology
+325392,"46,xy sex reversal 3",phrase,noun,,530,,,,,Disease,medicine,,,,medical,Disease Ontology
+325393,"46,xy sex reversal 4",phrase,noun,,531,,,,,Disease,medicine,,,,medical,Disease Ontology
+325394,"46,xy sex reversal 4",phrase,noun,,532,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325395,"46,xy sex reversal 5",phrase,noun,,533,,,,,Disease,medicine,,,,medical,Disease Ontology
+325396,"46,xy sex reversal 6",phrase,noun,,534,,,,,Disease,medicine,,,,medical,Disease Ontology
+325397,"46,xy sex reversal 7",phrase,noun,,535,,,,,Disease,medicine,,,,medical,Disease Ontology
+325398,"46,xy sex reversal 8",phrase,noun,,536,,,,,Disease,medicine,,,,medical,Disease Ontology
+325399,"46,xy sex reversal 9",phrase,noun,,537,,,,,Disease,medicine,,,,medical,Disease Ontology
+325400,"47,xxx",word,noun,,538,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+325401,"47,xxx",word,noun,,539,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325402,"47,xxx karyotype",phrase,noun,,539,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325403,"47,xxy",word,noun,,540,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325404,"47,xxy karyotype",phrase,noun,,540,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325405,"47,xyy",word,noun,,541,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,MONDO (diseases)
+325406,"47,xyy syndrome",phrase,noun,,541,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325407,47599,word,noun,,542,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325408,47xxx,word,noun,,539,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325409,47xxy,word,noun,,540,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325410,"48,xxxy syndrome",phrase,noun,,543,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325411,"48,xxyy syndrome",phrase,noun,,544,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325412,"48,xyyy syndrome",phrase,noun,,545,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325413,"49,xxxxy syndrome",phrase,noun,,546,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325414,"49,xxxyy syndrome",phrase,noun,,547,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325415,"49,xyyyy syndrome",phrase,noun,,548,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325416,4a's treatment protocol,phrase,noun,,549,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325417,4d pet scan,phrase,noun,,550,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325418,4h11-28z/fil-12/egfrt-expressing autologous t-lymphocytes,phrase,noun,,551,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325419,4k,word,noun,,552,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325420,4kscore,word,noun,,552,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325421,4ohe2,word,noun,,465,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325422,4p16.3 chromosome deletion in blood or tissue by fish,phrase,noun,,553,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+325423,4p16.3 microduplication syndrome,phrase,noun,,554,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325424,4th arch ectoderm,phrase,noun,,555,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325425,4th arch endoderm,phrase,noun,,556,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325426,4th arch mesenchyme,phrase,noun,,557,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325427,4th arch mesenchyme from head mesenchyme,phrase,noun,,558,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325428,4th arch mesenchyme from neural crest,phrase,noun,,559,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325429,4th arch pharyngeal cleft,phrase,noun,,560,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325430,4th grade completion,phrase,noun,,561,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325431,5 alpha steroid reductase 2 deficiency,phrase,noun,,562,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325432,5 fu,phrase,noun,,563,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325433,5' 10' methylenetetrahydrofolate reductase deficiency,phrase,noun,,564,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325434,5' nucleotidase family,phrase,noun,,565,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325435,5'-ctp,word,noun,,566,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325436,5'-n'tase,word,noun,,565,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325437,5'-nt,word,noun,,565,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325438,5'-ntase,word,noun,,565,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325439,5'-nucleotidase,word,noun,,567,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325440,5'-nucleotidase measurement,phrase,noun,,568,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325441,5'-nucleotidase measurement for liver function,phrase,noun,,569,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325442,"5,6-mexxaa",word,noun,,570,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325443,5-10,word,noun,,571,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325444,5-[18f]fluorouracil,word,noun,,572,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325445,5-asa,word,noun,,573,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325446,5-azacitidine/gemcitabine regimen,phrase,noun,,574,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325447,5-dfur,word,noun,,575,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325448,5-fc,word,noun,,576,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325449,5-fitc-labeled colon-heptapeptide,phrase,noun,,577,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325450,5-fluoro pb-22 3-carboxyindole measurement,phrase,noun,,578,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325451,5-fluoro-2-deoxycytidine,word,noun,,579,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325452,5-fluorouracil exposure,phrase,noun,,580,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325453,5-fluorouracil poisoning,phrase,noun,,581,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325454,5-fluracil,word,noun,,563,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325455,5-fu,word,noun,,563,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325456,5-fu/hu,word,noun,,582,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325457,5-fu/l-pam/tmx,word,noun,,583,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325458,5-fu/lev,word,noun,,584,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325459,5-fu/meccnu/szc/vcr,word,noun,,585,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325460,5-fu/mito/szc,word,noun,,586,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325461,5-hp,word,noun,,587,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325462,5-ht3 receptor antagonist,phrase,noun,,588,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325463,5-htp,word,noun,,589,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325464,5-hydroxyindoleacetic acid to creatinine ratio measurement,phrase,noun,,590,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325465,5-hydroxylysine,word,noun,,591,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325466,5-hydroxypicolinaldehyde thiosemicarbazone,phrase,noun,,587,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325467,5-iodouracil,word,noun,,592,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325468,5-methyl-4-(3-ethylureido)-cytosine,word,noun,,593,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325469,5-mthf,word,noun,,594,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325470,5-oxoprolinase deficiency,phrase,noun,,595,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325471,50 ml polypropylene tube,phrase,noun,,596,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325472,50 percent cell culture infective dose,phrase,noun,,597,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325473,50 percent embryo infective dose,phrase,noun,,598,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325474,50 percent neutralization endpoint titer,phrase,noun,,599,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325475,50 percent tissue culture infective dose per dose,phrase,noun,,600,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+325476,505(b)(2) nda,phrase,noun,,601,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325477,505(b)(2) new drug application,phrase,noun,,601,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325478,51,word,noun,,602,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325479,510 nm-cone,phrase,noun,,603,,,,,Cell type,biology,,,,medical,Cell Ontology
+325480,52,word,noun,,604,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325481,54,word,noun,,605,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325482,56,word,noun,,606,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325483,58,word,noun,,607,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325484,59,word,noun,,608,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325485,593a,word,noun,,609,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325486,5a-reductase inhibition,phrase,noun,,610,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325487,5beta steroid,phrase,noun,,611,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325488,5beta-cholanic acids,phrase,noun,,612,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325489,5fu,word,noun,,563,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325490,5fu/lv,word,noun,,613,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325491,5q-,word,noun,,614,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325492,5q14.3 microdeletion syndrome,phrase,noun,,615,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325493,5q35 microduplication syndrome,phrase,noun,,616,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325494,5th arch mesenchyme,phrase,noun,,617,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325495,5th grade completion,phrase,noun,,618,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325496,6,word,noun,,619,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325497,6 melanoma helper peptide vaccine,phrase,noun,,620,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325498,6 minute walk functional test,phrase,noun,,621,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325499,6-(3-ethylureido)-uridine,word,noun,,622,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325500,6-aminonicotinamide,word,noun,,623,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325501,6-aminopenicillanic acid,phrase,noun,,624,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325502,6-aminopenicillanic acid zwitterion,phrase,noun,,625,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325503,6-an,word,noun,,623,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325504,6-azauridine,word,noun,,626,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325505,"6-channel balloon repositioning, multichannel applicator",phrase,noun,,627,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+325506,6-item orientation-memory-concentration test,phrase,noun,,628,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325507,6-mercaptopurine exposure,phrase,noun,,629,,,,,Sign / symptom / phenotype,medicine,,,,medical,Human Phenotype Ontology
+325508,6-mmpr,word,noun,,630,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325509,6-mp,word,noun,,631,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325510,6-nc,word,noun,,632,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325511,6-nitrochrysene,word,noun,,632,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325512,6-ohda,word,noun,,633,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325513,6-sulfatoxymelatonin,word,noun,,634,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325514,6-tg,word,noun,,635,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325515,"60,xx/90,xxy disorder of sexual development, cattle",phrase,noun,,636,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325516,62cu-ets,word,noun,,637,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325517,64cu-llp2a,word,noun,,638,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325518,66,word,noun,,639,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325519,66 kda phosphoprotein antibody positive,phrase,noun,,640,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325520,68,word,noun,,641,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325521,68ga-ff58,word,noun,,642,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325522,68ga-neb,word,noun,,643,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325523,68ga-rm2,word,noun,,644,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325524,68ga-sgc8,word,noun,,173,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325525,69,word,noun,,645,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325526,6a3-igg4,word,noun,,646,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325527,6alpha-methyl-11-oxoprogesterone,word,noun,,647,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+325528,6cit,word,noun,,648,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325529,6mhp,word,noun,,620,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325530,6mwt,word,noun,,621,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325531,6mwt - distance at 1 minute,phrase,noun,,649,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325532,6mwt - distance at 2 minutes,phrase,noun,,650,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325533,6mwt - distance at 3 minutes,phrase,noun,,651,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325534,6mwt - distance at 4 minutes,phrase,noun,,652,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325535,6mwt - distance at 5 minutes,phrase,noun,,653,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325536,6mwt - distance at 6 minutes,phrase,noun,,654,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325537,6mwt functional test question,phrase,noun,,655,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325538,6p22 microdeletion syndrome,phrase,noun,,656,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325539,6q terminal deletion syndrome,phrase,noun,,657,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325540,6q16 deletion syndrome,phrase,noun,,658,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325541,6th arch mesenchyme,phrase,noun,,659,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325542,6th arch mesenchyme from head mesenchyme,phrase,noun,,660,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325543,6th arch mesenchyme from neural crest,phrase,noun,,661,,,,,Anatomy,anatomy,,,,medical,Uberon (anatomy)
+325544,6th grade completion,phrase,noun,,662,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325545,"7,8-dimethylisoalloxazine",word,noun,,663,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325546,7-cyanoquinocarcinol,word,noun,,664,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325547,7-hydroxy steroid,phrase,noun,,665,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325548,7-hydroxystaurosporine,word,noun,,666,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325549,7-omen,word,noun,,667,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325550,70-kd heat-shock protein/muc-1 antigen,phrase,noun,,668,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325551,714-x,word,noun,,669,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325552,73,word,noun,,670,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325553,74,word,noun,,671,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325554,765igf-mtx,word,noun,,672,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325555,773u82,word,noun,,673,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325556,786-0,word,noun,,674,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325557,7alpha-hydroxy steroid,phrase,noun,,675,,,,,Procedure / medical action,medicine,,,,medical,Medical Action Ontology
+325558,7p22.1 microduplication syndrome,phrase,noun,,676,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325559,7q11.23 duplication syndrome,phrase,noun,,677,,,,,Disease,medicine,,,,medical,Disease Ontology
+325560,7q11.23 microduplication syndrome,phrase,noun,,678,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325561,7th grade completion,phrase,noun,,679,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325562,8 ag,phrase,noun,,680,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+494452,8 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.08,medical,ICD-10 (WHO 2019)
+325563,8-azaguanine,word,noun,,680,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325564,8-chloroadenosine,word,noun,,681,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325565,8-cl-ado,word,noun,,681,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325566,8-cl-camp,word,noun,,682,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325567,8-core prostate biopsy,phrase,noun,,683,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+325568,8-hydroxy-2'-deoxyguanosine,word,noun,,684,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325569,8-hydroxy-2'-deoxyguanosine measurement,phrase,noun,,685,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325570,8-iso prostaglandin f2alpha,phrase,noun,,686,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325571,8-meiqx,word,noun,,687,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325572,8-methyl-iqx,word,noun,,687,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325573,8-ohdg,word,noun,,684,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325574,8-oxo-dg,word,noun,,684,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325575,8-oxo-dg,word,noun,,685,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325576,8-oxo-gua,word,noun,,688,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325577,8-oxoguanine,word,noun,,688,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325578,89zr-mmot,word,noun,,689,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325579,8og,word,noun,,688,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325580,8p inverted duplication/deletion syndrome,phrase,noun,,690,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+438965,8p11 stem cell lymphoma/leukemia syndrome,phrase,noun,,691,,,,,Disease,medicine,,,,medical,NCI Thesaurus
+325581,8p11.2 deletion syndrome,phrase,noun,,692,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325582,8p23.1 duplication syndrome,phrase,noun,,693,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325583,8p23.1 microdeletion syndrome,phrase,noun,,694,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325584,8q12 microduplication syndrome,phrase,noun,,695,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325585,8q22.1 microdeletion syndrome,phrase,noun,,696,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325586,8th grade completion,phrase,noun,,697,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+494453,9 weeks gestation of pregnancy,phrase,noun,,47,,,,,Diagnosis,medicine,,,ICD-10 Z3A.09,medical,ICD-10 (WHO 2019)
+325587,9-ac,word,noun,,698,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325588,9-cis-4-hpr,word,noun,,699,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325589,9-cis-retinoic acid/interferon alfa,phrase,noun,,700,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325590,9-cra/ifn-a,word,noun,,700,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325591,9-ethyl 6-mercaptopurine,phrase,noun,,701,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325592,9-nc,word,noun,,702,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325593,9.2.27 fab,phrase,noun,,703,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325594,90 percent neutralization endpoint titer,phrase,noun,,704,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
+325595,908,word,noun,,705,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325596,90sr,word,noun,,706,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325597,90y-hpam4,word,noun,,707,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325598,96.5 fab,phrase,noun,,708,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325599,99mtc bone scintography,phrase,noun,,709,,,,,Anatomy,anatomy,,,,medical,NCI Thesaurus
+325600,99mtc-3prgd2,word,noun,,710,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325601,99mtc-gp,word,noun,,711,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325602,99mtc-gsa,word,noun,,712,,,,,Abbreviation / acronym,medicine,abbreviation,,,medical,NCI Thesaurus
+325603,9h-purine-6thio-98d,word,noun,,713,,,,,Drug / agent,pharmacology,,,,medical,NCI Thesaurus
+325604,9p13 microdeletion syndrome,phrase,noun,,714,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325605,9q21.13 microdeletion syndrome,phrase,noun,,715,,,,,Disease,medicine,,,,medical,MONDO (diseases)
+325606,9q34 chromosome region deletion [presence] in blood or tissue by fish,phrase,noun,,716,,,,,Procedure / medical action,medicine,,,,medical,NCI Thesaurus
+325607,9th grade completion,phrase,noun,,717,,,,,Lab test / measurement,medicine,,,,medical,NCI Thesaurus
