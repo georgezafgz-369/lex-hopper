@@ -16,6 +16,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 import 'dart:async';
+import 'dart:ui' as ui;
 
 import 'package:flutter/services.dart';
 import 'package:material_ui/material_ui.dart';
@@ -41,6 +42,27 @@ typedef WordLookup = Future<LexiconAnswer> Function(
   String language,
 );
 
+/// The Translator, sliding up from the bottom over the current page. It
+/// closes with its X or by dragging it down.
+Future<void> showTranslatorSheet(BuildContext context) {
+  final paper = Theme.of(context).brightness
+      .resolve(light: AppColors.paperLight, dark: AppColors.paperDark);
+  return showModalBottomSheet<void>(
+    context: context,
+    isScrollControlled: true,
+    useSafeArea: true,
+    backgroundColor: paper,
+    clipBehavior: Clip.antiAlias,
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.vertical(top: ui.Radius.circular(Radius.lg)),
+    ),
+    builder: (sheetContext) => FractionallySizedBox(
+      heightFactor: 0.94,
+      child: const TranslatorPage(asSheet: true),
+    ),
+  );
+}
+
 Future<LexiconAnswer> _lookUpInLexicon(String text, String language) async {
   final lexicon = DictionaryService.forLanguage(language);
   return (
@@ -61,11 +83,16 @@ class TranslatorPage extends StatefulWidget {
   /// test gives another.
   final SavedTranslations? saved;
 
+  /// Shown in a bottom sheet (the home page's translate button): a grab
+  /// handle, the title and an X instead of the top bar.
+  final bool asSheet;
+
   const TranslatorPage({
     super.key,
     this.translator,
     this.lookup = _lookUpInLexicon,
     this.saved,
+    this.asSheet = false,
   });
 
   @override
@@ -282,8 +309,6 @@ class _TranslatorPageState extends State<TranslatorPage> {
   /// Paste the clipboard's text in; it translates like typed text.
   Future<void> _paste() async {
     final data = await Clipboard.getData(Clipboard.kTextPlain);
-    debugPrint('PASTEDEBUG got ${data == null ? 'null' : '"${data.text}"'} '
-        'hasStrings=${await Clipboard.hasStrings()}');
     final text = data?.text?.trim() ?? '';
     if (text.isEmpty || !mounted) return;
     _input.text = text;
@@ -370,42 +395,85 @@ class _TranslatorPageState extends State<TranslatorPage> {
       body: SafeArea(
         child: Column(
           children: [
-            // ── Top bar: Back, dictionary search, 🌐, Home ─────────────────
-            Padding(
-              padding: const EdgeInsets.fromLTRB(
-                Spacing.md,
-                Spacing.sm,
-                Spacing.md,
-                Spacing.sm,
-              ),
-              child: Row(
-                children: [
-                  GestureDetector(
-                    key: const Key('translator-back'),
-                    onTap: () => Navigator.of(context).pop(),
-                    child: Container(
+            // ── In a sheet: grab handle, title, X ──────────────────────────
+            if (widget.asSheet)
+              Padding(
+                padding: const EdgeInsets.fromLTRB(
+                  Spacing.lg,
+                  Spacing.sm,
+                  Spacing.sm,
+                  0,
+                ),
+                child: Column(
+                  children: [
+                    Container(
                       width: 40,
-                      height: 40,
+                      height: 4,
                       decoration: BoxDecoration(
-                        color: gridCell,
-                        borderRadius: BorderRadius.circular(Radius.sm),
+                        color: hairline,
+                        borderRadius: BorderRadius.circular(2),
                       ),
-                      child: Icon(Icons.arrow_back, size: 20, color: ink),
                     ),
-                  ),
-                  const SizedBox(width: Spacing.sm),
-                  const Expanded(
-                    child: DictionarySearchBar(
-                      fieldKey: Key('translator-search'),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: DualText(
+                            (t) => t.translator,
+                            inline: true,
+                            style: serif.copyWith(
+                              fontSize: 22,
+                              fontWeight: FontWeight.w700,
+                              color: ink,
+                            ),
+                          ),
+                        ),
+                        IconButton(
+                          key: const Key('translator-sheet-close'),
+                          icon: Icon(Icons.close, color: ink),
+                          onPressed: () => Navigator.of(context).pop(),
+                        ),
+                      ],
                     ),
-                  ),
-                  const SizedBox(width: Spacing.sm),
-                  const LanguageButton(),
-                  const SizedBox(width: Spacing.sm),
-                  const HomeButton(),
-                ],
+                  ],
+                ),
+              )
+            // ── Top bar: Back, dictionary search, 🌐, Home ─────────────────
+            else
+              Padding(
+                padding: const EdgeInsets.fromLTRB(
+                  Spacing.md,
+                  Spacing.sm,
+                  Spacing.md,
+                  Spacing.sm,
+                ),
+                child: Row(
+                  children: [
+                    GestureDetector(
+                      key: const Key('translator-back'),
+                      onTap: () => Navigator.of(context).pop(),
+                      child: Container(
+                        width: 40,
+                        height: 40,
+                        decoration: BoxDecoration(
+                          color: gridCell,
+                          borderRadius: BorderRadius.circular(Radius.sm),
+                        ),
+                        child: Icon(Icons.arrow_back, size: 20, color: ink),
+                      ),
+                    ),
+                    const SizedBox(width: Spacing.sm),
+                    const Expanded(
+                      child: DictionarySearchBar(
+                        fieldKey: Key('translator-search'),
+                      ),
+                    ),
+                    const SizedBox(width: Spacing.sm),
+                    const LanguageButton(),
+                    const SizedBox(width: Spacing.sm),
+                    const HomeButton(),
+                  ],
+                ),
               ),
-            ),
 
             // ── The text and its translation ───────────────────────────────
             Expanded(

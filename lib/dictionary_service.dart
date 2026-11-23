@@ -41,6 +41,13 @@ class DictionaryEntry {
   /// Example sentences from WordNet ("he gave his word").
   final List<String> examples;
 
+  /// [meaning] in the other app language (null when there is none).
+  final String? meaningTranslation;
+
+  /// Each of [examples] in the other app language, in the same order;
+  /// null where an example has no translation.
+  final List<String?> exampleTranslations;
+
   /// Opposite words (hard -> easy).
   final List<String> antonyms;
 
@@ -78,6 +85,8 @@ class DictionaryEntry {
     this.synonyms = const [],
     this.origin,
     this.examples = const [],
+    this.meaningTranslation,
+    this.exampleTranslations = const [],
     this.antonyms = const [],
     this.related = const [],
     this.sense,
@@ -101,6 +110,12 @@ class DictionaryEntry {
       synonyms: (map['synonyms'] as String?)?.split(',') ?? const [],
       origin: map['origin'] as String?,
       examples: (map['examples'] as String?)?.split('\n') ?? const [],
+      meaningTranslation: _nonEmpty(map['meaning_tr'] as String?),
+      exampleTranslations: [
+        for (final t
+            in (map['examples_tr'] as String?)?.split('\n') ?? const <String>[])
+          _nonEmpty(t),
+      ],
       antonyms: (map['antonyms'] as String?)?.split(',') ?? const [],
       related: (map['related'] as String?)?.split(',') ?? const [],
       sense: map['sense'] as int?,
@@ -110,6 +125,9 @@ class DictionaryEntry {
       meaningCount: map['meaning_count'] as int?,
     );
   }
+
+  static String? _nonEmpty(String? s) =>
+      s == null || s.trim().isEmpty ? null : s;
 
   /// A short preview of the meaning (first ~120 characters).
   String get preview {
@@ -354,19 +372,30 @@ class DictionaryService {
   Future<void> _open() async {
     final (lexicon, texts) = await (_copying ??= _copyDatabases());
     final db = await openDatabase(lexicon, readOnly: true);
-    await db.execute('ATTACH DATABASE ? AS t', [texts]);
+    // After a hot restart the plugin hands back the same open connection,
+    // with the texts already attached and the old view still there.
+    final attached = await db.rawQuery('PRAGMA database_list');
+    if (!attached.any((row) => row['name'] == 't')) {
+      await db.execute('ATTACH DATABASE ? AS t', [texts]);
+    }
+    await db.execute('DROP VIEW IF EXISTS temp.$_view');
     // Lets "word LIKE 'ab%'" use the index (keys are already lowercase).
     await db.execute('PRAGMA case_sensitive_like = ON');
     await db.execute(_dictView(language));
     _db = db;
   }
 
-  /// `dict`: every meaning of this language — words and short phrases from
+  /// The view of this language's meanings. Both languages share one
+  /// connection (the plugin opens a file once), so each needs its own view.
+  String get _view => 'dict_$language';
+
+  /// `dict_<lang>`: every meaning of this language — words and short phrases from
   /// the lexicon, long phrases from the texts — with its meaning and example
   /// sentences as text, in the columns [DictionaryEntry.fromMap] reads.
   static String _dictView(String lang) {
-    String examples(String id) =>
-        '(SELECT group_concat(text, char(10)) FROM (SELECT tx.text '
+    String examples(String id, {bool translated = false}) =>
+        '(SELECT group_concat(text, char(10)) FROM (SELECT '
+        '${translated ? "ifnull(tx.translation, '')" : 'tx.text'} AS text '
         'FROM entry_examples x JOIN t.texts tx ON tx.id = x.text_id '
         'WHERE x.entry_id = $id ORDER BY x.ord))';
     const cols =
@@ -374,14 +403,18 @@ class DictionaryService {
         'usage, structure, code, domain, source';
     String prefixed(String x) =>
         cols.split(', ').map((c) => '$x.$c').join(', ');
-    return 'CREATE TEMP VIEW IF NOT EXISTS dict AS '
+    return 'CREATE TEMP VIEW IF NOT EXISTS dict_$lang AS '
         'SELECT e.id, e.word, e.plain, e.type, e.pos, m.text AS meaning, '
-        '${examples('e.id')} AS examples, ${prefixed('e')} '
+        'm.translation AS meaning_tr, '
+        '${examples('e.id')} AS examples, '
+        '${examples('e.id', translated: true)} AS examples_tr, '
+        '${prefixed('e')} '
         'FROM main.entries e JOIN t.texts m ON m.id = e.meaning_id '
         "WHERE e.lang = '$lang' "
         'UNION ALL '
         'SELECT p.id, p.phrase, p.plain, p.type, p.pos, m.text, '
-        '${examples('p.id')}, ${prefixed('p')} '
+        'm.translation, ${examples('p.id')}, '
+        '${examples('p.id', translated: true)}, ${prefixed('p')} '
         'FROM t.phrases p JOIN t.texts m ON m.id = p.meaning_id '
         "WHERE p.lang = '$lang'";
   }
@@ -457,7 +490,7 @@ class DictionaryService {
   }) async {
     if (ids.isEmpty) return const [];
     final rows = await _db!.rawQuery(
-      'SELECT * FROM dict WHERE id IN '
+      'SELECT * FROM $_view WHERE id IN '
       '(${List.filled(ids.length, '?').join(',')})$filters',
       [...ids, ...args],
     );
@@ -720,7 +753,7 @@ class DictionaryService {
   Future<List<DictionaryEntry>> entriesFor(String word) async {
     await init();
     Future<List<Map<String, Object?>>> exactly(String w) => _db!.rawQuery(
-      'SELECT * FROM dict WHERE plain = ? AND word = ? '
+      'SELECT * FROM $_view WHERE plain = ? AND word = ? '
       // Most common meaning first; unranked (medical) entries last.
       'ORDER BY CASE pos $_posRank ELSE 99 END, sense IS NULL, sense, id',
       [_key(w), w],

@@ -7084,3 +7084,5 @@ id,word,type,pos,sense,meaning_id,synonyms,antonyms,related,origin,category,subj
 114326,ozonosphere,word,noun,1,203173,ozone layer,,,,,physics,,simple,,general,WordNet
 278168,ozothamnus,word,noun,1,129649,genus ozothamnus,,,,,botany,,simple,,general,WordNet
 278171,ozothamnus secundiflorus,phrase,noun,1,55389,"cascade everlasting,helichrysum secundiflorum",,,,,botany,,,,general,WordNet
+,one hundred eleven,phrase,adj,1,1023308,"cxi,hundred and eleven",,,,,,,,,general,Lex Hopper
+,one thousand one,phrase,adj,1,1023309,"mi,thousand and one",,,,,,,,,general,Lex Hopper

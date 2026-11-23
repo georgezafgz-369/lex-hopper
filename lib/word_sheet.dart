@@ -3,6 +3,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 import 'dart:math';
+import 'dart:ui' as ui;
 
 import 'package:material_ui/material_ui.dart';
 
@@ -100,7 +101,7 @@ Future<void> showDraggableSheet(
     backgroundColor: paper,
     clipBehavior: Clip.antiAlias,
     shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(Radius.lg),
+      borderRadius: BorderRadius.vertical(top: ui.Radius.circular(Radius.lg)),
     ),
     builder: (sheetContext) => Padding(
       // Keep the content above the on-screen keyboard.
@@ -698,6 +699,7 @@ class _WordDetailPageState extends State<WordDetailPage> {
                   ),
                   const SizedBox(height: 4),
                 ],
+                _sectionLabel((t) => t.meaningLabel, muted),
                 Text(
                   entry.meaning,
                   style: TextStyle(
@@ -707,6 +709,21 @@ class _WordDetailPageState extends State<WordDetailPage> {
                     fontFamily: 'Inter',
                   ),
                 ),
+                // The meaning itself in the other language.
+                if (entry.meaningTranslation case final tr?)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 2),
+                    child: Text(
+                      tr,
+                      key: Key('meaning-text-translation-${entry.id}'),
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: clay,
+                        height: 1.4,
+                        fontFamily: 'Inter',
+                      ),
+                    ),
+                  ),
                 // This meaning in the other language: "→ κατοικία, οίκος".
                 if (_linked[entry.id] case final words?)
                   Padding(
@@ -723,7 +740,11 @@ class _WordDetailPageState extends State<WordDetailPage> {
                     ),
                   ),
                 // Example sentences, in italics like a printed dictionary.
-                for (final example in entry.examples)
+                if (entry.examples.isNotEmpty) ...[
+                  const SizedBox(height: 6),
+                  _sectionLabel((t) => t.examplesLabel, muted),
+                ],
+                for (final (i, example) in entry.examples.indexed) ...[
                   Padding(
                     padding: const EdgeInsets.only(top: 2),
                     child: Text(
@@ -737,6 +758,21 @@ class _WordDetailPageState extends State<WordDetailPage> {
                       ),
                     ),
                   ),
+                  // The example in the other language, just below it.
+                  if (i < entry.exampleTranslations.length &&
+                      entry.exampleTranslations[i] != null)
+                    Text(
+                      entry.exampleTranslations[i]!,
+                      key: Key('example-translation-${entry.id}-$i'),
+                      style: TextStyle(
+                        fontSize: 13,
+                        fontStyle: FontStyle.italic,
+                        color: clay,
+                        height: 1.4,
+                        fontFamily: 'Inter',
+                      ),
+                    ),
+                ],
                 if (_aliases[entry.id] case final names?) ...[
                   const SizedBox(height: 6),
                   Text.rich(
@@ -839,6 +875,23 @@ class _WordDetailPageState extends State<WordDetailPage> {
               ),
             ),
           ],
+        ),
+      ),
+    );
+  }
+
+  /// Small bold heading inside a meaning, like "Meaning Σημασία".
+  Widget _sectionLabel(TextPick label, Color muted) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 2),
+      child: DualText(
+        label,
+        inline: true,
+        style: TextStyle(
+          fontSize: 12,
+          fontWeight: FontWeight.w700,
+          color: muted,
+          fontFamily: 'Inter',
         ),
       ),
     );

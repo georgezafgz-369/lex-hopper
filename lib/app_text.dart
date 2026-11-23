@@ -313,6 +313,8 @@ class AppText {
   String get relatedForms => _('Related forms', 'Συγγενικοί τύποι');
   String get relatingToIt => _('Relating to it', 'Σχετικά επίθετα');
   String get alsoCalled => _('Also called', 'Λέγεται και');
+  String get meaningLabel => _('Meaning', 'Σημασία');
+  String get examplesLabel => _('Examples', 'Παραδείγματα');
   String get synonyms => _('Synonyms', 'Συνώνυμα');
   String get opposites => _('Opposites', 'Αντίθετα');
   String moreCount(int n) => _('+$n more', '+$n ακόμα');

@@ -53,6 +53,9 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(width: Spacing.sm),
+                  // Translator, sliding up from the bottom.
+                  const TranslateButton(),
+                  const SizedBox(width: Spacing.sm),
                   // Languages: the same list as Settings > Language.
                   const LanguageButton(),
                   const SizedBox(width: Spacing.sm),

@@ -10289,3 +10289,4 @@ id,word,type,pos,sense,meaning_id,synonyms,antonyms,related,origin,category,subj
 281112,lythrum salicaria,phrase,noun,1,173556,"purple loosestrife,spiked loosestrife",,,,,botany,,,,general,WordNet
 270718,lytton,word,noun,1,49121,"bulwer-lytton,edward george earle bulwer-lytton,first baron lytton",,,,,literature,,simple,,general,WordNet
 272829,lytton strachey,phrase,noun,1,131535,"giles lytton strachey,strachey",,,,,botany,,,,general,WordNet
+,light blue,phrase,noun,1,1023307,"sky blue,pale blue",dark blue,,,,,,,,general,Lex Hopper

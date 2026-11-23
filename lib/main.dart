@@ -2,6 +2,7 @@
 // LEX HOPPER — entry point
 // ─────────────────────────────────────────────────────────────────────────────
 
+import 'package:flutter/services.dart';
 import 'package:material_ui/material_ui.dart';
 
 import 'app_settings.dart';
@@ -19,6 +20,9 @@ import 'word_search_menu_page.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  // Full screen: hide the status and navigation bars. A swipe from the edge
+  // shows them for a moment, then they hide again.
+  await SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
   // Saved dark mode / language, so the first frame already uses them.
   await AppSettings.instance.load();
   runApp(const LexHopper());

@@ -5575,7 +5575,7 @@ amerces,amerces,machine
 amerciable,amerciable,machine
 amercing,amercing,machine
 america,Ηνωμένες Πολιτείες της Αμερικής,link
-american,αμερικανική,machine
+american,Αμερικανός,Lex Hopper
 american agave,Αμερικανός αγκάθη,machine
 american alligator,Αμερικανός αλλιγάτορας,machine
 american aloe,Αμερικανική αλόη,machine
@@ -7381,7 +7381,7 @@ anosmia,anosmia,machine
 anosmias,anosmias,machine
 anosmic,anosmic,machine
 anostraca,anostraca,machine
-another,ένα άλλο,machine
+another,άλλος,Lex Hopper
 anouilh,anouilh,machine
 anova,ανάλυση διακύμανσης,link
 anovulant,anovulant,machine
@@ -20529,7 +20529,7 @@ boris leonidovich pasternak,Boris Leonidovich Pasternak,machine
 boris pasternak,Boris Pasternak,machine
 boris spassky,boris spassky,machine
 boris vasilevich spassky,Boris Vasilevich Spassky,machine
-born,γεννήθηκε,machine
+born,γεννημένος,Lex Hopper
 born-again,γεννήθηκε-πάλι,machine
 born-again christian,Γεννημένος και πάλι Χριστιανός,machine
 borne,βαρύνουν,machine
@@ -22534,7 +22534,7 @@ browbeat,αποπαίρνω,machine
 browbeaten,browbeaten,machine
 browbeating,browbeating,machine
 browbeats,browbeats,machine
-brown,καφέ,machine
+brown,καφέ,Lex Hopper
 brown algae,Καφέ φύκια,machine
 brown ash,καφέ τέφρα,machine
 brown bat,καφέ ρόπαλο,machine
@@ -50990,7 +50990,7 @@ dowery,dowery,machine
 dowitcher,dowitcher,machine
 dowitchers,dowitchers,machine
 dowland,dowland,machine
-down,τα κάτω,machine
+down,κάτω,Lex Hopper
 down easter,κάτω Πάσχα,machine
 down feather,χνούδι,link
 down in the dumps,άκεφος,machine
@@ -52404,7 +52404,7 @@ durham,Durham,machine
 durian,durian,machine
 durian tree,Δέντρο Durian,machine
 durians,durians,machine
-during,κατά τη διάρκεια της,machine
+during,κατά τη διάρκεια,Lex Hopper
 durio,durio,machine
 durio zibethinus,ZIBETHINUS DURIO,machine
 durion,durion,machine
@@ -53013,7 +53013,7 @@ easter lily vine,Πάσχα αμπέλου,machine
 easter sunday,Κυριακή του Πάσχα,machine
 easterlies,easterlies,machine
 easterly,ανατολικά,machine
-eastern,ανατολική,machine
+eastern,ανατολικός,Lex Hopper
 eastern catholicism,ανατολικός καθολικισμός,machine
 eastern chimpanzee,Ανατολικό χιμπατζή,machine
 eastern chinquapin,καστανιά νάνος,link
@@ -65748,7 +65748,7 @@ fontanne,fontanne,machine
 fontenoy,η μάχη του Φοντενουά,link
 fonteyn,fonteyn,machine
 fonts,γραμματοσειρές,machine
-food,φαγητό,machine
+food,τροφή,Lex Hopper
 food additive,πρόσθετο τροφίμων,machine
 food allergy,τροφική αλλεργία,machine
 food and agriculture organization,Οργανισμός τροφίμων και γεωργίας,machine
@@ -70270,7 +70270,7 @@ genuflexion,genuflexion,machine
 genuine,γνήσια,machine
 genuinely,πραγματικά,machine
 genuineness,γνησιότητας,machine
-genus,το γένος,machine
+genus,γένος,Lex Hopper
 genus abelia,Γένος Αμπελία,machine
 genus abelmoschus,Γένος Abelmoschus,machine
 genus abies,το γένος,machine
@@ -77385,7 +77385,7 @@ greek partridge,Ελληνική πέρδικα,machine
 greek valerian,Ελληνικός Βαλεριάν,machine
 greeks,Έλληνες,machine
 greeley,greeley,machine
-green,πράσινο,machine
+green,πράσινος,Lex Hopper
 green adder's mouth,το στόμα του πράσινου αθροιστή,machine
 green alder,πράσινη ελάτη,machine
 green algae,Πράσινα άλγη,machine
@@ -80693,7 +80693,7 @@ haversack,σακίδιο,machine
 haversacks,haversacks,machine
 haversian canal,καναλιού,machine
 haves,εχόντων,machine
-having,έχοντας,machine
+having,έχοντας,Lex Hopper
 havoc,τον όλεθρο,machine
 havocs,havocs,machine
 haw,λευκάκανθρα,machine
@@ -96548,7 +96548,7 @@ lackadaisically,lackadaisically,machine
 lacked,δεν διέθετε,machine
 lackey,υπηρετώ,machine
 lackeys,lackeys,machine
-lacking,λείπει,machine
+lacking,χωρίς,Lex Hopper
 lackluster,lackluster,machine
 lacklustre,lackluster,machine
 lacks,στερείται,machine
@@ -97979,7 +97979,7 @@ lavishly,πλουσιοπάροχα,machine
 lavishness,πολυτέλεια,machine
 lavoisier,lavoisier,machine
 lavrenti pavlovich beria,LAVRENTI PAVLOVICH BERIA,machine
-law,του νόμου,machine
+law,νόμος,Lex Hopper
 law agent,νομικός πράκτορας,machine
 law degree,πτυχίο νομικής,machine
 law enforcement,επιβολή του νόμου,machine
@@ -100321,7 +100321,7 @@ lindies,lindies,machine
 lindsay,Lindsay,machine
 lindy,Lindy,machine
 lindy hop,lindy hop,machine
-line,ρωσικά online,machine
+line,γραμμή,Lex Hopper
 line backer,line backer,machine
 line block,μπλοκ γραμμής,machine
 line coach,προπονητής γραμμής,machine
@@ -101699,7 +101699,7 @@ loner,μοναχικός,machine
 loners,loners,machine
 lonesome,μονήρης,machine
 lonesomeness,μοναξιά,machine
-long,μακρύς,machine
+long,μακρύς,Lex Hopper
 long ago,πριν από πολύ καιρό,machine
 long beach,μεγάλη παραλία,machine
 long beech fern,μακρά φτέρη οξιάς,machine
@@ -103655,7 +103655,7 @@ madder family,οικογένεια,machine
 madders,madders,machine
 madderwort,ερυθρόδανο,link
 maddest,maddest,machine
-made,έκανε,machine
+made,φτιαγμένος,Lex Hopper
 made-to-order,έκανε-To-παραγγελία,machine
 made-up,έτοιμο,machine
 madeira,Μαδέρας,machine
@@ -104275,7 +104275,7 @@ makeup,μεικ-απ,link
 makeups,makeups,machine
 makeweight,makeweight,machine
 makin,makin,machine
-making,κατασκευή,machine
+making,κατασκευή,Lex Hopper
 making known,διάδοση,link
 making love,κάνει έρωτα,machine
 making water,καθιστώντας νερό,machine
@@ -105193,7 +105193,7 @@ manuscripts,χειρόγραφα,machine
 manx,μανξ,machine
 manx cat,manx γάτα,machine
 manx shearwater,Manx Shearwater,machine
-many,πολλοί,machine
+many,πολλοί,Lex Hopper
 many a,πολλά α,machine
 many an,πολλά ένα,machine
 many another,πολλοί άλλοι,machine
@@ -105549,7 +105549,7 @@ mark twain,Μαρκ Τουαίην,machine
 mark up,ακριβαίνω,link
 mark wayne clark,Mark Wayne Clark,machine
 markaz-ud-dawa-wal-irshad,markaz-ud-dawa-Wal-irshad,machine
-marked,σημειώνονται,machine
+marked,αισθητός,Lex Hopper
 marked-up,σημειώνονται-up,machine
 markedly,σημαντικά,machine
 marker,σημάδι,link
@@ -107480,7 +107480,7 @@ melville w. fuller,Melville w. Fuller,machine
 melville weston fuller,Melville Weston Fuller,machine
 melvin calvin,Melvin Calvin,machine
 mem,mem,machine
-member,τα κράτη,machine
+member,μέλος,Lex Hopper
 member bank,Τράπεζα μελών,machine
 member of parliament,μέλος του κοινοβουλίου,machine
 membered,membered,machine
@@ -109140,7 +109140,7 @@ militarize,στρατιωτικοποιώ,machine
 militarized,militarized,machine
 militarizes,militarizes,machine
 militarizing,militarizing,machine
-military,στρατος,machine
+military,στρατός,Lex Hopper
 military academy,στρατιωτική ακαδημία,machine
 military action,δράση,link
 military adviser,στρατιωτικός σύμβουλος,machine
@@ -110965,7 +110965,7 @@ monetize,έχει κέρδος,machine
 monetized,δημιουργία εσόδων,machine
 monetizes,monetizes,machine
 monetizing,monetizing,machine
-money,τα χρήματα,machine
+money,χρήματα,Lex Hopper
 money belt,χρηματικη ζωνη,machine
 money box,κουμπαράς,machine
 money changer,Ελαττωματικό,machine
@@ -114350,7 +114350,7 @@ nationals,οι υπήκοοι,machine
 nationhood,nationhood,machine
 nations,Εθνών,machine
 nationwide,σε Εθνικό επίπεδο,machine
-native,η μητρική,machine
+native,ντόπιος,Lex Hopper
 native alaskan,εγγενής αλάσνος,machine
 native american,ντοπιος αμερικανος,machine
 native australian,εγγενής Αυστραλός,machine
@@ -117225,7 +117225,7 @@ northeastwards,northeastwards,machine
 norther,Βόρειος άνεμος,machine
 northerlies,northerlies,machine
 northerly,βόρεια,machine
-northern,βόρεια,machine
+northern,βόρειος,Lex Hopper
 northern alliance,Βόρεια Συμμαχία,machine
 northern baptist,Βόρειος Βαπτιστής,machine
 northern baptist convention,Σύμβαση Βόμβου Βαπτιστή,machine
@@ -118987,7 +118987,7 @@ offsprings,offsprings,machine
 offstage,παρασκήνιο,link
 ofo,ofo,machine
 oft,oft,machine
-often,"συχνά,",machine
+often,συχνά,Lex Hopper
 oftener,oftener,machine
 oftenness,oftenness,machine
 oftentimes,πολλές φορές,machine
@@ -124893,7 +124893,7 @@ partridge pea,partridge,machine
 partridgeberries,partridgeberries,machine
 partridgeberry,partridgeberry,machine
 partridges,πέρδικες,machine
-parts,ανταλλακτικά,machine
+parts,μέρη,Lex Hopper
 parts bin,Μέρος,machine
 parts catalog,Κατάλογος εξαρτημάτων,machine
 parts catalogue,Κατάλογος εξαρτημάτων,machine
@@ -126499,7 +126499,7 @@ peonies,παιώνιες,machine
 peons,peons,machine
 peony,παιωνία,machine
 peony family,οικογένεια παιώνιας,machine
-people,κόσμος,machine
+people,άνθρωποι,Lex Hopper
 people against gangsterism and drugs,Άνθρωποι από γκάνγκστερ και ναρκωτικά,machine
 people in power,άτομα στην εξουσία,machine
 people of color,θωριά,link
@@ -131325,7 +131325,7 @@ poincianas,poincianas,machine
 poinsettia,poinsettia,machine
 poinsettia strain,Poinsettia στέλεχος,machine
 poinsettias,αλεξανδριανά,machine
-point,το σημείο,machine
+point,σημείο,Lex Hopper
 point after,σημείο μετά,machine
 point after touchdown,POINT AFORS,machine
 point duty,δασμός,machine
@@ -134926,7 +134926,7 @@ procellaria aequinoctialis,Procellaria aequinoctialis,machine
 procellariidae,procellariidae,machine
 procellariiform seabird,Procellariiform Seabird,machine
 procellariiformes,procellariiformes,machine
-process,η διαδικασία,machine
+process,διαδικασία,Lex Hopper
 process cheese,Τυρί επεξεργασίας,machine
 process of monition,διαδικασία μόνιμης,machine
 process printing,Εκτύπωση διεργασίας,machine
@@ -140977,7 +140977,7 @@ recycles,ανακυκλώνει,machine
 recycling,ανακύκλωση,machine
 recycling bin,Κάδος ανακύκλωσης,machine
 recycling plant,Εγκατάσταση ανακύκλωσης,machine
-red,κόκκινο,machine
+red,κόκκινος,Lex Hopper
 red admiral,κόκκινος ναύαρχος,machine
 red alder,κόκκινος ελάτης,machine
 red alert,κόκκινος συναγερμός,machine
@@ -142155,7 +142155,7 @@ related to,που σχετίζονται με,machine
 relatedness,σχετικότητα,machine
 relates,σχετίζεται,machine
 relatiative,relatiative,machine
-relating,σχετικά,machine
+relating,σχετικός,Lex Hopper
 relation,σχέση,machine
 relation back,Σχέση,machine
 relational,σχεσιακή,machine
@@ -153097,7 +153097,7 @@ seventy-two,εβδομήντα δύο,machine
 sever,sever,machine
 severable,διαχωριστεί,machine
 severable contract,διαφοροποιημένη σύμβαση,machine
-several,πολλά,machine
+several,αρκετοί,Lex Hopper
 several-seeded,αρκετές-seeded,machine
 severalise,διαφοροποιώ,link
 severalize,διαφοροποιώ,link
@@ -153524,7 +153524,7 @@ shape,το σχήμα,machine
 shape constancy,σταθερή σταθερότητα,machine
 shape up,αναπτύσσομαι,link
 shape-up,το σχήμα-up,machine
-shaped,σχήμα,machine
+shaped,σε σχήμα,Lex Hopper
 shapeless,άμορφος,machine
 shapelessly,shapelessly,machine
 shapelessness,ασυμμετρία,machine
@@ -156518,7 +156518,7 @@ skimping,skimping,machine
 skimps,skimps,machine
 skimpy,τσιγγούνης,machine
 skims,skims,machine
-skin,το δέρμα,machine
+skin,δέρμα,Lex Hopper
 skin and bones,δέρμα και οστά,machine
 skin cancer,καρκίνος του δέρματος,machine
 skin care,φροντίδα του δέρματος,machine
@@ -157442,7 +157442,7 @@ smacker,smacker,machine
 smackers,smackers,machine
 smacking,ζωηρός,machine
 smacks,smacks,machine
-small,μικρό,machine
+small,μικρός,Lex Hopper
 small beer,μικρή μπύρα,machine
 small boat,μικρό σκάφος,machine
 small business administration,Διαχείριση μικρών επιχειρήσεων,machine
@@ -159065,7 +159065,7 @@ somesthesis,somesthesis,machine
 somesthesises,somesthesises,machine
 something,κάτι,machine
 sometime,κάποια στιγμή,machine
-sometimes,"μερικές φορές,",machine
+sometimes,μερικές φορές,Lex Hopper
 someway,οπωσδήποτε,machine
 someways,someways,machine
 somewhat,κάπως,machine
@@ -159635,7 +159635,7 @@ southeastwards,νοτιοανατολικά,machine
 souther,souther,machine
 southerlies,southerlies,machine
 southerly,νότια,machine
-southern,νότια,machine
+southern,νότιος,Lex Hopper
 southern arrow wood,Νότιο βέλος ξύλο,machine
 southern aster,Νότια Αστέρι,machine
 southern baptist,Νότιος Βαπτιστής,machine
@@ -162621,7 +162621,7 @@ stater,στατήρα,machine
 stateroom,ιδιαίτερο δωμάτιο εν πλοίω,machine
 staterooms,staterooms,machine
 staters,στατήρες,machine
-states,μελών,machine
+states,κράτη,Lex Hopper
 states general,Κρατικά γενικά,machine
 states' rights,Δικαιώματα των κρατών,machine
 states' rights democratic party,Δικαιώματα των κρατών Δημοκρατικό Κόμμα,machine
@@ -168150,7 +168150,7 @@ syrrhaptes paradoxus,Syrrhasts Paradoxus,machine
 syrup,σιρόπι,machine
 syrups,τα σιρόπια,machine
 syrupy,σοροπιασμένος,machine
-system,το σύστημα,machine
+system,σύστημα,Lex Hopper
 system administrator,διαχειριστής συστήματος,machine
 system call,κλήση συστήματος,machine
 system clock,ρολόι συστήματος,machine
@@ -171725,7 +171725,7 @@ thingamabob,thingamabob,machine
 thingamajig,thingamajig,machine
 thingmabob,thingmabob,machine
 thingmajig,thingmajig,machine
-things,τα πράγματα,machine
+things,πράγματα,Lex Hopper
 thingumabob,thingumabob,machine
 thingumajig,thingumajig,machine
 thingummy,αποτέτοιος,machine
@@ -172276,7 +172276,7 @@ throttler,πνίγων,machine
 throttlers,throttlers,machine
 throttles,throttles,machine
 throttling,στραγγαλισμός,machine
-through,μέσω,machine
+through,μέσα από,Lex Hopper
 through an experiment,μέσω ενός πειράματος,machine
 through and through,μέσω και μέσω,machine
 through empirical observation,μέσω εμπειρικής παρατήρησης,machine
@@ -172851,7 +172851,7 @@ timbrel,μικρό τύμπανο,machine
 timbrels,timbrels,machine
 timbres,timbres,machine
 timbuktu,timbuktu,machine
-time,ωρα,machine
+time,χρόνος,Lex Hopper
 time and a half,ώρα και μισό,machine
 time and again,ξανά και ξανά,machine
 time and motion study,μελέτη χρόνου και κίνησης,machine
@@ -176342,7 +176342,7 @@ tropic,Tropic,machine
 tropic bird,τροπικό πουλί,machine
 tropic of cancer,τροπικός του καρκίνου,machine
 tropic of capricorn,Τροπικός του Αιγόκερως,machine
-tropical,τροπικά,machine
+tropical,τροπικός,Lex Hopper
 tropical medicine,τροπική ιατρική,machine
 tropical pitcher plant,Τροπική μονάδα στάμνης,machine
 tropical prawn,γαρίδα τροπικού κλίματος,link
@@ -177707,7 +177707,7 @@ tyndall effect,tyndall αποτέλεσμα,machine
 tyne,ποταμός Τάιν,link
 tyne river,ποταμός Τάιν,link
 tynes,tynes,machine
-type,Τύπος,machine
+type,τύπος,Lex Hopper
 type a,τύπος α,machine
 type ab,ΑΒ,link
 type b,τύπου b,machine
@@ -178783,7 +178783,7 @@ undependable,undependable,machine
 undependableness,undependableness,machine
 undependably,undependably,machine
 undepicted,undepicted,machine
-under,υπό,machine
+under,κάτω από,Lex Hopper
 under arms,κάτω από τα χέρια,machine
 under attack,υπό επίθεση,machine
 under fire,κάτω από τη φωτιά,machine
@@ -179792,7 +179792,7 @@ unitarianism,unitarianism,machine
 unitarians,unitarians,machine
 unitary,ενωτικό,machine
 unite,ενώνω,link
-united,Ηνωμένες,machine
+united,ενωμένος,Lex Hopper
 united arab emirate dirham,Ηνωμένο Αραβικό Εμιράτο Dirham,machine
 united arab emirate monetary unit,Ηνωμένες Αραβικές Εμιράτες Νομισματική Μονάδα,machine
 united arab emirates,Ηνωμένα Αραβικά Εμιράτα,machine
@@ -181717,7 +181717,7 @@ ustilago,ustilago,machine
 ustilago maydis,Ustilago Maydis,machine
 ustinov,ustinov,machine
 usual,το συνηθισμένο,machine
-usually,"συνήθως,",machine
+usually,συνήθως,Lex Hopper
 usualness,συνήθες,machine
 usufruct,επικαρπίας,machine
 usufructs,usufructs,machine
@@ -182418,7 +182418,7 @@ variometer,variometer,machine
 variorum,αναφερόμενος σε σχόλια,machine
 variorum edition,variorum έκδοση,machine
 variorums,variorums,machine
-various,διάφορα,machine
+various,διάφοροι,Lex Hopper
 variously,ποικιλοτρόπως,machine
 variously-leaved pondweed,Διάφορα φύλλα πουλιά,machine
 varix,κιρσός ιατρική,machine
@@ -185685,7 +185685,7 @@ watchtower,Πύργος κατόπτευσης,machine
 watchtowers,παρατηρητήρια,machine
 watchword,σύνθημά,machine
 watchwords,watchwords,machine
-water,το νερό,machine
+water,νερό,Lex Hopper
 water arum,νερό αρωγός,machine
 water avens,υδρόβια,machine
 water back,το πίσω,machine
@@ -187633,7 +187633,7 @@ whorls,σπείρες,machine
 whorlywort,whorlywort,machine
 whortleberries,whortleberries,machine
 whortleberry,μυρτιλός,machine
-whose,του οποίου,machine
+whose,τίνος,Lex Hopper
 why,γιατί να,machine
 whydah,whydah,machine
 whydahs,whydahs,machine
@@ -189195,7 +189195,7 @@ wordsworth,wordsworth,machine
 wordsworthian,wordsworthian,machine
 wordy,μακρολόγος,machine
 wore,φορούσαν,machine
-work,εργασία,machine
+work,δουλειά,Lex Hopper
 work animal,ζώο,link
 work at,δουλεύω σε,machine
 work bench,πάγκος,link
@@ -190180,7 +190180,7 @@ yelled,φώναξε,machine
 yeller,φωνακλάς,machine
 yellers,yellers,machine
 yelling,φωνάζει,machine
-yellow,κίτρινο,machine
+yellow,κίτρινος,Lex Hopper
 yellow adder's tongue,Κίτρινη γλώσσα του αθροιστή,machine
 yellow ageratum,κίτρινο ageratum,machine
 yellow asphodel,κίτρινο ασφυκτόνο,machine
@@ -191126,3 +191126,6 @@ zymotic,ζυμωτικός,machine
 zymurgies,zymurgies,machine
 zymurgy,Ζυθοποιία,machine
 zyrian,zyrian,machine
+light blue,γαλάζιο,Lex Hopper
+one hundred eleven,εκατόν έντεκα,Lex Hopper
+one thousand one,χίλια ένα,Lex Hopper
