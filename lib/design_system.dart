@@ -57,6 +57,16 @@ class AppColors {
   static const clayLight = Color(0xFFC8613F);
   static const clayDark = Color(0xFFE08A66);
 
+  /// A lighter clay for filled chips and badges (the dictionary's filters
+  /// and parts of speech), so they don't shout.
+  static const claySoftLight = Color(0xFFD9876A);
+  static const claySoftDark = Color(0xFFE59C7D);
+
+  /// A deeper clay for small headings over the paper (the dictionary's
+  /// filter titles), easier to read than the plain clay.
+  static const clayDeepLight = Color(0xFF9A4428);
+  static const clayDeepDark = Color(0xFFE8A283);
+
   static const oliveLight = Color(0xFF3F5A3C);
   static const oliveDark = Color(0xFF8FDB0A);
 
@@ -354,40 +364,4 @@ class Radius {
   static const sm = 8.0; // cards, buttons, search bars
   static const md = 8.0;
   static const lg = 16.0; // bottom sheets (top corners)
-}
-
-/// Reusable home button — one tap goes back to HomePage.
-class HomeButton extends StatelessWidget {
-  const HomeButton({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    final brightness = Theme.of(context).brightness;
-    final clay = brightness.resolve(
-      light: AppColors.clayLight,
-      dark: AppColors.clayDark,
-    );
-
-    return GestureDetector(
-      key: const Key('home-button'),
-      onTap: () {
-        Navigator.of(context).pushNamedAndRemoveUntil('/', (route) => false);
-      },
-      child: Container(
-        width: 40,
-        height: 40,
-        decoration: BoxDecoration(
-          color: clay,
-          borderRadius: BorderRadius.circular(Radius.sm),
-        ),
-        child: Icon(
-          Icons.home_outlined,
-          size: 20,
-          color: brightness == Brightness.light
-              ? Colors.white
-              : AppColors.paperDark,
-        ),
-      ),
-    );
-  }
 }

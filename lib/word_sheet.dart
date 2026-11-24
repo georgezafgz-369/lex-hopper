@@ -448,11 +448,11 @@ class _WordDetailPageState extends State<WordDetailPage> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // ── Header ──
+          // ── Header: the word, big and bold, like the pages' titles ──
           Text(
             _word,
-            style: Theme.of(context).textTheme.headlineMedium
-                ?.copyWith(color: ink, fontWeight: FontWeight.w700),
+            style: Theme.of(context).textTheme.displayLarge
+                ?.copyWith(color: ink),
           ),
           // Pronunciation, like a printed dictionary: |ˈdɪkʃəˌnɛri|, with
           // buttons to hear it in an American or British voice.

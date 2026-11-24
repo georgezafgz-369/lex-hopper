@@ -245,7 +245,6 @@ class _WordSearchGamePageState extends State<WordSearchGamePage> {
                       ),
                     ),
                   ),
-                  const HomeButton(),
                 ],
               ),
             ),

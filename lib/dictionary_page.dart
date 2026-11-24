@@ -4,9 +4,13 @@
 
 import 'dart:async';
 
+import 'package:flutter/services.dart' show HapticFeedback;
+
 import 'package:material_ui/material_ui.dart';
 
 import 'design_system.dart';
+import 'bottom_menu.dart';
+import 'section_icon.dart';
 import 'app_text.dart';
 import 'dictionary_service.dart';
 import 'dual_text.dart';
@@ -48,11 +52,6 @@ class _DictionaryPageState extends State<DictionaryPage> {
   String? _selectedPos;
   String? _selectedSubject; // subject id, DictionaryService.generalSubject, or null = all
 
-  // Which label list is open under the filters, and which subject groups
-  // are expanded inside it.
-  bool _subjectListOpen = false;
-  final Set<String> _expandedGroups = {};
-
   String? _selectedStructure; // simple / compound / derived, or null = all
 
   /// The app's text in the current language.
@@ -63,30 +62,97 @@ class _DictionaryPageState extends State<DictionaryPage> {
   String? _languageCode;
   String get _language => _languageCode ?? 'en';
 
-  /// Greek has no word-structure labels; its parts of speech are the 10 of
-  /// Greek grammar (articles and participles are Greek only).
-  static const _greekPartsOfSpeech = [
-    'noun',
-    'verb',
-    'adj',
-    'adv',
-    'pron',
-    'art',
-    'part',
-    'prep',
-    'conj',
-    'interj',
-  ];
-  bool get _greek => _language == 'el';
-
   // Filter options
   FilterOptions? _filterOptions;
+
+  /// The page's scroll position: the sheet's when in a sheet, else our own.
+  late final ScrollController _scroll =
+      widget.scrollController ?? ScrollController();
+
+  /// Scrolled far enough down for the "go to top" button to show.
+  bool _showTop = false;
+
+  /// The title row (Back + DICTIONARY) has scrolled out of sight, so Back
+  /// moves into the pinned bar, beside the search.
+  bool _titleGone = false;
+  static const _titleRowHeight = 56.0;
 
   @override
   void initState() {
     super.initState();
     _searchController.text = widget.initialQuery;
+    _scroll.addListener(_onScroll);
   }
+
+  void _onScroll() {
+    final show = _scroll.hasClients && _scroll.offset > 800;
+    if (show != _showTop) setState(() => _showTop = show);
+    final gone = _scroll.hasClients && _scroll.offset > _titleRowHeight;
+    if (gone != _titleGone) setState(() => _titleGone = gone);
+    _updateHere();
+  }
+
+  /// Each shown result's key, to find which one is at the top.
+  final Map<int, GlobalKey> _itemKeys = {};
+  final _listKey = GlobalKey();
+
+  /// The letter of the first word on screen, marked on the A–Z strip.
+  String? _here;
+
+  void _updateHere() {
+    final list = _listKey.currentContext?.findRenderObject() as RenderBox?;
+    if (list == null || !list.hasSize || _results.isEmpty) return;
+    // Just under the pinned search bar.
+    final top = list.localToGlobal(Offset.zero).dy + _topBarHeight;
+    var best = -1;
+    for (final MapEntry(key: i, value: key) in _itemKeys.entries) {
+      final box = key.currentContext?.findRenderObject() as RenderBox?;
+      if (box == null || !box.attached || i >= _results.length) continue;
+      final bottom = box.localToGlobal(Offset(0, box.size.height)).dy;
+      if (bottom > top && (best == -1 || i < best)) best = i;
+    }
+    if (best == -1) return;
+    final here = _letterOf(_results[best].word);
+    if (here != _here) setState(() => _here = here);
+  }
+
+  /// The strip's letter for [word]: its first letter without accents, or
+  /// null for a number or symbol.
+  String? _letterOf(String word) {
+    if (word.isEmpty) return null;
+    final first = (_language == 'el' ? greekPlain(word[0]) : word[0])
+        .toUpperCase();
+    final letters = _language == 'el' ? _greekLetters : _latinLetters;
+    return letters.contains(first) ? first : null;
+  }
+
+  /// New results: forget the old ones' keys, and mark the new top letter
+  /// once they're laid out.
+  void _newResults() {
+    _itemKeys.clear();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) _updateHere();
+    });
+  }
+
+  /// The letter the A–Z list was last started at by the strip.
+  String? _letter;
+
+  /// The A–Z strip: list the words from [letter] on, from the top.
+  void _jumpToLetter(String letter) {
+    if (letter == _letter) return;
+    _letter = letter;
+    HapticFeedback.selectionClick();
+    if (_scroll.hasClients) _scroll.jumpTo(0);
+    _startBrowse(letter: letter.toLowerCase());
+  }
+
+  /// Back to the first results, smoothly.
+  void _goToTop() => _scroll.animateTo(
+    0,
+    duration: const Duration(milliseconds: 400),
+    curve: Curves.easeOutCubic,
+  );
 
   @override
   void didChangeDependencies() {
@@ -125,6 +191,8 @@ class _DictionaryPageState extends State<DictionaryPage> {
 
   @override
   void dispose() {
+    _scroll.removeListener(_onScroll);
+    if (widget.scrollController == null) _scroll.dispose();
     _searchController.dispose();
     _searchFocus.dispose();
     _debounce?.cancel();
@@ -147,9 +215,10 @@ class _DictionaryPageState extends State<DictionaryPage> {
   bool _loadingMore = false;
   int _request = 0; // drops answers to outdated searches
 
-  Future<List<DictionaryEntry>> _browsePage(String after) {
+  Future<List<DictionaryEntry>> _browsePage(String after, {String? from}) {
     return _service.browse(
       after: after,
+      from: from,
       symbols: _browseSymbols,
       partOfSpeech: _selectedPos,
       subject: _selectedSubject,
@@ -169,7 +238,8 @@ class _DictionaryPageState extends State<DictionaryPage> {
     return page;
   }
 
-  Future<void> _startBrowse() async {
+  /// The A–Z list from the start, or from [letter] (the A–Z strip).
+  Future<void> _startBrowse({String? letter}) async {
     final request = ++_request;
     setState(() => _isLoading = true);
     _browsing = true;
@@ -177,8 +247,12 @@ class _DictionaryPageState extends State<DictionaryPage> {
     _browseDone = false;
     _loadingMore = false;
     try {
-      final page = await _nextBrowsePage('');
+      if (letter == null) _letter = null; // the whole list again
+      final page = letter == null
+          ? await _nextBrowsePage('')
+          : await _browsePage('', from: letter);
       if (!mounted || request != _request) return;
+      _newResults();
       setState(() {
         _results = page;
         _isSearching = true;
@@ -219,6 +293,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
         structure: _selectedStructure,
       );
       if (!mounted || request != _request) return;
+      _newResults();
       setState(() {
         _results = results;
         _isSearching = true;
@@ -284,22 +359,30 @@ class _DictionaryPageState extends State<DictionaryPage> {
         ),
         child: Row(
           children: [
-            if (!widget.inSheet) ...[
-              // Back button
-              GestureDetector(
-                onTap: () => Navigator.of(context).pop(),
-                child: Container(
-                  width: 40,
-                  height: 40,
-                  decoration: BoxDecoration(
-                    color: gridCell,
-                    borderRadius: BorderRadius.circular(Radius.sm),
-                  ),
-                  child: Icon(Icons.arrow_back, size: 20, color: ink),
-                ),
-              ),
-              const SizedBox(width: Spacing.sm),
-            ],
+            // Back, beside the search bar once the title row (with its own
+            // Back) has scrolled away.
+            AnimatedSize(
+              duration: const Duration(milliseconds: 180),
+              curve: Curves.easeOut,
+              child: !widget.inSheet && _titleGone
+                  ? Padding(
+                      padding: const EdgeInsets.only(right: Spacing.sm),
+                      child: GestureDetector(
+                        key: const Key('dictionary-back-pinned'),
+                        onTap: () => Navigator.of(context).pop(),
+                        child: Container(
+                          width: 40,
+                          height: 40,
+                          decoration: BoxDecoration(
+                            color: gridCell,
+                            borderRadius: BorderRadius.circular(Radius.sm),
+                          ),
+                          child: Icon(Icons.arrow_back, size: 20, color: ink),
+                        ),
+                      ),
+                    )
+                  : const SizedBox.shrink(),
+            ),
             // Search bar
             Expanded(
               child: Container(
@@ -344,10 +427,6 @@ class _DictionaryPageState extends State<DictionaryPage> {
                 ),
               ),
             ),
-            if (!widget.inSheet) ...[
-              const SizedBox(width: Spacing.sm),
-              const HomeButton(),
-            ],
           ],
         ),
       ),
@@ -364,30 +443,51 @@ class _DictionaryPageState extends State<DictionaryPage> {
         return false;
       },
       child: CustomScrollView(
-        controller: widget.scrollController,
+        key: _listKey,
+        controller: _scroll,
         slivers: [
+          // Back and the page's title, big and bold (not in the sheet);
+          // they scroll away, the search bar under them stays.
+          if (!widget.inSheet)
+            SliverToBoxAdapter(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(
+                  Spacing.md,
+                  Spacing.sm,
+                  Spacing.md,
+                  0,
+                ),
+                child: Row(
+                  children: [
+                    GestureDetector(
+                      key: const Key('dictionary-back'),
+                      onTap: () => Navigator.of(context).pop(),
+                      child: Container(
+                        width: 40,
+                        height: 40,
+                        decoration: BoxDecoration(
+                          color: gridCell,
+                          borderRadius: BorderRadius.circular(Radius.sm),
+                        ),
+                        child: Icon(Icons.arrow_back, size: 20, color: ink),
+                      ),
+                    ),
+                    const SizedBox(width: Spacing.md),
+                    Expanded(
+                      child: DualText(
+                        (t) => AppText.upper(t.dictionary),
+                        style: Theme.of(context).textTheme.displayLarge,
+                        inline: true,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           SliverPersistentHeader(
             pinned: true,
             delegate: _PinnedBar(height: _topBarHeight, child: topBar),
           ),
-          if (_filterOptions != null)
-            SliverToBoxAdapter(
-              child: _buildFilterChips(
-                options: _filterOptions!,
-                selectedPos: _selectedPos,
-                gridCell: gridCell,
-                hairline: hairline,
-                clay: clay,
-                ink: ink,
-                muted: muted,
-                onPosChanged: (pos) {
-                  setState(() {
-                    _selectedPos = pos;
-                  });
-                  _refreshResults();
-                },
-              ),
-            ),
           ..._buildContent(
             brightness: brightness,
             gridCell: gridCell,
@@ -397,425 +497,68 @@ class _DictionaryPageState extends State<DictionaryPage> {
             muted: muted,
             paper: paper,
           ),
+          // Clear of the bottom menu (the sheet has none).
+          if (!widget.inSheet)
+            const SliverToBoxAdapter(child: SizedBox(height: BottomMenu.space)),
         ],
       ),
     );
 
     if (widget.inSheet) return body; // the sheet supplies the background
+    // The A–Z strip down the right edge, while listing (not searching).
+    final strip = _searchController.text.trim().isEmpty && _browsing;
     return Scaffold(
       backgroundColor: paper,
-      body: SafeArea(child: body),
+      body: BottomMenu(
+        current: Section.dictionary,
+        child: SafeArea(
+          child: Stack(
+            children: [
+              body,
+              if (strip)
+                Positioned(
+                  right: 0,
+                  top: _topBarHeight + 64,
+                  // Above the "go to top" button and the bottom menu.
+                  bottom: 72 + BottomMenu.space,
+                  child: _AlphabetStrip(
+                    letters: _language == 'el' ? _greekLetters : _latinLetters,
+                    active: _here ?? _letter,
+                    onLetter: _jumpToLetter,
+                  ),
+                ),
+            ],
+          ),
+        ),
+      ),
+      // "Go to top" in the bottom-right corner, once scrolled down.
+      floatingActionButton: Padding(
+        // Above the bottom menu.
+        padding: const EdgeInsets.only(bottom: BottomMenu.space - 16),
+        child: AnimatedScale(
+          scale: _showTop ? 1 : 0,
+          duration: const Duration(milliseconds: 200),
+          child: Tooltip(
+            message: AppText.of(context).goToTop,
+            child: FloatingActionButton.small(
+              key: const Key('dictionary-go-to-top'),
+              heroTag: null,
+              onPressed: _showTop ? _goToTop : null,
+              backgroundColor: brightness.resolve(
+                light: AppColors.claySoftLight,
+                dark: AppColors.claySoftDark,
+              ),
+              foregroundColor: Colors.white,
+              elevation: 2,
+              child: const Icon(Icons.arrow_upward),
+            ),
+          ),
+        ),
+      ),
     );
   }
 
   // ── Filter chips ─────────────────────────────────────────────────────────
-
-  Widget _buildFilterChips({
-    required FilterOptions options,
-    required String? selectedPos,
-    required Color gridCell,
-    required Color hairline,
-    required Color clay,
-    required Color ink,
-    required Color muted,
-    required ValueChanged<String?> onPosChanged,
-  }) {
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(Spacing.md, 0, Spacing.md, Spacing.sm),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          // Part of speech filters
-          DualText(
-            (t) => t.partOfSpeech,
-            inline: true,
-            style: kickerStyle(brightness: Theme.of(context).brightness)
-                .copyWith(color: clay),
-          ),
-          const SizedBox(height: 6),
-          Wrap(
-            spacing: 6,
-            runSpacing: 4,
-            children: [
-              _filterChip(
-                label: (t) => t.all,
-                active: selectedPos == null,
-                clay: clay,
-                gridCell: gridCell,
-                hairline: hairline,
-                ink: ink,
-                muted: muted,
-                onTap: () => onPosChanged(null),
-              ),
-              ...(_greek ? _greekPartsOfSpeech : options.partOfSpeech).map((
-                pos,
-              ) {
-                return _filterChip(
-                  label: (t) => t.partOfSpeechName(pos),
-                  active: selectedPos == pos,
-                  clay: clay,
-                  gridCell: gridCell,
-                  hairline: hairline,
-                  ink: ink,
-                  muted: muted,
-                  onTap: () => onPosChanged(pos),
-                );
-              }),
-            ],
-          ),
-          const SizedBox(height: 8),
-          // Structure (from "types of words": simple / compound / derived)
-          if (options.structures.isNotEmpty && !_greek) ...[
-            DualText(
-              (t) => t.structure,
-              inline: true,
-              style: kickerStyle(brightness: Theme.of(context).brightness)
-                  .copyWith(color: clay),
-            ),
-            const SizedBox(height: 6),
-            Wrap(
-              spacing: 6,
-              runSpacing: 4,
-              children: [
-                _filterChip(
-                  label: (t) => t.all,
-                  active: _selectedStructure == null,
-                  clay: clay,
-                  gridCell: gridCell,
-                  hairline: hairline,
-                  ink: ink,
-                  muted: muted,
-                  onTap: () => _pickStructure(null),
-                ),
-                for (final st in options.structures)
-                  _filterChip(
-                    label: (t) => st.name(t.code),
-                    active: _selectedStructure == st.id,
-                    clay: clay,
-                    gridCell: gridCell,
-                    hairline: hairline,
-                    ink: ink,
-                    muted: muted,
-                    onTap: () => _pickStructure(st.id),
-                  ),
-              ],
-            ),
-            const SizedBox(height: 8),
-          ],
-          // Subject selector (opens the grouped list below)
-          _labelSelector(
-            title: (t) => t.subject,
-            value: (t) => _subjectName(options, t),
-            active: _selectedSubject != null,
-            open: _subjectListOpen,
-            onTap: _toggleSubjectList,
-            gridCell: gridCell,
-            hairline: hairline,
-            clay: clay,
-            ink: ink,
-            muted: muted,
-          ),
-          if (_subjectListOpen) ...[
-            const SizedBox(height: Spacing.sm),
-            _buildLabelPanel(
-              options: options,
-              gridCell: gridCell,
-              hairline: hairline,
-              clay: clay,
-              ink: ink,
-              muted: muted,
-            ),
-          ],
-        ],
-      ),
-    );
-  }
-
-  // ── Subject list ────────────────────────────────────────────────────────
-
-  String _subjectName(FilterOptions options, AppText t) {
-    final id = _selectedSubject;
-    if (id == null) return t.allSubjects;
-    if (id == DictionaryService.generalSubject) return t.general;
-    return options.subjectsById[id]?.name(t.code) ?? id;
-  }
-
-  void _toggleSubjectList() {
-    FocusScope.of(context).unfocus();
-    setState(() => _subjectListOpen = !_subjectListOpen);
-  }
-
-  void _pickStructure(String? id) {
-    setState(() => _selectedStructure = id);
-    _refreshResults();
-  }
-
-  void _pickSubject(String? id) {
-    setState(() {
-      _selectedSubject = id;
-      _subjectListOpen = false;
-    });
-    _refreshResults();
-  }
-
-  /// "SUBJECT  [ Law / Legal  ▾ ]" — shows the current choice; tap to open.
-  Widget _labelSelector({
-    required TextPick title,
-    required TextPick value,
-    required bool active,
-    required bool open,
-    required VoidCallback onTap,
-    required Color gridCell,
-    required Color hairline,
-    required Color clay,
-    required Color ink,
-    required Color muted,
-  }) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        DualText(
-          title,
-          inline: true,
-          style: kickerStyle(brightness: Theme.of(context).brightness)
-              .copyWith(color: clay),
-        ),
-        const SizedBox(height: 6),
-        GestureDetector(
-          onTap: onTap,
-          child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-            decoration: BoxDecoration(
-              color: active ? clay : gridCell,
-              borderRadius: BorderRadius.circular(16),
-              border: Border.all(
-                color: active || open ? clay : hairline,
-                width: active || open ? 1.5 : 0.5,
-              ),
-            ),
-            child: Row(
-              children: [
-                Expanded(
-                  child: DualText(
-                    value,
-                    inline: true,
-                    style: TextStyle(
-                      fontSize: 12,
-                      fontWeight: active ? FontWeight.w700 : FontWeight.w500,
-                      color: active ? Colors.white : muted,
-                      fontFamily: 'Inter',
-                    ),
-                    secondaryStyle: TextStyle(
-                      fontSize: 10,
-                      color: active
-                          ? Colors.white.withValues(alpha: 0.75)
-                          : translationColor(context),
-                      fontFamily: 'Inter',
-                    ),
-                  ),
-                ),
-                Icon(
-                  open ? Icons.keyboard_arrow_up : Icons.keyboard_arrow_down,
-                  size: 18,
-                  color: active ? Colors.white : muted,
-                ),
-              ],
-            ),
-          ),
-        ),
-      ],
-    );
-  }
-
-  /// The open list: subject groups as expandable titles with their subjects
-  /// underneath.
-  Widget _buildLabelPanel({
-    required FilterOptions options,
-    required Color gridCell,
-    required Color hairline,
-    required Color clay,
-    required Color ink,
-    required Color muted,
-  }) {
-    Widget row({
-      required TextPick label,
-      required bool selected,
-      required VoidCallback onTap,
-      int? count,
-      double indent = 0,
-    }) {
-      return InkWell(
-        onTap: onTap,
-        child: Padding(
-          padding: EdgeInsets.fromLTRB(12 + indent, 10, 12, 10),
-          child: Row(
-            children: [
-              Expanded(
-                child: DualText(
-                  label,
-                  inline: true,
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontWeight: selected ? FontWeight.w700 : FontWeight.w400,
-                    color: selected ? clay : ink,
-                    fontFamily: 'Inter',
-                  ),
-                ),
-              ),
-              if (count != null)
-                Text(
-                  '$count',
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: muted,
-                    fontFamily: 'Inter',
-                  ),
-                ),
-              if (selected) ...[
-                const SizedBox(width: 6),
-                Icon(Icons.check, size: 16, color: clay),
-              ],
-            ],
-          ),
-        ),
-      );
-    }
-
-    final children = <Widget>[];
-    children
-      ..add(
-        row(
-          label: (t) => t.allSubjects,
-          selected: _selectedSubject == null,
-          onTap: () => _pickSubject(null),
-        ),
-      )
-      ..add(
-        row(
-          label: (t) => t.generalNoSubject,
-          selected: _selectedSubject == DictionaryService.generalSubject,
-          onTap: () => _pickSubject(DictionaryService.generalSubject),
-        ),
-      );
-    for (final group in options.subjectGroups) {
-      final expanded =
-          _expandedGroups.contains(group.label.id) ||
-          group.subjects.any((s) => s.id == _selectedSubject);
-      children.add(
-        InkWell(
-          onTap: () => setState(() {
-            if (!_expandedGroups.remove(group.label.id)) {
-              _expandedGroups.add(group.label.id);
-            }
-          }),
-          child: Container(
-            decoration: BoxDecoration(
-              border: Border(top: BorderSide(color: hairline, width: 0.5)),
-            ),
-            padding: const EdgeInsets.fromLTRB(12, 12, 8, 12),
-            child: Row(
-              children: [
-                Expanded(
-                  child: DualText(
-                    (t) => group.label.name(t.code),
-                    inline: true,
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w700,
-                      color: ink,
-                      fontFamily: 'Inter',
-                    ),
-                  ),
-                ),
-                Icon(
-                  expanded
-                      ? Icons.keyboard_arrow_up
-                      : Icons.keyboard_arrow_down,
-                  size: 20,
-                  color: muted,
-                ),
-              ],
-            ),
-          ),
-        ),
-      );
-      if (expanded) {
-        for (final subject in group.subjects) {
-          children.add(
-            row(
-              label: (t) => subject.name(t.code),
-              count: subject.count,
-              indent: Spacing.md,
-              selected: _selectedSubject == subject.id,
-              onTap: () => _pickSubject(subject.id),
-            ),
-          );
-        }
-      }
-    }
-
-    return Container(
-      constraints: BoxConstraints(
-        maxHeight: MediaQuery.sizeOf(context).height * 0.4,
-      ),
-      decoration: BoxDecoration(
-        color: gridCell,
-        borderRadius: BorderRadius.circular(Radius.sm),
-        border: Border.all(color: hairline, width: 0.5),
-      ),
-      child: Material(
-        type: MaterialType.transparency,
-        child: ListView(
-          padding: EdgeInsets.zero,
-          shrinkWrap: true,
-          children: children,
-        ),
-      ),
-    );
-  }
-
-  Widget _filterChip({
-    required TextPick label,
-    required bool active,
-    required Color clay,
-    required Color gridCell,
-    required Color hairline,
-    required Color ink,
-    required Color muted,
-    required VoidCallback onTap,
-  }) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-        decoration: BoxDecoration(
-          color: active ? clay : gridCell,
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(
-            color: active ? clay : hairline,
-            width: active ? 1.5 : 0.5,
-          ),
-        ),
-        child: DualText(
-          label,
-          inline: true,
-          style: TextStyle(
-            fontSize: 12,
-            fontWeight: active ? FontWeight.w700 : FontWeight.w500,
-            color: active ? Colors.white : muted,
-            fontFamily: 'Inter',
-          ),
-          secondaryStyle: TextStyle(
-            fontSize: 10,
-            color: active
-                ? Colors.white.withValues(alpha: 0.75)
-                : translationColor(context),
-            fontFamily: 'Inter',
-          ),
-        ),
-      ),
-    );
-  }
 
   // ── Content area ─────────────────────────────────────────────────────────
 
@@ -823,7 +566,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
   static const _topBarHeight = 40.0 + Spacing.sm * 2;
 
   /// The results (or a loading / empty message) as slivers, below the
-  /// filters in the page's single scroll view.
+  /// search bar in the page's single scroll view.
   List<Widget> _buildContent({
     required Brightness brightness,
     required Color gridCell,
@@ -904,7 +647,15 @@ class _DictionaryPageState extends State<DictionaryPage> {
     final showMore = _browsing && !_browseDone;
     return [
       SliverPadding(
-        padding: const EdgeInsets.symmetric(horizontal: Spacing.md),
+        // Room on the right for the A–Z strip while listing.
+        padding: EdgeInsets.fromLTRB(
+          Spacing.md,
+          0,
+          _browsing && !widget.inSheet && _searchController.text.trim().isEmpty
+              ? Spacing.md + 12
+              : Spacing.md,
+          0,
+        ),
         sliver: SliverList.separated(
           itemCount: _results.length + (showMore ? 1 : 0),
           separatorBuilder: (_, _) => const SizedBox(height: 2),
@@ -916,7 +667,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
               );
             }
             final entry = _results[index];
-            return _buildEntryCard(
+            final card = _buildEntryCard(
               entry: entry,
               gridCell: gridCell,
               hairline: hairline,
@@ -935,6 +686,10 @@ class _DictionaryPageState extends State<DictionaryPage> {
                   language: _language,
                 );
               },
+            );
+            return KeyedSubtree(
+              key: _itemKeys.putIfAbsent(index, GlobalKey.new),
+              child: card,
             );
           },
         ),
@@ -1000,7 +755,10 @@ class _DictionaryPageState extends State<DictionaryPage> {
                     vertical: 3,
                   ),
                   decoration: BoxDecoration(
-                    color: clay,
+                    color: Theme.of(context).brightness.resolve(
+                      light: AppColors.claySoftLight,
+                      dark: AppColors.claySoftDark,
+                    ),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: DualText(
@@ -1115,4 +873,149 @@ class _PinnedBar extends SliverPersistentHeaderDelegate {
 
   @override
   bool shouldRebuild(_PinnedBar old) => true;
+}
+
+const _latinLetters = [
+  'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', //
+  'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+];
+const _greekLetters = [
+  'Α', 'Β', 'Γ', 'Δ', 'Ε', 'Ζ', 'Η', 'Θ', 'Ι', 'Κ', 'Λ', 'Μ', //
+  'Ν', 'Ξ', 'Ο', 'Π', 'Ρ', 'Σ', 'Τ', 'Υ', 'Φ', 'Χ', 'Ψ', 'Ω',
+];
+
+/// The alphabet down the right edge of the Dictionary: tap a letter, or
+/// slide a finger along it, to jump to the words starting with it. The
+/// letter under the finger shows big in a bubble beside the strip.
+class _AlphabetStrip extends StatefulWidget {
+  final List<String> letters;
+  final String? active;
+  final ValueChanged<String> onLetter;
+
+  const _AlphabetStrip({
+    required this.letters,
+    required this.active,
+    required this.onLetter,
+  });
+
+  @override
+  State<_AlphabetStrip> createState() => _AlphabetStripState();
+}
+
+class _AlphabetStripState extends State<_AlphabetStrip> {
+  String? _touched; // the letter under the finger, while touching
+
+  void _at(Offset local, double height) {
+    final i = (local.dy / height * widget.letters.length).floor().clamp(
+      0,
+      widget.letters.length - 1,
+    );
+    final letter = widget.letters[i];
+    if (letter != _touched) setState(() => _touched = letter);
+    widget.onLetter(letter);
+  }
+
+  void _release() => setState(() => _touched = null);
+
+  @override
+  Widget build(BuildContext context) {
+    final brightness = Theme.of(context).brightness;
+    final muted = brightness.resolve(
+      light: AppColors.mutedLight,
+      dark: AppColors.mutedDark,
+    );
+    final soft = brightness.resolve(
+      light: AppColors.claySoftLight,
+      dark: AppColors.claySoftDark,
+    );
+    return LayoutBuilder(
+      builder: (context, box) {
+        final h = box.maxHeight;
+        return Stack(
+          clipBehavior: Clip.none,
+          children: [
+            GestureDetector(
+              key: const Key('alphabet-strip'),
+              behavior: HitTestBehavior.opaque,
+              onTapDown: (d) => _at(d.localPosition, h),
+              onTapUp: (_) => _release(),
+              onVerticalDragStart: (d) => _at(d.localPosition, h),
+              onVerticalDragUpdate: (d) => _at(d.localPosition, h),
+              onVerticalDragEnd: (_) => _release(),
+              onVerticalDragCancel: _release,
+              child: SizedBox(
+                width: 22,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    for (final l in widget.letters)
+                      if (l == (_touched ?? widget.active))
+                        // Where you are: bigger, bold, in a small circle.
+                        Container(
+                          key: Key('alphabet-$l'),
+                          width: 20,
+                          height: 20,
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            color: soft,
+                            shape: BoxShape.circle,
+                          ),
+                          child: Text(
+                            l,
+                            style: const TextStyle(
+                              fontFamily: 'Inter',
+                              fontSize: 13,
+                              height: 1,
+                              fontWeight: FontWeight.w800,
+                              color: Colors.white,
+                            ),
+                          ),
+                        )
+                      else
+                        Text(
+                          l,
+                          key: Key('alphabet-$l'),
+                          style: TextStyle(
+                            fontFamily: 'Inter',
+                            fontSize: 10,
+                            height: 1,
+                            fontWeight: FontWeight.w600,
+                            color: muted,
+                          ),
+                        ),
+                  ],
+                ),
+              ),
+            ),
+            // The letter under the finger, big, beside the strip.
+            if (_touched case final l?)
+              Positioned(
+                right: 34,
+                top:
+                    (widget.letters.indexOf(l) + 0.5) /
+                        widget.letters.length *
+                        h -
+                    28,
+                child: IgnorePointer(
+                  child: Container(
+                    width: 56,
+                    height: 56,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      color: soft,
+                      shape: BoxShape.circle,
+                    ),
+                    child: Text(
+                      l,
+                      style: Theme.of(context).textTheme.displaySmall!
+                          .copyWith(color: Colors.white),
+                    ),
+                  ),
+                ),
+              ),
+          ],
+        );
+      },
+    );
+  }
 }

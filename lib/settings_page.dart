@@ -6,11 +6,12 @@ import 'package:material_ui/material_ui.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'app_settings.dart';
+import 'bottom_menu.dart';
 import 'app_text.dart';
 import 'dual_text.dart';
 import 'design_system.dart';
 import 'eurollm_translator.dart';
-import 'opus_mt_service.dart';
+import 'section_icon.dart';
 import 'word_sheet.dart' show showDraggableSheet;
 
 class SettingsPage extends StatelessWidget {
@@ -45,132 +46,146 @@ class SettingsPage extends StatelessWidget {
 
         return Scaffold(
           backgroundColor: paper,
-          body: SafeArea(
-            child: Column(
-              children: [
-                // ── Top bar ───────────────────────────────────────────────
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(
-                    Spacing.md,
-                    Spacing.sm,
-                    Spacing.md,
-                    Spacing.sm,
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      GestureDetector(
-                        onTap: () => Navigator.of(context).pop(),
-                        child: Container(
-                          width: 40,
-                          height: 40,
-                          decoration: BoxDecoration(
-                            color: gridCell,
-                            borderRadius: BorderRadius.circular(Radius.sm),
-                          ),
-                          child: Icon(Icons.arrow_back, size: 20, color: ink),
-                        ),
-                      ),
-                      const HomeButton(),
-                    ],
-                  ),
-                ),
-
-                // ── Content ───────────────────────────────────────────────
-                Expanded(
-                  child: SingleChildScrollView(
-                    padding: const EdgeInsets.symmetric(horizontal: Spacing.md),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+          body: BottomMenu(
+            current: Section.settings,
+            child: SafeArea(
+              child: Column(
+                children: [
+                  // ── Top bar ───────────────────────────────────────────────
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(
+                      Spacing.md,
+                      Spacing.sm,
+                      Spacing.md,
+                      Spacing.sm,
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        DualText(
-                          (t) => t.preferences,
-                          style: kickerStyle(brightness: brightness),
-                          inline: true,
-                        ),
-                        const SizedBox(height: Spacing.xs),
-                        DualText(
-                          (t) => t.settings,
-                          style: Theme.of(context).textTheme.displayMedium,
-                          inline: true,
-                        ),
-                        const SizedBox(height: Spacing.lg),
-
-                        _SettingsCard(
-                          key: const Key('settings-language'),
-                          title: (t) => t.language,
-                          subtitle: (t) => settings.secondaryLanguage == null
-                              ? t.languageName(
-                                  settings.languageInUse(codeInUse).code,
-                                )
-                              // Each line names the languages in its own
-                              // language: "English · secondary: Greek" /
-                              // "Αγγλικά · δευτερεύουσα: Ελληνικά".
-                              : t.withSecondary(
-                                  t.languageName(
-                                    settings.languageInUse(codeInUse).code,
-                                  ),
-                                  t.languageName(settings.secondaryLanguage!),
-                                ),
-                          trailing: Icon(Icons.chevron_right, color: ink),
-                          onTap: () => showLanguagePicker(context),
-                        ),
-                        const SizedBox(height: Spacing.md),
-
-                        _SettingsCard(
-                          key: const Key('settings-dark-mode'),
-                          title: (t) => t.darkMode,
-                          subtitle: (t) => isDark ? t.on : t.off,
-                          trailing: Switch(
-                            value: isDark,
-                            activeThumbColor: clay,
-                            onChanged: settings.setDarkMode,
+                        GestureDetector(
+                          onTap: () => Navigator.of(context).pop(),
+                          child: Container(
+                            width: 40,
+                            height: 40,
+                            decoration: BoxDecoration(
+                              color: gridCell,
+                              borderRadius: BorderRadius.circular(Radius.sm),
+                            ),
+                            child: Icon(Icons.arrow_back, size: 20, color: ink),
                           ),
-                          onTap: () => settings.setDarkMode(!isDark),
                         ),
-                        const SizedBox(height: Spacing.md),
-                        _FontSizeCard(settings: settings),
-                        const SizedBox(height: Spacing.md),
-                        _OfflineTranslatorCard(model: OpusMtService.instance),
-                        const SizedBox(height: Spacing.md),
-                        _AiTranslatorCard(
-                          settings: settings,
-                          model: EuroLlmTranslator.instance,
-                        ),
-
-                        // ── Separator ───────────────────────────────────
-                        const SizedBox(height: Spacing.lg),
-                        Divider(
-                          color: brightness.resolve(
-                            light: AppColors.hairlineLight,
-                            dark: AppColors.hairlineDark,
-                          ),
-                          height: 0,
-                        ),
-                        const SizedBox(height: Spacing.lg),
-
-                        _SettingsCard(
-                          key: const Key('settings-feedback'),
-                          title: (t) => t.feedback,
-                          subtitle: (t) => t.feedbackSubtitle,
-                          trailing: Icon(Icons.mail_outline, color: ink),
-                          onTap: () => _sendFeedback(context),
-                        ),
-                        const SizedBox(height: Spacing.md),
-
-                        _SettingsCard(
-                          key: const Key('settings-about'),
-                          title: (t) => t.aboutTheApp,
-                          subtitle: (t) => t.aboutTheAppSubtitle,
-                          trailing: Icon(Icons.chevron_right, color: ink),
-                          onTap: () {},
-                        ),
-                        const SizedBox(height: Spacing.xxl),
                       ],
                     ),
                   ),
-                ),
-              ],
+
+                  // ── Content ───────────────────────────────────────────────
+                  Expanded(
+                    child: SingleChildScrollView(
+                      padding: const EdgeInsets.fromLTRB(
+                        Spacing.md,
+                        0,
+                        Spacing.md,
+                        BottomMenu.space, // clear of the bottom menu
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          // The page's title, big and bold, like Games.
+                          const SizedBox(height: Spacing.sm),
+                          DualText(
+                            (t) => AppText.upper(t.settings),
+                            style: Theme.of(context).textTheme.displayLarge,
+                            inline: true,
+                          ),
+                          const SizedBox(height: Spacing.lg),
+
+                          _SettingsCard(
+                            key: const Key('settings-language'),
+                            icon: Section.language,
+                            title: (t) => t.language,
+                            subtitle: (t) => settings.secondaryLanguage == null
+                                ? t.languageName(
+                                    settings.languageInUse(codeInUse).code,
+                                  )
+                                // Each line names the languages in its own
+                                // language: "English · secondary: Greek" /
+                                // "Αγγλικά · δευτερεύουσα: Ελληνικά".
+                                : t.withSecondary(
+                                    t.languageName(
+                                      settings.languageInUse(codeInUse).code,
+                                    ),
+                                    t.languageName(settings.secondaryLanguage!),
+                                  ),
+                            trailing: Icon(Icons.chevron_right, color: ink),
+                            onTap: () => showLanguagePicker(context),
+                          ),
+                          const SizedBox(height: Spacing.md),
+
+                          _SettingsCard(
+                            key: const Key('settings-dark-mode'),
+                            icon: Section.darkMode,
+                            title: (t) => t.darkMode,
+                            subtitle: (t) => isDark ? t.on : t.off,
+                            trailing: Switch(
+                              value: isDark,
+                              activeThumbColor: clay,
+                              onChanged: settings.setDarkMode,
+                            ),
+                            onTap: () => settings.setDarkMode(!isDark),
+                          ),
+                          const SizedBox(height: Spacing.md),
+                          _FontSizeCard(settings: settings),
+                          const SizedBox(height: Spacing.md),
+                          _AiTranslatorCard(
+                            settings: settings,
+                            model: EuroLlmTranslator.instance,
+                          ),
+
+                          // ── Separator ───────────────────────────────────
+                          const SizedBox(height: Spacing.lg),
+                          Divider(
+                            color: brightness.resolve(
+                              light: AppColors.hairlineLight,
+                              dark: AppColors.hairlineDark,
+                            ),
+                            height: 0,
+                          ),
+                          const SizedBox(height: Spacing.lg),
+
+                          _SettingsCard(
+                            key: const Key('settings-feedback'),
+                            icon: Section.feedback,
+                            title: (t) => t.feedback,
+                            subtitle: (t) => t.feedbackSubtitle,
+                            trailing: Icon(Icons.mail_outline, color: ink),
+                            onTap: () => _sendFeedback(context),
+                          ),
+                          const SizedBox(height: Spacing.md),
+
+                          _SettingsCard(
+                            key: const Key('settings-about'),
+                            icon: Section.about,
+                            title: (t) => t.aboutTheApp,
+                            subtitle: (t) => t.aboutTheAppSubtitle,
+                            trailing: Icon(Icons.chevron_right, color: ink),
+                            // The app's credits (the translator's licence
+                            // asks for one) and the licences of what it uses.
+                            onTap: () {
+                              final t = AppText.of(context);
+                              showAboutDialog(
+                                context: context,
+                                applicationName: 'Lex Hopper',
+                                children: [Text(t.translatorCredit)],
+                              );
+                            },
+                          ),
+                          const SizedBox(height: Spacing.xxl),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         );
@@ -216,147 +231,6 @@ void showLanguagePicker(BuildContext context) {
     context,
     builder: (scrollController) => _LanguageList(scrollController),
   );
-}
-
-/// Offline translator: downloads OPUS-MT from Hugging Face (after asking),
-/// shows the progress, then "Ready" with its credit; tapping it then offers
-/// to delete it. Says "coming soon" while the files aren't uploaded.
-class _OfflineTranslatorCard extends StatefulWidget {
-  final OpusMtService model;
-
-  const _OfflineTranslatorCard({required this.model});
-
-  @override
-  State<_OfflineTranslatorCard> createState() => _OfflineTranslatorCardState();
-}
-
-class _OfflineTranslatorCardState extends State<_OfflineTranslatorCard> {
-  OpusMtManifest? _manifest;
-
-  @override
-  void initState() {
-    super.initState();
-    widget.model.refresh();
-    widget.model.manifest.then(
-      (m) => mounted ? setState(() => _manifest = m) : null,
-      onError: (Object e) => debugPrint('OPUS-MT: no manifest: $e'),
-    );
-  }
-
-  Future<bool> _ask(TextPick title, TextPick body, TextPick yes) async =>
-      await showDialog<bool>(
-        context: context,
-        builder: (context) => AlertDialog(
-          key: const Key('offline-dialog'),
-          title: DualText(title),
-          content: DualText(body),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.of(context).pop(false),
-              child: Text(AppText.of(context).cancel),
-            ),
-            FilledButton(
-              key: const Key('offline-dialog-yes'),
-              onPressed: () => Navigator.of(context).pop(true),
-              child: Text(yes(AppText.of(context))),
-            ),
-          ],
-        ),
-      ) ??
-      false;
-
-  Future<void> _tap() async {
-    final model = widget.model;
-    final m = _manifest;
-    if (m == null) return;
-    switch (model.state) {
-      case ModelState.ready:
-        if (await _ask(
-          (t) => t.offlineDeleteTitle,
-          (t) => t.offlineDeleteBody(m.sizeMb),
-          (t) => t.delete,
-        )) {
-          await model.deleteModels();
-        }
-      // Still checking: a download skips files already there.
-      case ModelState.notDownloaded || ModelState.failed || ModelState.checking
-          when m.hosted:
-        if (await _ask(
-          (t) => t.offlineDownloadTitle,
-          (t) => t.offlineDownloadBody(m.sizeMb),
-          (t) => t.download,
-        )) {
-          await model.download();
-        }
-      case ModelState.downloading:
-        model.cancelDownload();
-      default:
-        break;
-    }
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final model = widget.model;
-    final brightness = Theme.of(context).brightness;
-    final ink = brightness.resolve(
-      light: AppColors.inkLight,
-      dark: AppColors.inkDark,
-    );
-    final clay = brightness.resolve(
-      light: AppColors.clayLight,
-      dark: AppColors.clayDark,
-    );
-    return ListenableBuilder(
-      listenable: model.changes,
-      builder: (context, _) {
-        final state = model.state;
-        final m = _manifest;
-        final TextPick subtitle = switch (state) {
-          ModelState.ready => (t) => t.offlineTranslatorReady,
-          ModelState.downloading => (t) => t.offlineTranslatorDownloading(
-            (model.progress * 100).floor(),
-          ),
-          ModelState.failed => (t) => t.offlineTranslatorFailed,
-          _ when m == null || !m.hosted => (t) => t.offlineTranslatorSoon,
-          _ => (t) => t.offlineTranslatorDownload(m.sizeMb),
-        };
-        final IconData icon = switch (state) {
-          ModelState.ready => Icons.check_circle_outline,
-          ModelState.downloading => Icons.close,
-          _ => Icons.download_outlined,
-        };
-        return Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            _SettingsCard(
-              key: const Key('settings-offline-translator'),
-              title: (t) => t.offlineTranslator,
-              subtitle: subtitle,
-              trailing: Icon(
-                icon,
-                color: state == ModelState.ready ? clay : ink,
-              ),
-              onTap: _tap,
-            ),
-            if (state == ModelState.downloading)
-              Padding(
-                padding: const EdgeInsets.only(top: Spacing.xs),
-                child: LinearProgressIndicator(
-                  key: const Key('offline-download-progress'),
-                  value: model.progress,
-                  color: clay,
-                  backgroundColor: Theme.of(context).brightness.resolve(
-                    light: AppColors.hairlineLight,
-                    dark: AppColors.hairlineDark,
-                  ),
-                ),
-              ),
-          ],
-        );
-      },
-    );
-  }
 }
 
 /// AI translator: a switch that downloads EuroLLM (after asking) and then
@@ -468,6 +342,7 @@ class _AiTranslatorCardState extends State<_AiTranslatorCard> {
           children: [
             _SettingsCard(
               key: const Key('settings-ai-translator'),
+              icon: Section.aiTranslator,
               title: (t) => t.aiTranslator,
               subtitle: subtitle,
               trailing: Switch(
@@ -509,6 +384,8 @@ class _AiTranslatorCardState extends State<_AiTranslatorCard> {
 /// A settings card in the home page style: small red label, title, current
 /// value, and a control (switch or arrow) on the right.
 class _SettingsCard extends StatelessWidget {
+  /// The doodle on the left, like the home page's cards.
+  final Section icon;
   final TextPick title;
   final TextPick subtitle;
   final Widget trailing;
@@ -516,6 +393,7 @@ class _SettingsCard extends StatelessWidget {
 
   const _SettingsCard({
     super.key,
+    required this.icon,
     required this.title,
     required this.subtitle,
     required this.trailing,
@@ -547,6 +425,8 @@ class _SettingsCard extends StatelessWidget {
         padding: const EdgeInsets.all(Spacing.md),
         child: Row(
           children: [
+            SectionIcon(icon),
+            const SizedBox(width: Spacing.md),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -615,10 +495,18 @@ class _FontSizeCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          DualText(
-            (t) => t.fontSize,
-            style: Theme.of(context).textTheme.displaySmall,
-            inline: true,
+          Row(
+            children: [
+              const SectionIcon(Section.fontSize),
+              const SizedBox(width: Spacing.md),
+              Expanded(
+                child: DualText(
+                  (t) => t.fontSize,
+                  style: Theme.of(context).textTheme.displaySmall,
+                  inline: true,
+                ),
+              ),
+            ],
           ),
           const SizedBox(height: Spacing.md),
           Row(
@@ -736,6 +624,14 @@ class _LanguageList extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(vertical: Spacing.md),
                   child: Row(
                     children: [
+                      // The country's flag, faded while not available.
+                      if (FlagIcon.has(language.code)) ...[
+                        Opacity(
+                          opacity: language.available ? 1 : 0.45,
+                          child: FlagIcon(language.code),
+                        ),
+                        const SizedBox(width: Spacing.md),
+                      ],
                       Expanded(
                         // The name in the main language, with the
                         // secondary language's name next to it.

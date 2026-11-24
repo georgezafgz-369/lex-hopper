@@ -5,7 +5,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lex_hopper/app_settings.dart';
 import 'package:lex_hopper/crossword_menu_page.dart';
-import 'package:lex_hopper/design_system.dart';
 import 'package:lex_hopper/dictionary_page.dart';
 import 'package:lex_hopper/word_search_menu_page.dart';
 import 'package:material_ui/material_ui.dart';
@@ -31,7 +30,7 @@ void main() {
       'crossword-menu-search',
     ),
   ]) {
-    testWidgets('$name menu: search bar between Back and Home, searches', (
+    testWidgets('$name menu: search bar beside Back, searches', (
       tester,
     ) async {
       await tester.binding.setSurfaceSize(const Size(400, 900));
@@ -42,9 +41,8 @@ void main() {
       expect(field, findsOneWidget);
       final backAt = tester.getCenter(find.byKey(Key(back)));
       final searchAt = tester.getCenter(field);
-      final homeAt = tester.getCenter(find.byType(HomeButton));
       expect(searchAt.dx, greaterThan(backAt.dx));
-      expect(searchAt.dx, lessThan(homeAt.dx));
+      expect(find.byKey(const Key('home-button')), findsNothing);
       expect((searchAt.dy - backAt.dy).abs(), lessThan(4)); // same row
 
       await tester.enterText(field, 'cat');

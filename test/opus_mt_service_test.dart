@@ -118,6 +118,26 @@ void main() {
     expect(s.state, ModelState.checking);
   });
 
+  test('ensure downloads it when missing, and only once', () async {
+    final s = service();
+    await s.ensure();
+    expect(s.state, ModelState.ready);
+    expect(requested, hasLength(2));
+    requested.clear();
+    await service().ensure(); // the next start: already there
+    expect(requested, isEmpty);
+  });
+
+  test('ensure tries again after a failed download', () async {
+    final s = service();
+    final body = served.remove('el-en/b.json')!;
+    await s.ensure(); // no internet for one file, say
+    expect(s.state, ModelState.failed);
+    served['el-en/b.json'] = body;
+    await s.ensure();
+    expect(s.state, ModelState.ready);
+  });
+
   test('delete frees the space', () async {
     final s = service();
     await s.download();

@@ -1,15 +1,15 @@
 {
-  "lexicon": "e0eb169ae784",
+  "lexicon": "b9ba2ed83d15",
   "texts": "b00666153138",
   "repo": "Skelletoon/lex-hopper-data",
   "repo_type": "dataset",
-  "revision": "12ac802207646195e59f663630dc6951cb85ddb3",
+  "revision": "9709cf7dc89179e1cf9912c312b0a49f9f73393b",
   "files": {
     "lexicon": {
-      "path": "databases/lexicon_e0eb169ae784.db.gz",
-      "gz_bytes": 36864708,
-      "sha256": "378ff8b1a6bce1b0a62510ae56d3e09457978edf1b2948e7081e5902ad22e8d7",
-      "bytes": 131661824
+      "path": "databases/lexicon_b9ba2ed83d15.db.gz",
+      "gz_bytes": 36817618,
+      "sha256": "58d2a5af1cbadc17d6c21311a229190eae80af82af177d8ae2bb534b0671b6e5",
+      "bytes": 131452928
     },
     "texts": {
       "path": "databases/texts_b00666153138.db.gz",

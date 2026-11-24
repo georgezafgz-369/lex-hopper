@@ -690,12 +690,8 @@ class _CrosswordGamePageState extends State<CrosswordGamePage> {
                       ),
                     ),
                     const SizedBox(width: Spacing.sm),
-                    const Expanded(
-                      child: Align(
-                        alignment: Alignment.centerRight,
-                        child: HomeButton(),
-                      ),
-                    ),
+                    // Balances the Back side, keeping the middle centred.
+                    const Expanded(child: SizedBox()),
                   ],
                 ),
               ),
@@ -837,7 +833,6 @@ class _CrosswordGamePageState extends State<CrosswordGamePage> {
                     (t) => t.level(_currentLevel),
                     style: kickerStyle(brightness: brightness),
                   ),
-                  const HomeButton(),
                 ],
               ),
             ),

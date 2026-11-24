@@ -28,10 +28,16 @@ class WordOfTheDayCard extends StatefulWidget {
   /// Today's date, shown on the card (tests fix it).
   final DateTime? today;
 
+  /// Inside another card (the home page's Dictionary card): no card of its
+  /// own, and only "See more" opens the word (a tap elsewhere goes to the
+  /// card around it).
+  final bool embedded;
+
   const WordOfTheDayCard({
     super.key,
     this.load = _loadFromDictionary,
     this.today,
+    this.embedded = false,
   });
 
   @override
@@ -81,6 +87,28 @@ class _WordOfTheDayCardState extends State<WordOfTheDayCard> {
         // Nothing while loading or when there is no word: the home page
         // simply starts with the Games card.
         if (word == null) return const SizedBox.shrink();
+        if (widget.embedded) {
+          // Under the card's title row, past a thin line.
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              const SizedBox(height: Spacing.md),
+              Divider(
+                height: 0,
+                thickness: 0.5,
+                color: Theme.of(context).brightness.resolve(
+                  light: AppColors.hairlineLight,
+                  dark: AppColors.hairlineDark,
+                ),
+              ),
+              const SizedBox(height: Spacing.md),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: Spacing.sm),
+                child: _card(context, word, language),
+              ),
+            ],
+          );
+        }
         return Padding(
           padding: const EdgeInsets.only(bottom: Spacing.md),
           child: _card(context, word, language),
@@ -111,20 +139,25 @@ class _WordOfTheDayCardState extends State<WordOfTheDayCard> {
     final today = widget.today ?? DateTime.now();
     final titleStyle = Theme.of(context).textTheme.displaySmall!;
 
+    void openWord() => showWordSheet(context, word: text, language: language);
     return GestureDetector(
       key: const Key('word-of-the-day'),
-      onTap: () => showWordSheet(context, word: text, language: language),
+      onTap: widget.embedded ? null : openWord,
       child: Container(
         width: double.infinity,
-        decoration: BoxDecoration(
-          color: brightness.resolve(
-            light: AppColors.gridCellLight,
-            dark: AppColors.gridCellDark,
-          ),
-          borderRadius: BorderRadius.circular(Radius.sm),
-          border: Border.all(color: hairline, width: 0.5),
-        ),
-        padding: const EdgeInsets.all(Spacing.lg),
+        decoration: widget.embedded
+            ? null
+            : BoxDecoration(
+                color: brightness.resolve(
+                  light: AppColors.gridCellLight,
+                  dark: AppColors.gridCellDark,
+                ),
+                borderRadius: BorderRadius.circular(Radius.sm),
+                border: Border.all(color: hairline, width: 0.5),
+              ),
+        padding: widget.embedded
+            ? EdgeInsets.zero
+            : const EdgeInsets.all(Spacing.lg),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -217,19 +250,27 @@ class _WordOfTheDayCardState extends State<WordOfTheDayCard> {
             ),
             const SizedBox(height: Spacing.md),
 
-            // See more ›
+            // See more › (opens the word)
             Align(
               alignment: Alignment.centerRight,
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(
-                    AppText.of(context).seeMore,
-                    style: Theme.of(context).textTheme.bodyMedium!
-                        .copyWith(color: muted),
+              child: GestureDetector(
+                key: const Key('word-of-the-day-more'),
+                behavior: HitTestBehavior.opaque,
+                onTap: openWord,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 4),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(
+                        AppText.of(context).seeMore,
+                        style: Theme.of(context).textTheme.bodyMedium!
+                            .copyWith(color: muted),
+                      ),
+                      Icon(Icons.chevron_right, size: 18, color: muted),
+                    ],
                   ),
-                  Icon(Icons.chevron_right, size: 18, color: muted),
-                ],
+                ),
               ),
             ),
           ],

@@ -1,6 +1,6 @@
 // ─────────────────────────────────────────────────────────────────────────────
 // SECTION ICONS — a doodle for each part of the app (Games, Dictionary,
-// Translator, Settings, and Home and Language for the menu): thick ink lines
+// Translator, Settings, Home and Language for the menu, and Settings' cards): thick ink lines
 // over a flat coloured circle, with sparkles, arrows and squiggles around,
 // spilling over the circle's edge.
 //
@@ -16,7 +16,22 @@ import 'package:material_ui/material_ui.dart';
 
 import 'design_system.dart';
 
-enum Section { games, dictionary, translator, settings, home, language }
+enum Section {
+  games,
+  dictionary,
+  translator,
+  settings,
+  home,
+  language,
+  // Settings' own cards.
+  darkMode,
+  fontSize,
+  aiTranslator,
+  feedback,
+  about,
+  // The bottom menu's open / close button.
+  menu,
+}
 
 class SectionIcon extends StatelessWidget {
   final Section section;
@@ -48,11 +63,27 @@ class SectionIcon extends StatelessWidget {
       light: AppColors.marigoldLight,
       dark: AppColors.marigoldDark,
     ),
-    Section.settings || Section.language => b.resolve(
+    Section.settings || Section.language || Section.about => b.resolve(
       light: AppColors.roseLight,
       dark: AppColors.roseDark,
     ),
-    Section.home => b.resolve(
+    Section.darkMode => b.resolve(
+      light: AppColors.cornflowerLight,
+      dark: AppColors.cornflowerDark,
+    ),
+    Section.fontSize => b.resolve(
+      light: AppColors.marigoldLight,
+      dark: AppColors.marigoldDark,
+    ),
+    Section.feedback => b.resolve(
+      light: AppColors.coralLight,
+      dark: AppColors.coralDark,
+    ),
+    Section.menu => b.resolve(
+      light: AppColors.clayLight,
+      dark: AppColors.clayDark,
+    ),
+    Section.aiTranslator || Section.home => b.resolve(
       light: AppColors.fernLight,
       dark: AppColors.fernDark,
     ),
@@ -202,4 +233,168 @@ final _drawings = <Section, (String, String)>{
         '<path d="M14 92 C20 86 26 98 32 92 C38 86 44 98 50 92"/>'
         '<circle cx="98" cy="98" r="3" fill="{ink}" stroke="none"/>',
   ),
+
+  // Dark mode: a crescent moon with little stars.
+  Section.darkMode: (
+    '$_blob'
+        '<path d="M70 32 A30 30 0 1 0 90 74 A24 24 0 0 1 70 32 Z" '
+        'fill="{tile}"/>',
+    '${_sparkle(98, 26)}'
+        '${_sparkle(88, 98, 5)}'
+        '<circle cx="20" cy="30" r="3" fill="{ink}" stroke="none"/>',
+  ),
+
+  // Font size: "Aa" on a card, a big letter and a small one.
+  Section.fontSize: (
+    '$_blob'
+        '<rect x="24" y="36" width="72" height="54" rx="6" fill="{tile}"/>'
+        '<path d="M34 80 L47 46 L60 80 M39.5 68 H54.5"/>'
+        '<circle cx="74" cy="72" r="7.5" stroke-width="4"/>'
+        '<path d="M81.5 63 V80" stroke-width="4"/>',
+    '<path d="M104 30 V50 M98 36 L104 30 L110 36 M98 44 L104 50 L110 44"/>'
+        '<path d="M12 98 C18 92 24 104 30 98"/>'
+        '<circle cx="20" cy="28" r="3" fill="{ink}" stroke="none"/>',
+  ),
+
+  // AI translator: the four-pointed sparkle of AI, with a small one.
+  Section.aiTranslator: (
+    '$_blob'
+        '<path d="M56 26 C60 50 66 56 90 62 C66 68 60 74 56 98 '
+        'C52 74 46 68 22 62 C46 56 52 50 56 26 Z" fill="{tile}"/>'
+        '<path d="M88 22 C89 30 91 32 99 33 C91 34 89 36 88 44 '
+        'C87 36 85 34 77 33 C85 32 87 30 88 22 Z" fill="{tile}" '
+        'stroke-width="4"/>',
+    '<path d="M12 96 C18 90 24 102 30 96 C36 90 42 102 48 96"/>'
+        '<circle cx="104" cy="96" r="3" fill="{ink}" stroke="none"/>',
+  ),
+
+  // Feedback: an envelope, sent off with motion lines.
+  Section.feedback: (
+    '$_blob'
+        '<rect x="26" y="40" width="68" height="48" rx="5" fill="{tile}"/>'
+        '<path d="M28 44 L60 68 L92 44"/>',
+    '<path d="M100 50 H114 M104 62 H116 M100 74 H112" stroke-width="4"/>'
+        '${_sparkle(22, 26)}'
+        '<path d="M14 104 C20 98 26 110 32 104"/>',
+  ),
+
+  // The bottom menu's button: three thick lines.
+  Section.menu: (
+    '$_blob'
+        '<path d="M38 48 H82 M38 64 H82 M38 80 H82" stroke-width="7"/>',
+    '${_sparkle(100, 22)}'
+        '<circle cx="20" cy="30" r="3" fill="{ink}" stroke="none"/>',
+  ),
+
+  // About the app: an "i" in a circle.
+  Section.about: (
+    '$_blob'
+        '<circle cx="60" cy="62" r="28" fill="{tile}"/>'
+        '<circle cx="60" cy="49" r="4" fill="{ink}" stroke="none"/>'
+        '<path d="M60 59 V77 M53 77 H67 M54 59 H60"/>',
+    '${_sparkle(100, 24)}'
+        '<path d="M12 96 C18 90 24 102 30 96 C36 90 42 102 48 96"/>'
+        '<circle cx="98" cy="98" r="3" fill="{ink}" stroke="none"/>',
+  ),
+};
+
+/// A language's flag, drawn like the section icons: the country's flag
+/// over the language colour's circle, with a sparkle. The flag keeps
+/// its real colours in light and dark mode.
+class FlagIcon extends StatelessWidget {
+  /// The language code: en, el, es, fr, de, it.
+  final String code;
+  final double size;
+
+  const FlagIcon(this.code, {super.key, this.size = 48});
+
+  /// Whether there's a flag for [code].
+  static bool has(String code) => _flags.containsKey(code);
+
+  @visibleForTesting
+  static String svgOf(String code, Brightness b) {
+    const flagArea = 'x="34" y="34" width="62" height="42" rx="4"';
+    final svg =
+        '$_open$_blob'
+        // The flag on its own, centred on the circle: its colours clipped
+        // to a rounded card, outlined.
+        '<g transform="translate(-5 9)">'
+        '<clipPath id="f"><rect $flagArea/></clipPath>'
+        '<g clip-path="url(#f)" stroke="none">${_flags[code]!}</g>'
+        '<rect $flagArea/>'
+        '</g>'
+        '${_sparkle(104, 24, 6)}'
+        '<path d="M78 98 C84 92 90 104 96 98"/>'
+        '$_close';
+    return svg
+        .replaceAll(
+          '{blob}',
+          SectionIcon._hex(SectionIcon.colorOf(Section.language, b)),
+        )
+        .replaceAll(
+          '{ink}',
+          SectionIcon._hex(
+            b.resolve(light: AppColors.inkLight, dark: AppColors.inkDark),
+          ),
+        );
+  }
+
+  @override
+  Widget build(BuildContext context) => SvgPicture.string(
+    svgOf(code, Theme.of(context).brightness),
+    key: Key('flag-$code'),
+    width: size,
+    height: size,
+  );
+}
+
+/// Horizontal stripes over the flag's area (y 34–76), top to bottom.
+String _stripes(List<String> colours) {
+  final h = 42 / colours.length;
+  return [
+    for (final (i, c) in colours.indexed)
+      '<rect x="34" y="${34 + i * h}" width="62" height="${h + 0.5}" '
+          'fill="$c"/>',
+  ].join();
+}
+
+/// Vertical stripes over the flag's area (x 34–96), left to right.
+String _bands(List<String> colours) {
+  final w = 62 / colours.length;
+  return [
+    for (final (i, c) in colours.indexed)
+      '<rect x="${34 + i * w}" y="34" width="${w + 0.5}" height="42" '
+          'fill="$c"/>',
+  ].join();
+}
+
+const _white = '#FFFFFF';
+const _greekBlue = '#0D5EAF';
+
+final _flags = <String, String>{
+  // United Kingdom: the Union Jack.
+  'en':
+      '<rect x="34" y="34" width="62" height="42" fill="#012169"/>'
+      '<path d="M34 34 L96 76 M96 34 L34 76" stroke="$_white" '
+      'stroke-width="9"/>'
+      '<path d="M34 34 L96 76 M96 34 L34 76" stroke="#C8102E" '
+      'stroke-width="3"/>'
+      '<rect x="34" y="49" width="62" height="12" fill="$_white"/>'
+      '<rect x="59" y="34" width="12" height="42" fill="$_white"/>'
+      '<rect x="34" y="51.5" width="62" height="7" fill="#C8102E"/>'
+      '<rect x="61.5" y="34" width="7" height="42" fill="#C8102E"/>',
+  // Greece: nine blue and white stripes, a white cross on blue.
+  'el':
+      '${_stripes([for (var i = 0; i < 9; i++) i.isEven ? _greekBlue : _white])}'
+      '<rect x="34" y="34" width="23.3" height="23.3" fill="$_greekBlue"/>'
+      '<rect x="34" y="43" width="23.3" height="4.7" fill="$_white"/>'
+      '<rect x="43.3" y="34" width="4.7" height="23.3" fill="$_white"/>',
+  // Spain: red, a wide yellow band, red.
+  'es': _stripes(['#AA151B', '#F1BF00', '#F1BF00', '#AA151B']),
+  // France: blue, white, red.
+  'fr': _bands(['#0055A4', _white, '#EF4135']),
+  // Germany: black, red, gold.
+  'de': _stripes(['#000000', '#DD0000', '#FFCE00']),
+  // Italy: green, white, red.
+  'it': _bands(['#009246', _white, '#CE2B37']),
 };

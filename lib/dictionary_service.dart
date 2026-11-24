@@ -631,9 +631,11 @@ class DictionaryService {
   /// with [DictionaryEntry.meaningCount]), for an empty search. Words that
   /// start with a letter come first; with [symbols] true, the ones starting
   /// with a number or symbol (listed after Z). Pages through with [after]:
-  /// pass the last word of the previous page.
+  /// pass the last word of the previous page. [from] starts the list at a
+  /// letter instead (the A–Z strip): the first word starting with it.
   Future<List<DictionaryEntry>> browse({
     String after = '',
+    String? from,
     bool symbols = false,
     String? partOfSpeech,
     String? subject,
@@ -649,14 +651,15 @@ class DictionaryService {
     final glob = symbols ? 'NOT $_letterGlob' : _letterGlob;
     // The next words in order (accent-free order, then the word itself),
     // from each table on its own (each in index order: fast), merged.
-    final key = _key(after);
+    final key = _key(from ?? after);
+    final last = from == null ? after : '';
     Future<List<Map<String, Object?>>> next(String table, String word) =>
         _db!.rawQuery(
           'SELECT DISTINCT plain, $word AS word FROM $table '
           'WHERE lang = ? AND $glob AND plain >= ? '
           'AND (plain, $word) > (?, ?)$filters '
           'ORDER BY plain, $word LIMIT ?',
-          [language, key, key, after, ...args, limit],
+          [language, key, key, last, ...args, limit],
         );
     final words = [
       ...await next('main.entries', 'word'),

@@ -2,6 +2,7 @@
 // LEX HOPPER — entry point
 // ─────────────────────────────────────────────────────────────────────────────
 
+import 'package:flutter/foundation.dart' show LicenseEntryWithLineBreaks, LicenseRegistry;
 import 'package:flutter/services.dart';
 import 'package:material_ui/material_ui.dart';
 
@@ -14,6 +15,8 @@ import 'games_page.dart';
 import 'crossword_menu_page.dart';
 import 'crossword_game_page.dart';
 import 'dictionary_page.dart';
+import 'dictionary_service.dart';
+import 'opus_mt_service.dart';
 import 'puzzle_themes.dart';
 import 'settings_page.dart';
 import 'translator_page.dart';
@@ -26,7 +29,28 @@ Future<void> main() async {
   await SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
   // Saved dark mode / language, so the first frame already uses them.
   await AppSettings.instance.load();
+  // The translator's licence (CC BY 4.0) in Settings > About > licences.
+  LicenseRegistry.addLicense(
+    () => Stream.value(
+      const LicenseEntryWithLineBreaks(
+        ['OPUS-MT (Helsinki-NLP)'],
+        'opus-mt-tc-big-en-el and opus-mt-tc-big-el-en by Helsinki-NLP, '
+        'University of Helsinki (Tiedemann et al.), licensed under the '
+        'Creative Commons Attribution 4.0 International licence: '
+        'https://creativecommons.org/licenses/by/4.0/\n\n'
+        'Changed for Lex Hopper: exported to ONNX, vocabulary trimmed to each '
+        'language, weights quantized to 8 bits.',
+      ),
+    ),
+  );
   runApp(const LexHopper());
+  // The offline translator downloads by itself, once the dictionary's
+  // databases (which the first-launch screen waits for) are in.
+  DictionaryService.databases
+      .ensure()
+      .then((_) {}, onError: (Object _) {})
+      .whenComplete(() => OpusMtService.instance.ensure().ignore())
+      .ignore();
 }
 
 class LexHopper extends StatelessWidget {

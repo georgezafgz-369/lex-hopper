@@ -22,6 +22,10 @@ class MenuCard extends StatelessWidget {
   /// A picture on the left, e.g. the section's doodle (SectionIcon).
   final Widget? leading;
 
+  /// More inside the same card, under the title row (the Dictionary card's
+  /// Word of the Day).
+  final Widget? below;
+
   const MenuCard({
     super.key,
     required this.title,
@@ -30,6 +34,7 @@ class MenuCard extends StatelessWidget {
     this.comingSoon = false,
     this.chevron = false,
     this.leading,
+    this.below,
   });
 
   @override
@@ -101,22 +106,32 @@ class MenuCard extends StatelessWidget {
           ),
         ),
         padding: const EdgeInsets.all(Spacing.md),
-        child: chevron || leading != null
-            ? Row(
-                children: [
-                  if (leading case final picture?) ...[
-                    picture,
-                    const SizedBox(width: Spacing.md),
+        child: _withBelow(
+          chevron || leading != null
+              ? Row(
+                  children: [
+                    if (leading case final picture?) ...[
+                      picture,
+                      const SizedBox(width: Spacing.md),
+                    ],
+                    Expanded(child: content),
+                    if (chevron) ...[
+                      const SizedBox(width: Spacing.sm),
+                      Icon(Icons.chevron_right, color: muted),
+                    ],
                   ],
-                  Expanded(child: content),
-                  if (chevron) ...[
-                    const SizedBox(width: Spacing.sm),
-                    Icon(Icons.chevron_right, color: muted),
-                  ],
-                ],
-              )
-            : content,
+                )
+              : content,
+        ),
       ),
     );
   }
+
+  /// The title row, with [below] under it in the same card.
+  Widget _withBelow(Widget header) => below == null
+      ? header
+      : Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [header, below!],
+        );
 }

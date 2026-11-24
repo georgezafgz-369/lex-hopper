@@ -121,11 +121,18 @@ class AppText {
     'Δεν έγινε η μετάφραση αυτού του κειμένου.',
   );
   String get noTranslatorYet => _(
-    'To translate sentences, download the offline translator in Settings. '
-        'Words and phrases from the dictionary work already.',
-    'Για να μεταφράζεις προτάσεις, κατέβασε τον μεταφραστή χωρίς ίντερνετ '
-        'από τις Ρυθμίσεις. Οι λέξεις και οι φράσεις του λεξικού λειτουργούν '
+    "The translator isn't downloaded yet. Connect to the internet and it "
+        'downloads by itself. Words and phrases from the dictionary work '
+        'already.',
+    'Ο μεταφραστής δεν έχει κατέβει ακόμα. Σύνδεσε το ίντερνετ και θα '
+        'κατέβει μόνος του. Οι λέξεις και οι φράσεις του λεξικού λειτουργούν '
         'ήδη.',
+  );
+  String translatorDownloading(int percent) => _(
+    'Getting the translator ready… $percent%. Words and phrases from the '
+        'dictionary work already.',
+    'Ο μεταφραστής ετοιμάζεται… $percent%. Οι λέξεις και οι φράσεις του '
+        'λεξικού λειτουργούν ήδη.',
   );
   String get translatorSubtitle =>
       _('Translate words and phrases.', 'Μετάφρασε λέξεις και φράσεις.');
@@ -441,7 +448,6 @@ class AppText {
   }
 
   // ── Settings ──
-  String get preferences => _('PREFERENCES', 'ΠΡΟΤΙΜΗΣΕΙΣ');
   String get language => _('Language', 'Γλώσσα');
   String get mainLanguage => _('Main', 'Κύρια');
   String get secondaryLanguage => _('Secondary', 'Δευτερεύουσα');
@@ -482,7 +488,17 @@ class AppText {
     'No email app found. Write to us at $email',
     'Δεν βρέθηκε εφαρμογή email. Γράψε μας στο $email',
   );
+  String get goToTop => _('Go to top', 'Στην αρχή');
+  String get openMenu => _('Open the menu', 'Άνοιγμα μενού');
+  String get closeMenu => _('Close the menu', 'Κλείσιμο μενού');
   String get aboutTheApp => _('About the app', 'Σχετικά με την εφαρμογή');
+  String get translatorCredit => _(
+    'The offline translator uses OPUS-MT by Helsinki-NLP (University of '
+        'Helsinki), licensed CC BY 4.0, made smaller for phones.',
+    'Ο μεταφραστής χωρίς ίντερνετ χρησιμοποιεί το OPUS-MT του Helsinki-NLP '
+        '(Πανεπιστήμιο του Ελσίνκι), με άδεια CC BY 4.0, σε μικρότερη μορφή '
+        'για κινητά.',
+  );
   String get aboutTheAppSubtitle => _(
     'Learn more about the team behind the puzzles.',
     'Γνώρισε την ομάδα πίσω από τους γρίφους.',

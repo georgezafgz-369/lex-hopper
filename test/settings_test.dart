@@ -2,7 +2,6 @@
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lex_hopper/app_settings.dart';
-import 'package:lex_hopper/opus_mt_service.dart';
 import 'package:lex_hopper/settings_page.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -49,10 +48,14 @@ void main() {
   testWidgets('Greek can be picked; unfinished languages cannot', (
     tester,
   ) async {
+    // Tall enough for the whole list, flags and all.
+    await tester.binding.setSurfaceSize(const Size(400, 1400));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
     await tester.pumpWidget(app());
     await tester.tap(find.byKey(const Key('settings-language')));
     await tester.pumpAndSettle();
     expect(find.text('Coming soon'), findsWidgets);
+    expect(find.byKey(const Key('flag-de')), findsOneWidget);
 
     // German isn't ready: tapping it changes nothing.
     await tester.tap(find.text('German'));
@@ -155,32 +158,34 @@ void main() {
     expect(find.byKey(const Key('ai-download-progress')), findsNothing);
   });
 
-  testWidgets('the offline translator offers its download, asking first', (
+  testWidgets('About credits the offline translator (CC BY 4.0)', (
     tester,
   ) async {
     await tester.binding.setSurfaceSize(const Size(400, 1400));
-    OpusMtService.instance = OpusMtService(
-      root: () async => '/nowhere',
-      manifest: () async => const OpusMtManifest(
-        repo: 'me/models',
-        revision: 'abc',
-        folder: 'opus-mt',
-        files: [(path: 'en-el/a.onnx', bytes: 162000000, sha256: '')],
-      ),
-    );
-    addTearDown(() => OpusMtService.instance = OpusMtService());
     await tester.pumpWidget(app());
     await tester.pumpAndSettle();
-    final card = find.byKey(const Key('settings-offline-translator'));
-    expect(card, findsOneWidget);
-    // The manifest names the Hugging Face repository and the size.
-    expect(find.textContaining('download 162 MB'), findsOneWidget);
-    await tester.tap(card);
+    // Scrolled into view (and out from under the bottom menu) first.
+    await tester.ensureVisible(find.byKey(const Key('settings-about')));
     await tester.pumpAndSettle();
-    expect(find.byKey(const Key('offline-dialog')), findsOneWidget);
-    // Cancel: nothing downloads.
-    await tester.tap(find.text('Cancel'));
+    await tester.tap(find.byKey(const Key('settings-about')));
     await tester.pumpAndSettle();
-    expect(find.byKey(const Key('offline-download-progress')), findsNothing);
+    expect(find.textContaining('OPUS-MT by Helsinki-NLP'), findsOneWidget);
+    expect(find.textContaining('CC BY 4.0'), findsOneWidget);
+  });
+
+  testWidgets('each Settings card has its doodle icon', (tester) async {
+    await tester.binding.setSurfaceSize(const Size(400, 1600));
+    await tester.pumpWidget(app());
+    await tester.pumpAndSettle();
+    for (final name in const [
+      'language',
+      'darkMode',
+      'fontSize',
+      'aiTranslator',
+      'feedback',
+      'about',
+    ]) {
+      expect(find.byKey(Key('section-icon-$name')), findsOneWidget);
+    }
   });
 }

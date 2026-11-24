@@ -112,8 +112,7 @@ class _WordSearchMenuPageState extends State<WordSearchMenuPage> {
                       fieldKey: Key('word-search-menu-search'),
                     ),
                   ),
-                  const SizedBox(width: Spacing.sm),
-                  const HomeButton(),
+
                 ],
               ),
             ),

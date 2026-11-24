@@ -29,7 +29,7 @@ void main() {
 
   testWidgets('settings in Greek', (tester) async {
     await tester.pumpWidget(greekApp(const SettingsPage()));
-    expect(find.text('Ρυθμίσεις'), findsOneWidget);
+    expect(find.text('ΡΥΘΜΙΣΕΙΣ'), findsOneWidget);
     expect(find.text('Σκούρο θέμα'), findsOneWidget);
     expect(find.text('Ελληνικά'), findsOneWidget); // current language
   });

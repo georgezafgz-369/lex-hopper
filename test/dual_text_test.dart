@@ -35,7 +35,7 @@ void main() {
     // Titles and section labels: the translation on the same line.
     expect(find.text('Games  Παιχνίδια', findRichText: true), findsOneWidget);
     expect(find.text('Dictionary  Λεξικό', findRichText: true), findsOneWidget);
-    expect(find.text('REFERENCE  ΑΝΑΦΟΡΑ', findRichText: true), findsOneWidget);
+    expect(find.text('OTHER  ΑΛΛΑ', findRichText: true), findsOneWidget);
 
     // Translations are orange; the main text isn't.
     final title = tester.widget<RichText>(

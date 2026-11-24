@@ -68,4 +68,16 @@ void main() {
       expect(find.byKey(Key('section-icon-${s.name}')), findsOneWidget);
     }
   });
+
+  test('every language has a flag, with nothing left to fill in', () {
+    for (final code in const ['en', 'el', 'es', 'fr', 'de', 'it']) {
+      expect(FlagIcon.has(code), isTrue, reason: code);
+      for (final b in Brightness.values) {
+        final svg = FlagIcon.svgOf(code, b);
+        expect(svg, isNot(contains('{')), reason: '$code $b');
+        expect(svg, contains('clip-path'));
+      }
+    }
+    expect(FlagIcon.has('xx'), isFalse);
+  });
 }

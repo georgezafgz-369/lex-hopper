@@ -3,7 +3,6 @@
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lex_hopper/app_settings.dart';
-import 'package:lex_hopper/design_system.dart';
 import 'package:lex_hopper/dictionary_page.dart';
 import 'package:lex_hopper/games_page.dart';
 import 'package:lex_hopper/home_page.dart';
@@ -62,12 +61,11 @@ void main() {
 
     final field = find.byKey(const Key('games-search'));
     expect(field, findsOneWidget);
-    // It sits between the back and home buttons.
+    // It sits right of the back button (no Home button any more).
     final back = tester.getCenter(find.byKey(const Key('games-back')));
     final search = tester.getCenter(field);
-    final home = tester.getCenter(find.byType(HomeButton));
     expect(search.dx, greaterThan(back.dx));
-    expect(search.dx, lessThan(home.dx));
+    expect(find.byKey(const Key('home-button')), findsNothing);
 
     await tester.enterText(field, 'apple');
     await tester.testTextInput.receiveAction(TextInputAction.search);

@@ -170,6 +170,20 @@ class _TranslatorPageState extends State<TranslatorPage> {
     // The AI model, when it's on, takes a while to load: start now.
     if (_translator case final PreferredTranslator t) t.warmUp().ignore();
     _input.addListener(_onTyping);
+    if (widget.translator == null) {
+      OpusMtService.instance.changes.addListener(_onDownload);
+    }
+  }
+
+  /// The offline translator's download moved on: show its progress, and
+  /// translate the waiting text once it's in.
+  void _onDownload() {
+    if (!mounted || _status != _Status.noTranslator) return;
+    if (OpusMtService.instance.state == ModelState.ready) {
+      _translate();
+    } else {
+      setState(() {});
+    }
   }
 
   String _lastText = '';
@@ -225,7 +239,10 @@ class _TranslatorPageState extends State<TranslatorPage> {
     _liveTimer?.cancel();
     _input.dispose();
     _inputFocus.dispose();
-    if (widget.translator == null) _translator.dispose();
+    if (widget.translator == null) {
+      _translator.dispose();
+      OpusMtService.instance.changes.removeListener(_onDownload);
+    }
     super.dispose();
   }
 
@@ -284,6 +301,10 @@ class _TranslatorPageState extends State<TranslatorPage> {
               ? _Status.noTranslator
               : _Status.failed,
         );
+        // Not downloaded (no internet at start, say): try again now.
+        if (e is NoTranslatorYet && widget.translator == null) {
+          OpusMtService.instance.ensure().ignore();
+        }
       }
     }
   }
@@ -413,7 +434,10 @@ class _TranslatorPageState extends State<TranslatorPage> {
       case _Status.failed:
         message = t.translateFailed;
       case _Status.noTranslator:
-        message = t.noTranslatorYet;
+        final opus = OpusMtService.instance;
+        message = opus.state == ModelState.downloading
+            ? t.translatorDownloading((opus.progress * 100).floor())
+            : t.noTranslatorYet;
       case _Status.idle:
         message = null;
     }
@@ -446,14 +470,11 @@ class _TranslatorPageState extends State<TranslatorPage> {
                     Row(
                       children: [
                         Expanded(
+                          // Big and bold, like the other pages' titles.
                           child: DualText(
-                            (t) => t.translator,
+                            (t) => AppText.upper(t.translator),
                             inline: true,
-                            style: serif.copyWith(
-                              fontSize: 22,
-                              fontWeight: FontWeight.w700,
-                              color: ink,
-                            ),
+                            style: Theme.of(context).textTheme.displayLarge,
                           ),
                         ),
                         IconButton(
@@ -498,8 +519,6 @@ class _TranslatorPageState extends State<TranslatorPage> {
                     ),
                     const SizedBox(width: Spacing.sm),
                     const LanguageButton(),
-                    const SizedBox(width: Spacing.sm),
-                    const HomeButton(),
                   ],
                 ),
               ),
@@ -516,6 +535,15 @@ class _TranslatorPageState extends State<TranslatorPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    // The page's title (the sheet has it in its header).
+                    if (!widget.asSheet) ...[
+                      DualText(
+                        (t) => AppText.upper(t.translator),
+                        style: Theme.of(context).textTheme.displayLarge,
+                        inline: true,
+                      ),
+                      const SizedBox(height: Spacing.md),
+                    ],
                     // Source language, and ✕ once there is text.
                     Row(
                       children: [

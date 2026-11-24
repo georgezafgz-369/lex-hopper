@@ -258,15 +258,14 @@ void main() {
     });
   }
 
-  testWidgets('top bar: back, dictionary search, globe, home', (tester) async {
+  testWidgets('top bar: back, dictionary search, globe', (tester) async {
     await pumpPage(tester, FakeTranslator());
     final back = tester.getCenter(find.byKey(const Key('translator-back')));
     final search = tester.getCenter(find.byKey(const Key('translator-search')));
     final globe = tester.getCenter(find.byKey(const Key('language-button')));
-    final home = tester.getCenter(find.byKey(const Key('home-button')));
     expect(back.dx, lessThan(search.dx));
     expect(search.dx, lessThan(globe.dx));
-    expect(globe.dx, lessThan(home.dx));
+    expect(find.byKey(const Key('home-button')), findsNothing);
     expect((search.dy - globe.dy).abs(), lessThan(4)); // one row
 
     // The globe opens the app's language list.
@@ -298,11 +297,11 @@ void main() {
     expect(output(tester), contains("Couldn't translate"));
   });
 
-  testWidgets('no translator yet: says where to get one', (tester) async {
+  testWidgets('no translator yet: says it downloads by itself', (tester) async {
     await pumpPage(tester, FakeTranslator()..none = true);
     await tester.enterText(input(), 'where is the cat');
     await afterPause(tester);
-    expect(output(tester), contains('offline translator in Settings'));
+    expect(output(tester), contains('downloads by itself'));
     expect(output(tester), isNot(contains("Couldn't translate")));
   });
 

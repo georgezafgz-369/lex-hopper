@@ -120,9 +120,7 @@ class _CrosswordMenuPageState extends State<CrosswordMenuPage> {
                       fieldKey: Key('crossword-menu-search'),
                     ),
                   ),
-                  const SizedBox(width: Spacing.sm),
-                  // Home button
-                  const HomeButton(),
+
                 ],
               ),
             ),

@@ -1,60 +1,60 @@
 id,word,type,pos,sense,meaning_id,synonyms,antonyms,related,origin,category,subject,usage,structure,code,domain,source
 320886,x,word,adj,1,262590,ten,,,,,,,simple,,general,WordNet
-182548,x,word,noun,1,85023,"decade,ten,tenner",,,,,mathematics,,simple,,general,WordNet
-182549,x,word,noun,2,109351,"ex,exes",,,,,linguistics,,simple,,general,WordNet
+182548,x,word,noun,1,85023,"decade,ten,tenner",,,,,,,simple,,general,WordNet
+182549,x,word,noun,2,109351,"ex,exes",,,,,,,simple,,general,WordNet
 182550,x,word,noun,3,7811,"adam,cristal,disco biscuit,ecstasy,go,goes,gos,hug drug",,,,,,,simple,,general,WordNet
 244940,x chromosome,phrase,noun,1,284756,,,,,,biology,,,,general,WordNet
 274508,x ray,phrase,noun,1,235448,"roentgen ray,x-radiation,x-ray",,,,,physics,,,,general,WordNet
-239589,x ray,phrase,noun,2,235449,"roentgenogram,x-ray,x-ray photograph,x-ray picture",,,,,medicine,,,,general,WordNet
-247363,x-axis,word,noun,1,284760,,,,,,aviation,,,,general,WordNet
-323101,x-linked,word,adj,1,284764,,,,,,biology,,,,general,WordNet
+239589,x ray,phrase,noun,2,235449,"roentgenogram,x-ray,x-ray photograph,x-ray picture",,,,,,,,,general,WordNet
+247363,x-axis,word,noun,1,284760,,,,,,,,,,general,WordNet
+323101,x-linked,word,adj,1,284764,,,,,,,,,,general,WordNet
 242720,x-linked dominant inheritance,phrase,noun,1,284804,,,,,,biology,,,,general,WordNet
 244937,x-linked gene,phrase,noun,1,284812,,,,,,biology,,,,general,WordNet
 242721,x-linked recessive inheritance,phrase,noun,1,284890,,,,,,biology,,,,general,WordNet
-292781,x-linked scid,phrase,noun,1,284896,x-scid,,,,,biology,,,,general,WordNet
+292781,x-linked scid,phrase,noun,1,284896,x-scid,,,,,,,,,general,WordNet
 242198,x-or circuit,phrase,noun,1,284909,"xor circuit,xor gate",,,,,computing,,,,general,WordNet
 274510,x-radiation,word,noun,1,235448,"roentgen ray,x ray,x-ray",,,,,physics,,,,general,WordNet
-220488,x-radiation,word,noun,2,284911,x-raying,,,,,,,,,general,WordNet
+220488,x-radiation,word,noun,2,284911,x-raying,,,,,medicine,,,,general,WordNet
 274509,x-ray,word,noun,1,235448,"roentgen ray,x ray,x-radiation",,,,,physics,,,,general,WordNet
-239590,x-ray,word,noun,2,235449,"roentgenogram,x ray,x-ray photograph,x-ray picture",,,,,medicine,,,,general,WordNet
-309381,x-ray,word,verb,1,284913,,,x-raying,,,education,,,,general,WordNet
-302779,x-ray,word,verb,2,284914,,,x-raying,,,,,,,general,WordNet
-274512,x-ray diffraction,phrase,noun,1,284919,,,,,,geology,,,,general,WordNet
-242201,x-ray film,phrase,noun,1,284920,,,,,,theatre_film,,,,general,WordNet
+239590,x-ray,word,noun,2,235449,"roentgenogram,x ray,x-ray photograph,x-ray picture",,,,,,,,,general,WordNet
+309381,x-ray,word,verb,1,284913,,,x-raying,,,,,,,general,WordNet
+302779,x-ray,word,verb,2,284914,,,x-raying,,,photography,,,,general,WordNet
+274512,x-ray diffraction,phrase,noun,1,284919,,,,,,,,,,general,WordNet
+242201,x-ray film,phrase,noun,1,284920,,,,,,,,,,general,WordNet
 242202,x-ray machine,phrase,noun,1,284921,,,,,,,,,,general,WordNet
-239592,x-ray photograph,phrase,noun,1,235449,"roentgenogram,x ray,x-ray,x-ray picture",,,,,medicine,,,,general,WordNet
-220506,x-ray photography,phrase,noun,1,235451,roentgenography,,,,,telecommunications,,,,general,WordNet
-239591,x-ray picture,phrase,noun,1,235449,"roentgenogram,x ray,x-ray,x-ray photograph",,,,,medicine,,,,general,WordNet
-219645,x-ray therapy,phrase,noun,1,284925,,,,,,,,,,general,WordNet
-242203,x-ray tube,phrase,noun,1,284926,,,,,,physics,,,,general,WordNet
-220487,x-raying,word,noun,1,284911,x-radiation,,x-ray,,,,,,,general,WordNet
-292782,x-scid,word,noun,1,284896,x-linked scid,,,,,biology,,,,general,WordNet
-232165,xanax,word,noun,1,14827,alprazolam,,,,,business,,simple,,general,WordNet
-182551,xanthate,word,noun,1,284935,,,,,,chemistry,,simple,,general,WordNet
-182552,xanthates,word,noun,,284935,,,,,,chemistry,,simple,,general,WordNet
+239592,x-ray photograph,phrase,noun,1,235449,"roentgenogram,x ray,x-ray,x-ray picture",,,,,,,,,general,WordNet
+220506,x-ray photography,phrase,noun,1,235451,roentgenography,,,,,,,,,general,WordNet
+239591,x-ray picture,phrase,noun,1,235449,"roentgenogram,x ray,x-ray,x-ray photograph",,,,,,,,,general,WordNet
+219645,x-ray therapy,phrase,noun,1,284925,,,,,,medicine,,,,general,WordNet
+242203,x-ray tube,phrase,noun,1,284926,,,,,,,,,,general,WordNet
+220487,x-raying,word,noun,1,284911,x-radiation,,x-ray,,,medicine,,,,general,WordNet
+292782,x-scid,word,noun,1,284896,x-linked scid,,,,,,,,,general,WordNet
+232165,xanax,word,noun,1,14827,alprazolam,,,,,,,simple,,general,WordNet
+182551,xanthate,word,noun,1,284935,,,,,,,,simple,,general,WordNet
+182552,xanthates,word,noun,,284935,,,,,,,,simple,,general,WordNet
 182553,xanthelasma,word,noun,1,284937,,,,,,,,simple,,general,WordNet
-294536,xanthemia,word,noun,1,54827,carotenemia,,,,,anatomy,,simple,,general,WordNet
-296707,xanthic acid,phrase,noun,1,284939,,,,,,chemistry,,,,general,WordNet
-182554,xanthine,word,noun,1,284940,,,,,,chemistry,,simple,,general,WordNet
-182555,xanthines,word,noun,,284940,,,,,,chemistry,,simple,,general,WordNet
+294536,xanthemia,word,noun,1,54827,carotenemia,,,,,,,simple,,general,WordNet
+296707,xanthic acid,phrase,noun,1,284939,,,,,,,,,,general,WordNet
+182554,xanthine,word,noun,1,284940,,,,,,,,simple,,general,WordNet
+182555,xanthines,word,noun,,284940,,,,,,,,simple,,general,WordNet
 182556,xanthium,word,noun,1,130671,genus xanthium,,,,,botany,,simple,,general,WordNet
-182557,xanthoma,word,noun,1,284964,,,,,,anatomy,,simple,,general,WordNet
-293393,xanthoma disseminatum,phrase,noun,1,284965,,,,,,medicine,,,,general,WordNet
-293394,xanthoma multiplex,phrase,noun,1,63116,"cholesterosis cutis,lipid granulomatosis,lipoid granulomatosis,xanthomatosis",,,,,medicine,,,,general,WordNet
-182558,xanthomas,word,noun,,284964,,,,,,anatomy,,simple,,general,WordNet
-182559,xanthomatosis,word,noun,1,63116,"cholesterosis cutis,lipid granulomatosis,lipoid granulomatosis,xanthoma multiplex",,,,,medicine,,simple,,general,WordNet
+182557,xanthoma,word,noun,1,284964,,,,,,,,simple,,general,WordNet
+293393,xanthoma disseminatum,phrase,noun,1,284965,,,,,,,,,,general,WordNet
+293394,xanthoma multiplex,phrase,noun,1,63116,"cholesterosis cutis,lipid granulomatosis,lipoid granulomatosis,xanthomatosis",,,,,,,,,general,WordNet
+182558,xanthomas,word,noun,,284964,,,,,,,,simple,,general,WordNet
+182559,xanthomatosis,word,noun,1,63116,"cholesterosis cutis,lipid granulomatosis,lipoid granulomatosis,xanthoma multiplex",,,,,,,simple,,general,WordNet
 222278,xanthomonad,word,noun,1,284973,,,,,,biology,,simple,,general,WordNet
-182560,xanthomonas,word,noun,1,130672,genus xanthomonas,,,,,biology,,simple,,general,WordNet
-182561,xanthophyceae,word,noun,1,65923,class xanthophyceae,,,,,,,simple,,general,WordNet
-182562,xanthophyl,word,noun,1,173000,lutein,,,,,botany,,simple,,general,WordNet
-182563,xanthophyll,word,noun,1,173000,lutein,,,,,botany,,simple,,general,WordNet
+182560,xanthomonas,word,noun,1,130672,genus xanthomonas,,,,,zoology,,simple,,general,WordNet
+182561,xanthophyceae,word,noun,1,65923,class xanthophyceae,,,,,biology,,simple,,general,WordNet
+182562,xanthophyl,word,noun,1,173000,lutein,,,,,,,simple,,general,WordNet
+182563,xanthophyll,word,noun,1,173000,lutein,,,,,,,simple,,general,WordNet
 182564,xanthopsia,word,noun,1,284978,,,,,,,,simple,,general,WordNet
-282396,xanthorrhoeaceae,word,noun,1,75712,"convallariaceae,family convallariaceae,family ruscaceae,family tecophilaeacea,family xanthorrhoeaceae,grass tree family,ruscaceae,smilacaceae",,,,,,,simple,,general,WordNet
+282396,xanthorrhoeaceae,word,noun,1,75712,"convallariaceae,family convallariaceae,family ruscaceae,family tecophilaeacea,family xanthorrhoeaceae,grass tree family,ruscaceae,smilacaceae",,,,,botany,,simple,,general,WordNet
 282399,xanthorroea,word,noun,1,130673,genus xanthorroea,,,,,botany,,simple,,general,WordNet
-182565,xanthosis,word,noun,1,284979,,,,,,anatomy,,simple,,general,WordNet
+182565,xanthosis,word,noun,1,284979,,,,,,,,simple,,general,WordNet
 182566,xanthosoma,word,noun,1,130674,genus xanthosoma,,,,,botany,,simple,,general,WordNet
-276333,xanthosoma atrovirens,phrase,noun,1,174822,"malanga,spoonflower,tannia,xanthosoma sagittifolium,yautia",,,,,nutrition,,,,general,WordNet
-276332,xanthosoma sagittifolium,phrase,noun,1,174822,"malanga,spoonflower,tannia,xanthosoma atrovirens,yautia",,,,,nutrition,,,,general,WordNet
+276333,xanthosoma atrovirens,phrase,noun,1,174822,"malanga,spoonflower,tannia,xanthosoma sagittifolium,yautia",,,,,botany,,,,general,WordNet
+276332,xanthosoma sagittifolium,phrase,noun,1,174822,"malanga,spoonflower,tannia,xanthosoma atrovirens,yautia",,,,,botany,,,,general,WordNet
 182567,xanthous,word,adj,1,284980,"yellow,yellowish",,,,,,,simple,,general,WordNet
 224525,xantusiidae,word,noun,1,115427,family xantusiidae,,,,,zoology,,simple,,general,WordNet
 273839,xavier,word,noun,1,237354,saint francis xavier,,,,,,,simple,,general,WordNet
@@ -69,97 +69,97 @@ id,word,type,pos,sense,meaning_id,synonyms,antonyms,related,origin,category,subj
 321019,xcvi,word,adj,1,193773,ninety-six,,,,,,,simple,,general,WordNet
 321021,xcvii,word,adj,1,193772,ninety-seven,,,,,,,simple,,general,WordNet
 321023,xcviii,word,adj,1,193766,ninety-eight,,,,,,,simple,,general,WordNet
-294802,xe,word,noun,1,284983,xenons,,,,,meteorology,,simple,,general,WordNet
-182571,xenarthra,word,noun,1,257252,suborder xenarthra,,,,,,,simple,,general,WordNet
-182572,xenicidae,word,noun,1,4761,"acanthisittidae,family acanthisittidae,family xenicidae",,,,,,,simple,,general,WordNet
-182573,xenicus,word,noun,1,130675,genus xenicus,,,,,,,simple,,general,WordNet
+294802,xe,word,noun,1,284983,xenons,,,,,,,simple,,general,WordNet
+182571,xenarthra,word,noun,1,257252,suborder xenarthra,,,,,zoology,,simple,,general,WordNet
+182572,xenicidae,word,noun,1,4761,"acanthisittidae,family acanthisittidae,family xenicidae",,,,,zoology,,simple,,general,WordNet
+182573,xenicus,word,noun,1,130675,genus xenicus,,,,,zoology,,simple,,general,WordNet
 223721,xenicus gilviventris,phrase,noun,1,235364,rock wren,,,,,zoology,,,,general,WordNet
-182574,xenogeneic,word,adj,1,284989,,allogeneic,immunology,,,biology,,simple,,general,WordNet
-182575,xenogenesis,word,noun,1,15030,"alternation of generations,heterogenesis",,,,,botany,,simple,,general,WordNet
-182576,xenograft,word,noun,1,141636,heterograft,,,,,biology,,simple,,general,WordNet
+182574,xenogeneic,word,adj,1,284989,,allogeneic,immunology,,,,,simple,,general,WordNet
+182575,xenogenesis,word,noun,1,15030,"alternation of generations,heterogenesis",,,,,biology,,simple,,general,WordNet
+182576,xenograft,word,noun,1,141636,heterograft,,,,,medicine,,simple,,general,WordNet
 182577,xenolith,word,noun,1,284992,,,,,,geology,,simple,,general,WordNet
 182578,xenoliths,word,noun,,284992,,,,,,geology,,simple,,general,WordNet
-182579,xenon,word,noun,1,284983,,,,,,meteorology,,simple,,general,WordNet
-182580,xenons,word,noun,,284983,xe,,,,,meteorology,,simple,,general,WordNet
+182579,xenon,word,noun,1,284983,,,,,,,,simple,,general,WordNet
+182580,xenons,word,noun,,284983,xe,,,,,,,simple,,general,WordNet
 273841,xenophanes,word,noun,1,284994,,,,,,philosophy,,simple,,general,WordNet
-182581,xenophobia,word,noun,1,284995,,,xenophobic,,,,,simple,,general,WordNet
+182581,xenophobia,word,noun,1,284995,,,xenophobic,,,medicine,,simple,,general,WordNet
 182582,xenophobic,word,adj,1,284996,,,xenophobia,,,,,simple,,general,WordNet
-273842,xenophon,word,noun,1,284997,,,,,,education,,simple,,general,WordNet
-182583,xenopodidae,word,noun,1,115428,family xenopodidae,,,,,,,simple,,general,WordNet
+273842,xenophon,word,noun,1,284997,,,,,,military,,simple,,general,WordNet
+182583,xenopodidae,word,noun,1,115428,family xenopodidae,,,,,zoology,,simple,,general,WordNet
 182584,xenopus,word,noun,1,130676,genus xenopus,,,,,zoology,,simple,,general,WordNet
 224323,xenopus laevis,phrase,noun,1,10994,african clawed frog,,,,,zoology,,,,general,WordNet
-226744,xenorhyncus,word,noun,1,130677,genus xenorhyncus,,,,,,,simple,,general,WordNet
-226748,xenorhyncus asiaticus,phrase,noun,1,40654,"black-necked stork,jabiru,policeman bird",,,,,,,,,general,WordNet
+226744,xenorhyncus,word,noun,1,130677,genus xenorhyncus,,,,,zoology,,simple,,general,WordNet
+226748,xenorhyncus asiaticus,phrase,noun,1,40654,"black-necked stork,jabiru,policeman bird",,,,,zoology,,,,general,WordNet
 182585,xenosauridae,word,noun,1,115429,family xenosauridae,,,,,zoology,,simple,,general,WordNet
 182586,xenosaurus,word,noun,1,130678,genus xenosaurus,,,,,zoology,,simple,,general,WordNet
-182587,xenotime,word,noun,1,285001,,,,,,geology,,simple,,general,WordNet
-221779,xenotransplant,word,noun,1,285002,xenotransplantation,,,,,biology,,simple,,general,WordNet
-221780,xenotransplantation,word,noun,1,285002,xenotransplant,,,,,biology,,derived,,general,WordNet
+182587,xenotime,word,noun,1,285001,,,,,,,,simple,,general,WordNet
+221779,xenotransplant,word,noun,1,285002,xenotransplantation,,,,,medicine,,simple,,general,WordNet
+221780,xenotransplantation,word,noun,1,285002,xenotransplant,,,,,medicine,,derived,,general,WordNet
 182588,xeranthemum,word,noun,1,285007,,,,,,botany,,simple,,general,WordNet
 278481,xeranthemum annuum,phrase,noun,1,149756,immortelle,,,,,botany,,,,general,WordNet
 182589,xeric,word,adj,1,285008,,"hydric,mesic",,,,,,simple,,general,WordNet
-224428,xerobates,word,noun,1,130680,genus xerobates,,,,,law,,simple,,general,WordNet
-182590,xeroderma,word,noun,1,285012,xerodermia,,,,,anatomy,,simple,,general,WordNet
-294433,xeroderma pigmentosum,phrase,noun,1,285016,,,,,,biology,,,,general,WordNet
-182591,xerodermia,word,noun,1,285012,xeroderma,,,,,anatomy,,simple,,general,WordNet
+224428,xerobates,word,noun,1,130680,genus xerobates,,,,,zoology,,simple,,general,WordNet
+182590,xeroderma,word,noun,1,285012,xerodermia,,,,,,,simple,,general,WordNet
+294433,xeroderma pigmentosum,phrase,noun,1,285016,,,,,,,,,,general,WordNet
+182591,xerodermia,word,noun,1,285012,xeroderma,,,,,,,simple,,general,WordNet
 182592,xerographic,word,adj,1,285035,,,xerography,,,,,simple,,general,WordNet
-242195,xerographic copier,phrase,noun,1,285036,"xerox,xerox machine",,,,,business,,,,general,WordNet
+242195,xerographic copier,phrase,noun,1,285036,"xerox,xerox machine",,,,,,,,,general,WordNet
 242194,xerographic printer,phrase,noun,1,285037,,,,,,,,,,general,WordNet
-182593,xerography,word,noun,1,285038,,,xerographic,,,electronics,,simple,,general,WordNet
-182594,xeroma,word,noun,1,74238,"conjunctivitis arida,xerophthalmia,xerophthalmus",,,,,nutrition,,simple,,general,WordNet
-182595,xerophile,word,noun,1,89000,"desert plant,xerophilous plant,xerophyte,xerophytic plant",,,,,economics,,simple,,general,WordNet
-288003,xerophilous plant,phrase,noun,1,89000,"desert plant,xerophile,xerophyte,xerophytic plant",,,,,economics,,,,general,WordNet
-182596,xerophthalmia,word,noun,1,74238,"conjunctivitis arida,xeroma,xerophthalmus",,,,,nutrition,,simple,,general,WordNet
-294434,xerophthalmus,word,noun,1,74238,"conjunctivitis arida,xeroma,xerophthalmia",,,,,nutrition,,simple,,general,WordNet
+182593,xerography,word,noun,1,285038,,,xerographic,,,,,simple,,general,WordNet
+182594,xeroma,word,noun,1,74238,"conjunctivitis arida,xerophthalmia,xerophthalmus",,,,,,,simple,,general,WordNet
+182595,xerophile,word,noun,1,89000,"desert plant,xerophilous plant,xerophyte,xerophytic plant",,,,,botany,,simple,,general,WordNet
+288003,xerophilous plant,phrase,noun,1,89000,"desert plant,xerophile,xerophyte,xerophytic plant",,,,,botany,,,,general,WordNet
+182596,xerophthalmia,word,noun,1,74238,"conjunctivitis arida,xeroma,xerophthalmus",,,,,,,simple,,general,WordNet
+294434,xerophthalmus,word,noun,1,74238,"conjunctivitis arida,xeroma,xerophthalmia",,,,,,,simple,,general,WordNet
 182597,xerophyllum,word,noun,1,130681,genus xerophyllum,,,,,botany,,simple,,general,WordNet
 282395,xerophyllum tenax,phrase,noun,1,35393,"bear grass,squaw grass",,,,,botany,,,,general,WordNet
-182598,xerophyte,word,noun,1,89000,"desert plant,xerophile,xerophilous plant,xerophytic plant",,xerophytic,,,economics,,simple,,general,WordNet
-182599,xerophytic,word,adj,1,285042,,,xerophyte,,,ecology,,derived,,general,WordNet
-288002,xerophytic plant,phrase,noun,1,89000,"desert plant,xerophile,xerophilous plant,xerophyte",,,,,economics,,,,general,WordNet
-220507,xeroradiography,word,noun,1,285046,,,,,,telecommunications,,simple,,general,WordNet
+182598,xerophyte,word,noun,1,89000,"desert plant,xerophile,xerophilous plant,xerophytic plant",,xerophytic,,,botany,,simple,,general,WordNet
+182599,xerophytic,word,adj,1,285042,,,xerophyte,,,,,derived,,general,WordNet
+288002,xerophytic plant,phrase,noun,1,89000,"desert plant,xerophile,xerophilous plant,xerophyte",,,,,botany,,,,general,WordNet
+220507,xeroradiography,word,noun,1,285046,,,,,,,,simple,,general,WordNet
 182600,xerostomia,word,noun,1,97973,dry mouth,,,,,,,simple,,general,WordNet
 182601,xerotes,word,noun,1,98027,"dryness,waterlessness",,,,,,,simple,,general,WordNet
 182602,xerox,word,noun,1,285050,xerox copy,,,,,,,simple,,general,WordNet
-182603,xerox,word,noun,2,285036,"xerographic copier,xerox machine",,,,,business,,simple,,general,WordNet
+182603,xerox,word,noun,2,285036,"xerographic copier,xerox machine",,,,,,,simple,,general,WordNet
 182604,xerox,word,verb,1,211297,"photocopy,run off",,,,,,,simple,,general,WordNet
 242197,xerox copy,phrase,noun,1,285050,xerox,,,,,,,,,general,WordNet
-242196,xerox machine,phrase,noun,1,285036,"xerographic copier,xerox",,,,,business,,,,general,WordNet
+242196,xerox machine,phrase,noun,1,285036,"xerographic copier,xerox",,,,,,,,,general,WordNet
 182605,xeroxed,word,verb,,211297,"photocopy,run off",,,,,,,simple,,general,WordNet
 182606,xeroxes,word,noun,,285050,xerox copy,,,,,,,simple,,general,WordNet
-182607,xeroxes,word,noun,,285036,"xerographic copier,xerox machine",,,,,business,,simple,,general,WordNet
+182607,xeroxes,word,noun,,285036,"xerographic copier,xerox machine",,,,,,,simple,,general,WordNet
 182608,xeroxes,word,verb,,211297,"photocopy,run off",,,,,,,simple,,general,WordNet
 182609,xeroxing,word,verb,,211297,"photocopy,run off",,,,,,,simple,,general,WordNet
-273843,xerxes i,phrase,noun,1,285051,xerxes the great,,,,,military,,,,general,WordNet
-273844,xerxes the great,phrase,noun,1,285051,xerxes i,,,,,military,,,,general,WordNet
-228114,xestobium rufovillosum,phrase,noun,1,84917,"deathwatch,deathwatch beetle",,,,,,,,,general,WordNet
+273843,xerxes i,phrase,noun,1,285051,xerxes the great,,,,,,,,,general,WordNet
+273844,xerxes the great,phrase,noun,1,285051,xerxes i,,,,,,,,,general,WordNet
+228114,xestobium rufovillosum,phrase,noun,1,84917,"deathwatch,deathwatch beetle",,,,,zoology,,,,general,WordNet
 263713,xhosa,word,noun,1,285057,,,,,,,,simple,,general,WordNet
-258139,xhosa,word,noun,2,285058,,,,,,sociology,,simple,,general,WordNet
-251446,xhosa,word,noun,3,259442,swazi,,,,,linguistics,,simple,,general,WordNet
+258139,xhosa,word,noun,2,285058,,,,,,,,simple,,general,WordNet
+251446,xhosa,word,noun,3,259442,swazi,,,,,,,simple,,general,WordNet
 182612,xi,word,adj,1,102848,eleven,,,,,,,simple,,general,WordNet
-182610,xi,word,noun,1,102850,eleven,,,,,mathematics,,simple,,general,WordNet
-182611,xi,word,noun,2,285059,,,,,,linguistics,,simple,,general,WordNet
-259150,xian,word,noun,1,60130,"changan,hsian,sian,singan",,,,,history,,simple,,general,WordNet
+182610,xi,word,noun,1,102850,eleven,,,,,,,simple,,general,WordNet
+182611,xi,word,noun,2,285059,,,,,,,,simple,,general,WordNet
+259150,xian,word,noun,1,60130,"changan,hsian,sian,singan",,,,,geography,,simple,,general,WordNet
 182614,xii,word,adj,1,96615,"dozen,twelve",,,,,,,simple,,general,WordNet
-182613,xii,word,noun,1,96616,"dozen,twelve",,,,,mathematics,,simple,,general,WordNet
+182613,xii,word,noun,1,96616,"dozen,twelve",,,,,,,simple,,general,WordNet
 182616,xiii,word,adj,1,264532,thirteen,,,,,,,simple,,general,WordNet
-182615,xiii,word,noun,1,32238,"baker's dozen,long dozen,thirteen",,,,,mathematics,,simple,,general,WordNet
+182615,xiii,word,noun,1,32238,"baker's dozen,long dozen,thirteen",,,,,,,simple,,general,WordNet
 278465,ximenesia encelioides,phrase,noun,1,50038,"butter daisy,cowpen daisy,golden crown beard,golden crownbeard,verbesina encelioides",,,,,botany,,,,general,WordNet
 259155,xinjiang,word,noun,1,246206,"sinkiang,xinjiang uighur autonomous region",,,,,geography,,simple,,general,WordNet
-182617,xiphias,word,noun,1,130682,genus xiphias,,,,,,,simple,,general,WordNet
-231670,xiphias gladius,phrase,noun,1,259743,swordfish,,,,,oceanography,,,,general,WordNet
-182618,xiphiidae,word,noun,1,115430,family xiphiidae,,,,,,,simple,,general,WordNet
+182617,xiphias,word,noun,1,130682,genus xiphias,,,,,zoology,,simple,,general,WordNet
+231670,xiphias gladius,phrase,noun,1,259743,swordfish,,,,,zoology,,,,general,WordNet
+182618,xiphiidae,word,noun,1,115430,family xiphiidae,,,,,zoology,,simple,,general,WordNet
 281953,xiphium iris,phrase,noun,1,158268,"iris xiphium,spanish iris",,,,,botany,,,,general,WordNet
-243859,xiphoid process,phrase,noun,1,285073,,,,,,,,,,general,WordNet
+243859,xiphoid process,phrase,noun,1,285073,,,,,,anatomy,,,,general,WordNet
 182619,xiphosura,word,noun,1,200363,order xiphosura,,,,,zoology,,simple,,general,WordNet
 225290,xiphosurus polyphemus,phrase,noun,1,144565,"horseshoe crab,king crab,limulus polyphemus",,,,,zoology,,,,general,WordNet
-182620,xis,word,noun,,102850,eleven,,,,,mathematics,,simple,,general,WordNet
-182621,xis,word,noun,,285059,,,,,,linguistics,,simple,,general,WordNet
-251128,xishuangbanna dai,phrase,noun,1,40599,"black tai,bouyei,buyi,central thai,chinese shan,dehong dai,kam muang,khamti",,,,,linguistics,,,,general,WordNet
+182620,xis,word,noun,,102850,eleven,,,,,,,simple,,general,WordNet
+182621,xis,word,noun,,285059,,,,,,,,simple,,general,WordNet
+251128,xishuangbanna dai,phrase,noun,1,40599,"black tai,bouyei,buyi,central thai,chinese shan,dehong dai,kam muang,khamti",,,,,,,,,general,WordNet
 182623,xiv,word,adj,1,123431,fourteen,,,,,,,simple,,general,WordNet
-182622,xiv,word,noun,1,123433,fourteen,,,,,mathematics,,simple,,general,WordNet
+182622,xiv,word,noun,1,123433,fourteen,,,,,,,simple,,general,WordNet
 182625,xix,word,adj,1,193753,nineteen,,,,,,,simple,,general,WordNet
-182624,xix,word,noun,1,193755,nineteen,,,,,mathematics,,simple,,general,WordNet
-260042,xizang,word,noun,1,246502,"sitsang,thibet,tibet",,,,,politics,,simple,,general,WordNet
+182624,xix,word,noun,1,193755,nineteen,,,,,,,simple,,general,WordNet
+260042,xizang,word,noun,1,246502,"sitsang,thibet,tibet",,,,,geography,,simple,,general,WordNet
 320919,xl,word,adj,1,123138,"forty,twoscore",,,,,,,simple,,general,WordNet
 291328,xl,word,noun,1,123088,forty,,,,,,,simple,,general,WordNet
 320921,xli,word,adj,1,123155,forty-one,,,,,,,simple,,general,WordNet
@@ -170,44 +170,44 @@ id,word,type,pos,sense,meaning_id,synonyms,antonyms,related,origin,category,subj
 320931,xlvi,word,adj,1,123161,forty-six,,,,,,,simple,,general,WordNet
 320933,xlvii,word,adj,1,123158,forty-seven,,,,,,,simple,,general,WordNet
 320935,xlviii,word,adj,1,123140,forty-eight,,,,,,,simple,,general,WordNet
-182626,xmas,word,noun,1,63624,"christmas,christmas day",,,,,religion,,simple,,general,WordNet
-182627,xmases,word,noun,,63624,"christmas,christmas day",,,,,religion,,simple,,general,WordNet
+182626,xmas,word,noun,1,63624,"christmas,christmas day",,,,,,,simple,,general,WordNet
+182627,xmases,word,noun,,63624,"christmas,christmas day",,,,,,,simple,,general,WordNet
 242199,xor circuit,phrase,noun,1,284909,"x-or circuit,xor gate",,,,,computing,,,,general,WordNet
 242200,xor gate,phrase,noun,1,284909,"x-or circuit,xor circuit",,,,,computing,,,,general,WordNet
-182628,xs,word,noun,,85023,"decade,ten,tenner",,,,,mathematics,,simple,,general,WordNet
-182629,xs,word,noun,,109351,"ex,exes",,,,,linguistics,,simple,,general,WordNet
+182628,xs,word,noun,,85023,"decade,ten,tenner",,,,,,,simple,,general,WordNet
+182629,xs,word,noun,,109351,"ex,exes",,,,,,,simple,,general,WordNet
 182630,xs,word,noun,,7811,"adam,cristal,disco biscuit,ecstasy,go,goes,gos,hug drug",,,,,,,simple,,general,WordNet
 252866,xt,word,noun,1,80218,crosstalk,,,,,,,simple,,general,WordNet
 232045,xtc,word,noun,1,7811,"adam,cristal,disco biscuit,ecstasy,go,goes,gos,hug drug",,,,,,,simple,,general,WordNet
 320887,xv,word,adj,1,118218,fifteen,,,,,,,simple,,general,WordNet
-291313,xv,word,noun,1,118220,fifteen,,,,,mathematics,,simple,,general,WordNet
+291313,xv,word,noun,1,118220,fifteen,,,,,,,simple,,general,WordNet
 182632,xvi,word,adj,1,246548,sixteen,,,,,,,simple,,general,WordNet
-182631,xvi,word,noun,1,246550,sixteen,,,,,mathematics,,simple,,general,WordNet
+182631,xvi,word,noun,1,246550,sixteen,,,,,,,simple,,general,WordNet
 182634,xvii,word,adj,1,243029,seventeen,,,,,,,simple,,general,WordNet
-182633,xvii,word,noun,1,243031,seventeen,,,,,mathematics,,simple,,general,WordNet
+182633,xvii,word,noun,1,243031,seventeen,,,,,,,simple,,general,WordNet
 182636,xviii,word,adj,1,101497,eighteen,,,,,,,simple,,general,WordNet
-182635,xviii,word,noun,1,101499,eighteen,,,,,mathematics,,simple,,general,WordNet
+182635,xviii,word,noun,1,101499,eighteen,,,,,,,simple,,general,WordNet
 182639,xx,word,adj,1,271202,twenty,,,,,,,simple,,general,WordNet
-182637,xx,word,noun,1,271197,twenty,,,,,mathematics,,simple,,general,WordNet
+182637,xx,word,noun,1,271197,twenty,,,,,,,simple,,general,WordNet
 182638,xx,word,noun,2,285088,,,,,,biology,,simple,,general,WordNet
 182641,xxi,word,adj,1,271224,twenty-one,,,,,,,simple,,general,WordNet
-182640,xxi,word,noun,1,271226,twenty-one,,,,,mathematics,,simple,,general,WordNet
+182640,xxi,word,noun,1,271226,twenty-one,,,,,,,simple,,general,WordNet
 182643,xxii,word,adj,1,271241,twenty-two,,,,,,,simple,,general,WordNet
-182642,xxii,word,noun,1,271243,twenty-two,,,,,mathematics,,simple,,general,WordNet
+182642,xxii,word,noun,1,271243,twenty-two,,,,,,,simple,,general,WordNet
 182645,xxiii,word,adj,1,271237,twenty-three,,,,,,,simple,,general,WordNet
-182644,xxiii,word,noun,1,271239,twenty-three,,,,,mathematics,,simple,,general,WordNet
+182644,xxiii,word,noun,1,271239,twenty-three,,,,,,,simple,,general,WordNet
 182647,xxiv,word,adj,1,271214,twenty-four,,,,,,,simple,,general,WordNet
-182646,xxiv,word,noun,1,271216,"twenty-four,two dozen",,,,,mathematics,,simple,,general,WordNet
+182646,xxiv,word,noun,1,271216,"twenty-four,two dozen",,,,,,,simple,,general,WordNet
 320900,xxix,word,adj,1,271220,twenty-nine,,,,,,,simple,,general,WordNet
-291327,xxix,word,noun,1,271222,twenty-nine,,,,,mathematics,,simple,,general,WordNet
+291327,xxix,word,noun,1,271222,twenty-nine,,,,,,,simple,,general,WordNet
 182649,xxv,word,adj,1,271211,twenty-five,,,,,,,simple,,general,WordNet
-182648,xxv,word,noun,1,271213,twenty-five,,,,,mathematics,,simple,,general,WordNet
+182648,xxv,word,noun,1,271213,twenty-five,,,,,,,simple,,general,WordNet
 320894,xxvi,word,adj,1,271232,twenty-six,,,,,,,simple,,general,WordNet
-291321,xxvi,word,noun,1,271234,twenty-six,,,,,mathematics,,simple,,general,WordNet
+291321,xxvi,word,noun,1,271234,twenty-six,,,,,,,simple,,general,WordNet
 320896,xxvii,word,adj,1,271228,twenty-seven,,,,,,,simple,,general,WordNet
-291323,xxvii,word,noun,1,271230,twenty-seven,,,,,mathematics,,simple,,general,WordNet
+291323,xxvii,word,noun,1,271230,twenty-seven,,,,,,,simple,,general,WordNet
 320898,xxviii,word,adj,1,271205,twenty-eight,,,,,,,simple,,general,WordNet
-291325,xxviii,word,noun,1,271207,twenty-eight,,,,,mathematics,,simple,,general,WordNet
+291325,xxviii,word,noun,1,271207,twenty-eight,,,,,,,simple,,general,WordNet
 182652,xxx,word,adj,1,264540,thirty,,,,,,,simple,,general,WordNet
 182650,xxx,word,noun,1,264536,thirty,,,,,,,simple,,general,WordNet
 182651,xxx,word,noun,2,285103,,,,,,biology,,simple,,general,WordNet
@@ -220,36 +220,36 @@ id,word,type,pos,sense,meaning_id,synonyms,antonyms,related,origin,category,subj
 320914,xxxvii,word,adj,1,264558,thirty-seven,,,,,,,simple,,general,WordNet
 320916,xxxviii,word,adj,1,264543,thirty-eight,,,,,,,simple,,general,WordNet
 244941,xxy,word,noun,1,285104,,,,,,biology,,simple,,general,WordNet
-293741,xxy-syndrome,word,noun,1,162740,"klinefelter syndrome,klinefelter's syndrome",,,,,biology,,,,general,WordNet
+293741,xxy-syndrome,word,noun,1,162740,"klinefelter syndrome,klinefelter's syndrome",,,,,,,,,general,WordNet
 244942,xy,word,noun,1,285105,,,,,,biology,,simple,,general,WordNet
-182653,xylaria,word,noun,1,130683,genus xylaria,,,,,,,simple,,general,WordNet
-287146,xylaria mali,phrase,noun,1,40582,black root rot fungus,,,,,,,,,general,WordNet
+182653,xylaria,word,noun,1,130683,genus xylaria,,,,,botany,,simple,,general,WordNet
+287146,xylaria mali,phrase,noun,1,40582,black root rot fungus,,,,,botany,,,,general,WordNet
 287149,xylaria polymorpha,phrase,noun,1,84672,"dead-man's-fingers,dead-men's-fingers",,,,,botany,,,,general,WordNet
-182654,xylariaceae,word,noun,1,115431,family xylariaceae,,,,,,,simple,,general,WordNet
-182655,xylem,word,noun,1,285123,,,,,,biology,,simple,,general,WordNet
-182656,xylems,word,noun,,285123,,,,,,biology,,simple,,general,WordNet
+182654,xylariaceae,word,noun,1,115431,family xylariaceae,,,,,botany,,simple,,general,WordNet
+182655,xylem,word,noun,1,285123,,,,,,botany,,simple,,general,WordNet
+182656,xylems,word,noun,,285123,,,,,,botany,,simple,,general,WordNet
 182657,xylene,word,noun,1,285124,xylol,,,,,,,simple,,general,WordNet
 182658,xylenes,word,noun,,285124,xylol,,,,,,,simple,,general,WordNet
-237231,xylocaine,word,noun,1,168107,lidocaine,,,,,business,,simple,,general,WordNet
-182659,xylocopa,word,noun,1,130684,genus xylocopa,,,,,,,simple,,general,WordNet
+237231,xylocaine,word,noun,1,168107,lidocaine,,,,,,,simple,,general,WordNet
+182659,xylocopa,word,noun,1,130684,genus xylocopa,,,,,zoology,,simple,,general,WordNet
 182660,xylol,word,noun,1,285124,xylene,,,,,,,simple,,general,WordNet
 182661,xylols,word,noun,,285124,xylene,,,,,,,simple,,general,WordNet
 280116,xylomelum,word,noun,1,130685,genus xylomelum,,,,,botany,,simple,,general,WordNet
 280120,xylomelum pyriforme,phrase,noun,1,190412,"native pear,woody pear",,,,,botany,,,,general,WordNet
-182662,xylophone,word,noun,1,176590,marimba,,xylophonist,,,music,,simple,,general,WordNet
-182663,xylophones,word,noun,,176590,marimba,,,,,music,,simple,,general,WordNet
+182662,xylophone,word,noun,1,176590,marimba,,xylophonist,,,,,simple,,general,WordNet
+182663,xylophones,word,noun,,176590,marimba,,,,,,,simple,,general,WordNet
 182664,xylophonist,word,noun,1,285127,,,xylophone,,,,,derived,,general,WordNet
 182665,xylophonists,word,noun,,285127,,,,,,,,derived,,general,WordNet
 182666,xylopia,word,noun,1,130686,genus xylopia,,,,,botany,,simple,,general,WordNet
 275439,xylopia aethiopica,phrase,noun,1,136231,"guinea pepper,negro pepper",,,,,botany,,,,general,WordNet
-182667,xylose,word,noun,1,284131,wood sugar,,,,,nutrition,,simple,,general,WordNet
-182668,xyloses,word,noun,,284131,wood sugar,,,,,nutrition,,simple,,general,WordNet
+182667,xylose,word,noun,1,284131,wood sugar,,,,,,,simple,,general,WordNet
+182668,xyloses,word,noun,,284131,wood sugar,,,,,,,simple,,general,WordNet
 182669,xylosma,word,noun,1,285130,xylosma congestum,,,,,botany,,simple,,general,WordNet
 281602,xylosma congestum,phrase,noun,1,285130,xylosma,,,,,botany,,,,general,WordNet
-222742,xyphophorus,word,noun,1,130688,genus xyphophorus,,,,,,,simple,,general,WordNet
+222742,xyphophorus,word,noun,1,130688,genus xyphophorus,,,,,zoology,,simple,,general,WordNet
 222744,xyphophorus helleri,phrase,noun,1,139993,"helleri,swordtail,topminnow",,,,,zoology,,,,general,WordNet
 182670,xyridaceae,word,noun,1,115432,"family xyridaceae,yellow-eyed grass family",,,,,botany,,simple,,general,WordNet
 182671,xyridales,word,noun,1,70816,"commelinales,order commelinales,order xyridales",,,,,botany,,simple,,general,WordNet
 182672,xyris,word,noun,1,130689,genus xyris,,,,,botany,,simple,,general,WordNet
-283747,xyris operculata,phrase,noun,1,261190,tall yellow-eye,,,,,,,,,general,WordNet
+283747,xyris operculata,phrase,noun,1,261190,tall yellow-eye,,,,,botany,,,,general,WordNet
 244943,xyy,word,noun,1,285132,,,,,,biology,,simple,,general,WordNet

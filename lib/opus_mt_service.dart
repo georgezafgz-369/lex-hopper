@@ -209,6 +209,18 @@ class OpusMtService implements Translator {
     }
   }
 
+  /// The translator is part of the app, not a choice: downloads it if it
+  /// isn't on the phone yet (on every start, and again from the translator
+  /// page after a failed try). Does nothing while a download is running.
+  Future<void> ensure() async {
+    if (_state == ModelState.downloading) return;
+    if (await isReady()) {
+      _set(ModelState.ready);
+      return;
+    }
+    await download();
+  }
+
   void cancelDownload() => _cancelled = true;
 
   /// Removes the models from the phone.
