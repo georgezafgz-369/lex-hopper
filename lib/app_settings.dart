@@ -1,5 +1,6 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// APP SETTINGS — dark mode and language, saved on the device
+// APP SETTINGS — dark mode, language, text size and the AI translator,
+// saved on the device
 // ─────────────────────────────────────────────────────────────────────────────
 
 import 'package:material_ui/material_ui.dart';
@@ -50,6 +51,7 @@ class AppSettings extends ChangeNotifier {
   static const _languageKey = 'settings_language';
   static const _fontSizeKey = 'settings_font_size';
   static const _secondaryKey = 'settings_secondary_language';
+  static const _aiTranslatorKey = 'settings_ai_translator';
 
   /// True = always dark, false = always light, null = follow the phone
   /// (until the user first flips the switch).
@@ -65,6 +67,12 @@ class AppSettings extends ChangeNotifier {
   FontSizeOption _fontSize = FontSizeOption.medium;
 
   FontSizeOption get fontSize => _fontSize;
+
+  /// Whether the Translator uses the AI model (EuroLLM) once it's
+  /// downloaded, when the offline translator isn't (or fails on a text).
+  /// Off until turned on.
+  bool get aiTranslator => _aiTranslator;
+  bool _aiTranslator = false;
 
   bool? get darkMode => _darkMode;
   String? get language => _language;
@@ -106,6 +114,7 @@ class AppSettings extends ChangeNotifier {
     _darkMode = prefs.getBool(_darkModeKey);
     _language = prefs.getString(_languageKey);
     _secondary = prefs.getString(_secondaryKey);
+    _aiTranslator = prefs.getBool(_aiTranslatorKey) ?? false;
     final size = prefs.getString(_fontSizeKey);
     _fontSize = FontSizeOption.values.firstWhere(
       (o) => o.name == size,
@@ -119,6 +128,13 @@ class AppSettings extends ChangeNotifier {
     notifyListeners();
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_darkModeKey, dark);
+  }
+
+  Future<void> setAiTranslator(bool on) async {
+    _aiTranslator = on;
+    notifyListeners();
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_aiTranslatorKey, on);
   }
 
   Future<void> setFontSize(FontSizeOption option) async {

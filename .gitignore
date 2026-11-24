@@ -53,3 +53,6 @@ assets/*.db
 # Python
 __pycache__/
 .venv/
+
+# Large model files for translator experiments (downloaded, never committed)
+.models/

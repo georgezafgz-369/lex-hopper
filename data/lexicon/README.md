@@ -69,5 +69,5 @@ wrong link.
 ## Main translations
 
 `word,translation,source` — what the Translator shows for that word or
-phrase. Seeded with the phone's translator (`source` = `machine`); fix any
+phrase. Seeded with a machine translator (`source` = `machine`); fix any
 row and set its `source` to `Lex Hopper` so it's clear it was checked.

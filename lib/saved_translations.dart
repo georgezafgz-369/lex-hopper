@@ -1,7 +1,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 // SAVED TRANSLATIONS — the Translator's memory, on this phone only
 //
-// Every text the phone's translator translates (a sentence, or a word the
+// Every text the translator translates (a sentence, or a word the
 // lexicon doesn't have) is kept here once the person is done with it, so the
 // same text is answered at once next time, offline. Kept in my_texts.db in
 // the app's own folder; it never leaves the phone. At most [limit] texts:

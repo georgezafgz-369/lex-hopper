@@ -9,6 +9,8 @@ import 'app_settings.dart';
 import 'app_text.dart';
 import 'dual_text.dart';
 import 'design_system.dart';
+import 'eurollm_translator.dart';
+import 'opus_mt_service.dart';
 import 'word_sheet.dart' show showDraggableSheet;
 
 class SettingsPage extends StatelessWidget {
@@ -128,6 +130,13 @@ class SettingsPage extends StatelessWidget {
                         ),
                         const SizedBox(height: Spacing.md),
                         _FontSizeCard(settings: settings),
+                        const SizedBox(height: Spacing.md),
+                        _OfflineTranslatorCard(model: OpusMtService.instance),
+                        const SizedBox(height: Spacing.md),
+                        _AiTranslatorCard(
+                          settings: settings,
+                          model: EuroLlmTranslator.instance,
+                        ),
 
                         // ── Separator ───────────────────────────────────
                         const SizedBox(height: Spacing.lg),
@@ -207,6 +216,294 @@ void showLanguagePicker(BuildContext context) {
     context,
     builder: (scrollController) => _LanguageList(scrollController),
   );
+}
+
+/// Offline translator: downloads OPUS-MT from Hugging Face (after asking),
+/// shows the progress, then "Ready" with its credit; tapping it then offers
+/// to delete it. Says "coming soon" while the files aren't uploaded.
+class _OfflineTranslatorCard extends StatefulWidget {
+  final OpusMtService model;
+
+  const _OfflineTranslatorCard({required this.model});
+
+  @override
+  State<_OfflineTranslatorCard> createState() => _OfflineTranslatorCardState();
+}
+
+class _OfflineTranslatorCardState extends State<_OfflineTranslatorCard> {
+  OpusMtManifest? _manifest;
+
+  @override
+  void initState() {
+    super.initState();
+    widget.model.refresh();
+    widget.model.manifest.then(
+      (m) => mounted ? setState(() => _manifest = m) : null,
+      onError: (Object e) => debugPrint('OPUS-MT: no manifest: $e'),
+    );
+  }
+
+  Future<bool> _ask(TextPick title, TextPick body, TextPick yes) async =>
+      await showDialog<bool>(
+        context: context,
+        builder: (context) => AlertDialog(
+          key: const Key('offline-dialog'),
+          title: DualText(title),
+          content: DualText(body),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(false),
+              child: Text(AppText.of(context).cancel),
+            ),
+            FilledButton(
+              key: const Key('offline-dialog-yes'),
+              onPressed: () => Navigator.of(context).pop(true),
+              child: Text(yes(AppText.of(context))),
+            ),
+          ],
+        ),
+      ) ??
+      false;
+
+  Future<void> _tap() async {
+    final model = widget.model;
+    final m = _manifest;
+    if (m == null) return;
+    switch (model.state) {
+      case ModelState.ready:
+        if (await _ask(
+          (t) => t.offlineDeleteTitle,
+          (t) => t.offlineDeleteBody(m.sizeMb),
+          (t) => t.delete,
+        )) {
+          await model.deleteModels();
+        }
+      // Still checking: a download skips files already there.
+      case ModelState.notDownloaded || ModelState.failed || ModelState.checking
+          when m.hosted:
+        if (await _ask(
+          (t) => t.offlineDownloadTitle,
+          (t) => t.offlineDownloadBody(m.sizeMb),
+          (t) => t.download,
+        )) {
+          await model.download();
+        }
+      case ModelState.downloading:
+        model.cancelDownload();
+      default:
+        break;
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final model = widget.model;
+    final brightness = Theme.of(context).brightness;
+    final ink = brightness.resolve(
+      light: AppColors.inkLight,
+      dark: AppColors.inkDark,
+    );
+    final clay = brightness.resolve(
+      light: AppColors.clayLight,
+      dark: AppColors.clayDark,
+    );
+    return ListenableBuilder(
+      listenable: model.changes,
+      builder: (context, _) {
+        final state = model.state;
+        final m = _manifest;
+        final TextPick subtitle = switch (state) {
+          ModelState.ready => (t) => t.offlineTranslatorReady,
+          ModelState.downloading => (t) => t.offlineTranslatorDownloading(
+            (model.progress * 100).floor(),
+          ),
+          ModelState.failed => (t) => t.offlineTranslatorFailed,
+          _ when m == null || !m.hosted => (t) => t.offlineTranslatorSoon,
+          _ => (t) => t.offlineTranslatorDownload(m.sizeMb),
+        };
+        final IconData icon = switch (state) {
+          ModelState.ready => Icons.check_circle_outline,
+          ModelState.downloading => Icons.close,
+          _ => Icons.download_outlined,
+        };
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            _SettingsCard(
+              key: const Key('settings-offline-translator'),
+              title: (t) => t.offlineTranslator,
+              subtitle: subtitle,
+              trailing: Icon(
+                icon,
+                color: state == ModelState.ready ? clay : ink,
+              ),
+              onTap: _tap,
+            ),
+            if (state == ModelState.downloading)
+              Padding(
+                padding: const EdgeInsets.only(top: Spacing.xs),
+                child: LinearProgressIndicator(
+                  key: const Key('offline-download-progress'),
+                  value: model.progress,
+                  color: clay,
+                  backgroundColor: Theme.of(context).brightness.resolve(
+                    light: AppColors.hairlineLight,
+                    dark: AppColors.hairlineDark,
+                  ),
+                ),
+              ),
+          ],
+        );
+      },
+    );
+  }
+}
+
+/// AI translator: a switch that downloads EuroLLM (after asking) and then
+/// makes the Translator use it. Shows the download's progress; turning it
+/// off asks whether to keep or delete the 1 GB model.
+class _AiTranslatorCard extends StatefulWidget {
+  final AppSettings settings;
+  final EuroLlmTranslator model;
+
+  const _AiTranslatorCard({required this.settings, required this.model});
+
+  @override
+  State<_AiTranslatorCard> createState() => _AiTranslatorCardState();
+}
+
+class _AiTranslatorCardState extends State<_AiTranslatorCard> {
+  @override
+  void initState() {
+    super.initState();
+    widget.model.refresh();
+  }
+
+  Future<void> _turnOn() async {
+    final model = widget.model;
+    if (model.state == ModelState.ready) {
+      await widget.settings.setAiTranslator(true);
+      return;
+    }
+    final mb = EuroLlmTranslator.sizeMb;
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        key: const Key('ai-download-dialog'),
+        title: DualText((t) => t.aiDownloadTitle),
+        content: DualText((t) => t.aiDownloadBody(mb)),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(false),
+            child: Text(AppText.of(context).cancel),
+          ),
+          FilledButton(
+            key: const Key('ai-download-confirm'),
+            onPressed: () => Navigator.of(context).pop(true),
+            child: Text(AppText.of(context).download),
+          ),
+        ],
+      ),
+    );
+    if (ok != true) return;
+    await widget.settings.setAiTranslator(true);
+    await model.download();
+  }
+
+  Future<void> _turnOff() async {
+    final model = widget.model;
+    if (model.state == ModelState.downloading) model.cancelDownload();
+    if (model.state != ModelState.ready) {
+      await widget.settings.setAiTranslator(false);
+      return;
+    }
+    final mb = EuroLlmTranslator.sizeMb;
+    final delete = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        key: const Key('ai-off-dialog'),
+        title: DualText((t) => t.aiTurnOffTitle),
+        content: DualText((t) => t.aiTurnOffBody(mb)),
+        actions: [
+          TextButton(
+            key: const Key('ai-delete-model'),
+            onPressed: () => Navigator.of(context).pop(true),
+            child: Text(AppText.of(context).deleteModel),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.of(context).pop(false),
+            child: Text(AppText.of(context).keepModel),
+          ),
+        ],
+      ),
+    );
+    if (delete == null) return; // dismissed: stays on
+    await widget.settings.setAiTranslator(false);
+    if (delete) await model.deleteModel();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final model = widget.model;
+    final clay = Theme.of(context).brightness
+        .resolve(light: AppColors.clayLight, dark: AppColors.clayDark);
+    return ListenableBuilder(
+      listenable: model.changes,
+      builder: (context, _) {
+        final on = widget.settings.aiTranslator;
+        final state = model.state;
+        final tooSmall = state == ModelState.tooLittleMemory;
+        final TextPick subtitle = switch ((on, state)) {
+          (_, ModelState.tooLittleMemory) => (t) => t.aiTranslatorNeedsMemory,
+          (_, ModelState.downloading) => (t) => t.aiTranslatorDownloading(
+            model.progress == null ? null : (model.progress! * 100).floor(),
+          ),
+          (true, ModelState.failed) => (t) => t.aiTranslatorFailed,
+          (true, ModelState.checking) => (t) => t.aiTranslatorChecking,
+          (true, ModelState.ready) => (t) => t.aiTranslatorOn,
+          _ => (t) => t.aiTranslatorOff,
+        };
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            _SettingsCard(
+              key: const Key('settings-ai-translator'),
+              title: (t) => t.aiTranslator,
+              subtitle: subtitle,
+              trailing: Switch(
+                key: const Key('ai-translator-switch'),
+                value: on && !tooSmall,
+                activeThumbColor: clay,
+                onChanged: tooSmall ? null : (v) => v ? _turnOn() : _turnOff(),
+              ),
+              onTap: () {
+                if (tooSmall) return;
+                // A stopped download: tapping the card tries again.
+                if (on && state == ModelState.failed) {
+                  model.download();
+                } else {
+                  on ? _turnOff() : _turnOn();
+                }
+              },
+            ),
+            if (state == ModelState.downloading)
+              Padding(
+                padding: const EdgeInsets.only(top: Spacing.xs),
+                child: LinearProgressIndicator(
+                  key: const Key('ai-download-progress'),
+                  value: model.progress,
+                  color: clay,
+                  backgroundColor: Theme.of(context).brightness.resolve(
+                    light: AppColors.hairlineLight,
+                    dark: AppColors.hairlineDark,
+                  ),
+                ),
+              ),
+          ],
+        );
+      },
+    );
+  }
 }
 
 /// A settings card in the home page style: small red label, title, current

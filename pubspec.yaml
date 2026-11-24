@@ -39,10 +39,20 @@ dependencies:
   path_provider: ^2.1.1
   url_launcher: ^6.3.3
   flutter_tts: ^4.2.5
-  google_mlkit_translation: ^1.0.3
+  # On-device AI translator (EuroLLM, llama.cpp). The companion links the
+  # llama.cpp framework on iOS; keep both on the same MAJOR.MINOR.
+  llamadart: ^0.20.7
+  llamadart_llama_cpp_flutter: ^0.20.7
+  flutter_onnxruntime: ^1.9.1
+  dart_sentencepiece_tokenizer: ^1.4.1
+  crypto: ^3.0.8
+  flutter_svg: ^2.5.0
 
 dev_dependencies:
   flutter_test:
+    sdk: flutter
+  # On-device runs, e.g. scoring the Translator (integration_test/).
+  integration_test:
     sdk: flutter
 
   # The "flutter_lints" package below contains a set of recommended lints to
@@ -54,6 +64,12 @@ dev_dependencies:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
+
+# Bundle only llama.cpp (GGUF models), not LiteRT-LM: a smaller app.
+hooks:
+  user_defines:
+    llamadart:
+      llamadart_native_runtimes: [llama_cpp]
 
 # The following section is specific to Flutter packages.
 flutter:
@@ -80,11 +96,13 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   assets:
-    # Lex Hopper's own databases (scripts/build_databases.py):
-    - assets/lexicon.db
-    - assets/texts.db
+    # Where the app downloads its databases from on first launch
+    # (scripts/build_databases.py, then scripts/upload_databases.py):
     - assets/databases.json
     - assets/dictionary_filters.json
+    # What the offline translator (OPUS-MT) downloads from Hugging Face
+    # (scripts/opus_mt/upload_to_hf.py):
+    - assets/opus-mt/manifest.json
   # fonts:
   #   - family: Schyler
   #     fonts:

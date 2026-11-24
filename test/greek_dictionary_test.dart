@@ -1,11 +1,13 @@
 // The Greek dictionary is searched without accents, and the right
 // dictionary and voices are picked for each app language.
 
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:lex_hopper/app_text.dart';
+import 'package:lex_hopper/database_download.dart';
 import 'package:lex_hopper/dictionary_service.dart';
 import 'package:lex_hopper/speech.dart';
 
@@ -49,18 +51,19 @@ void main() {
     expect(AppText.greek.partOfSpeechName('part'), 'Μετοχή');
   });
 
-  test('the two databases are bundled with the app', () {
-    for (final asset in [
-      DictionaryService.lexiconAsset,
-      DictionaryService.textsAsset,
-    ]) {
-      expect(File(asset).existsSync(), isTrue, reason: asset);
-      expect(File('pubspec.yaml').readAsStringSync(), contains(asset));
-    }
+  test('the two databases are downloaded, not bundled', () {
+    final pubspec = File('pubspec.yaml').readAsStringSync();
+    expect(pubspec, isNot(contains('assets/lexicon.db')));
+    expect(pubspec, isNot(contains('assets/texts.db')));
+    expect(pubspec, contains('assets/databases.json'));
+    // The app knows where to download them from, and which version.
+    final m = jsonDecode(
+      File('assets/databases.json').readAsStringSync(),
+    ) as Map<String, dynamic>;
+    final manifest = DatabaseManifest.fromJson(m);
+    expect(manifest.hosted, isTrue);
+    expect(manifest.url(manifest.files.first.path).host, 'huggingface.co');
     // The old dictionaries are gone from the app.
-    expect(
-      File('pubspec.yaml').readAsStringSync(),
-      isNot(contains('dictionary_el.db')),
-    );
+    expect(pubspec, isNot(contains('dictionary_el.db')));
   });
 }

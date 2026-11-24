@@ -1,0 +1,201 @@
+id,kind,direction,opus,opus_correct,opus_note,app_source,app_answer,app_correct
+1,word,en>el,παράθυρο,yes,,app data,παράθυρο,yes
+2,word,en>el,καρέκλα,yes,,app data,καρέκλα,yes
+3,word,en>el,δρόμος,yes,,app data,οδός,yes
+4,word,en>el,τυρί,yes,,app data,τυρί,yes
+5,word,en>el,εκκλησία,yes,,app data,εκκλησία,yes
+6,word,en>el,νησί,yes,,app data,το νησί,yes
+7,word,en>el,δέντρο,yes,,app data,δέντρο,yes
+8,word,en>el,σχολείο,yes,,app data,σχολείο,yes
+9,word,en>el,παπούτσια,yes,,app data,θέση,no
+10,word,en>el,πορτοφόλι,yes,,app data,το πορτοφόλι,yes
+11,word,en>el,σκύλος,yes,,app data,σκύλος,yes
+12,word,en>el,μητέρα,yes,,app data,η μητέρα,yes
+13,word,en>el,πόλη,yes,,app data,πόλη,yes
+14,word,en>el,χωριό,yes,,app data,χωριό,yes
+15,word,en>el,ζεστό,yes,,app data,καυτός,yes
+16,word,en>el,μεγάλο,yes,,app data,μεγάλος,yes
+17,word,en>el,γρήγορα.,yes,,app data,γρήγορα,yes
+18,word,en>el,πάντα,yes,,app data,πάντα,yes
+19,word,en>el,για να φάει,no,"""για να φάει"" = so that he eats",mlkit,να φάω,yes
+20,word,en>el,για να κοιμηθείς,no,"""για να κοιμηθείς"" = so that you sleep",mlkit,να κοιμηθώ,yes
+21,phrase,en>el,Καλησπέρα σε όλους.,yes,,mlkit,καλησπέρα σε όλους,yes
+22,phrase,en>el,ένα μπουκάλι κρασί,yes,,mlkit,ένα μπουκάλι κρασί,yes
+23,phrase,en>el,το ταχυδρομείο,yes,,mlkit,το ταχυδρομείο,yes
+24,phrase,en>el,Χθες το βράδυ.,yes,,mlkit,την προηγούμενη νύχτα,no
+25,phrase,en>el,το πρωί,yes,,mlkit,το πρωί,yes
+26,phrase,en>el,στο σπίτι,yes,,app data,στο σπίτι,yes
+27,phrase,en>el,πολύς κόσμος,yes,,mlkit,πολλοί άνθρωποι,yes
+28,phrase,en>el,η μπροστινή πόρτα,yes,,mlkit,την μπροστινή πόρτα,yes
+29,phrase,en>el,η επόμενη στάση,yes,,mlkit,Η επόμενη στάση,yes
+30,phrase,en>el,κόκκινο κρασί,yes,,app data,ερυθρός οίνος,yes
+31,phrase,en>el,φρέσκο ψάρι,yes,,app data,φρέσκο ψάρι,yes
+32,phrase,en>el,θέα θάλασσα,no,"ungrammatical ""θέα θάλασσα""",mlkit,θέα στη θάλασσα,yes
+33,phrase,en>el,η κεντρική πλατεία,yes,,mlkit,την κεντρική πλατεία,yes
+34,phrase,en>el,λίγο,yes,,mlkit,λιγάκι,yes
+35,phrase,en>el,Μεθαύριο,yes,,mlkit,μεθαύριο,yes
+36,phrase,en>el,μία φορά την εβδομάδα,yes,,mlkit,μια φορά την εβδομάδα,yes
+37,phrase,en>el,Ο καλύτερός μου φίλος,yes,,mlkit,ο καλύτερός μου φίλος,yes
+38,phrase,en>el,για παράδειγμα,yes,,app data,για παράδειγμα,yes
+39,phrase,en>el,Έτσι νομίζω.,yes,,mlkit,Νομίζω,yes
+40,phrase,en>el,η παλιά πόλη,yes,,mlkit,Η παλιά πόλη,yes
+41,sentence,en>el,Πού είναι το ταχυδρομείο;,yes,,mlkit,Πού είναι το ταχυδρομείο;,yes
+42,sentence,en>el,Θα ήθελα ένα μπουκάλι κόκκινο κρασί.,yes,,mlkit,Θα ήθελα ένα μπουκάλι κόκκινο κρασί.,yes
+43,sentence,en>el,Τι ώρα φεύγει το πλοίο για τη Νάξο;,yes,,mlkit,Τι ώρα αφήνει το πορθμείο για τη Νάξο;,no
+44,sentence,en>el,Ο γιος μου είναι δέκα ετών.,yes,,mlkit,Ο γιος μου είναι δέκα ετών.,yes
+45,sentence,en>el,Ο καφές είναι πολύ ζεστός.,yes,,mlkit,Ο καφές είναι πολύ ζεστός.,yes
+46,sentence,en>el,Ψάχνουμε για ένα φτηνό ξενοδοχείο.,yes,,mlkit,Ψάχνουμε για ένα φτηνό ξενοδοχείο.,yes
+47,sentence,en>el,Αυτό είναι το λεωφορείο για Πειραιά;,yes,,mlkit,Είναι αυτό το λεωφορείο στον Πειραιά;,no
+48,sentence,en>el,Δεν έχω καθόλου χρήματα.,yes,,mlkit,Δεν έχω χρήματα.,yes
+49,sentence,en>el,Το μωρό κλαίει.,yes,,mlkit,Το μωρό κλαίει.,yes
+50,sentence,en>el,Μπορείς να ανοίξεις το παράθυρο;,yes,,mlkit,Μπορείτε να ανοίξετε το παράθυρο;,yes
+51,sentence,en>el,Πάρκαρα το αυτοκίνητο κοντά στην εκκλησία.,yes,,mlkit,Στάθηκα το αυτοκίνητο κοντά στην εκκλησία.,no
+52,sentence,en>el,Από που αγόρασες αυτά τα παπούτσια;,yes,,mlkit,Πού αγοράσατε αυτά τα παπούτσια;,yes
+53,sentence,en>el,Το ψάρι είναι πολύ φρέσκο.,yes,,mlkit,Το ψάρι είναι πολύ φρέσκο.,yes
+54,sentence,en>el,Η γιαγιά μου ζει σε ένα χωριό.,yes,,mlkit,Η γιαγιά μου ζει σε ένα χωριό.,yes
+55,sentence,en>el,Πηγαίνω στο γυμναστήριο κάθε πρωί.,yes,,mlkit,Πάω στο γυμναστήριο κάθε πρωί.,yes
+56,sentence,en>el,Δεν υπάρχει ζεστό νερό.,yes,,mlkit,Δεν υπάρχει ζεστό νερό.,yes
+57,sentence,en>el,Ο σκύλος κοιμάται κάτω από το τραπέζι.,yes,,mlkit,Το σκυλί κοιμάται κάτω από το τραπέζι.,yes
+58,sentence,en>el,Έχω δύο αδέλφια και μία αδελφή.,no,"""δύο αδέλφια"" = two siblings",mlkit,Έχω δύο αδέρφια και μια αδελφή.,no
+59,sentence,en>el,Φτάσαμε αργά χθες το βράδυ.,yes,,mlkit,Φτάσαμε αργά το βράδυ.,no
+60,sentence,en>el,Τα εισιτήρια είναι sold out.,no,"left ""sold out"" in English",mlkit,Τα εισιτήρια πωλούνται.,no
+61,sentence,en>el,Μπορώ να το δοκιμάσω;,yes,,mlkit,Μπορώ να το δοκιμάσω;,yes
+62,sentence,en>el,Αυτό το φόρεμα είναι πολύ μεγάλο για μένα.,yes,,mlkit,Αυτό το φόρεμα είναι πολύ μεγάλο για μένα.,yes
+63,sentence,en>el,Πρέπει να αλλάξω χρήματα.,yes,,mlkit,Πρέπει να αλλάξω χρήματα.,yes
+64,sentence,en>el,Η παραλία είναι γεμάτη κόσμο.,yes,,mlkit,Η παραλία είναι γεμάτη από ανθρώπους.,yes
+65,sentence,en>el,Έχετε χάρτη της πόλης;,yes,,mlkit,Έχετε ένα χάρτη της πόλης;,yes
+66,sentence,en>el,Η πτήση μου ακυρώθηκε.,yes,,mlkit,Η πτήση μου ακυρώθηκε.,yes
+67,sentence,en>el,Περιμένω τον φίλο μου.,yes,,mlkit,Περιμένω τον φίλο μου.,yes
+68,sentence,en>el,Η σούπα είναι κρύα.,yes,,mlkit,Η σούπα είναι κρύα.,yes
+69,sentence,en>el,"Κλείσε την πόρτα, σε παρακαλώ.",yes,,mlkit,Κλείστε την πόρτα παρακαλώ.,yes
+70,sentence,en>el,Περάσαμε υπέροχα.,yes,,mlkit,Είχαμε μια μεγάλη στιγμή.,no
+71,sentence,en>el,Κάνει πολύ θόρυβο εδώ.,yes,,mlkit,Είναι πολύ θορυβώδες εδώ.,yes
+72,sentence,en>el,Πονάει η πλάτη μου.,yes,,mlkit,Η πλάτη μου πονάει.,yes
+73,sentence,en>el,Είναι πολύ καλός μάγειρας.,yes,,mlkit,Είναι ένας πολύ καλός μάγειρας.,yes
+74,sentence,en>el,Δεν μπορώ να βρω τα γυαλιά μου.,yes,,mlkit,Δεν μπορώ να βρω τα γυαλιά μου.,yes
+75,sentence,en>el,Θέλουμε να νοικιάσουμε ένα αυτοκίνητο.,yes,,mlkit,Θέλουμε να νοικιάσουμε ένα αυτοκίνητο.,yes
+76,sentence,en>el,Πόση ώρα θα πάρει;,yes,,mlkit,Πόσο καιρό χρειάζεται;,yes
+77,sentence,en>el,Η συνάντηση αρχίζει στις δέκα.,yes,,mlkit,Η συνάντηση αρχίζει από δέκα.,no
+78,sentence,en>el,Δεν μου αρέσει το πικάντικο φαγητό.,yes,,mlkit,Δεν μου αρέσουν τα πικάντικα τρόφιμα.,yes
+79,sentence,en>el,Είναι το μουσείο μακριά από εδώ;,yes,,mlkit,Είναι το μουσείο μακριά από εδώ;,yes
+80,sentence,en>el,Μιλάει τρεις γλώσσες.,yes,,mlkit,Μιλάει τρεις γλώσσες.,yes
+81,sentence,en>el,Θα σε δω στο σταθμό.,yes,,mlkit,Θα σε δω στο σταθμό.,yes
+82,sentence,en>el,Τα παιδιά είναι στο σχολείο.,yes,,mlkit,Τα παιδιά είναι στο σχολείο.,yes
+83,sentence,en>el,Μπορούμε να καθίσουμε έξω;,yes,,mlkit,Μπορούμε να καθίσουμε έξω;,yes
+84,sentence,en>el,Θα ήθελα το ψάρι παρακαλώ.,yes,,mlkit,Θα ήθελα τα ψάρια παρακαλώ.,yes
+85,sentence,en>el,Το μαγαζί είναι κλειστό σήμερα.,yes,,mlkit,Το κατάστημα είναι κλειστό σήμερα.,yes
+86,sentence,en>el,Υπάρχει πρόβλημα με το δωμάτιό μου.,yes,,mlkit,Υπάρχει ένα πρόβλημα με το δωμάτιό μου.,yes
+87,sentence,en>el,Αύριο θα πάμε στο νησί.,yes,,mlkit,Πάμε στο νησί αύριο.,yes
+88,sentence,en>el,Άφησα την τσάντα μου στο ταξί.,yes,,mlkit,Άφησα την τσάντα μου στο ταξί.,yes
+89,sentence,en>el,Πώς είναι ο καιρός αύριο;,yes,,mlkit,Ποιος είναι ο καιρός όπως αύριο;,no
+90,sentence,en>el,Η μητέρα μου φτιάχνει το καλύτερο μουσακά.,yes,,mlkit,Η μητέρα μου κάνει την καλύτερη Μουσάκα.,yes
+91,sentence,en>el,Ζω εδώ πέντε χρόνια.,yes,,mlkit,Έχω ζήσει εδώ για πέντε χρόνια.,yes
+92,sentence,en>el,Το νερό δεν είναι πόσιμο.,yes,,mlkit,Το νερό δεν είναι πόσιμο.,yes
+93,sentence,en>el,Παρακαλώ σβήστε τα φώτα.,yes,,mlkit,Απενεργοποιήστε τα φώτα.,yes
+94,sentence,en>el,Χάσαμε τη σύνδεσή μας.,yes,,mlkit,Χάσατε τη σύνδεσή μας.,no
+95,sentence,en>el,Σπουδάζει ιατρική.,yes,,mlkit,Μελετά φάρμακο.,no
+96,sentence,en>el,Φοβάμαι τα σκυλιά.,yes,,mlkit,Φοβάμαι τα σκυλιά.,yes
+97,sentence,en>el,Η θέα από εδώ είναι εκπληκτική.,yes,,mlkit,Η θέα από εδώ είναι εκπληκτική.,yes
+98,sentence,en>el,Μπορείς να μου τηλεφωνήσεις ένα ταξί;,no,"""telephone me a taxi""",mlkit,Μπορείτε να μου τηλεφωνήσετε ένα ταξί;,no
+99,sentence,en>el,Ξέχασα τον κωδικό μου.,yes,,mlkit,Ξέχασα τον κωδικό μου.,yes
+100,sentence,en>el,Η συναυλία ακυρώθηκε λόγω της βροχής.,yes,,mlkit,Η συναυλία ακυρώθηκε λόγω της βροχής.,yes
+101,word,el>en,window,yes,,app data,window,yes
+102,word,el>en,chair,yes,,app data,chair,yes
+103,word,el>en,road,yes,,app data,road,yes
+104,word,el>en,cheese,yes,,app data,cheese,yes
+105,word,el>en,church,yes,,app data,Church,yes
+106,word,el>en,island,yes,,app data,Island,yes
+107,word,el>en,tree,yes,,app data,tree,yes
+108,word,el>en,school,yes,,app data,school,yes
+109,word,el>en,shoes,yes,,mlkit,shoes,yes
+110,word,el>en,wallet,yes,,app data,wallet,yes
+111,word,el>en,cat,yes,,app data,cat,yes
+112,word,el>en,father,yes,,app data,father,yes
+113,word,el>en,city,yes,,app data,city,yes
+114,word,el>en,village,yes,,app data,village,yes
+115,word,el>en,cold,yes,,app data,cold,yes
+116,word,el>en,small,yes,,app data,small,yes
+117,word,el>en,late,yes,,app data,late,yes
+118,word,el>en,never,yes,,app data,ever,no
+119,word,el>en,I drink,yes,,app data,drink,yes
+120,word,el>en,I write,yes,,app data,write,yes
+121,phrase,el>en,"Good evening, everyone.",yes,,mlkit,Good evening to all,yes
+122,phrase,el>en,a bottle of wine,yes,,mlkit,a bottle of wine,yes
+123,phrase,el>en,the Post Office,yes,,mlkit,the mail,yes
+124,phrase,el>en,last night,yes,,mlkit,last night,yes
+125,phrase,el>en,in the morning,yes,,mlkit,in the morning,yes
+126,phrase,el>en,at home,yes,,mlkit,home,yes
+127,phrase,el>en,a lot of people,yes,,mlkit,Much World,no
+128,phrase,el>en,every day,yes,,app data,every day,yes
+129,phrase,el>en,the next stop,yes,,mlkit,The next stop,yes
+130,phrase,el>en,white wine,yes,,app data,white wine,yes
+131,phrase,el>en,fresh bread,yes,,mlkit,fresh bread,yes
+132,phrase,el>en,good courage,no,"calque ""good courage""",mlkit,good courage,no
+133,phrase,el>en,the Main Square,yes,,mlkit,The main square,yes
+134,phrase,el>en,Slowly,yes,,mlkit,slowly,yes
+135,phrase,el>en,the day after tomorrow,yes,,app data,the day after tomorrow,yes
+136,phrase,el>en,twice a week,yes,,mlkit,twice a week,yes
+137,phrase,el>en,my best friend,yes,,mlkit,My best friend,yes
+138,phrase,el>en,for example,yes,,app data,For example,yes
+139,phrase,el>en,I don't think so.,yes,,mlkit,I don't think,yes
+140,phrase,el>en,the Old Town,yes,,mlkit,The Old Town,yes
+141,sentence,el>en,Where's the post office?,yes,,mlkit,Where is the post office?,yes
+142,sentence,el>en,I'd like a bottle of white wine.,yes,,mlkit,I would like a bottle of white wine.,yes
+143,sentence,el>en,What time does the ship leave for Santorini?,yes,,mlkit,What time does the ship leave for Santorini?,yes
+144,sentence,el>en,My daughter is eight years old.,yes,,mlkit,My daughter is eight years old.,yes
+145,sentence,el>en,Coffee is cold.,yes,,mlkit,Coffee is cold.,yes
+146,sentence,el>en,We're looking for a quiet hotel.,yes,,mlkit,We are looking for a quiet hotel.,yes
+147,sentence,el>en,Is this the bus to Fun?,no,"Plaka translated as ""Fun""",mlkit,This is the bus to Plaka?,yes
+148,sentence,el>en,I don't have any change.,yes,,mlkit,I don't have any fine.,no
+149,sentence,el>en,The baby is asleep.,yes,,mlkit,Baby sleeps.,yes
+150,sentence,el>en,Can you close the window?,yes,,mlkit,Can you close the window?,yes
+151,sentence,el>en,I parked the car near the square.,yes,,mlkit,Park cars near the square.,no
+152,sentence,el>en,Where did you buy this bag?,yes,,mlkit,Where did you buy this bag?,yes
+153,sentence,el>en,The bread is fresh.,yes,,mlkit,Bread is fresh.,yes
+154,sentence,el>en,My grandfather lives in Crete.,yes,,mlkit,My grandfather stays in Crete.,yes
+155,sentence,el>en,I swim every morning.,yes,,mlkit,I swim every morning.,yes
+156,sentence,el>en,No power.,yes,,mlkit,No current.,no
+157,sentence,el>en,The cat sleeps on the couch.,yes,,mlkit,The cat sleeps on the couch.,yes
+158,sentence,el>en,I have one sister and two brothers.,yes,,mlkit,I have a sister and two brothers.,yes
+159,sentence,el>en,We arrived early in the morning.,yes,,mlkit,We arrived early in the morning.,yes
+160,sentence,el>en,Tickets are expensive.,yes,,mlkit,Tickets are expensive.,yes
+161,sentence,el>en,Can I try it?,yes,,mlkit,Can I try it?,yes
+162,sentence,el>en,These shoes are small.,yes,,mlkit,These shoes are small.,yes
+163,sentence,el>en,I have to go to the bank.,yes,,mlkit,I have to go to the bank.,yes
+164,sentence,el>en,The beach is empty.,yes,,mlkit,The beach is licensed.,no
+165,sentence,el>en,Do you have a map of the area?,yes,,mlkit,Do you have a map of the area?,yes
+166,sentence,el>en,Our flight is delayed.,yes,,mlkit,Our flight has a delay.,yes
+167,sentence,el>en,I'm waiting for my mother.,yes,,mlkit,I'm waiting for my mother.,yes
+168,sentence,el>en,The soup is very salty.,yes,,mlkit,The soup is very salty.,yes
+169,sentence,el>en,"Open the door, please.",yes,,mlkit,Opened the door please.,no
+170,sentence,el>en,We had a great time.,yes,,mlkit,We spent very nicely.,no
+171,sentence,el>en,It's very quiet here.,yes,,mlkit,It's very quiet here.,yes
+172,sentence,el>en,My leg hurts.,yes,,mlkit,It hurts my leg.,yes
+173,sentence,el>en,My sister cooks very well.,yes,,mlkit,My sister cooks very well.,yes
+174,sentence,el>en,I can't find my cell phone.,yes,,mlkit,I don't find my cell phone.,yes
+175,sentence,el>en,We want to rent a boat.,yes,,mlkit,We want to rent a boat.,yes
+176,sentence,el>en,How long does the trip take?,yes,,mlkit,How long does the trip do?,no
+177,sentence,el>en,Class starts at nine.,yes,,mlkit,The lesson begins at nine.,yes
+178,sentence,el>en,I don't like milk.,yes,,mlkit,I don't like milk.,yes
+179,sentence,el>en,Is the port nearby?,yes,,mlkit,Is it near the harbor?,yes
+180,sentence,el>en,My brother speaks French.,yes,,mlkit,My brother speaks French.,yes
+181,sentence,el>en,I'll wait for you at the airport.,yes,,mlkit,I will wait for you at the airport.,yes
+182,sentence,el>en,The kids are on the beach.,yes,,mlkit,Children are on the beach.,yes
+183,sentence,el>en,Can we sit inside?,yes,,mlkit,Can we sit in?,yes
+184,sentence,el>en,I'll take the moussaka.,yes,,mlkit,I'll take the moussaka.,yes
+185,sentence,el>en,The bank is closed today.,yes,,mlkit,The bank is closed today.,yes
+186,sentence,el>en,The tap is dripping.,yes,,mlkit,The tap dripping.,yes
+187,sentence,el>en,Tomorrow we go on a field trip.,yes,,mlkit,Tomorrow go excursion.,no
+188,sentence,el>en,I forgot my bag at the restaurant.,yes,,mlkit,I forgot my bag in the restaurant.,yes
+189,sentence,el>en,Will it rain tomorrow?,yes,,mlkit,Will it rain tomorrow?,yes
+190,sentence,el>en,My grandmother makes perfect spinach pie.,yes,,mlkit,My grandmother makes perfect spinach.,no
+191,sentence,el>en,I have lived in Athens for ten years.,yes,,mlkit,I live in Athens ten years.,yes
+192,sentence,el>en,Tap water is drunk.,no,"""is drunk"" instead of drinkable",mlkit,Tap water is drinking.,no
+193,sentence,el>en,Turn off the light.,yes,,mlkit,Erased the light.,no
+194,sentence,el>en,We missed the last bus.,yes,,mlkit,We lost the last bus.,no
+195,sentence,el>en,My sister studies law.,yes,,mlkit,My sister is studying legal.,no
+196,sentence,el>en,I'm afraid of heights.,yes,,mlkit,I'm afraid of heights.,yes
+197,sentence,el>en,The view is wonderful.,yes,,mlkit,The view is wonderful.,yes
+198,sentence,el>en,Could you call me a cab?,yes,,mlkit,Do you call me a taxi?,yes
+199,sentence,el>en,I forgot my password.,yes,,mlkit,I forgot my password.,yes
+200,sentence,el>en,The concert was postponed due to the weather.,yes,,mlkit,The concert was postponed due to the weather.,yes

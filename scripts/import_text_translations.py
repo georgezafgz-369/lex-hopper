@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Fill the translations of data/texts/*.csv from the files made by
-tool/translate_list.dart ("text<TAB>translation" lines): English texts
+a machine translator ("text<TAB>translation" lines): English texts
 translated into Greek (en_el.tsv) and Greek texts into English (el_en.tsv).
 
 Only empty translations, or ones a previous import put there (source

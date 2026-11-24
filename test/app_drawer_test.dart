@@ -4,6 +4,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lex_hopper/app_settings.dart';
 import 'package:lex_hopper/home_page.dart';
+import 'package:lex_hopper/section_icon.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -16,6 +17,7 @@ void main() {
   Widget app() => MaterialApp(
     routes: {
       '/': (_) => const HomePage(),
+      '/games': (_) => const Scaffold(body: Text('games page')),
       '/crossword': (_) => const Scaffold(body: Text('crossword menu')),
       '/word-search': (_) => const Scaffold(body: Text('word search menu')),
       '/dictionary': (_) => const Scaffold(body: Text('dictionary page')),
@@ -24,6 +26,8 @@ void main() {
   );
 
   Future<void> openMenu(WidgetTester tester) async {
+    // Tall enough for the whole menu to be built.
+    await tester.binding.setSurfaceSize(const Size(400, 1200));
     await tester.tap(find.byKey(const Key('menu-button')));
     await tester.pumpAndSettle();
   }
@@ -35,6 +39,27 @@ void main() {
     expect(menu.dx, lessThan(search.dx));
   });
 
+  testWidgets('each item has its coloured icon', (tester) async {
+    await tester.pumpWidget(app());
+    await openMenu(tester);
+    for (final s in Section.values) {
+      expect(
+        find.byKey(Key('section-icon-${s.name}-compact')),
+        findsOneWidget,
+        reason: s.name,
+      );
+    }
+  });
+
+  testWidgets('Translator opens the translator sheet', (tester) async {
+    await tester.pumpWidget(app());
+    await openMenu(tester);
+    await tester.tap(find.byKey(const Key('drawer-translator')));
+    await tester.pumpAndSettle();
+    expect(find.byType(BottomSheet), findsOneWidget);
+    expect(find.byKey(const Key('app-drawer')), findsNothing);
+  });
+
   testWidgets('it opens the drawer with every item', (tester) async {
     await tester.pumpWidget(app());
     await openMenu(tester);
@@ -42,11 +67,14 @@ void main() {
     expect(drawer, findsOneWidget);
     for (final label in [
       'Home',
-      'GAMES',
+      'Games',
       'Crossword',
       'Find the Words',
       'Riddles',
+      'REFERENCE',
       'Dictionary',
+      'Translator',
+      'OTHER',
       'Settings',
       'Language',
     ]) {
@@ -59,6 +87,7 @@ void main() {
   });
 
   for (final (label, page) in [
+    ('Games', 'games page'),
     ('Crossword', 'crossword menu'),
     ('Find the Words', 'word search menu'),
     ('Dictionary', 'dictionary page'),

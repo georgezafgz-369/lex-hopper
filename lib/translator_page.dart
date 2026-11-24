@@ -22,11 +22,14 @@ import 'package:flutter/services.dart';
 import 'package:material_ui/material_ui.dart';
 
 import 'app_text.dart';
+import 'app_settings.dart';
 import 'design_system.dart';
 import 'dictionary_service.dart';
 import 'dictionary_search_bar.dart';
 import 'language_button.dart';
 import 'dual_text.dart';
+import 'eurollm_translator.dart';
+import 'opus_mt_service.dart';
 import 'speech.dart';
 import 'saved_translations.dart';
 import 'translator_service.dart';
@@ -63,16 +66,24 @@ Future<void> showTranslatorSheet(BuildContext context) {
   );
 }
 
-Future<LexiconAnswer> _lookUpInLexicon(String text, String language) async {
+/// What the app's own data says [text] (in [language]) is in the other
+/// language, before any translator is asked: the phrasebook's checked
+/// sentence, else the dictionary's main translation, plus the dictionary's
+/// meanings for a word.
+Future<LexiconAnswer> lookUpInLexicon(String text, String language) async {
   final lexicon = DictionaryService.forLanguage(language);
   return (
-    main: await lexicon.mainTranslation(text),
+    main:
+        await lexicon.phrasebookTranslation(text) ??
+        await lexicon.mainTranslation(text),
     meanings: await lexicon.translationsOf(text),
   );
 }
 
 class TranslatorPage extends StatefulWidget {
-  /// What translates; the phone's own translator unless a test gives one.
+  /// What translates; unless a test gives one, the offline translator
+  /// (OPUS-MT) when downloaded, else the AI model (EuroLLM) when it's on.
+  /// With neither, the page says where to get one.
   final Translator? translator;
 
   /// Looks a word up in the dictionary of [language] ("en"/"el"); the app's
@@ -90,7 +101,7 @@ class TranslatorPage extends StatefulWidget {
   const TranslatorPage({
     super.key,
     this.translator,
-    this.lookup = _lookUpInLexicon,
+    this.lookup = lookUpInLexicon,
     this.saved,
     this.asSheet = false,
   });
@@ -99,11 +110,16 @@ class TranslatorPage extends StatefulWidget {
   State<TranslatorPage> createState() => _TranslatorPageState();
 }
 
-enum _Status { idle, preparing, translating, failed }
+enum _Status { idle, preparing, translating, failed, noTranslator }
 
 class _TranslatorPageState extends State<TranslatorPage> {
   late final Translator _translator =
-      widget.translator ?? OnDeviceTranslatorService();
+      widget.translator ??
+      PreferredTranslator(
+        ai: EuroLlmTranslator.instance,
+        useAi: () => AppSettings.instance.aiTranslator,
+        offline: OpusMtService.instance,
+      );
   late final SavedTranslations _saved =
       widget.saved ?? PhoneSavedTranslations.instance;
 
@@ -151,6 +167,8 @@ class _TranslatorPageState extends State<TranslatorPage> {
     // so they're likely there by the time something is typed.
     // A failure here shows on the page; the next translation tries again.
     _ready = _prepare()..ignore();
+    // The AI model, when it's on, takes a while to load: start now.
+    if (_translator case final PreferredTranslator t) t.warmUp().ignore();
     _input.addListener(_onTyping);
   }
 
@@ -224,7 +242,7 @@ class _TranslatorPageState extends State<TranslatorPage> {
     }
     try {
       // A word or phrase the lexicon knows is answered from the lexicon
-      // (instantly, no machine); anything else by the phone's translator.
+      // (instantly, no machine); anything else by the translator.
       // A lexicon that can't be read doesn't stop the translation.
       const none = (main: null, meanings: <WordTranslation>[]);
       final known = await widget.lookup(text, from).catchError((Object e) {
@@ -233,12 +251,17 @@ class _TranslatorPageState extends State<TranslatorPage> {
       });
       if (!mounted || request != _request) return;
       // Otherwise: translated before on this phone (instant, offline), or
-      // the phone's translator (and remembered once the text is done).
+      // the translator (and remembered once the text is done).
       String? answer = known.main;
       var fromMachine = false;
       answer ??= await _saved
           .find(text, from: from, to: to)
           .catchError((Object e) => null);
+      // A saved "translation" that only repeats the text (an older AI
+      // slip) is translated again.
+      if (answer != null && EuroLlmTranslator.isCopy(answer, text)) {
+        answer = null;
+      }
       if (answer == null) {
         await (_ready ??= _prepare());
         answer = await _translator.translate(text, from: from, to: to);
@@ -254,9 +277,13 @@ class _TranslatorPageState extends State<TranslatorPage> {
         _meanings = known.meanings;
         _status = _Status.idle;
       });
-    } catch (_) {
+    } catch (e) {
       if (mounted && request == _request) {
-        setState(() => _status = _Status.failed);
+        setState(
+          () => _status = e is NoTranslatorYet
+              ? _Status.noTranslator
+              : _Status.failed,
+        );
       }
     }
   }
@@ -385,6 +412,8 @@ class _TranslatorPageState extends State<TranslatorPage> {
         message = t.translating;
       case _Status.failed:
         message = t.translateFailed;
+      case _Status.noTranslator:
+        message = t.noTranslatorYet;
       case _Status.idle:
         message = null;
     }

@@ -29,6 +29,7 @@ import hashlib
 import json
 import sqlite3
 import sys
+import re
 import unicodedata
 from pathlib import Path
 
@@ -65,6 +66,24 @@ def plain(word: str, lang: str) -> str:
     w = unicodedata.normalize('NFD', w)
     w = ''.join(c for c in w if unicodedata.category(c) != 'Mn')
     return unicodedata.normalize('NFC', w).replace('ς', 'σ')
+
+
+_GREEK_MARKS = str.maketrans({
+    'ά': 'α', 'έ': 'ε', 'ή': 'η', 'ί': 'ι', 'ό': 'ο', 'ύ': 'υ', 'ώ': 'ω',
+    'ϊ': 'ι', 'ϋ': 'υ', 'ΐ': 'ι', 'ΰ': 'υ', 'ς': 'σ'})
+
+
+def phrase_key(text: str) -> str:
+    """Phrasebook search key: lowercase, Greek without accents, words only
+    ("Καλημέρα, τι κάνεις;" -> "καλημερα τι κανεισ"). The same as the
+    app's phraseKey(); "(formal)"-style notes don't count."""
+    t = re.sub(r'\([^)]*\)', ' ', text).lower().translate(_GREEK_MARKS)
+    return ' '.join(re.sub(r'[\W_]+', ' ', t).split())
+
+
+def strip_note(text: str) -> str:
+    """The phrase without its "(formal)"-style note, as shown in the app."""
+    return ' '.join(re.sub(r'\([^)]*\)', ' ', text).split())
 
 
 def read(path: Path):
@@ -131,6 +150,17 @@ def build() -> None:
                    r['source'] if r['translation'] else None]
             text_ids.take(r['id'], f'texts/{name}:{line}', row)
             texts.append(row)
+
+    # ── Phrasebook: everyday sentences, English and Greek ──────────────────
+    phrasebook: list[tuple] = []  # en, el, en_key, el_key, topic
+    for line, r in read(TEXT_SRC / 'phrasebook.csv'):
+        if not r['en'] or not r['el']:
+            errors.append(f'texts/phrasebook.csv:{line}: en and el are both '
+                          'needed')
+            continue
+        en, el = strip_note(r['en']), strip_note(r['el'])
+        phrasebook.append((en, el, phrase_key(r['en']), phrase_key(r['el']),
+                           r['topic']))
 
     # ── Entries (lexicon) and long phrases (texts) ─────────────────────────
     entry_ids = Ids()
@@ -290,6 +320,13 @@ def build() -> None:
     con.executemany(f'INSERT INTO phrases VALUES ({",".join("?" * 20)})',
                     phrases)
     con.execute('CREATE INDEX idx_phrases_plain ON phrases(lang, plain, phrase)')
+    con.execute('CREATE TABLE phrasebook (id INTEGER PRIMARY KEY, '
+                'en TEXT NOT NULL, el TEXT NOT NULL, en_key TEXT NOT NULL, '
+                'el_key TEXT NOT NULL, topic TEXT)')
+    con.executemany('INSERT INTO phrasebook (en, el, en_key, el_key, topic) '
+                    'VALUES (?, ?, ?, ?, ?)', phrasebook)
+    con.execute('CREATE INDEX idx_phrasebook_en ON phrasebook(en_key)')
+    con.execute('CREATE INDEX idx_phrasebook_el ON phrasebook(el_key)')
     con.commit()
     con.execute('VACUUM')
     con.close()
@@ -408,9 +445,18 @@ def build() -> None:
             for chunk in iter(lambda: f.read(1 << 20), b''):
                 h.update(chunk)
         return h.hexdigest()[:12]
-    VERSIONS.write_text(json.dumps({
-        'lexicon': fingerprint(LEX_DB), 'texts': fingerprint(TEXT_DB),
-    }, indent=2) + '\n', encoding='utf-8')
+    # The app downloads the databases from Hugging Face; the upload writes
+    # where from (scripts/upload_databases.py). A rebuild that changes them
+    # leaves the app without that until the upload runs.
+    versions = {'lexicon': fingerprint(LEX_DB), 'texts': fingerprint(TEXT_DB)}
+    old = json.loads(VERSIONS.read_text()) if VERSIONS.exists() else {}
+    if all(old.get(k) == v for k, v in versions.items()):
+        versions = old
+    else:
+        print('The databases changed: upload them with '
+              '.models/venv/bin/python scripts/upload_databases.py')
+    VERSIONS.write_text(json.dumps(versions, indent=2) + '\n',
+                        encoding='utf-8')
 
     translated = sum(1 for t in texts if t[4])
     print(f'lexicon.db: {len(entries):,} meanings of words and short '

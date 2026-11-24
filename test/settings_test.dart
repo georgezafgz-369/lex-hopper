@@ -1,7 +1,8 @@
-// Settings page: dark mode switch and language list.
+// Settings page: dark mode switch, language list and the AI translator.
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lex_hopper/app_settings.dart';
+import 'package:lex_hopper/opus_mt_service.dart';
 import 'package:lex_hopper/settings_page.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -30,7 +31,12 @@ void main() {
     // Not set yet: follows the phone (light in tests).
     expect(AppSettings.instance.themeMode, ThemeMode.system);
 
-    await tester.tap(find.byType(Switch));
+    await tester.tap(
+      find.descendant(
+        of: find.byKey(const Key('settings-dark-mode')),
+        matching: find.byType(Switch),
+      ),
+    );
     await tester.pump();
     expect(AppSettings.instance.darkMode, isTrue);
     expect(AppSettings.instance.themeMode, ThemeMode.dark);
@@ -121,5 +127,60 @@ void main() {
     expect(AppSettings.instance.fontSize, FontSizeOption.large);
     final prefs = await SharedPreferences.getInstance();
     expect(prefs.getString('settings_font_size'), 'large');
+  });
+
+  testWidgets('the AI translator asks before its 1 GB download', (
+    tester,
+  ) async {
+    await tester.binding.setSurfaceSize(const Size(400, 1200));
+    await tester.pumpWidget(app());
+    await tester.pumpAndSettle();
+    final card = find.byKey(const Key('settings-ai-translator'));
+    expect(card, findsOneWidget);
+    expect(
+      find.descendant(of: card, matching: find.text('Off')),
+      findsOneWidget,
+    );
+
+    await tester.tap(find.byKey(const Key('ai-translator-switch')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('ai-download-dialog')), findsOneWidget);
+    expect(find.textContaining('1045 MB'), findsOneWidget);
+
+    // Cancel: nothing downloads and it stays off.
+    await tester.tap(find.text('Cancel'));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('ai-download-dialog')), findsNothing);
+    expect(AppSettings.instance.aiTranslator, isFalse);
+    expect(find.byKey(const Key('ai-download-progress')), findsNothing);
+  });
+
+  testWidgets('the offline translator offers its download, asking first', (
+    tester,
+  ) async {
+    await tester.binding.setSurfaceSize(const Size(400, 1400));
+    OpusMtService.instance = OpusMtService(
+      root: () async => '/nowhere',
+      manifest: () async => const OpusMtManifest(
+        repo: 'me/models',
+        revision: 'abc',
+        folder: 'opus-mt',
+        files: [(path: 'en-el/a.onnx', bytes: 162000000, sha256: '')],
+      ),
+    );
+    addTearDown(() => OpusMtService.instance = OpusMtService());
+    await tester.pumpWidget(app());
+    await tester.pumpAndSettle();
+    final card = find.byKey(const Key('settings-offline-translator'));
+    expect(card, findsOneWidget);
+    // The manifest names the Hugging Face repository and the size.
+    expect(find.textContaining('download 162 MB'), findsOneWidget);
+    await tester.tap(card);
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('offline-dialog')), findsOneWidget);
+    // Cancel: nothing downloads.
+    await tester.tap(find.text('Cancel'));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('offline-download-progress')), findsNothing);
   });
 }

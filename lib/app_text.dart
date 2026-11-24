@@ -113,17 +113,122 @@ class AppText {
   String get speak => _('Speak', 'Εκφώνηση');
   String get copy => _('Copy', 'Αντιγραφή');
   String get copied => _('Copied', 'Αντιγράφηκε');
-  String get preparingTranslator => _(
-    'Getting the translator ready (one time, about 30 MB)…',
-    'Ετοιμάζεται ο μεταφραστής (μία φορά, περίπου 30 MB)…',
-  );
+  String get preparingTranslator =>
+      _('Getting the translator ready…', 'Ετοιμάζεται ο μεταφραστής…');
   String get translating => _('Translating…', 'Μετάφραση…');
   String get translateFailed => _(
-    "Couldn't translate. The first time needs an internet connection.",
-    'Δεν έγινε η μετάφραση. Την πρώτη φορά χρειάζεται σύνδεση στο ίντερνετ.',
+    "Couldn't translate this text.",
+    'Δεν έγινε η μετάφραση αυτού του κειμένου.',
+  );
+  String get noTranslatorYet => _(
+    'To translate sentences, download the offline translator in Settings. '
+        'Words and phrases from the dictionary work already.',
+    'Για να μεταφράζεις προτάσεις, κατέβασε τον μεταφραστή χωρίς ίντερνετ '
+        'από τις Ρυθμίσεις. Οι λέξεις και οι φράσεις του λεξικού λειτουργούν '
+        'ήδη.',
   );
   String get translatorSubtitle =>
       _('Translate words and phrases.', 'Μετάφρασε λέξεις και φράσεις.');
+  // Settings > Offline translator (OPUS-MT).
+  String get offlineTranslator =>
+      _('Offline translator', 'Μεταφραστής χωρίς ίντερνετ');
+  String offlineTranslatorDownload(int mb) => _(
+    'Translates sentences without internet · download $mb MB',
+    'Μεταφράζει προτάσεις χωρίς ίντερνετ · λήψη $mb MB',
+  );
+  String get offlineTranslatorSoon => _(
+    'Translates sentences without internet · coming soon',
+    'Μεταφράζει προτάσεις χωρίς ίντερνετ · έρχεται σύντομα',
+  );
+  String offlineTranslatorDownloading(int percent) =>
+      _('Downloading… $percent%', 'Λήψη… $percent%');
+  String get offlineTranslatorReady => _(
+    'Ready · works without internet · OPUS-MT by Helsinki-NLP (CC BY 4.0)',
+    'Έτοιμος · λειτουργεί χωρίς ίντερνετ · OPUS-MT από το Helsinki-NLP (CC BY 4.0)',
+  );
+  String get offlineTranslatorFailed => _(
+    'Download stopped. Tap to try again.',
+    'Η λήψη σταμάτησε. Πάτησε για νέα προσπάθεια.',
+  );
+  String get offlineDownloadTitle =>
+      _('Download the offline translator?', 'Λήψη του μεταφραστή;');
+  String offlineDownloadBody(int mb) => _(
+    'Translates sentences between English and Greek, without internet. '
+        'A one-time download of about $mb MB (Wi-Fi recommended).',
+    'Μεταφράζει προτάσεις από και προς τα αγγλικά, χωρίς ίντερνετ. '
+        'Κατεβαίνει μία φορά, περίπου $mb MB (καλύτερα με Wi-Fi).',
+  );
+  String get offlineDeleteTitle =>
+      _('Delete the offline translator?', 'Διαγραφή του μεταφραστή;');
+  String offlineDeleteBody(int mb) => _(
+    'Frees $mb MB. Sentences won\'t be translated until you download it '
+        'again.',
+    'Ελευθερώνει $mb MB. Οι προτάσεις δεν θα μεταφράζονται μέχρι να τον '
+        'ξανακατεβάσεις.',
+  );
+  String get delete => _('Delete', 'Διαγραφή');
+
+  // Settings > AI translator (EuroLLM).
+  String get aiTranslator => _('AI translator', 'Μεταφραστής AI');
+  String get aiTranslatorChecking => _('Checking…', 'Έλεγχος…');
+  String get aiTranslatorOff => _('Off', 'Ανενεργός');
+  String get aiTranslatorOn => _(
+    'On · EuroLLM, works without internet',
+    'Ενεργός · EuroLLM, λειτουργεί χωρίς ίντερνετ',
+  );
+  String aiTranslatorDownloading(int? percent) => _(
+    'Downloading EuroLLM… ${percent == null ? '' : '$percent%'}',
+    'Λήψη EuroLLM… ${percent == null ? '' : '$percent%'}',
+  );
+  String get aiTranslatorNeedsMemory => _(
+    'Needs a phone with at least 4 GB of memory.',
+    'Χρειάζεται κινητό με τουλάχιστον 4 GB μνήμης.',
+  );
+  String get aiTranslatorFailed => _(
+    'Download stopped. Tap to try again.',
+    'Η λήψη σταμάτησε. Πάτησε για νέα προσπάθεια.',
+  );
+  String get aiDownloadTitle =>
+      _('Download the AI translator?', 'Λήψη του μεταφραστή AI;');
+  String aiDownloadBody(int mb) => _(
+    'EuroLLM reads the whole sentence, so it picks the right sense of a '
+        'word. It is a one-time download of about $mb MB (Wi-Fi '
+        'recommended); after that it works without internet.',
+    'Το EuroLLM διαβάζει όλη την πρόταση, οπότε διαλέγει τη σωστή σημασία '
+        'κάθε λέξης. Κατεβαίνει μία φορά, περίπου $mb MB (καλύτερα με '
+        'Wi-Fi)· μετά λειτουργεί χωρίς ίντερνετ.',
+  );
+  String get download => _('Download', 'Λήψη');
+  String get cancel => _('Cancel', 'Άκυρο');
+  String get aiTurnOffTitle =>
+      _('Turn off the AI translator?', 'Απενεργοποίηση του μεταφραστή AI;');
+  String aiTurnOffBody(int mb) => _(
+    'Keep the model ($mb MB) to turn it back on later without downloading '
+        'again, or delete it to free the space.',
+    'Κράτησε το μοντέλο ($mb MB) για να το ξαναενεργοποιήσεις χωρίς νέα '
+        'λήψη, ή διάγραψέ το για να ελευθερώσεις χώρο.',
+  );
+  String get keepModel => _('Keep it', 'Κράτησέ το');
+  String get deleteModel => _('Delete it', 'Διάγραψέ το');
+
+  // First launch: downloading the dictionary.
+  String get gettingDictionary =>
+      _('Getting the dictionary ready', 'Ετοιμάζεται το λεξικό');
+  String dictionaryDownloadNote(int mb) => _(
+    'A one-time download of about $mb MB. After that, Lex Hopper works '
+        'without internet.',
+    'Κατεβαίνει μία φορά, περίπου $mb MB. Μετά, το Lex Hopper λειτουργεί '
+        'χωρίς ίντερνετ.',
+  );
+  String dictionaryDownloading(int percent) =>
+      _('Downloading… $percent%', 'Λήψη… $percent%');
+  String get dictionaryDownloadFailed => _(
+    "Couldn't download the dictionary. Check the internet connection and "
+        'try again.',
+    'Δεν έγινε η λήψη του λεξικού. Έλεγξε τη σύνδεση στο ίντερνετ και '
+        'δοκίμασε ξανά.',
+  );
+
   String get settings => _('Settings', 'Ρυθμίσεις');
   String get settingsSubtitle =>
       _('Customize your experience.', 'Προσάρμοσε την εμπειρία σου.');

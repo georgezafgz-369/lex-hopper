@@ -95,6 +95,21 @@ class AppColors {
     wsSlate,
     wsPlum,
   ];
+
+  // ── Section colours ────────────────────────────────────────────────────
+  // Bright, flat colours behind each section's doodle icon (SectionIcon),
+  // warmed a little to sit on the paper. Dark variants are deeper, so the
+  // light doodle lines of dark mode stay readable on them.
+  static const coralLight = Color(0xFFEC6A55); // Games
+  static const coralDark = Color(0xFFC4523F);
+  static const cornflowerLight = Color(0xFF5B86DB); // Dictionary
+  static const cornflowerDark = Color(0xFF3F67B5);
+  static const marigoldLight = Color(0xFFEFA834); // Translator
+  static const marigoldDark = Color(0xFFC88620);
+  static const roseLight = Color(0xFFEFA3C8); // Settings
+  static const roseDark = Color(0xFFB86F95);
+  static const fernLight = Color(0xFF3DAE63); // spare (e.g. word of the day)
+  static const fernDark = Color(0xFF2E8A4D);
 }
 
 // ──────────────────────────────────────────────────────────────────────────────

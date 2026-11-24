@@ -9876,7 +9876,7 @@ word,translation,source
 καλάμι φτερού,quill,link
 καλέμι,chisel,machine
 καλή θέληση,good will,machine
-καλή όρεξη,good appetite,machine
+καλή όρεξη,enjoy your meal,Lex Hopper
 καλαίσθητος,charming,machine
 Καλαβρία,Calabria,machine
 καλαθιά,baskets,machine
@@ -9958,7 +9958,7 @@ word,translation,source
 καλωσορίζω,welcome,machine
 καλωσόρισμα,welcome,machine
 καλό,good,machine
-καλό ταξίδι,bon voyage,link
+καλό ταξίδι,have a good trip,Lex Hopper
 καλόγερος,friar,link
 καλόγηρος,Friar,machine
 καλόγουστος,tasteful,machine
@@ -15958,7 +15958,7 @@ word,translation,source
 παραλήγουσα,penult,machine
 παραλήπτης,recipient,machine
 παραλήρημα,delirium,machine
-παραλία,the Beach,machine
+παραλία,beach,Lex Hopper
 παραλίγο,almost,machine
 παραλαβή,receipt,machine
 παραλαμβάνω,παραλαμβάνω,machine
@@ -16328,7 +16328,7 @@ word,translation,source
 περίφραξη,fencing,machine
 περίχωρα,the outskirts,machine
 περασμένος,gone,machine
-περαστικά,get well,machine
+περαστικά,get well soon,Lex Hopper
 περαστικός,passer,machine
 περβάζι,ledge,machine
 περβόλι,garden,machine
@@ -17106,7 +17106,7 @@ word,translation,source
 ποσότητα,quantity,machine
 ποτ-πουρί,assortment,link
 ποτάμι,River,machine
-ποτέ,ever,machine
+ποτέ,never,Lex Hopper
 ποτήρι,glass,machine
 ποτήρι μπύρας,beer glass,link
 ποταμάκι,Creek,machine
@@ -22932,7 +22932,7 @@ word,translation,source
 χρωστήρας,paintbrush,link
 χρωστική ουσία,colour,link
 χρωστώ,owe,link
-χρόνια πολλά,years,machine
+χρόνια πολλά,happy birthday,Lex Hopper
 χρόνιος,chronic,machine
 χρόνος,time,machine
 χρόνος εργασίας,work time,link

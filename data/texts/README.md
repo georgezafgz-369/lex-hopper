@@ -27,7 +27,7 @@ That writes `assets/texts.db` (and `assets/lexicon.db`).
 | `id` | the text's number; words in `data/lexicon` point to it. **Leave empty for a new row.** Never change an existing id. |
 | `text` | the text, in the file's language |
 | `translation` | the text in the other language |
-| `source` | where the translation came from: `wordnet` (the linked meaning's definition), `seed` (the old dictionaries), `machine` (the phone's translator), or yours — write `Lex Hopper` when you fix one, so it's never replaced |
+| `source` | where the translation came from: `wordnet` (the linked meaning's definition), `seed` (the old dictionaries), `machine` (a machine translator), or yours — write `Lex Hopper` when you fix one, so it's never replaced |
 
 **Fix a translation:** edit `translation` and set `source` to `Lex Hopper`.
 A machine translation is only ever replaced by a newer machine one.

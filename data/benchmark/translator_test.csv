@@ -1,0 +1,201 @@
+id,from,to,kind,text,reference
+1,en,el,word,house,σπίτι
+2,en,el,word,keys,κλειδιά
+3,en,el,word,kitchen,κουζίνα
+4,en,el,word,pharmacy,φαρμακείο
+5,en,el,word,water,νερό
+6,en,el,word,bread,ψωμί
+7,en,el,word,hospital,νοσοκομείο
+8,en,el,word,ticket,εισιτήριο
+9,en,el,word,beach,παραλία
+10,en,el,word,money,χρήματα
+11,en,el,word,doctor,γιατρός
+12,en,el,word,friend,φίλος
+13,en,el,word,car,αυτοκίνητο
+14,en,el,word,morning,πρωί
+15,en,el,word,cheap,φτηνός
+16,en,el,word,tired,κουρασμένος
+17,en,el,word,tomorrow,αύριο
+18,en,el,word,help,βοήθεια
+19,en,el,word,happy,χαρούμενος
+20,en,el,word,expensive,ακριβός
+21,en,el,phrase,good morning,καλημέρα
+22,en,el,phrase,thank you very much,ευχαριστώ πολύ
+23,en,el,phrase,excuse me,συγγνώμη
+24,en,el,phrase,how much,πόσο κάνει
+25,en,el,phrase,see you later,τα λέμε αργότερα
+26,en,el,phrase,good night,καληνύχτα
+27,en,el,phrase,the bill please,τον λογαριασμό παρακαλώ
+28,en,el,phrase,of course,φυσικά
+29,en,el,phrase,no problem,κανένα πρόβλημα
+30,en,el,phrase,bus stop,στάση λεωφορείου
+31,en,el,phrase,train station,σιδηροδρομικός σταθμός
+32,en,el,phrase,kitchen table,τραπέζι της κουζίνας
+33,en,el,phrase,mobile phone,κινητό τηλέφωνο
+34,en,el,phrase,happy birthday,χρόνια πολλά
+35,en,el,phrase,on the left,στα αριστερά
+36,en,el,phrase,next week,την επόμενη εβδομάδα
+37,en,el,phrase,a cup of coffee,ένα φλιτζάνι καφέ
+38,en,el,phrase,the car body,το αμάξωμα του αυτοκινήτου
+39,en,el,phrase,well done,μπράβο
+40,en,el,phrase,take care,να προσέχεις
+41,en,el,sentence,Where is the nearest pharmacy?,Πού είναι το πλησιέστερο φαρμακείο;
+42,en,el,sentence,I left my keys on the kitchen table.,Άφησα τα κλειδιά μου στο τραπέζι της κουζίνας.
+43,en,el,sentence,How much does this cost?,Πόσο κοστίζει αυτό;
+44,en,el,sentence,I would like a glass of water.,Θα ήθελα ένα ποτήρι νερό.
+45,en,el,sentence,Can you help me?,Μπορείτε να με βοηθήσετε;
+46,en,el,sentence,I don't understand.,Δεν καταλαβαίνω.
+47,en,el,sentence,Do you speak English?,Μιλάτε αγγλικά;
+48,en,el,sentence,What time is it?,Τι ώρα είναι;
+49,en,el,sentence,My name is Anna.,Με λένε Άννα.
+50,en,el,sentence,Where is the bathroom?,Πού είναι η τουαλέτα;
+51,en,el,sentence,I am hungry.,Πεινάω.
+52,en,el,sentence,The weather is very nice today.,Ο καιρός είναι πολύ ωραίος σήμερα.
+53,en,el,sentence,I need a doctor.,Χρειάζομαι γιατρό.
+54,en,el,sentence,Call an ambulance!,Καλέστε ασθενοφόρο!
+55,en,el,sentence,The body of the car is red.,Το αμάξωμα του αυτοκινήτου είναι κόκκινο.
+56,en,el,sentence,I am looking for the train station.,Ψάχνω τον σιδηροδρομικό σταθμό.
+57,en,el,sentence,Is there a bus to the airport?,Υπάρχει λεωφορείο για το αεροδρόμιο;
+58,en,el,sentence,I would like to book a table for two.,Θα ήθελα να κλείσω ένα τραπέζι για δύο.
+59,en,el,sentence,Can I pay by card?,Μπορώ να πληρώσω με κάρτα;
+60,en,el,sentence,We are staying for three nights.,Μένουμε για τρεις νύχτες.
+61,en,el,sentence,The shop opens at nine.,Το μαγαζί ανοίγει στις εννιά.
+62,en,el,sentence,I have a headache.,Έχω πονοκέφαλο.
+63,en,el,sentence,She is my sister.,Είναι η αδερφή μου.
+64,en,el,sentence,How are you?,Τι κάνεις;
+65,en,el,sentence,I am fine thank you.,"Είμαι καλά, ευχαριστώ."
+66,en,el,sentence,Nice to meet you.,Χάρηκα για τη γνωριμία.
+67,en,el,sentence,Where do you live?,Πού μένεις;
+68,en,el,sentence,I live in Athens.,Μένω στην Αθήνα.
+69,en,el,sentence,I work as a teacher.,Δουλεύω ως δάσκαλος.
+70,en,el,sentence,The children are playing in the garden.,Τα παιδιά παίζουν στον κήπο.
+71,en,el,sentence,Please speak more slowly.,Παρακαλώ μιλήστε πιο αργά.
+72,en,el,sentence,I lost my passport.,Έχασα το διαβατήριό μου.
+73,en,el,sentence,The room is too small.,Το δωμάτιο είναι πολύ μικρό.
+74,en,el,sentence,Can I have the menu please?,Μπορώ να έχω τον κατάλογο παρακαλώ;
+75,en,el,sentence,I am allergic to nuts.,Είμαι αλλεργικός στους ξηρούς καρπούς.
+76,en,el,sentence,What do you recommend?,Τι προτείνετε;
+77,en,el,sentence,The water is cold.,Το νερό είναι κρύο.
+78,en,el,sentence,I missed the bus.,Έχασα το λεωφορείο.
+79,en,el,sentence,It is raining.,Βρέχει.
+80,en,el,sentence,I will call you tomorrow.,Θα σε πάρω τηλέφωνο αύριο.
+81,en,el,sentence,Turn right at the traffic lights.,Στρίψτε δεξιά στα φανάρια.
+82,en,el,sentence,How far is the beach?,Πόσο μακριά είναι η παραλία;
+83,en,el,sentence,I don't eat meat.,Δεν τρώω κρέας.
+84,en,el,sentence,My phone battery is dead.,Η μπαταρία του κινητού μου τελείωσε.
+85,en,el,sentence,Could you take a photo of us?,Μπορείτε να μας βγάλετε μια φωτογραφία;
+86,en,el,sentence,I am learning Greek.,Μαθαίνω ελληνικά.
+87,en,el,sentence,What does this word mean?,Τι σημαίνει αυτή η λέξη;
+88,en,el,sentence,The museum is closed on Mondays.,Το μουσείο είναι κλειστό τις Δευτέρες.
+89,en,el,sentence,I would like a room with a sea view.,Θα ήθελα ένα δωμάτιο με θέα στη θάλασσα.
+90,en,el,sentence,Is breakfast included?,Περιλαμβάνεται το πρωινό;
+91,en,el,sentence,We need more time.,Χρειαζόμαστε περισσότερο χρόνο.
+92,en,el,sentence,He forgot his umbrella.,Ξέχασε την ομπρέλα του.
+93,en,el,sentence,The train is late.,Το τρένο έχει καθυστέρηση.
+94,en,el,sentence,Happy new year!,Καλή χρονιά!
+95,en,el,sentence,I like this song.,Μου αρέσει αυτό το τραγούδι.
+96,en,el,sentence,Where can I buy a ticket?,Πού μπορώ να αγοράσω εισιτήριο;
+97,en,el,sentence,The food was delicious.,Το φαγητό ήταν νοστιμότατο.
+98,en,el,sentence,Let's go to the beach.,Πάμε στην παραλία.
+99,en,el,sentence,I am sorry I am late.,Συγγνώμη που άργησα.
+100,en,el,sentence,See you on Friday.,Τα λέμε την Παρασκευή.
+101,el,en,word,σπίτι,house
+102,el,en,word,κλειδί,key
+103,el,en,word,θάλασσα,sea
+104,el,en,word,φαρμακείο,pharmacy
+105,el,en,word,νερό,water
+106,el,en,word,ψωμί,bread
+107,el,en,word,γιατρός,doctor
+108,el,en,word,εισιτήριο,ticket
+109,el,en,word,παραλία,beach
+110,el,en,word,λογαριασμός,bill
+111,el,en,word,φίλη,friend
+112,el,en,word,αυτοκίνητο,car
+113,el,en,word,βράδυ,evening
+114,el,en,word,ακριβό,expensive
+115,el,en,word,κουρασμένη,tired
+116,el,en,word,χθες,yesterday
+117,el,en,word,βοήθεια,help
+118,el,en,word,χαρούμενος,happy
+119,el,en,word,δωμάτιο,room
+120,el,en,word,ομπρέλα,umbrella
+121,el,en,phrase,καλημέρα,good morning
+122,el,en,phrase,ευχαριστώ πολύ,thank you very much
+123,el,en,phrase,καλή όρεξη,enjoy your meal
+124,el,en,phrase,τι κάνεις,how are you
+125,el,en,phrase,τα λέμε,see you
+126,el,en,phrase,καληνύχτα,good night
+127,el,en,phrase,παρακαλώ,please
+128,el,en,phrase,χρόνια πολλά,happy birthday
+129,el,en,phrase,καλό ταξίδι,have a good trip
+130,el,en,phrase,στάση λεωφορείου,bus stop
+131,el,en,phrase,κινητό τηλέφωνο,mobile phone
+132,el,en,phrase,καλή χρονιά,happy new year
+133,el,en,phrase,στα δεξιά,on the right
+134,el,en,phrase,την άλλη εβδομάδα,next week
+135,el,en,phrase,ένας καφές,a coffee
+136,el,en,phrase,καλώς ήρθες,welcome
+137,el,en,phrase,περαστικά,get well soon
+138,el,en,phrase,καλή επιτυχία,good luck
+139,el,en,phrase,με συγχωρείτε,excuse me
+140,el,en,phrase,δεν πειράζει,never mind
+141,el,en,sentence,Πού είναι η παραλία;,Where is the beach?
+142,el,en,sentence,"Καλημέρα, τι κάνεις;","Good morning, how are you?"
+143,el,en,sentence,Πόσο κάνει αυτό;,How much is this?
+144,el,en,sentence,Θέλω ένα ποτήρι νερό.,I want a glass of water.
+145,el,en,sentence,Μπορείτε να με βοηθήσετε;,Can you help me?
+146,el,en,sentence,Δεν καταλαβαίνω.,I don't understand.
+147,el,en,sentence,Μιλάτε αγγλικά;,Do you speak English?
+148,el,en,sentence,Τι ώρα είναι;,What time is it?
+149,el,en,sentence,Με λένε Νίκο.,My name is Nikos.
+150,el,en,sentence,Πού είναι η τουαλέτα;,Where is the toilet?
+151,el,en,sentence,Πεινάω πολύ.,I am very hungry.
+152,el,en,sentence,Ο καιρός είναι ωραίος σήμερα.,The weather is nice today.
+153,el,en,sentence,Χρειάζομαι γιατρό.,I need a doctor.
+154,el,en,sentence,Το αμάξωμα του αυτοκινήτου είναι κόκκινο.,The body of the car is red.
+155,el,en,sentence,Ψάχνω τον σταθμό του μετρό.,I am looking for the metro station.
+156,el,en,sentence,Υπάρχει λεωφορείο για το λιμάνι;,Is there a bus to the port?
+157,el,en,sentence,Θα ήθελα να κλείσω ένα δωμάτιο.,I would like to book a room.
+158,el,en,sentence,Μπορώ να πληρώσω με κάρτα;,Can I pay by card?
+159,el,en,sentence,Μένουμε εδώ για μια εβδομάδα.,We are staying here for a week.
+160,el,en,sentence,Το φαρμακείο κλείνει στις οκτώ.,The pharmacy closes at eight.
+161,el,en,sentence,Έχω πονόδοντο.,I have a toothache.
+162,el,en,sentence,Αυτός είναι ο αδερφός μου.,This is my brother.
+163,el,en,sentence,Είμαι καλά ευχαριστώ.,I am fine thank you.
+164,el,en,sentence,Χάρηκα πολύ.,Nice to meet you.
+165,el,en,sentence,Από πού είσαι;,Where are you from?
+166,el,en,sentence,Είμαι από την Κρήτη.,I am from Crete.
+167,el,en,sentence,Δουλεύω σε ένα νοσοκομείο.,I work in a hospital.
+168,el,en,sentence,Τα παιδιά κοιμούνται.,The children are sleeping.
+169,el,en,sentence,Μιλήστε πιο αργά παρακαλώ.,Speak more slowly please.
+170,el,en,sentence,Έχασα το πορτοφόλι μου.,I lost my wallet.
+171,el,en,sentence,Το δωμάτιο είναι πολύ ζεστό.,The room is very hot.
+172,el,en,sentence,Μπορώ να δω τον κατάλογο;,Can I see the menu?
+173,el,en,sentence,Είμαι αλλεργική στη γύρη.,I am allergic to pollen.
+174,el,en,sentence,Τι μου προτείνετε;,What do you recommend?
+175,el,en,sentence,Η θάλασσα είναι ζεστή.,The sea is warm.
+176,el,en,sentence,Έχασα το πλοίο.,I missed the ferry.
+177,el,en,sentence,Χιονίζει στο βουνό.,It is snowing on the mountain.
+178,el,en,sentence,Θα σου στείλω μήνυμα αύριο.,I will send you a message tomorrow.
+179,el,en,sentence,Στρίψτε αριστερά στη γωνία.,Turn left at the corner.
+180,el,en,sentence,Πόσο μακριά είναι το κέντρο;,How far is the centre?
+181,el,en,sentence,Δεν πίνω αλκοόλ.,I don't drink alcohol.
+182,el,en,sentence,Το κινητό μου δεν έχει σήμα.,My phone has no signal.
+183,el,en,sentence,Μπορείτε να μας βγάλετε μια φωτογραφία;,Could you take a photo of us?
+184,el,en,sentence,Μαθαίνω αγγλικά.,I am learning English.
+185,el,en,sentence,Τι σημαίνει αυτή η λέξη;,What does this word mean?
+186,el,en,sentence,Το μουσείο είναι ανοιχτό κάθε μέρα.,The museum is open every day.
+187,el,en,sentence,Θέλω ένα δωμάτιο με θέα.,I want a room with a view.
+188,el,en,sentence,Το πρωινό σερβίρεται στις επτά.,Breakfast is served at seven.
+189,el,en,sentence,Βιάζομαι.,I am in a hurry.
+190,el,en,sentence,Ξέχασε τα γυαλιά της.,She forgot her glasses.
+191,el,en,sentence,Το πλοίο έχει καθυστέρηση.,The ferry is delayed.
+192,el,en,sentence,Καλά Χριστούγεννα!,Merry Christmas!
+193,el,en,sentence,Μου αρέσει πολύ η ελληνική μουσική.,I really like Greek music.
+194,el,en,sentence,Πού μπορώ να βρω ταξί;,Where can I find a taxi?
+195,el,en,sentence,Το φαγητό ήταν πεντανόστιμο.,The food was delicious.
+196,el,en,sentence,Πάμε για καφέ;,Shall we go for coffee?
+197,el,en,sentence,Συγγνώμη που άργησα.,Sorry I am late.
+198,el,en,sentence,Τα λέμε το Σάββατο.,See you on Saturday.
+199,el,en,sentence,Καλή όρεξη σε όλους!,Enjoy your meal everyone!
+200,el,en,sentence,Έχει πολλή κίνηση σήμερα.,There is a lot of traffic today.

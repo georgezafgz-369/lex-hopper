@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Turn "word<TAB>translation" files (e.g. made by tool/translate_list.dart
+"""Turn "word<TAB>translation" files (e.g. made by a machine translator
 from a list of words) into the lexicon's main
 translations: data/lexicon/translations_en.csv (English word -> Greek) and
 translations_el.csv (Greek word -> English), source "machine".

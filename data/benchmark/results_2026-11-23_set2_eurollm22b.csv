@@ -1,0 +1,201 @@
+id,kind,direction,eurollm_22b,eurollm_22b_correct,note,opus,opus_correct,agree
+1,word,en>el,παράθυρο,yes,,παράθυρο,yes,yes
+2,word,en>el,καρέκλα,yes,,καρέκλα,yes,yes
+3,word,en>el,δρόμος,yes,,δρόμος,yes,yes
+4,word,en>el,τυρί,yes,,τυρί,yes,yes
+5,word,en>el,εκκλησία,yes,,εκκλησία,yes,yes
+6,word,en>el,νησί,yes,,νησί,yes,yes
+7,word,en>el,δέντρο,yes,,δέντρο,yes,yes
+8,word,en>el,σχολείο,yes,,σχολείο,yes,yes
+9,word,en>el,παπούτσια,yes,,παπούτσια,yes,yes
+10,word,en>el,πορτοφόλι,yes,,πορτοφόλι,yes,yes
+11,word,en>el,σκύλος,yes,,σκύλος,yes,yes
+12,word,en>el,μητέρα,yes,,μητέρα,yes,yes
+13,word,en>el,πόλη,yes,,πόλη,yes,yes
+14,word,en>el,χωριό,yes,,χωριό,yes,yes
+15,word,en>el,καυτό,yes,,ζεστό,yes,no
+16,word,en>el,μεγάλο,yes,,μεγάλο,yes,yes
+17,word,en>el,γρήγορα,yes,,γρήγορα.,yes,yes
+18,word,en>el,πάντα,yes,,πάντα,yes,yes
+19,word,en>el,να φάω,yes,,για να φάει,no,no
+20,word,en>el,να κοιμηθώ,yes,,για να κοιμηθείς,no,no
+21,phrase,en>el,καλησπέρα σε όλους,yes,,Καλησπέρα σε όλους.,yes,yes
+22,phrase,en>el,ένα μπουκάλι κρασί,yes,,ένα μπουκάλι κρασί,yes,yes
+23,phrase,en>el,το ταχυδρομείο,yes,,το ταχυδρομείο,yes,yes
+24,phrase,en>el,χθες το βράδυ,yes,,Χθες το βράδυ.,yes,yes
+25,phrase,en>el,το πρωί,yes,,το πρωί,yes,yes
+26,phrase,en>el,στο σπίτι,yes,,στο σπίτι,yes,yes
+27,phrase,en>el,πολλοί άνθρωποι,yes,,πολύς κόσμος,yes,no
+28,phrase,en>el,η μπροστινή πόρτα,yes,,η μπροστινή πόρτα,yes,yes
+29,phrase,en>el,Η επόμενη στάση,yes,,η επόμενη στάση,yes,yes
+30,phrase,en>el,κόκκινο κρασί,yes,,κόκκινο κρασί,yes,yes
+31,phrase,en>el,νωπά ψάρια,yes,,φρέσκο ψάρι,yes,no
+32,phrase,en>el,θέα στη θάλασσα,yes,,θέα θάλασσα,no,no
+33,phrase,en>el,η κεντρική πλατεία,yes,,η κεντρική πλατεία,yes,yes
+34,phrase,en>el,λίγο-πολύ,no,"""λίγο-πολύ"" = more or less",λίγο,yes,no
+35,phrase,en>el,μεθαύριο,yes,,Μεθαύριο,yes,yes
+36,phrase,en>el,μία φορά την εβδομάδα,yes,,μία φορά την εβδομάδα,yes,yes
+37,phrase,en>el,ο καλύτερος μου φίλος,yes,,Ο καλύτερός μου φίλος,yes,no
+38,phrase,en>el,για παράδειγμα,yes,,για παράδειγμα,yes,yes
+39,phrase,en>el,Νομίζω πως ναι.,yes,,Έτσι νομίζω.,yes,no
+40,phrase,en>el,η παλιά πόλη,yes,,η παλιά πόλη,yes,yes
+41,sentence,en>el,Πού είναι η ταχυδρομική υπηρεσία;,no,"""postal service"" instead of post office",Πού είναι το ταχυδρομείο;,yes,no
+42,sentence,en>el,Θα ήθελα ένα μπουκάλι κόκκινο κρασί.,yes,,Θα ήθελα ένα μπουκάλι κόκκινο κρασί.,yes,yes
+43,sentence,en>el,Πόση ώρα φεύγει το φέρι για τη Νάξο;,no,"""Πόση ώρα"" = how long, not what time",Τι ώρα φεύγει το πλοίο για τη Νάξο;,yes,no
+44,sentence,en>el,Ο γιος μου είναι δέκα χρονών.,yes,,Ο γιος μου είναι δέκα ετών.,yes,no
+45,sentence,en>el,Ο καφές είναι πολύ ζεστός.,yes,,Ο καφές είναι πολύ ζεστός.,yes,yes
+46,sentence,en>el,Ψάχνουμε για φτηνό ξενοδοχείο.,yes,,Ψάχνουμε για ένα φτηνό ξενοδοχείο.,yes,no
+47,sentence,en>el,Είναι αυτό το λεωφορείο για τον Πειραιά;,yes,,Αυτό είναι το λεωφορείο για Πειραιά;,yes,no
+48,sentence,en>el,Δεν έχω καθόλου χρήματα.,yes,,Δεν έχω καθόλου χρήματα.,yes,yes
+49,sentence,en>el,Το μωρό κλαίει.,yes,,Το μωρό κλαίει.,yes,yes
+50,sentence,en>el,Μπορείς να ανοίξεις το παράθυρο;,yes,,Μπορείς να ανοίξεις το παράθυρο;,yes,yes
+51,sentence,en>el,Παρέκατσα το αυτοκίνητο κοντά στην εκκλησία.,no,not a word,Πάρκαρα το αυτοκίνητο κοντά στην εκκλησία.,yes,no
+52,sentence,en>el,Πού αγόρασες αυτά τα παπούτσια;,yes,,Από που αγόρασες αυτά τα παπούτσια;,yes,no
+53,sentence,en>el,Το ψάρι είναι πολύ φρέσκο.,yes,,Το ψάρι είναι πολύ φρέσκο.,yes,yes
+54,sentence,en>el,Η γιαγιά μου ζει σε ένα χωριό.,yes,,Η γιαγιά μου ζει σε ένα χωριό.,yes,yes
+55,sentence,en>el,Πηγαίνω στο γυμναστήριο κάθε πρωί.,yes,,Πηγαίνω στο γυμναστήριο κάθε πρωί.,yes,yes
+56,sentence,en>el,Δεν υπάρχει ζεστό νερό.,yes,,Δεν υπάρχει ζεστό νερό.,yes,yes
+57,sentence,en>el,Ο σκύλος κοιμάται κάτω από το τραπέζι.,yes,,Ο σκύλος κοιμάται κάτω από το τραπέζι.,yes,yes
+58,sentence,en>el,Έχω δύο αδερφούς και μία αδερφή.,yes,,Έχω δύο αδέλφια και μία αδελφή.,no,no
+59,sentence,en>el,Φτάσαμε αργά χτες το βράδυ.,yes,,Φτάσαμε αργά χθες το βράδυ.,yes,no
+60,sentence,en>el,Τα εισιτήρια έχουν εξαντληθεί.,yes,,Τα εισιτήρια είναι sold out.,no,no
+61,sentence,en>el,Μπορώ να το δοκιμάσω;,yes,,Μπορώ να το δοκιμάσω;,yes,yes
+62,sentence,en>el,Αυτό το φόρεμα είναι πολύ μεγάλο για μένα.,yes,,Αυτό το φόρεμα είναι πολύ μεγάλο για μένα.,yes,yes
+63,sentence,en>el,Χρειάζεται να αλλάξω χρήματα.,yes,,Πρέπει να αλλάξω χρήματα.,yes,no
+64,sentence,en>el,Η παραλία είναι γεμάτη κόσμο.,yes,,Η παραλία είναι γεμάτη κόσμο.,yes,yes
+65,sentence,en>el,Έχετε έναν χάρτη της πόλης;,yes,,Έχετε χάρτη της πόλης;,yes,no
+66,sentence,en>el,Το αεροπορικό μου εισιτήριο ακυρώθηκε.,no,"""my plane ticket was cancelled""",Η πτήση μου ακυρώθηκε.,yes,no
+67,sentence,en>el,Περιμένω τον φίλο μου.,yes,,Περιμένω τον φίλο μου.,yes,yes
+68,sentence,en>el,Η σούπα είναι κρύα.,yes,,Η σούπα είναι κρύα.,yes,yes
+69,sentence,en>el,Κλείσε την πόρτα παρακαλώ.,yes,,"Κλείσε την πόρτα, σε παρακαλώ.",yes,no
+70,sentence,en>el,Περάσαμε πολύ ωραία.,yes,,Περάσαμε υπέροχα.,yes,no
+71,sentence,en>el,Εδώ είναι πολύ θορυβώδες.,yes,,Κάνει πολύ θόρυβο εδώ.,yes,no
+72,sentence,en>el,Πονάει η πλάτη μου.,yes,,Πονάει η πλάτη μου.,yes,yes
+73,sentence,en>el,Είναι πολύ καλός μάγειρας.,yes,,Είναι πολύ καλός μάγειρας.,yes,yes
+74,sentence,en>el,Δεν μπορώ να βρω τα γυαλιά μου.,yes,,Δεν μπορώ να βρω τα γυαλιά μου.,yes,yes
+75,sentence,en>el,Θέλουμε να νοικιάσουμε αυτοκίνητο.,yes,,Θέλουμε να νοικιάσουμε ένα αυτοκίνητο.,yes,no
+76,sentence,en>el,Πόσο καιρό χρειάζεται;,yes,,Πόση ώρα θα πάρει;,yes,no
+77,sentence,en>el,Η συνάντηση αρχίζει στις δέκα.,yes,,Η συνάντηση αρχίζει στις δέκα.,yes,yes
+78,sentence,en>el,Δεν μου αρέσει το πικάντικο φαγητό.,yes,,Δεν μου αρέσει το πικάντικο φαγητό.,yes,yes
+79,sentence,en>el,Το μουσείο είναι μακριά από εδώ;,yes,,Είναι το μουσείο μακριά από εδώ;,yes,no
+80,sentence,en>el,Μιλάει τρεις γλώσσες.,yes,,Μιλάει τρεις γλώσσες.,yes,yes
+81,sentence,en>el,Θα σε δω στο σταθμό.,yes,,Θα σε δω στο σταθμό.,yes,yes
+82,sentence,en>el,Τα παιδιά είναι στο σχολείο.,yes,,Τα παιδιά είναι στο σχολείο.,yes,yes
+83,sentence,en>el,Μπορούμε να καθίσουμε έξω;,yes,,Μπορούμε να καθίσουμε έξω;,yes,yes
+84,sentence,en>el,Θα ήθελα το ψάρι παρακαλώ.,yes,,Θα ήθελα το ψάρι παρακαλώ.,yes,yes
+85,sentence,en>el,Το κατάστημα είναι κλειστό σήμερα.,yes,,Το μαγαζί είναι κλειστό σήμερα.,yes,no
+86,sentence,en>el,Υπάρχει πρόβλημα με το δωμάτιό μου.,yes,,Υπάρχει πρόβλημα με το δωμάτιό μου.,yes,yes
+87,sentence,en>el,Θα πάμε στο νησί αύριο.,yes,,Αύριο θα πάμε στο νησί.,yes,no
+88,sentence,en>el,Αφήσαμε την τσάντα μου στο ταξί.,no,"""we left my bag""",Άφησα την τσάντα μου στο ταξί.,yes,no
+89,sentence,en>el,Πώς θα είναι ο καιρός αύριο;,yes,,Πώς είναι ο καιρός αύριο;,yes,no
+90,sentence,en>el,Η μητέρα μου φτιάχνει την καλύτερη μουσακά.,yes,,Η μητέρα μου φτιάχνει το καλύτερο μουσακά.,yes,no
+91,sentence,en>el,Έχω ζήσει εδώ για πέντε χρόνια.,yes,,Ζω εδώ πέντε χρόνια.,yes,no
+92,sentence,en>el,Το νερό δεν είναι πόσιμο.,yes,,Το νερό δεν είναι πόσιμο.,yes,yes
+93,sentence,en>el,Σβήστε τα φώτα.,yes,,Παρακαλώ σβήστε τα φώτα.,yes,no
+94,sentence,en>el,Χαθήκαμε στη σύνδεση.,no,"""we got lost in the connection""",Χάσαμε τη σύνδεσή μας.,yes,no
+95,sentence,en>el,Μελετά ιατρική.,yes,,Σπουδάζει ιατρική.,yes,no
+96,sentence,en>el,Φοβάμαι τα σκυλιά.,yes,,Φοβάμαι τα σκυλιά.,yes,yes
+97,sentence,en>el,Η θέα από εδώ είναι καταπληκτική.,yes,,Η θέα από εδώ είναι εκπληκτική.,yes,no
+98,sentence,en>el,Μπορείτε να καλέσετε ένα ταξί για εμένα;,yes,,Μπορείς να μου τηλεφωνήσεις ένα ταξί;,no,no
+99,sentence,en>el,Ξέχασα τον κωδικό μου.,yes,,Ξέχασα τον κωδικό μου.,yes,yes
+100,sentence,en>el,Το κονσέρτο ακυρώθηκε λόγω της βροχής.,yes,,Η συναυλία ακυρώθηκε λόγω της βροχής.,yes,no
+101,word,el>en,window,yes,,window,yes,yes
+102,word,el>en,chair,yes,,chair,yes,yes
+103,word,el>en,race,no,"""race""",road,yes,no
+104,word,el>en,cheese,yes,,cheese,yes,yes
+105,word,el>en,church,yes,,church,yes,yes
+106,word,el>en,island,yes,,island,yes,yes
+107,word,el>en,tree,yes,,tree,yes,yes
+108,word,el>en,school,yes,,school,yes,yes
+109,word,el>en,shoes,yes,,shoes,yes,yes
+110,word,el>en,wallet,yes,,wallet,yes,yes
+111,word,el>en,cat,yes,,cat,yes,yes
+112,word,el>en,father,yes,,father,yes,yes
+113,word,el>en,city,yes,,city,yes,yes
+114,word,el>en,village,yes,,village,yes,yes
+115,word,el>en,cold,yes,,cold,yes,yes
+116,word,el>en,small,yes,,small,yes,yes
+117,word,el>en,late,yes,,late,yes,yes
+118,word,el>en,never,yes,,never,yes,yes
+119,word,el>en,I drink,yes,,I drink,yes,yes
+120,word,el>en,I write,yes,,I write,yes,yes
+121,phrase,el>en,Good evening to everyone,yes,,"Good evening, everyone.",yes,no
+122,phrase,el>en,a bottle of wine,yes,,a bottle of wine,yes,yes
+123,phrase,el>en,the post office,yes,,the Post Office,yes,yes
+124,phrase,el>en,last night,yes,,last night,yes,yes
+125,phrase,el>en,in the morning,yes,,in the morning,yes,yes
+126,phrase,el>en,at home,yes,,at home,yes,yes
+127,phrase,el>en,a lot of people,yes,,a lot of people,yes,yes
+128,phrase,el>en,every day,yes,,every day,yes,yes
+129,phrase,el>en,the next stop,yes,,the next stop,yes,yes
+130,phrase,el>en,white wine,yes,,white wine,yes,yes
+131,phrase,el>en,fresh bread,yes,,fresh bread,yes,yes
+132,phrase,el>en,good luck,no,"""good luck"" instead of hang in there",good courage,no,no
+133,phrase,el>en,the central square,yes,,the Main Square,yes,no
+134,phrase,el>en,"Slowly, slowly",yes,,Slowly,yes,no
+135,phrase,el>en,the day after tomorrow,yes,,the day after tomorrow,yes,yes
+136,phrase,el>en,twice a week,yes,,twice a week,yes,yes
+137,phrase,el>en,my best friend,yes,,my best friend,yes,yes
+138,phrase,el>en,for example,yes,,for example,yes,yes
+139,phrase,el>en,I don't think so.,yes,,I don't think so.,yes,yes
+140,phrase,el>en,the old town,yes,,the Old Town,yes,yes
+141,sentence,el>en,Where is the post office?,yes,,Where's the post office?,yes,no
+142,sentence,el>en,I would like a bottle of white wine.,yes,,I'd like a bottle of white wine.,yes,no
+143,sentence,el>en,What time does the ferry leave for Santorini?,yes,,What time does the ship leave for Santorini?,yes,no
+144,sentence,el>en,My daughter is eight years old.,yes,,My daughter is eight years old.,yes,yes
+145,sentence,el>en,The coffee is cold.,yes,,Coffee is cold.,yes,no
+146,sentence,el>en,We are looking for a quiet hotel.,yes,,We're looking for a quiet hotel.,yes,no
+147,sentence,el>en,Is this the bus to Plaka?,yes,,Is this the bus to Fun?,no,no
+148,sentence,el>en,I don’t have any small change.,yes,,I don't have any change.,yes,no
+149,sentence,el>en,The baby is sleeping.,yes,,The baby is asleep.,yes,no
+150,sentence,el>en,Can you close the window?,yes,,Can you close the window?,yes,yes
+151,sentence,el>en,I parked the car near the square.,yes,,I parked the car near the square.,yes,yes
+152,sentence,el>en,Where did you buy this bag?,yes,,Where did you buy this bag?,yes,yes
+153,sentence,el>en,The bread is fresh.,yes,,The bread is fresh.,yes,yes
+154,sentence,el>en,My grandfather lives in Crete.,yes,,My grandfather lives in Crete.,yes,yes
+155,sentence,el>en,I swim every morning.,yes,,I swim every morning.,yes,yes
+156,sentence,el>en,It has no electricity.,yes,,No power.,yes,no
+157,sentence,el>en,The cat is sleeping on the sofa.,yes,,The cat sleeps on the couch.,yes,no
+158,sentence,el>en,I have one sister and two brothers.,yes,,I have one sister and two brothers.,yes,yes
+159,sentence,el>en,We arrived early in the morning.,yes,,We arrived early in the morning.,yes,yes
+160,sentence,el>en,Tickets are expensive.,yes,,Tickets are expensive.,yes,yes
+161,sentence,el>en,Can I try it?,yes,,Can I try it?,yes,yes
+162,sentence,el>en,These shoes are too small for me.,yes,,These shoes are small.,yes,no
+163,sentence,el>en,I need to go to the bank.,yes,,I have to go to the bank.,yes,no
+164,sentence,el>en,The beach is empty.,yes,,The beach is empty.,yes,yes
+165,sentence,el>en,Do you have a map of the area?,yes,,Do you have a map of the area?,yes,yes
+166,sentence,el>en,Our flight is delayed.,yes,,Our flight is delayed.,yes,yes
+167,sentence,el>en,I am waiting for my mother.,yes,,I'm waiting for my mother.,yes,no
+168,sentence,el>en,The soup is very salty.,yes,,The soup is very salty.,yes,yes
+169,sentence,el>en,Please open the door.,yes,,"Open the door, please.",yes,no
+170,sentence,el>en,We had a great time.,yes,,We had a great time.,yes,yes
+171,sentence,el>en,It's very quiet here.,yes,,It's very quiet here.,yes,yes
+172,sentence,el>en,My leg hurts.,yes,,My leg hurts.,yes,yes
+173,sentence,el>en,My sister cooks very well.,yes,,My sister cooks very well.,yes,yes
+174,sentence,el>en,I can't find my phone.,yes,,I can't find my cell phone.,yes,no
+175,sentence,el>en,We want to rent a boat.,yes,,We want to rent a boat.,yes,yes
+176,sentence,el>en,How long does the trip take?,yes,,How long does the trip take?,yes,yes
+177,sentence,el>en,The lesson starts at nine.,yes,,Class starts at nine.,yes,no
+178,sentence,el>en,I don't like milk.,yes,,I don't like milk.,yes,yes
+179,sentence,el>en,Is the port nearby?,yes,,Is the port nearby?,yes,yes
+180,sentence,el>en,My brother speaks French.,yes,,My brother speaks French.,yes,yes
+181,sentence,el>en,I will wait for you at the airport.,yes,,I'll wait for you at the airport.,yes,no
+182,sentence,el>en,The children are at the beach.,yes,,The kids are on the beach.,yes,no
+183,sentence,el>en,Can we sit inside?,yes,,Can we sit inside?,yes,yes
+184,sentence,el>en,I'll have the moussaka.,yes,,I'll take the moussaka.,yes,no
+185,sentence,el>en,The bank is closed today.,yes,,The bank is closed today.,yes,yes
+186,sentence,el>en,The faucet is dripping.,yes,,The tap is dripping.,yes,no
+187,sentence,el>en,Tomorrow we are going on a trip.,yes,,Tomorrow we go on a field trip.,yes,no
+188,sentence,el>en,I forgot my bag at the restaurant.,yes,,I forgot my bag at the restaurant.,yes,yes
+189,sentence,el>en,Will it rain tomorrow?,yes,,Will it rain tomorrow?,yes,yes
+190,sentence,el>en,My grandmother makes perfect spinach pie.,yes,,My grandmother makes perfect spinach pie.,yes,yes
+191,sentence,el>en,I have been living in Athens for ten years.,yes,,I have lived in Athens for ten years.,yes,no
+192,sentence,el>en,The tap water is drinkable.,yes,,Tap water is drunk.,no,no
+193,sentence,el>en,Turn off the light.,yes,,Turn off the light.,yes,yes
+194,sentence,el>en,We missed the last bus.,yes,,We missed the last bus.,yes,yes
+195,sentence,el>en,My sister is studying law.,yes,,My sister studies law.,yes,no
+196,sentence,el>en,I am afraid of heights.,yes,,I'm afraid of heights.,yes,no
+197,sentence,el>en,The view is wonderful.,yes,,The view is wonderful.,yes,yes
+198,sentence,el>en,Are you calling me a taxi?,yes,,Could you call me a cab?,yes,no
+199,sentence,el>en,I forgot my password.,yes,,I forgot my password.,yes,yes
+200,sentence,el>en,The concert was postponed due to the weather.,yes,,The concert was postponed due to the weather.,yes,yes

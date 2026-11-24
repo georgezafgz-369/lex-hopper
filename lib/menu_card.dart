@@ -19,6 +19,9 @@ class MenuCard extends StatelessWidget {
   /// Shows a chevron on the right, for cards that open a list of more items.
   final bool chevron;
 
+  /// A picture on the left, e.g. the section's doodle (SectionIcon).
+  final Widget? leading;
+
   const MenuCard({
     super.key,
     required this.title,
@@ -26,6 +29,7 @@ class MenuCard extends StatelessWidget {
     required this.onTap,
     this.comingSoon = false,
     this.chevron = false,
+    this.leading,
   });
 
   @override
@@ -97,12 +101,18 @@ class MenuCard extends StatelessWidget {
           ),
         ),
         padding: const EdgeInsets.all(Spacing.md),
-        child: chevron
+        child: chevron || leading != null
             ? Row(
                 children: [
+                  if (leading case final picture?) ...[
+                    picture,
+                    const SizedBox(width: Spacing.md),
+                  ],
                   Expanded(child: content),
-                  const SizedBox(width: Spacing.sm),
-                  Icon(Icons.chevron_right, color: muted),
+                  if (chevron) ...[
+                    const SizedBox(width: Spacing.sm),
+                    Icon(Icons.chevron_right, color: muted),
+                  ],
                 ],
               )
             : content,

@@ -1,4 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Downloads: the translator models (OPUS-MT, EuroLLM). -->
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:label="lex_hopper"
         android:name="${applicationName}"

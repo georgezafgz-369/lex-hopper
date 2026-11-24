@@ -19,6 +19,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 class FakeTranslator implements Translator {
   bool ready;
   bool fail;
+
+  /// Throws [NoTranslatorYet], as when nothing is downloaded.
+  bool none = false;
   Completer<void>? preparing;
   final calls = <String>[];
 
@@ -41,6 +44,7 @@ class FakeTranslator implements Translator {
     required String to,
   }) async {
     calls.add('$from>$to:$text');
+    if (none) throw const NoTranslatorYet();
     if (fail) throw Exception('no model');
     return '[$to] $text';
   }
@@ -292,6 +296,14 @@ void main() {
     await tester.enterText(input(), 'cat');
     await afterPause(tester);
     expect(output(tester), contains("Couldn't translate"));
+  });
+
+  testWidgets('no translator yet: says where to get one', (tester) async {
+    await pumpPage(tester, FakeTranslator()..none = true);
+    await tester.enterText(input(), 'where is the cat');
+    await afterPause(tester);
+    expect(output(tester), contains('offline translator in Settings'));
+    expect(output(tester), isNot(contains("Couldn't translate")));
   });
 
   testWidgets('Copy puts the translation on the clipboard', (tester) async {

@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:material_ui/material_ui.dart';
 
 import 'app_settings.dart';
+import 'database_gate.dart';
 import 'app_text.dart';
 import 'design_system.dart';
 import 'home_page.dart';
@@ -72,7 +73,8 @@ class LexHopper extends StatelessWidget {
       scrollBehavior: const _NoOverscrollBehavior(),
       initialRoute: '/',
       routes: {
-        '/': (_) => const HomePage(),
+        // First launch: the dictionary downloads before the home page.
+        '/': (_) => const DatabaseGate(child: HomePage()),
         '/games': (_) => const GamesPage(),
         '/crossword': (_) => const CrosswordMenuPage(),
         '/crossword/game': (route) {

@@ -7,6 +7,7 @@ import 'package:material_ui/material_ui.dart';
 import 'app_drawer.dart';
 import 'dual_text.dart';
 import 'design_system.dart';
+import 'section_icon.dart';
 import 'dictionary_search_bar.dart';
 import 'language_button.dart';
 import 'menu_card.dart';
@@ -79,6 +80,7 @@ class HomePage extends StatelessWidget {
                     // ── Games: one card that opens the Games page ─────────
                     MenuCard(
                       key: const Key('games-card'),
+                      leading: const SectionIcon(Section.games),
                       title: (t) => t.gamesTitle,
                       subtitle: (t) => t.gamesList,
                       chevron: true,
@@ -99,6 +101,7 @@ class HomePage extends StatelessWidget {
                     const SizedBox(height: Spacing.sm),
 
                     MenuCard(
+                      leading: const SectionIcon(Section.dictionary),
                       title: (t) => t.dictionary,
                       subtitle: (t) => t.dictionarySubtitle,
                       onTap: () =>
@@ -108,6 +111,7 @@ class HomePage extends StatelessWidget {
 
                     MenuCard(
                       key: const Key('translator-card'),
+                      leading: const SectionIcon(Section.translator),
                       title: (t) => t.translator,
                       subtitle: (t) => t.translatorSubtitle,
                       onTap: () =>
@@ -128,6 +132,7 @@ class HomePage extends StatelessWidget {
                     const SizedBox(height: Spacing.sm),
 
                     MenuCard(
+                      leading: const SectionIcon(Section.settings),
                       title: (t) => t.settings,
                       subtitle: (t) => t.settingsSubtitle,
                       onTap: () => Navigator.of(context).pushNamed('/settings'),

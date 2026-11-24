@@ -11,6 +11,7 @@ import 'package:path/path.dart' as p;
 import 'package:sqflite/sqflite.dart';
 import 'package:path_provider/path_provider.dart';
 
+import 'database_download.dart';
 import 'puzzle_themes.dart' show themeWindow;
 import 'crossword_puzzle.dart' show WordCandidate, phraseGap;
 
@@ -310,6 +311,15 @@ String greekPlain(String text) {
   return text.toLowerCase().split('').map((c) => marks[c] ?? c).join();
 }
 
+/// Phrasebook search key: lowercase, Greek without accents, words only
+/// ("Καλημέρα, τι κάνεις;" -> "καλημερα τι κανεισ"). The same as
+/// phrase_key() in scripts/build_databases.py; "(formal)"-style notes
+/// don't count.
+String phraseKey(String text) =>
+    greekPlain(text.replaceAll(RegExp(r'\([^)]*\)'), ' '))
+        .replaceAll(RegExp(r'[^\p{L}\p{N}]+', unicode: true), ' ')
+        .trim();
+
 /// The dictionary service: one per dictionary language, both reading the
 /// same two databases built from data/lexicon and data/texts
 /// (scripts/build_databases.py):
@@ -334,22 +344,9 @@ class DictionaryService {
   static DictionaryService forLanguage(String code) =>
       code == 'el' ? greek : english;
 
-  /// The bundled databases.
-  static const lexiconAsset = 'assets/lexicon.db';
-  static const textsAsset = 'assets/texts.db';
-
-  /// The databases' fingerprints, written by scripts/build_databases.py: a
-  /// copy on the phone is named after its database's fingerprint, so a
-  /// changed database is copied again without anything to remember.
-  static const versionsAsset = 'assets/databases.json';
-
-  /// The old dictionaries' copies (before lexicon.db and texts.db), deleted
-  /// to free the space.
-  static final _oldFiles = [
-    'dictionary.db',
-    for (var v = 2; v <= 25; v++) 'dictionary_v$v.db',
-    for (var v = 1; v <= 22; v++) 'dictionary_el_v$v.db',
-  ];
+  /// Downloads the databases on first launch (database_download.dart);
+  /// tests and the first-launch screen may put their own in its place.
+  static DatabaseDownload databases = DatabaseDownload(dir: _databaseDir);
 
   bool get _isGreek => language == 'el';
 
@@ -364,13 +361,18 @@ class DictionaryService {
   Database? _db;
   Future<void>? _opening;
 
-  /// Open the databases (copying them out of the app on first run).
-  Future<void> init() => _opening ??= _open();
-
-  static Future<(String, String)>? _copying;
+  /// Open the databases (downloading them on first launch). A failed
+  /// opening (no internet the first time) is tried again on the next call.
+  Future<void> init() {
+    final opening = _opening ??= _open();
+    opening.catchError((Object _) {
+      if (identical(_opening, opening)) _opening = null;
+    });
+    return opening;
+  }
 
   Future<void> _open() async {
-    final (lexicon, texts) = await (_copying ??= _copyDatabases());
+    final (lexicon, texts) = await databases.ensure();
     final db = await openDatabase(lexicon, readOnly: true);
     // After a hot restart the plugin hands back the same open connection,
     // with the texts already attached and the old view still there.
@@ -417,51 +419,6 @@ class DictionaryService {
         '${examples('p.id', translated: true)}, ${prefixed('p')} '
         'FROM t.phrases p JOIN t.texts m ON m.id = p.meaning_id '
         "WHERE p.lang = '$lang'";
-  }
-
-  static Future<(String, String)> _copyDatabases() async {
-    final dir = await _databaseDir();
-    await Directory(dir).create(recursive: true);
-    final versions = jsonDecode(
-      await rootBundle.loadString(versionsAsset),
-    ) as Map<String, dynamic>;
-    final lexiconFile = 'lexicon_${versions['lexicon']}.db';
-    final textsFile = 'texts_${versions['texts']}.db';
-    // Free the space of the old dictionaries and of earlier copies.
-    for (final name in _oldFiles) {
-      final old = File(p.join(dir, name));
-      if (await old.exists()) await old.delete();
-    }
-    await for (final f in Directory(dir).list()) {
-      final name = p.basename(f.path);
-      final ours = RegExp(r'^(lexicon|texts)_.*\.db(\.part)?$');
-      if (f is File &&
-          ours.hasMatch(name) &&
-          name != lexiconFile &&
-          name != textsFile) {
-        await f.delete();
-      }
-    }
-    Future<String> copy(String asset, String name) async {
-      final file = File(p.join(dir, name));
-      if (!await file.exists()) {
-        final raw = await rootBundle.load(asset);
-        // Written under another name first, so a copy cut short (app
-        // closed) is never taken for a whole one.
-        final part = File('${file.path}.part');
-        await part.writeAsBytes(
-          raw.buffer.asUint8List(raw.offsetInBytes, raw.lengthInBytes),
-          flush: true,
-        );
-        await part.rename(file.path);
-      }
-      return file.path;
-    }
-
-    return (
-      await copy(lexiconAsset, lexiconFile),
-      await copy(textsAsset, textsFile),
-    );
   }
 
   static Future<String> _databaseDir() async {
@@ -855,6 +812,22 @@ class DictionaryService {
 
   /// The main translation of [text] (a word or phrase) into the other
   /// language, from the lexicon; null when the lexicon doesn't have it.
+  /// [text] (in this language) in the phrasebook: everyday sentences and
+  /// phrases with a checked translation ("τα λέμε" -> "see you"). Null when
+  /// it isn't there. Case, accents and punctuation don't matter.
+  Future<String?> phrasebookTranslation(String text) async {
+    await init();
+    final key = phraseKey(text);
+    if (key.isEmpty) return null;
+    final (mine, other) = _isGreek ? ('el', 'en') : ('en', 'el');
+    final rows = await _db!.rawQuery(
+      'SELECT $other AS answer FROM t.phrasebook WHERE ${mine}_key = ? '
+      'ORDER BY id LIMIT 1',
+      [key],
+    );
+    return rows.isEmpty ? null : rows.first['answer'] as String;
+  }
+
   Future<String?> mainTranslation(String text) async {
     await init();
     final word = text.trim();

@@ -1,0 +1,201 @@
+id,from,to,kind,text,reference
+1,en,el,word,window,παράθυρο
+2,en,el,word,chair,καρέκλα
+3,en,el,word,street,δρόμος
+4,en,el,word,cheese,τυρί
+5,en,el,word,church,εκκλησία
+6,en,el,word,island,νησί
+7,en,el,word,tree,δέντρο
+8,en,el,word,school,σχολείο
+9,en,el,word,shoes,παπούτσια
+10,en,el,word,wallet,πορτοφόλι
+11,en,el,word,dog,σκύλος
+12,en,el,word,mother,μητέρα
+13,en,el,word,city,πόλη
+14,en,el,word,village,χωριό
+15,en,el,word,hot,ζεστός
+16,en,el,word,big,μεγάλος
+17,en,el,word,quickly,γρήγορα
+18,en,el,word,always,πάντα
+19,en,el,word,to eat,τρώω
+20,en,el,word,to sleep,κοιμάμαι
+21,en,el,phrase,good evening everyone,καλησπέρα σε όλους
+22,en,el,phrase,a bottle of wine,ένα μπουκάλι κρασί
+23,en,el,phrase,the post office,το ταχυδρομείο
+24,en,el,phrase,last night,χθες το βράδυ
+25,en,el,phrase,in the morning,το πρωί
+26,en,el,phrase,at home,στο σπίτι
+27,en,el,phrase,a lot of people,πολύς κόσμος
+28,en,el,phrase,the front door,η εξώπορτα
+29,en,el,phrase,the next stop,η επόμενη στάση
+30,en,el,phrase,red wine,κόκκινο κρασί
+31,en,el,phrase,fresh fish,φρέσκο ψάρι
+32,en,el,phrase,sea view,θέα στη θάλασσα
+33,en,el,phrase,the main square,η κεντρική πλατεία
+34,en,el,phrase,a little bit,λίγο
+35,en,el,phrase,the day after tomorrow,μεθαύριο
+36,en,el,phrase,once a week,μία φορά την εβδομάδα
+37,en,el,phrase,my best friend,ο καλύτερός μου φίλος
+38,en,el,phrase,for example,για παράδειγμα
+39,en,el,phrase,I think so,νομίζω πως ναι
+40,en,el,phrase,the old town,η παλιά πόλη
+41,en,el,sentence,Where is the post office?,Πού είναι το ταχυδρομείο;
+42,en,el,sentence,I would like a bottle of red wine.,Θα ήθελα ένα μπουκάλι κόκκινο κρασί.
+43,en,el,sentence,What time does the ferry leave for Naxos?,Τι ώρα φεύγει το πλοίο για τη Νάξο;
+44,en,el,sentence,My son is ten years old.,Ο γιος μου είναι δέκα χρονών.
+45,en,el,sentence,The coffee is too hot.,Ο καφές είναι πολύ ζεστός.
+46,en,el,sentence,We are looking for a cheap hotel.,Ψάχνουμε ένα φτηνό ξενοδοχείο.
+47,en,el,sentence,Is this the bus to Piraeus?,Αυτό είναι το λεωφορείο για τον Πειραιά;
+48,en,el,sentence,I don't have any money.,Δεν έχω καθόλου λεφτά.
+49,en,el,sentence,The baby is crying.,Το μωρό κλαίει.
+50,en,el,sentence,Can you open the window?,Μπορείτε να ανοίξετε το παράθυρο;
+51,en,el,sentence,I parked the car near the church.,Πάρκαρα το αυτοκίνητο κοντά στην εκκλησία.
+52,en,el,sentence,Where did you buy these shoes?,Πού αγόρασες αυτά τα παπούτσια;
+53,en,el,sentence,The fish is very fresh.,Το ψάρι είναι πολύ φρέσκο.
+54,en,el,sentence,My grandmother lives in a village.,Η γιαγιά μου μένει σε ένα χωριό.
+55,en,el,sentence,I go to the gym every morning.,Πηγαίνω στο γυμναστήριο κάθε πρωί.
+56,en,el,sentence,There is no hot water.,Δεν έχει ζεστό νερό.
+57,en,el,sentence,The dog is sleeping under the table.,Ο σκύλος κοιμάται κάτω από το τραπέζι.
+58,en,el,sentence,I have two brothers and one sister.,Έχω δύο αδερφούς και μία αδερφή.
+59,en,el,sentence,We arrived late last night.,Φτάσαμε αργά χθες το βράδυ.
+60,en,el,sentence,The tickets are sold out.,Τα εισιτήρια έχουν εξαντληθεί.
+61,en,el,sentence,Can I try it on?,Μπορώ να το δοκιμάσω;
+62,en,el,sentence,This dress is too big for me.,Αυτό το φόρεμα μου είναι μεγάλο.
+63,en,el,sentence,I need to change money.,Πρέπει να αλλάξω χρήματα.
+64,en,el,sentence,The beach is full of people.,Η παραλία είναι γεμάτη κόσμο.
+65,en,el,sentence,Do you have a map of the city?,Έχετε χάρτη της πόλης;
+66,en,el,sentence,My flight was cancelled.,Η πτήση μου ακυρώθηκε.
+67,en,el,sentence,I am waiting for my friend.,Περιμένω τον φίλο μου.
+68,en,el,sentence,The soup is cold.,Η σούπα είναι κρύα.
+69,en,el,sentence,Close the door please.,Κλείσε την πόρτα σε παρακαλώ.
+70,en,el,sentence,We had a great time.,Περάσαμε υπέροχα.
+71,en,el,sentence,It is too noisy here.,Έχει πολύ θόρυβο εδώ.
+72,en,el,sentence,My back hurts.,Πονάει η πλάτη μου.
+73,en,el,sentence,He is a very good cook.,Είναι πολύ καλός μάγειρας.
+74,en,el,sentence,I can't find my glasses.,Δεν βρίσκω τα γυαλιά μου.
+75,en,el,sentence,We want to rent a car.,Θέλουμε να νοικιάσουμε ένα αυτοκίνητο.
+76,en,el,sentence,How long does it take?,Πόση ώρα παίρνει;
+77,en,el,sentence,The meeting starts at ten.,Η συνάντηση ξεκινάει στις δέκα.
+78,en,el,sentence,I don't like spicy food.,Δεν μου αρέσει το πικάντικο φαγητό.
+79,en,el,sentence,Is the museum far from here?,Είναι μακριά το μουσείο από εδώ;
+80,en,el,sentence,She speaks three languages.,Μιλάει τρεις γλώσσες.
+81,en,el,sentence,I'll see you at the station.,Θα σε δω στον σταθμό.
+82,en,el,sentence,The kids are at school.,Τα παιδιά είναι στο σχολείο.
+83,en,el,sentence,Can we sit outside?,Μπορούμε να καθίσουμε έξω;
+84,en,el,sentence,I'd like the fish please.,Θα ήθελα το ψάρι παρακαλώ.
+85,en,el,sentence,The shop is closed today.,Το μαγαζί είναι κλειστό σήμερα.
+86,en,el,sentence,There is a problem with my room.,Υπάρχει πρόβλημα με το δωμάτιό μου.
+87,en,el,sentence,We are going to the island tomorrow.,Πάμε στο νησί αύριο.
+88,en,el,sentence,I left my bag in the taxi.,Άφησα την τσάντα μου στο ταξί.
+89,en,el,sentence,What is the weather like tomorrow?,Τι καιρό θα κάνει αύριο;
+90,en,el,sentence,My mother makes the best moussaka.,Η μητέρα μου φτιάχνει τον καλύτερο μουσακά.
+91,en,el,sentence,I have lived here for five years.,Μένω εδώ πέντε χρόνια.
+92,en,el,sentence,The water is not drinkable.,Το νερό δεν είναι πόσιμο.
+93,en,el,sentence,Please turn off the lights.,Παρακαλώ σβήστε τα φώτα.
+94,en,el,sentence,We missed our connection.,Χάσαμε την ανταπόκρισή μας.
+95,en,el,sentence,He is studying medicine.,Σπουδάζει ιατρική.
+96,en,el,sentence,I'm afraid of dogs.,Φοβάμαι τα σκυλιά.
+97,en,el,sentence,The view from here is amazing.,Η θέα από εδώ είναι εκπληκτική.
+98,en,el,sentence,Can you call me a taxi?,Μπορείτε να μου καλέσετε ένα ταξί;
+99,en,el,sentence,I forgot my password.,Ξέχασα τον κωδικό μου.
+100,en,el,sentence,The concert was cancelled because of the rain.,Η συναυλία ακυρώθηκε λόγω της βροχής.
+101,el,en,word,παράθυρο,window
+102,el,en,word,καρέκλα,chair
+103,el,en,word,δρόμος,street
+104,el,en,word,τυρί,cheese
+105,el,en,word,εκκλησία,church
+106,el,en,word,νησί,island
+107,el,en,word,δέντρο,tree
+108,el,en,word,σχολείο,school
+109,el,en,word,παπούτσια,shoes
+110,el,en,word,πορτοφόλι,wallet
+111,el,en,word,γάτα,cat
+112,el,en,word,πατέρας,father
+113,el,en,word,πόλη,city
+114,el,en,word,χωριό,village
+115,el,en,word,κρύος,cold
+116,el,en,word,μικρός,small
+117,el,en,word,αργά,slowly
+118,el,en,word,ποτέ,never
+119,el,en,word,πίνω,drink
+120,el,en,word,γράφω,write
+121,el,en,phrase,καλησπέρα σε όλους,good evening everyone
+122,el,en,phrase,ένα μπουκάλι κρασί,a bottle of wine
+123,el,en,phrase,το ταχυδρομείο,the post office
+124,el,en,phrase,χθες το βράδυ,last night
+125,el,en,phrase,το πρωί,in the morning
+126,el,en,phrase,στο σπίτι,at home
+127,el,en,phrase,πολύς κόσμος,a lot of people
+128,el,en,phrase,κάθε μέρα,every day
+129,el,en,phrase,η επόμενη στάση,the next stop
+130,el,en,phrase,λευκό κρασί,white wine
+131,el,en,phrase,φρέσκο ψωμί,fresh bread
+132,el,en,phrase,καλό κουράγιο,hang in there
+133,el,en,phrase,η κεντρική πλατεία,the main square
+134,el,en,phrase,σιγά σιγά,little by little
+135,el,en,phrase,μεθαύριο,the day after tomorrow
+136,el,en,phrase,δύο φορές την εβδομάδα,twice a week
+137,el,en,phrase,ο καλύτερός μου φίλος,my best friend
+138,el,en,phrase,για παράδειγμα,for example
+139,el,en,phrase,δεν νομίζω,I don't think so
+140,el,en,phrase,η παλιά πόλη,the old town
+141,el,en,sentence,Πού είναι το ταχυδρομείο;,Where is the post office?
+142,el,en,sentence,Θα ήθελα ένα μπουκάλι λευκό κρασί.,I would like a bottle of white wine.
+143,el,en,sentence,Τι ώρα φεύγει το πλοίο για τη Σαντορίνη;,What time does the ferry leave for Santorini?
+144,el,en,sentence,Η κόρη μου είναι οκτώ χρονών.,My daughter is eight years old.
+145,el,en,sentence,Ο καφές είναι κρύος.,The coffee is cold.
+146,el,en,sentence,Ψάχνουμε ένα ήσυχο ξενοδοχείο.,We are looking for a quiet hotel.
+147,el,en,sentence,Αυτό είναι το λεωφορείο για την Πλάκα;,Is this the bus to Plaka?
+148,el,en,sentence,Δεν έχω καθόλου ψιλά.,I don't have any change.
+149,el,en,sentence,Το μωρό κοιμάται.,The baby is sleeping.
+150,el,en,sentence,Μπορείτε να κλείσετε το παράθυρο;,Can you close the window?
+151,el,en,sentence,Πάρκαρα το αυτοκίνητο κοντά στην πλατεία.,I parked the car near the square.
+152,el,en,sentence,Πού αγόρασες αυτή την τσάντα;,Where did you buy this bag?
+153,el,en,sentence,Το ψωμί είναι φρέσκο.,The bread is fresh.
+154,el,en,sentence,Ο παππούς μου μένει στην Κρήτη.,My grandfather lives in Crete.
+155,el,en,sentence,Κολυμπάω κάθε πρωί.,I swim every morning.
+156,el,en,sentence,Δεν έχει ρεύμα.,There is no electricity.
+157,el,en,sentence,Η γάτα κοιμάται πάνω στον καναπέ.,The cat is sleeping on the sofa.
+158,el,en,sentence,Έχω μία αδερφή και δύο αδερφούς.,I have one sister and two brothers.
+159,el,en,sentence,Φτάσαμε νωρίς το πρωί.,We arrived early in the morning.
+160,el,en,sentence,Τα εισιτήρια είναι ακριβά.,The tickets are expensive.
+161,el,en,sentence,Μπορώ να το δοκιμάσω;,Can I try it on?
+162,el,en,sentence,Αυτά τα παπούτσια μου είναι μικρά.,These shoes are too small for me.
+163,el,en,sentence,Πρέπει να πάω στην τράπεζα.,I have to go to the bank.
+164,el,en,sentence,Η παραλία είναι άδεια.,The beach is empty.
+165,el,en,sentence,Έχετε χάρτη της περιοχής;,Do you have a map of the area?
+166,el,en,sentence,Η πτήση μας έχει καθυστέρηση.,Our flight is delayed.
+167,el,en,sentence,Περιμένω τη μητέρα μου.,I am waiting for my mother.
+168,el,en,sentence,Η σούπα είναι πολύ αλμυρή.,The soup is too salty.
+169,el,en,sentence,Άνοιξε την πόρτα σε παρακαλώ.,Open the door please.
+170,el,en,sentence,Περάσαμε πολύ ωραία.,We had a very nice time.
+171,el,en,sentence,Έχει πολύ ησυχία εδώ.,It is very quiet here.
+172,el,en,sentence,Πονάει το πόδι μου.,My leg hurts.
+173,el,en,sentence,Η αδερφή μου μαγειρεύει πολύ καλά.,My sister cooks very well.
+174,el,en,sentence,Δεν βρίσκω το κινητό μου.,I can't find my phone.
+175,el,en,sentence,Θέλουμε να νοικιάσουμε ένα σκάφος.,We want to rent a boat.
+176,el,en,sentence,Πόση ώρα κάνει το ταξίδι;,How long is the journey?
+177,el,en,sentence,Το μάθημα αρχίζει στις εννιά.,The lesson starts at nine.
+178,el,en,sentence,Δεν μου αρέσει το γάλα.,I don't like milk.
+179,el,en,sentence,Είναι κοντά το λιμάνι;,Is the port close?
+180,el,en,sentence,Ο αδερφός μου μιλάει γαλλικά.,My brother speaks French.
+181,el,en,sentence,Θα σε περιμένω στο αεροδρόμιο.,I will wait for you at the airport.
+182,el,en,sentence,Τα παιδιά είναι στην παραλία.,The children are at the beach.
+183,el,en,sentence,Μπορούμε να καθίσουμε μέσα;,Can we sit inside?
+184,el,en,sentence,Θα πάρω τη μουσακά.,I'll have the moussaka.
+185,el,en,sentence,Η τράπεζα είναι κλειστή σήμερα.,The bank is closed today.
+186,el,en,sentence,Η βρύση στάζει.,The tap is dripping.
+187,el,en,sentence,Αύριο πάμε εκδρομή.,Tomorrow we are going on a trip.
+188,el,en,sentence,Ξέχασα την τσάντα μου στο εστιατόριο.,I left my bag at the restaurant.
+189,el,en,sentence,Θα βρέξει αύριο;,Will it rain tomorrow?
+190,el,en,sentence,Η γιαγιά μου φτιάχνει τέλεια σπανακόπιτα.,My grandmother makes perfect spinach pie.
+191,el,en,sentence,Ζω στην Αθήνα δέκα χρόνια.,I have lived in Athens for ten years.
+192,el,en,sentence,Το νερό της βρύσης πίνεται.,The tap water is drinkable.
+193,el,en,sentence,Σβήσε το φως.,Turn off the light.
+194,el,en,sentence,Χάσαμε το τελευταίο λεωφορείο.,We missed the last bus.
+195,el,en,sentence,Η αδερφή μου σπουδάζει νομική.,My sister is studying law.
+196,el,en,sentence,Φοβάμαι τα ύψη.,I am afraid of heights.
+197,el,en,sentence,Η θέα είναι υπέροχη.,The view is wonderful.
+198,el,en,sentence,Μου καλείτε ένα ταξί;,Could you call me a taxi?
+199,el,en,sentence,Ξέχασα τον κωδικό μου.,I forgot my password.
+200,el,en,sentence,Η συναυλία αναβλήθηκε λόγω του καιρού.,The concert was postponed because of the weather.

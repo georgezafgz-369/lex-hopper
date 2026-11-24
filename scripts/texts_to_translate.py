@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """List the texts in data/texts/ that have no translation yet, for
-tool/translate_list.dart to translate on a phone (then bring the results in
+a machine translator (e.g. OPUS-MT on the Mac, .models/) (then bring the results in
 with scripts/import_text_translations.py). Medical meanings stay
 English-only and are left out.
 
