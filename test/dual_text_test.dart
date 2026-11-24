@@ -80,25 +80,16 @@ void main() {
     expect(find.textContaining('Παιχνίδια', findRichText: true), findsNothing);
   });
 
-  testWidgets('Games page: game titles and descriptions get translations', (
-    tester,
-  ) async {
+  testWidgets('Games page: game names get translations', (tester) async {
     await tester.pumpWidget(gamesApp());
     expect(find.text('Crossword'), findsOneWidget);
 
     await AppSettings.instance.setSecondaryLanguage('el');
     await tester.pump();
-    expect(
-      find.text('Crossword  Σταυρόλεξο', findRichText: true),
-      findsOneWidget,
-    );
     expect(find.text('GAMES  ΠΑΙΧΝΙΔΙΑ', findRichText: true), findsOneWidget);
-    final main = tester.getTopLeft(
-      find.text('Set across and down in the printed newspaper tradition.'),
-    );
-    final second = tester.getTopLeft(
-      find.text('Οριζόντια και κάθετα, όπως στο σταυρόλεξο της εφημερίδας.'),
-    );
+    // In the small game tiles, the translation sits under the name.
+    final main = tester.getTopLeft(find.text('Crossword'));
+    final second = tester.getTopLeft(find.text('Σταυρόλεξο'));
     expect(second.dy, greaterThan(main.dy));
     expect(find.text('Έρχεται σύντομα'), findsOneWidget); // Riddles
   });

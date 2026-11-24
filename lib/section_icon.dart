@@ -31,6 +31,10 @@ enum Section {
   about,
   // The bottom menu's open / close button.
   menu,
+  // The games, on the Games page.
+  crossword,
+  findWords,
+  riddles,
 }
 
 class SectionIcon extends StatelessWidget {
@@ -78,6 +82,18 @@ class SectionIcon extends StatelessWidget {
     Section.feedback => b.resolve(
       light: AppColors.coralLight,
       dark: AppColors.coralDark,
+    ),
+    Section.crossword => b.resolve(
+      light: AppColors.marigoldLight,
+      dark: AppColors.marigoldDark,
+    ),
+    Section.findWords => b.resolve(
+      light: AppColors.fernLight,
+      dark: AppColors.fernDark,
+    ),
+    Section.riddles => b.resolve(
+      light: AppColors.roseLight,
+      dark: AppColors.roseDark,
     ),
     Section.menu => b.resolve(
       light: AppColors.clayLight,
@@ -284,6 +300,51 @@ final _drawings = <Section, (String, String)>{
         '<path d="M38 48 H82 M38 64 H82 M38 80 H82" stroke-width="7"/>',
     '${_sparkle(100, 22)}'
         '<circle cx="20" cy="30" r="3" fill="{ink}" stroke="none"/>',
+  ),
+
+  // Crossword: a 3 × 3 grid of tiles, two of them black, a "C" in the
+  // corner one.
+  Section.crossword: (
+    '$_blob'
+        '<g transform="rotate(-6 60 64)">'
+        '<rect x="32" y="36" width="56" height="56" rx="4" fill="{tile}"/>'
+        '<path d="M50.7 36 V92 M69.3 36 V92 M32 54.7 H88 M32 73.3 H88" '
+        'stroke-width="4"/>'
+        '<rect x="50.7" y="36" width="18.6" height="18.7" fill="{ink}"/>'
+        '<rect x="69.3" y="73.3" width="18.7" height="18.7" fill="{ink}"/>'
+        '<path d="M46 42 A6 6 0 1 0 46 50" stroke-width="3.5"/>'
+        '</g>',
+    '${_sparkle(102, 24)}'
+        '<path d="M12 98 C18 92 24 104 30 98"/>'
+        '<circle cx="20" cy="30" r="3" fill="{ink}" stroke="none"/>',
+  ),
+
+  // Find the Words: a card of letters with one word highlighted, and a
+  // magnifying glass over it.
+  Section.findWords: (
+    '$_blob'
+        '<rect x="24" y="36" width="58" height="50" rx="5" fill="{tile}"/>'
+        '<rect x="30" y="54" width="46" height="13" rx="6.5" fill="{blob}" '
+        'stroke="none"/>'
+        '<path d="M32 46 H38 M45 46 H51 M58 46 H64 M71 46 H75 '
+        'M32 60.5 H38 M45 60.5 H51 M58 60.5 H64 M71 60.5 H75 '
+        'M32 76 H38 M45 76 H51 M58 76 H64 M71 76 H75" stroke-width="3.5"/>'
+        '<circle cx="76" cy="70" r="13" fill="{tile}" fill-opacity="0.6"/>'
+        '<path d="M85.5 79.5 L98 92" stroke-width="7"/>',
+    '${_sparkle(100, 24)}'
+        '<path d="M12 98 C18 92 24 104 30 98"/>'
+        '<circle cx="20" cy="30" r="3" fill="{ink}" stroke="none"/>',
+  ),
+
+  // Riddles: a big hand-drawn question mark.
+  Section.riddles: (
+    '$_blob'
+        '<path d="M46 50 C46 34 74 34 74 50 C74 62 60 62 60 74 V77" '
+        'stroke-width="8"/>'
+        '<circle cx="60" cy="89" r="5" fill="{ink}" stroke="none"/>',
+    '${_sparkle(100, 24)}'
+        '${_sparkle(22, 92, 6)}'
+        '<path d="M14 34 C18 26 28 30 24 37"/>',
   ),
 
   // About the app: an "i" in a circle.
