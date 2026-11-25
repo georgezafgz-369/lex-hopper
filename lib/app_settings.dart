@@ -61,6 +61,7 @@ class AppSettings extends ChangeNotifier {
   static const _secondaryKey = 'settings_secondary_language';
   static const _aiTranslatorKey = 'settings_ai_translator';
   static const _aiModelKey = 'settings_ai_model';
+  static const _wordLookUpKey = 'settings_word_look_up';
 
   /// True = always dark, false = always light, null = follow the phone
   /// (until the user first flips the switch).
@@ -86,6 +87,11 @@ class AppSettings extends ChangeNotifier {
   /// Which AI model: "eurollm" (the first) or "gemma4".
   String get aiModel => _aiModel;
   String _aiModel = 'eurollm';
+
+  /// Whether double-tapping a word anywhere in the app opens its page in
+  /// the dictionary. On until turned off.
+  bool get wordLookUp => _wordLookUp;
+  bool _wordLookUp = true;
 
   bool? get darkMode => _darkMode;
   String? get language => _language;
@@ -136,6 +142,7 @@ class AppSettings extends ChangeNotifier {
     _secondary = prefs.getString(_secondaryKey);
     _aiTranslator = prefs.getBool(_aiTranslatorKey) ?? false;
     _aiModel = prefs.getString(_aiModelKey) ?? 'eurollm';
+    _wordLookUp = prefs.getBool(_wordLookUpKey) ?? true;
     final size = prefs.getString(_fontSizeKey);
     _fontSize = FontSizeOption.values.firstWhere(
       (o) => o.name == size,
@@ -149,6 +156,13 @@ class AppSettings extends ChangeNotifier {
     notifyListeners();
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_darkModeKey, dark);
+  }
+
+  Future<void> setWordLookUp(bool on) async {
+    _wordLookUp = on;
+    notifyListeners();
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_wordLookUpKey, on);
   }
 
   Future<void> setAiTranslator(bool on) async {

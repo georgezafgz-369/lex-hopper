@@ -851,6 +851,18 @@ class AppText {
   );
   String get darkMode =>
       _('Dark mode', 'Σκούρο θέμα', 'Modo oscuro', 'Dunkler Modus');
+  String get wordLookUp => _(
+    'Double-tap a word',
+    'Διπλό πάτημα σε λέξη',
+    'Doble toque en una palabra',
+    'Doppeltippen auf ein Wort',
+  );
+  String get wordLookUpOn => _(
+    'Opens it in the dictionary',
+    'Την ανοίγει στο λεξικό',
+    'La abre en el diccionario',
+    'Öffnet es im Wörterbuch',
+  );
   String get on => _('On', 'Ενεργό', 'Activado', 'An');
   String get off => _('Off', 'Ανενεργό', 'Desactivado', 'Aus');
   String get fontSize =>

@@ -17,6 +17,7 @@ import 'crossword_puzzle.dart';
 import 'crossword_save.dart';
 import 'puzzle_themes.dart';
 import 'dictionary_page.dart';
+import 'word_look_up.dart';
 import 'word_sheet.dart' show showWordSheet;
 
 // ──────────────────────────────────────────────────────────────────────────────
@@ -204,6 +205,11 @@ class _CrosswordGamePageState extends State<CrosswordGamePage> {
 
   /// The page's own scrolling (grid, clues, buttons).
   final _pageScroll = ScrollController();
+  // Height of the floating Back / level bar over the page.
+  static const _topBarHeight = Spacing.sm + 40 + Spacing.sm;
+  // The floating Clear | Hint | Check pill, to scroll it into view.
+  final _wordToolsKey = GlobalKey();
+  final _gridKey = GlobalKey();
 
   /// Set while the grid is in its draggable window: the square size and
   /// the window size, used to keep the selected square in view.
@@ -358,9 +364,22 @@ class _CrosswordGamePageState extends State<CrosswordGamePage> {
     });
     // In a big grid, bring the whole word into view.
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted) _revealWord(clue);
+      if (!mounted) return;
+      _revealWord(clue);
+      // Then scroll the page so Clear | Hint | Check isn't left under the
+      // top bar (when the clues were scrolled up past the grid).
+      if (!isDoubleTap) {
+        // After the grid has moved (endOfFrame asks for a frame even if
+        // nothing changed).
+        WidgetsBinding.instance.endOfFrame.then((_) {
+          // Not if a second tap has since made it a double tap.
+          if (!mounted || _lastClueTapTime != now) return;
+          _scrollClearOfTopBar(clue);
+        });
+      }
     });
-    if (isDoubleTap) {
+    // A double tap on a word opens it in the dictionary instead.
+    if (isDoubleTap && !WordLookUp.justLookedUp) {
       _focusInput();
       if (_pageScroll.hasClients && _pageScroll.offset > 0) {
         _pageScroll.animateTo(
@@ -374,6 +393,28 @@ class _CrosswordGamePageState extends State<CrosswordGamePage> {
       // clues stay readable.
       _inputFocus.unfocus();
     }
+  }
+
+  /// Scroll the page up just enough that the Clear | Hint | Check pill
+  /// isn't hidden under the floating top bar, nor [clue]'s word when the
+  /// pill sits below it (a word on the top row).
+  void _scrollClearOfTopBar(Clue clue) {
+    final onTopRow = clue.cells.any((c) => c.row == 0);
+    final target = (onTopRow ? _gridKey : _wordToolsKey).currentContext;
+    final box = target?.findRenderObject() as RenderBox?;
+    if (box == null || !_pageScroll.hasClients) return;
+    final page =
+        _pageScroll.position.context.notificationContext?.findRenderObject()
+            as RenderBox?;
+    if (page == null) return;
+    final top = box.localToGlobal(Offset.zero, ancestor: page).dy;
+    const room = _topBarHeight + Spacing.xs;
+    if (top >= room) return;
+    _pageScroll.animateTo(
+      max(0.0, _pageScroll.offset - (room - top)),
+      duration: const Duration(milliseconds: 250),
+      curve: Curves.easeOut,
+    );
   }
 
   void _focusInput() {
@@ -651,52 +692,6 @@ class _CrosswordGamePageState extends State<CrosswordGamePage> {
       body: SafeArea(
         child: Column(
           children: [
-            // ── Top bar ───────────────────────────────────────────────────
-            Padding(
-              padding: const EdgeInsets.fromLTRB(
-                Spacing.md,
-                Spacing.sm,
-                Spacing.md,
-                Spacing.sm,
-              ),
-              // Level on the left, "Search on dictionary" in the exact
-              // middle (both sides get equal space), Home on the right.
-              child: LayoutBuilder(
-                builder: (context, bar) => Row(
-                  children: [
-                    Expanded(
-                      child: Align(
-                        alignment: Alignment.centerLeft,
-                        child: FittedBox(
-                          fit: BoxFit.scaleDown,
-                          child: DualText(
-                            (t) => t.level(_currentLevel),
-                            style: kickerStyle(brightness: brightness),
-                          ),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(width: Spacing.sm),
-                    // At most what leaves room for Home (40) on the right and
-                    // as much on the left; past that, its text shrinks.
-                    ConstrainedBox(
-                      constraints: BoxConstraints(
-                        maxWidth: max(0, bar.maxWidth - 2 * (40 + Spacing.sm)),
-                      ),
-                      child: _dictionaryButton(
-                        gridCell: gridCell,
-                        hairline: hairline,
-                        ink: ink,
-                      ),
-                    ),
-                    const SizedBox(width: Spacing.sm),
-                    // Balances the Back side, keeping the middle centred.
-                    const Expanded(child: SizedBox()),
-                  ],
-                ),
-              ),
-            ),
-
             // Hidden input that captures typing (see "Keyboard input").
             SizedBox(
               width: 1,
@@ -728,52 +723,137 @@ class _CrosswordGamePageState extends State<CrosswordGamePage> {
 
             // ── Grid ──────────────────────────────────────────────────────
             Expanded(
-              child: SingleChildScrollView(
-                key: const Key('crossword-page-scroll'),
-                controller: _pageScroll,
-                physics: _touchingGrid
-                    ? const NeverScrollableScrollPhysics()
-                    : null,
-                padding: const EdgeInsets.symmetric(horizontal: Spacing.md),
-                child: Column(
-                  children: [
-                    _buildGrid(
-                      crosswordCellBorder: crosswordCellBorder,
-                      crosswordCell: crosswordCell,
-                      ink: ink,
-                      correct: correct,
-                      wrong: wrong,
-                      selected: selected,
-                      currentWord: currentWord,
+              child: Stack(
+                children: [
+                  SingleChildScrollView(
+                    key: const Key('crossword-page-scroll'),
+                    controller: _pageScroll,
+                    physics: _touchingGrid
+                        ? const NeverScrollableScrollPhysics()
+                        : null,
+                    // Room at the top for the floating bar, and a little more.
+                    padding: const EdgeInsets.fromLTRB(
+                      Spacing.md,
+                      _topBarHeight + Spacing.sm,
+                      Spacing.md,
+                      0,
                     ),
-                    const SizedBox(height: Spacing.md),
+                    child: Column(
+                      children: [
+                        KeyedSubtree(
+                          key: _gridKey,
+                          child: _buildGrid(
+                            crosswordCellBorder: crosswordCellBorder,
+                            crosswordCell: crosswordCell,
+                            ink: ink,
+                            correct: correct,
+                            wrong: wrong,
+                            selected: selected,
+                            currentWord: currentWord,
+                          ),
+                        ),
+                        const SizedBox(height: Spacing.md),
 
-                    // ── Clue list ─────────────────────────────────────────
-                    _buildClueList(
-                      clues: clues,
-                      brightness: brightness,
-                      gridCell: gridCell,
-                      hairline: hairline,
-                      clay: clay,
-                      selected: selected,
+                        // ── Clue list ─────────────────────────────────────────
+                        _buildClueList(
+                          clues: clues,
+                          brightness: brightness,
+                          gridCell: gridCell,
+                          hairline: hairline,
+                          clay: clay,
+                          selected: selected,
+                        ),
+                        const SizedBox(height: Spacing.md),
+
+                        // ── TEST ONLY: skip to the next level unsolved ──────
+                        // TODO: remove before publishing.
+                        if (!_isSolved) ...[
+                          const SizedBox(height: Spacing.sm),
+                          _actionButton(
+                            label: (t) => t.nextLevelTest,
+                            bg: Colors.transparent,
+                            fg: ink,
+                            borderColor: hairline,
+                            onTap: _goToNextLevel,
+                          ),
+                        ],
+                        const SizedBox(height: Spacing.xxl),
+                      ],
                     ),
-                    const SizedBox(height: Spacing.md),
-
-                    // ── TEST ONLY: skip to the next level unsolved ──────
-                    // TODO: remove before publishing.
-                    if (!_isSolved) ...[
-                      const SizedBox(height: Spacing.sm),
-                      _actionButton(
-                        label: (t) => t.nextLevelTest,
-                        bg: Colors.transparent,
-                        fg: ink,
-                        borderColor: hairline,
-                        onTap: _goToNextLevel,
+                  ),
+                  // ── Floating top bar: Back and the level hover over
+                  // the page, which scrolls under them.
+                  Positioned(
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(
+                        Spacing.md,
+                        Spacing.sm,
+                        Spacing.md,
+                        Spacing.sm,
                       ),
-                    ],
-                    const SizedBox(height: Spacing.xxl),
-                  ],
-                ),
+                      child: Row(
+                        children: [
+                          Material(
+                            color: gridCell,
+                            elevation: 3,
+                            shadowColor: Colors.black38,
+                            borderRadius: BorderRadius.circular(Radius.sm),
+                            child: InkWell(
+                              key: const Key('crossword-back'),
+                              borderRadius: BorderRadius.circular(Radius.sm),
+                              onTap: () => Navigator.of(context).maybePop(),
+                              child: SizedBox(
+                                width: 40,
+                                height: 40,
+                                child: Icon(
+                                  Icons.arrow_back,
+                                  size: 20,
+                                  color: ink,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: Spacing.sm),
+                          Expanded(
+                            child: Center(
+                              child: Material(
+                                color: gridCell,
+                                elevation: 3,
+                                shadowColor: Colors.black38,
+                                borderRadius: BorderRadius.circular(Radius.sm),
+                                child: Container(
+                                  height: 40,
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: Spacing.md,
+                                  ),
+
+                                  child: Center(
+                                    widthFactor: 1,
+                                    child: FittedBox(
+                                      fit: BoxFit.scaleDown,
+                                      child: DualText(
+                                        (t) => t.level(_currentLevel),
+                                        style: kickerStyle(
+                                          brightness: brightness,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                          // Balances the Back button, keeping the level
+                          // centred.
+                          const SizedBox(width: 40 + Spacing.sm),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
 
@@ -897,141 +977,143 @@ class _CrosswordGamePageState extends State<CrosswordGamePage> {
         // Grid letters and numbers keep their size whatever the Settings
         // font size, so they always fit their squares.
         final grid = MediaQuery.withNoTextScaling(
-          child: Stack(
-            children: [
-              Container(
-                padding: const EdgeInsets.all(2),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: List.generate(_puzzle.rows, (r) {
-                    return Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: List.generate(_puzzle.cols, (c) {
-                        final cell = _cell(r, c);
-                        if (cell != null && cell.isGap) {
-                          // The space inside a phrase: a solid ink square, the
-                          // same size and inset as a letter cell.
-                          return Container(
-                            key: Key('gap-$r-$c'),
-                            width: cellSize,
-                            height: cellSize,
-                            padding: const EdgeInsets.all(1),
-                            child: DecoratedBox(
-                              decoration: BoxDecoration(
-                                color: ink,
-                                border: Border.all(
-                                  color: crosswordCellBorder,
-                                  width: 1,
+          child: NoWordLookUp(
+            child: Stack(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(2),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: List.generate(_puzzle.rows, (r) {
+                      return Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: List.generate(_puzzle.cols, (c) {
+                          final cell = _cell(r, c);
+                          if (cell != null && cell.isGap) {
+                            // The space inside a phrase: a solid ink square, the
+                            // same size and inset as a letter cell.
+                            return Container(
+                              key: Key('gap-$r-$c'),
+                              width: cellSize,
+                              height: cellSize,
+                              padding: const EdgeInsets.all(1),
+                              child: DecoratedBox(
+                                decoration: BoxDecoration(
+                                  color: ink,
+                                  border: Border.all(
+                                    color: crosswordCellBorder,
+                                    width: 1,
+                                  ),
+                                  borderRadius: BorderRadius.circular(1),
                                 ),
-                                borderRadius: BorderRadius.circular(1),
+                              ),
+                            );
+                          }
+                          if (cell == null || cell.isBlack) {
+                            return SizedBox(width: cellSize, height: cellSize);
+                          }
+
+                          final k = _key(r, c);
+                          final letter = _userLetters[k] ?? '';
+                          final state = _cellStates[k] ?? '';
+                          final isSelected = k == _selectedCellKey;
+                          // Check if this cell belongs to the selected clue
+                          final isClueCell =
+                              _selectedClue != null &&
+                              _selectedClue!.cells.any(
+                                (cc) => cc.row == r && cc.col == c,
+                              );
+
+                          Color bgColor = crosswordCell;
+                          if (state == 'correct') {
+                            bgColor = correct;
+                          } else if (state == 'wrong') {
+                            bgColor = wrong;
+                          } else if (isSelected) {
+                            bgColor = selected;
+                          } else if (isClueCell) {
+                            bgColor = currentWord;
+                          }
+
+                          return GestureDetector(
+                            onTap: () => _selectCell(r, c),
+                            child: Container(
+                              width: cellSize,
+                              height: cellSize,
+                              padding: const EdgeInsets.all(1),
+                              child: Stack(
+                                children: [
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      color: bgColor,
+                                      border: Border.all(
+                                        color: crosswordCellBorder,
+                                        width: 1,
+                                      ),
+                                      borderRadius: BorderRadius.circular(1),
+                                    ),
+                                  ),
+                                  // Clue number
+                                  if (cell.clueNumber != null)
+                                    Positioned(
+                                      top: 2,
+                                      left: 3,
+                                      child: Text(
+                                        '${cell.clueNumber}',
+                                        style: TextStyle(
+                                          fontSize: 9,
+                                          color: ink.withValues(alpha: 0.6),
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ),
+                                  // User letter
+                                  if (letter.isNotEmpty)
+                                    Center(
+                                      child: Text(
+                                        letter,
+                                        style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w700,
+                                          color: ink,
+                                          fontFamily: 'Inter',
+                                        ),
+                                      ),
+                                    ),
+                                  // Status icon
+                                  if (state == 'correct')
+                                    Positioned(
+                                      bottom: 2,
+                                      right: 3,
+                                      child: Icon(
+                                        Icons.check,
+                                        size: 14,
+                                        color: AppColors.oliveLight,
+                                      ),
+                                    ),
+                                  if (state == 'wrong')
+                                    Positioned(
+                                      bottom: 2,
+                                      right: 3,
+                                      child: Icon(
+                                        Icons.close,
+                                        size: 14,
+                                        color: AppColors.claretLight,
+                                      ),
+                                    ),
+                                ],
                               ),
                             ),
                           );
-                        }
-                        if (cell == null || cell.isBlack) {
-                          return SizedBox(width: cellSize, height: cellSize);
-                        }
-
-                        final k = _key(r, c);
-                        final letter = _userLetters[k] ?? '';
-                        final state = _cellStates[k] ?? '';
-                        final isSelected = k == _selectedCellKey;
-                        // Check if this cell belongs to the selected clue
-                        final isClueCell =
-                            _selectedClue != null &&
-                            _selectedClue!.cells.any(
-                              (cc) => cc.row == r && cc.col == c,
-                            );
-
-                        Color bgColor = crosswordCell;
-                        if (state == 'correct') {
-                          bgColor = correct;
-                        } else if (state == 'wrong') {
-                          bgColor = wrong;
-                        } else if (isSelected) {
-                          bgColor = selected;
-                        } else if (isClueCell) {
-                          bgColor = currentWord;
-                        }
-
-                        return GestureDetector(
-                          onTap: () => _selectCell(r, c),
-                          child: Container(
-                            width: cellSize,
-                            height: cellSize,
-                            padding: const EdgeInsets.all(1),
-                            child: Stack(
-                              children: [
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color: bgColor,
-                                    border: Border.all(
-                                      color: crosswordCellBorder,
-                                      width: 1,
-                                    ),
-                                    borderRadius: BorderRadius.circular(1),
-                                  ),
-                                ),
-                                // Clue number
-                                if (cell.clueNumber != null)
-                                  Positioned(
-                                    top: 2,
-                                    left: 3,
-                                    child: Text(
-                                      '${cell.clueNumber}',
-                                      style: TextStyle(
-                                        fontSize: 9,
-                                        color: ink.withValues(alpha: 0.6),
-                                        fontWeight: FontWeight.w500,
-                                      ),
-                                    ),
-                                  ),
-                                // User letter
-                                if (letter.isNotEmpty)
-                                  Center(
-                                    child: Text(
-                                      letter,
-                                      style: TextStyle(
-                                        fontSize: 22,
-                                        fontWeight: FontWeight.w700,
-                                        color: ink,
-                                        fontFamily: 'Inter',
-                                      ),
-                                    ),
-                                  ),
-                                // Status icon
-                                if (state == 'correct')
-                                  Positioned(
-                                    bottom: 2,
-                                    right: 3,
-                                    child: Icon(
-                                      Icons.check,
-                                      size: 14,
-                                      color: AppColors.oliveLight,
-                                    ),
-                                  ),
-                                if (state == 'wrong')
-                                  Positioned(
-                                    bottom: 2,
-                                    right: 3,
-                                    child: Icon(
-                                      Icons.close,
-                                      size: 14,
-                                      color: AppColors.claretLight,
-                                    ),
-                                  ),
-                              ],
-                            ),
-                          ),
-                        );
-                      }),
-                    );
-                  }),
+                        }),
+                      );
+                    }),
+                  ),
                 ),
-              ),
-              // Clear / Hint over the selected word.
-              ?_wordTools(cellSize),
-            ],
+                // Clear / Hint over the selected word.
+                ?_wordTools(cellSize),
+              ],
+            ),
           ),
         );
         if (!pan) {
@@ -1041,13 +1123,13 @@ class _CrosswordGamePageState extends State<CrosswordGamePage> {
         }
 
         // Too big for the screen: a window onto the grid that can be
-        // dragged and pinch-zoomed. It is as wide as the screen and at
-        // most as tall as it is wide.
+        // dragged and pinch-zoomed. It is as wide as the screen and up to
+        // a fifth taller than it is wide.
         final gridWidth = _puzzle.cols * cellSize + 4;
         final gridHeight = _puzzle.rows * cellSize + 4;
         final viewport = Size(
           constraints.maxWidth,
-          gridHeight < constraints.maxWidth ? gridHeight : constraints.maxWidth,
+          min(gridHeight, constraints.maxWidth * 1.2),
         );
         _panCellSize = cellSize;
         _panViewport = viewport;
@@ -1117,11 +1199,17 @@ class _CrosswordGamePageState extends State<CrosswordGamePage> {
           below: wordBottom + gap,
           gridHeight: gridHeight,
         ),
-        child: _WordTools(
-          key: const Key('word-tools'),
-          onClear: _clearSelectedWord,
-          onHint: _revealHint,
-          onCheck: _checkSelectedWord,
+        child: KeyedSubtree(
+          key: _wordToolsKey,
+          child: NoWordLookUp(
+            child: _WordTools(
+              key: const Key('word-tools'),
+              onClear: _clearSelectedWord,
+              onHint: _revealHint,
+              onCheck: _checkSelectedWord,
+              onDictionary: _openDictionary,
+            ),
+          ),
         ),
       ),
     );
@@ -1164,6 +1252,9 @@ class _CrosswordGamePageState extends State<CrosswordGamePage> {
     final view = _panViewport;
     if (cell == null || view == null) return;
     const margin = 8.0;
+    // Room for the Clear | Hint | Check pill: it floats above the word, or
+    // below it when the word starts on the top row.
+    const toolsRoom = 40.0;
     final m = _gridView.value;
     final gridW0 = _puzzle.cols * cell + 4;
     final gridH0 = _puzzle.rows * cell + 4;
@@ -1173,7 +1264,8 @@ class _CrosswordGamePageState extends State<CrosswordGamePage> {
     // Zoom out just enough for the area to fit (never past the whole grid).
     final fitScale = min(
       (view.width - 2 * margin) / areaW,
-      (view.height - 2 * margin) / areaH,
+      // A tall word also needs room for the pill above or below it.
+      (view.height - 2 * margin) / (areaH + toolsRoom),
     );
     final minScale = view.width / gridW0;
     final scale = oldScale > fitScale ? max(fitScale, minScale) : oldScale;
@@ -1193,9 +1285,13 @@ class _CrosswordGamePageState extends State<CrosswordGamePage> {
     if (left + w > view.width - margin) tx -= left + w - (view.width - margin);
     final left2 = (2 + c0 * cell) * scale + tx;
     if (left2 < margin) tx += margin - left2;
-    if (top + h > view.height - margin) ty -= top + h - (view.height - margin);
+    final topRoom = r0 > 0 ? margin + toolsRoom * scale : margin;
+    final bottomRoom = r0 > 0 ? margin : margin + toolsRoom * scale;
+    if (top + h > view.height - bottomRoom) {
+      ty -= top + h - (view.height - bottomRoom);
+    }
     final top2 = (2 + r0 * cell) * scale + ty;
-    if (top2 < margin) ty += margin - top2;
+    if (top2 < topRoom) ty += topRoom - top2;
     // Stay within the grid.
     tx = tx.clamp(min(view.width - gridW0 * scale, 0.0), 0.0);
     ty = ty.clamp(min(view.height - gridH0 * scale, 0.0), 0.0);
@@ -1409,48 +1505,6 @@ class _CrosswordGamePageState extends State<CrosswordGamePage> {
     );
   }
 
-  /// "Search on dictionary" in the top bar: compact, the same height as
-  /// the Home button.
-  Widget _dictionaryButton({
-    required Color gridCell,
-    required Color hairline,
-    required Color ink,
-  }) {
-    return GestureDetector(
-      onTap: _openDictionary,
-      child: Container(
-        height: 40,
-        padding: const EdgeInsets.symmetric(horizontal: Spacing.sm + 4),
-        decoration: BoxDecoration(
-          color: gridCell,
-          borderRadius: BorderRadius.circular(Radius.sm),
-          border: Border.all(color: hairline, width: 0.5),
-        ),
-        // Shrinks to fit its 40-high box (two lines with a secondary
-        // language, and the phone's text size may be large).
-        child: FittedBox(
-          fit: BoxFit.scaleDown,
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Icon(Icons.menu_book_outlined, size: 18, color: ink),
-              const SizedBox(width: 6),
-              DualText(
-                (t) => t.searchOnDictionary,
-                style: TextStyle(
-                  fontSize: 13,
-                  fontWeight: FontWeight.w600,
-                  color: ink,
-                  fontFamily: 'Inter',
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-
   Widget _actionButton({
     required TextPick label,
     required Color bg,
@@ -1596,12 +1650,14 @@ class _WordTools extends StatelessWidget {
   final VoidCallback onClear;
   final VoidCallback onHint;
   final VoidCallback onCheck;
+  final VoidCallback onDictionary;
 
   const _WordTools({
     super.key,
     required this.onClear,
     required this.onHint,
     required this.onCheck,
+    required this.onDictionary,
   });
 
   @override
@@ -1698,6 +1754,15 @@ class _WordTools extends StatelessWidget {
                   ),
                 ),
               ),
+            ),
+          ),
+          // Look the word up in the dictionary with what's typed so far.
+          InkWell(
+            key: const Key('word-dictionary'),
+            onTap: onDictionary,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+              child: Icon(Icons.menu_book_outlined, size: 18, color: ink),
             ),
           ),
         ],

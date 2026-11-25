@@ -2,6 +2,8 @@
 // LEX HOPPER — entry point
 // ─────────────────────────────────────────────────────────────────────────────
 
+import 'word_look_up.dart';
+
 import 'package:flutter/foundation.dart'
     show LicenseEntryWithLineBreaks, LicenseRegistry;
 import 'package:flutter/services.dart';
@@ -74,9 +76,12 @@ class LexHopper extends StatelessWidget {
     );
   }
 
+  static final _navigator = GlobalKey<NavigatorState>();
+
   Widget _app() {
     return MaterialApp(
       title: 'Lex Hopper',
+      navigatorKey: _navigator,
       theme: lexTheme(brightness: Brightness.light),
       darkTheme: lexTheme(brightness: Brightness.dark),
       themeMode: AppSettings.instance.themeMode,
@@ -110,7 +115,8 @@ class LexHopper extends StatelessWidget {
                 ? media.textScaler
                 : _ScaledTextScaler(media.textScaler, factor),
           ),
-          child: child!,
+          // Double-tap a word anywhere: its page in the dictionary.
+          child: WordLookUp(navigator: _navigator, child: child!),
         );
       },
       scrollBehavior: const _NoOverscrollBehavior(),

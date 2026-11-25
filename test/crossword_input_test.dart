@@ -425,11 +425,28 @@ void main() {
     }
   });
 
-  testWidgets('Search on dictionary sits in the top bar', (tester) async {
+  testWidgets('the top bar has Back and the level in the middle', (
+    tester,
+  ) async {
     await pumpGame(tester);
-    final search = tester.getCenter(find.text('Search on dictionary'));
+    expect(find.text('Search on dictionary'), findsNothing);
+    final back = tester.getCenter(find.byKey(const Key('crossword-back')));
     final level = tester.getCenter(find.text('Level One'));
-    expect((search.dy - level.dy).abs(), lessThan(10)); // same row
+    expect((back.dy - level.dy).abs(), lessThan(10)); // same row
+    expect(level.dx, closeTo(200, 2)); // centred on the 400-wide screen
+  });
+
+  testWidgets('the pill has a dictionary button', (tester) async {
+    await pumpGame(tester);
+    await tester.tap(firstCell());
+    await tester.pump();
+    expect(
+      find.descendant(
+        of: find.byKey(const Key('word-tools')),
+        matching: find.byKey(const Key('word-dictionary')),
+      ),
+      findsOneWidget,
+    );
   });
 
   testWidgets('the test button skips to the next level unsolved', (

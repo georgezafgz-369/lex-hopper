@@ -885,11 +885,26 @@ class DictionaryService {
     if (word.isEmpty) return null;
     final rows = await _db!.rawQuery(
       'SELECT translation FROM translations WHERE lang = ? AND plain = ? '
-      'ORDER BY (word = ?) DESC LIMIT 1',
+      'ORDER BY (word = ?) DESC',
       [language, _key(word), word],
     );
-    return rows.isEmpty ? null : rows.first['translation'] as String;
+    // Many machine-made English → Greek rows came back from the translator
+    // untranslated or garbled ("undid" → "undid"): a translation has to be
+    // in the other language's letters.
+    final otherLetters = switch (language) {
+      'en' => _greekLetter,
+      'el' => _latinLetter,
+      _ => null,
+    };
+    for (final r in rows) {
+      final t = r['translation'] as String;
+      if (otherLetters == null || otherLetters.hasMatch(t)) return t;
+    }
+    return null;
   }
+
+  static final _greekLetter = RegExp(r'[\u0370-\u03ff\u1f00-\u1fff]');
+  static final _latinLetter = RegExp(r'[A-Za-z]');
 
   /// For each of [ids] (meanings of this language), the words of the other
   /// language linked to it, most common first — what the word page shows

@@ -132,6 +132,21 @@ class SettingsPage extends StatelessWidget {
                           onTap: () => settings.setDarkMode(!isDark),
                         ),
                         const SizedBox(height: Spacing.sm),
+                        _SettingsCard(
+                          key: const Key('settings-word-look-up'),
+                          icon: Section.dictionary,
+                          title: (t) => t.wordLookUp,
+                          subtitle: (t) =>
+                              settings.wordLookUp ? t.wordLookUpOn : t.off,
+                          trailing: Switch(
+                            value: settings.wordLookUp,
+                            activeThumbColor: clay,
+                            onChanged: settings.setWordLookUp,
+                          ),
+                          onTap: () =>
+                              settings.setWordLookUp(!settings.wordLookUp),
+                        ),
+                        const SizedBox(height: Spacing.sm),
                         _FontSizeCard(settings: settings),
                         const SizedBox(height: Spacing.sm),
                         // The picked model (a new card when it changes).
