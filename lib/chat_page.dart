@@ -48,6 +48,9 @@ class _ChatPageState extends State<ChatPage> {
   /// An AI model is on and on the phone.
   bool _aiReady = false;
 
+  /// The AI is starting up (the first time can take a while).
+  bool _warming = false;
+
   @override
   void initState() {
     super.initState();
@@ -57,7 +60,15 @@ class _ChatPageState extends State<ChatPage> {
   Future<void> _checkAi() async {
     final ready =
         AppSettings.instance.aiTranslator && await AiModel.instance.isReady();
-    if (mounted) setState(() => _aiReady = ready);
+    if (!mounted) return;
+    setState(() {
+      _aiReady = ready;
+      _warming = ready;
+    });
+    if (!ready) return;
+    // Start the AI now, so the first reply doesn't wait for it.
+    await AiModel.instance.warmUp();
+    if (mounted) setState(() => _warming = false);
   }
 
   @override
@@ -207,6 +218,35 @@ class _ChatPageState extends State<ChatPage> {
                       },
                     ),
             ),
+
+            // ── The AI starting up ─────────────────────────────────────────
+            if (_warming)
+              Padding(
+                key: const Key('chat-warming'),
+                padding: const EdgeInsets.only(bottom: Spacing.xs),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SizedBox(
+                      width: 14,
+                      height: 14,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2,
+                        color: muted,
+                      ),
+                    ),
+                    const SizedBox(width: Spacing.sm),
+                    Text(
+                      t.chatWarming(AiModel.instance.name),
+                      style: TextStyle(
+                        fontSize: 13,
+                        color: muted,
+                        fontFamily: 'Inter',
+                      ),
+                    ),
+                  ],
+                ),
+              ),
 
             // ── Write a message ────────────────────────────────────────────
             Container(

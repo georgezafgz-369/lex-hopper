@@ -5,6 +5,11 @@
         android:label="lex_hopper"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <!-- Lets Google's LiteRT-LM engine run AI models on the phone's GPU
+             (OpenCL); phones without it still install and use the CPU. -->
+        <uses-native-library
+            android:name="libOpenCL.so"
+            android:required="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

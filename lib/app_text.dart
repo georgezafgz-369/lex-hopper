@@ -931,6 +931,12 @@ class AppText {
         '(EuroLLM oder Gemma 4). Es wird einmal geladen und funktioniert '
         'dann ohne Internet.',
   );
+  String chatWarming(String model) => _(
+    'Getting $model ready…',
+    'Το $model ετοιμάζεται…',
+    'Preparando $model…',
+    '$model wird vorbereitet…',
+  );
   String get chatFailed => _(
     'Sorry, I couldn’t answer that. Try again?',
     'Συγγνώμη, δεν μπόρεσα να απαντήσω. Ξανά;',

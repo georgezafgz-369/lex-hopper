@@ -1,8 +1,9 @@
 // ─────────────────────────────────────────────────────────────────────────────
 // AI MODEL — a small AI that runs on the phone itself, through llama.cpp:
 // it translates (the Translator's AI) and chats (Chat with AI). Two to
-// choose from in Settings: EuroLLM-1.7B (about 1 GB, European languages)
-// and Gemma 4 E2B (about 3.4 GB, smarter, needs a phone with more memory).
+// choose from in Settings: EuroLLM-1.7B (about 1 GB, European languages,
+// through llama.cpp) and Gemma 4 E2B (about 2.6 GB, smarter, Google's
+// LiteRT-LM build; needs a phone with more memory).
 //
 // A model is not part of the app: it downloads once, when the person turns
 // it on in Settings, and from then on works offline. Each model keeps one
@@ -39,6 +40,7 @@ class AiModel implements Translator {
     required this.sha256,
     required this.sizeMb,
     required this.minMemoryKb,
+    this.device = ComputeDevice.auto,
   });
 
   /// EuroLLM-1.7B-Instruct, 4-bit (Q4_K_M). Each model is pinned to one
@@ -59,17 +61,21 @@ class AiModel implements Translator {
     minMemoryKb: 3400 * 1024,
   );
 
-  /// Google's Gemma 4 E2B (Apache 2.0), its own 4-bit build (QAT Q4_0).
+  /// Google's Gemma 4 E2B (Apache 2.0), in Google's own phone build for
+  /// its LiteRT-LM engine, run on the CPU. On a Pixel 8 it answers in about
+  /// 5 s, 6–10 times faster than the same model through llama.cpp, and
+  /// handles Greek better; on the GPU it was no faster and garbled Greek.
   static final gemma4 = AiModel._(
     id: 'gemma4',
     name: 'Gemma 4',
     source: ModelSource.huggingFace(
-      repoId: 'google/gemma-4-E2B-it-qat-q4_0-gguf',
-      filePath: 'gemma-4-E2B_q4_0-it.gguf',
-      revision: '675cff42a74c774d6cb76f76d8eacb49b48c9b93',
+      repoId: 'litert-community/gemma-4-E2B-it-litert-lm',
+      filePath: 'gemma-4-E2B-it.litertlm',
+      revision: '2e12bfd869b2962984f97a1f2a26807316d534cc',
     ),
-    sha256: 'fa401b55b07ee70a54c6dae3903c783a6e65064312529ea57175cb5f8dec6634',
-    sizeMb: 3350,
+    sha256: '181938105e0eefd105961417e8da75903eacda102c4fce9ce90f50b97139a63c',
+    sizeMb: 2590,
+    device: ComputeDevice.cpu,
     // About 4.5 GB with the app: a phone with 6 GB of memory.
     minMemoryKb: 5400 * 1024,
   );
@@ -95,6 +101,9 @@ class AiModel implements Translator {
 
   /// The phone's memory needed to run it.
   final int minMemoryKb;
+
+  /// Where it runs (CPU, GPU, or the engine's choice).
+  final ComputeDevice device;
 
   final _manager = DefaultModelDownloadManager();
 
@@ -229,7 +238,7 @@ class AiModel implements Translator {
       await engine.setModel(
         LlamaModel(source),
         // Room for a paragraph and its translation.
-        params: const ModelParams(contextSize: 2048),
+        params: ModelParams(contextSize: 2048, device: device),
         download: ModelLoadOptions(cachePolicy: ModelCachePolicy.cacheOnly),
       );
       debugPrint('$name: loaded in ${clock.elapsedMilliseconds} ms');
@@ -294,6 +303,7 @@ class AiModel implements Translator {
           topK: 1,
           penalty: 1.0,
         ),
+        enableThinking: false,
       )) {
         out.write(chunk.text);
       }
@@ -385,12 +395,30 @@ class AiModel implements Translator {
         : latin.length >= greek.length;
   }
 
+  /// Starts the model up before the first question (loading it, and for
+  /// Gemma 4 its engine, which takes up to ~45 s the first time), so the
+  /// first chat reply comes as fast as the rest. Done once.
+  Future<void> warmUp() => _warm ??= () async {
+    try {
+      await for (final _ in chat(
+        [(mine: true, text: 'Hi')],
+        instructions: 'Reply with one word.',
+        maxTokens: 1,
+      )) {}
+    } catch (e) {
+      _warm = null; // try again next time
+      debugPrint('$name: warm-up failed: $e');
+    }
+  }();
+  Future<void>? _warm;
+
   /// A chat reply to [history] (oldest first; `mine` = the person's
   /// messages), following [instructions], arriving bit by bit. A new chat
   /// message or translation stops a reply still being written.
   Stream<String> chat(
     List<({bool mine, String text})> history, {
     required String instructions,
+    int maxTokens = 400,
   }) async* {
     final mine = ++_latest;
     final engine = await _loaded();
@@ -402,17 +430,23 @@ class AiModel implements Translator {
     try {
       if (mine != _latest) return;
       _generating = true;
-      await for (final chunk in engine.create([
-        LlamaChatMessage.fromText(
-          role: LlamaChatRole.system,
-          text: instructions,
-        ),
-        for (final m in history)
+      await for (final chunk in engine.create(
+        [
           LlamaChatMessage.fromText(
-            role: m.mine ? LlamaChatRole.user : LlamaChatRole.assistant,
-            text: m.text,
+            role: LlamaChatRole.system,
+            text: instructions,
           ),
-      ], params: const GenerationParams(maxTokens: 400, temp: 0.7))) {
+          for (final m in history)
+            LlamaChatMessage.fromText(
+              role: m.mine ? LlamaChatRole.user : LlamaChatRole.assistant,
+              text: m.text,
+            ),
+        ],
+        params: GenerationParams(maxTokens: maxTokens, temp: 0.7),
+        // No hidden "thinking" before the answer (Gemma 4 thinks by
+        // default): that made the learner wait for nothing to show.
+        enableThinking: false,
+      )) {
         if (mine != _latest) return;
         yield chunk.text;
       }

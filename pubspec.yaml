@@ -69,7 +69,9 @@ dev_dependencies:
 hooks:
   user_defines:
     llamadart:
-      llamadart_native_runtimes: [llama_cpp]
+      # llama.cpp for GGUF models (EuroLLM), LiteRT-LM for Gemma's phone
+      # build, which runs on the GPU.
+      llamadart_native_runtimes: [llama_cpp, litert_lm]
 
 # The following section is specific to Flutter packages.
 flutter:
