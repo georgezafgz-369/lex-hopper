@@ -7,6 +7,7 @@ import 'dart:ui' as ui;
 
 import 'package:material_ui/material_ui.dart';
 
+import 'app_settings.dart';
 import 'app_text.dart';
 import 'design_system.dart';
 import 'dictionary_service.dart';
@@ -308,6 +309,12 @@ class _WordDetailPageState extends State<WordDetailPage> {
   List<DictionaryEntry> _phrases = const [];
   Map<int, List<String>> _aliases = const {};
 
+  /// Translations into the other language (English ↔ Greek) show only when
+  /// it is set as the second language (Settings > Language).
+  bool get _showOther =>
+      AppSettings.instance.secondaryLanguage ==
+      (widget.language == 'el' ? 'en' : 'el');
+
   /// The word in the other language: its main translation (from the
   /// lexicon, as the Translator shows it) and, per meaning, that meaning's
   /// words in the other language.
@@ -476,8 +483,9 @@ class _WordDetailPageState extends State<WordDetailPage> {
                 _speakButton(accent, ink: ink, hairline: hairline),
             ],
           ),
-          // The word in the other language: "Greek  σπίτι".
-          if (_translation != null) ...[
+          // The word in the other language: "Greek  σπίτι" (only with that
+          // language set as the second language).
+          if (_showOther && _translation != null) ...[
             const SizedBox(height: 6),
             Text.rich(
               key: const Key('word-translation'),
@@ -710,7 +718,7 @@ class _WordDetailPageState extends State<WordDetailPage> {
                   ),
                 ),
                 // The meaning itself in the other language.
-                if (entry.meaningTranslation case final tr?)
+                if (entry.meaningTranslation case final tr? when _showOther)
                   Padding(
                     padding: const EdgeInsets.only(top: 2),
                     child: Text(
@@ -725,7 +733,7 @@ class _WordDetailPageState extends State<WordDetailPage> {
                     ),
                   ),
                 // This meaning in the other language: "→ κατοικία, οίκος".
-                if (_linked[entry.id] case final words?)
+                if (_linked[entry.id] case final words? when _showOther)
                   Padding(
                     padding: const EdgeInsets.only(top: 2),
                     child: Text(
@@ -759,7 +767,8 @@ class _WordDetailPageState extends State<WordDetailPage> {
                     ),
                   ),
                   // The example in the other language, just below it.
-                  if (i < entry.exampleTranslations.length &&
+                  if (_showOther &&
+                      i < entry.exampleTranslations.length &&
                       entry.exampleTranslations[i] != null)
                     Text(
                       entry.exampleTranslations[i]!,
