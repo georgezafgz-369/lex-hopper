@@ -33,8 +33,17 @@ class OpusMtTranslator implements Translator {
 
   final Map<String, Future<_OpusModel>> _models = {};
 
-  Future<_OpusModel> _model(String from, String to) =>
-      _models['$from>$to'] ??= _OpusModel.load(folder(from, to));
+  /// The model for [from] → [to]: its own folder, or the other direction's
+  /// when that is one multilingual model for both ways (German), which then
+  /// takes a language tag. Loaded once per folder.
+  Future<_OpusModel> _model(String from, String to) async {
+    var dir = folder(from, to);
+    if (!await File('$dir/config.json').exists() &&
+        await File('${folder(to, from)}/config.json').exists()) {
+      dir = folder(to, from);
+    }
+    return _models[dir] ??= _OpusModel.load(dir);
+  }
 
   static const _files = [
     'encoder_model.onnx',
@@ -70,9 +79,19 @@ class OpusMtTranslator implements Translator {
     required String to,
   }) async {
     if (text.trim().isEmpty || from == to) return text;
+    // No direct model between two languages other than English (Spanish ↔
+    // Greek): through English.
+    if (from != 'en' && to != 'en') {
+      final english = await translate(text, from: from, to: 'en');
+      return translate(english, from: 'en', to: to);
+    }
     final model = await _model(from, to);
     // Cleaned, then one sentence at a time: the way the model learned.
-    return translateBySentence(text, from, model.translate);
+    return translateBySentence(
+      text,
+      from,
+      (sentence) => model.translate(sentence, into: to),
+    );
   }
 
   @override
@@ -140,9 +159,14 @@ class _OpusModel {
     return model;
   }
 
+  /// Language tags of multilingual models (">>deu<<"), by app code.
+  static const _iso3 = {'en': 'eng', 'el': 'ell', 'es': 'spa', 'de': 'deu'};
+
   /// Text -> encoder ids: SentencePiece pieces looked up in the source
-  /// vocabulary, then </s> (what MarianTokenizer does).
-  List<int> encode(String text) => [
+  /// vocabulary, then </s> (what MarianTokenizer does). A multilingual
+  /// model (German) first gets the tag of the language to write: >>deu<<.
+  List<int> encode(String text, {required String into}) => [
+    ?sourceVocab['>>${_iso3[into]}<<'],
     for (final p in spm.encode(text, addSpecialTokens: false).tokens)
       sourceVocab[p] ?? unk,
     eos,
@@ -158,8 +182,12 @@ class _OpusModel {
 
   /// Greedy decoding: the most likely next word each step, reusing the
   /// decoder's cache (past keys and values) from the step before.
-  Future<String> translate(String text, {int maxNew = 128}) async {
-    final ids = encode(text);
+  Future<String> translate(
+    String text, {
+    required String into,
+    int maxNew = 128,
+  }) async {
+    final ids = encode(text, into: into);
     final n = ids.length;
     final owned = <OrtValue>[]; // freed at the end
     Future<OrtValue> value(dynamic data, List<int> shape) async {

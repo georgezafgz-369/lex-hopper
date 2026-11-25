@@ -103,6 +103,7 @@ flutter:
     # What the offline translator (OPUS-MT) downloads from Hugging Face
     # (scripts/opus_mt/upload_to_hf.py):
     - assets/opus-mt/manifest.json
+    - assets/language_packs.json
   # fonts:
   #   - family: Schyler
   #     fonts:

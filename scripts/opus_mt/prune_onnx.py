@@ -13,12 +13,16 @@ os.makedirs(out, exist_ok=True)
 vocab = json.load(open(f'{src}/vocab.json', encoding='utf-8'))
 V = len(vocab)
 specials = ['</s>', '<unk>', '<pad>']
-def keep(spm):
+def keep(spm, tags=False):
     s = sp.SentencePieceProcessor(model_file=f'{src}/{spm}')
     first = [vocab[p] for p in specials]
     rest = {vocab[s.id_to_piece(i)] for i in range(s.get_piece_size()) if s.id_to_piece(i) in vocab}
+    # Multilingual models pick the output language with a tag such as
+    # >>deu<< in front of the text: the encoder keeps those too.
+    if tags:
+        rest |= {i for p, i in vocab.items() if p.startswith('>>') and p.endswith('<<')}
     return first + sorted(rest - set(first))
-src_ids, tgt_ids = keep('source.spm'), keep('target.spm')
+src_ids, tgt_ids = keep('source.spm', tags=True), keep('target.spm')
 inv = {i: p for p, i in vocab.items()}
 
 def graphs(g):

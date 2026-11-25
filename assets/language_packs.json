@@ -1,0 +1,130 @@
+{
+ "es": {
+  "dictionary": {
+   "path": "packs/es_e1da11a64eb7.db.gz",
+   "gz_bytes": 6530273,
+   "sha256": "479a6bff726920655b3300a590e6b2fd5c7e38dbd707163cd0fc66aee49c84f0",
+   "bytes": 20680704,
+   "fingerprint": "e1da11a64eb7",
+   "repo_type": "dataset",
+   "repo": "Skelletoon/lex-hopper-data",
+   "revision": "4a643657c99b82c1bee41d34a26fb478d3c56097"
+  },
+  "translator": {
+   "folder": "opus-mt",
+   "files": [
+    {
+     "path": "en-es/encoder_model.onnx",
+     "bytes": 109773782,
+     "sha256": "2d347800c68292b5e259a69b5333d30739bee861df218ca6450d6fdb36fd6a41"
+    },
+    {
+     "path": "en-es/decoder_model_merged.onnx",
+     "bytes": 168507186,
+     "sha256": "ef7608142f8056fc67b7f5f3fca152c0e225f7199e072c02775683d95a1b791e"
+    },
+    {
+     "path": "en-es/source.spm",
+     "bytes": 804235,
+     "sha256": "b1763341d3a71262ed5aacc3f8287d3c3c2f2ae82295e11d03aea80879c98009"
+    },
+    {
+     "path": "en-es/source_vocab.json",
+     "bytes": 619205,
+     "sha256": "7cdfc64baa7b6418058040605faa79238a49a458734a44b7441c1ed177470ec2"
+    },
+    {
+     "path": "en-es/target_vocab.json",
+     "bytes": 639105,
+     "sha256": "b4be5e0098eaaa7cbaa20ac0cf786b4102e5726b4fa51ed7b74ecbedc4f2b3d4"
+    },
+    {
+     "path": "en-es/config.json",
+     "bytes": 966,
+     "sha256": "b3020f212e7ba4ed6945538340641fabce491ce028a31b08a73e988d4d85c280"
+    },
+    {
+     "path": "es-en/encoder_model.onnx",
+     "bytes": 109773782,
+     "sha256": "047fc960caf8c574b3ed3f1c899179e21a139286ad55d298058b80dc1c72beb9"
+    },
+    {
+     "path": "es-en/decoder_model_merged.onnx",
+     "bytes": 168505134,
+     "sha256": "0879b80a78e4457dc901121b51f584a8741544953f7ee92f3d4c69cdbefe00da"
+    },
+    {
+     "path": "es-en/source.spm",
+     "bytes": 820182,
+     "sha256": "0a23783d3c79054e9033fa55aaaeeeb6513cf712063ea87b4eeff5014ee49134"
+    },
+    {
+     "path": "es-en/source_vocab.json",
+     "bytes": 635137,
+     "sha256": "fe497d3c2c1c4f23f70d2bb018adc70c207b19ef2ae5c8e2ca52c84960cf7e3d"
+    },
+    {
+     "path": "es-en/target_vocab.json",
+     "bytes": 617612,
+     "sha256": "7d056ccb56153f1f01216c5d33d6921b14d5aedf33df472b4192ff632ec86918"
+    },
+    {
+     "path": "es-en/config.json",
+     "bytes": 966,
+     "sha256": "152b472c34783ad020a2408917e9335ecdb03fd6b113f91a838a24b3910cce08"
+    }
+   ],
+   "repo": "Skelletoon/lex-hopper-models",
+   "revision": "af73a3ce70d36ba263ed96468798d669042b15b5"
+  }
+ },
+ "de": {
+  "dictionary": {
+   "path": "packs/de_fc448d16094e.db.gz",
+   "gz_bytes": 9488728,
+   "sha256": "970bc8af4541b971be64b2cecbfa4725bd2f2a3699dbf6de30ebda39c2369581",
+   "bytes": 33595392,
+   "fingerprint": "fc448d16094e",
+   "repo_type": "dataset",
+   "repo": "Skelletoon/lex-hopper-data",
+   "revision": "759f8ab53e5df4efce84749dabc5b0c64b031259"
+  },
+  "translator": {
+   "folder": "opus-mt",
+   "files": [
+    {
+     "path": "de-en/encoder_model.onnx",
+     "bytes": 109878230,
+     "sha256": "45528230d2ae53af8479ca1c24f07aaad4509a9310c0853fb59776f0c5c7940a"
+    },
+    {
+     "path": "de-en/decoder_model_merged.onnx",
+     "bytes": 168494874,
+     "sha256": "0d7c66887b12b4b0d5fea551be0c3326d761f70e07f3aa31f2d25b2f379131df"
+    },
+    {
+     "path": "de-en/source.spm",
+     "bytes": 803488,
+     "sha256": "b60a485d1557ca976c144d2ce667e7cb410d52f01696fb3c6e1178cb268eba51"
+    },
+    {
+     "path": "de-en/source_vocab.json",
+     "bytes": 620358,
+     "sha256": "db5fdc465ddd029f2f5b9727841ca8814168dc5930a6d97075a5349f99f7870e"
+    },
+    {
+     "path": "de-en/target_vocab.json",
+     "bytes": 615979,
+     "sha256": "401b04b27dc3a1fdc0a7bee64431f7c98bfc3669f10adfe8a2de4e7a925a1c59"
+    },
+    {
+     "path": "de-en/config.json",
+     "bytes": 966,
+     "sha256": "afee405d5a0278a325b36968ebd75e37de17ad496b0f28ecc30a3dcd18d1fecb"
+    }
+   ],
+   "repo": "Skelletoon/lex-hopper-models",
+   "revision": "c259b8c7a6d8700eedbed83addc90fa706032f1d"
+  }
+ }
+}

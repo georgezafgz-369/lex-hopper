@@ -6,14 +6,23 @@
 import 'package:material_ui/material_ui.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-/// A language the app can be shown in. Only English is ready; the others
-/// are listed as "Coming soon" until their translations are added.
+import 'language_packs.dart';
+
+/// A language the app can be shown in: built in (English, Greek), a
+/// download (Spanish, German: usable once downloaded), or "Coming soon".
 class AppLanguage {
   final String code;
   final String name; // in its own language, e.g. "Ελληνικά"
-  final bool available;
+  final bool builtIn;
 
-  const AppLanguage(this.code, this.name, {this.available = false});
+  const AppLanguage(this.code, this.name, {this.builtIn = false});
+
+  /// Downloaded on request (Settings > Language).
+  bool get isPack => !builtIn && LanguagePacks.instance.offers(code);
+
+  /// Can be picked now.
+  bool get available =>
+      builtIn || LanguagePacks.instance.isInstalled(code);
 }
 
 /// Where Settings > Feedback sends email.
@@ -21,8 +30,8 @@ class AppLanguage {
 const feedbackEmail = 'feedback@example.com';
 
 const appLanguages = [
-  AppLanguage('en', 'English', available: true),
-  AppLanguage('el', 'Ελληνικά', available: true),
+  AppLanguage('en', 'English', builtIn: true),
+  AppLanguage('el', 'Ελληνικά', builtIn: true),
   AppLanguage('es', 'Español'),
   AppLanguage('fr', 'Français'),
   AppLanguage('de', 'Deutsch'),
@@ -83,7 +92,14 @@ class AppSettings extends ChangeNotifier {
 
   /// The app's locale: the chosen language, or null to let the app follow
   /// the phone (Greek if the phone is Greek, otherwise English).
-  Locale? get locale => _language == null ? null : Locale(_language!);
+  /// The chosen language, while it can be used (a downloaded language that
+  /// was removed falls back to the phone's).
+  Locale? get locale {
+    final code = _language;
+    if (code == null) return null;
+    final language = appLanguages.where((l) => l.code == code).firstOrNull;
+    return language != null && language.available ? Locale(code) : null;
+  }
 
   /// The language the app is in right now, for code without a
   /// BuildContext: the chosen one, or the phone's ("el" if the phone is in

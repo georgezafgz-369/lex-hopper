@@ -12,6 +12,7 @@ import 'package:sqflite/sqflite.dart';
 import 'package:path_provider/path_provider.dart';
 
 import 'database_download.dart';
+import 'language_packs.dart';
 import 'puzzle_themes.dart' show themeWindow;
 import 'crossword_puzzle.dart' show WordCandidate, phraseGap;
 
@@ -289,6 +290,21 @@ class FilterOptions {
   }
 }
 
+/// Search key of a downloaded language (Spanish, German): lowercase and
+/// without accents ("Canción" -> "cancion", "schön" -> "schon"); ñ and ß
+/// stay. The same as latin_plain() in scripts/language_packs/build_pack.py.
+String latinPlain(String text) {
+  const plain = {
+    'á': 'a', 'à': 'a', 'â': 'a', 'ä': 'a', //
+    'é': 'e', 'è': 'e', 'ê': 'e', 'ë': 'e',
+    'í': 'i', 'ì': 'i', 'î': 'i', 'ï': 'i',
+    'ó': 'o', 'ò': 'o', 'ô': 'o', 'ö': 'o',
+    'ú': 'u', 'ù': 'u', 'û': 'u', 'ü': 'u',
+    'ç': 'c',
+  };
+  return text.trim().toLowerCase().split('').map((c) => plain[c] ?? c).join();
+}
+
 /// The word in small letters without accents or diaeresis, final ς as σ
 /// (Σπίτι -> σπιτι). The Greek dictionary stores every word this way too
 /// (`plain`, see scripts/build_greek_dictionary.py), so a search finds the
@@ -340,18 +356,31 @@ class DictionaryService {
   /// The English dictionary (kept for older code).
   static DictionaryService get instance => english;
 
-  /// The dictionary for an app language code ("el" -> Greek, else English).
-  static DictionaryService forLanguage(String code) =>
-      code == 'el' ? greek : english;
+  /// The dictionary for an app language code: English, Greek, or a
+  /// downloaded language (Spanish, German); English when it isn't there.
+  static DictionaryService forLanguage(String code) => switch (code) {
+    'el' => greek,
+    'en' => english,
+    _ when LanguagePacks.instance.isInstalled(code) => _packs.putIfAbsent(
+      code,
+      () => DictionaryService._(code),
+    ),
+    _ => english,
+  };
+  static final Map<String, DictionaryService> _packs = {};
 
   /// Downloads the databases on first launch (database_download.dart);
   /// tests and the first-launch screen may put their own in its place.
-  static DatabaseDownload databases = DatabaseDownload(dir: _databaseDir);
+  static DatabaseDownload databases = DatabaseDownload(dir: databaseDir);
 
   bool get _isGreek => language == 'el';
 
   /// The search key of a word: lowercase; Greek also without accents.
-  String _key(String text) => _isGreek ? greekPlain(text) : text.toLowerCase();
+  String _key(String text) => switch (language) {
+    'el' => greekPlain(text),
+    'en' => text.toLowerCase(),
+    _ => latinPlain(text),
+  };
 
   /// Words that start with a letter (the rest are listed after the last
   /// letter of the alphabet).
@@ -372,6 +401,23 @@ class DictionaryService {
   }
 
   Future<void> _open() async {
+    // A downloaded language (Spanish, German): its own database holds both
+    // the words and their texts.
+    if (LanguagePacks.builtIn.contains(language) == false) {
+      await LanguagePacks.instance.load();
+      final pack = LanguagePacks.instance.dictionaryPath(language);
+      if (pack == null) throw StateError('$language is not downloaded');
+      final db = await openDatabase(pack, readOnly: true);
+      final attached = await db.rawQuery('PRAGMA database_list');
+      if (!attached.any((row) => row['name'] == 't')) {
+        await db.execute('ATTACH DATABASE ? AS t', [pack]);
+      }
+      await db.execute('DROP VIEW IF EXISTS temp.$_view');
+      await db.execute('PRAGMA case_sensitive_like = ON');
+      await db.execute(_dictView(language));
+      _db = db;
+      return;
+    }
     final (lexicon, texts) = await databases.ensure();
     final db = await openDatabase(lexicon, readOnly: true);
     // After a hot restart the plugin hands back the same open connection,
@@ -421,7 +467,9 @@ class DictionaryService {
         "WHERE p.lang = '$lang'";
   }
 
-  static Future<String> _databaseDir() async {
+  /// Where the databases are kept on the phone (the language packs'
+  /// dictionaries too).
+  static Future<String> databaseDir() async {
     if (Platform.isAndroid || Platform.isIOS) {
       return (await getApplicationDocumentsDirectory()).path;
     }

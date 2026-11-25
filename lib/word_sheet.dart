@@ -309,11 +309,13 @@ class _WordDetailPageState extends State<WordDetailPage> {
   List<DictionaryEntry> _phrases = const [];
   Map<int, List<String>> _aliases = const {};
 
-  /// Translations into the other language (English ↔ Greek) show only when
-  /// it is set as the second language (Settings > Language).
-  bool get _showOther =>
-      AppSettings.instance.secondaryLanguage ==
-      (widget.language == 'el' ? 'en' : 'el');
+  /// The other language of this dictionary: Greek for English, English for
+  /// Greek and for the downloaded languages.
+  String get _other => widget.language == 'en' ? 'el' : 'en';
+
+  /// Translations into the other language show only when it is set as the
+  /// second language (Settings > Language).
+  bool get _showOther => AppSettings.instance.secondaryLanguage == _other;
 
   /// The word in the other language: its main translation (from the
   /// lexicon, as the Translator shows it) and, per meaning, that meaning's
@@ -493,7 +495,7 @@ class _WordDetailPageState extends State<WordDetailPage> {
                 children: [
                   TextSpan(
                     text:
-                        '${_t.languageName(widget.language == 'el' ? 'en' : 'el')}  ',
+                        '${_t.languageName(_other)}  ',
                     style: TextStyle(
                       fontSize: 13,
                       color: muted,

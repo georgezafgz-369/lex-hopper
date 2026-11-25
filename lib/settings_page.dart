@@ -11,6 +11,7 @@ import 'app_text.dart';
 import 'dual_text.dart';
 import 'design_system.dart';
 import 'eurollm_translator.dart';
+import 'language_packs.dart';
 import 'section_icon.dart';
 import 'word_sheet.dart' show showDraggableSheet;
 
@@ -175,7 +176,11 @@ class SettingsPage extends StatelessWidget {
                               showAboutDialog(
                                 context: context,
                                 applicationName: 'Lex Hopper',
-                                children: [Text(t.translatorCredit)],
+                                children: [
+                                Text(t.translatorCredit),
+                                const SizedBox(height: Spacing.sm),
+                                Text(t.packCredits),
+                              ],
                               );
                             },
                           ),
@@ -577,8 +582,9 @@ class _LanguageList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final settings = AppSettings.instance;
+    final packs = LanguagePacks.instance;
     return ListenableBuilder(
-      listenable: settings,
+      listenable: Listenable.merge([settings, packs]),
       builder: (context, _) {
         final brightness = Theme.of(context).brightness;
         final ink = brightness.resolve(
@@ -645,7 +651,9 @@ class _LanguageList extends StatelessWidget {
                           inline: true,
                         ),
                       ),
-                      if (!language.available)
+                      if (language.isPack && !language.available)
+                        _PackControl(language.code)
+                      else if (!language.available)
                         DualText(
                           (t) => t.comingSoon,
                           crossAxisAlignment: CrossAxisAlignment.end,
@@ -762,6 +770,19 @@ class _LanguageList extends StatelessWidget {
                 title: DualText((t) => t.mainLanguage),
                 enabled: false,
               ),
+            // A downloaded language can be taken off the phone (not while
+            // it's the main language).
+            if (language.isPack && !isMain)
+              ListTile(
+                key: const Key('remove-pack'),
+                leading: const Icon(Icons.delete_outline),
+                title: DualText(
+                  (t) => t.removeLanguagePack(
+                    LanguagePacks.instance.sizeMb(language.code),
+                  ),
+                ),
+                onTap: () => Navigator.of(sheetContext).pop('delete'),
+              ),
             const SizedBox(height: Spacing.sm),
           ],
         ),
@@ -774,6 +795,109 @@ class _LanguageList extends StatelessWidget {
         await settings.setSecondaryLanguage(language.code);
       case 'remove':
         await settings.setSecondaryLanguage(null);
+      case 'delete':
+        if (isSecondary) await settings.setSecondaryLanguage(null);
+        await LanguagePacks.instance.delete(language.code);
     }
   }
 }
+
+/// Beside a language you can download: "Download · 600 MB" (asking first),
+/// then a progress bar with ✕ to stop, or "Try again" after a failure.
+class _PackControl extends StatelessWidget {
+  final String code;
+  const _PackControl(this.code);
+
+  Future<void> _ask(BuildContext context) async {
+    final packs = LanguagePacks.instance;
+    final yes = await showDialog<bool>(
+      context: context,
+      builder: (c) => AlertDialog(
+        key: const Key('pack-download-dialog'),
+        title: DualText((t) => t.downloadLanguageTitle(t.languageName(code))),
+        content: DualText((t) => t.downloadLanguageBody(packs.sizeMb(code))),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(c).pop(false),
+            child: DualText((t) => t.cancel, inline: true),
+          ),
+          TextButton(
+            key: const Key('pack-download-yes'),
+            onPressed: () => Navigator.of(c).pop(true),
+            child: DualText((t) => t.download, inline: true),
+          ),
+        ],
+      ),
+    );
+    if (yes == true) packs.download(code).ignore();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final packs = LanguagePacks.instance;
+    final b = Theme.of(context).brightness;
+    final clay = b.resolve(light: AppColors.clayLight, dark: AppColors.clayDark);
+    final muted = b.resolve(light: AppColors.mutedLight, dark: AppColors.mutedDark);
+    final hairline = b.resolve(
+      light: AppColors.hairlineLight,
+      dark: AppColors.hairlineDark,
+    );
+    final style = TextStyle(
+      fontSize: 13,
+      fontWeight: FontWeight.w600,
+      fontFamily: 'Inter',
+      color: clay,
+    );
+    return switch (packs.state(code)) {
+      PackState.downloading => Row(
+        key: Key('pack-progress-$code'),
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          SizedBox(
+            width: 90,
+            child: LinearProgressIndicator(
+              value: packs.progress(code),
+              color: clay,
+              backgroundColor: hairline,
+            ),
+          ),
+          const SizedBox(width: 8),
+          Text(
+            '${(packs.progress(code) * 100).floor()}%',
+            style: style.copyWith(color: muted),
+          ),
+          IconButton(
+            key: Key('pack-cancel-$code'),
+            icon: Icon(Icons.close, size: 18, color: muted),
+            onPressed: () => packs.cancel(code),
+          ),
+        ],
+      ),
+      final s => OutlinedButton.icon(
+        key: Key('pack-download-$code'),
+        style: OutlinedButton.styleFrom(
+          side: BorderSide(color: clay),
+          shape: const StadiumBorder(),
+          padding: const EdgeInsets.symmetric(horizontal: 12),
+          visualDensity: VisualDensity.compact,
+        ),
+        icon: Icon(
+          s == PackState.failed ? Icons.refresh : Icons.download_rounded,
+          size: 18,
+          color: clay,
+        ),
+        label: DualText(
+          (t) => s == PackState.failed
+              ? t.tryAgain
+              : '${t.download} · ${packs.sizeMb(code)} MB',
+          inline: true,
+          style: style,
+        ),
+        onPressed: () => s == PackState.failed
+            ? packs.download(code).ignore()
+            : _ask(context),
+      ),
+    };
+  }
+}
+

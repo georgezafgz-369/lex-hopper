@@ -30,6 +30,7 @@ import 'language_button.dart';
 import 'dual_text.dart';
 import 'eurollm_translator.dart';
 import 'opus_mt_service.dart';
+import 'section_icon.dart';
 import 'speech.dart';
 import 'saved_translations.dart';
 import 'translator_service.dart';
@@ -142,8 +143,11 @@ class _TranslatorPageState extends State<TranslatorPage> {
   final _input = TextEditingController();
   final _inputFocus = FocusNode();
 
-  String? _from; // "en" or "el"; set from the app language on first build
-  String get _to => _from == 'el' ? 'en' : 'el';
+  // The two languages; set on first build: from the app's language into
+  // the second language (or English / Greek).
+  String? _from;
+  String? _toChoice;
+  String get _to => _toChoice!;
   String _output = '';
 
   /// The dictionary's meanings when the text is a word it knows; empty
@@ -262,10 +266,14 @@ class _TranslatorPageState extends State<TranslatorPage> {
       // (instantly, no machine); anything else by the translator.
       // A lexicon that can't be read doesn't stop the translation.
       const none = (main: null, meanings: <WordTranslation>[]);
-      final known = await widget.lookup(text, from).catchError((Object e) {
-        debugPrint('Translator: lexicon lookup failed: $e');
-        return none as LexiconAnswer;
-      });
+      // (The lexicon's translations are English ↔ Greek only.)
+      final englishGreek = {from, to}.containsAll(const ['en', 'el']);
+      final known = englishGreek
+          ? await widget.lookup(text, from).catchError((Object e) {
+              debugPrint('Translator: lexicon lookup failed: $e');
+              return none as LexiconAnswer;
+            })
+          : none;
       if (!mounted || request != _request) return;
       // Otherwise: translated before on this phone (instant, offline), or
       // the translator (and remembered once the text is done).
@@ -315,12 +323,60 @@ class _TranslatorPageState extends State<TranslatorPage> {
     _translate().then((_) => _keep());
   }
 
+  /// The languages the translator can use now: English, Greek, and the
+  /// downloaded ones.
+  List<String> get _usable => [
+    for (final l in appLanguages)
+      if (l.available) l.code,
+  ];
+
+  /// A language pill: with only two languages it swaps them; with more, it
+  /// lists them to pick from (picking the other side's language swaps).
+  Future<void> _pick({required bool source}) async {
+    final usable = _usable;
+    if (usable.length <= 2) return _swap();
+    final current = source ? _from : _to;
+    final picked = await showModalBottomSheet<String>(
+      context: context,
+      builder: (c) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            for (final code in usable)
+              ListTile(
+                key: Key('pick-language-$code'),
+                leading: FlagIcon.has(code) ? FlagIcon(code, size: 36) : null,
+                title: Text(AppText.of(c).languageName(code)),
+                trailing: code == current ? const Icon(Icons.check) : null,
+                onTap: () => Navigator.of(c).pop(code),
+              ),
+          ],
+        ),
+      ),
+    );
+    if (picked == null || picked == current || !mounted) return;
+    if (picked == (source ? _to : _from)) return _swap();
+    _keep();
+    setState(() {
+      if (source) {
+        _from = picked;
+      } else {
+        _toChoice = picked;
+      }
+      _output = '';
+      _meanings = const [];
+    });
+    if (_input.text.trim().isNotEmpty) _translate();
+  }
+
   /// Swap the languages: the translation becomes the text to translate.
   void _swap() {
     _keep();
     _liveTimer?.cancel();
     setState(() {
+      final from = _from;
       _from = _to;
+      _toChoice = from;
       if (_output.isNotEmpty) {
         _lastText = _output.trim(); // not typing: no live delay
         _input.text = _output;
@@ -396,6 +452,13 @@ class _TranslatorPageState extends State<TranslatorPage> {
   @override
   Widget build(BuildContext context) {
     _from ??= AppText.of(context).code;
+    _toChoice ??= () {
+      final second = AppSettings.instance.secondaryLanguage;
+      if (second != null && second != _from && _usable.contains(second)) {
+        return second;
+      }
+      return _from == 'en' ? 'el' : 'en';
+    }();
     final t = AppText.of(context);
     final brightness = Theme.of(context).brightness;
     final paper = brightness.resolve(
@@ -678,7 +741,7 @@ class _TranslatorPageState extends State<TranslatorPage> {
                     child: _LanguagePill(
                       key: const Key('from-language'),
                       label: t.languageName(_from!),
-                      onTap: _swap,
+                      onTap: () => _pick(source: true),
                     ),
                   ),
                   IconButton(
@@ -691,7 +754,7 @@ class _TranslatorPageState extends State<TranslatorPage> {
                     child: _LanguagePill(
                       key: const Key('to-language'),
                       label: t.languageName(_to),
-                      onTap: _swap,
+                      onTap: () => _pick(source: false),
                     ),
                   ),
                 ],

@@ -11,6 +11,7 @@ import 'database_gate.dart';
 import 'app_text.dart';
 import 'design_system.dart';
 import 'home_page.dart';
+import 'language_packs.dart';
 import 'games_page.dart';
 import 'crossword_menu_page.dart';
 import 'crossword_game_page.dart';
@@ -29,6 +30,8 @@ Future<void> main() async {
   await SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
   // Saved dark mode / language, so the first frame already uses them.
   await AppSettings.instance.load();
+  // Which downloaded languages (Spanish, German) are on the phone.
+  await LanguagePacks.instance.load();
   // The translator's licence (CC BY 4.0) in Settings > About > licences.
   LicenseRegistry.addLicense(
     () => Stream.value(
@@ -74,7 +77,12 @@ class LexHopper extends StatelessWidget {
       // Settings > Language; on first start, the phone's language (Greek or
       // English). GlobalMaterialLocalizations covers the built-in texts.
       locale: AppSettings.instance.locale,
-      supportedLocales: const [Locale('en'), Locale('el')],
+      supportedLocales: const [
+        Locale('en'),
+        Locale('el'),
+        Locale('es'),
+        Locale('de'),
+      ],
       localizationsDelegates: GlobalMaterialLocalizations.delegates,
       localeResolutionCallback: (device, supported) =>
           device != null && device.languageCode == 'el'

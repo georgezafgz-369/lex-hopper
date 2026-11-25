@@ -56,3 +56,6 @@ __pycache__/
 
 # Large model files for translator experiments (downloaded, never committed)
 .models/
+
+# Language pack dictionaries (built by scripts/language_packs/build_pack.py, uploaded)
+assets/packs/
