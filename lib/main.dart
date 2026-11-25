@@ -29,9 +29,10 @@ Future<void> main() async {
   // shows them for a moment, then they hide again.
   await SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
   // Saved dark mode / language, so the first frame already uses them.
-  await AppSettings.instance.load();
-  // Which downloaded languages (Spanish, German) are on the phone.
+  // Which downloaded languages (Spanish, German) are on the phone: first,
+  // so a saved choice of one of them is kept.
   await LanguagePacks.instance.load();
+  await AppSettings.instance.load();
   // The translator's licence (CC BY 4.0) in Settings > About > licences.
   LicenseRegistry.addLicense(
     () => Stream.value(
@@ -84,10 +85,15 @@ class LexHopper extends StatelessWidget {
         Locale('de'),
       ],
       localizationsDelegates: GlobalMaterialLocalizations.delegates,
-      localeResolutionCallback: (device, supported) =>
-          device != null && device.languageCode == 'el'
-          ? const Locale('el')
-          : const Locale('en'),
+      // The chosen language (or the phone's) when the app has it, else
+      // English. A downloaded language counts only once it's on the phone.
+      localeResolutionCallback: (wanted, supported) {
+        final code = wanted?.languageCode;
+        final language = appLanguages.where((l) => l.code == code).firstOrNull;
+        return language != null && language.available
+            ? Locale(language.code)
+            : const Locale('en');
+      },
       // Settings > Font size: scales all text on top of the phone's own
       // text size (the crossword grid letters opt out, see the game page).
       builder: (context, child) {
