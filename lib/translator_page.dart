@@ -28,7 +28,7 @@ import 'dictionary_service.dart';
 import 'dictionary_search_bar.dart';
 import 'language_button.dart';
 import 'dual_text.dart';
-import 'eurollm_translator.dart';
+import 'ai_model.dart';
 import 'opus_mt_service.dart';
 import 'section_icon.dart';
 import 'speech.dart';
@@ -117,7 +117,7 @@ class _TranslatorPageState extends State<TranslatorPage> {
   late final Translator _translator =
       widget.translator ??
       PreferredTranslator(
-        ai: EuroLlmTranslator.instance,
+        ai: AiModel.instance,
         useAi: () => AppSettings.instance.aiTranslator,
         offline: OpusMtService.instance,
       );
@@ -284,7 +284,7 @@ class _TranslatorPageState extends State<TranslatorPage> {
           .catchError((Object e) => null);
       // A saved "translation" that only repeats the text (an older AI
       // slip) is translated again.
-      if (answer != null && EuroLlmTranslator.isCopy(answer, text)) {
+      if (answer != null && AiModel.isCopy(answer, text)) {
         answer = null;
       }
       if (answer == null) {

@@ -2,11 +2,13 @@
 // LEX HOPPER — entry point
 // ─────────────────────────────────────────────────────────────────────────────
 
-import 'package:flutter/foundation.dart' show LicenseEntryWithLineBreaks, LicenseRegistry;
+import 'package:flutter/foundation.dart'
+    show LicenseEntryWithLineBreaks, LicenseRegistry;
 import 'package:flutter/services.dart';
 import 'package:material_ui/material_ui.dart';
 
 import 'app_settings.dart';
+import 'chat_page.dart';
 import 'database_gate.dart';
 import 'app_text.dart';
 import 'design_system.dart';
@@ -129,6 +131,7 @@ class LexHopper extends StatelessWidget {
         '/dictionary': (_) => const DictionaryPage(),
         '/translator': (_) => const TranslatorPage(),
         '/settings': (_) => const SettingsPage(),
+        '/chat': (_) => const ChatPage(),
       },
     );
   }

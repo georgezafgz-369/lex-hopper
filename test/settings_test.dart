@@ -96,7 +96,7 @@ void main() {
     expect(find.text('Language  Γλώσσα', findRichText: true), findsWidgets);
     // The list names each language in the main language, with the
     // secondary one's name next to it.
-    expect(find.text('Spanish  Ισπανικά', findRichText: true), findsOneWidget);
+    expect(find.text('French  Γαλλικά', findRichText: true), findsOneWidget);
     // The Language card names the languages in each line's own language.
     expect(find.text('English · secondary: Greek'), findsOneWidget);
     expect(find.text('Αγγλικά · δευτερεύουσα: Ελληνικά'), findsOneWidget);
@@ -106,8 +106,8 @@ void main() {
     // The secondary language is listed right after the main one.
     final english = tester.getTopLeft(find.byKey(const Key('language-en')));
     final greek = tester.getTopLeft(find.byKey(const Key('language-el')));
-    final spanish = tester.getTopLeft(find.byKey(const Key('language-es')));
-    expect(english.dy < greek.dy && greek.dy < spanish.dy, isTrue);
+    final french = tester.getTopLeft(find.byKey(const Key('language-fr')));
+    expect(english.dy < greek.dy && greek.dy < french.dy, isTrue);
 
     // Making the secondary the main one swaps them.
     await settings.setLanguage('el');

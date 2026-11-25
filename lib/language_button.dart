@@ -7,7 +7,6 @@ import 'package:material_ui/material_ui.dart';
 
 import 'design_system.dart';
 import 'settings_page.dart' show showLanguagePicker;
-import 'translator_page.dart' show showTranslatorSheet;
 
 /// Globe button beside Home: opens the language list (the same as Settings >
 /// Language). Same size and shape as the Home button, in the card colour.
@@ -19,19 +18,6 @@ class LanguageButton extends StatelessWidget {
     key: const Key('language-button'),
     icon: Icons.language,
     onTap: () => showLanguagePicker(context),
-  );
-}
-
-/// Translate button beside the globe: the Translator slides up from the
-/// bottom.
-class TranslateButton extends StatelessWidget {
-  const TranslateButton({super.key});
-
-  @override
-  Widget build(BuildContext context) => TopBarIconButton(
-    key: const Key('translate-button'),
-    icon: Icons.translate,
-    onTap: () => showTranslatorSheet(context),
   );
 }
 

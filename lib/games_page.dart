@@ -6,7 +6,6 @@ import 'package:material_ui/material_ui.dart';
 
 import 'app_text.dart';
 import 'dual_text.dart';
-import 'bottom_menu.dart';
 import 'section_icon.dart';
 import 'design_system.dart';
 import 'dictionary_search_bar.dart';
@@ -32,108 +31,104 @@ class GamesPage extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: paper,
-      body: BottomMenu(
-        current: Section.games,
-        child: SafeArea(
-          child: Column(
-            children: [
-              // ── Top bar ───────────────────────────────────────────────────
-              Padding(
+      body: SafeArea(
+        child: Column(
+          children: [
+            // ── Top bar ───────────────────────────────────────────────────
+            Padding(
+              padding: const EdgeInsets.fromLTRB(
+                Spacing.md,
+                Spacing.sm,
+                Spacing.md,
+                Spacing.sm,
+              ),
+              child: Row(
+                children: [
+                  GestureDetector(
+                    key: const Key('games-back'),
+                    onTap: () => Navigator.of(context).pop(),
+                    child: Container(
+                      width: 40,
+                      height: 40,
+                      decoration: BoxDecoration(
+                        color: gridCell,
+                        borderRadius: BorderRadius.circular(Radius.sm),
+                      ),
+                      child: Icon(Icons.arrow_back, size: 20, color: ink),
+                    ),
+                  ),
+                  const SizedBox(width: Spacing.sm),
+                  // Dictionary search, in the middle.
+                  const Expanded(
+                    child: DictionarySearchBar(fieldKey: Key('games-search')),
+                  ),
+                ],
+              ),
+            ),
+
+            // ── Games ─────────────────────────────────────────────────────
+            Expanded(
+              child: SingleChildScrollView(
                 padding: const EdgeInsets.fromLTRB(
                   Spacing.md,
-                  Spacing.sm,
+                  0,
                   Spacing.md,
-                  Spacing.sm,
+                  Spacing.xxl,
                 ),
-                child: Row(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    GestureDetector(
-                      key: const Key('games-back'),
-                      onTap: () => Navigator.of(context).pop(),
-                      child: Container(
-                        width: 40,
-                        height: 40,
-                        decoration: BoxDecoration(
-                          color: gridCell,
-                          borderRadius: BorderRadius.circular(Radius.sm),
-                        ),
-                        child: Icon(Icons.arrow_back, size: 20, color: ink),
+                    const SizedBox(height: Spacing.sm),
+                    // The page's title, big and bold.
+                    DualText(
+                      (t) => t.games,
+                      style: Theme.of(context).textTheme.displayLarge,
+                      inline: true,
+                    ),
+                    const SizedBox(height: Spacing.sm),
+                    // The three games side by side, as small tiles.
+                    IntrinsicHeight(
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Expanded(
+                            child: _GameTile(
+                              key: const Key('game-crossword'),
+                              section: Section.crossword,
+                              title: (t) => t.crossword,
+                              onTap: () =>
+                                  Navigator.of(context).pushNamed('/crossword'),
+                            ),
+                          ),
+                          const SizedBox(width: Spacing.sm),
+                          Expanded(
+                            child: _GameTile(
+                              key: const Key('game-find-the-words'),
+                              section: Section.findWords,
+                              title: (t) => t.findTheWords,
+                              onTap: () =>
+                                  Navigator.of(context)
+                                      .pushNamed('/word-search'),
+                            ),
+                          ),
+                          const SizedBox(width: Spacing.sm),
+                          const Expanded(
+                            child: _GameTile(
+                              key: Key('game-riddles'),
+                              section: Section.riddles,
+                              title: _riddles,
+                              comingSoon: true,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                    const SizedBox(width: Spacing.sm),
-                    // Dictionary search, in the middle.
-                    const Expanded(
-                      child: DictionarySearchBar(fieldKey: Key('games-search')),
-                    ),
+                    const SizedBox(height: Spacing.xxl),
                   ],
                 ),
               ),
-
-              // ── Games ─────────────────────────────────────────────────────
-              Expanded(
-                child: SingleChildScrollView(
-                  padding: const EdgeInsets.fromLTRB(
-                    Spacing.md,
-                    0,
-                    Spacing.md,
-                    BottomMenu.space, // clear of the bottom menu
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const SizedBox(height: Spacing.sm),
-                      // The page's title, big and bold.
-                      DualText(
-                        (t) => t.games,
-                        style: Theme.of(context).textTheme.displayLarge,
-                        inline: true,
-                      ),
-                      const SizedBox(height: Spacing.sm),
-                      // The three games side by side, as small tiles.
-                      IntrinsicHeight(
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: [
-                            Expanded(
-                              child: _GameTile(
-                                key: const Key('game-crossword'),
-                                section: Section.crossword,
-                                title: (t) => t.crossword,
-                                onTap: () =>
-                                    Navigator.of(context)
-                                        .pushNamed('/crossword'),
-                              ),
-                            ),
-                            const SizedBox(width: Spacing.sm),
-                            Expanded(
-                              child: _GameTile(
-                                key: const Key('game-find-the-words'),
-                                section: Section.findWords,
-                                title: (t) => t.findTheWords,
-                                onTap: () =>
-                                    Navigator.of(context)
-                                        .pushNamed('/word-search'),
-                              ),
-                            ),
-                            const SizedBox(width: Spacing.sm),
-                            const Expanded(
-                              child: _GameTile(
-                                key: Key('game-riddles'),
-                                section: Section.riddles,
-                                title: _riddles,
-                                comingSoon: true,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      const SizedBox(height: Spacing.xxl),
-                    ],
-                  ),
-                ),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

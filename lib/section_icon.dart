@@ -29,8 +29,8 @@ enum Section {
   aiTranslator,
   feedback,
   about,
-  // The bottom menu's open / close button.
-  menu,
+  // Chat with AI (home page).
+  chatAi,
   // The games, on the Games page.
   crossword,
   findWords,
@@ -83,6 +83,10 @@ class SectionIcon extends StatelessWidget {
       light: AppColors.coralLight,
       dark: AppColors.coralDark,
     ),
+    Section.chatAi => b.resolve(
+      light: AppColors.cornflowerLight,
+      dark: AppColors.cornflowerDark,
+    ),
     Section.crossword => b.resolve(
       light: AppColors.marigoldLight,
       dark: AppColors.marigoldDark,
@@ -94,10 +98,6 @@ class SectionIcon extends StatelessWidget {
     Section.riddles => b.resolve(
       light: AppColors.roseLight,
       dark: AppColors.roseDark,
-    ),
-    Section.menu => b.resolve(
-      light: AppColors.clayLight,
-      dark: AppColors.clayDark,
     ),
     Section.aiTranslator || Section.home => b.resolve(
       light: AppColors.fernLight,
@@ -294,11 +294,19 @@ final _drawings = <Section, (String, String)>{
         '<path d="M14 104 C20 98 26 110 32 104"/>',
   ),
 
-  // The bottom menu's button: three thick lines.
-  Section.menu: (
+  // Chat with AI: a speech bubble with three dots and the AI sparkle.
+  Section.chatAi: (
     '$_blob'
-        '<path d="M38 48 H82 M38 64 H82 M38 80 H82" stroke-width="7"/>',
-    '${_sparkle(100, 22)}'
+        '<path d="M32 36 H82 A10 10 0 0 1 92 46 V68 A10 10 0 0 1 82 78 H54 '
+        'L40 90 L42 78 H32 A10 10 0 0 1 22 68 V46 A10 10 0 0 1 32 36 Z" '
+        'fill="{tile}"/>'
+        '<circle cx="42" cy="57" r="4" fill="{ink}" stroke="none"/>'
+        '<circle cx="57" cy="57" r="4" fill="{ink}" stroke="none"/>'
+        '<circle cx="72" cy="57" r="4" fill="{ink}" stroke="none"/>'
+        '<path d="M96 14 C97 22 99 24 107 25 C99 26 97 28 96 36 '
+        'C95 28 93 26 85 25 C93 24 95 22 96 14 Z" fill="{tile}" '
+        'stroke-width="4"/>',
+    '<path d="M12 98 C18 92 24 104 30 98"/>'
         '<circle cx="20" cy="30" r="3" fill="{ink}" stroke="none"/>',
   ),
 

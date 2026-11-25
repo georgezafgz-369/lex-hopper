@@ -120,7 +120,6 @@ class _CrosswordMenuPageState extends State<CrosswordMenuPage> {
                       fieldKey: Key('crossword-menu-search'),
                     ),
                   ),
-
                 ],
               ),
             ),

@@ -494,8 +494,7 @@ class _WordDetailPageState extends State<WordDetailPage> {
               TextSpan(
                 children: [
                   TextSpan(
-                    text:
-                        '${_t.languageName(_other)}  ',
+                    text: '${_t.languageName(_other)}  ',
                     style: TextStyle(
                       fontSize: 13,
                       color: muted,

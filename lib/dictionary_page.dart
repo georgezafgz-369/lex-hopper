@@ -9,8 +9,6 @@ import 'package:flutter/services.dart' show HapticFeedback;
 import 'package:material_ui/material_ui.dart';
 
 import 'design_system.dart';
-import 'bottom_menu.dart';
-import 'section_icon.dart';
 import 'app_text.dart';
 import 'dictionary_service.dart';
 import 'dual_text.dart';
@@ -499,7 +497,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
           ),
           // Clear of the bottom menu (the sheet has none).
           if (!widget.inSheet)
-            const SliverToBoxAdapter(child: SizedBox(height: BottomMenu.space)),
+            const SliverToBoxAdapter(child: SizedBox(height: Spacing.xxl)),
         ],
       ),
     );
@@ -509,49 +507,42 @@ class _DictionaryPageState extends State<DictionaryPage> {
     final strip = _searchController.text.trim().isEmpty && _browsing;
     return Scaffold(
       backgroundColor: paper,
-      body: BottomMenu(
-        current: Section.dictionary,
-        child: SafeArea(
-          child: Stack(
-            children: [
-              body,
-              if (strip)
-                Positioned(
-                  right: 0,
-                  top: _topBarHeight + 64,
-                  // Above the "go to top" button and the bottom menu.
-                  bottom: 72 + BottomMenu.space,
-                  child: _AlphabetStrip(
-                    letters: _language == 'el' ? _greekLetters : _latinLetters,
-                    active: _here ?? _letter,
-                    onLetter: _jumpToLetter,
-                  ),
+      body: SafeArea(
+        child: Stack(
+          children: [
+            body,
+            if (strip)
+              Positioned(
+                right: 0,
+                top: _topBarHeight + 64,
+                // Above the "go to top" button and the bottom menu.
+                bottom: 72,
+                child: _AlphabetStrip(
+                  letters: _language == 'el' ? _greekLetters : _latinLetters,
+                  active: _here ?? _letter,
+                  onLetter: _jumpToLetter,
                 ),
-            ],
-          ),
+              ),
+          ],
         ),
       ),
       // "Go to top" in the bottom-right corner, once scrolled down.
-      floatingActionButton: Padding(
-        // Above the bottom menu.
-        padding: const EdgeInsets.only(bottom: BottomMenu.space - 16),
-        child: AnimatedScale(
-          scale: _showTop ? 1 : 0,
-          duration: const Duration(milliseconds: 200),
-          child: Tooltip(
-            message: AppText.of(context).goToTop,
-            child: FloatingActionButton.small(
-              key: const Key('dictionary-go-to-top'),
-              heroTag: null,
-              onPressed: _showTop ? _goToTop : null,
-              backgroundColor: brightness.resolve(
-                light: AppColors.claySoftLight,
-                dark: AppColors.claySoftDark,
-              ),
-              foregroundColor: Colors.white,
-              elevation: 2,
-              child: const Icon(Icons.arrow_upward),
+      floatingActionButton: AnimatedScale(
+        scale: _showTop ? 1 : 0,
+        duration: const Duration(milliseconds: 200),
+        child: Tooltip(
+          message: AppText.of(context).goToTop,
+          child: FloatingActionButton.small(
+            key: const Key('dictionary-go-to-top'),
+            heroTag: null,
+            onPressed: _showTop ? _goToTop : null,
+            backgroundColor: brightness.resolve(
+              light: AppColors.claySoftLight,
+              dark: AppColors.claySoftDark,
             ),
+            foregroundColor: Colors.white,
+            elevation: 2,
+            child: const Icon(Icons.arrow_upward),
           ),
         ),
       ),

@@ -3,7 +3,7 @@
 // yet. A translation that a newer one replaced is not a failure.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:lex_hopper/eurollm_translator.dart';
+import 'package:lex_hopper/ai_model.dart';
 import 'package:lex_hopper/translator_service.dart';
 
 class FakeTranslator implements Translator {
@@ -138,7 +138,7 @@ void main() {
   group('EuroLLM prompt', () {
     test('asks for the translation only', () {
       expect(
-        EuroLlmTranslator.translationPrompt('καλη μερα', from: 'el', to: 'en'),
+        AiModel.translationPrompt('καλη μερα', from: 'el', to: 'en'),
         'Translate this Greek text into English. '
         'Reply with the translation only.\n\nκαλη μερα',
       );
@@ -146,54 +146,42 @@ void main() {
 
     test('a repeat of the text is not a translation', () {
       expect(
-        EuroLlmTranslator.isCopy(
+        AiModel.isCopy(
           'Καλή μέρα, τι καλό είναι να κάνουμε',
           'καλη μερα, τι καλό είναι να κάνουμε;',
         ),
         isTrue,
       );
-      expect(EuroLlmTranslator.isCopy('Good day', 'καλη μερα'), isFalse);
+      expect(AiModel.isCopy('Good day', 'καλη μερα'), isFalse);
     });
 
     test('answers lose a repeated label and chat markers', () {
-      expect(EuroLlmTranslator.cleanTranslation(' σπίτι<|im_end|>'), 'σπίτι');
-      expect(EuroLlmTranslator.cleanTranslation('Greek: σπίτι'), 'σπίτι');
-      expect(EuroLlmTranslator.cleanTranslation('English: house'), 'house');
+      expect(AiModel.cleanTranslation(' σπίτι<|im_end|>'), 'σπίτι');
+      expect(AiModel.cleanTranslation('Greek: σπίτι'), 'σπίτι');
+      expect(AiModel.cleanTranslation('English: house'), 'house');
       expect(
-        EuroLlmTranslator.cleanTranslation('Ελληνικά: Η εξουσία στον λαό!'),
+        AiModel.cleanTranslation('Ελληνικά: Η εξουσία στον λαό!'),
         'Η εξουσία στον λαό!',
       );
       expect(
-        EuroLlmTranslator.cleanTranslation('Απάντηση: Άφησα τα κλειδιά μου.'),
+        AiModel.cleanTranslation('Απάντηση: Άφησα τα κλειδιά μου.'),
         'Άφησα τα κλειδιά μου.',
       );
     });
 
     test('an answer in the wrong alphabet is not a translation', () {
-      expect(
-        EuroLlmTranslator.isInLanguage('Το σώμα είναι κόκκινο', 'el'),
-        isTrue,
-      );
-      expect(
-        EuroLlmTranslator.isInLanguage('The body of the car', 'el'),
-        isFalse,
-      );
-      expect(
-        EuroLlmTranslator.isInLanguage('Where is the beach?', 'en'),
-        isTrue,
-      );
-      expect(EuroLlmTranslator.isInLanguage('Πού είναι;', 'en'), isFalse);
-      expect(EuroLlmTranslator.isInLanguage('', 'el'), isFalse);
+      expect(AiModel.isInLanguage('Το σώμα είναι κόκκινο', 'el'), isTrue);
+      expect(AiModel.isInLanguage('The body of the car', 'el'), isFalse);
+      expect(AiModel.isInLanguage('Where is the beach?', 'en'), isTrue);
+      expect(AiModel.isInLanguage('Πού είναι;', 'en'), isFalse);
+      expect(AiModel.isInLanguage('', 'el'), isFalse);
       // A brand name inside Greek is fine.
-      expect(
-        EuroLlmTranslator.isInLanguage('Αγόρασα ένα iPhone χθες', 'el'),
-        isTrue,
-      );
+      expect(AiModel.isInLanguage('Αγόρασα ένα iPhone χθες', 'el'), isTrue);
     });
 
     test('the answer is its first non-empty line', () {
       expect(
-        EuroLlmTranslator.cleanTranslation('\nΤο σώμα είναι κόκκινο\nExtra'),
+        AiModel.cleanTranslation('\nΤο σώμα είναι κόκκινο\nExtra'),
         'Το σώμα είναι κόκκινο',
       );
     });
@@ -201,15 +189,13 @@ void main() {
 
   test('reads the total memory from /proc/meminfo', () {
     expect(
-      EuroLlmTranslator.memTotalKb(
-        'MemTotal:        4004500 kB\nMemFree:  12 kB\n',
-      ),
+      AiModel.memTotalKb('MemTotal:        4004500 kB\nMemFree:  12 kB\n'),
       4004500,
     );
-    expect(EuroLlmTranslator.memTotalKb('nothing here'), isNull);
+    expect(AiModel.memTotalKb('nothing here'), isNull);
     // A 2 GB phone is too small; a 4 GB one is enough.
-    expect(2013212 >= EuroLlmTranslator.minMemoryKb, isFalse);
-    expect(3809000 >= EuroLlmTranslator.minMemoryKb, isTrue);
+    expect(2013212 >= AiModel.euroLlm.minMemoryKb, isFalse);
+    expect(3809000 >= AiModel.euroLlm.minMemoryKb, isTrue);
   });
 }
 

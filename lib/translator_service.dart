@@ -1,7 +1,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 // TRANSLATOR SERVICE — what translates English ↔ Greek text on the phone:
 // the offline translator (OPUS-MT, opus_mt_service.dart) and, when it's
-// turned on, the AI model (EuroLLM, eurollm_translator.dart). Both work
+// turned on, the AI model (EuroLLM, ai_model.dart). Both work
 // without internet once downloaded.
 // ─────────────────────────────────────────────────────────────────────────────
 

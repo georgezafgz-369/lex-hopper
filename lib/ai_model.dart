@@ -1,10 +1,12 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// EUROLLM TRANSLATOR — a small AI model (EuroLLM-1.7B-Instruct) that
-// translates English ↔ Greek on the phone itself, through llama.cpp.
+// AI MODEL — a small AI that runs on the phone itself, through llama.cpp:
+// it translates (the Translator's AI) and chats (Chat with AI). Two to
+// choose from in Settings: EuroLLM-1.7B (about 1 GB, European languages)
+// and Gemma 4 E2B (about 3.4 GB, smarter, needs a phone with more memory).
 //
-// The model (about 1 GB) is not part of the app: it downloads once, when the
-// person turns it on in Settings, and from then on works offline. One engine
-// serves the whole app, so the model loads into memory only once.
+// A model is not part of the app: it downloads once, when the person turns
+// it on in Settings, and from then on works offline. Each model keeps one
+// engine, so it loads into memory only once.
 // ─────────────────────────────────────────────────────────────────────────────
 
 import 'dart:async';
@@ -14,6 +16,7 @@ import 'dart:math';
 import 'package:llamadart/llamadart.dart';
 import 'package:material_ui/material_ui.dart';
 
+import 'app_settings.dart';
 import 'translator_service.dart';
 
 /// Where the EuroLLM download is at, for Settings to show.
@@ -28,22 +31,70 @@ enum ModelState {
   tooLittleMemory,
 }
 
-class EuroLlmTranslator implements Translator {
-  EuroLlmTranslator._();
-  static final EuroLlmTranslator instance = EuroLlmTranslator._();
+class AiModel implements Translator {
+  AiModel._({
+    required this.id,
+    required this.name,
+    required this.source,
+    required this.sha256,
+    required this.sizeMb,
+    required this.minMemoryKb,
+  });
 
-  /// EuroLLM-1.7B-Instruct, 4-bit (Q4_K_M), pinned to one commit and checked
-  /// against its SHA-256 so a changed or broken file is never used.
-  static final source = ModelSource.huggingFace(
-    repoId: 'mradermacher/EuroLLM-1.7B-Instruct-GGUF',
-    filePath: 'EuroLLM-1.7B-Instruct.Q4_K_M.gguf',
-    revision: '2951f08f66429c934c8b01a94347161362430808',
+  /// EuroLLM-1.7B-Instruct, 4-bit (Q4_K_M). Each model is pinned to one
+  /// commit and checked against its SHA-256, so a changed or broken file is
+  /// never used.
+  static final euroLlm = AiModel._(
+    id: 'eurollm',
+    name: 'EuroLLM',
+    source: ModelSource.huggingFace(
+      repoId: 'mradermacher/EuroLLM-1.7B-Instruct-GGUF',
+      filePath: 'EuroLLM-1.7B-Instruct.Q4_K_M.gguf',
+      revision: '2951f08f66429c934c8b01a94347161362430808',
+    ),
+    sha256: '1cade17f491ea46a686dbee51fbd52442e0f001f102380c3b9d66b4a77f84093',
+    sizeMb: 1045,
+    // With the app around it, about 2 GB: a phone with 4 GB of memory (which
+    // reports a little under 4 GB).
+    minMemoryKb: 3400 * 1024,
   );
-  static const sha256 =
-      '1cade17f491ea46a686dbee51fbd52442e0f001f102380c3b9d66b4a77f84093';
+
+  /// Google's Gemma 4 E2B (Apache 2.0), its own 4-bit build (QAT Q4_0).
+  static final gemma4 = AiModel._(
+    id: 'gemma4',
+    name: 'Gemma 4',
+    source: ModelSource.huggingFace(
+      repoId: 'google/gemma-4-E2B-it-qat-q4_0-gguf',
+      filePath: 'gemma-4-E2B_q4_0-it.gguf',
+      revision: '675cff42a74c774d6cb76f76d8eacb49b48c9b93',
+    ),
+    sha256: 'fa401b55b07ee70a54c6dae3903c783a6e65064312529ea57175cb5f8dec6634',
+    sizeMb: 3350,
+    // About 4.5 GB with the app: a phone with 6 GB of memory.
+    minMemoryKb: 5400 * 1024,
+  );
+
+  static final all = [euroLlm, gemma4];
+
+  /// The model picked in Settings.
+  static AiModel get instance => all.firstWhere(
+    (m) => m.id == AppSettings.instance.aiModel,
+    orElse: () => euroLlm,
+  );
+
+  /// "eurollm" or "gemma4" (Settings keeps this).
+  final String id;
+
+  /// Its name, as shown in Settings.
+  final String name;
+  final ModelSource source;
+  final String sha256;
 
   /// The download's size, for the person to see before starting it.
-  static const sizeMb = 1045;
+  final int sizeMb;
+
+  /// The phone's memory needed to run it.
+  final int minMemoryKb;
 
   final _manager = DefaultModelDownloadManager();
 
@@ -73,24 +124,22 @@ class EuroLlmTranslator implements Translator {
     _set(await isReady() ? ModelState.ready : ModelState.notDownloaded);
   }
 
-  /// The model with the app around it takes about 2 GB, so it needs a phone
-  /// with 4 GB of memory; with less, Android stops the app. (A "4 GB" phone
-  /// reports a little under 4 GB.)
-  static const minMemoryKb = 3400 * 1024;
+  /// Whether this phone has the memory to run the model (with less,
+  /// Android stops the app). Android only for now; elsewhere it's assumed.
+  Future<bool> hasEnoughMemory() async {
+    final kb = await _phoneMemoryKb();
+    return kb == null || kb >= minMemoryKb;
+  }
 
-  /// Whether this phone has the memory to run the model. Android only for
-  /// now; elsewhere it's assumed.
-  static Future<bool> hasEnoughMemory() async =>
-      _enoughMemory ??= await _readEnoughMemory();
-  static bool? _enoughMemory;
+  static Future<int?> _phoneMemoryKb() => _memoryKb ??= _readMemoryKb();
+  static Future<int?>? _memoryKb;
 
-  static Future<bool> _readEnoughMemory() async {
-    if (!Platform.isAndroid) return true;
+  static Future<int?> _readMemoryKb() async {
+    if (!Platform.isAndroid) return null;
     try {
-      final kb = memTotalKb(await File('/proc/meminfo').readAsString());
-      return kb == null || kb >= minMemoryKb;
+      return memTotalKb(await File('/proc/meminfo').readAsString());
     } catch (_) {
-      return true; // can't tell: don't block it
+      return null; // can't tell: don't block it
     }
   }
 
@@ -140,7 +189,7 @@ class EuroLlmTranslator implements Translator {
       );
       _set(ModelState.ready);
     } catch (e) {
-      debugPrint('EuroLLM: download stopped: $e');
+      debugPrint('$name: download stopped: $e');
       _set(cancel.isCancelled ? ModelState.notDownloaded : ModelState.failed);
     } finally {
       if (identical(_cancel, cancel)) _cancel = null;
@@ -158,7 +207,7 @@ class EuroLlmTranslator implements Translator {
     try {
       await _manager.remove(source.cacheKey);
     } catch (e) {
-      debugPrint('EuroLLM: could not delete: $e');
+      debugPrint('$name: could not delete: $e');
     }
     _set(ModelState.notDownloaded);
   }
@@ -168,7 +217,7 @@ class EuroLlmTranslator implements Translator {
   /// Settings, never as a side effect of this.
   @override
   Future<void> prepare() async {
-    if (!await isReady()) throw StateError('EuroLLM is not downloaded');
+    if (!await isReady()) throw StateError('$name is not downloaded');
     await _loaded();
   }
 
@@ -183,7 +232,7 @@ class EuroLlmTranslator implements Translator {
         params: const ModelParams(contextSize: 2048),
         download: ModelLoadOptions(cachePolicy: ModelCachePolicy.cacheOnly),
       );
-      debugPrint('EuroLLM: loaded in ${clock.elapsedMilliseconds} ms');
+      debugPrint('$name: loaded in ${clock.elapsedMilliseconds} ms');
       return engine;
     } catch (_) {
       _engine = null; // try again next time
@@ -251,12 +300,12 @@ class EuroLlmTranslator implements Translator {
       if (mine != _latest) throw const TranslationSuperseded();
       final answer = cleanTranslation(out.toString());
       debugPrint(
-        'EuroLLM: translated ${text.length} characters in '
+        '$name: translated ${text.length} characters in '
         '${clock.elapsedMilliseconds} ms',
       );
       // Nothing usable: the next translator takes over.
       if (!isInLanguage(answer, to) || isCopy(answer, text)) {
-        throw StateError('EuroLLM gave no $to translation: "$answer"');
+        throw StateError('$name gave no $to translation: "$answer"');
       }
       return answer;
     } finally {
@@ -334,6 +383,43 @@ class EuroLlmTranslator implements Translator {
     return language == 'el'
         ? greek.length >= latin.length
         : latin.length >= greek.length;
+  }
+
+  /// A chat reply to [history] (oldest first; `mine` = the person's
+  /// messages), following [instructions], arriving bit by bit. A new chat
+  /// message or translation stops a reply still being written.
+  Stream<String> chat(
+    List<({bool mine, String text})> history, {
+    required String instructions,
+  }) async* {
+    final mine = ++_latest;
+    final engine = await _loaded();
+    if (_generating) engine.cancelGeneration();
+    final before = _idle;
+    final done = Completer<void>();
+    _idle = done.future;
+    await before;
+    try {
+      if (mine != _latest) return;
+      _generating = true;
+      await for (final chunk in engine.create([
+        LlamaChatMessage.fromText(
+          role: LlamaChatRole.system,
+          text: instructions,
+        ),
+        for (final m in history)
+          LlamaChatMessage.fromText(
+            role: m.mine ? LlamaChatRole.user : LlamaChatRole.assistant,
+            text: m.text,
+          ),
+      ], params: const GenerationParams(maxTokens: 400, temp: 0.7))) {
+        if (mine != _latest) return;
+        yield chunk.text;
+      }
+    } finally {
+      _generating = false;
+      done.complete();
+    }
   }
 
   /// The model stays loaded for the whole app; pages don't dispose it.

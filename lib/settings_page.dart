@@ -6,11 +6,10 @@ import 'package:material_ui/material_ui.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'app_settings.dart';
-import 'bottom_menu.dart';
 import 'app_text.dart';
 import 'dual_text.dart';
 import 'design_system.dart';
-import 'eurollm_translator.dart';
+import 'ai_model.dart';
 import 'language_packs.dart';
 import 'section_icon.dart';
 import 'word_sheet.dart' show showDraggableSheet;
@@ -47,150 +46,149 @@ class SettingsPage extends StatelessWidget {
 
         return Scaffold(
           backgroundColor: paper,
-          body: BottomMenu(
-            current: Section.settings,
-            child: SafeArea(
-              child: Column(
-                children: [
-                  // ── Top bar ───────────────────────────────────────────────
-                  Padding(
+          body: SafeArea(
+            child: Column(
+              children: [
+                // ── Top bar ───────────────────────────────────────────────
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(
+                    Spacing.md,
+                    Spacing.sm,
+                    Spacing.md,
+                    Spacing.sm,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      GestureDetector(
+                        onTap: () => Navigator.of(context).pop(),
+                        child: Container(
+                          width: 40,
+                          height: 40,
+                          decoration: BoxDecoration(
+                            color: gridCell,
+                            borderRadius: BorderRadius.circular(Radius.sm),
+                          ),
+                          child: Icon(Icons.arrow_back, size: 20, color: ink),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                // ── Content ───────────────────────────────────────────────
+                Expanded(
+                  child: SingleChildScrollView(
                     padding: const EdgeInsets.fromLTRB(
                       Spacing.md,
-                      Spacing.sm,
+                      0,
                       Spacing.md,
-                      Spacing.sm,
+                      Spacing.xxl,
                     ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        GestureDetector(
-                          onTap: () => Navigator.of(context).pop(),
-                          child: Container(
-                            width: 40,
-                            height: 40,
-                            decoration: BoxDecoration(
-                              color: gridCell,
-                              borderRadius: BorderRadius.circular(Radius.sm),
-                            ),
-                            child: Icon(Icons.arrow_back, size: 20, color: ink),
-                          ),
+                        // The page's title, big and bold, like Games.
+                        const SizedBox(height: Spacing.sm),
+                        DualText(
+                          (t) => AppText.upper(t.settings),
+                          style: Theme.of(context).textTheme.displayLarge,
+                          inline: true,
                         ),
-                      ],
-                    ),
-                  ),
+                        const SizedBox(height: Spacing.lg),
 
-                  // ── Content ───────────────────────────────────────────────
-                  Expanded(
-                    child: SingleChildScrollView(
-                      padding: const EdgeInsets.fromLTRB(
-                        Spacing.md,
-                        0,
-                        Spacing.md,
-                        BottomMenu.space, // clear of the bottom menu
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          // The page's title, big and bold, like Games.
-                          const SizedBox(height: Spacing.sm),
-                          DualText(
-                            (t) => AppText.upper(t.settings),
-                            style: Theme.of(context).textTheme.displayLarge,
-                            inline: true,
-                          ),
-                          const SizedBox(height: Spacing.lg),
-
-                          _SettingsCard(
-                            key: const Key('settings-language'),
-                            icon: Section.language,
-                            title: (t) => t.language,
-                            subtitle: (t) => settings.secondaryLanguage == null
-                                ? t.languageName(
+                        _SettingsCard(
+                          key: const Key('settings-language'),
+                          icon: Section.language,
+                          title: (t) => t.language,
+                          subtitle: (t) => settings.secondaryLanguage == null
+                              ? t.languageName(
+                                  settings.languageInUse(codeInUse).code,
+                                )
+                              // Each line names the languages in its own
+                              // language: "English · secondary: Greek" /
+                              // "Αγγλικά · δευτερεύουσα: Ελληνικά".
+                              : t.withSecondary(
+                                  t.languageName(
                                     settings.languageInUse(codeInUse).code,
-                                  )
-                                // Each line names the languages in its own
-                                // language: "English · secondary: Greek" /
-                                // "Αγγλικά · δευτερεύουσα: Ελληνικά".
-                                : t.withSecondary(
-                                    t.languageName(
-                                      settings.languageInUse(codeInUse).code,
-                                    ),
-                                    t.languageName(settings.secondaryLanguage!),
                                   ),
-                            trailing: Icon(Icons.chevron_right, color: ink),
-                            onTap: () => showLanguagePicker(context),
-                          ),
-                          const SizedBox(height: Spacing.md),
+                                  t.languageName(settings.secondaryLanguage!),
+                                ),
+                          trailing: Icon(Icons.chevron_right, color: ink),
+                          onTap: () => showLanguagePicker(context),
+                        ),
+                        const SizedBox(height: Spacing.sm),
 
-                          _SettingsCard(
-                            key: const Key('settings-dark-mode'),
-                            icon: Section.darkMode,
-                            title: (t) => t.darkMode,
-                            subtitle: (t) => isDark ? t.on : t.off,
-                            trailing: Switch(
-                              value: isDark,
-                              activeThumbColor: clay,
-                              onChanged: settings.setDarkMode,
-                            ),
-                            onTap: () => settings.setDarkMode(!isDark),
+                        _SettingsCard(
+                          key: const Key('settings-dark-mode'),
+                          icon: Section.darkMode,
+                          title: (t) => t.darkMode,
+                          subtitle: (t) => isDark ? t.on : t.off,
+                          trailing: Switch(
+                            value: isDark,
+                            activeThumbColor: clay,
+                            onChanged: settings.setDarkMode,
                           ),
-                          const SizedBox(height: Spacing.md),
-                          _FontSizeCard(settings: settings),
-                          const SizedBox(height: Spacing.md),
-                          _AiTranslatorCard(
-                            settings: settings,
-                            model: EuroLlmTranslator.instance,
-                          ),
+                          onTap: () => settings.setDarkMode(!isDark),
+                        ),
+                        const SizedBox(height: Spacing.sm),
+                        _FontSizeCard(settings: settings),
+                        const SizedBox(height: Spacing.sm),
+                        // The picked model (a new card when it changes).
+                        _AiTranslatorCard(
+                          key: ValueKey(AiModel.instance.id),
+                          settings: settings,
+                          model: AiModel.instance,
+                        ),
 
-                          // ── Separator ───────────────────────────────────
-                          const SizedBox(height: Spacing.lg),
-                          Divider(
-                            color: brightness.resolve(
-                              light: AppColors.hairlineLight,
-                              dark: AppColors.hairlineDark,
-                            ),
-                            height: 0,
+                        // ── Separator ───────────────────────────────────
+                        const SizedBox(height: Spacing.lg),
+                        Divider(
+                          color: brightness.resolve(
+                            light: AppColors.hairlineLight,
+                            dark: AppColors.hairlineDark,
                           ),
-                          const SizedBox(height: Spacing.lg),
+                          height: 0,
+                        ),
+                        const SizedBox(height: Spacing.lg),
 
-                          _SettingsCard(
-                            key: const Key('settings-feedback'),
-                            icon: Section.feedback,
-                            title: (t) => t.feedback,
-                            subtitle: (t) => t.feedbackSubtitle,
-                            trailing: Icon(Icons.mail_outline, color: ink),
-                            onTap: () => _sendFeedback(context),
-                          ),
-                          const SizedBox(height: Spacing.md),
+                        _SettingsCard(
+                          key: const Key('settings-feedback'),
+                          icon: Section.feedback,
+                          title: (t) => t.feedback,
+                          subtitle: (t) => t.feedbackSubtitle,
+                          trailing: Icon(Icons.mail_outline, color: ink),
+                          onTap: () => _sendFeedback(context),
+                        ),
+                        const SizedBox(height: Spacing.sm),
 
-                          _SettingsCard(
-                            key: const Key('settings-about'),
-                            icon: Section.about,
-                            title: (t) => t.aboutTheApp,
-                            subtitle: (t) => t.aboutTheAppSubtitle,
-                            trailing: Icon(Icons.chevron_right, color: ink),
-                            // The app's credits (the translator's licence
-                            // asks for one) and the licences of what it uses.
-                            onTap: () {
-                              final t = AppText.of(context);
-                              showAboutDialog(
-                                context: context,
-                                applicationName: 'Lex Hopper',
-                                children: [
+                        _SettingsCard(
+                          key: const Key('settings-about'),
+                          icon: Section.about,
+                          title: (t) => t.aboutTheApp,
+                          subtitle: (t) => t.aboutTheAppSubtitle,
+                          trailing: Icon(Icons.chevron_right, color: ink),
+                          // The app's credits (the translator's licence
+                          // asks for one) and the licences of what it uses.
+                          onTap: () {
+                            final t = AppText.of(context);
+                            showAboutDialog(
+                              context: context,
+                              applicationName: 'Lex Hopper',
+                              children: [
                                 Text(t.translatorCredit),
                                 const SizedBox(height: Spacing.sm),
                                 Text(t.packCredits),
                               ],
-                              );
-                            },
-                          ),
-                          const SizedBox(height: Spacing.xxl),
-                        ],
-                      ),
+                            );
+                          },
+                        ),
+                        const SizedBox(height: Spacing.xxl),
+                      ],
                     ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         );
@@ -238,14 +236,19 @@ void showLanguagePicker(BuildContext context) {
   );
 }
 
-/// AI translator: a switch that downloads EuroLLM (after asking) and then
-/// makes the Translator use it. Shows the download's progress; turning it
-/// off asks whether to keep or delete the 1 GB model.
+/// AI model: a switch that downloads the picked model (after asking) and
+/// then makes the Translator and Chat with AI use it, and a choice between
+/// EuroLLM and Gemma 4. Shows the download's progress; turning it off asks
+/// whether to keep or delete the model.
 class _AiTranslatorCard extends StatefulWidget {
   final AppSettings settings;
-  final EuroLlmTranslator model;
+  final AiModel model;
 
-  const _AiTranslatorCard({required this.settings, required this.model});
+  const _AiTranslatorCard({
+    super.key,
+    required this.settings,
+    required this.model,
+  });
 
   @override
   State<_AiTranslatorCard> createState() => _AiTranslatorCardState();
@@ -264,13 +267,13 @@ class _AiTranslatorCardState extends State<_AiTranslatorCard> {
       await widget.settings.setAiTranslator(true);
       return;
     }
-    final mb = EuroLlmTranslator.sizeMb;
+    final mb = model.sizeMb;
     final ok = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
         key: const Key('ai-download-dialog'),
-        title: DualText((t) => t.aiDownloadTitle),
-        content: DualText((t) => t.aiDownloadBody(mb)),
+        title: DualText((t) => t.aiDownloadTitle(model.name)),
+        content: DualText((t) => t.aiDownloadBody(model.name, mb)),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(false),
@@ -289,6 +292,15 @@ class _AiTranslatorCardState extends State<_AiTranslatorCard> {
     await model.download();
   }
 
+  /// Picks [m]. If the AI is on and [m] isn't on the phone yet, it's
+  /// turned off until [m] is downloaded (the switch asks first).
+  Future<void> _pick(AiModel m) async {
+    if (m.id == widget.model.id) return;
+    final on = widget.settings.aiTranslator;
+    await widget.settings.setAiModel(m.id);
+    if (on && !await m.isReady()) await widget.settings.setAiTranslator(false);
+  }
+
   Future<void> _turnOff() async {
     final model = widget.model;
     if (model.state == ModelState.downloading) model.cancelDownload();
@@ -296,7 +308,7 @@ class _AiTranslatorCardState extends State<_AiTranslatorCard> {
       await widget.settings.setAiTranslator(false);
       return;
     }
-    final mb = EuroLlmTranslator.sizeMb;
+    final mb = model.sizeMb;
     final delete = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
@@ -333,13 +345,16 @@ class _AiTranslatorCardState extends State<_AiTranslatorCard> {
         final state = model.state;
         final tooSmall = state == ModelState.tooLittleMemory;
         final TextPick subtitle = switch ((on, state)) {
-          (_, ModelState.tooLittleMemory) => (t) => t.aiTranslatorNeedsMemory,
+          (_, ModelState.tooLittleMemory) => (t) => t.aiTranslatorNeedsMemory(
+            (model.minMemoryKb / (1024 * 1024)).ceil(),
+          ),
           (_, ModelState.downloading) => (t) => t.aiTranslatorDownloading(
+            model.name,
             model.progress == null ? null : (model.progress! * 100).floor(),
           ),
           (true, ModelState.failed) => (t) => t.aiTranslatorFailed,
           (true, ModelState.checking) => (t) => t.aiTranslatorChecking,
-          (true, ModelState.ready) => (t) => t.aiTranslatorOn,
+          (true, ModelState.ready) => (t) => t.aiTranslatorOn(model.name),
           _ => (t) => t.aiTranslatorOff,
         };
         return Column(
@@ -365,6 +380,23 @@ class _AiTranslatorCardState extends State<_AiTranslatorCard> {
                   on ? _turnOff() : _turnOn();
                 }
               },
+            ),
+            const SizedBox(height: Spacing.xs),
+            // Which model: EuroLLM or Gemma 4.
+            Row(
+              children: [
+                for (final (i, m) in AiModel.all.indexed) ...[
+                  if (i > 0) const SizedBox(width: Spacing.sm),
+                  Expanded(
+                    child: _ModelChoice(
+                      key: Key('ai-model-${m.id}'),
+                      model: m,
+                      picked: m.id == model.id,
+                      onTap: () => _pick(m),
+                    ),
+                  ),
+                ],
+              ],
             ),
             if (state == ModelState.downloading)
               Padding(
@@ -427,11 +459,14 @@ class _SettingsCard extends StatelessWidget {
             width: 0.5,
           ),
         ),
-        padding: const EdgeInsets.all(Spacing.md),
+        padding: const EdgeInsets.symmetric(
+          horizontal: Spacing.md - 4,
+          vertical: Spacing.sm + 2,
+        ),
         child: Row(
           children: [
-            SectionIcon(icon),
-            const SizedBox(width: Spacing.md),
+            SectionIcon(icon, size: 46),
+            const SizedBox(width: Spacing.sm + 4),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -496,14 +531,17 @@ class _FontSizeCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(Radius.sm),
         border: Border.all(color: hairline, width: 0.5),
       ),
-      padding: const EdgeInsets.all(Spacing.md),
+      padding: const EdgeInsets.symmetric(
+        horizontal: Spacing.md - 4,
+        vertical: Spacing.sm + 2,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             children: [
-              const SectionIcon(Section.fontSize),
-              const SizedBox(width: Spacing.md),
+              const SectionIcon(Section.fontSize, size: 46),
+              const SizedBox(width: Spacing.sm + 4),
               Expanded(
                 child: DualText(
                   (t) => t.fontSize,
@@ -513,7 +551,7 @@ class _FontSizeCard extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(height: Spacing.md),
+          const SizedBox(height: Spacing.sm),
           Row(
             children: [
               for (final (i, option) in FontSizeOption.values.indexed) ...[
@@ -681,23 +719,28 @@ class _LanguageList extends StatelessWidget {
     );
   }
 
-  /// The languages in list order: main, secondary, then the others.
+  /// The languages in list order: main, secondary, then the ones on the
+  /// phone, the ones to download, and the ones coming soon — each group in
+  /// alphabetical order of its name in the app's language.
   List<AppLanguage> _ordered(BuildContext context, AppSettings settings) {
     final main = Localizations.localeOf(context).languageCode;
     final second = settings.secondaryLanguage;
-    int rank(AppLanguage l) => l.code == main
+    final t = AppText.of(context);
+    int group(AppLanguage l) => l.code == main
         ? 0
         : l.code == second
         ? 1
-        : 2;
-    final list = [...appLanguages];
-    // Stable: keeps the original order among the rest.
-    final indexed = list.asMap().entries.toList()
-      ..sort((a, b) {
-        final r = rank(a.value).compareTo(rank(b.value));
-        return r != 0 ? r : a.key.compareTo(b.key);
-      });
-    return [for (final e in indexed) e.value];
+        : l.available
+        ? 2
+        : l.isPack
+        ? 3
+        : 4;
+    return [...appLanguages]..sort((a, b) {
+      final g = group(a).compareTo(group(b));
+      return g != 0
+          ? g
+          : t.languageName(a.code).compareTo(t.languageName(b.code));
+    });
   }
 
   /// Small label next to a language: "Main" / "Secondary".
@@ -836,8 +879,14 @@ class _PackControl extends StatelessWidget {
   Widget build(BuildContext context) {
     final packs = LanguagePacks.instance;
     final b = Theme.of(context).brightness;
-    final clay = b.resolve(light: AppColors.clayLight, dark: AppColors.clayDark);
-    final muted = b.resolve(light: AppColors.mutedLight, dark: AppColors.mutedDark);
+    final clay = b.resolve(
+      light: AppColors.clayLight,
+      dark: AppColors.clayDark,
+    );
+    final muted = b.resolve(
+      light: AppColors.mutedLight,
+      dark: AppColors.mutedDark,
+    );
     final hairline = b.resolve(
       light: AppColors.hairlineLight,
       dark: AppColors.hairlineDark,
@@ -901,3 +950,70 @@ class _PackControl extends StatelessWidget {
   }
 }
 
+/// One AI model to pick: its name and size, outlined when picked.
+class _ModelChoice extends StatelessWidget {
+  final AiModel model;
+  final bool picked;
+  final VoidCallback onTap;
+
+  const _ModelChoice({
+    super.key,
+    required this.model,
+    required this.picked,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final b = Theme.of(context).brightness;
+    final clay = b.resolve(
+      light: AppColors.clayLight,
+      dark: AppColors.clayDark,
+    );
+    final ink = b.resolve(light: AppColors.inkLight, dark: AppColors.inkDark);
+    final muted = b.resolve(
+      light: AppColors.mutedLight,
+      dark: AppColors.mutedDark,
+    );
+    final hairline = b.resolve(
+      light: AppColors.hairlineLight,
+      dark: AppColors.hairlineDark,
+    );
+    final card = b.resolve(
+      light: AppColors.gridCellLight,
+      dark: AppColors.gridCellDark,
+    );
+    return GestureDetector(
+      onTap: onTap,
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 150),
+        padding: const EdgeInsets.symmetric(vertical: Spacing.sm),
+        decoration: BoxDecoration(
+          color: card,
+          borderRadius: BorderRadius.circular(Radius.sm),
+          border: Border.all(
+            color: picked ? clay : hairline,
+            width: picked ? 1.5 : 0.5,
+          ),
+        ),
+        child: Column(
+          children: [
+            Text(
+              model.name,
+              style: TextStyle(
+                fontFamily: 'Inter',
+                fontSize: 15,
+                fontWeight: FontWeight.w600,
+                color: picked ? clay : ink,
+              ),
+            ),
+            Text(
+              AppText.of(context).aiModelSize(model.sizeMb),
+              style: TextStyle(fontFamily: 'Inter', fontSize: 12, color: muted),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

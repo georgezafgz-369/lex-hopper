@@ -5,7 +5,9 @@ void main() {
   group('cleanForTranslation', () {
     test('curly quotes, dashes and the ellipsis become plain', () {
       expect(
-        cleanForTranslation('Gray for \u201Ccoming soon\u201D \u2014 it\u2019s fine\u2026'),
+        cleanForTranslation(
+          'Gray for \u201Ccoming soon\u201D \u2014 it\u2019s fine\u2026',
+        ),
         'Gray for "coming soon" - it\'s fine...',
       );
     });

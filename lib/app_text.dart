@@ -295,29 +295,35 @@ class AppText {
   );
   String get delete => _('Delete', 'Διαγραφή', 'Borrar', 'Löschen');
 
-  // Settings > AI translator (EuroLLM).
+  // Settings > AI model (EuroLLM or Gemma 4): translates and chats.
   String get aiTranslator =>
-      _('AI translator', 'Μεταφραστής AI', 'Traductor con IA', 'KI-Übersetzer');
+      _('AI model', 'Μοντέλο AI', 'Modelo de IA', 'KI-Modell');
   String get aiTranslatorChecking =>
       _('Checking…', 'Έλεγχος…', 'Comprobando…', 'Prüfe…');
   String get aiTranslatorOff => _('Off', 'Ανενεργός', 'Desactivado', 'Aus');
-  String get aiTranslatorOn => _(
-    'On · EuroLLM, works without internet',
-    'Ενεργός · EuroLLM, λειτουργεί χωρίς ίντερνετ',
-    'Activado · EuroLLM, funciona sin internet',
-    'An · EuroLLM, funktioniert ohne Internet',
+  String aiTranslatorOn(String model) => _(
+    'On · $model, works without internet',
+    'Ενεργό · $model, λειτουργεί χωρίς ίντερνετ',
+    'Activado · $model, funciona sin internet',
+    'An · $model, funktioniert ohne Internet',
   );
-  String aiTranslatorDownloading(int? percent) => _(
-    'Downloading EuroLLM… ${percent == null ? '' : '$percent%'}',
-    'Λήψη EuroLLM… ${percent == null ? '' : '$percent%'}',
-    'Descargando EuroLLM… ${percent == null ? '' : '$percent%'}',
-    'Lade EuroLLM… ${percent == null ? '' : '$percent%'}',
+  String aiTranslatorDownloading(String model, int? percent) => _(
+    'Downloading $model… ${percent == null ? '' : '$percent%'}',
+    'Λήψη $model… ${percent == null ? '' : '$percent%'}',
+    'Descargando $model… ${percent == null ? '' : '$percent%'}',
+    'Lade $model… ${percent == null ? '' : '$percent%'}',
   );
-  String get aiTranslatorNeedsMemory => _(
-    'Needs a phone with at least 4 GB of memory.',
-    'Χρειάζεται κινητό με τουλάχιστον 4 GB μνήμης.',
-    'Necesita un teléfono con al menos 4 GB de memoria.',
-    'Braucht ein Handy mit mindestens 4 GB Speicher.',
+  String aiTranslatorNeedsMemory(int gb) => _(
+    'Needs a phone with at least $gb GB of memory.',
+    'Χρειάζεται κινητό με τουλάχιστον $gb GB μνήμης.',
+    'Necesita un teléfono con al menos $gb GB de memoria.',
+    'Braucht ein Handy mit mindestens $gb GB Speicher.',
+  );
+  String aiModelSize(int mb) => _(
+    '${(mb / 1000).toStringAsFixed(1)} GB',
+    '${(mb / 1000).toStringAsFixed(1)} GB',
+    '${(mb / 1000).toStringAsFixed(1)} GB',
+    '${(mb / 1000).toStringAsFixed(1)} GB',
   );
   String get aiTranslatorFailed => _(
     'Download stopped. Tap to try again.',
@@ -325,25 +331,27 @@ class AppText {
     'La descarga se detuvo. Toca para intentarlo de nuevo.',
     'Download angehalten. Tippe, um es erneut zu versuchen.',
   );
-  String get aiDownloadTitle => _(
-    'Download the AI translator?',
-    'Λήψη του μεταφραστή AI;',
-    '¿Descargar el traductor con IA?',
-    'KI-Übersetzer herunterladen?',
+  String aiDownloadTitle(String model) => _(
+    'Download $model?',
+    'Λήψη: $model;',
+    '¿Descargar $model?',
+    '$model herunterladen?',
   );
-  String aiDownloadBody(int mb) => _(
-    'EuroLLM reads the whole sentence, so it picks the right sense of a '
-        'word. It is a one-time download of about $mb MB (Wi-Fi '
-        'recommended); after that it works without internet.',
-    'Το EuroLLM διαβάζει όλη την πρόταση, οπότε διαλέγει τη σωστή σημασία '
-        'κάθε λέξης. Κατεβαίνει μία φορά, περίπου $mb MB (καλύτερα με '
-        'Wi-Fi)· μετά λειτουργεί χωρίς ίντερνετ.',
-    'EuroLLM lee la frase entera, así que elige el sentido correcto de '
-        'cada palabra. Se descarga una vez, unos $mb MB (mejor con Wi-Fi); '
-        'después funciona sin internet.',
-    'EuroLLM liest den ganzen Satz und wählt so die richtige Bedeutung '
-        'jedes Worts. Einmaliger Download von etwa $mb MB (am besten mit '
-        'WLAN); danach funktioniert er ohne Internet.',
+  String aiDownloadBody(String model, int mb) => _(
+    '$model reads the whole sentence, so it picks the right sense of a '
+        'word, and it answers in Chat with AI. It is a one-time download '
+        'of about $mb MB (Wi-Fi recommended); after that it works without '
+        'internet.',
+    'Το $model διαβάζει όλη την πρόταση, οπότε διαλέγει τη σωστή σημασία '
+        'κάθε λέξης, και απαντά στη Συζήτηση με AI. Κατεβαίνει μία φορά, '
+        'περίπου $mb MB (καλύτερα με Wi-Fi)· μετά λειτουργεί χωρίς ίντερνετ.',
+    '$model lee la frase entera, así que elige el sentido correcto de '
+        'cada palabra, y responde en el chat con la IA. Se descarga una vez, '
+        'unos $mb MB (mejor con Wi-Fi); después funciona sin internet.',
+    '$model liest den ganzen Satz und wählt so die richtige Bedeutung '
+        'jedes Worts, und antwortet im Chat mit KI. Einmaliger Download von '
+        'etwa $mb MB (am besten mit WLAN); danach funktioniert er ohne '
+        'Internet.',
   );
   String get download => _('Download', 'Λήψη', 'Descargar', 'Herunterladen');
   String get cancel => _('Cancel', 'Άκυρο', 'Cancelar', 'Abbrechen');
@@ -856,6 +864,79 @@ class AppText {
     'No se encontró ninguna app de correo. Escríbenos a $email',
     'Keine E-Mail-App gefunden. Schreib uns an $email',
   );
+  String get chatWithAi =>
+      _('Chat with AI', 'Συζήτηση με AI', 'Chatea con la IA', 'Chat mit KI');
+  String get chatWithAiSubtitle => _(
+    'Practise a language by chatting.',
+    'Εξασκήσου σε μια γλώσσα συζητώντας.',
+    'Practica un idioma conversando.',
+    'Übe eine Sprache im Gespräch.',
+  );
+  String get chatHello => _(
+    'Hi! Let’s practise.',
+    'Γεια! Ας εξασκηθούμε.',
+    '¡Hola! Vamos a practicar.',
+    'Hallo! Lass uns üben.',
+  );
+  String get chatIntro => _(
+    'Write in any language you’re learning. I’ll answer, and gently fix '
+        'your mistakes.',
+    'Γράψε σε όποια γλώσσα μαθαίνεις. Θα σου απαντώ και θα διορθώνω '
+        'απαλά τα λάθη σου.',
+    'Escribe en el idioma que estés aprendiendo. Te responderé y '
+        'corregiré tus errores con suavidad.',
+    'Schreib in der Sprache, die du lernst. Ich antworte und korrigiere '
+        'sanft deine Fehler.',
+  );
+  String get chatHint => _(
+    'Write a message…',
+    'Γράψε ένα μήνυμα…',
+    'Escribe un mensaje…',
+    'Schreib eine Nachricht…',
+  );
+  String get chatStarterCafe => _(
+    'Let’s order a coffee in a café',
+    'Ας παραγγείλουμε καφέ σε ένα καφέ',
+    'Pidamos un café en una cafetería',
+    'Lass uns im Café einen Kaffee bestellen',
+  );
+  String get chatStarterCorrect => _(
+    'Correct my sentence',
+    'Διόρθωσε την πρότασή μου',
+    'Corrige mi frase',
+    'Korrigiere meinen Satz',
+  );
+  String get chatStarterWord => _(
+    'Teach me a new word',
+    'Μάθε μου μια καινούργια λέξη',
+    'Enséñame una palabra nueva',
+    'Bring mir ein neues Wort bei',
+  );
+  String get chatStarterTravel => _(
+    'Help me ask for directions',
+    'Βοήθησέ με να ρωτήσω πώς θα πάω κάπου',
+    'Ayúdame a pedir indicaciones',
+    'Hilf mir, nach dem Weg zu fragen',
+  );
+  String get chatNoAi => _(
+    'To chat, turn on an AI model in Settings > AI model (EuroLLM or '
+        'Gemma 4). It downloads once and then works without internet.',
+    'Για να συζητήσουμε, ενεργοποίησε ένα μοντέλο AI στις Ρυθμίσεις > '
+        'Μοντέλο AI (EuroLLM ή Gemma 4). Κατεβαίνει μία φορά και μετά '
+        'λειτουργεί χωρίς ίντερνετ.',
+    'Para chatear, activa un modelo de IA en Ajustes > Modelo de IA '
+        '(EuroLLM o Gemma 4). Se descarga una vez y luego funciona sin '
+        'internet.',
+    'Zum Chatten schalte in Einstellungen > KI-Modell ein KI-Modell ein '
+        '(EuroLLM oder Gemma 4). Es wird einmal geladen und funktioniert '
+        'dann ohne Internet.',
+  );
+  String get chatFailed => _(
+    'Sorry, I couldn’t answer that. Try again?',
+    'Συγγνώμη, δεν μπόρεσα να απαντήσω. Ξανά;',
+    'Lo siento, no pude responder. ¿Otra vez?',
+    'Entschuldige, das konnte ich nicht beantworten. Noch einmal?',
+  );
   String get goToTop => _('Go to top', 'Στην αρχή', 'Ir arriba', 'Nach oben');
   // Downloadable languages (Settings > Language).
   String downloadLanguageTitle(String name) => _(
@@ -880,10 +961,6 @@ class AppText {
     'Quitar del teléfono (libera $mb MB)',
     'Vom Handy entfernen (gibt $mb MB frei)',
   );
-  String get openMenu =>
-      _('Open the menu', 'Άνοιγμα μενού', 'Abrir el menú', 'Menü öffnen');
-  String get closeMenu =>
-      _('Close the menu', 'Κλείσιμο μενού', 'Cerrar el menú', 'Menü schließen');
   String get packCredits => _(
     'Downloadable languages: Spanish words from the Multilingual Central '
         'Repository (CC BY 3.0); German words and definitions from OdeNet '

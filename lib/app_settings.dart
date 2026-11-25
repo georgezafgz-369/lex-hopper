@@ -21,8 +21,7 @@ class AppLanguage {
   bool get isPack => !builtIn && LanguagePacks.instance.offers(code);
 
   /// Can be picked now.
-  bool get available =>
-      builtIn || LanguagePacks.instance.isInstalled(code);
+  bool get available => builtIn || LanguagePacks.instance.isInstalled(code);
 }
 
 /// Where Settings > Feedback sends email.
@@ -61,6 +60,7 @@ class AppSettings extends ChangeNotifier {
   static const _fontSizeKey = 'settings_font_size';
   static const _secondaryKey = 'settings_secondary_language';
   static const _aiTranslatorKey = 'settings_ai_translator';
+  static const _aiModelKey = 'settings_ai_model';
 
   /// True = always dark, false = always light, null = follow the phone
   /// (until the user first flips the switch).
@@ -82,6 +82,10 @@ class AppSettings extends ChangeNotifier {
   /// Off until turned on.
   bool get aiTranslator => _aiTranslator;
   bool _aiTranslator = false;
+
+  /// Which AI model: "eurollm" (the first) or "gemma4".
+  String get aiModel => _aiModel;
+  String _aiModel = 'eurollm';
 
   bool? get darkMode => _darkMode;
   String? get language => _language;
@@ -131,6 +135,7 @@ class AppSettings extends ChangeNotifier {
     _language = prefs.getString(_languageKey);
     _secondary = prefs.getString(_secondaryKey);
     _aiTranslator = prefs.getBool(_aiTranslatorKey) ?? false;
+    _aiModel = prefs.getString(_aiModelKey) ?? 'eurollm';
     final size = prefs.getString(_fontSizeKey);
     _fontSize = FontSizeOption.values.firstWhere(
       (o) => o.name == size,
@@ -151,6 +156,13 @@ class AppSettings extends ChangeNotifier {
     notifyListeners();
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_aiTranslatorKey, on);
+  }
+
+  Future<void> setAiModel(String id) async {
+    _aiModel = id;
+    notifyListeners();
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_aiModelKey, id);
   }
 
   Future<void> setFontSize(FontSizeOption option) async {

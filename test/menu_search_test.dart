@@ -30,9 +30,7 @@ void main() {
       'crossword-menu-search',
     ),
   ]) {
-    testWidgets('$name menu: search bar beside Back, searches', (
-      tester,
-    ) async {
+    testWidgets('$name menu: search bar beside Back, searches', (tester) async {
       await tester.binding.setSurfaceSize(const Size(400, 900));
       await tester.pumpWidget(MaterialApp(home: page));
       await tester.pumpAndSettle();

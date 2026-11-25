@@ -7,7 +7,7 @@ import 'dart:io';
 
 import 'package:crypto/crypto.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:lex_hopper/eurollm_translator.dart' show ModelState;
+import 'package:lex_hopper/ai_model.dart' show ModelState;
 import 'package:lex_hopper/opus_mt_service.dart';
 
 void main() {

@@ -25,7 +25,13 @@ String cleanForTranslation(String text) {
     // backtick (Markdown code marks)
     '\u0060': '',
     // hyphens, dashes, minus
-    '\u2010': '-', '\u2011': '-', '\u2012': '-', '\u2013': '-', '\u2014': '-', '\u2015': '-', '\u2212': '-',
+    '\u2010': '-',
+    '\u2011': '-',
+    '\u2012': '-',
+    '\u2013': '-',
+    '\u2014': '-',
+    '\u2015': '-',
+    '\u2212': '-',
     // ellipsis
     '\u2026': '...',
     // Greek question mark, typed as ;
@@ -51,9 +57,33 @@ final _bullet = RegExp(r'^(?:[-•*·]|\d{1,3}[.)])\s+');
 
 /// Words ending in "." that don't end a sentence.
 const _abbreviations = {
-  'mr', 'mrs', 'ms', 'dr', 'prof', 'st', 'vs', 'etc', 'e.g', 'i.e', 'no',
-  'fig', 'approx', 'inc', 'ltd', 'jr', 'sr', 'κ', 'κα', 'δρ', 'π.χ', 'κλπ',
-  'κτλ', 'βλ', 'σελ', 'αρ', 'τηλ',
+  'mr',
+  'mrs',
+  'ms',
+  'dr',
+  'prof',
+  'st',
+  'vs',
+  'etc',
+  'e.g',
+  'i.e',
+  'no',
+  'fig',
+  'approx',
+  'inc',
+  'ltd',
+  'jr',
+  'sr',
+  'κ',
+  'κα',
+  'δρ',
+  'π.χ',
+  'κλπ',
+  'κτλ',
+  'βλ',
+  'σελ',
+  'αρ',
+  'τηλ',
 };
 
 /// The sentences of one line. A sentence ends at ".", "!" or "?" (and ";",

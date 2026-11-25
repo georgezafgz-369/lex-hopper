@@ -17,7 +17,7 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'package:material_ui/material_ui.dart';
 import 'package:path_provider/path_provider.dart';
 
-import 'eurollm_translator.dart' show ModelState;
+import 'ai_model.dart' show ModelState;
 import 'opus_mt_translator.dart';
 import 'translator_service.dart';
 

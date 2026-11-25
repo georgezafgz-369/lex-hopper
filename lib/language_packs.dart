@@ -20,7 +20,7 @@ import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
 
 import 'dictionary_service.dart';
-import 'eurollm_translator.dart' show ModelState;
+import 'ai_model.dart' show ModelState;
 import 'opus_mt_service.dart';
 
 /// One language's download.
@@ -107,9 +107,9 @@ class LanguagePacks extends ChangeNotifier {
       '${(await getApplicationSupportDirectory()).path}/opus-mt';
 
   static Future<Map<String, LanguagePack>> _bundledManifest() async {
-    final j =
-        jsonDecode(await rootBundle.loadString(manifestAsset))
-            as Map<String, dynamic>;
+    final j = jsonDecode(
+      await rootBundle.loadString(manifestAsset),
+    ) as Map<String, dynamic>;
     return {
       for (final MapEntry(:key, :value) in j.entries)
         if (value is Map<String, dynamic> && value['dictionary'] != null)
@@ -120,6 +120,7 @@ class LanguagePacks extends ChangeNotifier {
   final Future<String> Function() _dictionaryDirOf, _translatorRootOf;
   final Future<Map<String, LanguagePack>> Function() _manifestOf;
   final Uri Function(LanguagePack) _urlOf;
+
   /// Where a translator file comes from (tests); Hugging Face otherwise.
   final Uri Function(OpusMtManifest m, String path)? translatorUrlOf;
 
