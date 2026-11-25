@@ -576,8 +576,9 @@ class _WordDetailPageState extends State<WordDetailPage> {
             for (final sentence in _moreExamples)
               Padding(
                 padding: const EdgeInsets.only(bottom: 6),
-                child: Text(
+                child: _sayable(
                   '“$sentence”',
+                  widget.language,
                   style: TextStyle(
                     fontSize: 14,
                     fontStyle: FontStyle.italic,
@@ -709,8 +710,9 @@ class _WordDetailPageState extends State<WordDetailPage> {
                   const SizedBox(height: 4),
                 ],
                 _sectionLabel((t) => t.meaningLabel, muted),
-                Text(
+                _sayable(
                   entry.meaning,
+                  widget.language,
                   style: TextStyle(
                     fontSize: 15,
                     color: ink,
@@ -722,8 +724,9 @@ class _WordDetailPageState extends State<WordDetailPage> {
                 if (entry.meaningTranslation case final tr? when _showOther)
                   Padding(
                     padding: const EdgeInsets.only(top: 2),
-                    child: Text(
+                    child: _sayable(
                       tr,
+                      _other,
                       key: Key('meaning-text-translation-${entry.id}'),
                       style: TextStyle(
                         fontSize: 14,
@@ -756,8 +759,9 @@ class _WordDetailPageState extends State<WordDetailPage> {
                 for (final (i, example) in entry.examples.indexed) ...[
                   Padding(
                     padding: const EdgeInsets.only(top: 2),
-                    child: Text(
+                    child: _sayable(
                       '“$example”',
+                      widget.language,
                       style: TextStyle(
                         fontSize: 14,
                         fontStyle: FontStyle.italic,
@@ -771,8 +775,9 @@ class _WordDetailPageState extends State<WordDetailPage> {
                   if (_showOther &&
                       i < entry.exampleTranslations.length &&
                       entry.exampleTranslations[i] != null)
-                    Text(
+                    _sayable(
                       entry.exampleTranslations[i]!,
+                      _other,
                       key: Key('example-translation-${entry.id}-$i'),
                       style: TextStyle(
                         fontSize: 13,
@@ -838,6 +843,67 @@ class _WordDetailPageState extends State<WordDetailPage> {
     );
   }
 
+  /// Says [text] in [accent]; tells the user when the phone has no voice
+  /// for it.
+  Future<void> _say(String text, Accent accent) async {
+    final messenger = ScaffoldMessenger.maybeOf(context);
+    final ok = await Speech.instance.say(text, accent);
+    if (!ok) {
+      messenger?.showSnackBar(
+        SnackBar(
+          content: DualText(
+            (t) => t.noVoice(accent.name),
+            style: const TextStyle(color: Colors.white),
+            secondaryStyle: const TextStyle(
+              color: Colors.white70,
+              fontSize: 12,
+            ),
+          ),
+        ),
+      );
+    }
+  }
+
+  /// A sentence in [language] with a small speaker at its end that reads
+  /// it aloud.
+  Widget _sayable(
+    String text,
+    String language, {
+    required TextStyle style,
+    Key? key,
+  }) {
+    final accent = Accent.forLanguage(language).first;
+    final spoken = text.replaceAll(RegExp('[“”]'), '');
+    return Text.rich(
+      key: key,
+      TextSpan(
+        children: [
+          TextSpan(text: text),
+          WidgetSpan(
+            alignment: PlaceholderAlignment.middle,
+            child: Semantics(
+              button: true,
+              label: _t.listen,
+              child: InkWell(
+                customBorder: const CircleBorder(),
+                onTap: () => _say(spoken, accent),
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(6, 2, 4, 2),
+                  child: Icon(
+                    Icons.volume_up_outlined,
+                    size: (style.fontSize ?? 14) + 2,
+                    color: style.color?.withValues(alpha: 0.7),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+      style: style,
+    );
+  }
+
   /// "🔊 US" / "🔊 UK": says the word in that accent.
   Widget _speakButton(
     Accent accent, {
@@ -846,24 +912,7 @@ class _WordDetailPageState extends State<WordDetailPage> {
   }) {
     return GestureDetector(
       key: Key('speak-${accent.label}'),
-      onTap: () async {
-        final messenger = ScaffoldMessenger.maybeOf(context);
-        final ok = await Speech.instance.say(_word, accent);
-        if (!ok) {
-          messenger?.showSnackBar(
-            SnackBar(
-              content: DualText(
-                (t) => t.noVoice(accent.name),
-                style: const TextStyle(color: Colors.white),
-                secondaryStyle: const TextStyle(
-                  color: Colors.white70,
-                  fontSize: 12,
-                ),
-              ),
-            ),
-          );
-        }
-      },
+      onTap: () => _say(_word, accent),
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
         decoration: BoxDecoration(
