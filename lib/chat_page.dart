@@ -16,6 +16,7 @@ import 'app_text.dart';
 import 'design_system.dart';
 import 'dual_text.dart';
 import 'section_icon.dart';
+import 'speech.dart';
 
 class ChatPage extends StatefulWidget {
   const ChatPage({super.key});
@@ -27,15 +28,39 @@ class ChatPage extends StatefulWidget {
 /// One message: from you, or from the AI.
 typedef _Message = ({bool mine, String text});
 
-/// What the AI is told before the conversation.
-const _instructions =
-    'You are a friendly language tutor in a language-learning app. '
-    'Reply in the language the learner writes in, unless they ask for '
-    'another. Keep replies short: two or three sentences. If the learner '
-    'makes a mistake, first give the corrected sentence, then explain the '
-    'fix in one short line, then continue the conversation naturally. '
-    'When asked to role-play (a café, asking for directions), stay in the '
-    'role and ask a question back.';
+/// Language names for the AI's instructions.
+const _names = {
+  'en': 'English',
+  'el': 'Greek',
+  'es': 'Spanish',
+  'de': 'German',
+};
+
+/// What the AI is told before the conversation: the learner's main
+/// language (the app's) and the one they practise (the secondary language,
+/// or the main one when there's none).
+@visibleForTesting
+String chatInstructions({required String main, String? second}) {
+  final m = _names[main] ?? 'English';
+  final style =
+      'Keep replies short: two or three sentences. When asked to role-play '
+      '(a café, asking for directions), stay in the role and ask a question '
+      'back.';
+  if (second == null || second == main || _names[second] == null) {
+    return 'You are a friendly language tutor in a language-learning app. '
+        'The learner speaks $m. Always reply in $m. If they make a mistake, '
+        'first give the corrected sentence, then explain the fix in one '
+        'short line, then continue the conversation naturally. $style';
+  }
+  final p = _names[second]!;
+  return 'You are a friendly language tutor in a language-learning app. '
+      'The learner\'s main language is $m and they are practising $p. '
+      'Talk with them in $p, using simple $p. If they make a mistake in '
+      '$p, first give the corrected sentence in $p, then explain the fix '
+      'in one short line in $m. If they write in $m, show them how to say '
+      'it in $p and go on in $p. Never answer in any other language than '
+      '$p and $m. $style';
+}
 
 class _ChatPageState extends State<ChatPage> {
   final _input = TextEditingController();
@@ -95,7 +120,10 @@ class _ChatPageState extends State<ChatPage> {
     try {
       await for (final bit in AiModel.instance.chat(
         _messages,
-        instructions: _instructions,
+        instructions: chatInstructions(
+          main: t.code,
+          second: AppSettings.instance.secondaryLanguage,
+        ),
       )) {
         out.write(bit);
         if (!mounted) return;
@@ -112,6 +140,22 @@ class _ChatPageState extends State<ChatPage> {
       _messages.add((mine: false, text: reply.isEmpty ? t.chatFailed : reply));
     });
     _toBottom();
+  }
+
+  /// Reads [text] aloud in the practised language's voice (the secondary
+  /// language, or the main one): only the parts written in that language's
+  /// letters, so the Greek of "Καλημέρα! (Good morning!)" is read in a
+  /// Greek voice and the English left out.
+  Future<void> _speak(String text) async {
+    final main = AppText.of(context).code;
+    final language = AppSettings.instance.secondaryLanguage ?? main;
+    final accent = Accent.forLanguage(language).first;
+    final messenger = ScaffoldMessenger.maybeOf(context);
+    final noVoice = AppText.of(context).noVoice(accent.name);
+    final say = speakablePart(text, language: language, main: main);
+    if (!await Speech.instance.say(say, accent)) {
+      messenger?.showSnackBar(SnackBar(content: Text(noVoice)));
+    }
   }
 
   void _toBottom() {
@@ -208,12 +252,33 @@ class _ChatPageState extends State<ChatPage> {
                                 mine: false,
                                 text: _writing!.isEmpty ? '…' : _writing!,
                               );
-                        return _Bubble(
+                        final bubble = _Bubble(
                           text: m.text,
                           mine: m.mine,
                           fill: m.mine ? blue : card,
                           textColor: m.mine ? Colors.white : ink,
                           border: m.mine ? null : hairline,
+                        );
+                        // The AI's finished answers can be heard aloud.
+                        if (m.mine || i >= _messages.length) return bubble;
+                        return Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            bubble,
+                            Tooltip(
+                              message: t.listen,
+                              child: IconButton(
+                                key: Key('chat-speak-$i'),
+                                visualDensity: VisualDensity.compact,
+                                icon: Icon(
+                                  Icons.volume_up_outlined,
+                                  size: 20,
+                                  color: muted,
+                                ),
+                                onPressed: () => _speak(m.text),
+                              ),
+                            ),
+                          ],
                         );
                       },
                     ),
@@ -466,4 +531,30 @@ class _Bubble extends StatelessWidget {
       ),
     ),
   );
+}
+
+/// The part of an AI answer to read aloud in [language]: when only one of
+/// [language] and [main] is written in Greek letters, the pieces (sentences,
+/// lines, brackets) in [language]'s alphabet; otherwise all of it.
+@visibleForTesting
+String speakablePart(
+  String text, {
+  required String language,
+  required String main,
+}) {
+  if ((language == 'el') == (main == 'el')) return text;
+  final greek = RegExp(r'[Ͱ-Ͽἀ-῿]');
+  final latin = RegExp('[A-Za-zÀ-ÿ]');
+  final pieces = text
+      .split(RegExp(r'(?<=[.!?;])\s+|\n+|[()]'))
+      .map((p) => p.trim())
+      .where((p) => p.isNotEmpty);
+  final kept = [
+    for (final p in pieces)
+      if (language == 'el'
+          ? greek.allMatches(p).length > latin.allMatches(p).length
+          : latin.allMatches(p).length > greek.allMatches(p).length)
+        p,
+  ];
+  return kept.isEmpty ? text : kept.join(' ');
 }

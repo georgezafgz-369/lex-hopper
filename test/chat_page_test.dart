@@ -38,4 +38,42 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.textContaining('turn on an AI model'), findsOneWidget);
   });
+
+  test('the AI practises the secondary language, explaining in the main', () {
+    final both = chatInstructions(main: 'el', second: 'es');
+    expect(both, contains('main language is Greek'));
+    expect(both, contains('practising Spanish'));
+    expect(both, contains('Talk with them in Spanish'));
+    expect(both, contains('in one short line in Greek'));
+    // No secondary language: the main one only.
+    final one = chatInstructions(main: 'de');
+    expect(one, contains('Always reply in German'));
+    expect(one, isNot(contains('practising')));
+  });
+
+  testWidgets('the AI\'s answers have a listen button, yours don\'t', (
+    tester,
+  ) async {
+    await tester.binding.setSurfaceSize(const Size(400, 900));
+    await tester.pumpWidget(const MaterialApp(home: ChatPage()));
+    await tester.enterText(find.byKey(const Key('chat-input')), 'Hola');
+    await tester.tap(find.byKey(const Key('chat-send')));
+    await tester.pumpAndSettle();
+    // Message 0 is yours, 1 the reply.
+    expect(find.byKey(const Key('chat-speak-0')), findsNothing);
+    expect(find.byKey(const Key('chat-speak-1')), findsOneWidget);
+  });
+
+  test('only the practised language is read aloud', () {
+    const mixed =
+        'Καλημέρα! Τι θέλεις; (Kaliméra! Ti théleis?)\n\nWhat would you like?';
+    expect(
+      speakablePart(mixed, language: 'el', main: 'en'),
+      'Καλημέρα! Τι θέλεις;',
+    );
+    expect(
+      speakablePart('Hola, ¿qué tal?', language: 'es', main: 'en'),
+      'Hola, ¿qué tal?',
+    );
+  });
 }

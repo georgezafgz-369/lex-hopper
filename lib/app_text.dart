@@ -781,18 +781,31 @@ class AppText {
 
   /// [accent] is "american", "british" or "greek".
   String noVoice(String accent) {
-    final el = this.el;
-    final which = {
-      'american': el ? 'αμερικανική' : 'American',
-      'british': el ? 'βρετανική' : 'British',
-      'greek': el ? 'ελληνική' : 'Greek',
-    }[accent]!;
-    return el
-        ? 'Δεν υπάρχει $which φωνή σε αυτό το τηλέφωνο. Μπορείς να προσθέσεις '
-              'μία από τις ρυθμίσεις μετατροπής κειμένου σε ομιλία του '
-              'τηλεφώνου.'
-        : "No $which voice on this phone. You can add one in the phone's "
-              'text-to-speech settings.';
+    String voice(String en, String el, String es, String de) =>
+        _(en, el, es, de);
+    final which = switch (accent) {
+      'american' => voice(
+        'American',
+        'αμερικανική',
+        'estadounidense',
+        'amerikanische',
+      ),
+      'british' => voice('British', 'βρετανική', 'británica', 'britische'),
+      'greek' => voice('Greek', 'ελληνική', 'griega', 'griechische'),
+      'spanish' => voice('Spanish', 'ισπανική', 'española', 'spanische'),
+      _ => voice('German', 'γερμανική', 'alemana', 'deutsche'),
+    };
+    return _(
+      "No $which voice on this phone. You can add one in the phone's "
+          'text-to-speech settings.',
+      'Δεν υπάρχει $which φωνή σε αυτό το τηλέφωνο. Μπορείς να προσθέσεις '
+          'μία από τις ρυθμίσεις μετατροπής κειμένου σε ομιλία του '
+          'τηλεφώνου.',
+      'No hay voz $which en este teléfono. Puedes añadir una en los ajustes '
+          'de texto a voz del teléfono.',
+      'Keine $which Stimme auf diesem Handy. Du kannst eine in den '
+          'Text-zu-Sprache-Einstellungen des Handys hinzufügen.',
+    );
   }
 
   // ── Settings ──
@@ -937,6 +950,7 @@ class AppText {
     'Preparando $model…',
     '$model wird vorbereitet…',
   );
+  String get listen => _('Listen', 'Άκουσε', 'Escuchar', 'Anhören');
   String get chatFailed => _(
     'Sorry, I couldn’t answer that. Try again?',
     'Συγγνώμη, δεν μπόρεσα να απαντήσω. Ξανά;',

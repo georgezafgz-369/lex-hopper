@@ -7,6 +7,7 @@ import 'package:flutter/foundation.dart'
 import 'package:flutter/services.dart';
 import 'package:material_ui/material_ui.dart';
 
+import 'ai_model.dart';
 import 'app_settings.dart';
 import 'chat_page.dart';
 import 'database_gate.dart';
@@ -50,6 +51,8 @@ Future<void> main() async {
     ),
   );
   runApp(const LexHopper());
+  // Old AI model files the app no longer uses.
+  AiModel.removeRetired().ignore();
   // The offline translator downloads by itself, once the dictionary's
   // databases (which the first-launch screen waits for) are in.
   DictionaryService.databases

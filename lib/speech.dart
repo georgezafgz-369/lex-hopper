@@ -8,11 +8,17 @@ import 'package:flutter_tts/flutter_tts.dart';
 enum Accent {
   american('en-US', 'US'),
   british('en-GB', 'UK'),
-  greek('el-GR', 'ΕΛ');
+  greek('el-GR', 'ΕΛ'),
+  spanish('es-ES', 'ES'),
+  german('de-DE', 'DE');
 
-  /// The voices offered for a dictionary language ("en" or "el").
-  static List<Accent> forLanguage(String code) =>
-      code == 'el' ? const [greek] : const [american, british];
+  /// The voices offered for a language ("en", "el", "es", "de").
+  static List<Accent> forLanguage(String code) => switch (code) {
+    'el' => const [greek],
+    'es' => const [spanish],
+    'de' => const [german],
+    _ => const [american, british],
+  };
 
   final String locale;
   final String label;

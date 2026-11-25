@@ -82,6 +82,28 @@ class AiModel implements Translator {
 
   static final all = [euroLlm, gemma4];
 
+  /// Models the app used before (Gemma 4's GGUF build, 3.4 GB): removed
+  /// from the phone on start, so they don't keep taking space.
+  static final _retired = [
+    ModelSource.huggingFace(
+      repoId: 'google/gemma-4-E2B-it-qat-q4_0-gguf',
+      filePath: 'gemma-4-E2B_q4_0-it.gguf',
+      revision: '675cff42a74c774d6cb76f76d8eacb49b48c9b93',
+    ),
+  ];
+
+  static Future<void> removeRetired() async {
+    final manager = DefaultModelDownloadManager();
+    for (final source in _retired) {
+      try {
+        if (await manager.get(source.cacheKey) != null) {
+          await manager.remove(source.cacheKey);
+          debugPrint('AI: removed an old model (${source.cacheKey})');
+        }
+      } catch (_) {}
+    }
+  }
+
   /// The model picked in Settings.
   static AiModel get instance => all.firstWhere(
     (m) => m.id == AppSettings.instance.aiModel,
