@@ -108,7 +108,7 @@ class _WordSearchMenuPageState extends State<WordSearchMenuPage> {
                   const SizedBox(width: Spacing.sm),
                   // Dictionary search, in the middle.
                   const Expanded(
-                    child: DictionarySearchBar(
+                    child: DictionarySearchToggle(
                       fieldKey: Key('word-search-menu-search'),
                     ),
                   ),

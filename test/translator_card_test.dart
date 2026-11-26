@@ -38,7 +38,7 @@ void main() {
     await tester.tap(find.byKey(const Key('translator-card')));
     await tester.pumpAndSettle();
     expect(find.byType(TranslatorPage), findsOneWidget);
-    expect(find.byKey(const Key('translator-search')), findsOneWidget);
+    expect(find.byKey(const Key('dictionary-toggle')), findsOneWidget);
 
     await tester.tap(find.byKey(const Key('translator-back')));
     await tester.pumpAndSettle();

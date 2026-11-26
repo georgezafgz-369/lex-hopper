@@ -30,9 +30,20 @@ void main() {
       'crossword-menu-search',
     ),
   ]) {
-    testWidgets('$name menu: search bar beside Back, searches', (tester) async {
+    testWidgets('$name menu: the dictionary doodle beside Back opens a '
+        'search bar, which searches', (tester) async {
       await tester.binding.setSurfaceSize(const Size(400, 900));
       await tester.pumpWidget(MaterialApp(home: page));
+      await tester.pumpAndSettle();
+
+      // Folded: just the doodle, right of Back.
+      expect(find.byKey(Key(search)), findsNothing);
+      final doodle = find.byKey(const Key('dictionary-toggle'));
+      expect(
+        tester.getCenter(doodle).dx,
+        greaterThan(tester.getCenter(find.byKey(Key(back))).dx),
+      );
+      await tester.tap(doodle);
       await tester.pumpAndSettle();
 
       final field = find.byKey(Key(search));

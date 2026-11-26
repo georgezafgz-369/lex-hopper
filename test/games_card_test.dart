@@ -59,6 +59,8 @@ void main() {
     await tester.tap(find.byKey(const Key('games-card')));
     await tester.pumpAndSettle();
 
+    await tester.tap(find.byKey(const Key('dictionary-toggle')));
+    await tester.pumpAndSettle();
     final field = find.byKey(const Key('games-search'));
     expect(field, findsOneWidget);
     // It sits right of the back button (no Home button any more).

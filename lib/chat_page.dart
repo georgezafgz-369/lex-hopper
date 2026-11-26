@@ -14,6 +14,7 @@ import 'ai_model.dart';
 import 'app_settings.dart';
 import 'app_text.dart';
 import 'design_system.dart';
+import 'dictionary_search_bar.dart';
 import 'dual_text.dart';
 import 'opus_mt_service.dart';
 import 'section_icon.dart';
@@ -375,12 +376,14 @@ class _ChatPageState extends State<ChatPage> {
                       child: Icon(Icons.arrow_back, size: 20, color: ink),
                     ),
                   ),
-                  const SizedBox(width: Spacing.md),
+                  const SizedBox(width: Spacing.sm),
                   Expanded(
-                    child: DualText(
-                      (t) => AppText.upper(t.chatWithAi),
-                      style: Theme.of(context).textTheme.displayMedium,
-                      inline: true,
+                    child: DictionarySearchToggle(
+                      beside: DualText(
+                        (t) => AppText.upper(t.chatWithAi),
+                        style: Theme.of(context).textTheme.displayMedium,
+                        inline: true,
+                      ),
                     ),
                   ),
                 ],

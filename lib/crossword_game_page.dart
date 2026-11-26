@@ -14,6 +14,7 @@ import 'dual_text.dart';
 import 'design_system.dart';
 import 'crossword_maker.dart';
 import 'crossword_puzzle.dart';
+import 'dictionary_search_bar.dart';
 import 'crossword_save.dart';
 import 'puzzle_themes.dart';
 import 'dictionary_page.dart';
@@ -799,51 +800,30 @@ class _CrosswordGamePageState extends State<CrosswordGamePage> {
                         Spacing.md,
                         Spacing.sm,
                       ),
-                      child: Row(
+                      child: Stack(
+                        alignment: Alignment.center,
                         children: [
-                          Material(
-                            color: gridCell,
-                            elevation: 3,
-                            shadowColor: Colors.black38,
-                            borderRadius: BorderRadius.circular(Radius.sm),
-                            child: InkWell(
-                              key: const Key('crossword-back'),
+                          // The level, centred on the page.
+                          Center(
+                            child: Material(
+                              color: gridCell,
+                              elevation: 3,
+                              shadowColor: Colors.black38,
                               borderRadius: BorderRadius.circular(Radius.sm),
-                              onTap: () => Navigator.of(context).maybePop(),
-                              child: SizedBox(
-                                width: 40,
+                              child: Container(
                                 height: 40,
-                                child: Icon(
-                                  Icons.arrow_back,
-                                  size: 20,
-                                  color: ink,
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: Spacing.md,
                                 ),
-                              ),
-                            ),
-                          ),
-                          const SizedBox(width: Spacing.sm),
-                          Expanded(
-                            child: Center(
-                              child: Material(
-                                color: gridCell,
-                                elevation: 3,
-                                shadowColor: Colors.black38,
-                                borderRadius: BorderRadius.circular(Radius.sm),
-                                child: Container(
-                                  height: 40,
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: Spacing.md,
-                                  ),
 
-                                  child: Center(
-                                    widthFactor: 1,
-                                    child: FittedBox(
-                                      fit: BoxFit.scaleDown,
-                                      child: DualText(
-                                        (t) => t.level(_currentLevel),
-                                        style: kickerStyle(
-                                          brightness: brightness,
-                                        ),
+                                child: Center(
+                                  widthFactor: 1,
+                                  child: FittedBox(
+                                    fit: BoxFit.scaleDown,
+                                    child: DualText(
+                                      (t) => t.level(_currentLevel),
+                                      style: kickerStyle(
+                                        brightness: brightness,
                                       ),
                                     ),
                                   ),
@@ -851,9 +831,36 @@ class _CrosswordGamePageState extends State<CrosswordGamePage> {
                               ),
                             ),
                           ),
-                          // Balances the Back button, keeping the level
-                          // centred.
-                          const SizedBox(width: 40 + Spacing.sm),
+                          Row(
+                            children: [
+                              Material(
+                                color: gridCell,
+                                elevation: 3,
+                                shadowColor: Colors.black38,
+                                borderRadius: BorderRadius.circular(Radius.sm),
+                                child: InkWell(
+                                  key: const Key('crossword-back'),
+                                  borderRadius: BorderRadius.circular(
+                                    Radius.sm,
+                                  ),
+                                  onTap: () => Navigator.of(context).maybePop(),
+                                  child: SizedBox(
+                                    width: 40,
+                                    height: 40,
+                                    child: Icon(
+                                      Icons.arrow_back,
+                                      size: 20,
+                                      color: ink,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(width: Spacing.sm),
+                              // The dictionary doodle, opening into a search
+                              // bar over the level.
+                              const Expanded(child: DictionarySearchToggle()),
+                            ],
+                          ),
                         ],
                       ),
                     ),

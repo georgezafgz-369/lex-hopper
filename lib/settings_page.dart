@@ -9,6 +9,7 @@ import 'app_settings.dart';
 import 'app_text.dart';
 import 'dual_text.dart';
 import 'design_system.dart';
+import 'dictionary_search_bar.dart';
 import 'ai_model.dart';
 import 'language_packs.dart';
 import 'section_icon.dart';
@@ -72,6 +73,8 @@ class SettingsPage extends StatelessWidget {
                           child: Icon(Icons.arrow_back, size: 20, color: ink),
                         ),
                       ),
+                      const SizedBox(width: Spacing.sm),
+                      const Expanded(child: DictionarySearchToggle()),
                     ],
                   ),
                 ),

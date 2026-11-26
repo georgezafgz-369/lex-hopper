@@ -60,7 +60,9 @@ class GamesPage extends StatelessWidget {
                   const SizedBox(width: Spacing.sm),
                   // Dictionary search, in the middle.
                   const Expanded(
-                    child: DictionarySearchBar(fieldKey: Key('games-search')),
+                    child: DictionarySearchToggle(
+                      fieldKey: Key('games-search'),
+                    ),
                   ),
                 ],
               ),

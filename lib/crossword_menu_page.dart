@@ -116,7 +116,7 @@ class _CrosswordMenuPageState extends State<CrosswordMenuPage> {
                   const SizedBox(width: Spacing.sm),
                   // Dictionary search, in the middle.
                   const Expanded(
-                    child: DictionarySearchBar(
+                    child: DictionarySearchToggle(
                       fieldKey: Key('crossword-menu-search'),
                     ),
                   ),

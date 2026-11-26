@@ -30,7 +30,9 @@ import 'chat_page.dart'
 import 'design_system.dart';
 import 'dual_text.dart';
 import 'section_icon.dart';
+import 'dictionary_page.dart' show showDictionarySheet;
 import 'settings_page.dart' show showLanguagePicker;
+import 'translator_page.dart' show showTranslatorSheet;
 
 /// The round button in an overlay of its own (the chat window's text field
 /// needs one for its selection handles): goes over the navigator, in
@@ -236,10 +238,15 @@ class _SectionsButtonState extends State<SectionsButton>
     final navigator = _navigator;
     if (navigator == null) return;
     navigator.pop(); // the menu
+    // The language list, the dictionary and the translator slide up from
+    // the bottom over the page you are on.
+    final sheetContext = navigator.overlay?.context;
     if (route == _languageSheet) {
-      // The list of languages, sliding up over the page you are on.
-      final context = navigator.overlay?.context;
-      if (context != null) showLanguagePicker(context);
+      if (sheetContext != null) showLanguagePicker(sheetContext);
+    } else if (route == '/dictionary') {
+      if (sheetContext != null) showDictionarySheet(sheetContext);
+    } else if (route == '/translator') {
+      if (sheetContext != null) showTranslatorSheet(sheetContext);
     } else if (route == '/chat') {
       _openChat();
     } else if (route == '/') {
@@ -1093,6 +1100,7 @@ class _MenuRoute extends PopupRoute<void> {
       // Opens the language list from the bottom (see _go).
       ('language', Section.language, (t) => t.language, _languageSheet),
       ('games', Section.games, (t) => t.gamesTitle, '/games'),
+      // The dictionary and the translator open as sheets (see _go).
       ('dictionary', Section.dictionary, (t) => t.dictionary, '/dictionary'),
       // Opens the floating chat, not the page (see _go).
       ('chat', Section.chatAi, (t) => t.chatWithAi, '/chat'),

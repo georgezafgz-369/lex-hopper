@@ -9,6 +9,7 @@ import 'package:flutter/services.dart' show HapticFeedback;
 import 'package:material_ui/material_ui.dart';
 
 import 'design_system.dart';
+import 'dictionary_search_bar.dart';
 import 'app_text.dart';
 import 'dictionary_service.dart';
 import 'dual_text.dart';
@@ -70,11 +71,6 @@ class _DictionaryPageState extends State<DictionaryPage> {
   /// Scrolled far enough down for the "go to top" button to show.
   bool _showTop = false;
 
-  /// The title row (Back + DICTIONARY) has scrolled out of sight, so Back
-  /// moves into the pinned bar, beside the search.
-  bool _titleGone = false;
-  static const _titleRowHeight = 56.0;
-
   @override
   void initState() {
     super.initState();
@@ -85,8 +81,6 @@ class _DictionaryPageState extends State<DictionaryPage> {
   void _onScroll() {
     final show = _scroll.hasClients && _scroll.offset > 800;
     if (show != _showTop) setState(() => _showTop = show);
-    final gone = _scroll.hasClients && _scroll.offset > _titleRowHeight;
-    if (gone != _titleGone) setState(() => _titleGone = gone);
     _updateHere();
   }
 
@@ -346,6 +340,50 @@ class _DictionaryPageState extends State<DictionaryPage> {
       dark: AppColors.mutedDark,
     );
 
+    Widget searchField({VoidCallback? close}) => Container(
+      height: 40,
+      decoration: BoxDecoration(
+        color: gridCell,
+        borderRadius: BorderRadius.circular(Radius.sm),
+        border: Border.all(color: hairline, width: 0.5),
+      ),
+      child: ListenableBuilder(
+        listenable: AppSettings.instance,
+        builder: (context, _) => TextField(
+          controller: _searchController,
+          focusNode: _searchFocus,
+          onChanged: _onSearchChanged,
+          onSubmitted: (_) => _doSearch(_searchController.text.trim()),
+          decoration: InputDecoration(
+            hintText: dualString(context, (t) => t.searchDictionaryHint),
+            hintStyle: TextStyle(fontSize: 14, color: muted),
+            prefixIcon: Icon(Icons.search, size: 20, color: muted),
+            // In the page, ✕ empties it and folds it back into
+            // the doodle; in the sheet it only empties it.
+            suffixIcon: close != null || _searchController.text.isNotEmpty
+                ? IconButton(
+                    key: const Key('dictionary-search-clear'),
+                    icon: Icon(Icons.clear, size: 18, color: muted),
+                    onPressed: () {
+                      _searchController.clear();
+                      _refreshResults();
+                      if (close != null) {
+                        _searchFocus.unfocus();
+                        close();
+                      } else {
+                        _searchFocus.requestFocus();
+                      }
+                    },
+                  )
+                : null,
+            border: InputBorder.none,
+            contentPadding: const EdgeInsets.symmetric(horizontal: Spacing.sm),
+          ),
+          style: TextStyle(fontSize: 14, color: ink),
+        ),
+      ),
+    );
+
     final topBar = ColoredBox(
       color: paper, // results scroll underneath it
       child: Padding(
@@ -357,73 +395,36 @@ class _DictionaryPageState extends State<DictionaryPage> {
         ),
         child: Row(
           children: [
-            // Back, beside the search bar once the title row (with its own
-            // Back) has scrolled away.
-            AnimatedSize(
-              duration: const Duration(milliseconds: 180),
-              curve: Curves.easeOut,
-              child: !widget.inSheet && _titleGone
-                  ? Padding(
-                      padding: const EdgeInsets.only(right: Spacing.sm),
-                      child: GestureDetector(
-                        key: const Key('dictionary-back-pinned'),
-                        onTap: () => Navigator.of(context).pop(),
-                        child: Container(
-                          width: 40,
-                          height: 40,
-                          decoration: BoxDecoration(
-                            color: gridCell,
-                            borderRadius: BorderRadius.circular(Radius.sm),
-                          ),
-                          child: Icon(Icons.arrow_back, size: 20, color: ink),
-                        ),
-                      ),
-                    )
-                  : const SizedBox.shrink(),
-            ),
-            // Search bar
-            Expanded(
-              child: Container(
-                height: 40,
-                decoration: BoxDecoration(
-                  color: gridCell,
-                  borderRadius: BorderRadius.circular(Radius.sm),
-                  border: Border.all(color: hairline, width: 0.5),
-                ),
-                child: ListenableBuilder(
-                  listenable: AppSettings.instance,
-                  builder: (context, _) => TextField(
-                    controller: _searchController,
-                    focusNode: _searchFocus,
-                    onChanged: _onSearchChanged,
-                    onSubmitted: (_) =>
-                        _doSearch(_searchController.text.trim()),
-                    decoration: InputDecoration(
-                      hintText: dualString(
-                        context,
-                        (t) => t.searchDictionaryHint,
-                      ),
-                      hintStyle: TextStyle(fontSize: 14, color: muted),
-                      prefixIcon: Icon(Icons.search, size: 20, color: muted),
-                      suffixIcon: _searchController.text.isNotEmpty
-                          ? IconButton(
-                              icon: Icon(Icons.clear, size: 18, color: muted),
-                              onPressed: () {
-                                _searchController.clear();
-                                _refreshResults();
-                                _searchFocus.requestFocus();
-                              },
-                            )
-                          : null,
-                      border: InputBorder.none,
-                      contentPadding: const EdgeInsets.symmetric(
-                        horizontal: Spacing.sm,
-                      ),
+            // Back, beside the search bar (the sheet has its own ✕).
+            if (!widget.inSheet)
+              Padding(
+                padding: const EdgeInsets.only(right: Spacing.sm),
+                child: GestureDetector(
+                  key: const Key('dictionary-back'),
+                  onTap: () => Navigator.of(context).pop(),
+                  child: Container(
+                    width: 40,
+                    height: 40,
+                    decoration: BoxDecoration(
+                      color: gridCell,
+                      borderRadius: BorderRadius.circular(Radius.sm),
                     ),
-                    style: TextStyle(fontSize: 14, color: ink),
+                    child: Icon(Icons.arrow_back, size: 20, color: ink),
                   ),
                 ),
               ),
+            // Search: the doodle beside Back, opening into the field (in
+            // the sheet, the field itself).
+            Expanded(
+              child: widget.inSheet
+                  ? searchField()
+                  : DictionarySearchToggle(
+                      initiallyOpen: widget.initialQuery.isNotEmpty,
+                      bar: (context, close) => searchField(close: close),
+                      onOpenChanged: (open) {
+                        if (open) _searchFocus.requestFocus();
+                      },
+                    ),
             ),
           ],
         ),
@@ -444,48 +445,28 @@ class _DictionaryPageState extends State<DictionaryPage> {
         key: _listKey,
         controller: _scroll,
         slivers: [
-          // Back and the page's title, big and bold (not in the sheet);
-          // they scroll away, the search bar under them stays.
+          SliverPersistentHeader(
+            pinned: true,
+            delegate: _PinnedBar(height: _topBarHeight, child: topBar),
+          ),
+          // The page's title, big and bold (not in the sheet), under the
+          // pinned Back and search bar; it scrolls away.
           if (!widget.inSheet)
             SliverToBoxAdapter(
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(
                   Spacing.md,
-                  Spacing.sm,
+                  Spacing.xs,
                   Spacing.md,
                   0,
                 ),
-                child: Row(
-                  children: [
-                    GestureDetector(
-                      key: const Key('dictionary-back'),
-                      onTap: () => Navigator.of(context).pop(),
-                      child: Container(
-                        width: 40,
-                        height: 40,
-                        decoration: BoxDecoration(
-                          color: gridCell,
-                          borderRadius: BorderRadius.circular(Radius.sm),
-                        ),
-                        child: Icon(Icons.arrow_back, size: 20, color: ink),
-                      ),
-                    ),
-                    const SizedBox(width: Spacing.md),
-                    Expanded(
-                      child: DualText(
-                        (t) => AppText.upper(t.dictionary),
-                        style: Theme.of(context).textTheme.displayLarge,
-                        inline: true,
-                      ),
-                    ),
-                  ],
+                child: DualText(
+                  (t) => AppText.upper(t.dictionary),
+                  style: Theme.of(context).textTheme.displayLarge,
+                  inline: true,
                 ),
               ),
             ),
-          SliverPersistentHeader(
-            pinned: true,
-            delegate: _PinnedBar(height: _topBarHeight, child: topBar),
-          ),
           ..._buildContent(
             brightness: brightness,
             gridCell: gridCell,

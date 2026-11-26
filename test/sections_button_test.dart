@@ -118,11 +118,11 @@ void main() {
     expect(find.text('games page'), findsOneWidget);
     expect(menu, findsNothing);
 
-    // Still there on the games page; from there to the dictionary.
+    // Still there on the games page; from there to settings.
     await open(tester);
-    await tester.tap(find.byKey(const Key('sections-dictionary')));
+    await tester.tap(find.byKey(const Key('sections-settings')));
     await tester.pumpAndSettle();
-    expect(find.text('dictionary page'), findsOneWidget);
+    expect(find.text('settings page'), findsOneWidget);
 
     // Back goes home (the games page isn't kept under it).
     await tester.binding.handlePopRoute();
@@ -422,4 +422,22 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('settings page'), findsOneWidget);
   });
+
+  for (final name in ['dictionary', 'translator']) {
+    testWidgets("the menu's ${name[0].toUpperCase()}${name.substring(1)} "
+        'opens as a sheet over the page', (tester) async {
+      await tester.binding.setSurfaceSize(const Size(400, 900));
+      addTearDown(() => tester.binding.setSurfaceSize(null));
+      await tester.pumpWidget(app());
+      await open(tester);
+      await tester.tap(find.byKey(Key('sections-$name')));
+      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 500));
+      expect(menu, findsNothing);
+      // Over the home page, not instead of it.
+      expect(find.text('$name page'), findsNothing);
+      expect(find.text('home page'), findsOneWidget);
+      expect(find.byType(BottomSheet), findsOneWidget);
+    });
+  }
 }

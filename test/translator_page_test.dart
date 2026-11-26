@@ -261,7 +261,7 @@ void main() {
   testWidgets('top bar: back, dictionary search, globe', (tester) async {
     await pumpPage(tester, FakeTranslator());
     final back = tester.getCenter(find.byKey(const Key('translator-back')));
-    final search = tester.getCenter(find.byKey(const Key('translator-search')));
+    final search = tester.getCenter(find.byKey(const Key('dictionary-toggle')));
     final globe = tester.getCenter(find.byKey(const Key('language-button')));
     expect(back.dx, lessThan(search.dx));
     expect(search.dx, lessThan(globe.dx));

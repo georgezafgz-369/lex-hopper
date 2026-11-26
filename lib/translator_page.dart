@@ -576,7 +576,7 @@ class _TranslatorPageState extends State<TranslatorPage> {
                     ),
                     const SizedBox(width: Spacing.sm),
                     const Expanded(
-                      child: DictionarySearchBar(
+                      child: DictionarySearchToggle(
                         fieldKey: Key('translator-search'),
                       ),
                     ),

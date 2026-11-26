@@ -21,6 +21,10 @@ void main() {
     // One scroll view for the whole page.
     expect(find.byType(CustomScrollView), findsOneWidget);
 
+    // The doodle beside Back opens the search field.
+    await tester.tap(find.byKey(const Key('dictionary-toggle')));
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 300));
     final searchBefore = tester.getTopLeft(find.byType(TextField)).dy;
     await tester.drag(find.byType(CustomScrollView), const Offset(0, -300));
     await tester.pump();
