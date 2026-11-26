@@ -15,6 +15,8 @@ import 'dart:math' as math;
 import 'package:flutter/scheduler.dart';
 import 'package:material_ui/material_ui.dart';
 
+import 'design_system.dart';
+
 /// The creature's shapes.
 enum CreatureShape {
   flower,
@@ -187,8 +189,33 @@ class _DoodleCreatureState extends State<DoodleCreature>
       jitter: widget.thinking ? 1 : 0,
       ink: widget.ink,
       paper: widget.paper,
+      colours: creatureColours(Theme.of(context).brightness),
     ),
   );
+}
+
+/// Each shape's colour, from the app's palette: light and cheerful.
+Map<CreatureShape, Color> creatureColours(Brightness b) {
+  Color c(Color light, Color dark) => b.resolve(light: light, dark: dark);
+  final rose = c(AppColors.roseLight, AppColors.roseDark);
+  final marigold = c(AppColors.marigoldLight, AppColors.marigoldDark);
+  final cornflower = c(AppColors.cornflowerLight, AppColors.cornflowerDark);
+  final fern = c(AppColors.fernLight, AppColors.fernDark);
+  final coral = c(AppColors.coralLight, AppColors.coralDark);
+  final clay = c(AppColors.claySoftLight, AppColors.claySoftDark);
+  return {
+    CreatureShape.flower: rose,
+    CreatureShape.star: marigold,
+    CreatureShape.fuzz: cornflower,
+    CreatureShape.blob: fern,
+    CreatureShape.daisy: marigold,
+    CreatureShape.sun: clay,
+    CreatureShape.burst: coral,
+    CreatureShape.hood: fern,
+    CreatureShape.cat: cornflower,
+    CreatureShape.mushroom: coral,
+    CreatureShape.amoeba: rose,
+  };
 }
 
 /// Paints the creature at [morph] (0–1, a little past 1 while it wobbles)
@@ -197,7 +224,12 @@ class CreaturePainter extends CustomPainter {
   final CreatureShape from, to;
   final double morph, time, eyeOpen, jitter;
   final Offset look;
+
+  /// [ink] for the pupils and smile, [paper] for the whites of the eyes.
   final Color ink, paper;
+
+  /// Each shape's body colour (null: all [ink]).
+  final Map<CreatureShape, Color>? colours;
 
   const CreaturePainter({
     required this.from,
@@ -209,6 +241,7 @@ class CreaturePainter extends CustomPainter {
     required this.jitter,
     required this.ink,
     required this.paper,
+    this.colours,
   });
 
   /// Its outline's distance from the middle at angle [a] (0 is right, a
@@ -369,8 +402,13 @@ class CreaturePainter extends CustomPainter {
     }
     outline.close();
 
-    canvas.drawShadow(outline, Colors.black54, 3, false);
-    canvas.drawPath(outline, Paint()..color = ink);
+    // Its colour, blending into the next shape's as it morphs.
+    final m0 = morph.clamp(0.0, 1.0);
+    final body = colours == null
+        ? ink
+        : Color.lerp(colours![from], colours![to], m0)!;
+    canvas.drawShadow(outline, Colors.black26, 2, false);
+    canvas.drawPath(outline, Paint()..color = body);
 
     // ── Eyes: the old shape's fade out as the new shape's fade in ────────
     final m = morph.clamp(0.0, 1.0);
@@ -382,7 +420,56 @@ class CreaturePainter extends CustomPainter {
     for (final e in eyesOf(to)) {
       _eye(canvas, c, full, e, from == to ? 1 : m);
     }
+    // A smile and rosy cheeks under the eyes (fading with them).
+    if (from != to && m < 1) _face(canvas, c, full, eyesOf(from), 1 - m);
+    _face(canvas, c, full, eyesOf(to), from == to ? 1 : m);
   }
+
+  /// A small smile (an "o" while thinking) and two pink cheeks, under
+  /// [eyes].
+  void _face(
+    Canvas canvas,
+    Offset c,
+    double full,
+    List<CreatureEye> eyes,
+    double alpha,
+  ) {
+    if (alpha <= 0) return;
+    final x = eyes.map((e) => e.x).reduce((a, b) => a + b) / eyes.length;
+    final y = eyes.map((e) => e.y + e.h / 2).reduce(math.max) + 0.12;
+    final w = math.max(0.16, eyes.length > 1 ? 0.22 : e0(eyes).w * 0.38);
+    final mouth = c + Offset(x, y) * full;
+    final line = Paint()
+      ..color = ink.withValues(alpha: alpha)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = full * 0.06
+      ..strokeCap = StrokeCap.round;
+    if (jitter > 0) {
+      canvas.drawCircle(mouth + Offset(0, full * 0.03), full * 0.045, line);
+    } else {
+      canvas.drawArc(
+        Rect.fromCenter(center: mouth, width: w * full, height: w * full * 0.7),
+        0.15 * math.pi,
+        0.7 * math.pi,
+        false,
+        line,
+      );
+    }
+    final cheek = Paint()
+      ..color = const Color(0xFFFF8FA3).withValues(alpha: 0.55 * alpha);
+    for (final side in [-1.0, 1.0]) {
+      canvas.drawOval(
+        Rect.fromCenter(
+          center: mouth + Offset(side * (w * 0.5 + 0.12) * full, -full * 0.02),
+          width: full * 0.14,
+          height: full * 0.09,
+        ),
+        cheek,
+      );
+    }
+  }
+
+  static CreatureEye e0(List<CreatureEye> eyes) => eyes.first;
 
   /// Draws [e] at [c] (the middle; [full] the radius), its pupil looking
   /// along [look]; [eyeOpen] squeezes it shut; [alpha] fades it.
@@ -416,10 +503,13 @@ class CreaturePainter extends CustomPainter {
           ..strokeWidth = w * 0.08,
       );
     }
+    final pr = math.min(w, h) * (e.round ? 0.24 : 0.18);
+    canvas.drawCircle(pupil, pr, Paint()..color = inkA);
+    // A sparkle: it looks bright and happy.
     canvas.drawCircle(
-      pupil,
-      math.min(w, h) * (e.round ? 0.24 : 0.18),
-      Paint()..color = inkA,
+      pupil + Offset(-pr * 0.35, -pr * 0.38),
+      pr * 0.32,
+      Paint()..color = Colors.white.withValues(alpha: alpha),
     );
     canvas.restore();
   }
@@ -434,5 +524,6 @@ class CreaturePainter extends CustomPainter {
       old.from != from ||
       old.to != to ||
       old.ink != ink ||
-      old.paper != paper;
+      old.paper != paper ||
+      old.colours != colours;
 }

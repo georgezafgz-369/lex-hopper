@@ -321,14 +321,10 @@ class _SectionsButtonState extends State<SectionsButton>
 
   @override
   Widget build(BuildContext context) {
-    final b = Theme.of(context).brightness;
-    // The creature: ink on the page (cream in dark mode), eyes in the
-    // page's colour.
-    final ink = b.resolve(light: AppColors.inkLight, dark: AppColors.inkDark);
-    final paper = b.resolve(
-      light: AppColors.paperLight,
-      dark: AppColors.paperDark,
-    );
+    // The creature (its colours come from the palette): dark pupils and
+    // smile, bright whites, in light and dark mode alike.
+    const ink = AppColors.inkLight;
+    const paper = Color(0xFFFFFDF8);
     final media = MediaQuery.of(context);
     const s = SectionsButton.size;
 
