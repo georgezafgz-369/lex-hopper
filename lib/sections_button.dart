@@ -28,6 +28,7 @@ import 'ai_model.dart';
 import 'chat_page.dart'
     show ChatSession, chatMessageBubble, teacherHello, teacherInvitation;
 import 'design_system.dart';
+import 'doodle_creature.dart';
 import 'dual_text.dart';
 import 'section_icon.dart';
 import 'dictionary_page.dart' show showDictionarySheet;
@@ -133,12 +134,6 @@ class _SectionsButtonState extends State<SectionsButton>
   _MenuRoute? _menu;
   bool get _open => _menu != null;
 
-  // The rings' pulse, always running while closed.
-  late final _pulse = AnimationController(
-    vsync: this,
-    duration: const Duration(milliseconds: 2400),
-  );
-
   // A slow up-and-down float, for the button and the open menu.
   late final _float = AnimationController(
     vsync: this,
@@ -171,10 +166,7 @@ class _SectionsButtonState extends State<SectionsButton>
   @override
   void initState() {
     super.initState();
-    if (SectionsButton.pulses) {
-      _pulse.repeat();
-      _float.repeat();
-    }
+    if (SectionsButton.pulses) _float.repeat();
     if (SectionsButton.teacherCloud && !SectionsButton.cloudDismissed) {
       _cloudTimer = Timer(SectionsButton.cloudDelay, _showCloud);
       _lookForAi();
@@ -197,7 +189,6 @@ class _SectionsButtonState extends State<SectionsButton>
     _cloudInput.dispose();
     _cloudFocus.dispose();
     _cloudTimer?.cancel();
-    _pulse.dispose();
     _float.dispose();
     _openness.dispose();
     super.dispose();
@@ -220,7 +211,6 @@ class _SectionsButtonState extends State<SectionsButton>
     );
     setState(() => _menu = menu);
     _openness.forward();
-    _pulse.stop();
     navigator.push(menu).whenComplete(() {
       if (mounted && _menu == menu) _closed();
     });
@@ -229,7 +219,6 @@ class _SectionsButtonState extends State<SectionsButton>
   void _closed() {
     setState(() => _menu = null);
     _openness.reverse();
-    if (SectionsButton.pulses) _pulse.repeat();
   }
 
   /// Closes the menu and opens [route] over the home page ("/": home;
@@ -339,21 +328,13 @@ class _SectionsButtonState extends State<SectionsButton>
   @override
   Widget build(BuildContext context) {
     final b = Theme.of(context).brightness;
-    final clay = b.resolve(
-      light: AppColors.clayLight,
-      dark: AppColors.clayDark,
-    );
-    final mark = b.resolve(
+    // The creature: ink on the page (cream in dark mode), eyes in the
+    // page's colour.
+    final ink = b.resolve(light: AppColors.inkLight, dark: AppColors.inkDark);
+    final paper = b.resolve(
       light: AppColors.paperLight,
       dark: AppColors.paperDark,
     );
-    final rings = [
-      b.resolve(
-        light: AppColors.cornflowerLight,
-        dark: AppColors.cornflowerDark,
-      ),
-      b.resolve(light: AppColors.fernLight, dark: AppColors.fernDark),
-    ];
     final media = MediaQuery.of(context);
     const s = SectionsButton.size;
 
@@ -488,27 +469,28 @@ class _SectionsButtonState extends State<SectionsButton>
                               expanded: _open,
                               label: AppText.of(context).menu,
                               excludeSemantics: true,
-                              child: Material(
+                              child: GestureDetector(
                                 key: const Key('sections-button'),
-                                color: clay,
-                                shape: const CircleBorder(),
-                                elevation: _dragAt != null ? 10 : 6,
-                                clipBehavior: Clip.antiAlias,
-                                child: InkWell(
-                                  onTap: () => _toggle(
-                                    at & const Size.square(s),
-                                    area,
-                                    media.padding,
-                                  ),
-                                  child: SizedBox.square(
-                                    dimension: s,
-                                    child: CustomPaint(
-                                      painter: DotWavesPainter(
-                                        pulse: _pulse,
-                                        openness: _openness,
-                                        color: mark,
-                                        ringColors: rings,
-                                      ),
+                                behavior: HitTestBehavior.opaque,
+                                onTap: () => _toggle(
+                                  at & const Size.square(s),
+                                  area,
+                                  media.padding,
+                                ),
+                                child: SizedBox.square(
+                                  dimension: s,
+                                  // Shape-shifts by itself, blooms into the
+                                  // flower while the menu is open, turns
+                                  // into a fuzz-ball while the AI thinks.
+                                  child: ListenableBuilder(
+                                    listenable: ChatSession.instance,
+                                    builder: (context, _) => DoodleCreature(
+                                      open: _open,
+                                      thinking:
+                                          ChatSession.instance.writing != null,
+                                      ink: ink,
+                                      paper: paper,
+                                      alive: SectionsButton.pulses,
                                     ),
                                   ),
                                 ),
@@ -1138,8 +1120,17 @@ class _MenuRoute extends PopupRoute<void> {
                   child: Material(
                     key: const Key('sections-menu'),
                     color: card,
-                    elevation: 10,
-                    borderRadius: BorderRadius.circular(Radius.md),
+                    elevation: 14,
+                    shadowColor: Colors.black,
+                    // A soft dark edge all round, so the menu stands out
+                    // from the page under it.
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(Radius.md),
+                      side: BorderSide(
+                        color: ink.withValues(alpha: 0.28),
+                        width: 1.2,
+                      ),
+                    ),
                     clipBehavior: Clip.antiAlias,
                     child: ConstrainedBox(
                       constraints: BoxConstraints(
@@ -1208,109 +1199,4 @@ class _MenuRoute extends PopupRoute<void> {
   @override
   Widget buildTransitions(context, animation, secondaryAnimation, child) =>
       FadeTransition(opacity: animation, child: child);
-}
-
-/// A doodled dot with two rings around it, the inner one in
-/// [ringColors].first, the outer in [ringColors].last. The rings pulse
-/// outward one after the other ([pulse] 0–1, repeating) and fade away as
-/// [openness] goes to 1, leaving just the dot.
-class DotWavesPainter extends CustomPainter {
-  final Animation<double> pulse;
-  final Animation<double> openness;
-  final Color color;
-  final List<Color> ringColors;
-
-  DotWavesPainter({
-    required this.pulse,
-    required this.openness,
-    required this.color,
-    required this.ringColors,
-  }) : super(repaint: Listenable.merge([pulse, openness]));
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final c = size.center(Offset.zero);
-    final unit = size.shortestSide / 60;
-    final open = openness.value;
-
-    // The dot: a slightly lumpy circle, a little bigger when open.
-    final dotR = (5.5 + 1.5 * open) * unit;
-    canvas.drawPath(
-      _wobbly(c, dotR, wobble: 0.08, seed: 1),
-      Paint()..color = color,
-    );
-
-    // Two rings, each a few hand-drawn strokes with gaps.
-    final rings = 1 - open;
-    if (rings <= 0) return;
-    final stroke = Paint()
-      ..color = color
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 2.6 * unit
-      ..strokeCap = StrokeCap.round;
-    for (var i = 0; i < 2; i++) {
-      // Each ring brightens and swells a little in turn.
-      final phase = (pulse.value - i * 0.25) % 1.0;
-      final glow = math.max(0.0, math.sin(phase * math.pi));
-      final r = (11.5 + i * 7.5 + glow * 1.5) * unit;
-      final ring = i == 0 ? ringColors.first : ringColors.last;
-      stroke.color = ring.withValues(alpha: (0.55 + 0.45 * glow) * rings);
-      // Three strokes, gaps between them, turned differently per ring.
-      for (var s = 0; s < 3; s++) {
-        final start = (i * 0.9) + s * (2 * math.pi / 3);
-        canvas.drawPath(
-          _wobblyArc(c, r, start, 2 * math.pi / 3 - 0.55, seed: i * 3 + s),
-          stroke,
-        );
-      }
-    }
-  }
-
-  // A closed, slightly uneven circle (a doodle, not a compass circle).
-  static Path _wobbly(
-    Offset c,
-    double r, {
-    required double wobble,
-    required int seed,
-  }) {
-    final path = Path();
-    const n = 48;
-    for (var k = 0; k <= n; k++) {
-      final a = k / n * 2 * math.pi;
-      final rr =
-          r *
-          (1 +
-              wobble * math.sin(3 * a + seed) * 0.6 +
-              wobble * math.cos(2 * a + seed * 2) * 0.4);
-      final p = c + Offset(math.cos(a) * rr, math.sin(a) * rr);
-      k == 0 ? path.moveTo(p.dx, p.dy) : path.lineTo(p.dx, p.dy);
-    }
-    return path..close();
-  }
-
-  // An arc whose radius drifts a little along it, like a hand stroke.
-  static Path _wobblyArc(
-    Offset c,
-    double r,
-    double start,
-    double sweep, {
-    required int seed,
-  }) {
-    final path = Path();
-    const n = 20;
-    for (var k = 0; k <= n; k++) {
-      final t = k / n;
-      final a = start + sweep * t;
-      final rr = r * (1 + 0.05 * math.sin(t * math.pi * 2 + seed));
-      final p = c + Offset(math.cos(a) * rr, math.sin(a) * rr);
-      k == 0 ? path.moveTo(p.dx, p.dy) : path.lineTo(p.dx, p.dy);
-    }
-    return path;
-  }
-
-  @override
-  bool shouldRepaint(DotWavesPainter old) =>
-      old.color != color ||
-      old.ringColors.first != ringColors.first ||
-      old.ringColors.last != ringColors.last;
 }
