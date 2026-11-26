@@ -36,6 +36,26 @@ const appLanguages = [
   AppLanguage('de', 'Deutsch'),
   AppLanguage('it', 'Italiano'),
   AppLanguage('ru', 'Русский'),
+  // Coming soon: each has an offline translator (OPUS-MT) and an open
+  // dictionary source to build its pack from.
+  AppLanguage('pt', 'Português'),
+  AppLanguage('nl', 'Nederlands'),
+  AppLanguage('pl', 'Polski'),
+  AppLanguage('tr', 'Türkçe'),
+  AppLanguage('sv', 'Svenska'),
+  AppLanguage('no', 'Norsk'),
+  AppLanguage('da', 'Dansk'),
+  AppLanguage('fi', 'Suomi'),
+  AppLanguage('cs', 'Čeština'),
+  AppLanguage('hu', 'Magyar'),
+  AppLanguage('ro', 'Română'),
+  AppLanguage('uk', 'Українська'),
+  AppLanguage('ja', '日本語'),
+  AppLanguage('zh', '中文'),
+  AppLanguage('ko', '한국어'),
+  AppLanguage('ar', 'العربية'),
+  AppLanguage('hi', 'हिन्दी'),
+  AppLanguage('vi', 'Tiếng Việt'),
 ];
 
 /// Text size options in Settings. Medium is the normal size.

@@ -388,40 +388,58 @@ final _drawings = <Section, (String, String)>{
 /// A language's flag, drawn like the section icons: the country's flag
 /// over the language colour's circle, with a sparkle. The flag keeps
 /// its real colours in light and dark mode.
+/// A language's picture: a doodled landmark of a country where it's
+/// spoken (Big Ben for English, the Parthenon for Greek…) on a round blob
+/// of one of the palette's colours. (Named FlagIcon from when it was a
+/// flag.)
 class FlagIcon extends StatelessWidget {
-  /// The language code: en, el, es, fr, de, it.
   final String code;
   final double size;
 
   const FlagIcon(this.code, {super.key, this.size = 48});
 
-  /// Whether there's a flag for [code].
-  static bool has(String code) => _flags.containsKey(code);
+  /// Whether there's a picture for [code].
+  static bool has(String code) => _landmarks.containsKey(code);
+
+  /// The blob's colour: the palette's colours in turn, down the list.
+  static Color colorOf(String code, Brightness b) {
+    final colours = [
+      (AppColors.coralLight, AppColors.coralDark),
+      (AppColors.cornflowerLight, AppColors.cornflowerDark),
+      (AppColors.marigoldLight, AppColors.marigoldDark),
+      (AppColors.roseLight, AppColors.roseDark),
+      (AppColors.fernLight, AppColors.fernDark),
+      (AppColors.claretLight, AppColors.claretDark),
+      (AppColors.clayLight, AppColors.clayDark),
+    ];
+    final i = _landmarks.keys.toList().indexOf(code);
+    final (light, dark) = colours[(i < 0 ? 0 : i) % colours.length];
+    return b.resolve(light: light, dark: dark);
+  }
 
   @visibleForTesting
   static String svgOf(String code, Brightness b) {
-    const flagArea = 'x="34" y="34" width="62" height="42" rx="4"';
     final svg =
         '$_open$_blob'
-        // The flag on its own, centred on the circle: its colours clipped
-        // to a rounded card, outlined.
-        '<g transform="translate(-5 9)">'
-        '<clipPath id="f"><rect $flagArea/></clipPath>'
-        '<g clip-path="url(#f)" stroke="none">${_flags[code]!}</g>'
-        '<rect $flagArea/>'
-        '</g>'
+        '<g stroke-width="4">${_landmarks[code]!}</g>'
         '${_sparkle(104, 24, 6)}'
-        '<path d="M78 98 C84 92 90 104 96 98"/>'
+        '<path d="M80 102 C86 96 92 108 98 102"/>'
         '$_close';
     return svg
-        .replaceAll(
-          '{blob}',
-          SectionIcon._hex(SectionIcon.colorOf(Section.language, b)),
-        )
+        .replaceAll('{blob}', SectionIcon._hex(colorOf(code, b)))
         .replaceAll(
           '{ink}',
           SectionIcon._hex(
             b.resolve(light: AppColors.inkLight, dark: AppColors.inkDark),
+          ),
+        )
+        .replaceAll(
+          '{tile}',
+          SectionIcon._hex(
+            b.resolve(
+              light: AppColors.gridCellLight,
+              dark: AppColors.gridCellDark,
+            ),
           ),
         );
   }
@@ -435,55 +453,200 @@ class FlagIcon extends StatelessWidget {
   );
 }
 
-/// Horizontal stripes over the flag's area (y 34–76), top to bottom.
-String _stripes(List<String> colours) {
-  final h = 42 / colours.length;
-  return [
-    for (final (i, c) in colours.indexed)
-      '<rect x="34" y="${34 + i * h}" width="62" height="${h + 0.5}" '
-          'fill="$c"/>',
-  ].join();
-}
-
-/// Vertical stripes over the flag's area (x 34–96), left to right.
-String _bands(List<String> colours) {
-  final w = 62 / colours.length;
-  return [
-    for (final (i, c) in colours.indexed)
-      '<rect x="${34 + i * w}" y="34" width="${w + 0.5}" height="42" '
-          'fill="$c"/>',
-  ].join();
-}
-
-const _white = '#FFFFFF';
-const _greekBlue = '#0D5EAF';
-
-final _flags = <String, String>{
-  // United Kingdom: the Union Jack.
+/// The landmarks, drawn in a 120 × 120 box over the blob (centre 60, 64).
+const _landmarks = <String, String>{
+  // English: Big Ben.
   'en':
-      '<rect x="34" y="34" width="62" height="42" fill="#012169"/>'
-      '<path d="M34 34 L96 76 M96 34 L34 76" stroke="$_white" '
-      'stroke-width="9"/>'
-      '<path d="M34 34 L96 76 M96 34 L34 76" stroke="#C8102E" '
-      'stroke-width="3"/>'
-      '<rect x="34" y="49" width="62" height="12" fill="$_white"/>'
-      '<rect x="59" y="34" width="12" height="42" fill="$_white"/>'
-      '<rect x="34" y="51.5" width="62" height="7" fill="#C8102E"/>'
-      '<rect x="61.5" y="34" width="7" height="42" fill="#C8102E"/>',
-  // Greece: nine blue and white stripes, a white cross on blue.
+      '<path d="M50 44 L60 22 L70 44 Z" fill="{tile}"/>'
+      '<rect x="51" y="44" width="18" height="50" fill="{tile}"/>'
+      '<circle cx="60" cy="56" r="6" stroke-width="3"/>'
+      '<path d="M60 56 V52 M60 56 H63 M56 70 V88 M64 70 V88" '
+      'stroke-width="2.5"/>'
+      '<path d="M40 94 H80"/>',
+  // Greek: the Parthenon.
   'el':
-      '${_stripes([for (var i = 0; i < 9; i++) i.isEven ? _greekBlue : _white])}'
-      '<rect x="34" y="34" width="23.3" height="23.3" fill="$_greekBlue"/>'
-      '<rect x="34" y="43" width="23.3" height="4.7" fill="$_white"/>'
-      '<rect x="43.3" y="34" width="4.7" height="23.3" fill="$_white"/>',
-  // Spain: red, a wide yellow band, red.
-  'es': _stripes(['#AA151B', '#F1BF00', '#F1BF00', '#AA151B']),
-  // France: blue, white, red.
-  'fr': _bands(['#0055A4', _white, '#EF4135']),
-  // Germany: black, red, gold.
-  'de': _stripes(['#000000', '#DD0000', '#FFCE00']),
-  // Italy: green, white, red.
-  'it': _bands(['#009246', _white, '#CE2B37']),
-  // Russia: white, blue, red.
-  'ru': _stripes([_white, '#0039A6', '#D52B1E']),
+      '<path d="M30 50 L60 34 L90 50 Z" fill="{tile}"/>'
+      '<rect x="32" y="50" width="56" height="6" fill="{tile}"/>'
+      '<path d="M38 58 V86 M49 58 V86 M60 58 V86 M71 58 V86 M82 58 V86"/>'
+      '<path d="M30 88 H90 M27 94 H93"/>',
+  // Spanish: the Sagrada Família's spires.
+  'es':
+      '<path d="M37 94 V56 L44 32 L51 56 V94 Z" fill="{tile}"/>'
+      '<path d="M69 94 V56 L76 32 L83 56 V94 Z" fill="{tile}"/>'
+      '<path d="M52 94 V48 L60 22 L68 48 V94 Z" fill="{tile}"/>'
+      '<circle cx="60" cy="62" r="4" stroke-width="3"/>'
+      '<path d="M30 94 H90"/>',
+  // German: the Brandenburg Gate.
+  'de':
+      '<path d="M54 40 V33 H66 V40" stroke-width="3"/>'
+      '<rect x="30" y="40" width="60" height="12" fill="{tile}"/>'
+      '<path d="M36 54 V88 M45 54 V88 M54 54 V88 M66 54 V88 M75 54 V88 '
+      'M84 54 V88"/>'
+      '<path d="M28 90 H92"/>',
+  // Italian: the Leaning Tower of Pisa.
+  'it':
+      '<g transform="rotate(8 60 94)">'
+      '<rect x="48" y="30" width="24" height="64" rx="2" fill="{tile}"/>'
+      '<path d="M48 40 H72 M48 51 H72 M48 62 H72 M48 73 H72 M48 84 H72" '
+      'stroke-width="2.5"/>'
+      '<rect x="51" y="24" width="18" height="6" fill="{tile}"/>'
+      '</g>'
+      '<path d="M36 96 H84"/>',
+  // French: the Eiffel Tower.
+  'fr':
+      '<path d="M60 20 L69 58 L80 94 H70 C68 84 52 84 50 94 H40 L51 58 Z" '
+      'fill="{tile}"/>'
+      '<path d="M50 58 H70 M46 74 H74" stroke-width="3"/>'
+      '<path d="M36 94 H84"/>',
+  // Russian: onion domes.
+  'ru':
+      '<path d="M48 60 C42 52 50 42 60 34 C70 42 78 52 72 60 Z" '
+      'fill="{tile}"/>'
+      '<path d="M60 34 V24"/>'
+      '<path d="M30 70 C27 64 32 58 37 54 C42 58 47 64 44 70 Z" '
+      'fill="{tile}"/>'
+      '<path d="M76 70 C73 64 78 58 83 54 C88 58 93 64 90 70 Z" '
+      'fill="{tile}"/>'
+      '<rect x="31" y="70" width="12" height="24" fill="{tile}"/>'
+      '<rect x="77" y="70" width="12" height="24" fill="{tile}"/>'
+      '<rect x="47" y="60" width="26" height="34" fill="{tile}"/>'
+      '<path d="M26 94 H94"/>',
+  // Portuguese: the Belém Tower.
+  'pt':
+      '<rect x="46" y="42" width="28" height="52" fill="{tile}"/>'
+      '<path d="M46 42 V35 H51 V42 M56 42 V35 H64 V42 M69 42 V35 H74 V42" '
+      'stroke-width="3"/>'
+      '<path d="M55 94 V82 C55 76 65 76 65 82 V94" stroke-width="3"/>'
+      '<path d="M54 56 H66 M54 66 H66" stroke-width="3"/>'
+      '<path d="M34 94 H86"/>',
+  // Dutch: a windmill.
+  'nl':
+      '<path d="M50 94 L54 54 H66 L70 94 Z" fill="{tile}"/>'
+      '<path d="M52 54 Q60 44 68 54"/>'
+      '<path d="M60 48 L36 26 M60 48 L84 26 M60 48 L38 72 M60 48 L82 72"/>'
+      '<circle cx="60" cy="48" r="3" fill="{ink}" stroke="none"/>'
+      '<path d="M38 94 H82"/>',
+  // Polish: the Palace of Culture.
+  'pl':
+      '<path d="M42 94 V68 H49 V54 H54 V42 H57 L60 20 L63 42 H66 V54 H71 '
+      'V68 H78 V94 Z" fill="{tile}"/>'
+      '<path d="M54 62 H66 M54 76 H66" stroke-width="3"/>'
+      '<path d="M32 94 H88"/>',
+  // Turkish: a mosque with its minarets.
+  'tr':
+      '<path d="M42 62 C42 44 78 44 78 62 Z" fill="{tile}"/>'
+      '<rect x="40" y="62" width="40" height="30" fill="{tile}"/>'
+      '<path d="M28 92 V42 L31 32 L34 42 V92 M86 92 V42 L89 32 L92 42 V92" '
+      'stroke-width="3.5"/>'
+      '<path d="M60 47 V38" stroke-width="3"/>'
+      '<path d="M24 94 H96"/>',
+  // Swedish: a Dala horse.
+  'sv':
+      '<path d="M40 92 V72 C34 68 34 60 40 56 L46 42 C49 36 57 37 58 43 '
+      'L60 50 H78 C84 50 86 56 84 62 L86 92 H77 V76 H49 V92 Z" '
+      'fill="{tile}"/>'
+      '<path d="M54 60 C58 66 66 66 70 60" stroke-width="3"/>'
+      '<circle cx="50" cy="48" r="2" fill="{ink}" stroke="none"/>',
+  // Norwegian: a stave church.
+  'no':
+      '<rect x="44" y="74" width="32" height="20" fill="{tile}"/>'
+      '<path d="M38 74 L60 60 L82 74 Z" fill="{tile}"/>'
+      '<path d="M45 60 L60 48 L75 60 Z" fill="{tile}"/>'
+      '<path d="M51 48 L60 30 L69 48 Z" fill="{tile}"/>'
+      '<path d="M60 30 V22" stroke-width="3"/>'
+      '<path d="M34 94 H86"/>',
+  // Danish: the Little Mermaid on her rock.
+  'da':
+      '<path d="M32 94 C34 80 86 80 88 94 Z" fill="{tile}"/>'
+      '<circle cx="56" cy="46" r="7" fill="{tile}"/>'
+      '<path d="M56 53 C48 62 50 74 62 80 C70 83 76 80 80 74"/>'
+      '<path d="M50 62 L62 66"/>',
+  // Finnish: Helsinki Cathedral.
+  'fi':
+      '<path d="M50 52 C50 38 70 38 70 52 Z" fill="{tile}"/>'
+      '<rect x="48" y="52" width="24" height="10" fill="{tile}"/>'
+      '<path d="M36 70 L60 60 L84 70 Z" fill="{tile}"/>'
+      '<rect x="38" y="70" width="44" height="24" fill="{tile}"/>'
+      '<path d="M46 74 V90 M56 74 V90 M64 74 V90 M74 74 V90" '
+      'stroke-width="2.5"/>'
+      '<path d="M60 38 V30" stroke-width="3"/>',
+  // Czech: a tower of Prague's Charles Bridge.
+  'cs':
+      '<path d="M46 46 L60 22 L74 46 Z" fill="{tile}"/>'
+      '<rect x="48" y="46" width="24" height="40" fill="{tile}"/>'
+      '<path d="M54 86 V74 C54 66 66 66 66 74 V86" stroke-width="3"/>'
+      '<path d="M26 92 C32 82 42 82 48 92 M72 92 C78 82 88 82 94 92"/>',
+  // Hungarian: the Parliament in Budapest.
+  'hu':
+      '<path d="M48 64 C48 48 72 48 72 64 Z" fill="{tile}"/>'
+      '<path d="M60 50 V34" stroke-width="3"/>'
+      '<rect x="28" y="64" width="64" height="28" fill="{tile}"/>'
+      '<path d="M32 64 V52 M88 64 V52" stroke-width="3"/>'
+      '<path d="M36 72 V86 M46 72 V86 M74 72 V86 M84 72 V86" '
+      'stroke-width="2.5"/>',
+  // Romanian: Bran Castle.
+  'ro':
+      '<rect x="44" y="56" width="32" height="38" fill="{tile}"/>'
+      '<rect x="32" y="50" width="14" height="44" fill="{tile}"/>'
+      '<rect x="74" y="50" width="14" height="44" fill="{tile}"/>'
+      '<path d="M30 50 L39 32 L48 50 Z" fill="{tile}"/>'
+      '<path d="M72 50 L81 32 L90 50 Z" fill="{tile}"/>'
+      '<path d="M54 94 V82 C54 76 66 76 66 82 V94" stroke-width="3"/>',
+  // Ukrainian: a sunflower.
+  'uk':
+      '<path d="M60 74 V96 M60 86 C52 80 46 84 44 88" stroke-width="4"/>'
+      '<g fill="{tile}">'
+      '<ellipse cx="60" cy="32" rx="6" ry="10"/>'
+      '<ellipse cx="60" cy="68" rx="6" ry="10"/>'
+      '<ellipse cx="42" cy="50" rx="10" ry="6"/>'
+      '<ellipse cx="78" cy="50" rx="10" ry="6"/>'
+      '<ellipse cx="47" cy="37" rx="6" ry="10" transform="rotate(-45 47 37)"/>'
+      '<ellipse cx="73" cy="37" rx="6" ry="10" transform="rotate(45 73 37)"/>'
+      '<ellipse cx="47" cy="63" rx="6" ry="10" transform="rotate(45 47 63)"/>'
+      '<ellipse cx="73" cy="63" rx="6" ry="10" transform="rotate(-45 73 63)"/>'
+      '</g>'
+      '<circle cx="60" cy="50" r="9" fill="{ink}" stroke="none"/>',
+  // Japanese: a torii gate.
+  'ja':
+      '<path d="M28 38 C48 45 72 45 92 38" stroke-width="6"/>'
+      '<path d="M36 52 H84" stroke-width="5"/>'
+      '<path d="M44 42 V94 M76 42 V94" stroke-width="6"/>'
+      '<path d="M60 44 V52" stroke-width="4"/>',
+  // Chinese: a pagoda.
+  'zh':
+      '<path d="M36 52 Q60 40 84 52 Z" fill="{tile}"/>'
+      '<rect x="46" y="52" width="28" height="10" fill="{tile}"/>'
+      '<path d="M30 72 Q60 58 90 72 Z" fill="{tile}"/>'
+      '<rect x="42" y="72" width="36" height="22" fill="{tile}"/>'
+      '<path d="M60 41 V28" stroke-width="3"/>'
+      '<path d="M34 94 H86"/>',
+  // Korean: Namdaemun, Seoul's old gate.
+  'ko':
+      '<path d="M40 50 Q60 36 80 50 Z" fill="{tile}"/>'
+      '<rect x="44" y="50" width="32" height="10" fill="{tile}"/>'
+      '<path d="M30 62 Q60 48 90 62 Z" fill="{tile}"/>'
+      '<rect x="34" y="66" width="52" height="28" fill="{tile}"/>'
+      '<path d="M54 94 V84 C54 78 66 78 66 84 V94" stroke-width="3"/>',
+  // Arabic: the pyramids.
+  'ar':
+      '<path d="M28 92 L54 46 L80 92 Z" fill="{tile}"/>'
+      '<path d="M66 92 L80 68 L94 92 Z" fill="{tile}"/>'
+      '<path d="M54 46 L60 92" stroke-width="2.5"/>'
+      '<path d="M24 94 H96"/>',
+  // Hindi: the Taj Mahal.
+  'hi':
+      '<path d="M46 58 C40 44 52 34 60 26 C68 34 80 44 74 58 Z" '
+      'fill="{tile}"/>'
+      '<rect x="40" y="58" width="40" height="34" fill="{tile}"/>'
+      '<path d="M54 92 V78 C54 70 66 70 66 78 V92" stroke-width="3"/>'
+      '<path d="M30 92 V52 M90 92 V52" stroke-width="3.5"/>'
+      '<circle cx="30" cy="49" r="3" fill="{ink}" stroke="none"/>'
+      '<circle cx="90" cy="49" r="3" fill="{ink}" stroke="none"/>'
+      '<path d="M26 94 H94"/>',
+  // Vietnamese: a conical hat.
+  'vi':
+      '<path d="M26 80 L60 38 L94 80 Q60 90 26 80 Z" fill="{tile}"/>'
+      '<path d="M43 59 Q60 66 77 59 M35 70 Q60 78 85 70" '
+      'stroke-width="2.5"/>'
+      '<path d="M44 84 C50 96 70 96 76 84" stroke-width="2.5"/>',
 };

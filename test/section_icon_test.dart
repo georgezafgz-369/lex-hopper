@@ -69,14 +69,17 @@ void main() {
     }
   });
 
-  test('every language has a flag, with nothing left to fill in', () {
-    for (final code in const ['en', 'el', 'es', 'fr', 'de', 'it']) {
-      expect(FlagIcon.has(code), isTrue, reason: code);
+  test('every language has its landmark, with nothing left to fill in', () {
+    for (final l in appLanguages) {
+      expect(FlagIcon.has(l.code), isTrue, reason: l.code);
       for (final b in Brightness.values) {
-        final svg = FlagIcon.svgOf(code, b);
-        expect(svg, isNot(contains('{')), reason: '$code $b');
-        expect(svg, contains('clip-path'));
+        final svg = FlagIcon.svgOf(l.code, b);
+        expect(svg, isNot(contains('{')), reason: '${l.code} $b');
       }
+    }
+    // Neighbours in the list get different colours.
+    for (final b in Brightness.values) {
+      expect(FlagIcon.colorOf('en', b), isNot(FlagIcon.colorOf('el', b)));
     }
     expect(FlagIcon.has('xx'), isFalse);
   });
