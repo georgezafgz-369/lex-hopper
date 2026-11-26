@@ -13,7 +13,7 @@ void main() {
     for (final shape in CreatureShape.values) {
       for (var k = 0; k < 360; k++) {
         final r = CreaturePainter.radius(shape, k * math.pi / 180, 0);
-        expect(r, inInclusiveRange(0.3, 1.0), reason: '$shape at $k°');
+        expect(r, inInclusiveRange(0.2, 1.0), reason: '$shape at $k°');
       }
     }
     // The flower has deep notches, the blob none.
@@ -25,11 +25,41 @@ void main() {
     expect(dip(CreatureShape.blob), greaterThan(0.75));
   });
 
-  test('one eye for the flower and star, two for the others', () {
-    expect(CreaturePainter.twoEyes(CreatureShape.flower), 0);
-    expect(CreaturePainter.twoEyes(CreatureShape.star), 0);
-    expect(CreaturePainter.twoEyes(CreatureShape.fuzz), 1);
-    expect(CreaturePainter.twoEyes(CreatureShape.blob), 1);
+  test('one eye or two, each shape its own', () {
+    for (final s in [
+      CreatureShape.flower,
+      CreatureShape.star,
+      CreatureShape.daisy,
+      CreatureShape.sun,
+      CreatureShape.burst,
+      CreatureShape.hood,
+      CreatureShape.mushroom,
+    ]) {
+      expect(CreaturePainter.eyesOf(s), hasLength(1), reason: '$s');
+    }
+    for (final s in [
+      CreatureShape.fuzz,
+      CreatureShape.blob,
+      CreatureShape.cat,
+      CreatureShape.amoeba,
+    ]) {
+      expect(CreaturePainter.eyesOf(s), hasLength(2), reason: '$s');
+    }
+    expect(CreaturePainter.eyesOf(CreatureShape.burst).single.ringed, isTrue);
+    // Eyes sit inside the button.
+    for (final s in CreatureShape.values) {
+      for (final e in CreaturePainter.eyesOf(s)) {
+        expect(e.x.abs() + e.w / 2, lessThan(1), reason: '$s');
+        expect(e.y.abs() + e.h / 2, lessThan(1), reason: '$s');
+      }
+    }
+  });
+
+  test('the cat, mushroom and hood stay upright; round shapes turn', () {
+    expect(CreaturePainter.spins(CreatureShape.cat), 0);
+    expect(CreaturePainter.spins(CreatureShape.mushroom), 0);
+    expect(CreaturePainter.spins(CreatureShape.hood), 0);
+    expect(CreaturePainter.spins(CreatureShape.daisy), 1);
   });
 
   test('paints at every point of a morph, eyes open or shut', () {

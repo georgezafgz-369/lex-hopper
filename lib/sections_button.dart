@@ -24,9 +24,7 @@ import 'package:material_ui/material_ui.dart';
 
 import 'app_settings.dart';
 import 'app_text.dart';
-import 'ai_model.dart';
-import 'chat_page.dart'
-    show ChatSession, chatMessageBubble, teacherHello, teacherInvitation;
+import 'chat_page.dart' show ChatSession, chatMessageBubble, teacherHello;
 import 'design_system.dart';
 import 'doodle_creature.dart';
 import 'dual_text.dart';
@@ -70,7 +68,7 @@ class SectionsButton extends StatefulWidget {
   const SectionsButton({super.key, required this.navigator});
 
   /// The button's size, for pages that leave room for it.
-  static const size = 58.0;
+  static const size = 68.0;
 
   /// The rings pulse and the button floats for ever, so widget tests (which
   /// wait for animations to end) see them still.
@@ -97,6 +95,9 @@ class SectionsButton extends StatefulWidget {
 
   /// Closed (or used) once: not shown again until the app restarts.
   static bool cloudDismissed = false;
+
+  /// The language of the cloud's last hello (the next is another one).
+  static String? lastHello;
 
   @override
   State<SectionsButton> createState() => _SectionsButtonState();
@@ -169,7 +170,6 @@ class _SectionsButtonState extends State<SectionsButton>
     if (SectionsButton.pulses) _float.repeat();
     if (SectionsButton.teacherCloud && !SectionsButton.cloudDismissed) {
       _cloudTimer = Timer(SectionsButton.cloudDelay, _showCloud);
-      _lookForAi();
     }
     // Writing in the cloud's box keeps it; leaving the box (empty) lets it
     // go a few seconds later.
@@ -250,6 +250,7 @@ class _SectionsButtonState extends State<SectionsButton>
   /// Shows the cloud, which goes away by itself a few seconds later.
   void _showCloud() {
     if (!mounted) return;
+    _pickHello();
     setState(() => _cloudDue = true);
     _cloudTimer?.cancel();
     _cloudTimer = Timer(SectionsButton.cloudShowFor, () {
@@ -257,28 +258,21 @@ class _SectionsButtonState extends State<SectionsButton>
     });
   }
 
-  // An AI is on the phone (for the cloud's words; looked up at the start).
-  bool _aiReady = false;
+  /// The cloud's word: hello in one of the languages on the phone, a
+  /// different one each time it shows.
+  String _cloudHello = teacherHello['en']!;
 
-  Future<void> _lookForAi() async {
-    final ready =
-        AppSettings.instance.aiTranslator && await AiModel.instance.isReady();
-    if (mounted && ready != _aiReady) setState(() => _aiReady = ready);
-  }
-
-  /// The cloud's words in [t]'s language: hello, then an invitation (or,
-  /// with no AI yet, the offer to download one).
-  (String, String) _cloudText(AppText t) => (
-    teacherHello[t.code] ?? teacherHello['en']!,
-    _aiReady ? teacherInvitation(t) : t.aiOffer,
-  );
-
-  /// The same, in the secondary language, or null when there is none.
-  String? _cloudTranslation(AppText t) {
-    final second = AppSettings.instance.secondaryLanguage;
-    if (second == null || second == t.code) return null;
-    final (hello, words) = _cloudText(AppText.forCode(second));
-    return '$hello $words';
+  void _pickHello() {
+    final codes = [
+      for (final l in appLanguages)
+        if (l.available && teacherHello.containsKey(l.code)) l.code,
+    ];
+    final others = codes.where((c) => c != SectionsButton.lastHello).toList();
+    final pool = others.isEmpty ? codes : others;
+    if (pool.isEmpty) return;
+    final code = pool[math.Random().nextInt(pool.length)];
+    SectionsButton.lastHello = code;
+    _cloudHello = teacherHello[code]!;
   }
 
   /// The chat window, the teacher speaking first (the cloud, or the
@@ -373,7 +367,7 @@ class _SectionsButtonState extends State<SectionsButton>
                     _dragAt == null;
                 final onRight = at.dx + s / 2 > area.width / 2;
                 final below = at.dy + s / 2 > area.height / 2;
-                final (hello, invite) = _cloudText(AppText.of(context));
+
                 // The chat window: as tall as its conversation, up to two
                 // thirds of the screen; as wide as fits.
                 final room = below
@@ -419,9 +413,7 @@ class _SectionsButtonState extends State<SectionsButton>
                           animation: _float,
                           phase: 0.15,
                           child: _TeacherCloud(
-                            hello: hello,
-                            invite: invite,
-                            translation: _cloudTranslation(AppText.of(context)),
+                            hello: _cloudHello,
                             tailRight: onRight,
                             tailDown: below,
                             onTap: _openChat,
@@ -516,10 +508,6 @@ class _SectionsButtonState extends State<SectionsButton>
 /// practised and an invitation to chat. Tapping it opens the AI chat.
 class _TeacherCloud extends StatelessWidget {
   final String hello;
-  final String invite;
-
-  /// The same words in the secondary language (under them), or null.
-  final String? translation;
 
   /// Which corner the trail of puffs leaves from (towards the button).
   final bool tailRight;
@@ -538,8 +526,6 @@ class _TeacherCloud extends StatelessWidget {
 
   const _TeacherCloud({
     required this.hello,
-    required this.invite,
-    required this.translation,
     required this.tailRight,
     required this.tailDown,
     required this.onTap,
@@ -665,33 +651,6 @@ class _TeacherCloud extends StatelessWidget {
                               fontFamily: 'Inter',
                             ),
                           ),
-                          const SizedBox(height: 2),
-                          Text(
-                            invite,
-                            style: TextStyle(
-                              fontSize: 13,
-                              height: 1.3,
-                              color: ink,
-                              fontFamily: 'Inter',
-                            ),
-                          ),
-                          // In the secondary language, under it.
-                          if (translation != null) ...[
-                            const SizedBox(height: 4),
-                            Text(
-                              translation!,
-                              key: const Key('teacher-cloud-translation'),
-                              style: TextStyle(
-                                fontSize: 12,
-                                height: 1.3,
-                                color: b.resolve(
-                                  light: AppColors.translationLight,
-                                  dark: AppColors.translationDark,
-                                ),
-                                fontFamily: 'Inter',
-                              ),
-                            ),
-                          ],
                         ],
                       ),
                     ),

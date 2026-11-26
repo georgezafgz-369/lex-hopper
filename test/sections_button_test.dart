@@ -17,6 +17,9 @@ void main() {
     SectionsButton.observer.covered.value = false;
     SectionsButton.teacherCloud = false;
     SectionsButton.cloudDismissed = false;
+    // The last hello was Greek, so the next (English and Greek are on
+    // the phone in tests) is English: "Hello!".
+    SectionsButton.lastHello = 'el';
     SectionsButton.cloudDelay = const Duration(seconds: 2);
     SectionsButton.cloudShowFor = const Duration(seconds: 4);
     SharedPreferences.setMockInitialValues({});
@@ -64,7 +67,7 @@ void main() {
     await tester.pumpWidget(app());
     final rect = tester.getRect(button);
     expect(rect.width, rect.height);
-    expect(rect.width, lessThanOrEqualTo(60));
+    expect(rect.width, lessThanOrEqualTo(70));
     expect(rect.right, greaterThan(400 - 40));
     expect(rect.bottom, greaterThan(800 - 140));
     expect(rect.bottom, lessThan(800 - 72));
@@ -282,19 +285,24 @@ void main() {
       expect(messages[1], (mine: true, text: 'Hi!'));
     });
 
-    testWidgets('in the main language, the secondary one under it; no AI '
-        'yet: the offer to download it', (tester) async {
-      await AppSettings.instance.setSecondaryLanguage('el');
-      addTearDown(() => AppSettings.instance.setSecondaryLanguage(null));
+    testWidgets('just hello, in a language on the phone, another each time', (
+      tester,
+    ) async {
       await tester.pumpWidget(app());
       await tester.pump(const Duration(seconds: 2));
       await tester.pump();
       expect(find.text('Hello!'), findsOneWidget);
-      expect(find.textContaining('download the AI'), findsOneWidget);
-      final under = tester.widget<Text>(
-        find.byKey(const Key('teacher-cloud-translation')),
-      );
-      expect(under.data, startsWith('Γεια σου! '));
+      // No invitation or translation any more; the chat box stays.
+      expect(find.textContaining('download the AI'), findsNothing);
+      expect(find.byKey(const Key('teacher-cloud-input')), findsOneWidget);
+      expect(SectionsButton.lastHello, 'en');
+      // Next start: the other language on the phone (Greek).
+      await tester.pumpWidget(const SizedBox());
+      await tester.pumpWidget(app());
+      await tester.pump(const Duration(seconds: 2));
+      await tester.pump();
+      expect(find.text('Γεια σου!'), findsOneWidget);
+      expect(SectionsButton.lastHello, 'el');
     });
 
     testWidgets('tapped, it becomes a chat window over the button', (
