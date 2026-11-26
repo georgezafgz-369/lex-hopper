@@ -143,7 +143,6 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
-            const Positioned.fill(child: SectionsButton()),
           ],
         ),
       ),

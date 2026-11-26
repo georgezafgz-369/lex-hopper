@@ -24,6 +24,7 @@ import 'dictionary_page.dart';
 import 'dictionary_service.dart';
 import 'opus_mt_service.dart';
 import 'puzzle_themes.dart';
+import 'sections_button.dart';
 import 'settings_page.dart';
 import 'translator_page.dart';
 import 'word_search_menu_page.dart';
@@ -82,6 +83,7 @@ class LexHopper extends StatelessWidget {
     return MaterialApp(
       title: 'Lex Hopper',
       navigatorKey: _navigator,
+      navigatorObservers: [SectionsButton.observer],
       theme: lexTheme(brightness: Brightness.light),
       darkTheme: lexTheme(brightness: Brightness.dark),
       themeMode: AppSettings.instance.themeMode,
@@ -119,7 +121,13 @@ class LexHopper extends StatelessWidget {
                 : _ScaledTextScaler(media.textScaler, factor),
           ),
           // Double-tap a word anywhere: its page in the dictionary.
-          child: WordLookUp(navigator: _navigator, child: child!),
+          child: Stack(
+            children: [
+              WordLookUp(navigator: _navigator, child: child!),
+              // The round menu button, over every page.
+              Positioned.fill(child: SectionsButton(navigator: _navigator)),
+            ],
+          ),
         );
       },
       scrollBehavior: const _NoOverscrollBehavior(),

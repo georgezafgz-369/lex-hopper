@@ -1,10 +1,15 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// SECTIONS BUTTON — the round button at the bottom right of the home page
+// SECTIONS BUTTON — the round button over every page
 // ─────────────────────────────────────────────────────────────────────────────
 //
 // Closed: a hand-drawn dot with rings pulsing out around it. Tapped, the
-// rings fade, the dot stays, and a menu of the app's sections pops up
-// above it. A tap outside, or Back, closes it.
+// rings fade, the button shrinks to just the dot, and a menu of the app's
+// sections pops up beside it. A tap outside, or Back, closes it. It floats
+// a little, and a drag moves it anywhere on the screen.
+//
+// It sits over the navigator (main.dart's builder), so it stays put while
+// pages change; the menu is a popup route, so Back closes it. It hides
+// while a sheet or dialog is up and while the keyboard is open.
 
 import 'dart:io' show Platform;
 import 'dart:math' as math;
@@ -16,25 +21,55 @@ import 'design_system.dart';
 import 'dual_text.dart';
 import 'section_icon.dart';
 
-/// Fills the page (in a Stack over it); only the button, and the menu while
-/// open, take taps.
 class SectionsButton extends StatefulWidget {
-  const SectionsButton({super.key});
+  /// The app's navigator, to open pages and the menu.
+  final GlobalKey<NavigatorState> navigator;
+
+  const SectionsButton({super.key, required this.navigator});
 
   /// The button's size, for pages that leave room for it.
-  static const size = 60.0;
+  static const size = 50.0;
 
-  /// The rings pulse for ever, so widget tests (which wait for animations
-  /// to end) see them still.
+  /// The rings pulse and the button floats for ever, so widget tests (which
+  /// wait for animations to end) see them still.
   static bool pulses = !Platform.environment.containsKey('FLUTTER_TEST');
+
+  /// Where the button was dragged to (its top-left, as a fraction of the
+  /// screen), kept while the app runs; null: the bottom right corner.
+  static Offset? place;
+
+  /// Watches the navigator: the button hides while a sheet or a dialog is
+  /// on top. Goes in the app's navigatorObservers.
+  static final observer = _TopRouteObserver();
 
   @override
   State<SectionsButton> createState() => _SectionsButtonState();
 }
 
+/// True while the top route is a sheet or dialog (not a page, not the menu).
+class _TopRouteObserver extends NavigatorObserver {
+  final covered = ValueNotifier(false);
+
+  void _top(Route<dynamic>? route) {
+    final value = route is PopupRoute && route is! _MenuRoute;
+    // Called during navigation, which may be in the middle of a build.
+    WidgetsBinding.instance.addPostFrameCallback((_) => covered.value = value);
+  }
+
+  @override
+  void didPush(Route route, Route? previousRoute) => _top(route);
+  @override
+  void didPop(Route route, Route? previousRoute) => _top(previousRoute);
+  @override
+  void didRemove(Route route, Route? previousRoute) => _top(previousRoute);
+  @override
+  void didReplace({Route? newRoute, Route? oldRoute}) => _top(newRoute);
+}
+
 class _SectionsButtonState extends State<SectionsButton>
     with TickerProviderStateMixin {
-  bool _open = false;
+  _MenuRoute? _menu;
+  bool get _open => _menu != null;
 
   // The rings' pulse, always running while closed.
   late final _pulse = AnimationController(
@@ -42,41 +77,96 @@ class _SectionsButtonState extends State<SectionsButton>
     duration: const Duration(milliseconds: 2400),
   );
 
-  @override
-  void initState() {
-    super.initState();
-    if (SectionsButton.pulses) _pulse.repeat();
-  }
+  // A slow up-and-down float, for the button and the open menu.
+  late final _float = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 3200),
+  );
 
-  // 0 closed, 1 open: fades the rings out and the menu in.
+  // 0 closed, 1 open: fades the rings out and shrinks the button.
   late final _openness = AnimationController(
     vsync: this,
     duration: const Duration(milliseconds: 220),
   );
 
+  // The button's top-left while being dragged (pixels in the screen).
+  Offset? _dragAt;
+
+  static const _margin = Spacing.md;
+  static const _aboveBars = 72.0;
+
+  @override
+  void initState() {
+    super.initState();
+    if (SectionsButton.pulses) {
+      _pulse.repeat();
+      _float.repeat();
+    }
+  }
+
   @override
   void dispose() {
     _pulse.dispose();
+    _float.dispose();
     _openness.dispose();
     super.dispose();
   }
 
-  void _toggle() => _setOpen(!_open);
+  NavigatorState? get _navigator => widget.navigator.currentState;
 
-  void _setOpen(bool open) {
-    setState(() => _open = open);
-    if (open) {
-      _openness.forward();
-      _pulse.stop();
+  void _toggle(Rect button, Size area, EdgeInsets padding) {
+    final navigator = _navigator;
+    if (navigator == null) return;
+    if (_open) {
+      final menu = _menu!;
+      menu.isCurrent ? navigator.pop() : navigator.removeRoute(menu);
+      return _closed();
+    }
+    final menu = _MenuRoute(
+      button: button.shift(Offset(padding.left, padding.top)),
+      float: _float,
+      onPick: _go,
+    );
+    setState(() => _menu = menu);
+    _openness.forward();
+    _pulse.stop();
+    navigator.push(menu).whenComplete(() {
+      if (mounted && _menu == menu) _closed();
+    });
+  }
+
+  void _closed() {
+    setState(() => _menu = null);
+    _openness.reverse();
+    if (SectionsButton.pulses) _pulse.repeat();
+  }
+
+  /// Closes the menu and opens [route] over the home page ("/": home).
+  void _go(String route) {
+    final navigator = _navigator;
+    if (navigator == null) return;
+    navigator.pop(); // the menu
+    if (route == '/') {
+      navigator.popUntil((r) => r.isFirst);
     } else {
-      _openness.reverse();
-      if (SectionsButton.pulses) _pulse.repeat();
+      navigator.pushNamedAndRemoveUntil(route, (r) => r.isFirst);
     }
   }
 
-  void _go(String route) {
-    _setOpen(false);
-    Navigator.of(context).pushNamed(route);
+  /// The button's top-left in [area], kept clear of the edges.
+  Offset _buttonAt(Size area) {
+    const s = SectionsButton.size;
+    final maxX = math.max(_margin, area.width - s - _margin);
+    final maxY = math.max(_margin, area.height - s - _margin);
+    final place = SectionsButton.place;
+    final at =
+        _dragAt ??
+        (place == null
+            // Above the bars some pages have at the bottom (the
+            // translator's languages, the chat's message field).
+            ? Offset(maxX, maxY - _aboveBars)
+            : Offset(place.dx * area.width, place.dy * area.height));
+    return Offset(at.dx.clamp(_margin, maxX), at.dy.clamp(_margin, maxY));
   }
 
   @override
@@ -86,6 +176,147 @@ class _SectionsButtonState extends State<SectionsButton>
       light: AppColors.clayLight,
       dark: AppColors.clayDark,
     );
+    final mark = b.resolve(
+      light: AppColors.paperLight,
+      dark: AppColors.paperDark,
+    );
+    final media = MediaQuery.of(context);
+    const s = SectionsButton.size;
+
+    return ValueListenableBuilder(
+      valueListenable: SectionsButton.observer.covered,
+      builder: (context, covered, _) {
+        // Out of the way of sheets, dialogs and the keyboard.
+        if ((covered || media.viewInsets.bottom > 0) && !_open) {
+          return const SizedBox.shrink();
+        }
+        return SafeArea(
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              final area = constraints.biggest;
+              final at = _buttonAt(area);
+              return Stack(
+                children: [
+                  Positioned(
+                    left: at.dx,
+                    top: at.dy,
+                    child: GestureDetector(
+                      onPanStart: _open
+                          ? null
+                          : (_) => setState(() => _dragAt = at),
+                      onPanUpdate: _open
+                          ? null
+                          : (d) => setState(
+                              () => _dragAt = _buttonAt(area) + d.delta,
+                            ),
+                      onPanEnd: _open
+                          ? null
+                          : (_) => setState(() {
+                              final end = _buttonAt(area);
+                              SectionsButton.place = Offset(
+                                end.dx / area.width,
+                                end.dy / area.height,
+                              );
+                              _dragAt = null;
+                            }),
+                      child: _Floating(
+                        animation: _float,
+                        // Smaller while the menu is open.
+                        child: ScaleTransition(
+                          scale: Tween(begin: 1.0, end: 0.78).animate(
+                            CurvedAnimation(
+                              parent: _openness,
+                              curve: Curves.easeOut,
+                            ),
+                          ),
+                          child: Semantics(
+                            button: true,
+                            expanded: _open,
+                            label: AppText.of(context).menu,
+                            excludeSemantics: true,
+                            child: Material(
+                              key: const Key('sections-button'),
+                              color: clay,
+                              shape: const CircleBorder(),
+                              elevation: _dragAt != null ? 10 : 6,
+                              clipBehavior: Clip.antiAlias,
+                              child: InkWell(
+                                onTap: () => _toggle(
+                                  at & const Size.square(s),
+                                  area,
+                                  media.padding,
+                                ),
+                                child: SizedBox.square(
+                                  dimension: s,
+                                  child: CustomPaint(
+                                    painter: DotWavesPainter(
+                                      pulse: _pulse,
+                                      openness: _openness,
+                                      color: mark,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              );
+            },
+          ),
+        );
+      },
+    );
+  }
+}
+
+/// Moves [child] a few pixels up and down with [animation].
+class _Floating extends StatelessWidget {
+  final Animation<double> animation;
+  final double phase;
+  final Widget child;
+
+  const _Floating({
+    required this.animation,
+    required this.child,
+    this.phase = 0,
+  });
+
+  @override
+  Widget build(BuildContext context) => AnimatedBuilder(
+    animation: animation,
+    builder: (_, child) => Transform.translate(
+      offset: Offset(0, 3 * math.sin((animation.value + phase) * 2 * math.pi)),
+      child: child,
+    ),
+    child: child,
+  );
+}
+
+/// The menu: a dimmed screen and the sections, beside [button] (its place
+/// on the screen), opening towards the middle. A tap outside closes it.
+class _MenuRoute extends PopupRoute<void> {
+  final Rect button;
+  final Animation<double> float;
+  final void Function(String route) onPick;
+
+  _MenuRoute({required this.button, required this.float, required this.onPick});
+
+  @override
+  Color? get barrierColor => Colors.black.withValues(alpha: 0.25);
+  @override
+  bool get barrierDismissible => true;
+  @override
+  String? get barrierLabel => 'menu';
+  @override
+  Duration get transitionDuration => const Duration(milliseconds: 200);
+
+  @override
+  Widget buildPage(context, animation, secondaryAnimation) {
+    final b = Theme.of(context).brightness;
     final card = b.resolve(
       light: AppColors.gridCellLight,
       dark: AppColors.gridCellDark,
@@ -95,172 +326,98 @@ class _SectionsButtonState extends State<SectionsButton>
       dark: AppColors.hairlineDark,
     );
     final ink = b.resolve(light: AppColors.inkLight, dark: AppColors.inkDark);
-    final mark = b.resolve(
-      light: AppColors.paperLight,
-      dark: AppColors.paperDark,
-    );
+    final screen = MediaQuery.sizeOf(context);
+    const gap = Spacing.sm;
+    final onRight = button.center.dx > screen.width / 2;
+    final below = button.center.dy > screen.height / 2;
 
-    final items = <(Key, Section, String Function(AppText), String)>[
-      (
-        const Key('sections-games'),
-        Section.games,
-        (t) => t.gamesTitle,
-        '/games',
-      ),
-      (
-        const Key('sections-dictionary'),
-        Section.dictionary,
-        (t) => t.dictionary,
-        '/dictionary',
-      ),
-      (
-        const Key('sections-translator'),
-        Section.translator,
-        (t) => t.translator,
-        '/translator',
-      ),
-      (
-        const Key('sections-chat'),
-        Section.chatAi,
-        (t) => t.chatWithAi,
-        '/chat',
-      ),
-      (
-        const Key('sections-settings'),
-        Section.settings,
-        (t) => t.settings,
-        '/settings',
-      ),
+    final items = <(String, Section, String Function(AppText), String)>[
+      ('home', Section.home, (t) => t.home, '/'),
+      ('games', Section.games, (t) => t.gamesTitle, '/games'),
+      ('dictionary', Section.dictionary, (t) => t.dictionary, '/dictionary'),
+      ('translator', Section.translator, (t) => t.translator, '/translator'),
+      ('chat', Section.chatAi, (t) => t.chatWithAi, '/chat'),
+      ('settings', Section.settings, (t) => t.settings, '/settings'),
     ];
 
-    return PopScope(
-      canPop: !_open,
-      onPopInvokedWithResult: (didPop, _) {
-        if (!didPop && _open) _setOpen(false);
-      },
-      child: Stack(
-        fit: StackFit.expand,
-        children: [
-          // A tap anywhere else closes the menu.
-          if (_open)
-            GestureDetector(
-              key: const Key('sections-scrim'),
-              behavior: HitTestBehavior.opaque,
-              onTap: () => _setOpen(false),
-              child: FadeTransition(
-                opacity: _openness,
-                child: ColoredBox(color: Colors.black.withValues(alpha: 0.25)),
+    return Stack(
+      children: [
+        Positioned(
+          left: onRight ? null : button.left,
+          right: onRight ? screen.width - button.right : null,
+          top: below ? null : button.bottom + gap,
+          bottom: below ? screen.height - button.top + gap : null,
+          child: _Floating(
+            animation: float,
+            phase: 0.25,
+            child: ScaleTransition(
+              scale: Tween(begin: 0.9, end: 1.0).animate(
+                CurvedAnimation(parent: animation, curve: Curves.easeOut),
               ),
-            ),
-
-          // ── The menu, above the button ─────────────────────────────────
-          if (_open)
-            Positioned(
-              right: Spacing.md,
-              bottom: Spacing.md + SectionsButton.size + Spacing.sm,
-              child: FadeTransition(
-                opacity: _openness,
-                child: ScaleTransition(
-                  scale: Tween(begin: 0.9, end: 1.0).animate(
-                    CurvedAnimation(parent: _openness, curve: Curves.easeOut),
-                  ),
-                  alignment: Alignment.bottomRight,
-                  child: Material(
-                    key: const Key('sections-menu'),
-                    color: card,
-                    elevation: 6,
-                    borderRadius: BorderRadius.circular(Radius.md),
-                    clipBehavior: Clip.antiAlias,
-                    child: ConstrainedBox(
-                      constraints: const BoxConstraints(
-                        minWidth: 220,
-                        maxWidth: 300,
-                      ),
-                      child: IntrinsicWidth(
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: [
-                            for (final (i, (key, section, title, route))
-                                in items.indexed) ...[
-                              if (i > 0) Divider(height: 0, color: hairline),
-                              InkWell(
-                                key: key,
-                                onTap: () => _go(route),
-                                child: Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: Spacing.md,
-                                    vertical: Spacing.sm,
-                                  ),
-                                  child: Row(
-                                    children: [
-                                      SectionIcon(
-                                        section,
-                                        size: 32,
-                                        compact: true,
-                                      ),
-                                      const SizedBox(width: Spacing.md),
-                                      Flexible(
-                                        child: DualText(
-                                          title,
-                                          inline: true,
-                                          style: TextStyle(
-                                            fontSize: 16,
-                                            fontWeight: FontWeight.w600,
-                                            color: ink,
-                                            fontFamily: 'Inter',
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ),
-
-          // ── The button ─────────────────────────────────────────────────
-          Positioned(
-            right: Spacing.md,
-            bottom: Spacing.md,
-            child: Semantics(
-              button: true,
-              expanded: _open,
-              label: AppText.of(context).menu,
-              excludeSemantics: true,
+              alignment: Alignment(onRight ? 1 : -1, below ? 1 : -1),
               child: Material(
-                key: const Key('sections-button'),
-                color: clay,
-                shape: const CircleBorder(),
-                elevation: 4,
+                key: const Key('sections-menu'),
+                color: card,
+                elevation: 10,
+                borderRadius: BorderRadius.circular(Radius.md),
                 clipBehavior: Clip.antiAlias,
-                child: InkWell(
-                  onTap: _toggle,
-                  child: SizedBox.square(
-                    dimension: SectionsButton.size,
-                    child: CustomPaint(
-                      painter: DotWavesPainter(
-                        pulse: _pulse,
-                        openness: _openness,
-                        color: mark,
-                      ),
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(
+                    minWidth: 180,
+                    maxWidth: 260,
+                  ),
+                  child: IntrinsicWidth(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        for (final (i, (name, section, title, route))
+                            in items.indexed) ...[
+                          if (i > 0) Divider(height: 0, color: hairline),
+                          InkWell(
+                            key: Key('sections-$name'),
+                            onTap: () => onPick(route),
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: Spacing.sm + 4,
+                                vertical: 7,
+                              ),
+                              child: Row(
+                                children: [
+                                  SectionIcon(section, size: 26, compact: true),
+                                  const SizedBox(width: Spacing.sm + 2),
+                                  Flexible(
+                                    child: DualText(
+                                      title,
+                                      inline: true,
+                                      style: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w600,
+                                        color: ink,
+                                        fontFamily: 'Inter',
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ],
                     ),
                   ),
                 ),
               ),
             ),
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
+
+  @override
+  Widget buildTransitions(context, animation, secondaryAnimation, child) =>
+      FadeTransition(opacity: animation, child: child);
 }
 
 /// A doodled dot with two rings around it. The rings pulse outward one
