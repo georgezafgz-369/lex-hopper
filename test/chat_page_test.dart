@@ -10,6 +10,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
   setUp(() async {
+    ChatSession.instance.reset();
     SharedPreferences.setMockInitialValues({});
     await AppSettings.instance.load();
   });
@@ -75,5 +76,22 @@ void main() {
       speakablePart('Hola, ¿qué tal?', language: 'es', main: 'en'),
       'Hola, ¿qué tal?',
     );
+  });
+
+  testWidgets('opened from the teacher cloud: its greeting comes first', (
+    tester,
+  ) async {
+    await tester.binding.setSurfaceSize(const Size(400, 900));
+    await tester.pumpWidget(
+      MaterialApp(
+        onGenerateRoute: (_) => MaterialPageRoute(
+          settings: const RouteSettings(arguments: 'Γεια σου! Ready?'),
+          builder: (_) => const ChatPage(),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('chat-welcome')), findsNothing);
+    expect(find.text('Γεια σου! Ready?'), findsOneWidget);
   });
 }

@@ -26,7 +26,7 @@ class ChatPage extends StatefulWidget {
 }
 
 /// One message: from you, or from the AI.
-typedef _Message = ({bool mine, String text});
+typedef ChatMessage = ({bool mine, String text});
 
 /// Language names for the AI's instructions.
 const _names = {
@@ -65,42 +65,132 @@ String chatInstructions({required String main, String? second}) {
       '$p and $m. $style';
 }
 
+/// The conversation with the AI teacher, shared by the chat page and the
+/// little chat window over the round button: one conversation, wherever
+/// it is shown, while the app runs.
+class ChatSession extends ChangeNotifier {
+  ChatSession._();
+  static final instance = ChatSession._();
+
+  final List<ChatMessage> messages = [];
+
+  /// The AI's reply being written, or null.
+  String? writing;
+
+  /// An AI model is on and on the phone.
+  bool aiReady = false;
+
+  /// The AI is starting up (the first time can take a while).
+  bool warming = false;
+
+  bool _checking = false;
+
+  /// Starts a new conversation (tests).
+  @visibleForTesting
+  void reset() {
+    messages.clear();
+    writing = null;
+    aiReady = warming = false;
+    notifyListeners();
+  }
+
+  /// Looks whether an AI is on, and starts it so the first reply doesn't
+  /// wait for it.
+  Future<void> checkAi() async {
+    if (_checking) return;
+    _checking = true;
+    try {
+      final ready =
+          AppSettings.instance.aiTranslator && await AiModel.instance.isReady();
+      aiReady = ready;
+      warming = ready;
+      notifyListeners();
+      if (!ready) return;
+      await AiModel.instance.warmUp();
+      warming = false;
+      notifyListeners();
+    } finally {
+      _checking = false;
+    }
+  }
+
+  /// The teacher speaks first ([text]), if nothing has been said yet.
+  void greet(String text) {
+    if (messages.isNotEmpty) return;
+    messages.add((mine: false, text: text));
+    notifyListeners();
+  }
+
+  /// Sends [message] and writes the AI's reply as it comes.
+  Future<void> send(String message, AppText t) async {
+    message = message.trim();
+    if (message.isEmpty || writing != null) return;
+    messages.add((mine: true, text: message));
+    notifyListeners();
+    if (!aiReady) {
+      messages.add((mine: false, text: t.chatNoAi));
+      notifyListeners();
+      return;
+    }
+    writing = '';
+    notifyListeners();
+    final out = StringBuffer();
+    try {
+      await for (final bit in AiModel.instance.chat(
+        messages,
+        instructions: chatInstructions(
+          main: t.code,
+          second: AppSettings.instance.secondaryLanguage,
+        ),
+      )) {
+        out.write(bit);
+        writing = out.toString();
+        notifyListeners();
+      }
+    } catch (e) {
+      debugPrint('Chat: ${AiModel.instance.name} stopped: $e');
+    }
+    final reply = out.toString().trim();
+    writing = null;
+    messages.add((mine: false, text: reply.isEmpty ? t.chatFailed : reply));
+    notifyListeners();
+  }
+}
+
 class _ChatPageState extends State<ChatPage> {
   final _input = TextEditingController();
   final _scroll = ScrollController();
-  final List<_Message> _messages = [];
+  final _session = ChatSession.instance;
 
-  /// The AI's reply being written, or null.
-  String? _writing;
-
-  /// An AI model is on and on the phone.
-  bool _aiReady = false;
-
-  /// The AI is starting up (the first time can take a while).
-  bool _warming = false;
+  List<ChatMessage> get _messages => _session.messages;
+  String? get _writing => _session.writing;
+  bool get _warming => _session.warming;
 
   @override
   void initState() {
     super.initState();
-    _checkAi();
+    _session.addListener(_changed);
+    _session.checkAi();
+    _toBottom();
   }
 
-  Future<void> _checkAi() async {
-    final ready =
-        AppSettings.instance.aiTranslator && await AiModel.instance.isReady();
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Opened with a greeting (the teacher's cloud): it starts the chat.
+    final greeting = ModalRoute.of(context)?.settings.arguments;
+    if (greeting is String) _session.greet(greeting);
+  }
+
+  void _changed() {
     if (!mounted) return;
-    setState(() {
-      _aiReady = ready;
-      _warming = ready;
-    });
-    if (!ready) return;
-    // Start the AI now, so the first reply doesn't wait for it.
-    await AiModel.instance.warmUp();
-    if (mounted) setState(() => _warming = false);
+    setState(() {});
+    _toBottom();
   }
 
   @override
   void dispose() {
+    _session.removeListener(_changed);
     _input.dispose();
     _scroll.dispose();
     super.dispose();
@@ -109,40 +199,8 @@ class _ChatPageState extends State<ChatPage> {
   Future<void> _send([String? text]) async {
     final message = (text ?? _input.text).trim();
     if (message.isEmpty || _writing != null) return;
-    final t = AppText.of(context);
-    setState(() => _messages.add((mine: true, text: message)));
     _input.clear();
-    _toBottom();
-    if (!_aiReady) {
-      setState(() => _messages.add((mine: false, text: t.chatNoAi)));
-      _toBottom();
-      return;
-    }
-    setState(() => _writing = '');
-    final out = StringBuffer();
-    try {
-      await for (final bit in AiModel.instance.chat(
-        _messages,
-        instructions: chatInstructions(
-          main: t.code,
-          second: AppSettings.instance.secondaryLanguage,
-        ),
-      )) {
-        out.write(bit);
-        if (!mounted) return;
-        setState(() => _writing = out.toString());
-        _toBottom();
-      }
-    } catch (e) {
-      debugPrint('Chat: ${AiModel.instance.name} stopped: $e');
-    }
-    if (!mounted) return;
-    final reply = out.toString().trim();
-    setState(() {
-      _writing = null;
-      _messages.add((mine: false, text: reply.isEmpty ? t.chatFailed : reply));
-    });
-    _toBottom();
+    await _session.send(message, AppText.of(context));
   }
 
   /// Reads [text] aloud in the practised language's voice (the secondary
@@ -255,7 +313,7 @@ class _ChatPageState extends State<ChatPage> {
                                 mine: false,
                                 text: _writing!.isEmpty ? '…' : _writing!,
                               );
-                        final bubble = _Bubble(
+                        final bubble = ChatBubble(
                           text: m.text,
                           mine: m.mine,
                           fill: m.mine ? blue : card,
@@ -484,18 +542,21 @@ class _Welcome extends StatelessWidget {
 }
 
 /// A chat bubble: yours on the right in blue, the AI's on the left.
-class _Bubble extends StatelessWidget {
+class ChatBubble extends StatelessWidget {
   final String text;
   final bool mine;
   final Color fill, textColor;
   final Color? border;
+  final double fontSize;
 
-  const _Bubble({
+  const ChatBubble({
+    super.key,
     required this.text,
     required this.mine,
     required this.fill,
     required this.textColor,
     this.border,
+    this.fontSize = 16,
   });
 
   @override
@@ -525,7 +586,7 @@ class _Bubble extends StatelessWidget {
         child: Text(
           text,
           style: TextStyle(
-            fontSize: 16,
+            fontSize: fontSize,
             height: 1.35,
             color: textColor,
             fontFamily: 'Inter',

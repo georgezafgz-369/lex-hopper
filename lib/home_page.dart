@@ -92,16 +92,6 @@ class HomePage extends StatelessWidget {
                         ),
                         const SizedBox(height: Spacing.md),
 
-                        MenuCard(
-                          key: const Key('translator-card'),
-                          leading: const SectionIcon(Section.translator),
-                          title: (t) => t.translator,
-                          subtitle: (t) => t.translatorSubtitle,
-                          onTap: () =>
-                              Navigator.of(context).pushNamed('/translator'),
-                        ),
-                        const SizedBox(height: Spacing.md),
-
                         // ── Chat with AI ──────────────────────────────────────
                         MenuCard(
                           key: const Key('chat-ai-card'),
@@ -109,6 +99,16 @@ class HomePage extends StatelessWidget {
                           title: (t) => t.chatWithAi,
                           subtitle: (t) => t.chatWithAiSubtitle,
                           onTap: () => Navigator.of(context).pushNamed('/chat'),
+                        ),
+                        const SizedBox(height: Spacing.md),
+
+                        MenuCard(
+                          key: const Key('translator-card'),
+                          leading: const SectionIcon(Section.translator),
+                          title: (t) => t.translator,
+                          subtitle: (t) => t.translatorSubtitle,
+                          onTap: () =>
+                              Navigator.of(context).pushNamed('/translator'),
                         ),
                         const SizedBox(height: Spacing.md),
 

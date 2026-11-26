@@ -125,7 +125,9 @@ class LexHopper extends StatelessWidget {
             children: [
               WordLookUp(navigator: _navigator, child: child!),
               // The round menu button, over every page.
-              Positioned.fill(child: SectionsButton(navigator: _navigator)),
+              Positioned.fill(
+                child: SectionsButtonLayer(navigator: _navigator),
+              ),
             ],
           ),
         );

@@ -1784,6 +1784,39 @@ class AppText {
     'Aucune app de messagerie trouvée. Écris-nous à $email',
     'Почтовое приложение не найдено. Напиши нам на $email',
   );
+
+  /// The teacher's cloud over the round button: an invitation to chat,
+  /// one of three, picked by [variant].
+  String teacherInvite(int variant) => switch (variant % 3) {
+    0 => _(
+      "I'm your language teacher. Shall we practise together?",
+      'Είμαι ο δάσκαλός σου στις γλώσσες. Κάνουμε λίγη εξάσκηση μαζί;',
+      'Soy tu profesor de idiomas. ¿Practicamos juntos?',
+      'Ich bin dein Sprachlehrer. Wollen wir zusammen üben?',
+      'Sono il tuo insegnante di lingue. Ci esercitiamo insieme?',
+      "Je suis ton professeur de langues. On s'entraîne ensemble ?",
+      'Я твой учитель языков. Попрактикуемся вместе?',
+    ),
+    1 => _(
+      "Got five minutes? Let's have a little chat.",
+      'Έχεις πέντε λεπτά; Ας πούμε δυο κουβέντες.',
+      '¿Tienes cinco minutos? Charlemos un poco.',
+      'Hast du fünf Minuten? Lass uns ein bisschen plaudern.',
+      'Hai cinque minuti? Facciamo due chiacchiere.',
+      'Tu as cinq minutes ? Bavardons un peu.',
+      'Есть пять минут? Давай немного поболтаем.',
+    ),
+    _ => _(
+      "A few new words every day. Shall we start today's?",
+      'Κάθε μέρα λίγες καινούργιες λέξεις. Πάμε για τις σημερινές;',
+      'Cada día unas palabras nuevas. ¿Vamos con las de hoy?',
+      'Jeden Tag ein paar neue Wörter. Fangen wir mit den heutigen an?',
+      'Ogni giorno qualche parola nuova. Iniziamo con quelle di oggi?',
+      "Chaque jour quelques mots nouveaux. On commence ceux d'aujourd'hui ?",
+      'Каждый день несколько новых слов. Начнём с сегодняшних?',
+    ),
+  };
+
   String get chatWithAi => _(
     'Chat with AI',
     'Συζήτηση με AI',
