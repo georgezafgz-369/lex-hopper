@@ -357,7 +357,10 @@ class _DictionaryPageState extends State<DictionaryPage> {
           decoration: InputDecoration(
             hintText: dualString(context, (t) => t.searchDictionaryHint),
             hintStyle: TextStyle(fontSize: 14, color: muted),
-            prefixIcon: Icon(Icons.search, size: 20, color: muted),
+            prefixIcon: Center(
+              widthFactor: 1,
+              child: DoodleMagnifier(color: muted),
+            ),
             // In the page, ✕ empties it and folds it back into
             // the doodle; in the sheet it only empties it.
             suffixIcon: close != null || _searchController.text.isNotEmpty

@@ -383,6 +383,23 @@ class DictionaryService {
     _ => latinPlain(text),
   };
 
+  /// Up to [limit] words starting with [prefix] to suggest while typing,
+  /// the most common first: the word typed in full, then those with the
+  /// most meanings (everyday words have many: "house" before "houri"),
+  /// then the shortest.
+  Future<List<String>> suggestions(String prefix, {int limit = 6}) async {
+    await init();
+    final key = _key(prefix);
+    final rows = await _db!.rawQuery(
+      'SELECT word, count(*) AS n, max(plain = ?) AS exact '
+      'FROM main.entries WHERE lang = ? AND plain LIKE ? '
+      'GROUP BY word ORDER BY exact DESC, n DESC, length(word), word '
+      'LIMIT ?',
+      [key, language, '$key%', limit],
+    );
+    return [for (final r in rows) r['word'] as String];
+  }
+
   /// Words that start with a letter (the rest are listed after the last
   /// letter of the alphabet).
   String get _letterGlob => switch (language) {
