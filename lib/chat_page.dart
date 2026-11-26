@@ -15,6 +15,7 @@ import 'app_settings.dart';
 import 'app_text.dart';
 import 'design_system.dart';
 import 'dual_text.dart';
+import 'opus_mt_service.dart';
 import 'section_icon.dart';
 import 'speech.dart';
 
@@ -56,14 +57,38 @@ String chatInstructions({required String main, String? second}) {
         'short line, then continue the conversation naturally. $style';
   }
   final p = _names[second]!;
-  return 'You are a friendly language tutor in a language-learning app. '
-      'The learner\'s main language is $m and they are practising $p. '
-      'Talk with them in $p, using simple $p. If they make a mistake in '
-      '$p, first give the corrected sentence in $p, then explain the fix '
-      'in one short line in $m. If they write in $m, show them how to say '
-      'it in $p and go on in $p. Never answer in any other language than '
-      '$p and $m. $style';
+  // The app shows each answer's translation into $p under it.
+  return 'You are a friendly language teacher in a language-learning app. '
+      'The learner\'s main language is $m and they are learning $p. '
+      'Always reply in $m (the app adds a $p translation under each reply). '
+      'If they write in $p and make a mistake, first give the corrected '
+      'sentence in $p, then explain the fix in one short line in $m. '
+      'Never answer in any other language than $m and $p. $style';
 }
+
+/// "Hello" in each language: the teacher's first word.
+const teacherHello = {
+  'en': 'Hello!',
+  'el': 'Γεια σου!',
+  'es': '¡Hola!',
+  'de': 'Hallo!',
+  'it': 'Ciao!',
+  'fr': 'Bonjour !',
+  'ru': 'Привет!',
+};
+
+/// The teacher's greeting in [t]'s language: hello and an invitation (a
+/// different one each day).
+String teacherGreeting(AppText t) => '${_hello(t)} ${teacherInvitation(t)}';
+
+/// Today's invitation to chat, in [t]'s language.
+String teacherInvitation(AppText t) =>
+    t.teacherInvite(DateTime.now().difference(DateTime(2024)).inDays);
+
+/// While no AI is on the phone: hello, and the offer to download it.
+String teacherOffer(AppText t) => '${_hello(t)} ${t.aiOffer}';
+
+String _hello(AppText t) => teacherHello[t.code] ?? teacherHello['en']!;
 
 /// The conversation with the AI teacher, shared by the chat page and the
 /// little chat window over the round button: one conversation, wherever
@@ -73,6 +98,14 @@ class ChatSession extends ChangeNotifier {
   static final instance = ChatSession._();
 
   final List<ChatMessage> messages = [];
+
+  /// The teacher's messages in the secondary language (by the message's
+  /// place in [messages]), shown under them.
+  final Map<int, String> translations = {};
+
+  /// The message that offers to download the AI (while none is on the
+  /// phone), or null.
+  int? offerAt;
 
   /// The AI's reply being written, or null.
   String? writing;
@@ -89,6 +122,8 @@ class ChatSession extends ChangeNotifier {
   @visibleForTesting
   void reset() {
     messages.clear();
+    translations.clear();
+    offerAt = null;
     writing = null;
     aiReady = warming = false;
     notifyListeners();
@@ -114,11 +149,70 @@ class ChatSession extends ChangeNotifier {
     }
   }
 
-  /// The teacher speaks first ([text]), if nothing has been said yet.
-  void greet(String text) {
-    if (messages.isNotEmpty) return;
+  /// The secondary language, when there is one other than [t]'s.
+  static String? _second(AppText t) {
+    final second = AppSettings.instance.secondaryLanguage;
+    return second == null || second == t.code ? null : second;
+  }
+
+  /// Adds the teacher's message [text]; [translated] gives it in the
+  /// secondary language (the same text from the app's own words).
+  void _teacher(String text, AppText t, String Function(AppText) translated) {
     messages.add((mine: false, text: text));
+    final second = _second(t);
+    if (second != null) {
+      translations[messages.length - 1] = translated(AppText.forCode(second));
+    }
+  }
+
+  /// The teacher speaks first, if nothing has been said yet: a greeting,
+  /// or (with no AI on the phone) the offer to download one.
+  Future<void> greet(AppText t) async {
+    if (messages.isNotEmpty) return;
+    final ready =
+        AppSettings.instance.aiTranslator && await AiModel.instance.isReady();
+    if (messages.isNotEmpty) return;
+    if (ready) {
+      _teacher(teacherGreeting(t), t, teacherGreeting);
+    } else {
+      _offer(t);
+    }
     notifyListeners();
+  }
+
+  void _offer(AppText t) {
+    _teacher(teacherOffer(t), t, teacherOffer);
+    offerAt = messages.length - 1;
+  }
+
+  /// The offer's button: turns the AI on and downloads it; once it's here
+  /// the teacher says hello.
+  Future<void> downloadAi(AppText t) async {
+    final model = AiModel.instance;
+    await AppSettings.instance.setAiTranslator(true);
+    await model.download();
+    if (!await model.isReady()) return;
+    offerAt = null;
+    _teacher(teacherGreeting(t), t, teacherGreeting);
+    notifyListeners();
+    await checkAi();
+  }
+
+  /// [reply] in the secondary language, under it (the offline translator;
+  /// nothing when it can't).
+  Future<void> _translate(int at, String reply, AppText t) async {
+    final second = _second(t);
+    if (second == null) return;
+    try {
+      final text = await OpusMtService.instance
+          .translate(reply, from: t.code, to: second)
+          .timeout(const Duration(seconds: 30));
+      if (text.trim().isEmpty || at >= messages.length) return;
+      translations[at] = text.trim();
+      notifyListeners();
+    } catch (e) {
+      debugPrint('Chat: no translation: $e');
+    }
   }
 
   /// Sends [message] and writes the AI's reply as it comes.
@@ -128,7 +222,10 @@ class ChatSession extends ChangeNotifier {
     messages.add((mine: true, text: message));
     notifyListeners();
     if (!aiReady) {
-      messages.add((mine: false, text: t.chatNoAi));
+      // No AI: the offer to download one (once), else where to turn it on.
+      offerAt == null
+          ? _offer(t)
+          : messages.add((mine: false, text: t.chatNoAi));
       notifyListeners();
       return;
     }
@@ -137,7 +234,10 @@ class ChatSession extends ChangeNotifier {
     final out = StringBuffer();
     try {
       await for (final bit in AiModel.instance.chat(
-        messages,
+        [
+          for (final (i, m) in messages.indexed)
+            if (i != offerAt) m,
+        ],
         instructions: chatInstructions(
           main: t.code,
           second: AppSettings.instance.secondaryLanguage,
@@ -154,6 +254,7 @@ class ChatSession extends ChangeNotifier {
     writing = null;
     messages.add((mine: false, text: reply.isEmpty ? t.chatFailed : reply));
     notifyListeners();
+    if (reply.isNotEmpty) await _translate(messages.length - 1, reply, t);
   }
 }
 
@@ -172,14 +273,6 @@ class _ChatPageState extends State<ChatPage> {
     _session.addListener(_changed);
     _session.checkAi();
     _toBottom();
-  }
-
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    // Opened with a greeting (the teacher's cloud): it starts the chat.
-    final greeting = ModalRoute.of(context)?.settings.arguments;
-    if (greeting is String) _session.greet(greeting);
   }
 
   void _changed() {
@@ -306,22 +399,15 @@ class _ChatPageState extends State<ChatPage> {
                       separatorBuilder: (_, _) =>
                           const SizedBox(height: Spacing.sm),
                       itemBuilder: (context, i) {
-                        // The reply being written: its text so far, or "…".
-                        final m = i < _messages.length
-                            ? _messages[i]
-                            : (
-                                mine: false,
-                                text: _writing!.isEmpty ? '…' : _writing!,
-                              );
-                        final bubble = ChatBubble(
-                          text: m.text,
-                          mine: m.mine,
-                          fill: m.mine ? blue : card,
-                          textColor: m.mine ? Colors.white : ink,
-                          border: m.mine ? null : hairline,
-                        );
-                        // The AI's finished answers can be heard aloud.
-                        if (m.mine || i >= _messages.length) return bubble;
+                        final bubble = chatMessageBubble(context, i);
+                        // Without a translation (no secondary language), the
+                        // teacher's finished answers can be heard aloud here.
+                        final done = i < _messages.length;
+                        if (!done ||
+                            _messages[i].mine ||
+                            _session.translations[i] != null) {
+                          return bubble;
+                        }
                         return Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -336,7 +422,7 @@ class _ChatPageState extends State<ChatPage> {
                                   size: 20,
                                   color: muted,
                                 ),
-                                onPressed: () => _speak(m.text),
+                                onPressed: () => _speak(_messages[i].text),
                               ),
                             ),
                           ],
@@ -541,13 +627,19 @@ class _Welcome extends StatelessWidget {
   }
 }
 
-/// A chat bubble: yours on the right in blue, the AI's on the left.
+/// A chat bubble: yours on the right in blue, the AI's on the left. The
+/// AI's can carry its [translation] into the secondary language under it,
+/// with a speaker at the end ([onSpeak]), and a [footer] (the download
+/// button).
 class ChatBubble extends StatelessWidget {
   final String text;
   final bool mine;
   final Color fill, textColor;
   final Color? border;
   final double fontSize;
+  final String? translation;
+  final VoidCallback? onSpeak;
+  final Widget? footer;
 
   const ChatBubble({
     super.key,
@@ -557,44 +649,228 @@ class ChatBubble extends StatelessWidget {
     required this.textColor,
     this.border,
     this.fontSize = 16,
+    this.translation,
+    this.onSpeak,
+    this.footer,
   });
 
   @override
-  Widget build(BuildContext context) => Align(
-    alignment: mine ? Alignment.centerRight : Alignment.centerLeft,
-    child: ConstrainedBox(
-      constraints: BoxConstraints(
-        maxWidth: MediaQuery.sizeOf(context).width * 0.78,
-      ),
-      child: Container(
-        padding: const EdgeInsets.symmetric(
-          horizontal: Spacing.md - 2,
-          vertical: Spacing.sm + 2,
+  Widget build(BuildContext context) {
+    final b = Theme.of(context).brightness;
+    final orange = b.resolve(
+      light: AppColors.translationLight,
+      dark: AppColors.translationDark,
+    );
+    final hairline = b.resolve(
+      light: AppColors.hairlineLight,
+      dark: AppColors.hairlineDark,
+    );
+    return Align(
+      alignment: mine ? Alignment.centerRight : Alignment.centerLeft,
+      child: ConstrainedBox(
+        constraints: BoxConstraints(
+          maxWidth: MediaQuery.sizeOf(context).width * 0.78,
         ),
-        decoration: BoxDecoration(
-          color: fill,
-          border: border == null
-              ? null
-              : Border.all(color: border!, width: 0.5),
-          borderRadius: BorderRadius.only(
-            topLeft: const ui.Radius.circular(18),
-            topRight: const ui.Radius.circular(18),
-            bottomLeft: ui.Radius.circular(mine ? 18 : 4),
-            bottomRight: ui.Radius.circular(mine ? 4 : 18),
+        child: Container(
+          padding: const EdgeInsets.symmetric(
+            horizontal: Spacing.md - 2,
+            vertical: Spacing.sm + 2,
+          ),
+          decoration: BoxDecoration(
+            color: fill,
+            border: border == null
+                ? null
+                : Border.all(color: border!, width: 0.5),
+            borderRadius: BorderRadius.only(
+              topLeft: const ui.Radius.circular(18),
+              topRight: const ui.Radius.circular(18),
+              bottomLeft: ui.Radius.circular(mine ? 18 : 4),
+              bottomRight: ui.Radius.circular(mine ? 4 : 18),
+            ),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                text,
+                style: TextStyle(
+                  fontSize: fontSize,
+                  height: 1.35,
+                  color: textColor,
+                  fontFamily: 'Inter',
+                ),
+              ),
+              // ── The translation, with a speaker at its end ──────────────
+              if (translation != null) ...[
+                const SizedBox(height: 6),
+                Divider(height: 0, color: hairline),
+                const SizedBox(height: 6),
+                Text.rich(
+                  key: const Key('chat-translation'),
+                  TextSpan(
+                    text: translation,
+                    children: [
+                      if (onSpeak != null)
+                        WidgetSpan(
+                          alignment: PlaceholderAlignment.middle,
+                          child: Semantics(
+                            button: true,
+                            label: AppText.of(context).listen,
+                            excludeSemantics: true,
+                            child: InkResponse(
+                              key: const Key('chat-translation-speak'),
+                              onTap: onSpeak,
+                              radius: 18,
+                              child: Padding(
+                                padding: const EdgeInsets.only(left: 6),
+                                child: Icon(
+                                  Icons.volume_up_outlined,
+                                  size: fontSize + 2,
+                                  color: orange,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                    ],
+                  ),
+                  style: TextStyle(
+                    fontSize: fontSize - 1,
+                    height: 1.35,
+                    color: orange,
+                    fontFamily: 'Inter',
+                  ),
+                ),
+              ],
+              if (footer != null) ...[const SizedBox(height: 10), footer!],
+            ],
           ),
         ),
-        child: Text(
-          text,
-          style: TextStyle(
-            fontSize: fontSize,
-            height: 1.35,
-            color: textColor,
-            fontFamily: 'Inter',
-          ),
-        ),
       ),
-    ),
+    );
+  }
+}
+
+/// Message [i] of the shared conversation as a bubble: yours in blue; the
+/// teacher's with its translation and speaker, and the download button on
+/// the offer. [writing]: the reply being written (no translation yet).
+Widget chatMessageBubble(
+  BuildContext context,
+  int i, {
+  double fontSize = 16,
+  Color? aiFill,
+}) {
+  final session = ChatSession.instance;
+  final b = Theme.of(context).brightness;
+  final card = b.resolve(
+    light: AppColors.gridCellLight,
+    dark: AppColors.gridCellDark,
   );
+  final ink = b.resolve(light: AppColors.inkLight, dark: AppColors.inkDark);
+  final hairline = b.resolve(
+    light: AppColors.hairlineLight,
+    dark: AppColors.hairlineDark,
+  );
+  final blue = SectionIcon.colorOf(Section.chatAi, b);
+  final messages = session.messages;
+  final writing = i >= messages.length;
+  final m = writing
+      ? (mine: false, text: session.writing!.isEmpty ? '…' : session.writing!)
+      : messages[i];
+  final translation = writing ? null : session.translations[i];
+  final second = AppSettings.instance.secondaryLanguage;
+  return ChatBubble(
+    text: m.text,
+    mine: m.mine,
+    fill: m.mine ? blue : (aiFill ?? card),
+    textColor: m.mine ? Colors.white : ink,
+    border: m.mine ? null : hairline,
+    fontSize: fontSize,
+    translation: translation,
+    onSpeak: translation == null || second == null
+        ? null
+        : () => sayInLanguage(context, translation, second),
+    footer: !writing && i == session.offerAt ? const AiOfferButton() : null,
+  );
+}
+
+/// Reads [text] aloud in [language]'s voice (a note when the phone has no
+/// voice for it).
+Future<void> sayInLanguage(
+  BuildContext context,
+  String text,
+  String language,
+) async {
+  final accent = Accent.forLanguage(language).first;
+  final messenger = ScaffoldMessenger.maybeOf(context);
+  final noVoice = AppText.of(context).noVoice(accent.name);
+  if (!await Speech.instance.say(text, accent)) {
+    messenger?.showSnackBar(SnackBar(content: Text(noVoice)));
+  }
+}
+
+/// The teacher's offer: download the AI (its size on the button), then the
+/// download's progress.
+class AiOfferButton extends StatelessWidget {
+  const AiOfferButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final model = AiModel.instance;
+    final t = AppText.of(context);
+    final b = Theme.of(context).brightness;
+    final blue = SectionIcon.colorOf(Section.chatAi, b);
+    final muted = b.resolve(
+      light: AppColors.mutedLight,
+      dark: AppColors.mutedDark,
+    );
+    return ListenableBuilder(
+      listenable: model.changes,
+      builder: (context, _) {
+        if (model.state == ModelState.downloading) {
+          final p = model.progress;
+          return Row(
+            key: const Key('ai-offer-progress'),
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              SizedBox(
+                width: 14,
+                height: 14,
+                child: CircularProgressIndicator(
+                  strokeWidth: 2,
+                  value: p,
+                  color: blue,
+                ),
+              ),
+              const SizedBox(width: 8),
+              Flexible(
+                child: Text(
+                  t.aiGettingReady(((p ?? 0) * 100).floor()),
+                  style: TextStyle(
+                    fontSize: 13,
+                    color: muted,
+                    fontFamily: 'Inter',
+                  ),
+                ),
+              ),
+            ],
+          );
+        }
+        return FilledButton.icon(
+          key: const Key('ai-offer-download'),
+          style: FilledButton.styleFrom(
+            backgroundColor: blue,
+            foregroundColor: Colors.white,
+            visualDensity: VisualDensity.compact,
+          ),
+          onPressed: () => ChatSession.instance.downloadAi(t),
+          icon: const Icon(Icons.download_rounded, size: 18),
+          label: Text(t.aiOfferButton(model.sizeMb)),
+        );
+      },
+    );
+  }
 }
 
 /// The part of an AI answer to read aloud in [language]: when [language]

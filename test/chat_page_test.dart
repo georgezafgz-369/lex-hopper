@@ -4,6 +4,7 @@
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lex_hopper/app_settings.dart';
+import 'package:lex_hopper/app_text.dart';
 import 'package:lex_hopper/chat_page.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -24,7 +25,7 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byKey(const Key('chat-welcome')), findsNothing);
     expect(find.text('Let’s order a coffee in a café'), findsOneWidget);
-    expect(find.textContaining('turn on an AI model'), findsOneWidget);
+    expect(find.textContaining('download the AI'), findsOneWidget);
   });
 
   testWidgets('typing and sending adds your message', (tester) async {
@@ -37,19 +38,19 @@ void main() {
     // An empty message isn't sent.
     await tester.tap(find.byKey(const Key('chat-send')));
     await tester.pumpAndSettle();
-    expect(find.textContaining('turn on an AI model'), findsOneWidget);
+    expect(find.textContaining('download the AI'), findsOneWidget);
   });
 
-  test('the AI practises the secondary language, explaining in the main', () {
+  test('the AI talks in the main language; the app adds the translation', () {
     final both = chatInstructions(main: 'el', second: 'es');
     expect(both, contains('main language is Greek'));
-    expect(both, contains('practising Spanish'));
-    expect(both, contains('Talk with them in Spanish'));
+    expect(both, contains('learning Spanish'));
+    expect(both, contains('Always reply in Greek'));
     expect(both, contains('in one short line in Greek'));
     // No secondary language: the main one only.
     final one = chatInstructions(main: 'de');
     expect(one, contains('Always reply in German'));
-    expect(one, isNot(contains('practising')));
+    expect(one, isNot(contains('learning Spanish')));
   });
 
   testWidgets('the AI\'s answers have a listen button, yours don\'t', (
@@ -78,20 +79,20 @@ void main() {
     );
   });
 
-  testWidgets('opened from the teacher cloud: its greeting comes first', (
-    tester,
-  ) async {
+  testWidgets('no AI yet: the teacher offers to download it, with its '
+      'translation and a speaker', (tester) async {
+    await AppSettings.instance.setSecondaryLanguage('el');
+    addTearDown(() => AppSettings.instance.setSecondaryLanguage(null));
     await tester.binding.setSurfaceSize(const Size(400, 900));
-    await tester.pumpWidget(
-      MaterialApp(
-        onGenerateRoute: (_) => MaterialPageRoute(
-          settings: const RouteSettings(arguments: 'Γεια σου! Ready?'),
-          builder: (_) => const ChatPage(),
-        ),
-      ),
-    );
+    await tester.pumpWidget(const MaterialApp(home: ChatPage()));
+    await ChatSession.instance.greet(AppText.forCode('en'));
     await tester.pumpAndSettle();
-    expect(find.byKey(const Key('chat-welcome')), findsNothing);
-    expect(find.text('Γεια σου! Ready?'), findsOneWidget);
+    expect(find.textContaining('Hello! I'), findsOneWidget);
+    expect(find.byKey(const Key('ai-offer-download')), findsOneWidget);
+    final translation = tester.widget<Text>(
+      find.byKey(const Key('chat-translation')),
+    );
+    expect(translation.textSpan!.toPlainText(), contains('Γεια σου!'));
+    expect(find.byKey(const Key('chat-translation-speak')), findsOneWidget);
   });
 }

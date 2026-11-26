@@ -1902,6 +1902,47 @@ class AppText {
     'Aide-moi à demander mon chemin',
     'Помоги мне спросить дорогу',
   );
+
+  /// The teacher's first words while no AI is on the phone.
+  String get aiOffer => _(
+    "I'm your language teacher. To chat with me, download the AI: "
+        'it lives on your phone and works without internet.',
+    'Είμαι ο δάσκαλός σου στις γλώσσες. Για να συζητήσουμε, '
+        'κατέβασε το AI: μένει στο κινητό σου και λειτουργεί χωρίς ίντερνετ.',
+    'Soy tu profesor de idiomas. Para chatear conmigo, descarga la '
+        'IA: vive en tu móvil y funciona sin internet.',
+    'Ich bin dein Sprachlehrer. Um mit mir zu chatten, lade die KI '
+        'herunter: Sie läuft auf deinem Handy, ohne Internet.',
+    'Sono il tuo insegnante di lingue. Per chattare con me, scarica '
+        "l'IA: vive sul tuo telefono e funziona senza internet.",
+    'Je suis ton professeur de langues. Pour discuter avec moi, '
+        "télécharge l'IA : elle vit sur ton téléphone et marche sans internet.",
+    'Я твой учитель языков. Чтобы поговорить со мной, скачай ИИ: '
+        'он работает на телефоне без интернета.',
+  );
+
+  /// The button under [aiOffer].
+  String aiOfferButton(int mb) => _(
+    'Download the AI · $mb MB',
+    'Λήψη του AI · $mb MB',
+    'Descargar la IA · $mb MB',
+    'KI herunterladen · $mb MB',
+    "Scarica l'IA · $mb MB",
+    "Télécharger l'IA · $mb Mo",
+    'Скачать ИИ · $mb МБ',
+  );
+
+  /// The AI downloading, in the chat.
+  String aiGettingReady(int percent) => _(
+    'Downloading the AI… $percent%',
+    'Λήψη του AI… $percent%',
+    'Descargando la IA… $percent%',
+    'KI wird geladen… $percent%',
+    "Download dell'IA… $percent%",
+    "Téléchargement de l'IA… $percent%",
+    'Загрузка ИИ… $percent%',
+  );
+
   String get chatNoAi => _(
     'To chat, turn on an AI model in Settings > AI model (EuroLLM or '
         'Gemma 4). It downloads once and then works without internet.',

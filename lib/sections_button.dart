@@ -24,7 +24,9 @@ import 'package:material_ui/material_ui.dart';
 
 import 'app_settings.dart';
 import 'app_text.dart';
-import 'chat_page.dart' show ChatBubble, ChatSession;
+import 'ai_model.dart';
+import 'chat_page.dart'
+    show ChatSession, chatMessageBubble, teacherHello, teacherInvitation;
 import 'design_system.dart';
 import 'dual_text.dart';
 import 'section_icon.dart';
@@ -91,18 +93,6 @@ class SectionsButton extends StatefulWidget {
 
   /// Closed (or used) once: not shown again until the app restarts.
   static bool cloudDismissed = false;
-
-  /// "Hello" in each language, the first words of the cloud: in the
-  /// language practised (the secondary one, or the app's).
-  static const hello = {
-    'en': 'Hello!',
-    'el': 'Γεια σου!',
-    'es': '¡Hola!',
-    'de': 'Hallo!',
-    'it': 'Ciao!',
-    'fr': 'Bonjour !',
-    'ru': 'Привет!',
-  };
 
   @override
   State<SectionsButton> createState() => _SectionsButtonState();
@@ -184,6 +174,7 @@ class _SectionsButtonState extends State<SectionsButton>
     }
     if (SectionsButton.teacherCloud && !SectionsButton.cloudDismissed) {
       _cloudTimer = Timer(SectionsButton.cloudDelay, _showCloud);
+      _lookForAi();
     }
     // Writing in the cloud's box keeps it; leaving the box (empty) lets it
     // go a few seconds later.
@@ -245,8 +236,7 @@ class _SectionsButtonState extends State<SectionsButton>
     if (navigator == null) return;
     navigator.pop(); // the menu
     if (route == '/chat') {
-      final (hello, invite) = _cloudText(AppText.of(context));
-      _openChat('$hello $invite');
+      _openChat();
     } else if (route == '/') {
       navigator.popUntil((r) => r.isFirst);
     } else {
@@ -266,35 +256,50 @@ class _SectionsButtonState extends State<SectionsButton>
     });
   }
 
-  /// The cloud's words: hello in the language practised, then an
-  /// invitation (a different one each day) in the app's language.
-  (String, String) _cloudText(AppText t) {
-    final practised = AppSettings.instance.secondaryLanguage ?? t.code;
-    final day = DateTime.now().difference(DateTime(2024)).inDays;
-    return (
-      SectionsButton.hello[practised] ?? SectionsButton.hello['en']!,
-      t.teacherInvite(day),
-    );
+  // An AI is on the phone (for the cloud's words; looked up at the start).
+  bool _aiReady = false;
+
+  Future<void> _lookForAi() async {
+    final ready =
+        AppSettings.instance.aiTranslator && await AiModel.instance.isReady();
+    if (mounted && ready != _aiReady) setState(() => _aiReady = ready);
   }
 
-  /// The cloud was tapped: the chat window, the teacher speaking first.
-  void _openChat(String greeting) {
+  /// The cloud's words in [t]'s language: hello, then an invitation (or,
+  /// with no AI yet, the offer to download one).
+  (String, String) _cloudText(AppText t) => (
+    teacherHello[t.code] ?? teacherHello['en']!,
+    _aiReady ? teacherInvitation(t) : t.aiOffer,
+  );
+
+  /// The same, in the secondary language, or null when there is none.
+  String? _cloudTranslation(AppText t) {
+    final second = AppSettings.instance.secondaryLanguage;
+    if (second == null || second == t.code) return null;
+    final (hello, words) = _cloudText(AppText.forCode(second));
+    return '$hello $words';
+  }
+
+  /// The chat window, the teacher speaking first (the cloud, or the
+  /// menu's Chat with AI).
+  Future<void> _openChat() async {
     _cloudTimer?.cancel();
-    ChatSession.instance
-      ..greet(greeting)
-      ..checkAi();
     setState(() => _chatOpen = true);
+    final session = ChatSession.instance;
+    await session.greet(AppText.of(context));
+    await session.checkAi();
   }
 
   /// Sent from the cloud's box: the chat window opens with the teacher's
   /// words and the answer.
-  void _sendFromCloud(String greeting) {
+  Future<void> _sendFromCloud() async {
     final text = _cloudInput.text.trim();
     if (text.isEmpty) return;
+    final t = AppText.of(context);
     _cloudInput.clear();
     _cloudFocus.unfocus();
-    _openChat(greeting);
-    ChatSession.instance.send(text, AppText.of(context));
+    await _openChat();
+    await ChatSession.instance.send(text, t);
   }
 
   /// The chat window's expand button: the same conversation, full page.
@@ -402,11 +407,11 @@ class _SectionsButtonState extends State<SectionsButton>
                           child: _ChatWindow(
                             maxHeight: chatMaxHeight,
                             onExpand: _expandChat,
-                            // Back into the cloud (which then goes away).
-                            onMinimize: () {
-                              setState(() => _chatOpen = false);
-                              _showCloud();
-                            },
+                            // Folded away; the cloud doesn't come back.
+                            onMinimize: () => setState(() {
+                              _chatOpen = false;
+                              SectionsButton.cloudDismissed = true;
+                            }),
                           ),
                         ),
                       ),
@@ -423,13 +428,14 @@ class _SectionsButtonState extends State<SectionsButton>
                           child: _TeacherCloud(
                             hello: hello,
                             invite: invite,
+                            translation: _cloudTranslation(AppText.of(context)),
                             tailRight: onRight,
                             tailDown: below,
-                            onTap: () => _openChat('$hello $invite'),
+                            onTap: _openChat,
                             onClose: _dismissCloud,
                             input: _cloudInput,
                             focus: _cloudFocus,
-                            onSend: () => _sendFromCloud('$hello $invite'),
+                            onSend: _sendFromCloud,
                           ),
                         ),
                       ),
@@ -518,6 +524,9 @@ class _TeacherCloud extends StatelessWidget {
   final String hello;
   final String invite;
 
+  /// The same words in the secondary language (under them), or null.
+  final String? translation;
+
   /// Which corner the trail of puffs leaves from (towards the button).
   final bool tailRight;
   final bool tailDown;
@@ -536,6 +545,7 @@ class _TeacherCloud extends StatelessWidget {
   const _TeacherCloud({
     required this.hello,
     required this.invite,
+    required this.translation,
     required this.tailRight,
     required this.tailDown,
     required this.onTap,
@@ -671,6 +681,23 @@ class _TeacherCloud extends StatelessWidget {
                               fontFamily: 'Inter',
                             ),
                           ),
+                          // In the secondary language, under it.
+                          if (translation != null) ...[
+                            const SizedBox(height: 4),
+                            Text(
+                              translation!,
+                              key: const Key('teacher-cloud-translation'),
+                              style: TextStyle(
+                                fontSize: 12,
+                                height: 1.3,
+                                color: b.resolve(
+                                  light: AppColors.translationLight,
+                                  dark: AppColors.translationDark,
+                                ),
+                                fontFamily: 'Inter',
+                              ),
+                            ),
+                          ],
                         ],
                       ),
                     ),
@@ -926,19 +953,8 @@ class _ChatWindowState extends State<_ChatWindow> {
                 padding: const EdgeInsets.all(10),
                 itemCount: messages.length + (writing == null ? 0 : 1),
                 separatorBuilder: (_, _) => const SizedBox(height: 6),
-                itemBuilder: (context, i) {
-                  final m = i < messages.length
-                      ? messages[i]
-                      : (mine: false, text: writing!.isEmpty ? '…' : writing);
-                  return ChatBubble(
-                    text: m.text,
-                    mine: m.mine,
-                    fill: m.mine ? blue : paper,
-                    textColor: m.mine ? Colors.white : ink,
-                    border: m.mine ? null : hairline,
-                    fontSize: 14,
-                  );
-                },
+                itemBuilder: (context, i) =>
+                    chatMessageBubble(context, i, fontSize: 14, aiFill: paper),
               ),
             ),
 

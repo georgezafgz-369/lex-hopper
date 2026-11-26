@@ -279,13 +279,19 @@ void main() {
       expect(messages[1], (mine: true, text: 'Hi!'));
     });
 
-    testWidgets('hello in the language practised', (tester) async {
+    testWidgets('in the main language, the secondary one under it; no AI '
+        'yet: the offer to download it', (tester) async {
       await AppSettings.instance.setSecondaryLanguage('el');
       addTearDown(() => AppSettings.instance.setSecondaryLanguage(null));
       await tester.pumpWidget(app());
       await tester.pump(const Duration(seconds: 2));
       await tester.pump();
-      expect(find.text('Γεια σου!'), findsOneWidget);
+      expect(find.text('Hello!'), findsOneWidget);
+      expect(find.textContaining('download the AI'), findsOneWidget);
+      final under = tester.widget<Text>(
+        find.byKey(const Key('teacher-cloud-translation')),
+      );
+      expect(under.data, startsWith('Γεια σου! '));
     });
 
     testWidgets('tapped, it becomes a chat window over the button', (
@@ -318,8 +324,9 @@ void main() {
       expect(find.byKey(const Key('chat-window')), findsOneWidget);
     });
 
-    testWidgets('the window stays on other pages and folds back into the '
-        'cloud', (tester) async {
+    testWidgets('the window stays on other pages; folded away, no cloud', (
+      tester,
+    ) async {
       await tester.pumpWidget(app());
       await tester.pump(const Duration(seconds: 2));
       await tester.pumpAndSettle();
@@ -335,10 +342,13 @@ void main() {
       expect(find.text('games page'), findsOneWidget);
       expect(window, findsOneWidget);
 
+      // Folded away: the cloud doesn't come back.
       await tester.tap(find.byKey(const Key('chat-window-minimize')));
       await tester.pumpAndSettle();
       expect(window, findsNothing);
-      expect(cloud, findsOneWidget);
+      expect(cloud, findsNothing);
+      await tester.pump(const Duration(seconds: 10));
+      expect(cloud, findsNothing);
     });
 
     testWidgets('expand: the same conversation on the full page', (
