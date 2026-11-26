@@ -516,7 +516,7 @@ class AppText {
     'Удалить',
   );
 
-  // Settings > AI model (EuroLLM or Gemma 4): translates and chats.
+  // Settings > AI model (EuroLLM, Gemma 4, Qwen): translates and chats.
   String get aiTranslator => _(
     'AI model',
     'Μοντέλο AI',
@@ -2119,20 +2119,20 @@ class AppText {
   );
 
   String get chatNoAi => _(
-    'To chat, turn on an AI model in Settings > AI model (EuroLLM or '
-        'Gemma 4). It downloads once and then works without internet.',
+    'To chat, turn on an AI model in Settings > AI model'
+        '. It downloads once and then works without internet.',
     'Για να συζητήσουμε, ενεργοποίησε ένα μοντέλο AI στις Ρυθμίσεις > '
-        'Μοντέλο AI (EuroLLM ή Gemma 4). Κατεβαίνει μία φορά και μετά '
+        'Μοντέλο AI. Κατεβαίνει μία φορά και μετά '
         'λειτουργεί χωρίς ίντερνετ.',
-    'Para chatear, activa un modelo de IA en Ajustes > Modelo de IA '
-        '(EuroLLM o Gemma 4). Se descarga una vez y luego funciona sin '
+    'Para chatear, activa un modelo de IA en Ajustes > Modelo de IA'
+        '. Se descarga una vez y luego funciona sin '
         'internet.',
-    'Zum Chatten schalte in Einstellungen > KI-Modell ein KI-Modell ein '
-        '(EuroLLM oder Gemma 4). Es wird einmal geladen und funktioniert '
+    'Zum Chatten schalte in Einstellungen > KI-Modell ein KI-Modell ein'
+        '. Es wird einmal geladen und funktioniert '
         'dann ohne Internet.',
-    'Per chattare, attiva un modello IA in Impostazioni > Modello IA (EuroLLM o Gemma 4). Si scarica una volta sola e poi funziona senza internet.',
-    'Pour discuter, active un modèle d’IA dans Réglages > Modèle d’IA (EuroLLM ou Gemma 4). Il se télécharge une fois, puis fonctionne sans internet.',
-    'Чтобы общаться, включи модель ИИ в разделе Настройки > Модель ИИ (EuroLLM или Gemma 4). Она загружается один раз и потом работает без интернета.',
+    'Per chattare, attiva un modello IA in Impostazioni > Modello IA. Si scarica una volta sola e poi funziona senza internet.',
+    'Pour discuter, active un modèle d’IA dans Réglages > Modèle d’IA. Il se télécharge une fois, puis fonctionne sans internet.',
+    'Чтобы общаться, включи модель ИИ в разделе Настройки > Модель ИИ. Она загружается один раз и потом работает без интернета.',
   );
   String chatWarming(String model) => _(
     'Getting $model ready…',

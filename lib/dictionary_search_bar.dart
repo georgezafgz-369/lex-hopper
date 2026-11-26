@@ -268,10 +268,16 @@ class _DictionarySearchToggleState extends State<DictionarySearchToggle> {
                   borderRadius: BorderRadius.circular(Radius.sm),
                 ),
                 alignment: Alignment.center,
-                child: const SectionIcon(
-                  Section.dictionary,
-                  size: 34,
-                  compact: true,
+                clipBehavior: Clip.antiAlias,
+                // Drawn large: the doodle's blob fills most of the square.
+                child: const OverflowBox(
+                  maxWidth: 54,
+                  maxHeight: 54,
+                  child: SectionIcon(
+                    Section.dictionary,
+                    size: 54,
+                    compact: true,
+                  ),
                 ),
               ),
             ),

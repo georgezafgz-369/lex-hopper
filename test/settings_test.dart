@@ -123,6 +123,9 @@ void main() {
   });
 
   testWidgets('font size buttons change and save the size', (tester) async {
+    // Tall enough to show the Font size card, under the AI model's.
+    await tester.binding.setSurfaceSize(const Size(400, 1400));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
     await tester.pumpWidget(app());
     expect(AppSettings.instance.fontSize, FontSizeOption.medium);
     await tester.tap(find.byKey(const Key('font-size-large')));
@@ -187,5 +190,23 @@ void main() {
     ]) {
       expect(find.byKey(Key('section-icon-$name')), findsOneWidget);
     }
+  });
+
+  testWidgets('four AI models to pick from, two to a row', (tester) async {
+    await tester.binding.setSurfaceSize(const Size(400, 1400));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+    await tester.pumpWidget(app());
+    await tester.pumpAndSettle();
+    for (final id in ['eurollm', 'gemma4', 'qwen35', 'qwen35mini']) {
+      expect(find.byKey(Key('ai-model-$id')), findsOneWidget, reason: id);
+    }
+    expect(find.text('Qwen 3.5'), findsOneWidget);
+    expect(find.text('Qwen Mini'), findsOneWidget);
+    expect(find.text('0.5 GB'), findsOneWidget);
+    final euro = tester.getRect(find.byKey(const Key('ai-model-eurollm')));
+    final gemma = tester.getRect(find.byKey(const Key('ai-model-gemma4')));
+    final qwen = tester.getRect(find.byKey(const Key('ai-model-qwen35')));
+    expect(gemma.top, closeTo(euro.top, 2)); // same row
+    expect(qwen.top, greaterThan(euro.bottom)); // next row
   });
 }

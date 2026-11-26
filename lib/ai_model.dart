@@ -80,7 +80,41 @@ class AiModel implements Translator {
     minMemoryKb: 5400 * 1024,
   );
 
-  static final all = [euroLlm, gemma4];
+  /// Alibaba's Qwen 3.5 2B (Apache 2.0), many languages (Greek and
+  /// Russian among them), in Google's phone build for LiteRT-LM like
+  /// Gemma 4, on the CPU.
+  static final qwen = AiModel._(
+    id: 'qwen35',
+    name: 'Qwen 3.5',
+    source: ModelSource.huggingFace(
+      repoId: 'litert-community/Qwen3.5-2B',
+      filePath: 'Qwen3.5-2B_int8.litertlm',
+      revision: 'ab919e9d348ec29deb9b5c3c9c559dd50a3a147d',
+    ),
+    sha256: 'c2438cb9c050220e667366b4beeca4daac56e693b226420674f53fc40f007c49',
+    sizeMb: 2120,
+    device: ComputeDevice.cpu,
+    // About 3.8 GB with the app: a phone with 6 GB of memory.
+    minMemoryKb: 4800 * 1024,
+  );
+
+  /// Qwen 3.5 0.8B, 4-bit (Q4_K_M) through llama.cpp: the smallest, for
+  /// phones with little memory or space; simpler answers.
+  static final qwenMini = AiModel._(
+    id: 'qwen35mini',
+    name: 'Qwen Mini',
+    source: ModelSource.huggingFace(
+      repoId: 'unsloth/Qwen3.5-0.8B-GGUF',
+      filePath: 'Qwen3.5-0.8B-Q4_K_M.gguf',
+      revision: '6ab461498e2023f6e3c1baea90a8f0fe38ab64d0',
+    ),
+    sha256: 'bd258782e35f7f458f8aced1adc053e6e92e89bc735ba3be89d38a06121dc517',
+    sizeMb: 533,
+    // About 1.2 GB with the app: a phone with 3 GB of memory.
+    minMemoryKb: 2500 * 1024,
+  );
+
+  static final all = [euroLlm, gemma4, qwen, qwenMini];
 
   /// Models the app used before (Gemma 4's GGUF build, 3.4 GB): removed
   /// from the phone on start, so they don't keep taking space.
@@ -110,7 +144,7 @@ class AiModel implements Translator {
     orElse: () => euroLlm,
   );
 
-  /// "eurollm" or "gemma4" (Settings keeps this).
+  /// "eurollm", "gemma4", "qwen35" or "qwen35mini" (Settings keeps this).
   final String id;
 
   /// Its name, as shown in Settings.

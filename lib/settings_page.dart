@@ -122,6 +122,13 @@ class SettingsPage extends StatelessWidget {
                         ),
                         const SizedBox(height: Spacing.sm),
 
+                        // The picked model (a new card when it changes).
+                        _AiTranslatorCard(
+                          key: ValueKey(AiModel.instance.id),
+                          settings: settings,
+                          model: AiModel.instance,
+                        ),
+                        const SizedBox(height: Spacing.sm),
                         _SettingsCard(
                           key: const Key('settings-dark-mode'),
                           icon: Section.darkMode,
@@ -134,10 +141,21 @@ class SettingsPage extends StatelessWidget {
                           ),
                           onTap: () => settings.setDarkMode(!isDark),
                         ),
+                        // ── Separator: the text and reading settings ───
+                        const SizedBox(height: Spacing.lg),
+                        Divider(
+                          color: brightness.resolve(
+                            light: AppColors.hairlineLight,
+                            dark: AppColors.hairlineDark,
+                          ),
+                          height: 0,
+                        ),
+                        const SizedBox(height: Spacing.lg),
+                        _FontSizeCard(settings: settings),
                         const SizedBox(height: Spacing.sm),
                         _SettingsCard(
                           key: const Key('settings-word-look-up'),
-                          icon: Section.dictionary,
+                          icon: Section.wordLookUp,
                           title: (t) => t.wordLookUp,
                           subtitle: (t) =>
                               settings.wordLookUp ? t.wordLookUpOn : t.off,
@@ -148,15 +166,6 @@ class SettingsPage extends StatelessWidget {
                           ),
                           onTap: () =>
                               settings.setWordLookUp(!settings.wordLookUp),
-                        ),
-                        const SizedBox(height: Spacing.sm),
-                        _FontSizeCard(settings: settings),
-                        const SizedBox(height: Spacing.sm),
-                        // The picked model (a new card when it changes).
-                        _AiTranslatorCard(
-                          key: ValueKey(AiModel.instance.id),
-                          settings: settings,
-                          model: AiModel.instance,
                         ),
 
                         // ── Separator ───────────────────────────────────
@@ -400,22 +409,27 @@ class _AiTranslatorCardState extends State<_AiTranslatorCard> {
               },
             ),
             const SizedBox(height: Spacing.xs),
-            // Which model: EuroLLM or Gemma 4.
-            Row(
-              children: [
-                for (final (i, m) in AiModel.all.indexed) ...[
-                  if (i > 0) const SizedBox(width: Spacing.sm),
-                  Expanded(
-                    child: _ModelChoice(
-                      key: Key('ai-model-${m.id}'),
-                      model: m,
-                      picked: m.id == model.id,
-                      onTap: () => _pick(m),
+            // Which model (AiModel.all), two to a row.
+            for (var r = 0; r < AiModel.all.length; r += 2) ...[
+              if (r > 0) const SizedBox(height: Spacing.sm),
+              Row(
+                children: [
+                  for (var i = r; i < r + 2; i++) ...[
+                    if (i > r) const SizedBox(width: Spacing.sm),
+                    Expanded(
+                      child: i >= AiModel.all.length
+                          ? const SizedBox.shrink()
+                          : _ModelChoice(
+                              key: Key('ai-model-${AiModel.all[i].id}'),
+                              model: AiModel.all[i],
+                              picked: AiModel.all[i].id == model.id,
+                              onTap: () => _pick(AiModel.all[i]),
+                            ),
                     ),
-                  ),
+                  ],
                 ],
-              ],
-            ),
+              ),
+            ],
             if (state == ModelState.downloading)
               Padding(
                 padding: const EdgeInsets.only(top: Spacing.xs),

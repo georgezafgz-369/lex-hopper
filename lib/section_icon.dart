@@ -33,6 +33,8 @@ enum Section {
   chatAi,
   // Learn a language & linguistics (home page, coming soon).
   learn,
+  // Settings: double-tap a word to look it up.
+  wordLookUp,
   // The games, on the Games page.
   crossword,
   findWords,
@@ -100,6 +102,10 @@ class SectionIcon extends StatelessWidget {
     Section.riddles => b.resolve(
       light: AppColors.roseLight,
       dark: AppColors.roseDark,
+    ),
+    Section.wordLookUp => b.resolve(
+      light: AppColors.coralLight,
+      dark: AppColors.coralDark,
     ),
     Section.learn => b.resolve(
       light: AppColors.claretLight,
@@ -229,6 +235,20 @@ final _drawings = <Section, (String, String)>{
         '${_sparkle(20, 92, 6)}'
         '<path d="M8 34 C12 26 22 30 18 37 C14 44 24 48 26 42"/>'
         '<path d="M86 102 C92 96 98 108 104 102"/>',
+  ),
+
+  // Double-tap a word: a word card, a fingertip on it and two tap ripples.
+  Section.wordLookUp: (
+    '$_blob'
+        '<rect x="20" y="40" width="46" height="28" rx="6" fill="{tile}"/>'
+        '<path d="M28 50 H54 M28 59 H46" stroke-width="4"/>'
+        '<rect x="66" y="60" width="15" height="42" rx="7.5" fill="{tile}" '
+        'transform="rotate(-24 73 80)"/>'
+        '<path d="M64 46 A12 12 0 0 1 84 48" stroke-width="3.5"/>'
+        '<path d="M58 36 A22 22 0 0 1 92 40" stroke-width="3.5"/>',
+    '${_sparkle(100, 24)}'
+        '<path d="M10 92 C16 86 22 98 28 92"/>'
+        '<circle cx="20" cy="28" r="3" fill="{ink}" stroke="none"/>',
   ),
 
   // Learn: a graduation cap with its tassel.

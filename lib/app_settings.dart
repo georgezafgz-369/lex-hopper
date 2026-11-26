@@ -105,7 +105,8 @@ class AppSettings extends ChangeNotifier {
   bool get aiTranslator => _aiTranslator;
   bool _aiTranslator = false;
 
-  /// Which AI model: "eurollm" (the first) or "gemma4".
+  /// Which AI model: "eurollm" (the first), "gemma4", "qwen35" or
+  /// "qwen35mini" (see AiModel.all).
   String get aiModel => _aiModel;
   String _aiModel = 'eurollm';
 
