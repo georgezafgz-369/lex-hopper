@@ -34,6 +34,9 @@ const _names = {
   'el': 'Greek',
   'es': 'Spanish',
   'de': 'German',
+  'it': 'Italian',
+  'fr': 'French',
+  'ru': 'Russian',
 };
 
 /// What the AI is told before the conversation: the learner's main
@@ -533,28 +536,30 @@ class _Bubble extends StatelessWidget {
   );
 }
 
-/// The part of an AI answer to read aloud in [language]: when only one of
-/// [language] and [main] is written in Greek letters, the pieces (sentences,
-/// lines, brackets) in [language]'s alphabet; otherwise all of it.
+/// The part of an AI answer to read aloud in [language]: when [language]
+/// and [main] use different alphabets (Greek, Cyrillic, Latin), the pieces
+/// (sentences, lines, brackets) mostly in [language]'s alphabet; otherwise
+/// all of it.
 @visibleForTesting
 String speakablePart(
   String text, {
   required String language,
   required String main,
 }) {
-  if ((language == 'el') == (main == 'el')) return text;
-  final greek = RegExp(r'[Ͱ-Ͽἀ-῿]');
-  final latin = RegExp('[A-Za-zÀ-ÿ]');
+  RegExp alphabet(String code) => switch (code) {
+    'el' => RegExp(r'[Ͱ-Ͽἀ-῿]'),
+    'ru' => RegExp('[Ѐ-ӿ]'),
+    _ => RegExp('[A-Za-zÀ-ÿ]'),
+  };
+  final mine = alphabet(language), other = alphabet(main);
+  if (mine.pattern == other.pattern) return text;
   final pieces = text
       .split(RegExp(r'(?<=[.!?;])\s+|\n+|[()]'))
       .map((p) => p.trim())
       .where((p) => p.isNotEmpty);
   final kept = [
     for (final p in pieces)
-      if (language == 'el'
-          ? greek.allMatches(p).length > latin.allMatches(p).length
-          : latin.allMatches(p).length > greek.allMatches(p).length)
-        p,
+      if (mine.allMatches(p).length > other.allMatches(p).length) p,
   ];
   return kept.isEmpty ? text : kept.join(' ');
 }

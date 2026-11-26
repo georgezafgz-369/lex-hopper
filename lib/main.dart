@@ -93,6 +93,9 @@ class LexHopper extends StatelessWidget {
         Locale('el'),
         Locale('es'),
         Locale('de'),
+        Locale('it'),
+        Locale('fr'),
+        Locale('ru'),
       ],
       localizationsDelegates: GlobalMaterialLocalizations.delegates,
       // The chosen language (or the phone's) when the app has it, else

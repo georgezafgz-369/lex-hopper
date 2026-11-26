@@ -9,6 +9,11 @@ Words come from an open wordnet linked to Princeton WordNet:
   es  Multilingual Central Repository (via the Open Multilingual Wordnet),
       CC BY 3.0
   de  OdeNet, CC BY-SA 4.0 (.models/odenet/deWordNet.xml)
+  it  MultiWordNet (via the Open Multilingual Wordnet), CC BY 3.0
+  fr  WOLF (via the Open Multilingual Wordnet), CeCILL-C
+  ru  Wiktionary via kaikki.org, CC BY-SA 4.0
+      (.models/kaikki-ru/ru.jsonl.gz): each Russian meaning is matched to
+      the WordNet meaning whose words best fit its English gloss
 Their definitions and examples are English; translations made with the
 pack's own OPUS-MT model are read from data/packs/<lang>/glosses.csv
 (translate_glosses.py). OdeNet's own German definitions are used where it
@@ -31,24 +36,101 @@ POS = {'n': 'noun', 'v': 'verb', 'a': 'adj', 's': 'adj', 'r': 'adv'}
 SOURCES = {
     'es': 'Multilingual Central Repository (Open Multilingual Wordnet)',
     'de': 'OdeNet',
+    'it': 'MultiWordNet (Open Multilingual Wordnet)',
+    'fr': 'WOLF (Open Multilingual Wordnet)',
+    'ru': 'Wiktionary (kaikki.org)',
 }
+OMW = {'es': 'spa', 'it': 'ita', 'fr': 'fra'}
 
 
-_LATIN = str.maketrans('áàâäéèêëíìîïóòôöúùûüç', 'aaaaeeeeiiiioooouuuuc')
+_LATIN = str.maketrans('áàâäéèêëíìîïóòôöúùûüçё', 'aaaaeeeeiiiioooouuuucе')
 
 
 def latin_plain(text):
-    """Search key: lowercase, without accents (ñ and ß stay), as the app's
-    latinPlain()."""
+    """Search key: lowercase, without accents (ñ and ß stay; Russian ё is
+    е), as the app's latinPlain()."""
     return text.strip().lower().translate(_LATIN)
 
 
-def words_es():
-    """(synset, [Spanish words]) for every synset that has some."""
+def words_omw(lang):
+    """(synset, [words]) for every synset that has some in the Open
+    Multilingual Wordnet (Spanish, Italian, French)."""
     for s in wn.all_synsets():
-        words = [w.replace('_', ' ') for w in s.lemma_names('spa')]
+        words = [w.replace('_', ' ') for w in s.lemma_names(OMW[lang])]
         if words:
             yield s, words, None
+
+
+_RU_POS = {'noun': 'n', 'verb': 'v', 'adj': 'a', 'adv': 'r'}
+_PAREN = re.compile(r'\([^)]*\)')
+# Senses left out: slang, jokes, rude or old words (абажур "head").
+_RU_SKIP = {'slang', 'jocular', 'humorous', 'vulgar', 'derogatory',
+            'offensive', 'obsolete', 'archaic', 'dated', 'nonstandard',
+            'ironic', 'euphemistic'}
+# (word, synset name) -> the meaning's place in the word's Wiktionary entry.
+RU_ORDER = {}
+_ru_count = collections.Counter()
+
+
+def _ru_next(word):
+    _ru_count[word] += 1
+    return _ru_count[word]
+
+
+def words_ru():
+    """(synset, [Russian words]) from Wiktionary: each Russian meaning's
+    English gloss ("house, building") picks the WordNet meaning of that
+    part of speech whose words it names most (ties: the one WordNet lists
+    first, the most common)."""
+    import gzip, json
+    by_synset = collections.defaultdict(list)
+    with gzip.open(ROOT / '.models/kaikki-ru/ru.jsonl.gz', 'rt',
+                   encoding='utf-8') as f:
+        for line in f:
+            e = json.loads(line)
+            pos = _RU_POS.get(e.get('pos'))
+            word = e.get('word', '')
+            if not pos or not word or ' ' in word.strip() and len(
+                    word.split()) > 3:
+                continue
+            for sense in e.get('senses', []):
+                tags = set(sense.get('tags', []))
+                if 'form-of' in tags or 'alt-of' in tags or \
+                        sense.get('form_of') or sense.get('alt_of') or \
+                        tags & _RU_SKIP:
+                    continue
+                glosses = sense.get('glosses') or []
+                if not glosses:
+                    continue
+                gloss = _PAREN.sub('', glosses[-1]).strip().rstrip('.')
+                terms = []
+                for t in re.split(r'[,;]', gloss):
+                    t = t.strip().lower()
+                    t = re.sub(r'^(to|a|an|the) ', '', t)
+                    if t and len(t.split()) <= 3:
+                        terms.append(t.replace(' ', '_'))
+                # "plot (in street addresses ...)": a narrow use of a single
+                # English word, which WordNet's usual meaning would get wrong.
+                if not terms or len(terms) == 1 and _PAREN.search(
+                        glosses[-1]):
+                    continue
+                # Most words of the gloss first, then the meaning WordNet
+                # lists first for them (the most common).
+                best, score = None, (0, 0)
+                for t in terms:
+                    for rank, s in enumerate(wn.synsets(t, pos=pos)):
+                        names = {n.lower() for n in s.lemma_names()}
+                        hits = sum(x in names for x in terms)
+                        sc = (hits, -rank)
+                        if hits and (best is None or sc > score):
+                            best, score = s, sc
+                if best is not None:
+                    by_synset[best].append(word)
+                    # Wiktionary lists a word's meanings most usual first.
+                    if (word, best.name()) not in RU_ORDER:
+                        RU_ORDER[(word, best.name())] = _ru_next(word)
+    for s, words in by_synset.items():
+        yield s, list(dict.fromkeys(words)), None
 
 
 def words_de(unlinked=False):
@@ -109,8 +191,10 @@ def build(lang):
     entries, texts, examples, translations = [], [], [], {}
     text_id = entry_id = 0
     sense_of = collections.Counter()
+    entry_synset = {}
     source = SOURCES[lang]
-    rows = list(words_es() if lang == 'es' else words_de(unlinked=True))
+    rows = list(words_de(unlinked=True) if lang == 'de' else
+                words_ru() if lang == 'ru' else words_omw(lang))
     # Most common meanings first, so each word's sense 1 is its usual one
     # (meanings without a WordNet match last).
     rows.sort(key=lambda r: -sum(l.count() for l in r[0].lemmas())
@@ -164,9 +248,21 @@ def build(lang):
                 'phrase' if ' ' in word else 'word', POS[synset.pos()],
                 sense_of[plain], meaning_id, synonyms or None, None, None,
                 None, None, subject, None, None, None, 'general', source])
+            entry_synset[entry_id] = synset.name()
             for order, t in enumerate(example_ids, 1):
                 examples.append((entry_id, t, order))
             translations.setdefault(word, english_word)
+
+    if lang == 'ru':
+        # A word's meanings in its Wiktionary order, not WordNet's.
+        by_word = collections.defaultdict(list)
+        for e in entries:
+            by_word[e[3]].append(e)
+        for group in by_word.values():
+            group.sort(key=lambda e: (
+                RU_ORDER.get((e[2], entry_synset.get(e[0])), 99), e[6]))
+            for n, e in enumerate(group, 1):
+                e[6] = n
 
     out = ROOT / f'assets/packs/{lang}.db'
     out.parent.mkdir(parents=True, exist_ok=True)

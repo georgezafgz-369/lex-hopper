@@ -301,6 +301,7 @@ String latinPlain(String text) {
     'ó': 'o', 'ò': 'o', 'ô': 'o', 'ö': 'o',
     'ú': 'u', 'ù': 'u', 'û': 'u', 'ü': 'u',
     'ç': 'c',
+    'ё': 'е', // Russian: ёлка is found as елка
   };
   return text.trim().toLowerCase().split('').map((c) => plain[c] ?? c).join();
 }
@@ -384,8 +385,11 @@ class DictionaryService {
 
   /// Words that start with a letter (the rest are listed after the last
   /// letter of the alphabet).
-  String get _letterGlob =>
-      _isGreek ? "plain GLOB '[α-ω]*'" : "plain GLOB '[a-z]*'";
+  String get _letterGlob => switch (language) {
+    'el' => "plain GLOB '[α-ω]*'",
+    'ru' => "plain GLOB '[а-я]*'",
+    _ => "plain GLOB '[a-z]*'",
+  };
 
   Database? _db;
   Future<void>? _opening;
@@ -901,6 +905,23 @@ class DictionaryService {
       if (otherLetters == null || otherLetters.hasMatch(t)) return t;
     }
     return null;
+  }
+
+  /// The checked translations (not machine-made) of [words], by word; the
+  /// phrase names on a word page. Words without one are left out.
+  Future<Map<String, String>> checkedTranslations(List<String> words) async {
+    await init();
+    if (words.isEmpty) return {};
+    final keys = {for (final w in words) _key(w): w};
+    final rows = await _db!.rawQuery(
+      'SELECT plain, translation FROM translations WHERE lang = ? AND '
+      "source != 'machine' AND plain IN "
+      '(${List.filled(keys.length, '?').join(',')})',
+      [language, ...keys.keys],
+    );
+    return {
+      for (final r in rows) ?keys[r['plain']]: r['translation'] as String,
+    };
   }
 
   static final _greekLetter = RegExp(r'[\u0370-\u03ff\u1f00-\u1fff]');

@@ -10,13 +10,20 @@ enum Accent {
   british('en-GB', 'UK'),
   greek('el-GR', 'ΕΛ'),
   spanish('es-ES', 'ES'),
-  german('de-DE', 'DE');
+  german('de-DE', 'DE'),
+  italian('it-IT', 'IT'),
+  french('fr-FR', 'FR'),
+  russian('ru-RU', 'RU');
 
-  /// The voices offered for a language ("en", "el", "es", "de").
+  /// The voices offered for a language ("en", "el", "es", "de", "it",
+  /// "fr", "ru").
   static List<Accent> forLanguage(String code) => switch (code) {
     'el' => const [greek],
     'es' => const [spanish],
     'de' => const [german],
+    'it' => const [italian],
+    'fr' => const [french],
+    'ru' => const [russian],
     _ => const [american, british],
   };
 

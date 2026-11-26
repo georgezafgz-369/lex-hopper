@@ -466,4 +466,6 @@ final _flags = <String, String>{
   'de': _stripes(['#000000', '#DD0000', '#FFCE00']),
   // Italy: green, white, red.
   'it': _bands(['#009246', _white, '#CE2B37']),
+  // Russia: white, blue, red.
+  'ru': _stripes([_white, '#0039A6', '#D52B1E']),
 };

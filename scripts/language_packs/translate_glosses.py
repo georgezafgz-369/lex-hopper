@@ -17,12 +17,12 @@ import nltk
 
 ROOT = Path(__file__).resolve().parents[2]
 nltk.data.path.insert(0, str(ROOT / '.models/nltk_data'))
-OMW = {'es': 'spa'}
+OMW = {'es': 'spa', 'it': 'ita', 'fr': 'fra'}
 
 _opus = None
 
 
-ISO3 = {'es': 'spa', 'de': 'deu'}
+ISO3 = {'es': 'spa', 'de': 'deu', 'it': 'ita', 'fr': 'fra', 'ru': 'rus'}
 
 
 def _load(model_dir, lang):
@@ -61,6 +61,10 @@ def jobs(lang, wn):
         sys.path.insert(0, str(ROOT / 'scripts/language_packs'))
         from build_pack import words_de
         synsets = [(s, own) for s, _, own in words_de()]
+    elif lang == 'ru':
+        sys.path.insert(0, str(ROOT / 'scripts/language_packs'))
+        from build_pack import words_ru
+        synsets = [(s, None) for s, _, _ in words_ru()]
     else:
         synsets = [(s, None) for s in wn.all_synsets()
                    if s.lemma_names(OMW.get(lang, lang))]

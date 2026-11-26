@@ -307,6 +307,7 @@ class _WordDetailPageState extends State<WordDetailPage> {
 
   List<DictionaryEntry>? _entries;
   List<DictionaryEntry> _phrases = const [];
+  Map<String, String> _phraseTranslations = const {};
   Map<int, List<String>> _aliases = const {};
 
   /// The other language of this dictionary: Greek for English, English for
@@ -357,8 +358,14 @@ class _WordDetailPageState extends State<WordDetailPage> {
     final info = await service.wordInfo(word);
     final translation = await service.mainTranslation(word);
     final linked = await service.linkedWords(ids);
+    // Each phrase in the other language, where the dictionary has a
+    // checked one (the machine-made phrase names are often wrong).
+    final phraseNames = await service.checkedTranslations([
+      for (final p in _phrases) p.word,
+    ]);
     if (!mounted) return;
     setState(() {
+      _phraseTranslations = phraseNames;
       _aliases = aliases;
       _moreExamples = more;
       _info = info;
@@ -598,7 +605,7 @@ class _WordDetailPageState extends State<WordDetailPage> {
             Divider(color: hairline, height: 1),
             const SizedBox(height: Spacing.sm),
             for (final phrase in _phrases)
-              _phrase(phrase, ink: ink, muted: muted),
+              _phrase(phrase, ink: ink, muted: muted, clay: clay),
           ],
 
           // ── About the word ──
@@ -988,31 +995,64 @@ class _WordDetailPageState extends State<WordDetailPage> {
     DictionaryEntry phrase, {
     required Color ink,
     required Color muted,
+    required Color clay,
   }) {
+    // With a second language: the phrase and its meaning in it, below.
+    final name = _showOther ? _phraseTranslations[phrase.word] : null;
+    final meaning = _showOther ? phrase.meaningTranslation : null;
+    final second = TextStyle(
+      fontSize: 13,
+      color: clay,
+      height: 1.4,
+      fontFamily: 'Inter',
+    );
     return GestureDetector(
       behavior: HitTestBehavior.opaque,
       onTap: () =>
           showWordSheet(context, word: phrase.word, language: widget.language),
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 6),
-        child: Text.rich(
-          TextSpan(
-            children: [
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text.rich(
               TextSpan(
-                text: phrase.word,
-                style: TextStyle(fontWeight: FontWeight.w700, color: ink),
+                children: [
+                  TextSpan(
+                    text: phrase.word,
+                    style: TextStyle(fontWeight: FontWeight.w700, color: ink),
+                  ),
+                  TextSpan(text: '  ${phrase.meaning}'),
+                ],
               ),
-              TextSpan(text: '  ${phrase.meaning}'),
-            ],
-          ),
-          maxLines: 2,
-          overflow: TextOverflow.ellipsis,
-          style: TextStyle(
-            fontSize: 14,
-            color: muted,
-            height: 1.4,
-            fontFamily: 'Inter',
-          ),
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(
+                fontSize: 14,
+                color: muted,
+                height: 1.4,
+                fontFamily: 'Inter',
+              ),
+            ),
+            if (name != null || meaning != null)
+              Text.rich(
+                key: Key('phrase-translation-${phrase.id}'),
+                TextSpan(
+                  children: [
+                    if (name != null)
+                      TextSpan(
+                        text: name,
+                        style: const TextStyle(fontWeight: FontWeight.w700),
+                      ),
+                    if (meaning != null)
+                      TextSpan(text: name != null ? '  $meaning' : meaning),
+                  ],
+                ),
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: second,
+              ),
+          ],
         ),
       ),
     );

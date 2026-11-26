@@ -35,6 +35,7 @@ const appLanguages = [
   AppLanguage('fr', 'Français'),
   AppLanguage('de', 'Deutsch'),
   AppLanguage('it', 'Italiano'),
+  AppLanguage('ru', 'Русский'),
 ];
 
 /// Text size options in Settings. Medium is the normal size.

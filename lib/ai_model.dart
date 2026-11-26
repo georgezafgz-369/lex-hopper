@@ -405,16 +405,22 @@ class AiModel implements Translator {
   }
 
   /// Whether [answer] is written in [language]'s alphabet: Greek letters
-  /// for "el", Latin ones for "en". Catches the model copying the text
-  /// instead of translating it, and empty answers.
+  /// for "el", Cyrillic for "ru", Latin for the rest. Catches the model
+  /// copying the text instead of translating it, and empty answers.
   @visibleForTesting
   static bool isInLanguage(String answer, String language) {
     final greek = RegExp(r'[\u0370-\u03FF\u1F00-\u1FFF]').allMatches(answer);
-    final latin = RegExp('[A-Za-z]').allMatches(answer);
-    if (greek.isEmpty && latin.isEmpty) return false;
-    return language == 'el'
-        ? greek.length >= latin.length
-        : latin.length >= greek.length;
+    final cyrillic = RegExp(r'[\u0400-\u04FF]').allMatches(answer);
+    final latin = RegExp('[A-Za-zÀ-ÿ]').allMatches(answer);
+    final counts = {
+      'el': greek.length,
+      'ru': cyrillic.length,
+      'latin': latin.length,
+    };
+    if (counts.values.every((n) => n == 0)) return false;
+    final mine =
+        counts[language == 'el' || language == 'ru' ? language : 'latin']!;
+    return counts.values.every((n) => mine >= n);
   }
 
   /// Starts the model up before the first question (loading it, and for

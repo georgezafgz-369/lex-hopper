@@ -210,6 +210,7 @@ class _CrosswordGamePageState extends State<CrosswordGamePage> {
   // The floating Clear | Hint | Check pill, to scroll it into view.
   final _wordToolsKey = GlobalKey();
   final _gridKey = GlobalKey();
+  Timer? _clearScroll;
 
   /// Set while the grid is in its draggable window: the square size and
   /// the window size, used to keep the selected square in view.
@@ -245,6 +246,7 @@ class _CrosswordGamePageState extends State<CrosswordGamePage> {
   void dispose() {
     _cancelEraseTimers();
     _gridView.dispose();
+    _clearScroll?.cancel();
     _pageScroll.dispose();
     _inputController.dispose();
     _inputFocus.dispose();
@@ -369,9 +371,11 @@ class _CrosswordGamePageState extends State<CrosswordGamePage> {
       // Then scroll the page so Clear | Hint | Check isn't left under the
       // top bar (when the clues were scrolled up past the grid).
       if (!isDoubleTap) {
-        // After the grid has moved (endOfFrame asks for a frame even if
-        // nothing changed).
-        WidgetsBinding.instance.endOfFrame.then((_) {
+        // Once a second tap can no longer come (the page mustn't move under
+        // a double tap on a word), and after the grid has moved.
+        _clearScroll?.cancel();
+        _clearScroll = Timer(const Duration(milliseconds: 350), () async {
+          await WidgetsBinding.instance.endOfFrame;
           // Not if a second tap has since made it a double tap.
           if (!mounted || _lastClueTapTime != now) return;
           _scrollClearOfTopBar(clue);

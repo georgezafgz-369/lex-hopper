@@ -24,6 +24,13 @@ MODELS = {
     'es': [('en-es', 'pruned-big-en-es-int8'),
            ('es-en', 'pruned-big-es-en-int8')],
     'de': [('de-en', 'pruned-big-gmw-int8')],
+    'it': [('en-it', 'pruned-big-en-it-int8'),
+           ('it-en', 'pruned-big-it-en-int8')],
+    'fr': [('en-fr', 'pruned-big-en-fr-int8'),
+           ('fr-en', 'pruned-big-fr-en-int8')],
+    # East Slavic models: English -> Russian takes a >>rus<< tag.
+    'ru': [('en-ru', 'pruned-big-en-zle-int8'),
+           ('ru-en', 'pruned-big-zle-en-int8')],
 }
 
 CREDITS = {
@@ -50,6 +57,42 @@ CREDITS = {
             'Helsinki-NLP/opus-mt-tc-big-gmw-gmw (West Germanic languages, '
             'used for English ↔ German both ways), CC BY 4.0, exported to '
             'ONNX, vocabulary trimmed, weights quantized to 8 bits.'),
+    },
+    'it': {
+        'dictionary': (
+            'Italian words: MultiWordNet (Pianta, Bentivogli & Girardi '
+            '2002), via the Open Multilingual Wordnet — CC BY 3.0. '
+            'Definitions and examples: Princeton WordNet 3.0 (WordNet '
+            'licence), translated into Italian with OPUS-MT.'),
+        'translator': (
+            'Helsinki-NLP/opus-mt-tc-big-en-it and opus-mt-tc-big-it-en, '
+            'CC BY 4.0, exported to ONNX, vocabulary trimmed to each side, '
+            'weights quantized to 8 bits.'),
+    },
+    'fr': {
+        'dictionary': (
+            'French words: WOLF (Wordnet Libre du Français, Sagot & Fišer '
+            '2008), via the Open Multilingual Wordnet — CeCILL-C. '
+            'Definitions and examples: Princeton WordNet 3.0 (WordNet '
+            'licence), translated into French with OPUS-MT.'),
+        'translator': (
+            'Helsinki-NLP/opus-mt-tc-big-en-fr and opus-mt-tc-big-fr-en, '
+            'CC BY 4.0, exported to ONNX, vocabulary trimmed to each side, '
+            'weights quantized to 8 bits.'),
+    },
+    'ru': {
+        'dictionary': (
+            'Russian words: Wiktionary, extracted by kaikki.org (Ylonen '
+            '2022) — CC BY-SA 4.0; each Russian meaning is matched to a '
+            'Princeton WordNet 3.0 meaning by its English gloss. '
+            'Definitions and examples: Princeton WordNet 3.0 (WordNet '
+            'licence), translated into Russian with OPUS-MT. This '
+            'dictionary is shared under CC BY-SA 4.0.'),
+        'translator': (
+            'Helsinki-NLP/opus-mt-tc-big-en-zle and opus-mt-tc-big-zle-en '
+            '(East Slavic languages, used for English ↔ Russian), CC BY 4.0, '
+            'exported to ONNX, vocabulary trimmed to each side, weights '
+            'quantized to 8 bits.'),
     },
 }
 

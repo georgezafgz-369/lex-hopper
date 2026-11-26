@@ -160,7 +160,15 @@ class _OpusModel {
   }
 
   /// Language tags of multilingual models (">>deu<<"), by app code.
-  static const _iso3 = {'en': 'eng', 'el': 'ell', 'es': 'spa', 'de': 'deu'};
+  static const _iso3 = {
+    'en': 'eng',
+    'el': 'ell',
+    'es': 'spa',
+    'de': 'deu',
+    'it': 'ita',
+    'fr': 'fra',
+    'ru': 'rus',
+  };
 
   /// Text -> encoder ids: SentencePiece pieces looked up in the source
   /// vocabulary, then </s> (what MarianTokenizer does). A multilingual

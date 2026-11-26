@@ -518,7 +518,11 @@ class _DictionaryPageState extends State<DictionaryPage> {
                 // Above the "go to top" button and the bottom menu.
                 bottom: 72,
                 child: _AlphabetStrip(
-                  letters: _language == 'el' ? _greekLetters : _latinLetters,
+                  letters: switch (_language) {
+                    'el' => _greekLetters,
+                    'ru' => _russianLetters,
+                    _ => _latinLetters,
+                  },
                   active: _here ?? _letter,
                   onLetter: _jumpToLetter,
                 ),
@@ -722,24 +726,25 @@ class _DictionaryPageState extends State<DictionaryPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Header: word + POS badge
-            Row(
+            // Header: word + POS badge (the badge goes under a long word,
+            // or next to a long label like "СУЩЕСТВИТЕЛЬНОЕ").
+            Wrap(
+              spacing: 8,
+              runSpacing: 4,
+              crossAxisAlignment: WrapCrossAlignment.center,
               children: [
-                Flexible(
-                  child: Text(
-                    entry.word,
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w700,
-                      color: ink,
-                      fontFamily: 'Inter',
-                      fontStyle: FontStyle.italic,
-                    ),
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
+                Text(
+                  entry.word,
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w700,
+                    color: ink,
+                    fontFamily: 'Inter',
+                    fontStyle: FontStyle.italic,
                   ),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
                 ),
-                const SizedBox(width: 8),
                 Container(
                   padding: const EdgeInsets.symmetric(
                     horizontal: 8,
@@ -770,8 +775,7 @@ class _DictionaryPageState extends State<DictionaryPage> {
                   ),
                 ),
                 // A–Z list: how many meanings the word has.
-                if ((entry.meaningCount ?? 1) > 1) ...[
-                  const SizedBox(width: 8),
+                if ((entry.meaningCount ?? 1) > 1)
                   DualText(
                     (t) => t.meanings(entry.meaningCount!),
                     inline: true,
@@ -781,7 +785,6 @@ class _DictionaryPageState extends State<DictionaryPage> {
                       fontFamily: 'Inter',
                     ),
                   ),
-                ],
               ],
             ),
             // Subject tag and usage labels
@@ -873,6 +876,12 @@ const _latinLetters = [
 const _greekLetters = [
   'Α', 'Β', 'Γ', 'Δ', 'Ε', 'Ζ', 'Η', 'Θ', 'Ι', 'Κ', 'Λ', 'Μ', //
   'Ν', 'Ξ', 'Ο', 'Π', 'Ρ', 'Σ', 'Τ', 'Υ', 'Φ', 'Χ', 'Ψ', 'Ω',
+];
+
+// Russian without Ё, Ъ, Ы, Ь, which (almost) no word starts with.
+const _russianLetters = [
+  'А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', //
+  'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Э', 'Ю', 'Я',
 ];
 
 /// The alphabet down the right edge of the Dictionary: tap a letter, or

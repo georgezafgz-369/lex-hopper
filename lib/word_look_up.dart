@@ -48,9 +48,9 @@ class WordLookUp extends StatefulWidget {
   static final _word = RegExp(r"\p{L}+(?:['’-]\p{L}+)*", unicode: true);
 
   /// The dictionaries to try for [word], most likely first: Greek letters
-  /// read the Greek one; other words the app's language, the secondary
-  /// language, then English (when they use Latin letters and are on the
-  /// phone).
+  /// read the Greek one, Cyrillic the Russian one; other words the app's
+  /// language, the secondary language, then English (when they use Latin
+  /// letters and are on the phone).
   @visibleForTesting
   static List<String> dictionariesFor(
     String word, {
@@ -60,9 +60,10 @@ class WordLookUp extends StatefulWidget {
     if (RegExp(r'[Ͱ-Ͽἀ-῿]').hasMatch(word)) {
       return const ['el'];
     }
+    if (RegExp('[Ѐ-ӿ]').hasMatch(word)) return const ['ru'];
     return {
       for (final code in [main, ?second, 'en'])
-        if (code != 'el') code,
+        if (code != 'el' && code != 'ru') code,
     }.toList();
   }
 
@@ -71,38 +72,45 @@ class WordLookUp extends StatefulWidget {
 }
 
 class _WordLookUpState extends State<WordLookUp> {
-  // The last tap: when and where it went up, and the text it was on.
+  // The last tap: when and where it went up, and the word it was on. (The
+  // word, not the text object: a first tap that selects a clue rebuilds
+  // its text.)
   Duration? _lastUp;
   Offset _lastPosition = Offset.zero;
-  RenderParagraph? _lastParagraph;
+  String? _lastWord;
 
   static const _doubleTapTime = Duration(milliseconds: 300);
   static const _doubleTapSlop = 30.0;
 
   void _onUp(PointerUpEvent event) {
     if (!AppSettings.instance.wordLookUp) return;
-    final paragraph = _paragraphAt(event.position);
+    final word = _wordAt(event.position);
     final isDouble =
-        paragraph != null &&
-        identical(paragraph, _lastParagraph) &&
+        word != null &&
+        word == _lastWord &&
         _lastUp != null &&
         event.timeStamp - _lastUp! < _doubleTapTime &&
         (event.position - _lastPosition).distance < _doubleTapSlop;
     _lastUp = event.timeStamp;
     _lastPosition = event.position;
-    _lastParagraph = paragraph;
+    _lastWord = word;
     if (!isDouble) return;
-    _lastParagraph = null; // a third tap starts over
-
-    final text = paragraph.text.toPlainText(includeSemanticsLabels: false);
-    final position = paragraph.getPositionForOffset(
-      paragraph.globalToLocal(event.position),
-    );
-    final word = WordLookUp.wordAt(text, position.offset);
-    if (word == null || word.runes.length < 2) return;
+    _lastWord = null; // a third tap starts over
+    if (word.runes.length < 2) return;
     WordLookUp.lookedUpAt = DateTime.now();
     final test = WordLookUp.onLookUpForTest;
     test != null ? test(word) : _open(word);
+  }
+
+  /// The word under [position], or null.
+  String? _wordAt(Offset position) {
+    final paragraph = _paragraphAt(position);
+    if (paragraph == null) return null;
+    final text = paragraph.text.toPlainText(includeSemanticsLabels: false);
+    final caret = paragraph.getPositionForOffset(
+      paragraph.globalToLocal(position),
+    );
+    return WordLookUp.wordAt(text, caret.offset);
   }
 
   /// The text under [position], unless it's inside a [NoWordLookUp].
