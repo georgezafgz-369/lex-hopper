@@ -571,6 +571,22 @@ class AppText {
     'Nécessite un téléphone avec au moins $gb Go de mémoire.',
     'Нужен телефон с памятью не меньше $gb ГБ.',
   );
+
+  /// On a model's card in Settings: it's downloaded.
+  String get aiOnPhone => _(
+    'On the phone',
+    'Στο κινητό',
+    'En el móvil',
+    'Auf dem Handy',
+    'Sul telefono',
+    'Sur le téléphone',
+    'На телефоне',
+  );
+
+  /// On the card of the model in use.
+  String get aiActive =>
+      _('Active', 'Ενεργό', 'Activo', 'Aktiv', 'Attivo', 'Actif', 'Активна');
+
   String aiModelSize(int mb) => _(
     '${(mb / 1000).toStringAsFixed(1)} GB',
     '${(mb / 1000).toStringAsFixed(1)} GB',
@@ -656,6 +672,24 @@ class AppText {
     'Tieni il modello ($mb MB) per riattivarlo in seguito senza scaricarlo di nuovo, oppure eliminalo per liberare spazio.',
     'Garde le modèle ($mb Mo) pour le réactiver plus tard sans le retélécharger, ou supprime-le pour libérer de la place.',
     'Оставь модель ($mb МБ), чтобы потом включить её без новой загрузки, или удали её, чтобы освободить место.',
+  );
+  String aiDeleteTitle(String model) => _(
+    'Delete $model?',
+    'Διαγραφή: $model;',
+    '¿Borrar $model?',
+    '$model löschen?',
+    'Eliminare $model?',
+    'Supprimer $model ?',
+    'Удалить $model?',
+  );
+  String aiDeleteBody(int mb) => _(
+    'This frees $mb MB on your phone. You can download it again any time.',
+    'Ελευθερώνει $mb MB στο κινητό σου. Μπορείς να το κατεβάσεις ξανά όποτε θέλεις.',
+    'Libera $mb MB en tu móvil. Puedes volver a descargarlo cuando quieras.',
+    'Das gibt $mb MB auf deinem Handy frei. Du kannst es jederzeit wieder laden.',
+    'Libera $mb MB sul telefono. Puoi riscaricarlo quando vuoi.',
+    'Cela libère $mb Mo sur ton téléphone. Tu peux le retélécharger quand tu veux.',
+    'Освободит $mb МБ на телефоне. Его можно скачать снова в любой момент.',
   );
   String get keepModel => _(
     'Keep it',

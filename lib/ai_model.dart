@@ -182,11 +182,21 @@ class AiModel implements Translator {
     _changes.ping();
   }
 
+  /// Sets [state] directly (tests, where there's no phone to look on).
+  @visibleForTesting
+  void debugSetState(ModelState state) => _set(state);
+
   /// Looks whether the model is on the phone already (no download).
   Future<void> refresh() async {
     if (_state == ModelState.downloading) return;
-    if (!await hasEnoughMemory()) return _set(ModelState.tooLittleMemory);
-    _set(await isReady() ? ModelState.ready : ModelState.notDownloaded);
+    try {
+      if (!await hasEnoughMemory()) return _set(ModelState.tooLittleMemory);
+      _set(await isReady() ? ModelState.ready : ModelState.notDownloaded);
+    } catch (e) {
+      // Can't tell (no storage to look in): offer the download.
+      debugPrint('$name: check failed: $e');
+      _set(ModelState.notDownloaded);
+    }
   }
 
   /// Whether this phone has the memory to run the model (with less,

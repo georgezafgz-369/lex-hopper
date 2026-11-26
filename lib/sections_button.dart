@@ -69,7 +69,7 @@ class SectionsButton extends StatefulWidget {
   const SectionsButton({super.key, required this.navigator});
 
   /// The button's size, for pages that leave room for it.
-  static const size = 50.0;
+  static const size = 58.0;
 
   /// The rings pulse and the button floats for ever, so widget tests (which
   /// wait for animations to end) see them still.

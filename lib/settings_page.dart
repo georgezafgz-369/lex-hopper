@@ -128,7 +128,16 @@ class SettingsPage extends StatelessWidget {
                           settings: settings,
                           model: AiModel.instance,
                         ),
-                        const SizedBox(height: Spacing.sm),
+                        // ── Separator: the text and reading settings ───
+                        const SizedBox(height: Spacing.lg),
+                        Divider(
+                          color: brightness.resolve(
+                            light: AppColors.hairlineLight,
+                            dark: AppColors.hairlineDark,
+                          ),
+                          height: 0,
+                        ),
+                        const SizedBox(height: Spacing.lg),
                         _SettingsCard(
                           key: const Key('settings-dark-mode'),
                           icon: Section.darkMode,
@@ -141,16 +150,7 @@ class SettingsPage extends StatelessWidget {
                           ),
                           onTap: () => settings.setDarkMode(!isDark),
                         ),
-                        // ── Separator: the text and reading settings ───
-                        const SizedBox(height: Spacing.lg),
-                        Divider(
-                          color: brightness.resolve(
-                            light: AppColors.hairlineLight,
-                            dark: AppColors.hairlineDark,
-                          ),
-                          height: 0,
-                        ),
-                        const SizedBox(height: Spacing.lg),
+                        const SizedBox(height: Spacing.sm),
                         _FontSizeCard(settings: settings),
                         const SizedBox(height: Spacing.sm),
                         _SettingsCard(
@@ -263,10 +263,10 @@ void showLanguagePicker(BuildContext context) {
   );
 }
 
-/// AI model: a switch that downloads the picked model (after asking) and
-/// then makes the Translator and Chat with AI use it, and a choice between
-/// EuroLLM and Gemma 4. Shows the download's progress; turning it off asks
-/// whether to keep or delete the model.
+/// AI model: one card holding the four models. Each can be downloaded
+/// (after asking) or deleted from its own tile; tapping a model that's on
+/// the phone makes it the active one (the Translator and Chat with AI use
+/// it), tapping the active one turns the AI off. Only one is active.
 class _AiTranslatorCard extends StatefulWidget {
   final AppSettings settings;
   final AiModel model;
@@ -282,25 +282,44 @@ class _AiTranslatorCard extends StatefulWidget {
 }
 
 class _AiTranslatorCardState extends State<_AiTranslatorCard> {
+  AppSettings get _settings => widget.settings;
+
   @override
   void initState() {
     super.initState();
-    widget.model.refresh();
+    // Every model: which ones are on the phone already.
+    for (final m in AiModel.all) {
+      m.refresh();
+    }
   }
 
-  Future<void> _turnOn() async {
-    final model = widget.model;
-    if (model.state == ModelState.ready) {
-      await widget.settings.setAiTranslator(true);
-      return;
+  /// Makes [m] the model in use (on the phone already).
+  Future<void> _activate(AiModel m) async {
+    await _settings.setAiModel(m.id);
+    await _settings.setAiTranslator(true);
+  }
+
+  /// A tile tapped: on the phone, it becomes active (or, active already,
+  /// the AI turns off); not yet, it offers the download.
+  Future<void> _tap(AiModel m) async {
+    switch (m.state) {
+      case ModelState.ready:
+        final active = _settings.aiTranslator && m.id == widget.model.id;
+        active ? await _settings.setAiTranslator(false) : await _activate(m);
+      case ModelState.notDownloaded || ModelState.failed:
+        await _download(m);
+      default:
     }
-    final mb = model.sizeMb;
+  }
+
+  /// Asks, then downloads [m]; once it's here it becomes the active one.
+  Future<void> _download(AiModel m) async {
     final ok = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
         key: const Key('ai-download-dialog'),
-        title: DualText((t) => t.aiDownloadTitle(model.name)),
-        content: DualText((t) => t.aiDownloadBody(model.name, mb)),
+        title: DualText((t) => t.aiDownloadTitle(m.name)),
+        content: DualText((t) => t.aiDownloadBody(m.name, m.sizeMb)),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(false),
@@ -315,135 +334,91 @@ class _AiTranslatorCardState extends State<_AiTranslatorCard> {
       ),
     );
     if (ok != true) return;
-    await widget.settings.setAiTranslator(true);
-    await model.download();
+    await m.download();
+    if (m.state == ModelState.ready) await _activate(m);
   }
 
-  /// Picks [m]. If the AI is on and [m] isn't on the phone yet, it's
-  /// turned off until [m] is downloaded (the switch asks first).
-  Future<void> _pick(AiModel m) async {
-    if (m.id == widget.model.id) return;
-    final on = widget.settings.aiTranslator;
-    await widget.settings.setAiModel(m.id);
-    if (on && !await m.isReady()) await widget.settings.setAiTranslator(false);
-  }
-
-  Future<void> _turnOff() async {
-    final model = widget.model;
-    if (model.state == ModelState.downloading) model.cancelDownload();
-    if (model.state != ModelState.ready) {
-      await widget.settings.setAiTranslator(false);
-      return;
-    }
-    final mb = model.sizeMb;
-    final delete = await showDialog<bool>(
+  /// Asks, then deletes [m] from the phone (the AI turns off if it was
+  /// the one in use).
+  Future<void> _delete(AiModel m) async {
+    final ok = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        key: const Key('ai-off-dialog'),
-        title: DualText((t) => t.aiTurnOffTitle),
-        content: DualText((t) => t.aiTurnOffBody(mb)),
+        key: const Key('ai-delete-dialog'),
+        title: DualText((t) => t.aiDeleteTitle(m.name)),
+        content: DualText((t) => t.aiDeleteBody(m.sizeMb)),
         actions: [
           TextButton(
-            key: const Key('ai-delete-model'),
-            onPressed: () => Navigator.of(context).pop(true),
-            child: Text(AppText.of(context).deleteModel),
+            onPressed: () => Navigator.of(context).pop(false),
+            child: Text(AppText.of(context).cancel),
           ),
           FilledButton(
-            onPressed: () => Navigator.of(context).pop(false),
-            child: Text(AppText.of(context).keepModel),
+            key: const Key('ai-delete-confirm'),
+            onPressed: () => Navigator.of(context).pop(true),
+            child: Text(AppText.of(context).deleteModel),
           ),
         ],
       ),
     );
-    if (delete == null) return; // dismissed: stays on
-    await widget.settings.setAiTranslator(false);
-    if (delete) await model.deleteModel();
+    if (ok != true) return;
+    if (m.id == widget.model.id) await _settings.setAiTranslator(false);
+    await m.deleteModel();
+    await m.refresh();
   }
 
   @override
   Widget build(BuildContext context) {
     final model = widget.model;
-    final clay = Theme.of(context).brightness
-        .resolve(light: AppColors.clayLight, dark: AppColors.clayDark);
     return ListenableBuilder(
-      listenable: model.changes,
+      listenable: Listenable.merge([for (final m in AiModel.all) m.changes]),
       builder: (context, _) {
-        final on = widget.settings.aiTranslator;
-        final state = model.state;
-        final tooSmall = state == ModelState.tooLittleMemory;
-        final TextPick subtitle = switch ((on, state)) {
-          (_, ModelState.tooLittleMemory) => (t) => t.aiTranslatorNeedsMemory(
-            (model.minMemoryKb / (1024 * 1024)).ceil(),
-          ),
-          (_, ModelState.downloading) => (t) => t.aiTranslatorDownloading(
-            model.name,
-            model.progress == null ? null : (model.progress! * 100).floor(),
-          ),
-          (true, ModelState.failed) => (t) => t.aiTranslatorFailed,
-          (true, ModelState.checking) => (t) => t.aiTranslatorChecking,
-          (true, ModelState.ready) => (t) => t.aiTranslatorOn(model.name),
-          _ => (t) => t.aiTranslatorOff,
-        };
-        return Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            _SettingsCard(
-              key: const Key('settings-ai-translator'),
-              icon: Section.aiTranslator,
-              title: (t) => t.aiTranslator,
-              subtitle: subtitle,
-              trailing: Switch(
-                key: const Key('ai-translator-switch'),
-                value: on && !tooSmall,
-                activeThumbColor: clay,
-                onChanged: tooSmall ? null : (v) => v ? _turnOn() : _turnOff(),
-              ),
-              onTap: () {
-                if (tooSmall) return;
-                // A stopped download: tapping the card tries again.
-                if (on && state == ModelState.failed) {
-                  model.download();
-                } else {
-                  on ? _turnOff() : _turnOn();
-                }
-              },
-            ),
-            const SizedBox(height: Spacing.xs),
-            // Which model (AiModel.all), two to a row.
-            for (var r = 0; r < AiModel.all.length; r += 2) ...[
-              if (r > 0) const SizedBox(height: Spacing.sm),
-              Row(
-                children: [
-                  for (var i = r; i < r + 2; i++) ...[
-                    if (i > r) const SizedBox(width: Spacing.sm),
-                    Expanded(
-                      child: i >= AiModel.all.length
-                          ? const SizedBox.shrink()
-                          : _ModelChoice(
-                              key: Key('ai-model-${AiModel.all[i].id}'),
-                              model: AiModel.all[i],
-                              picked: AiModel.all[i].id == model.id,
-                              onTap: () => _pick(AiModel.all[i]),
-                            ),
-                    ),
+        final on = _settings.aiTranslator && model.state == ModelState.ready;
+        final downloading = AiModel.all
+            .where((m) => m.state == ModelState.downloading)
+            .firstOrNull;
+        final TextPick subtitle = downloading != null
+            ? (t) => t.aiTranslatorDownloading(
+                downloading.name,
+                downloading.progress == null
+                    ? null
+                    : (downloading.progress! * 100).floor(),
+              )
+            : on
+            ? (t) => t.aiTranslatorOn(model.name)
+            : (t) => t.aiTranslatorOff;
+        return _SettingsCard(
+          key: const Key('settings-ai-translator'),
+          icon: Section.aiTranslator,
+          title: (t) => t.aiTranslator,
+          subtitle: subtitle,
+          // The models, two to a row.
+          below: Column(
+            children: [
+              for (var r = 0; r < AiModel.all.length; r += 2) ...[
+                if (r > 0) const SizedBox(height: Spacing.sm),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    for (var i = r; i < r + 2; i++) ...[
+                      if (i > r) const SizedBox(width: Spacing.sm),
+                      Expanded(
+                        child: i >= AiModel.all.length
+                            ? const SizedBox.shrink()
+                            : _ModelChoice(
+                                key: Key('ai-model-${AiModel.all[i].id}'),
+                                model: AiModel.all[i],
+                                active: on && AiModel.all[i].id == model.id,
+                                onTap: () => _tap(AiModel.all[i]),
+                                onDownload: () => _download(AiModel.all[i]),
+                                onDelete: () => _delete(AiModel.all[i]),
+                              ),
+                      ),
+                    ],
                   ],
-                ],
-              ),
-            ],
-            if (state == ModelState.downloading)
-              Padding(
-                padding: const EdgeInsets.only(top: Spacing.xs),
-                child: LinearProgressIndicator(
-                  key: const Key('ai-download-progress'),
-                  value: model.progress,
-                  color: clay,
-                  backgroundColor: Theme.of(context).brightness.resolve(
-                    light: AppColors.hairlineLight,
-                    dark: AppColors.hairlineDark,
-                  ),
                 ),
-              ),
-          ],
+              ],
+            ],
+          ),
         );
       },
     );
@@ -457,16 +432,20 @@ class _SettingsCard extends StatelessWidget {
   final Section icon;
   final TextPick title;
   final TextPick subtitle;
-  final Widget trailing;
-  final VoidCallback onTap;
+  final Widget? trailing;
+  final VoidCallback? onTap;
+
+  /// More inside the card, under its title (the AI models).
+  final Widget? below;
 
   const _SettingsCard({
     super.key,
     required this.icon,
     required this.title,
     required this.subtitle,
-    required this.trailing,
-    required this.onTap,
+    this.trailing,
+    this.onTap,
+    this.below,
   });
 
   @override
@@ -495,34 +474,42 @@ class _SettingsCard extends StatelessWidget {
           horizontal: Spacing.md - 4,
           vertical: Spacing.sm + 2,
         ),
-        child: Row(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            SectionIcon(icon, size: 46),
-            const SizedBox(width: Spacing.sm + 4),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  DualText(
-                    title,
-                    style: Theme.of(context).textTheme.displaySmall,
-                    inline: true,
-                  ),
-                  const SizedBox(height: Spacing.xs),
-                  DualText(
-                    subtitle,
-                    style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                      color: brightness.resolve(
-                        light: AppColors.mutedLight,
-                        dark: AppColors.mutedDark,
+            Row(
+              children: [
+                SectionIcon(icon, size: 46),
+                const SizedBox(width: Spacing.sm + 4),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      DualText(
+                        title,
+                        style: Theme.of(context).textTheme.displaySmall,
+                        inline: true,
                       ),
-                    ),
+                      const SizedBox(height: Spacing.xs),
+                      DualText(
+                        subtitle,
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                          color: brightness.resolve(
+                            light: AppColors.mutedLight,
+                            dark: AppColors.mutedDark,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
+                ),
+                if (trailing != null) ...[
+                  const SizedBox(width: Spacing.sm),
+                  trailing!,
                 ],
-              ),
+              ],
             ),
-            const SizedBox(width: Spacing.sm),
-            trailing,
+            if (below != null) ...[const SizedBox(height: Spacing.sm), below!],
           ],
         ),
       ),
@@ -984,20 +971,30 @@ class _PackControl extends StatelessWidget {
 }
 
 /// One AI model to pick: its name and size, outlined when picked.
+/// One AI model: its name, then whether it's on the phone (or its size, or
+/// the download's progress), and the one in use marked Active. A button
+/// in its corner downloads it, stops the download, or deletes it.
 class _ModelChoice extends StatelessWidget {
   final AiModel model;
-  final bool picked;
+
+  /// The model in use.
+  final bool active;
   final VoidCallback onTap;
+  final VoidCallback onDownload;
+  final VoidCallback onDelete;
 
   const _ModelChoice({
     super.key,
     required this.model,
-    required this.picked,
+    required this.active,
     required this.onTap,
+    required this.onDownload,
+    required this.onDelete,
   });
 
   @override
   Widget build(BuildContext context) {
+    final t = AppText.of(context);
     final b = Theme.of(context).brightness;
     final clay = b.resolve(
       light: AppColors.clayLight,
@@ -1012,39 +1009,167 @@ class _ModelChoice extends StatelessWidget {
       light: AppColors.hairlineLight,
       dark: AppColors.hairlineDark,
     );
-    final card = b.resolve(
-      light: AppColors.gridCellLight,
-      dark: AppColors.gridCellDark,
+    final paper = b.resolve(
+      light: AppColors.paperLight,
+      dark: AppColors.paperDark,
     );
-    return GestureDetector(
-      onTap: onTap,
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 150),
-        padding: const EdgeInsets.symmetric(vertical: Spacing.sm),
-        decoration: BoxDecoration(
-          color: card,
-          borderRadius: BorderRadius.circular(Radius.sm),
-          border: Border.all(
-            color: picked ? clay : hairline,
-            width: picked ? 1.5 : 0.5,
+    final fern = b.resolve(
+      light: AppColors.fernLight,
+      dark: AppColors.fernDark,
+    );
+    final state = model.state;
+    final tooSmall = state == ModelState.tooLittleMemory;
+
+    Widget corner(Key key, IconData icon, Color color, VoidCallback f) =>
+        InkResponse(
+          key: key,
+          onTap: f,
+          radius: 18,
+          child: Padding(
+            padding: const EdgeInsets.all(4),
+            child: Icon(icon, size: 20, color: color),
           ),
-        ),
-        child: Column(
-          children: [
-            Text(
-              model.name,
+        );
+
+    final status = switch (state) {
+      ModelState.ready => Row(
+        key: Key('ai-model-on-phone-${model.id}'),
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(Icons.check_circle_rounded, size: 14, color: fern),
+          const SizedBox(width: 4),
+          Flexible(
+            child: Text(
+              t.aiOnPhone,
+              overflow: TextOverflow.ellipsis,
               style: TextStyle(
                 fontFamily: 'Inter',
-                fontSize: 15,
+                fontSize: 12,
                 fontWeight: FontWeight.w600,
-                color: picked ? clay : ink,
+                color: fern,
               ),
             ),
-            Text(
-              AppText.of(context).aiModelSize(model.sizeMb),
-              style: TextStyle(fontFamily: 'Inter', fontSize: 12, color: muted),
+          ),
+        ],
+      ),
+      ModelState.downloading => Text(
+        '${((model.progress ?? 0) * 100).floor()}%',
+        style: TextStyle(fontFamily: 'Inter', fontSize: 12, color: clay),
+      ),
+      ModelState.tooLittleMemory => Text(
+        t.aiTranslatorNeedsMemory((model.minMemoryKb / (1024 * 1024)).ceil()),
+        textAlign: TextAlign.center,
+        style: TextStyle(fontFamily: 'Inter', fontSize: 11, color: muted),
+      ),
+      _ => Text(
+        t.aiModelSize(model.sizeMb),
+        style: TextStyle(fontFamily: 'Inter', fontSize: 12, color: muted),
+      ),
+    };
+
+    return Opacity(
+      opacity: tooSmall ? 0.5 : 1,
+      child: GestureDetector(
+        onTap: tooSmall ? null : onTap,
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 150),
+          padding: const EdgeInsets.fromLTRB(
+            Spacing.xs,
+            Spacing.sm,
+            Spacing.xs,
+            Spacing.sm,
+          ),
+          decoration: BoxDecoration(
+            color: paper,
+            borderRadius: BorderRadius.circular(Radius.sm),
+            border: Border.all(
+              color: active ? clay : hairline,
+              width: active ? 2.5 : 0.5,
             ),
-          ],
+          ),
+          child: Stack(
+            clipBehavior: Clip.none,
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  const SizedBox(height: 20), // the corner button's row
+                  Text(
+                    model.name,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontFamily: 'Inter',
+                      fontSize: 15,
+                      fontWeight: FontWeight.w600,
+                      color: active ? clay : ink,
+                    ),
+                  ),
+                  Center(child: status),
+                  if (state == ModelState.downloading)
+                    Padding(
+                      padding: const EdgeInsets.only(top: 4),
+                      child: LinearProgressIndicator(
+                        key: Key('ai-download-progress-${model.id}'),
+                        value: model.progress,
+                        color: clay,
+                        backgroundColor: hairline,
+                      ),
+                    ),
+                  if (active)
+                    Center(
+                      child: Container(
+                        key: Key('ai-model-active-${model.id}'),
+                        margin: const EdgeInsets.only(top: 4),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 8,
+                          vertical: 2,
+                        ),
+                        decoration: BoxDecoration(
+                          color: clay,
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Text(
+                          t.aiActive,
+                          style: const TextStyle(
+                            fontFamily: 'Inter',
+                            fontSize: 11,
+                            fontWeight: FontWeight.w700,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ),
+                ],
+              ),
+              // Download / stop / delete, at the top.
+              Positioned(
+                top: -4,
+                right: 0,
+                child: switch (state) {
+                  ModelState.ready => corner(
+                    Key('ai-delete-${model.id}'),
+                    Icons.delete_outline_rounded,
+                    muted,
+                    onDelete,
+                  ),
+                  ModelState.downloading => corner(
+                    Key('ai-cancel-${model.id}'),
+                    Icons.close_rounded,
+                    muted,
+                    model.cancelDownload,
+                  ),
+                  ModelState.tooLittleMemory ||
+                  ModelState.checking => const SizedBox.shrink(),
+                  _ => corner(
+                    Key('ai-download-${model.id}'),
+                    Icons.download_rounded,
+                    clay,
+                    onDownload,
+                  ),
+                },
+              ),
+            ],
+          ),
         ),
       ),
     );

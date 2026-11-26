@@ -1,6 +1,7 @@
 // Settings page: dark mode switch, language list and the AI translator.
 
 import 'package:flutter_test/flutter_test.dart';
+import 'package:lex_hopper/ai_model.dart';
 import 'package:lex_hopper/app_settings.dart';
 import 'package:lex_hopper/settings_page.dart';
 import 'package:material_ui/material_ui.dart';
@@ -135,7 +136,7 @@ void main() {
     expect(prefs.getString('settings_font_size'), 'large');
   });
 
-  testWidgets('the AI translator asks before its 1 GB download', (
+  testWidgets('each AI model downloads from its own tile, after asking', (
     tester,
   ) async {
     await tester.binding.setSurfaceSize(const Size(400, 1200));
@@ -148,7 +149,22 @@ void main() {
       findsOneWidget,
     );
 
-    await tester.tap(find.byKey(const Key('ai-translator-switch')));
+    // The models sit inside the card, each with its own Download button;
+    // no on/off switch.
+    expect(find.byKey(const Key('ai-translator-switch')), findsNothing);
+    expect(
+      find.descendant(
+        of: card,
+        matching: find.byKey(const Key('ai-model-qwen35')),
+      ),
+      findsOneWidget,
+    );
+    // None is on the phone (tests have no phone storage to look in).
+    for (final m in AiModel.all) {
+      m.debugSetState(ModelState.notDownloaded);
+    }
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const Key('ai-download-eurollm')));
     await tester.pumpAndSettle();
     expect(find.byKey(const Key('ai-download-dialog')), findsOneWidget);
     expect(find.textContaining('1045 MB'), findsOneWidget);
@@ -158,7 +174,7 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byKey(const Key('ai-download-dialog')), findsNothing);
     expect(AppSettings.instance.aiTranslator, isFalse);
-    expect(find.byKey(const Key('ai-download-progress')), findsNothing);
+    expect(find.byKey(const Key('ai-download-progress-eurollm')), findsNothing);
   });
 
   testWidgets('About credits the offline translator (CC BY 4.0)', (
@@ -208,5 +224,60 @@ void main() {
     final qwen = tester.getRect(find.byKey(const Key('ai-model-qwen35')));
     expect(gemma.top, closeTo(euro.top, 2)); // same row
     expect(qwen.top, greaterThan(euro.bottom)); // next row
+  });
+
+  testWidgets('a model on the phone: tap to make it active (only one), '
+      'tap again to turn off; Delete asks first', (tester) async {
+    await tester.binding.setSurfaceSize(const Size(400, 1400));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+    await tester.pumpWidget(app());
+    await tester.pumpAndSettle();
+    for (final m in AiModel.all) {
+      m.debugSetState(ModelState.notDownloaded);
+    }
+    AiModel.qwenMini.debugSetState(ModelState.ready);
+    AiModel.gemma4.debugSetState(ModelState.ready);
+    await tester.pumpAndSettle();
+    final settings = AppSettings.instance;
+
+    // On the phone: marked, with Delete instead of Download.
+    expect(
+      find.byKey(const Key('ai-model-on-phone-qwen35mini')),
+      findsOneWidget,
+    );
+    expect(find.byKey(const Key('ai-delete-qwen35mini')), findsOneWidget);
+    expect(find.byKey(const Key('ai-download-qwen35mini')), findsNothing);
+    expect(find.byKey(const Key('ai-download-qwen35')), findsOneWidget);
+
+    await tester.tap(find.text('Qwen Mini'));
+    await tester.pumpAndSettle();
+    expect(settings.aiModel, 'qwen35mini');
+    expect(settings.aiTranslator, isTrue);
+    expect(find.byKey(const Key('ai-model-active-qwen35mini')), findsOneWidget);
+
+    // Another one on the phone takes over; only one is active.
+    await tester.tap(find.text('Gemma 4'));
+    await tester.pumpAndSettle();
+    expect(settings.aiModel, 'gemma4');
+    expect(find.byKey(const Key('ai-model-active-gemma4')), findsOneWidget);
+    expect(find.byKey(const Key('ai-model-active-qwen35mini')), findsNothing);
+
+    // The active one tapped again: the AI turns off.
+    await tester.tap(find.text('Gemma 4'));
+    await tester.pumpAndSettle();
+    expect(settings.aiTranslator, isFalse);
+    expect(find.byKey(const Key('ai-model-active-gemma4')), findsNothing);
+
+    // Delete asks first; Cancel keeps it.
+    await tester.tap(find.byKey(const Key('ai-delete-qwen35mini')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('ai-delete-dialog')), findsOneWidget);
+    expect(find.textContaining('533 MB'), findsOneWidget);
+    await tester.tap(find.text('Cancel'));
+    await tester.pumpAndSettle();
+    expect(
+      find.byKey(const Key('ai-model-on-phone-qwen35mini')),
+      findsOneWidget,
+    );
   });
 }

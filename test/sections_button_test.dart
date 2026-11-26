@@ -64,7 +64,7 @@ void main() {
     await tester.pumpWidget(app());
     final rect = tester.getRect(button);
     expect(rect.width, rect.height);
-    expect(rect.width, lessThanOrEqualTo(52));
+    expect(rect.width, lessThanOrEqualTo(60));
     expect(rect.right, greaterThan(400 - 40));
     expect(rect.bottom, greaterThan(800 - 140));
     expect(rect.bottom, lessThan(800 - 72));
