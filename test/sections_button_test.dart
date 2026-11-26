@@ -13,6 +13,8 @@ void main() {
   setUp(() async {
     ChatSession.instance.reset();
     SectionsButton.place = null;
+    // A sheet a test left open would keep the button hidden.
+    SectionsButton.observer.covered.value = false;
     SectionsButton.teacherCloud = false;
     SectionsButton.cloudDismissed = false;
     SectionsButton.cloudDelay = const Duration(seconds: 2);
@@ -76,6 +78,7 @@ void main() {
     double? last;
     for (final k in [
       'home',
+      'language',
       'games',
       'dictionary',
       'chat',
@@ -384,5 +387,39 @@ void main() {
       await tester.pumpAndSettle();
       expect(cloud, findsNothing);
     });
+  });
+
+  testWidgets("the menu's Language opens the language list from the bottom", (
+    tester,
+  ) async {
+    await tester.pumpWidget(app());
+    await open(tester);
+    await tester.tap(find.byKey(const Key('sections-language')));
+    await tester.pumpAndSettle();
+    expect(menu, findsNothing);
+    expect(find.text('home page'), findsOneWidget);
+    expect(find.byType(BottomSheet), findsOneWidget);
+    expect(find.text('English'), findsWidgets);
+  });
+
+  testWidgets('on a short screen the menu fits and scrolls', (tester) async {
+    await tester.binding.setSurfaceSize(const Size(400, 460));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+    await tester.pumpWidget(app());
+    await open(tester);
+    final rect = tester.getRect(menu);
+    expect(rect.top, greaterThanOrEqualTo(0));
+    expect(rect.bottom, lessThan(tester.getRect(button).top));
+    // The last row is reached by scrolling.
+    final settings = find.byKey(const Key('sections-settings'));
+    expect(tester.getRect(settings).bottom, greaterThan(rect.bottom));
+    await tester.drag(
+      find.byKey(const Key('sections-menu-scroll')),
+      const Offset(0, -300),
+    );
+    await tester.pumpAndSettle();
+    await tester.tap(settings);
+    await tester.pumpAndSettle();
+    expect(find.text('settings page'), findsOneWidget);
   });
 }

@@ -225,7 +225,6 @@ class _CrosswordGamePageState extends State<CrosswordGamePage> {
   static const _sentinel = '​';
   final _inputController = TextEditingController(text: _sentinel);
   final _inputFocus = FocusNode();
-  static final _latinLetter = RegExp(r'[A-Za-z]');
   // Greek letters, with or without accents (ά is typed as one letter).
   static final _greekLetter = RegExp(r'[Α-ΩΆ-Ώα-ωά-ώϊϋΐΰΪΫς]');
 
@@ -268,8 +267,10 @@ class _CrosswordGamePageState extends State<CrosswordGamePage> {
         if (_greek) {
           // Greek answers are capitals without accents: ά -> Α, ς -> Σ.
           if (_greekLetter.hasMatch(ch)) _typeLetter(AppText.upper(ch));
-        } else if (_latinLetter.hasMatch(ch)) {
-          _typeLetter(ch.toUpperCase());
+        } else {
+          // Capitals without accents (Ñ in Spanish), Cyrillic in Russian.
+          final letter = crosswordLetter(ch, _language);
+          if (letter != null) _typeLetter(letter);
         }
       }
     }
@@ -1444,13 +1445,15 @@ class _CrosswordGamePageState extends State<CrosswordGamePage> {
   /// "ACROSS CLUES" / "DOWN CLUES" in the clue card header. The active one is
   /// clay with an underline; the other is muted. Tapping switches the list.
   /// The clue in the secondary language, on a small grey line underneath,
-  /// when the secondary language is the clue's other language (English ↔
-  /// Greek) and a translation is known.
+  /// when the secondary language is the language of the clue's translation
+  /// (Greek for English clues, English for the others) and one is known.
   Widget _clueTranslation(Clue clue, Brightness brightness) {
     return ListenableBuilder(
       listenable: AppSettings.instance,
       builder: (context, _) {
-        final other = _greek ? 'en' : 'el';
+        // English clues have Greek translations; Greek and the downloaded
+        // languages' clues have English ones.
+        final other = _language == 'en' ? 'el' : 'en';
         final text = clue.translation;
         if (text == null || AppSettings.instance.secondaryLanguage != other) {
           return const SizedBox.shrink();

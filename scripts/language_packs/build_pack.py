@@ -264,6 +264,8 @@ def build(lang):
             for n, e in enumerate(group, 1):
                 e[6] = n
 
+    puzzle = puzzle_words(lang, entries, texts, translations)
+
     out = ROOT / f'assets/packs/{lang}.db'
     out.parent.mkdir(parents=True, exist_ok=True)
     if out.exists():
@@ -300,6 +302,8 @@ def build(lang):
         [(lang, w, latin_plain(w), en, source)
          for w, en in translations.items()])
     con.executemany(
+        'INSERT INTO puzzle_words VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)', puzzle)
+    con.executemany(
         'INSERT OR IGNORE INTO phrase_words VALUES (?, ?, ?)',
         [(lang, w, r[0]) for r in entries if ' ' in r[3]
          for w in set(r[3].split(' ')) if w])
@@ -309,7 +313,60 @@ def build(lang):
     words = len({r[3] for r in entries})
     print(f'{lang}: {len(entries):,} meanings of {words:,} words, '
           f'{len(examples):,} examples ({missing:,} meanings without a '
-          f'definition left out) — {out.stat().st_size / 1e6:.1f} MB')
+          f'definition left out), {len(puzzle):,} crossword answers — '
+          f'{out.stat().st_size / 1e6:.1f} MB')
+
+
+def crossword_answer(word, lang):
+    """[word] as the crossword writes it (the app's crosswordLetter does
+    the same to typed letters): capitals without accents (Spanish keeps Ñ,
+    Russian Ё is Е), or None when it has other characters."""
+    import unicodedata
+    w = word.upper()
+    if lang == 'ru':
+        w = w.replace('Ё', 'Е')
+        return w if re.fullmatch('[А-Я]+', w) else None
+    w = w.replace('Ñ', '\0') if lang == 'es' else w
+    w = ''.join(c for c in unicodedata.normalize('NFD', w)
+                if not unicodedata.combining(c))
+    w = unicodedata.normalize('NFC', w).replace('\0', 'Ñ')
+    return w if re.fullmatch('[A-ZÑ]+' if lang == 'es' else '[A-Z]+',
+                             w) else None
+
+
+def puzzle_words(lang, entries, texts, translations):
+    """Crossword answers (the puzzle_words rows): the pack's single words,
+    3–12 letters, most used first (wordfreq), each clued by its usual
+    meaning when that meaning doesn't give the word away."""
+    from wordfreq import zipf_frequency
+    text_of = {t[0]: t[3] for t in texts}
+    best = {}
+    for e in sorted(entries, key=lambda e: (e[3], e[6])):
+        word, clue_id = e[2], e[7]
+        # Single, lower-case words (no names, no abbreviations); German
+        # nouns have their capital.
+        plain_case = word == word.lower() or (
+            lang == 'de' and word[1:] == word[1:].lower())
+        if e[4] != 'word' or not plain_case:
+            continue
+        answer = crossword_answer(word, lang)
+        if not answer or not 3 <= len(answer) <= 12 or answer in best:
+            continue
+        clue = text_of.get(clue_id) or ''
+        if not clue or len(clue) > 120 or word.lower() in clue.lower():
+            continue
+        best[answer] = (word, clue_id)
+    scored = sorted(
+        ((zipf_frequency(word, lang), answer, word, clue_id)
+         for answer, (word, clue_id) in best.items()),
+        reverse=True)
+    rows = []
+    for zipf, answer, word, clue_id in scored:
+        if zipf < 1.5:  # too rare to be fair
+            break
+        rows.append((lang, answer, len(answer), len(rows) + 1, clue_id, 0,
+                     translations.get(word), None, None))
+    return rows
 
 
 if __name__ == '__main__':

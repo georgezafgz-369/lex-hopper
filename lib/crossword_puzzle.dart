@@ -4,6 +4,58 @@
 
 import 'dart:math';
 
+/// A typed character as a crossword letter in [language] (not Greek, which
+/// the game page handles): a capital without accents (Spanish keeps Ñ,
+/// Russian Ё is Е), the way the answers are written; null when it isn't a
+/// letter of that language.
+String? crosswordLetter(String ch, String language) {
+  final up = ch.toUpperCase();
+  if (language == 'ru') {
+    final letter = up == 'Ё' ? 'Е' : up;
+    return _russianLetter.hasMatch(letter) ? letter : null;
+  }
+  if (language == 'es' && up == 'Ñ') return up;
+  final letter = _plainLatin[up] ?? up;
+  return _latinLetter.hasMatch(letter) ? letter : null;
+}
+
+final _russianLetter = RegExp(r'^[А-Я]$');
+final _latinLetter = RegExp(r'^[A-Z]$');
+
+/// Accented capitals and their plain letter.
+const _plainLatin = {
+  'À': 'A',
+  'Á': 'A',
+  'Â': 'A',
+  'Ã': 'A',
+  'Ä': 'A',
+  'Å': 'A',
+  'Ā': 'A',
+  'Ç': 'C',
+  'È': 'E',
+  'É': 'E',
+  'Ê': 'E',
+  'Ë': 'E',
+  'Ē': 'E',
+  'Ì': 'I',
+  'Í': 'I',
+  'Î': 'I',
+  'Ï': 'I',
+  'Ñ': 'N',
+  'Ò': 'O',
+  'Ó': 'O',
+  'Ô': 'O',
+  'Õ': 'O',
+  'Ö': 'O',
+  'Ø': 'O',
+  'Ù': 'U',
+  'Ú': 'U',
+  'Û': 'U',
+  'Ü': 'U',
+  'Ý': 'Y',
+  'Ÿ': 'Y',
+};
+
 // ──────────────────────────────────────────────────────────────────────────────
 // DATA MODEL
 // ──────────────────────────────────────────────────────────────────────────────

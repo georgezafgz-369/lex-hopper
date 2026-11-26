@@ -1,14 +1,14 @@
 {
  "es": {
   "dictionary": {
-   "path": "packs/es_e1da11a64eb7.db.gz",
-   "gz_bytes": 6530273,
-   "sha256": "479a6bff726920655b3300a590e6b2fd5c7e38dbd707163cd0fc66aee49c84f0",
-   "bytes": 20680704,
-   "fingerprint": "e1da11a64eb7",
+   "path": "packs/es_d7825dcb536d.db.gz",
+   "gz_bytes": 6857467,
+   "sha256": "24f0e723aa0f09b2be97995840bcf69a62a379ed5801d0109e370ff7bf2f275b",
+   "bytes": 21397504,
+   "fingerprint": "d7825dcb536d",
    "repo_type": "dataset",
    "repo": "Skelletoon/lex-hopper-data",
-   "revision": "4a643657c99b82c1bee41d34a26fb478d3c56097"
+   "revision": "e9990aadbb61b4895db232573010eabc26496bf0"
   },
   "translator": {
    "folder": "opus-mt",
@@ -75,19 +75,19 @@
     }
    ],
    "repo": "Skelletoon/lex-hopper-models",
-   "revision": "af73a3ce70d36ba263ed96468798d669042b15b5"
+   "revision": "3a5ba039f51eff81296cfca948284b086a465f18"
   }
  },
  "de": {
   "dictionary": {
-   "path": "packs/de_fc448d16094e.db.gz",
-   "gz_bytes": 9488728,
-   "sha256": "970bc8af4541b971be64b2cecbfa4725bd2f2a3699dbf6de30ebda39c2369581",
-   "bytes": 33595392,
-   "fingerprint": "fc448d16094e",
+   "path": "packs/de_27917c9f91ec.db.gz",
+   "gz_bytes": 10214570,
+   "sha256": "6a92c0513282351eb3e90f9356405beedde3ccc7cca138a675e8d2e69a64232b",
+   "bytes": 35262464,
+   "fingerprint": "27917c9f91ec",
    "repo_type": "dataset",
    "repo": "Skelletoon/lex-hopper-data",
-   "revision": "759f8ab53e5df4efce84749dabc5b0c64b031259"
+   "revision": "b8d9fb31dd72fa392f5a4bc1bcc777c125425c9c"
   },
   "translator": {
    "folder": "opus-mt",
@@ -124,19 +124,19 @@
     }
    ],
    "repo": "Skelletoon/lex-hopper-models",
-   "revision": "c259b8c7a6d8700eedbed83addc90fa706032f1d"
+   "revision": "3a5ba039f51eff81296cfca948284b086a465f18"
   }
  },
  "it": {
   "dictionary": {
-   "path": "packs/it_72508cf98e5c.db.gz",
-   "gz_bytes": 6569789,
-   "sha256": "da552bb9001cc29137722e715021d48274e5916760997bbcdeb1b9adab202176",
-   "bytes": 21032960,
-   "fingerprint": "72508cf98e5c",
+   "path": "packs/it_1a13ffb4897b.db.gz",
+   "gz_bytes": 7083787,
+   "sha256": "92241d961b5d99f4243d7d2e368e489ebd9abb1be7a0377beb8106d18f4a0b90",
+   "bytes": 22208512,
+   "fingerprint": "1a13ffb4897b",
    "repo_type": "dataset",
    "repo": "Skelletoon/lex-hopper-data",
-   "revision": "b219523c18c356761f35b288f2f42ade948b2b87"
+   "revision": "7fc43a583b9af4611461bf591fbd0b4fcf596759"
   },
   "translator": {
    "folder": "opus-mt",
@@ -203,19 +203,19 @@
     }
    ],
    "repo": "Skelletoon/lex-hopper-models",
-   "revision": "74090eb9b0f9ea4237287c0c0ee6e1d1e9eb2ce4"
+   "revision": "3a5ba039f51eff81296cfca948284b086a465f18"
   }
  },
  "fr": {
   "dictionary": {
-   "path": "packs/fr_c57bd6ba4fb9.db.gz",
-   "gz_bytes": 10775440,
-   "sha256": "110e0a996bbb4d11ce074206ab9099a124b9f57610173ad4340f6f007d28561d",
-   "bytes": 33099776,
-   "fingerprint": "c57bd6ba4fb9",
+   "path": "packs/fr_9f550dbc4c20.db.gz",
+   "gz_bytes": 11232607,
+   "sha256": "c045afb6a42dbf637225b0d8e7a11589dfaf8275a94a2e458167d4f6b0dbcbcc",
+   "bytes": 34119680,
+   "fingerprint": "9f550dbc4c20",
    "repo_type": "dataset",
    "repo": "Skelletoon/lex-hopper-data",
-   "revision": "234f5171df0d6f075946c6e6c84721c1d9edfc48"
+   "revision": "ad21b996dceedfe7d940dc2a4728e5a0b10591b2"
   },
   "translator": {
    "folder": "opus-mt",
@@ -282,19 +282,19 @@
     }
    ],
    "repo": "Skelletoon/lex-hopper-models",
-   "revision": "deb1ec9e568d244f1b97a3efb9ecc1176869a69e"
+   "revision": "3a5ba039f51eff81296cfca948284b086a465f18"
   }
  },
  "ru": {
   "dictionary": {
-   "path": "packs/ru_69cbaccc7559.db.gz",
-   "gz_bytes": 5157058,
-   "sha256": "ec40672bdcef6412cd18494ec8e2712185142ae53f3341b934aee66d96e7dd2c",
-   "bytes": 20254720,
-   "fingerprint": "69cbaccc7559",
+   "path": "packs/ru_2acf396cfe4e.db.gz",
+   "gz_bytes": 5719855,
+   "sha256": "135d3d6a1f085e05b8d2c15e84a5c07cac7c8ed62ae5a7d3f9b4421962132dd4",
+   "bytes": 21839872,
+   "fingerprint": "2acf396cfe4e",
    "repo_type": "dataset",
    "repo": "Skelletoon/lex-hopper-data",
-   "revision": "fc25d8cee29edc4c5babfeca2fe1f31be0783a4f"
+   "revision": "3350069bddcb73732f7bb57661bc26f1852401c0"
   },
   "translator": {
    "folder": "opus-mt",

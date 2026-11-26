@@ -740,6 +740,26 @@ class AppText {
     'Personnalise ton expérience.',
     'Настрой приложение под себя.',
   );
+
+  /// The Home card for lessons (coming soon).
+  String get learnTitle => _(
+    'Language Lessons',
+    'Μαθήματα γλώσσας',
+    'Lecciones de idiomas',
+    'Sprachkurse',
+    'Lezioni di lingua',
+    'Cours de langue',
+    'Уроки языка',
+  );
+  String get learnSubtitle => _(
+    'Lessons from your first words to how languages work.',
+    'Μαθήματα από τις πρώτες λέξεις ως το πώς δουλεύουν οι γλώσσες.',
+    'Lecciones desde tus primeras palabras hasta cómo funcionan los idiomas.',
+    'Lektionen von den ersten Wörtern bis dazu, wie Sprachen funktionieren.',
+    'Lezioni dalle prime parole a come funzionano le lingue.',
+    'Des leçons, des premiers mots au fonctionnement des langues.',
+    'Уроки от первых слов до того, как устроены языки.',
+  );
   String get comingSoon => _(
     'Coming soon',
     'Έρχεται σύντομα',

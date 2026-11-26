@@ -31,6 +31,8 @@ enum Section {
   about,
   // Chat with AI (home page).
   chatAi,
+  // Learn a language & linguistics (home page, coming soon).
+  learn,
   // The games, on the Games page.
   crossword,
   findWords,
@@ -98,6 +100,10 @@ class SectionIcon extends StatelessWidget {
     Section.riddles => b.resolve(
       light: AppColors.roseLight,
       dark: AppColors.roseDark,
+    ),
+    Section.learn => b.resolve(
+      light: AppColors.claretLight,
+      dark: AppColors.claretDark,
     ),
     Section.aiTranslator || Section.home => b.resolve(
       light: AppColors.fernLight,
@@ -223,6 +229,18 @@ final _drawings = <Section, (String, String)>{
         '${_sparkle(20, 92, 6)}'
         '<path d="M8 34 C12 26 22 30 18 37 C14 44 24 48 26 42"/>'
         '<path d="M86 102 C92 96 98 108 104 102"/>',
+  ),
+
+  // Learn: a graduation cap with its tassel.
+  Section.learn: (
+    '$_blob'
+        '<path d="M40 62 V78 C48 86 72 86 80 78 V62" fill="{tile}"/>'
+        '<path d="M22 54 L60 38 L98 54 L60 70 Z" fill="{tile}"/>'
+        '<path d="M92 57 V76" stroke-width="4"/>'
+        '<circle cx="92" cy="80" r="4" fill="{ink}" stroke="none"/>',
+    '${_sparkle(100, 24)}'
+        '<path d="M12 94 C18 88 24 100 30 94"/>'
+        '<circle cx="22" cy="30" r="3" fill="{ink}" stroke="none"/>',
   ),
 
   // Home: a little house with a door and a window.

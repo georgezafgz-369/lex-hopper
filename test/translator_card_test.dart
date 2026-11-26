@@ -44,4 +44,37 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byType(HomePage), findsOneWidget);
   });
+
+  testWidgets('under Translator, past a line: Learn, coming soon', (
+    tester,
+  ) async {
+    await tester.binding.setSurfaceSize(const Size(400, 1600));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+    await tester.pumpWidget(app());
+    final learn = find.byKey(const Key('learn-card'));
+    expect(learn, findsOneWidget);
+    expect(
+      tester.getRect(learn).top,
+      greaterThan(
+        tester.getRect(find.byKey(const Key('translator-card'))).bottom,
+      ),
+    );
+    expect(find.text('Language Lessons'), findsOneWidget);
+    expect(
+      find.descendant(of: learn, matching: find.text('Coming soon')),
+      findsOneWidget,
+    );
+    // A line between Translator and it.
+    final lines = find
+        .byType(Divider)
+        .evaluate()
+        .map((e) => tester.getRect(find.byWidget(e.widget)).top);
+    final translatorBottom = tester
+        .getRect(find.byKey(const Key('translator-card')))
+        .bottom;
+    expect(
+      lines.any((y) => y > translatorBottom && y < tester.getRect(learn).top),
+      isTrue,
+    );
+  });
 }

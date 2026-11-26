@@ -13,8 +13,9 @@ import 'word_search_puzzle.dart';
 class WordSearchMaker {
   WordSearchMaker._();
 
-  static String _seenKey(String language) =>
-      language == 'el' ? 'word_search_seen_sets_el' : 'word_search_seen_sets';
+  static String _seenKey(String language) => language == 'en'
+      ? 'word_search_seen_sets'
+      : 'word_search_seen_sets_$language';
   static const _maxSeen = 1000;
 
   /// How long to look for a puzzle holding every word of the level before
@@ -33,7 +34,8 @@ class WordSearchMaker {
     final service = DictionaryService.forLanguage(language);
     final settings = WordSearchLevel.forLevel(
       level,
-      poolSize: language == 'el' ? await service.puzzlePoolSize() : null,
+      // Every dictionary but the big English one: sized to its answers.
+      poolSize: language == 'en' ? null : await service.puzzlePoolSize(),
     );
     final prefs = await SharedPreferences.getInstance();
     final seenKey = _seenKey(language);
@@ -41,7 +43,7 @@ class WordSearchMaker {
     final generator = WordSearchGenerator(
       size: settings.gridSize,
       directions: settings.directions,
-      alphabet: language == 'el' ? greekAlphabet : englishAlphabet,
+      alphabet: alphabetFor(language),
       random: random,
     );
 

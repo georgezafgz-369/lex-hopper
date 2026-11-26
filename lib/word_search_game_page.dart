@@ -528,13 +528,15 @@ class _WordSearchGamePageState extends State<WordSearchGamePage> {
     );
   }
 
-  /// The word in the secondary language, under its chip, when the
-  /// secondary language is the other one (English ↔ Greek) and it's known.
+  /// The word in the secondary language, under its chip, when that is the
+  /// language of its translation (Greek for English, English for the
+  /// others) and it's known.
   Widget _wordTranslation(HiddenWord w) {
     return ListenableBuilder(
       listenable: AppSettings.instance,
       builder: (context, _) {
-        final other = _language == 'el' ? 'en' : 'el';
+        // English words have Greek translations; the others English.
+        final other = _language == 'en' ? 'el' : 'en';
         final text = w.wordTr;
         if (text == null || AppSettings.instance.secondaryLanguage != other) {
           return const SizedBox.shrink();

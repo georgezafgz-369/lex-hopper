@@ -15,7 +15,7 @@ class CrosswordMaker {
 
   static const _seenKey = 'crossword_seen_sets';
   static String _seenKeyFor(String language) =>
-      language == 'el' ? '${_seenKey}_el' : _seenKey;
+      language == 'en' ? _seenKey : '${_seenKey}_$language';
   static const _maxSeen = 1000;
 
   /// How long to look for a puzzle with every word of the level. Bigger
@@ -38,7 +38,8 @@ class CrosswordMaker {
     final service = DictionaryService.forLanguage(language);
     final settings = LevelSettings.forLevel(
       level,
-      poolSize: language == 'el' ? await service.puzzlePoolSize() : null,
+      // Every dictionary but the big English one: sized to its answers.
+      poolSize: language == 'en' ? null : await service.puzzlePoolSize(),
     );
     final prefs = await SharedPreferences.getInstance();
     final seenKey = _seenKeyFor(language);

@@ -112,6 +112,20 @@ class HomePage extends StatelessWidget {
                         ),
                         const SizedBox(height: Spacing.md),
 
+                        // ── Lessons (coming soon), set apart ──────────────────
+                        const SizedBox(height: Spacing.sm),
+                        Divider(color: hairline, height: 0),
+                        const SizedBox(height: Spacing.lg),
+                        MenuCard(
+                          key: const Key('learn-card'),
+                          leading: const SectionIcon(Section.learn),
+                          title: (t) => t.learnTitle,
+                          subtitle: (t) => t.learnSubtitle,
+                          comingSoon: true,
+                          onTap: () {},
+                        ),
+                        const SizedBox(height: Spacing.md),
+
                         const SizedBox(height: Spacing.lg),
 
                         // ── Separator ─────────────────────────────────────────

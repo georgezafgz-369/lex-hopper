@@ -950,11 +950,12 @@ class _PackControl extends StatelessWidget {
           size: 18,
           color: clay,
         ),
-        label: DualText(
-          (t) => s == PackState.failed
-              ? t.tryAgain
-              : '${t.download} · ${packs.sizeMb(code)} MB',
-          inline: true,
+        // The main language only: both would squeeze the language's name
+        // until it breaks mid-word.
+        label: Text(
+          s == PackState.failed
+              ? AppText.of(context).tryAgain
+              : '${AppText.of(context).download} · ${packs.sizeMb(code)} MB',
           style: style,
         ),
         onPressed: () => s == PackState.failed

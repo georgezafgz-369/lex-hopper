@@ -210,6 +210,17 @@ class WordSearchLevel {
 /// The letters puzzles are filled with, per language.
 const englishAlphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const greekAlphabet = 'ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ';
+const russianAlphabet = 'АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ';
+const spanishAlphabet = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
+
+/// The letters of [language]'s puzzles (the answers are written without
+/// accents, see crosswordLetter).
+String alphabetFor(String language) => switch (language) {
+  'el' => greekAlphabet,
+  'ru' => russianAlphabet,
+  'es' => spanishAlphabet,
+  _ => englishAlphabet,
+};
 
 class WordSearchGenerator {
   final int size;

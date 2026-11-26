@@ -30,6 +30,7 @@ import 'chat_page.dart'
 import 'design_system.dart';
 import 'dual_text.dart';
 import 'section_icon.dart';
+import 'settings_page.dart' show showLanguagePicker;
 
 /// The round button in an overlay of its own (the chat window's text field
 /// needs one for its selection handles): goes over the navigator, in
@@ -235,7 +236,11 @@ class _SectionsButtonState extends State<SectionsButton>
     final navigator = _navigator;
     if (navigator == null) return;
     navigator.pop(); // the menu
-    if (route == '/chat') {
+    if (route == _languageSheet) {
+      // The list of languages, sliding up over the page you are on.
+      final context = navigator.overlay?.context;
+      if (context != null) showLanguagePicker(context);
+    } else if (route == '/chat') {
       _openChat();
     } else if (route == '/') {
       navigator.popUntil((r) => r.isFirst);
@@ -1048,6 +1053,9 @@ class _Floating extends StatelessWidget {
   );
 }
 
+/// The menu's Language row: not a page, the language list.
+const _languageSheet = '#language';
+
 /// The menu: a dimmed screen and the sections, beside [button] (its place
 /// on the screen), opening towards the middle. A tap outside closes it.
 class _MenuRoute extends PopupRoute<void> {
@@ -1082,6 +1090,8 @@ class _MenuRoute extends PopupRoute<void> {
 
     final items = <(String, Section, String Function(AppText), String)>[
       ('home', Section.home, (t) => t.home, '/'),
+      // Opens the language list from the bottom (see _go).
+      ('language', Section.language, (t) => t.language, _languageSheet),
       ('games', Section.games, (t) => t.gamesTitle, '/games'),
       ('dictionary', Section.dictionary, (t) => t.dictionary, '/dictionary'),
       // Opens the floating chat, not the page (see _go).
@@ -1096,6 +1106,12 @@ class _MenuRoute extends PopupRoute<void> {
         final screen = constraints.biggest;
         final onRight = button.center.dx > screen.width / 2;
         final below = button.center.dy > screen.height / 2;
+        // Up to the screen's edge; past that it scrolls (more rows, big
+        // text, a button dragged near the edge).
+        final padding = MediaQuery.paddingOf(context);
+        final room = below
+            ? button.top - gap - padding.top - Spacing.md
+            : screen.height - button.bottom - gap - padding.bottom - Spacing.md;
         return Stack(
           children: [
             Positioned(
@@ -1118,52 +1134,56 @@ class _MenuRoute extends PopupRoute<void> {
                     borderRadius: BorderRadius.circular(Radius.md),
                     clipBehavior: Clip.antiAlias,
                     child: ConstrainedBox(
-                      constraints: const BoxConstraints(
-                        minWidth: 180,
-                        maxWidth: 260,
+                      constraints: BoxConstraints(
+                        minWidth: 200,
+                        maxWidth: 290,
+                        maxHeight: math.max(room, 120),
                       ),
                       child: IntrinsicWidth(
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: [
-                            for (final (i, (name, section, title, route))
-                                in items.indexed) ...[
-                              if (i > 0) Divider(height: 0, color: hairline),
-                              InkWell(
-                                key: Key('sections-$name'),
-                                onTap: () => onPick(route),
-                                child: Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: Spacing.sm + 4,
-                                    vertical: 7,
-                                  ),
-                                  child: Row(
-                                    children: [
-                                      SectionIcon(
-                                        section,
-                                        size: 26,
-                                        compact: true,
-                                      ),
-                                      const SizedBox(width: Spacing.sm + 2),
-                                      Flexible(
-                                        child: DualText(
-                                          title,
-                                          inline: true,
-                                          style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.w600,
-                                            color: ink,
-                                            fontFamily: 'Inter',
+                        child: SingleChildScrollView(
+                          key: const Key('sections-menu-scroll'),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              for (final (i, (name, section, title, route))
+                                  in items.indexed) ...[
+                                if (i > 0) Divider(height: 0, color: hairline),
+                                InkWell(
+                                  key: Key('sections-$name'),
+                                  onTap: () => onPick(route),
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      horizontal: Spacing.md,
+                                      vertical: 9,
+                                    ),
+                                    child: Row(
+                                      children: [
+                                        SectionIcon(
+                                          section,
+                                          size: 30,
+                                          compact: true,
+                                        ),
+                                        const SizedBox(width: Spacing.sm + 4),
+                                        Flexible(
+                                          child: DualText(
+                                            title,
+                                            inline: true,
+                                            style: TextStyle(
+                                              fontSize: 15,
+                                              fontWeight: FontWeight.w600,
+                                              color: ink,
+                                              fontFamily: 'Inter',
+                                            ),
                                           ),
                                         ),
-                                      ),
-                                    ],
+                                      ],
+                                    ),
                                   ),
                                 ),
-                              ),
+                              ],
                             ],
-                          ],
+                          ),
                         ),
                       ),
                     ),
