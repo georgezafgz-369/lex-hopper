@@ -9,6 +9,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
   setUp(() async {
+    // Plenty of room for any model (no real disk to measure in tests).
+    AiModel.debugFreeSpaceMb = 100000;
     SharedPreferences.setMockInitialValues({});
     await AppSettings.instance.load();
   });
@@ -279,5 +281,25 @@ void main() {
       find.byKey(const Key('ai-model-on-phone-qwen35mini')),
       findsOneWidget,
     );
+  });
+
+  testWidgets('no room for a model: says how much to free, no download', (
+    tester,
+  ) async {
+    AiModel.debugFreeSpaceMb = 1000;
+    await tester.binding.setSurfaceSize(const Size(400, 1400));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+    await tester.pumpWidget(app());
+    await tester.pumpAndSettle();
+    for (final m in AiModel.all) {
+      m.debugSetState(ModelState.notDownloaded);
+    }
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const Key('ai-download-qwen35')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('ai-no-space-dialog')), findsOneWidget);
+    // 2120 × 2 + 300 − 1000 = 3540 MB more.
+    expect(find.textContaining('3.5 GB'), findsOneWidget);
+    expect(find.byKey(const Key('ai-download-dialog')), findsNothing);
   });
 }

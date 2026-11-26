@@ -15,6 +15,7 @@ import 'dart:io';
 import 'dart:math';
 
 import 'package:llamadart/llamadart.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:material_ui/material_ui.dart';
 
 import 'app_settings.dart';
@@ -41,6 +42,8 @@ class AiModel implements Translator {
     required this.sizeMb,
     required this.minMemoryKb,
     this.device = ComputeDevice.auto,
+    this.liteRt = false,
+    this.fileName,
   });
 
   /// EuroLLM-1.7B-Instruct, 4-bit (Q4_K_M). Each model is pinned to one
@@ -76,6 +79,8 @@ class AiModel implements Translator {
     sha256: '181938105e0eefd105961417e8da75903eacda102c4fce9ce90f50b97139a63c',
     sizeMb: 2590,
     device: ComputeDevice.cpu,
+    liteRt: true,
+    fileName: 'gemma-4-E2B-it.litertlm',
     // About 4.5 GB with the app: a phone with 6 GB of memory.
     minMemoryKb: 5400 * 1024,
   );
@@ -94,6 +99,8 @@ class AiModel implements Translator {
     sha256: 'c2438cb9c050220e667366b4beeca4daac56e693b226420674f53fc40f007c49',
     sizeMb: 2120,
     device: ComputeDevice.cpu,
+    liteRt: true,
+    fileName: 'Qwen3.5-2B_int8.litertlm',
     // About 3.8 GB with the app: a phone with 6 GB of memory.
     minMemoryKb: 4800 * 1024,
   );
@@ -125,6 +132,31 @@ class AiModel implements Translator {
       revision: '675cff42a74c774d6cb76f76d8eacb49b48c9b93',
     ),
   ];
+
+  /// Keeps the downloaded models in the app's lasting storage. By default
+  /// they went to its cache folder, which Android may empty (low storage,
+  /// "Clear cache"): the models vanished, 0.5–2.6 GB each, and the chat
+  /// failed. Models already in the cache move over, so nobody downloads
+  /// again. Call once at start, before any model is used.
+  static Future<void> useLastingStorage() async {
+    try {
+      final lasting = Directory(
+        '${(await getApplicationSupportDirectory()).path}/llamadart/models',
+      );
+      final old = Directory(
+        '${(await getApplicationCacheDirectory()).path}/llamadart/models',
+      );
+      if (!await lasting.exists() && await old.exists()) {
+        await lasting.parent.create(recursive: true);
+        await old.rename(lasting.path);
+        debugPrint('AI: models moved out of the cache');
+      }
+      await lasting.create(recursive: true);
+      DefaultModelDownloadManager.globalCacheDirectory = lasting.path;
+    } catch (e) {
+      debugPrint('AI: lasting storage: $e'); // stays in the cache
+    }
+  }
 
   static Future<void> removeRetired() async {
     final manager = DefaultModelDownloadManager();
@@ -160,6 +192,13 @@ class AiModel implements Translator {
 
   /// Where it runs (CPU, GPU, or the engine's choice).
   final ComputeDevice device;
+
+  /// Google's LiteRT-LM build (.litertlm), not llama.cpp's GGUF.
+  final bool liteRt;
+
+  /// The model file's name (LiteRT-LM models: its prepared weights in the
+  /// cache folder are named after it).
+  final String? fileName;
 
   final _manager = DefaultModelDownloadManager();
 
@@ -298,13 +337,24 @@ class AiModel implements Translator {
 
   /// Loads the model into memory the first time it's needed.
   Future<LlamaEngine> _loaded() => _engine ??= () async {
+    final short = await spaceShortToStartMb();
+    if (short > 0) {
+      _engine = null;
+      throw NotEnoughSpace(short);
+    }
     final engine = LlamaEngine(LlamaBackend(), modelDownloadManager: _manager);
     final clock = Stopwatch()..start();
     try {
       await engine.setModel(
         LlamaModel(source),
         // Room for a paragraph and its translation.
-        params: ModelParams(contextSize: 2048, device: device),
+        params: liteRt
+            ? LiteRtLmModelParams(
+                contextSize: 2048,
+                device: device,
+                cacheDir: await _liteRtCacheDir(),
+              )
+            : ModelParams(contextSize: 2048, device: device),
         download: ModelLoadOptions(cachePolicy: ModelCachePolicy.cacheOnly),
       );
       debugPrint('$name: loaded in ${clock.elapsedMilliseconds} ms');
@@ -315,6 +365,77 @@ class AiModel implements Translator {
       rethrow;
     }
   }();
+
+  /// Free space to report instead of measuring it (tests).
+  @visibleForTesting
+  static int? debugFreeSpaceMb;
+
+  /// Free space, in MB, where the models are kept; null when it can't be
+  /// told (then nothing is held back).
+  static Future<int?> freeSpaceMb() async {
+    if (debugFreeSpaceMb != null) return debugFreeSpaceMb;
+    try {
+      final dir =
+          DefaultModelDownloadManager.globalCacheDirectory ??
+          (await getApplicationSupportDirectory()).path;
+      final r = await Process.run('df', ['-k', dir]);
+      final last = (r.stdout as String).trim().split('\n').last.trim();
+      return int.parse(last.split(RegExp(r'\s+'))[3]) ~/ 1024;
+    } catch (_) {
+      return null;
+    }
+  }
+
+  /// MB of the prepared copy of the weights LiteRT-LM has written so far
+  /// (it writes one about the model's size on the first start).
+  Future<int> _preparedMb() async {
+    if (!liteRt || fileName == null) return 0;
+    try {
+      final dir = Directory(
+        '${(await getApplicationSupportDirectory()).path}/litert_lm_cache',
+      );
+      if (!await dir.exists()) return 0;
+      var bytes = 0;
+      await for (final f in dir.list()) {
+        final name = f.uri.pathSegments.last;
+        if (f is File && name.startsWith(fileName!)) {
+          bytes += await f.length();
+        }
+      }
+      return bytes ~/ (1024 * 1024);
+    } catch (_) {
+      return 0;
+    }
+  }
+
+  /// MB of free space the download needs: the model, and for LiteRT-LM
+  /// models the same again for its first start, plus a little room.
+  int get spaceToDownloadMb => sizeMb + (liteRt ? sizeMb : 0) + 300;
+
+  /// Whether there's room to start the model: a LiteRT-LM model's first
+  /// start writes a copy of its weights, and a full storage there made the
+  /// engine stop the whole app. MB still needed, or 0 when there's room.
+  Future<int> spaceShortToStartMb() async {
+    if (!liteRt) return 0;
+    final free = await freeSpaceMb();
+    if (free == null) return 0;
+    final need = sizeMb - await _preparedMb() + 200;
+    return need > free ? need - free : 0;
+  }
+
+  /// For LiteRT-LM models (Gemma 4, Qwen 3.5): a cache folder in the
+  /// app's own storage, which it can always write. Its default, a folder
+  /// in the system's temporary directory, may not exist on a phone: then
+  /// the engine doesn't start and every reply fails. Null for llama.cpp
+  /// models, which don't take one.
+  Future<String?> _liteRtCacheDir() async {
+    if (!liteRt) return null;
+    final dir = Directory(
+      '${(await getApplicationSupportDirectory()).path}/litert_lm_cache',
+    );
+    await dir.create(recursive: true);
+    return dir.path;
+  }
 
   Future<void> _unload() async {
     final engine = _engine;
@@ -535,4 +656,13 @@ class AiModel implements Translator {
 
 class _Notifier extends ChangeNotifier {
   void ping() => notifyListeners();
+}
+
+/// The phone hasn't the free space a model needs ([shortMb] more).
+class NotEnoughSpace implements Exception {
+  final int shortMb;
+  const NotEnoughSpace(this.shortMb);
+
+  @override
+  String toString() => 'NotEnoughSpace: $shortMb MB short';
 }

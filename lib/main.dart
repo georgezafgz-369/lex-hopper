@@ -39,6 +39,9 @@ Future<void> main() async {
   // so a saved choice of one of them is kept.
   await LanguagePacks.instance.load();
   await AppSettings.instance.load();
+  // Downloaded AI models live in the app's lasting storage (not its
+  // cache, which Android may empty), before any model is used.
+  await AiModel.useLastingStorage();
   // The translator's licence (CC BY 4.0) in Settings > About > licences.
   LicenseRegistry.addLicense(
     () => Stream.value(

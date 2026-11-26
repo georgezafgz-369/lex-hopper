@@ -11,6 +11,7 @@ import 'dual_text.dart';
 import 'design_system.dart';
 import 'dictionary_search_bar.dart';
 import 'ai_model.dart';
+import 'chat_page.dart' show gbText;
 import 'language_packs.dart';
 import 'section_icon.dart';
 import 'word_sheet.dart' show showDraggableSheet;
@@ -314,6 +315,29 @@ class _AiTranslatorCardState extends State<_AiTranslatorCard> {
 
   /// Asks, then downloads [m]; once it's here it becomes the active one.
   Future<void> _download(AiModel m) async {
+    // Not enough room for the model (and its first start): say how much.
+    final free = await AiModel.freeSpaceMb();
+    if (!mounted) return;
+    if (free != null && free < m.spaceToDownloadMb) {
+      await showDialog<void>(
+        context: context,
+        builder: (context) => AlertDialog(
+          key: const Key('ai-no-space-dialog'),
+          title: DualText((t) => t.aiDownloadTitle(m.name)),
+          content: DualText(
+            (t) => t.aiNeedsSpace(gbText(m.spaceToDownloadMb - free)),
+          ),
+          actions: [
+            FilledButton(
+              onPressed: () => Navigator.of(context).pop(),
+              child: const Text('OK'),
+            ),
+          ],
+        ),
+      );
+      return;
+    }
+    if (!mounted) return;
     final ok = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(

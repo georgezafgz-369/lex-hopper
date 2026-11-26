@@ -2152,6 +2152,24 @@ class AppText {
     'Загрузка ИИ… $percent%',
   );
 
+  /// The phone hasn't the room an AI model needs ([gb] more).
+  String aiNeedsSpace(String gb) => _(
+    'Not enough free space for this AI. Free up about $gb GB on your '
+        'phone, then try again.',
+    'Δεν υπάρχει αρκετός ελεύθερος χώρος για αυτό το AI. Ελευθέρωσε περίπου '
+        '$gb GB στο κινητό σου και δοκίμασε ξανά.',
+    'No hay espacio libre suficiente para esta IA. Libera unos $gb GB en '
+        'tu móvil y vuelve a intentarlo.',
+    'Nicht genug freier Speicher für diese KI. Gib etwa $gb GB auf deinem '
+        'Handy frei und versuche es erneut.',
+    'Spazio libero insufficiente per questa IA. Libera circa $gb GB sul '
+        'telefono e riprova.',
+    "Pas assez d'espace libre pour cette IA. Libère environ $gb Go sur ton "
+        'téléphone, puis réessaie.',
+    'Недостаточно свободного места для этого ИИ. Освободи около $gb ГБ на '
+        'телефоне и попробуй снова.',
+  );
+
   String get chatNoAi => _(
     'To chat, turn on an AI model in Settings > AI model'
         '. It downloads once and then works without internet.',

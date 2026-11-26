@@ -45,7 +45,9 @@ void main() {
     final both = chatInstructions(main: 'el', second: 'es');
     expect(both, contains('main language is Greek'));
     expect(both, contains('learning Spanish'));
-    expect(both, contains('Always reply in Greek'));
+    expect(both, contains('Reply in Greek only'));
+    expect(both, contains('do not translate your reply'));
+    expect(both, contains('never invent a mistake'));
     expect(both, contains('in one short line in Greek'));
     // No secondary language: the main one only.
     final one = chatInstructions(main: 'de');
@@ -53,7 +55,7 @@ void main() {
     expect(one, isNot(contains('learning Spanish')));
   });
 
-  testWidgets('the AI\'s answers have a listen button, yours don\'t', (
+  testWidgets('a speaker after each sentence of the AI\'s answers, not yours', (
     tester,
   ) async {
     await tester.binding.setSurfaceSize(const Size(400, 900));
@@ -61,9 +63,18 @@ void main() {
     await tester.enterText(find.byKey(const Key('chat-input')), 'Hola');
     await tester.tap(find.byKey(const Key('chat-send')));
     await tester.pumpAndSettle();
-    // Message 0 is yours, 1 the reply.
-    expect(find.byKey(const Key('chat-speak-0')), findsNothing);
-    expect(find.byKey(const Key('chat-speak-1')), findsOneWidget);
+    // Yours has no speakers; the reply has one after each sentence.
+    expect(
+      find.descendant(
+        of: find.ancestor(
+          of: find.text('Hola'),
+          matching: find.byType(ChatBubble),
+        ),
+        matching: find.byIcon(Icons.volume_up_outlined),
+      ),
+      findsNothing,
+    );
+    expect(find.byKey(const Key('chat-sentence-speak-0')), findsWidgets);
   });
 
   test('only the practised language is read aloud', () {
@@ -87,12 +98,51 @@ void main() {
     await tester.pumpWidget(const MaterialApp(home: ChatPage()));
     await ChatSession.instance.greet(AppText.forCode('en'));
     await tester.pumpAndSettle();
-    expect(find.textContaining('Hello! I'), findsOneWidget);
+    expect(
+      find.textContaining('your language teacher', findRichText: true),
+      findsOneWidget,
+    );
     expect(find.byKey(const Key('ai-offer-download')), findsOneWidget);
     final translation = tester.widget<Text>(
       find.byKey(const Key('chat-translation')),
     );
     expect(translation.textSpan!.toPlainText(), contains('Γεια σου!'));
-    expect(find.byKey(const Key('chat-translation-speak')), findsOneWidget);
+    expect(find.byKey(const Key('chat-translation-speak-0')), findsOneWidget);
+  });
+
+  test('notes after a --- line and ** marks are cut from replies', () {
+    expect(
+      cleanReply(
+        'Hello! I am **fine**.\n\n---\n\n**Teacher\'s Note:** correct.',
+      ),
+      'Hello! I am fine.',
+    );
+    expect(cleanReply('  Just this.  '), 'Just this.');
+    // A reply that starts with a line isn't cut to nothing.
+    expect(cleanReply('---\nHi'), '---\nHi');
+  });
+
+  test('replies are cut into sentences, nothing lost', () {
+    const text = 'Hello! How are you? Πώς είσαι; Fine.\nNew line';
+    final parts = sentencesOf(text);
+    expect(parts.join(), text);
+    expect(parts.map((p) => p.trim()), [
+      'Hello!',
+      'How are you?',
+      'Πώς είσαι;',
+      'Fine.',
+      'New line',
+    ]);
+    // A decimal point or an abbreviation without a space isn't an end.
+    expect(sentencesOf('It costs 2.50 euros.'), ['It costs 2.50 euros.']);
+  });
+
+  test('each sentence is read in the voice of its letters', () {
+    expect(voiceFor('Hello there.', main: 'en', second: 'el'), 'en');
+    expect(voiceFor('Καλημέρα!', main: 'en', second: 'el'), 'el');
+    expect(voiceFor('Привет!', main: 'en'), 'ru');
+    // App in Greek, Latin sentence: the secondary language if Latin.
+    expect(voiceFor('Bonjour !', main: 'el', second: 'fr'), 'fr');
+    expect(voiceFor('Hello.', main: 'ru', second: 'el'), 'en');
   });
 }

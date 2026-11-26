@@ -50,21 +50,24 @@ String chatInstructions({required String main, String? second}) {
   final style =
       'Keep replies short: two or three sentences. When asked to role-play '
       '(a café, asking for directions), stay in the role and ask a question '
-      'back.';
+      'back. Write only your reply to the learner, as plain text: no notes '
+      'about your answer, no headings, no "---" lines, no ** marks.';
   if (second == null || second == main || _names[second] == null) {
     return 'You are a friendly language tutor in a language-learning app. '
-        'The learner speaks $m. Always reply in $m. If they make a mistake, '
-        'first give the corrected sentence, then explain the fix in one '
-        'short line, then continue the conversation naturally. $style';
+        'The learner speaks $m. Always reply in $m. Only if they made a real '
+        'mistake, give the corrected sentence and explain the fix in one '
+        'short line; never invent a mistake. Then continue the conversation '
+        'naturally. $style';
   }
   final p = _names[second]!;
-  // The app shows each answer's translation into $p under it.
+  // The app shows each answer's translation into $p under it, so the
+  // model mustn't translate its own reply (it did, adding notes about it).
   return 'You are a friendly language teacher in a language-learning app. '
       'The learner\'s main language is $m and they are learning $p. '
-      'Always reply in $m (the app adds a $p translation under each reply). '
-      'If they write in $p and make a mistake, first give the corrected '
-      'sentence in $p, then explain the fix in one short line in $m. '
-      'Never answer in any other language than $m and $p. $style';
+      'Reply in $m only; do not translate your reply. You may include one '
+      'or two useful $p words or phrases. Only if they wrote in $p and made '
+      'a real mistake, give the corrected sentence in $p and explain the '
+      'fix in one short line in $m; never invent a mistake. $style';
 }
 
 /// "Hello" in each language: the teacher's first word.
@@ -233,6 +236,7 @@ class ChatSession extends ChangeNotifier {
     writing = '';
     notifyListeners();
     final out = StringBuffer();
+    String? failure;
     try {
       await for (final bit in AiModel.instance.chat(
         [
@@ -250,10 +254,15 @@ class ChatSession extends ChangeNotifier {
       }
     } catch (e) {
       debugPrint('Chat: ${AiModel.instance.name} stopped: $e');
+      // No room for the model to start: say so (and how much to free).
+      if (e is NotEnoughSpace) failure = t.aiNeedsSpace(gbText(e.shortMb));
     }
-    final reply = out.toString().trim();
+    final reply = cleanReply(out.toString());
     writing = null;
-    messages.add((mine: false, text: reply.isEmpty ? t.chatFailed : reply));
+    messages.add((
+      mine: false,
+      text: reply.isEmpty ? failure ?? t.chatFailed : reply,
+    ));
     notifyListeners();
     if (reply.isNotEmpty) await _translate(messages.length - 1, reply, t);
   }
@@ -295,22 +304,6 @@ class _ChatPageState extends State<ChatPage> {
     if (message.isEmpty || _writing != null) return;
     _input.clear();
     await _session.send(message, AppText.of(context));
-  }
-
-  /// Reads [text] aloud in the practised language's voice (the secondary
-  /// language, or the main one): only the parts written in that language's
-  /// letters, so the Greek of "Καλημέρα! (Good morning!)" is read in a
-  /// Greek voice and the English left out.
-  Future<void> _speak(String text) async {
-    final main = AppText.of(context).code;
-    final language = AppSettings.instance.secondaryLanguage ?? main;
-    final accent = Accent.forLanguage(language).first;
-    final messenger = ScaffoldMessenger.maybeOf(context);
-    final noVoice = AppText.of(context).noVoice(accent.name);
-    final say = speakablePart(text, language: language, main: main);
-    if (!await Speech.instance.say(say, accent)) {
-      messenger?.showSnackBar(SnackBar(content: Text(noVoice)));
-    }
   }
 
   void _toBottom() {
@@ -402,34 +395,8 @@ class _ChatPageState extends State<ChatPage> {
                       separatorBuilder: (_, _) =>
                           const SizedBox(height: Spacing.sm),
                       itemBuilder: (context, i) {
-                        final bubble = chatMessageBubble(context, i);
-                        // Without a translation (no secondary language), the
-                        // teacher's finished answers can be heard aloud here.
-                        final done = i < _messages.length;
-                        if (!done ||
-                            _messages[i].mine ||
-                            _session.translations[i] != null) {
-                          return bubble;
-                        }
-                        return Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            bubble,
-                            Tooltip(
-                              message: t.listen,
-                              child: IconButton(
-                                key: Key('chat-speak-$i'),
-                                visualDensity: VisualDensity.compact,
-                                icon: Icon(
-                                  Icons.volume_up_outlined,
-                                  size: 20,
-                                  color: muted,
-                                ),
-                                onPressed: () => _speak(_messages[i].text),
-                              ),
-                            ),
-                          ],
-                        );
+                        // Speakers sit after each sentence, inside.
+                        return chatMessageBubble(context, i);
                       },
                     ),
             ),
@@ -631,17 +598,19 @@ class _Welcome extends StatelessWidget {
 }
 
 /// A chat bubble: yours on the right in blue, the AI's on the left. The
-/// AI's can carry its [translation] into the secondary language under it,
-/// with a speaker at the end ([onSpeak]), and a [footer] (the download
-/// button).
+/// AI's has a speaker after each sentence ([speakIn] picks each one's
+/// voice), and can carry its [translation] into the secondary language
+/// under it (a speaker after each of its sentences too, in
+/// [translationLanguage]'s voice), and a [footer] (the download button).
 class ChatBubble extends StatelessWidget {
   final String text;
   final bool mine;
   final Color fill, textColor;
   final Color? border;
   final double fontSize;
+  final String? Function(String sentence)? speakIn;
   final String? translation;
-  final VoidCallback? onSpeak;
+  final String? translationLanguage;
   final Widget? footer;
 
   const ChatBubble({
@@ -652,10 +621,58 @@ class ChatBubble extends StatelessWidget {
     required this.textColor,
     this.border,
     this.fontSize = 16,
+    this.speakIn,
     this.translation,
-    this.onSpeak,
+    this.translationLanguage,
     this.footer,
   });
+
+  /// [text] with a speaker after each sentence that has letters.
+  static TextSpan withSpeakers(
+    BuildContext context,
+    String text, {
+    required String? Function(String sentence) languageOf,
+    required Color color,
+    required double size,
+    required String key,
+  }) {
+    final listen = AppText.of(context).listen;
+    final letter = RegExp(r'\p{L}', unicode: true);
+    return TextSpan(
+      children: [
+        for (final (i, sentence) in sentencesOf(text).indexed) ...[
+          // The speaker right after the sentence, before its spaces and
+          // line breaks.
+          TextSpan(text: sentence.trimRight()),
+          if (letter.hasMatch(sentence))
+            if (languageOf(sentence.trim()) case final language?)
+              WidgetSpan(
+                alignment: PlaceholderAlignment.middle,
+                child: Semantics(
+                  button: true,
+                  label: listen,
+                  excludeSemantics: true,
+                  child: InkResponse(
+                    key: Key('$key-$i'),
+                    onTap: () =>
+                        sayInLanguage(context, sentence.trim(), language),
+                    radius: 16,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 4),
+                      child: Icon(
+                        Icons.volume_up_outlined,
+                        size: size,
+                        color: color,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+          TextSpan(text: sentence.substring(sentence.trimRight().length)),
+        ],
+      ],
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -667,6 +684,16 @@ class ChatBubble extends StatelessWidget {
     final hairline = b.resolve(
       light: AppColors.hairlineLight,
       dark: AppColors.hairlineDark,
+    );
+    final muted = b.resolve(
+      light: AppColors.mutedLight,
+      dark: AppColors.mutedDark,
+    );
+    final style = TextStyle(
+      fontSize: fontSize,
+      height: 1.35,
+      color: textColor,
+      fontFamily: 'Inter',
     );
     return Align(
       alignment: mine ? Alignment.centerRight : Alignment.centerLeft,
@@ -695,49 +722,36 @@ class ChatBubble extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text(
-                text,
-                style: TextStyle(
-                  fontSize: fontSize,
-                  height: 1.35,
-                  color: textColor,
-                  fontFamily: 'Inter',
-                ),
-              ),
-              // ── The translation, with a speaker at its end ──────────────
+              speakIn == null
+                  ? Text(text, style: style)
+                  : Text.rich(
+                      withSpeakers(
+                        context,
+                        text,
+                        languageOf: speakIn!,
+                        color: muted,
+                        size: fontSize + 1,
+                        key: 'chat-sentence-speak',
+                      ),
+                      style: style,
+                    ),
+              // ── The translation, a speaker after each sentence ──────────
               if (translation != null) ...[
                 const SizedBox(height: 6),
                 Divider(height: 0, color: hairline),
                 const SizedBox(height: 6),
                 Text.rich(
                   key: const Key('chat-translation'),
-                  TextSpan(
-                    text: translation,
-                    children: [
-                      if (onSpeak != null)
-                        WidgetSpan(
-                          alignment: PlaceholderAlignment.middle,
-                          child: Semantics(
-                            button: true,
-                            label: AppText.of(context).listen,
-                            excludeSemantics: true,
-                            child: InkResponse(
-                              key: const Key('chat-translation-speak'),
-                              onTap: onSpeak,
-                              radius: 18,
-                              child: Padding(
-                                padding: const EdgeInsets.only(left: 6),
-                                child: Icon(
-                                  Icons.volume_up_outlined,
-                                  size: fontSize + 2,
-                                  color: orange,
-                                ),
-                              ),
-                            ),
-                          ),
+                  translationLanguage == null
+                      ? TextSpan(text: translation)
+                      : withSpeakers(
+                          context,
+                          translation!,
+                          languageOf: (_) => translationLanguage,
+                          color: orange,
+                          size: fontSize,
+                          key: 'chat-translation-speak',
                         ),
-                    ],
-                  ),
                   style: TextStyle(
                     fontSize: fontSize - 1,
                     height: 1.35,
@@ -753,6 +767,35 @@ class ChatBubble extends StatelessWidget {
       ),
     );
   }
+}
+
+/// [text] cut into sentences, each with the spaces after it, so joined
+/// they give [text] back. A sentence ends at . ! ? ; … (Greek's question
+/// mark is ;), with any closing quotes or brackets, before a space or the
+/// end, or at a line break.
+@visibleForTesting
+List<String> sentencesOf(String text) {
+  final out = <String>[];
+  final end = RegExp('[.!?;…]+[\'"»”’)\\]]*(\\s+|\$)|\\n\\s*');
+  var start = 0;
+  for (final m in end.allMatches(text)) {
+    if (m.end <= start) continue;
+    out.add(text.substring(start, m.end));
+    start = m.end;
+  }
+  if (start < text.length) out.add(text.substring(start));
+  return out.where((s) => s.isNotEmpty).toList();
+}
+
+/// The voice for [sentence]: Greek letters Greek, Cyrillic Russian, Latin
+/// the app's language ([main]) or, when that's written in another
+/// alphabet, the secondary language if it's Latin, else English.
+String voiceFor(String sentence, {required String main, String? second}) {
+  if (RegExp(r'[Ͱ-Ͽἀ-῿]').hasMatch(sentence)) return 'el';
+  if (RegExp('[Ѐ-ӿ]').hasMatch(sentence)) return 'ru';
+  bool latin(String? c) => c != null && c != 'el' && c != 'ru';
+  if (latin(main)) return main;
+  return latin(second) ? second! : 'en';
 }
 
 /// Message [i] of the shared conversation as a bubble: yours in blue; the
@@ -790,10 +833,17 @@ Widget chatMessageBubble(
     textColor: m.mine ? Colors.white : ink,
     border: m.mine ? null : hairline,
     fontSize: fontSize,
-    translation: translation,
-    onSpeak: translation == null || second == null
+    // A speaker after each of the teacher's sentences, in its own voice
+    // (not while it's still being written).
+    speakIn: m.mine || writing
         ? null
-        : () => sayInLanguage(context, translation, second),
+        : (sentence) => voiceFor(
+            sentence,
+            main: AppText.of(context).code,
+            second: second,
+          ),
+    translation: translation,
+    translationLanguage: second,
     footer: !writing && i == session.offerAt ? const AiOfferButton() : null,
   );
 }
@@ -902,4 +952,18 @@ String speakablePart(
       if (mine.allMatches(p).length > other.allMatches(p).length) p,
   ];
   return kept.isEmpty ? text : kept.join(' ');
+}
+
+/// [mb] as gigabytes with one decimal ("2.1"), at least 0.1.
+String gbText(int mb) => (mb < 100 ? 0.1 : mb / 1000).toStringAsFixed(1);
+
+/// The AI's [reply] as the learner should see it: without the notes some
+/// models add after a "---" line, and without Markdown's ** marks.
+@visibleForTesting
+String cleanReply(String reply) {
+  var text = reply.replaceAll('**', '');
+  final rule = RegExp(r'^\s*(-{3,}|_{3,}|\*{3,})\s*$', multiLine: true);
+  final cut = rule.firstMatch(text);
+  if (cut != null && cut.start > 0) text = text.substring(0, cut.start);
+  return text.trim();
 }
